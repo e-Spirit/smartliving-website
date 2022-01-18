@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ENTITY_REFS>
+	<REFS sourceType="news">
+		<SOURCE uuid="94db23a8-6dff-4fd8-90b2-f19ced929c86">
+			<ATTR name="authorList" targetType="author">
+				<TARGET uuid="51b14111-7d41-4bad-ab81-a0e161e2ffd3"/>
+			</ATTR>
+			<ATTR name="category" targetType="category">
+				<TARGET uuid="449511b5-6497-49a3-89d7-91d48f3c3686"/>
+			</ATTR>
+			<ATTR name="tagList" targetType="tag">
+				<TARGET uuid="381a6a55-6556-4a22-86f8-a7cf91ece348"/>
+			</ATTR>
+		</SOURCE>
+		<SOURCE uuid="aab51540-f988-48ae-9311-02276126a340">
+			<ATTR name="authorList" targetType="author">
+				<TARGET uuid="51b14111-7d41-4bad-ab81-a0e161e2ffd3"/>
+			</ATTR>
+			<ATTR name="category" targetType="category">
+				<TARGET uuid="93d252dc-5964-4c1d-aaed-1652a2d2045c"/>
+			</ATTR>
+			<ATTR name="tagList" targetType="tag">
+				<TARGET uuid="819abc3f-302c-4d6d-9b5c-b0874688e95a"/>
+			</ATTR>
+		</SOURCE>
+		<SOURCE uuid="eb98ea90-177f-401e-b7ee-1c3440b55ef8">
+			<ATTR name="authorList" targetType="author">
+				<TARGET uuid="51b14111-7d41-4bad-ab81-a0e161e2ffd3"/>
+			</ATTR>
+			<ATTR name="category" targetType="category">
+				<TARGET uuid="93d252dc-5964-4c1d-aaed-1652a2d2045c"/>
+			</ATTR>
+			<ATTR name="tagList" targetType="tag">
+				<TARGET uuid="819abc3f-302c-4d6d-9b5c-b0874688e95a"/>
+				<TARGET uuid="e4d4916d-8b46-445c-b175-0b6fc85b4234"/>
+				<TARGET uuid="381a6a55-6556-4a22-86f8-a7cf91ece348"/>
+			</ATTR>
+		</SOURCE>
+		<SOURCE uuid="f78aff5b-eda1-4bc4-bfbf-25702a662b38">
+			<ATTR name="authorList" targetType="author">
+				<TARGET uuid="51b14111-7d41-4bad-ab81-a0e161e2ffd3"/>
+			</ATTR>
+			<ATTR name="category" targetType="category">
+				<TARGET uuid="93d252dc-5964-4c1d-aaed-1652a2d2045c"/>
+			</ATTR>
+			<ATTR name="tagList" targetType="tag">
+				<TARGET uuid="30501cc7-102f-41ec-8838-b780b98d9425"/>
+			</ATTR>
+		</SOURCE>
+		<SOURCE uuid="11bc590d-5ab8-46ee-8e4d-70bf124ba83a">
+			<ATTR name="authorList" targetType="author">
+				<TARGET uuid="51b14111-7d41-4bad-ab81-a0e161e2ffd3"/>
+			</ATTR>
+			<ATTR name="category" targetType="category">
+				<TARGET uuid="93d252dc-5964-4c1d-aaed-1652a2d2045c"/>
+			</ATTR>
+			<ATTR name="tagList" targetType="tag">
+				<TARGET uuid="4a5449a6-7754-4439-85e9-13e8e13b2015"/>
+			</ATTR>
+		</SOURCE>
+		<SOURCE uuid="3d1d0440-e96f-405a-822c-154136eca3d3">
+			<ATTR name="authorList" targetType="author">
+				<TARGET uuid="51b14111-7d41-4bad-ab81-a0e161e2ffd3"/>
+			</ATTR>
+			<ATTR name="category" targetType="category">
+				<TARGET uuid="07d9022e-dd96-4f07-bbda-5f3f13df84e8"/>
+			</ATTR>
+			<ATTR name="tagList" targetType="tag">
+				<TARGET uuid="e4d4916d-8b46-445c-b175-0b6fc85b4234"/>
+				<TARGET uuid="30501cc7-102f-41ec-8838-b780b98d9425"/>
+			</ATTR>
+		</SOURCE>
+		<SOURCE uuid="456b76b1-8cae-432d-b71e-9c9993b78f7a">
+			<ATTR name="authorList" targetType="author">
+				<TARGET uuid="51b14111-7d41-4bad-ab81-a0e161e2ffd3"/>
+			</ATTR>
+			<ATTR name="category" targetType="category">
+				<TARGET uuid="93d252dc-5964-4c1d-aaed-1652a2d2045c"/>
+			</ATTR>
+			<ATTR name="tagList" targetType="tag">
+				<TARGET uuid="30501cc7-102f-41ec-8838-b780b98d9425"/>
+			</ATTR>
+		</SOURCE>
+		<SOURCE uuid="4c1ffb05-8762-4b61-aa67-c6e5b96cd1a4">
+			<ATTR name="authorList" targetType="author">
+				<TARGET uuid="51b14111-7d41-4bad-ab81-a0e161e2ffd3"/>
+			</ATTR>
+			<ATTR name="category" targetType="category">
+				<TARGET uuid="07d9022e-dd96-4f07-bbda-5f3f13df84e8"/>
+			</ATTR>
+			<ATTR name="tagList" targetType="tag">
+				<TARGET uuid="e4d4916d-8b46-445c-b175-0b6fc85b4234"/>
+				<TARGET uuid="381a6a55-6556-4a22-86f8-a7cf91ece348"/>
+			</ATTR>
+		</SOURCE>
+		<SOURCE uuid="5d2d882d-bf1c-4286-99ab-a2697709d38d">
+			<ATTR name="authorList" targetType="author">
+				<TARGET uuid="51b14111-7d41-4bad-ab81-a0e161e2ffd3"/>
+			</ATTR>
+			<ATTR name="category" targetType="category">
+				<TARGET uuid="93d252dc-5964-4c1d-aaed-1652a2d2045c"/>
+			</ATTR>
+			<ATTR name="tagList" targetType="tag">
+				<TARGET uuid="819abc3f-302c-4d6d-9b5c-b0874688e95a"/>
+				<TARGET uuid="e4d4916d-8b46-445c-b175-0b6fc85b4234"/>
+			</ATTR>
+		</SOURCE>
+	</REFS>
+</ENTITY_REFS>

@@ -1,0 +1,25 @@
+import de.espirit.firstspirit.access.AdminService;
+import de.espirit.firstspirit.access.ServicesBroker;
+import de.espirit.firstspirit.agency.OperationAgent;
+import de.espirit.firstspirit.ui.operations.RequestOperation;
+
+scheduleStorage = context.requireSpecialist(ServicesBroker.TYPE).getService(AdminService.class).getScheduleStorage();
+scheduleEntry = scheduleStorage.getScheduleEntry(context.project, "Restart CAAS Zero Service");
+/*
+// schedule entry "Restart CAAS Zero Service", source of script task
+import de.espirit.firstspirit.agency.ModuleAdminAgent;
+
+SERVICE_NAME = "CaasZeroService";
+
+maa = context.requireSpecialist(ModuleAdminAgent.TYPE);
+maa.stopService(SERVICE_NAME);
+maa.startService(SERVICE_NAME);
+*/
+control = scheduleEntry.execute();
+control.awaitTermination();
+runState = control.getState().getState().toString().replace('_', ' ');
+
+message = context.requireSpecialist(OperationAgent.TYPE).getOperation(RequestOperation.TYPE);
+message.setTitle(runState);
+message.setKind(RequestOperation.Kind.INFO);
+message.perform("Restart of CaaS service finished with state " + runState);

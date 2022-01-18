@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='md_alt_text'><TEXT>sda</TEXT></FIELD>
+	<FIELD name='md_region'><SEL/></FIELD>
+	<FIELD name='md_country'><SEL/></FIELD>
+	<FIELD name='md_language'><SEL/></FIELD>
+	<FIELD name='md_creation_date'><DATE>1627981872041</DATE></FIELD>
+	<FIELD name='md_licensing'><SEL/></FIELD>
+</FIELDS>

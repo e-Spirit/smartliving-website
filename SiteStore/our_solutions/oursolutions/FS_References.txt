@@ -1,0 +1,12 @@
+[self]
+uid=oursolutions
+gid=4bd4e5af-c55d-4b46-b335-58e284f2f4c6
+uidType=SITESTORE_LEAF
+class=de.espirit.firstspirit.store.access.sitestore.PageRefImpl
+
+[requiredId]
+uid=our_solutions
+gid=19d77575-09d0-4889-80cb-965dae1864e7
+uidType=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.PageImpl
+

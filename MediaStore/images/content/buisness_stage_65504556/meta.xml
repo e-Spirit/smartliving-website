@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='md_alt_text'><TEXT>Alt Text</TEXT></FIELD>
+	<FIELD name='md_creation_date'><DATE>1627980826314</DATE></FIELD>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Office Building",
+        "confidence" : 99.98987,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Building"
+        } ]
+      }, {
+        "name" : "Building",
+        "confidence" : 99.98987,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Architecture",
+        "confidence" : 77.56772,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Building"
+        } ]
+      }, {
+        "name" : "Hangar",
+        "confidence" : 75.58729,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Building"
+        } ]
+      }, {
+        "name" : "Gate",
+        "confidence" : 74.897064,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.44659203,
+            "height" : 0.5626333,
+            "left" : 0.24270801,
+            "top" : 0.32690227
+          },
+          "confidence" : 74.897064
+        } ],
+        "parents" : [ ]
+      }, {
+        "name" : "Tarmac",
+        "confidence" : 58.83863,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Asphalt",
+        "confidence" : 58.83863,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Warehouse",
+        "confidence" : 56.946182,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Building"
+        } ]
+      }, {
+        "name" : "Convention Center",
+        "confidence" : 56.405132,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Architecture"
+        }, {
+          "name" : "Building"
+        } ]
+      }, {
+        "name" : "Flooring",
+        "confidence" : 56.167446,
+        "instances" : [ ],
+        "parents" : [ ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "2.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ {
+        "detectedText" : "1 Hoofdentree Main entrance",
+        "type" : "LINE",
+        "id" : 0,
+        "parentId" : null,
+        "confidence" : 74.49547,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.028672243,
+            "height" : 0.016665284,
+            "left" : 0.5469737,
+            "top" : 0.82039005
+          },
+          "polygon" : [ {
+            "x" : 0.5481148,
+            "y" : 0.82039005
+          }, {
+            "x" : 0.575646,
+            "y" : 0.8225568
+          }, {
+            "x" : 0.5745049,
+            "y" : 0.8370553
+          }, {
+            "x" : 0.5469737,
+            "y" : 0.8348886
+          } ]
+        }
+      }, {
+        "detectedText" : "Expeditie",
+        "type" : "LINE",
+        "id" : 1,
+        "parentId" : null,
+        "confidence" : 75.29571,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.014662552,
+            "height" : 0.0078125,
+            "left" : 0.5510033,
+            "top" : 0.8359375
+          },
+          "polygon" : [ {
+            "x" : 0.5510033,
+            "y" : 0.8359375
+          }, {
+            "x" : 0.56566584,
+            "y" : 0.8359375
+          }, {
+            "x" : 0.56566584,
+            "y" : 0.84375
+          }, {
+            "x" : 0.5510033,
+            "y" : 0.84375
+          } ]
+        }
+      }, {
+        "detectedText" : "1 Hoofdentree",
+        "type" : "WORD",
+        "id" : 2,
+        "parentId" : 0,
+        "confidence" : 57.846653,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.024302578,
+            "height" : 0.009156902,
+            "left" : 0.5477387,
+            "top" : 0.82039005
+          },
+          "polygon" : [ {
+            "x" : 0.5481148,
+            "y" : 0.82039005
+          }, {
+            "x" : 0.5720413,
+            "y" : 0.82240856
+          }, {
+            "x" : 0.57166517,
+            "y" : 0.8295469
+          }, {
+            "x" : 0.5477387,
+            "y" : 0.8275284
+          } ]
+        }
+      }, {
+        "detectedText" : "Main entrance",
+        "type" : "WORD",
+        "id" : 3,
+        "parentId" : 0,
+        "confidence" : 91.14427,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.02450037,
+            "height" : 0.012273165,
+            "left" : 0.55068934,
+            "top" : 0.82478213
+          },
+          "polygon" : [ {
+            "x" : 0.5513742,
+            "y" : 0.82478213
+          }, {
+            "x" : 0.5751897,
+            "y" : 0.82752186
+          }, {
+            "x" : 0.5745049,
+            "y" : 0.8370553
+          }, {
+            "x" : 0.55068934,
+            "y" : 0.8343156
+          } ]
+        }
+      }, {
+        "detectedText" : "Expeditie",
+        "type" : "WORD",
+        "id" : 4,
+        "parentId" : 1,
+        "confidence" : 75.29571,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.014662552,
+            "height" : 0.0078125,
+            "left" : 0.5510033,
+            "top" : 0.8359375
+          },
+          "polygon" : [ {
+            "x" : 0.5510033,
+            "y" : 0.8359375
+          }, {
+            "x" : 0.56566584,
+            "y" : 0.8359375
+          }, {
+            "x" : 0.56566584,
+            "y" : 0.84375
+          }, {
+            "x" : 0.5510033,
+            "y" : 0.84375
+          } ]
+        }
+      } ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "5.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Gate #Tarmac #Flooring #Office Building #Architecture #Hangar #Building #Asphalt #Warehouse #Convention Center"
+  }
+}</TEXT></FIELD>
+</FIELDS>

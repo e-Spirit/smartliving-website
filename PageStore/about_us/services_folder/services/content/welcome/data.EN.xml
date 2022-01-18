@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_kicker'><TEXT>Our Services</TEXT></FIELD>
+	<FIELD name='st_headline'><DOM><standard>Intelligent support for our <span_yellow_text>customers</span_yellow_text></standard></DOM></FIELD>
+	<FIELD name='st_text'><DOM><standard>Your experience as a customer has the highest priority for us.</standard></DOM></FIELD>
+	<FIELD name='st_jumbo_headline'><TEXT>Customer experiences</TEXT></FIELD>
+	<FIELD name='st_button'><LINK><CMS_LINK linktemplate="button_with_link" type="genericLink"><TEMPLATECONTENT><CMS_VALUE name="lt_button_text"><LANG id="§" set="1"><TEXT>Company</TEXT></LANG></CMS_VALUE><CMS_VALUE name="lt_link_toggle"><LANG id="§" set="1"><SEL><VALUE>internal</VALUE></SEL></LANG></CMS_VALUE><CMS_VALUE name="lt_product_link"><LANG id="§" set="0"/></CMS_VALUE><CMS_VALUE name="lt_internal"><LANG id="§" set="1"><UID>company</UID><UIDTYPE>SITESTORE_LEAF</UIDTYPE><REMOTE/></LANG></CMS_VALUE><CMS_VALUE name="lt_url"><LANG id="§" set="0"/></CMS_VALUE></TEMPLATECONTENT></CMS_LINK></LINK></FIELD>
+</FIELDS>

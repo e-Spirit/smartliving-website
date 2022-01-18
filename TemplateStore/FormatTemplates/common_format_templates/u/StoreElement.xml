@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="-637165435247599258" name="u">
+	<LANG displayname="Underlined" language="EN"/>
+	<LANG displayname="Unterstrichen" language="DE"/>
+	<style cdata="" quote="1" system="1" tag="u" view="marked">
+		<attr name="align" value="LEFT"/>
+		<attr name="font-style" value="underline"/>
+		<attr name="font" value="sansserif"/>
+		<attr name="name" value="Underline"/>
+		<render>
+			<channel conversion="Convert HTML" name="html" templateSetId="9062318847741885912"/>
+		</render>
+	</style>
+</FORMATTEMPLATE>

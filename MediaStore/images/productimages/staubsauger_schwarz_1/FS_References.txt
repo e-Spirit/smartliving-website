@@ -1,0 +1,12 @@
+[self]
+uid=staubsauger_schwarz_1
+gid=49661ea9-50dd-41c8-a393-03b1b579590f
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+
+[requiredProjectId]
+uid=metadata
+gid=70a3c894-c1c8-4a8b-ac05-378c1699a025
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
+

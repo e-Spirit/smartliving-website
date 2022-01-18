@@ -1,0 +1,6 @@
+[self]
+uid=persephone
+gid=d09a4936-6650-45c4-823e-adb36dc9a454
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+

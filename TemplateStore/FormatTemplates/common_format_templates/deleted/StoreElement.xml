@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="-4931423633600633814" name="deleted">
+	<LANG displayname="Deleted" language="EN"/>
+	<LANG displayname="Gelöscht" language="DE"/>
+	<style system="1" tag="deleted" view="inline" visible="0">
+		<attr name="align" value="LEFT"/>
+		<attr name="color" value="#aa1e5d"/>
+		<attr name="font-style" value="strikeout"/>
+		<attr name="font" value="sansserif"/>
+		<attr name="name" value="deleted"/>
+		<render>
+			<channel conversion="Convert HTML" name="html" templateSetId="9062318847741885912"/>
+		</render>
+	</style>
+</FORMATTEMPLATE>

@@ -1,0 +1,11 @@
+<CMS_HEADER>
+	<CMS_FUNCTION name="contentSelect" resultname="fr_translations">
+		<CMS_PARAM name="schema" value="global"/>
+		<QUERY entityType="translations">
+		</QUERY>
+	</CMS_FUNCTION>
+</CMS_HEADER>
+$CMS_SET(translations, {:})$
+$CMS_FOR(translation, fr_translations)$
+	$CMS_SET(void, translations.put(translation.key, translation.value))$
+$CMS_END_FOR$

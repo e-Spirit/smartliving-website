@@ -1,0 +1,6 @@
+[self]
+uid=layout
+gid=a9ecf15c-011c-44e0-89a9-51b9a94455c4
+uidType=MEDIASTORE_FOLDER
+class=de.espirit.firstspirit.store.access.mediastore.MediaFolderImpl
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="5210875652413661256" name="i">
+	<LANG displayname="Italic" language="EN"/>
+	<LANG displayname="Kursiv" language="DE"/>
+	<style cdata="" quote="" system="1" tag="i" view="marked" visible="0">
+		<attr name="align" value="LEFT"/>
+		<attr name="font-style" value="italic"/>
+		<attr name="font" value="sansserif"/>
+		<attr name="name" value="i"/>
+		<render>
+			<channel conversion="Convert HTML" name="html" templateSetId="9062318847741885912"/>
+		</render>
+	</style>
+</FORMATTEMPLATE>

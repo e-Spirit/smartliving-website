@@ -1,0 +1,6 @@
+[self]
+uid=hermes
+gid=9b159e4d-c68d-4946-92d5-9d1ba59dd211
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+

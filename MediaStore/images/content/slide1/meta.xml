@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='md_creation_date'><DATE>1637182165697</DATE></FIELD>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ {
+        "boundingBox" : {
+          "width" : 0.073170856,
+          "height" : 0.21115115,
+          "left" : 0.55872333,
+          "top" : 0.043585107
+        },
+        "ageRange" : null,
+        "smile" : null,
+        "eyeglasses" : null,
+        "sunglasses" : null,
+        "gender" : null,
+        "beard" : null,
+        "mustache" : null,
+        "eyesOpen" : null,
+        "mouthOpen" : null,
+        "emotions" : null,
+        "landmarks" : [ {
+          "type" : "eyeLeft",
+          "x" : 0.57184273,
+          "y" : 0.13171375
+        }, {
+          "type" : "eyeRight",
+          "x" : 0.60381407,
+          "y" : 0.14990951
+        }, {
+          "type" : "mouthLeft",
+          "x" : 0.57382697,
+          "y" : 0.1917023
+        }, {
+          "type" : "mouthRight",
+          "x" : 0.60090375,
+          "y" : 0.2076524
+        }, {
+          "type" : "nose",
+          "x" : 0.57998985,
+          "y" : 0.19445351
+        } ],
+        "pose" : {
+          "roll" : 14.122277,
+          "yaw" : -14.728984,
+          "pitch" : -43.015423
+        },
+        "quality" : {
+          "brightness" : 83.3847,
+          "sharpness" : 94.08263
+        },
+        "confidence" : 99.99919
+      }, {
+        "boundingBox" : {
+          "width" : 0.0631759,
+          "height" : 0.17741865,
+          "left" : 0.6663999,
+          "top" : 0.18170607
+        },
+        "ageRange" : null,
+        "smile" : null,
+        "eyeglasses" : null,
+        "sunglasses" : null,
+        "gender" : null,
+        "beard" : null,
+        "mustache" : null,
+        "eyesOpen" : null,
+        "mouthOpen" : null,
+        "emotions" : null,
+        "landmarks" : [ {
+          "type" : "eyeLeft",
+          "x" : 0.67615294,
+          "y" : 0.25187966
+        }, {
+          "type" : "eyeRight",
+          "x" : 0.6929382,
+          "y" : 0.28884232
+        }, {
+          "type" : "mouthLeft",
+          "x" : 0.6741048,
+          "y" : 0.3086076
+        }, {
+          "type" : "mouthRight",
+          "x" : 0.68816495,
+          "y" : 0.34049526
+        }, {
+          "type" : "nose",
+          "x" : 0.6668404,
+          "y" : 0.30993947
+        } ],
+        "pose" : {
+          "roll" : 47.695637,
+          "yaw" : -38.34576,
+          "pitch" : -60.05297
+        },
+        "quality" : {
+          "brightness" : 82.08658,
+          "sharpness" : 78.6435
+        },
+        "confidence" : 99.98582
+      } ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Person",
+        "confidence" : 99.67548,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.20899099,
+            "height" : 0.88708574,
+            "left" : 0.5986547,
+            "top" : 0.09757829
+          },
+          "confidence" : 99.67548
+        }, {
+          "boundingBox" : {
+            "width" : 0.25691184,
+            "height" : 0.96931434,
+            "left" : 0.44763678,
+            "top" : 0.012066138
+          },
+          "confidence" : 98.86984
+        } ],
+        "parents" : [ ]
+      }, {
+        "name" : "Human",
+        "confidence" : 99.67548,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Clothing",
+        "confidence" : 98.024185,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Apparel",
+        "confidence" : 98.024185,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Pants",
+        "confidence" : 92.26659,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Clothing"
+        } ]
+      }, {
+        "name" : "Jeans",
+        "confidence" : 69.69444,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Pants"
+        }, {
+          "name" : "Clothing"
+        } ]
+      }, {
+        "name" : "Denim",
+        "confidence" : 69.69444,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Pants"
+        }, {
+          "name" : "Clothing"
+        } ]
+      }, {
+        "name" : "Wood",
+        "confidence" : 62.88535,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Finger",
+        "confidence" : 55.518456,
+        "instances" : [ ],
+        "parents" : [ ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "2.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "5.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Clothing #Apparel #Jeans #Finger #Wood #Pants #Denim #Person #Human"
+  }
+}</TEXT></FIELD>
+</FIELDS>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ENTITY_REFS>
+	<REFS sourceType="country">
+		<SOURCE uuid="cb0f38d2-55d7-4215-9036-7b9efb9d0692">
+			<ATTR name="continent" targetType="continent">
+				<TARGET uuid="a7fa5e82-39cf-4534-8bbb-46ee6727121a"/>
+			</ATTR>
+			<ATTR name="locationsList" targetType="locations"/>
+		</SOURCE>
+	</REFS>
+</ENTITY_REFS>

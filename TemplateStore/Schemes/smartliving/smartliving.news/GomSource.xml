@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_GROUP tabs="top">
+
+    <CMS_GROUP>
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Article"/>
+        <LANGINFO lang="DE" label="Artikel"/>
+      </LANGINFOS>
+
+      <CMS_INPUT_TEXT name="title" hFill="yes" singleLine="no" useLanguages="yes">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Title"/>
+          <LANGINFO lang="DE" label="Titel"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+      <CMS_INPUT_DATE name="date" hFill="yes" preset="created" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Date"/>
+          <LANGINFO lang="DE" label="Datum"/>
+        </LANGINFOS>
+      </CMS_INPUT_DATE>
+
+      <FS_INDEX name="author" height="1" useLanguages="no" viewMode="headers">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Author"/>
+          <LANGINFO lang="DE" label="Autor"/>
+        </LANGINFOS>
+        <SOURCE name="DatasetDataAccessPlugin">
+          <TEMPLATE uid="smartliving.author"/>
+        </SOURCE>
+      </FS_INDEX>
+
+      <CMS_INPUT_DOM name="teaser" hFill="yes" useLanguages="yes">
+        <FORMATS>
+          <TEMPLATE name="standard_p_tag"/>
+          <TEMPLATE name="strong"/>
+          <TEMPLATE name="u"/>
+        </FORMATS>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Teaser text"/>
+          <LANGINFO lang="DE" label="Teasertext"/>
+        </LANGINFOS>
+      </CMS_INPUT_DOM>
+
+      <CMS_INPUT_DOM name="text" hFill="yes" useLanguages="yes">
+        <FORMATS>
+          <TEMPLATE name="standard_p_tag"/>
+          <TEMPLATE name="strong"/>
+          <TEMPLATE name="u"/>
+        </FORMATS>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Article text"/>
+          <LANGINFO lang="DE" label="Artikeltext"/>
+        </LANGINFOS>
+      </CMS_INPUT_DOM>
+
+      <FS_REFERENCE name="image" hFill="yes" imagePreview="yes" upload="yes" useLanguages="no">
+        <FILTER>
+          <HIDE type="file"/>
+          <ALLOW type="picture"/>
+        </FILTER>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Image"/>
+        </LANGINFOS>
+        <PROJECTS>
+          <LOCAL name=".">
+            <SOURCES>
+              <FOLDER name="images" store="mediastore"/>
+            </SOURCES>
+          </LOCAL>
+        </PROJECTS>
+      </FS_REFERENCE>
+
+    </CMS_GROUP>
+
+    <CMS_GROUP>
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Video"/>
+      </LANGINFOS>
+
+      <FS_INDEX name="video" height="1" useLanguages="no" viewMode="details">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="YouTube Video"/>
+        </LANGINFOS>
+        <SOURCE name="YouTube-DAP-Integration/YoutubeVideoDataAccessPlugin"/>
+      </FS_INDEX>
+
+      <FS_REFERENCE name="video_thumbnail" hFill="yes" imagePreview="yes" upload="yes" useLanguages="no">
+        <FILTER>
+          <HIDE type="file"/>
+          <ALLOW type="picture"/>
+        </FILTER>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Thumbnail"/>
+        </LANGINFOS>
+        <PROJECTS>
+          <LOCAL name=".">
+            <SOURCES>
+              <FOLDER name="images" store="mediastore"/>
+            </SOURCES>
+          </LOCAL>
+        </PROJECTS>
+      </FS_REFERENCE>
+
+    </CMS_GROUP>
+
+    <CMS_GROUP>
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Configuration"/>
+      </LANGINFOS>
+
+      <FS_INDEX name="tagging" height="3" useLanguages="no" viewMode="details">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Tags"/>
+        </LANGINFOS>
+        <SOURCE name="DatasetDataAccessPlugin">
+          <TEMPLATE uid="smartliving.tags"/>
+        </SOURCE>
+      </FS_INDEX>
+
+      <CMS_INPUT_COMBOBOX name="category" hFill="yes" singleLine="no" useLanguages="no">
+        <CMS_INCLUDE_OPTIONS type="database">
+          <LABELS>
+            <LABEL lang="*">#item.name_EN</LABEL>
+          </LABELS>
+          <TABLE>smartliving.categories</TABLE>
+        </CMS_INCLUDE_OPTIONS>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Category"/>
+        </LANGINFOS>
+      </CMS_INPUT_COMBOBOX>
+
+    </CMS_GROUP>
+
+    <CMS_GROUP>
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Distribution"/>
+      </LANGINFOS>
+
+      <CMS_INPUT_CHECKBOX name="channel" hFill="yes" useLanguages="no">
+        <ENTRIES>
+          <ENTRY value="website">
+            <LANGINFOS>
+              <LANGINFO lang="*" label="Website"/>
+            </LANGINFOS>
+          </ENTRY>
+          <ENTRY value="voice_assistant">
+            <LANGINFOS>
+              <LANGINFO lang="*" label="Voice Assistant"/>
+            </LANGINFOS>
+          </ENTRY>
+        </ENTRIES>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Distribution Channel"/>
+        </LANGINFOS>
+      </CMS_INPUT_CHECKBOX>
+
+      <CMS_INPUT_TEXTAREA name="voice_text" hFill="yes" useLanguages="yes">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Voice Assistant Text"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXTAREA>
+
+    </CMS_GROUP>
+
+  </CMS_GROUP>
+
+</CMS_MODULE>

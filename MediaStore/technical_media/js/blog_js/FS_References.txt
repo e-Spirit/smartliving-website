@@ -1,0 +1,6 @@
+[self]
+uid=blog_js
+gid=facad1a6-5371-45bb-be1f-5d2c7b34528f
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+

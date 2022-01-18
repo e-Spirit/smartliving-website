@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MEDIUM filename="hp_stage_2_53977581" id="-7446143271848735844" meta="1" type="pic" uniquedescription="hp_stage_2_53977581">
+	<LANG displayname="Backyard with a swimming pool" language="EN"/>
+	<LANG displayname="Garten mit einem Schwimmbad" language="DE"/>
+	<PICTURE>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:2202,&quot;x&quot;:2655,&quot;h&quot;:3424,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:4666,&quot;x&quot;:926,&quot;h&quot;:921,&quot;y&quot;:2167},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="2655.0,0.0,2202.0,3424.0,0,false" extension="jpg" height="560" mimetype="image/jpeg" resolutionid="product_teaser" width="360"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:5480,&quot;x&quot;:106,&quot;h&quot;:3424,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:4666,&quot;x&quot;:926,&quot;h&quot;:921,&quot;y&quot;:2167},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="106.0,0.0,5480.0,3424.0,0,false" extension="jpg" height="500" mimetype="image/jpeg" resolutionid="portrait" width="800"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:5616,&quot;x&quot;:0,&quot;h&quot;:1921,&quot;y&quot;:1351},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:4666,&quot;x&quot;:926,&quot;h&quot;:921,&quot;y&quot;:2167},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="0.0,1351.0,5616.0,1921.0,0,false" extension="jpg" height="400" mimetype="image/jpeg" resolutionid="landscape" width="1170"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:5616,&quot;x&quot;:0,&quot;h&quot;:3160,&quot;y&quot;:264},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:4666,&quot;x&quot;:926,&quot;h&quot;:921,&quot;y&quot;:2167},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="0.0,264.0,5616.0,3160.0,0,false" extension="jpg" height="1080" mimetype="image/jpeg" resolutionid="banner_slider" width="1920"/>
+		<RESOLUTION extension="jpeg" height="3424" mimetype="image/jpeg" resolutionid="ORIGINAL" width="5616"/>
+	</PICTURE>
+</MEDIUM>

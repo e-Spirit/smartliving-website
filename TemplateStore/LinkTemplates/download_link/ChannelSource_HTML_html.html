@@ -1,0 +1,4 @@
+$CMS_SET(set_lt_text, if(!lt_text.isEmpty(), lt_text, #this.template.getDisplayName(#global.language)))$	
+$CMS_SET(set_lt_link, if(!lt_link.isEmpty(), ref(lt_link), "#"))$
+$CMS_SET(set_lt_error, if(set_lt_link.equals(""), true, false))$
+<a $CMS_IF(set_lt_error)$ class="link_error" data-tooltip="$CMS_VALUE(translations.get("tooltip.reference.error"))$"$CMS_ELSE$ class="text-light-blue" $CMS_END_IF$ href="$CMS_VALUE(set_lt_link)$" target="_blank">$CMS_VALUE(set_lt_text)$</a>

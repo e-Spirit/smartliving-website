@@ -1,0 +1,12 @@
+[self]
+uid=imprint
+gid=ef7eb160-9fc9-4970-8c65-2f1125b0086c
+uidType=SITESTORE_LEAF
+class=de.espirit.firstspirit.store.access.sitestore.PageRefImpl
+
+[requiredId]
+uid=imprint
+gid=0c554225-9413-4614-a5e0-836b5f450ef7
+uidType=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.PageImpl
+

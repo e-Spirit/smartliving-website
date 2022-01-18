@@ -1,0 +1,47 @@
+
+import de.espirit.firstspirit.access.store.Store;
+import de.espirit.firstspirit.access.store.pagestore.DataProvider;
+import de.espirit.firstspirit.agency.LanguageAgent;
+import de.espirit.firstspirit.agency.StoreAgent;
+
+
+/**
+ * Opens the TranslationStudio TranslationHelper for a given Page / Section
+ *
+ * Usage: TPP_SNAP.execute('script:translationstudio_ocm_translationhelper', {
+ *          elementId: '<ElementStatus.id>', // DataProvider.getId()
+ *	    language: '<PreviewLanguage>'    // Language.getAbbreviation()
+ *        });
+ *
+ *
+ * Use it by default, by adding the following lines to the client-script:
+ *   // {@link https://docs.e-spirit.com/tpp/snap/index.html#tpp_snapoverridedefaultbutton}
+ *   TPP_SNAP.overrideDefaultButton("translate", {
+ *     getItems: () => [],
+ *     execute: ({ status: { id: elementId }, language }) =>
+ *       TPP_SNAP.execute("script:translationstudio_ocm_translationhelper",
+ *         { language, elementId })
+ *   });
+ *
+ */
+
+
+if (elementId == void || elementId == null)
+    throw new IllegalArgumentException("Missing parameter 'elementId'");
+elementId = Long.parseLong(""+elementId);
+pageStore = context.requireSpecialist(StoreAgent.TYPE).getStore(Store.Type.PAGESTORE);
+element = pageStore.getStoreElement(elementId);
+
+if (!(element instanceof DataProvider))
+    throw new IllegalArgumentException(element + " is not a DataProvider");
+
+if (language == void || language == null)
+    throw new IllegalArgumentException("Missing parameter 'language'");
+
+language = context.requireSpecialist(LanguageAgent.TYPE).getProjectLanguages(true).get(language);
+if (language == null)
+    throw new IllegalArgumentException("language " + language + " is not a project language");
+
+
+com.idmedia.translationstudio.firstspirit.api.TranslationStudio.getInlineTranslationHelperOCM(context, element, language);
+return null;

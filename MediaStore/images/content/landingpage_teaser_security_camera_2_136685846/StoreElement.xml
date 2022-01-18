@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MEDIUM filename="landingpage_teaser_security_camera_2_136685846" id="-5620047746877279031" meta="1" type="pic" uniquedescription="landingpage_teaser_security_camera_2_136685846">
+	<LANG displayname="Security camera" language="EN"/>
+	<LANG displayname="Sicherheitskamera" language="DE"/>
+	<PICTURE>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:4176,&quot;x&quot;:683,&quot;h&quot;:4175,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:2701,&quot;x&quot;:926,&quot;h&quot;:2820,&quot;y&quot;:511}},&quot;flip&quot;:false}" cropData="683.0,0.0,4176.0,4175.0,0,false" extension="jpg" height="480" mimetype="image/jpeg" resolutionid="square" width="480"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:6256,&quot;x&quot;:0,&quot;h&quot;:2140,&quot;y&quot;:852},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:2701,&quot;x&quot;:926,&quot;h&quot;:2820,&quot;y&quot;:511}},&quot;flip&quot;:false}" cropData="0.0,852.0,6256.0,2140.0,0,false" extension="jpg" height="400" mimetype="image/jpeg" resolutionid="landscape" width="1170"/>
+		<RESOLUTION extension="jpeg" height="4175" mimetype="image/jpeg" resolutionid="ORIGINAL" width="6256"/>
+	</PICTURE>
+</MEDIUM>

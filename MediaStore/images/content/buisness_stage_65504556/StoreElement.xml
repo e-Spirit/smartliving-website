@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MEDIUM filename="buisness_stage_65504556" id="5935367147854780045" meta="1" type="pic" uniquedescription="buisness_stage_65504556">
+	<LANG displayname="Buisness Stage" language="EN"/>
+	<LANG displayname="Business Gebäude" language="DE"/>
+	<PICTURE>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:2095,&quot;x&quot;:908,&quot;h&quot;:3257,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:1840,&quot;x&quot;:1000,&quot;h&quot;:1832,&quot;y&quot;:1064},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="908.0,0.0,2095.0,3257.0,0,false" extension="jpg" height="560" mimetype="image/jpeg" resolutionid="product_teaser" width="360"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:4121,&quot;x&quot;:0,&quot;h&quot;:1410,&quot;y&quot;:1251},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:1840,&quot;x&quot;:1000,&quot;h&quot;:1832,&quot;y&quot;:1064},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="0.0,1251.0,4121.0,1410.0,0,false" extension="jpg" height="400" mimetype="image/jpeg" resolutionid="landscape" width="1170"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:4121,&quot;x&quot;:0,&quot;h&quot;:2319,&quot;y&quot;:635},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:1840,&quot;x&quot;:1000,&quot;h&quot;:1832,&quot;y&quot;:1064},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="0.0,635.0,4121.0,2319.0,0,false" extension="jpg" height="1080" mimetype="image/jpeg" resolutionid="banner_slider" width="1920"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:4121,&quot;x&quot;:0,&quot;h&quot;:2577,&quot;y&quot;:461},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:1840,&quot;x&quot;:1000,&quot;h&quot;:1832,&quot;y&quot;:1064},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="0.0,461.0,4121.0,2577.0,0,false" extension="jpg" height="500" mimetype="image/jpeg" resolutionid="portrait" width="800"/>
+		<RESOLUTION extension="jpeg" height="3257" mimetype="image/jpeg" resolutionid="ORIGINAL" width="4121"/>
+	</PICTURE>
+</MEDIUM>

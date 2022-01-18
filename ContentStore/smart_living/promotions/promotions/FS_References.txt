@@ -1,0 +1,12 @@
+[self]
+uid=promotions
+gid=db8bf99c-b14a-4e0a-a876-107e603af68e
+uidType=CONTENTSTORE
+class=de.espirit.firstspirit.store.access.contentstore.Content2Impl
+
+[requiredProjectId]
+uid=smartliving.promotions
+gid=7859da34-6259-4e68-b8f6-d6f1621aa650
+uidType=TEMPLATESTORE_SCHEMA
+class=de.espirit.firstspirit.store.access.templatestore.TableTemplateImpl
+

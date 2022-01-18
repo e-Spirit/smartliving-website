@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='md_alt_text'><TEXT>New Alt Text</TEXT></FIELD>
+	<FIELD name='md_region'><SEL><VALUE>region_eu</VALUE></SEL></FIELD>
+	<FIELD name='md_country'><SEL><VALUE>country_de</VALUE></SEL></FIELD>
+	<FIELD name='md_language'><SEL><VALUE>DE</VALUE></SEL></FIELD>
+	<FIELD name='md_creation_date'><DATE>1627981234501</DATE></FIELD>
+	<FIELD name='md_licensing'><SEL><VALUE>license_cc</VALUE></SEL></FIELD>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ {
+        "boundingBox" : {
+          "width" : 0.03982689,
+          "height" : 0.18131196,
+          "left" : 0.56663173,
+          "top" : 0.2532968
+        },
+        "ageRange" : null,
+        "smile" : null,
+        "eyeglasses" : null,
+        "sunglasses" : null,
+        "gender" : null,
+        "beard" : null,
+        "mustache" : null,
+        "eyesOpen" : null,
+        "mouthOpen" : null,
+        "emotions" : null,
+        "landmarks" : [ {
+          "type" : "eyeLeft",
+          "x" : 0.5979975,
+          "y" : 0.36395586
+        }, {
+          "type" : "eyeRight",
+          "x" : 0.57844174,
+          "y" : 0.3691698
+        }, {
+          "type" : "mouthLeft",
+          "x" : 0.5961788,
+          "y" : 0.29682294
+        }, {
+          "type" : "mouthRight",
+          "x" : 0.5796336,
+          "y" : 0.30128086
+        }, {
+          "type" : "nose",
+          "x" : 0.58685595,
+          "y" : 0.3047153
+        } ],
+        "pose" : {
+          "roll" : 42.414276,
+          "yaw" : -24.61084,
+          "pitch" : -2.366492
+        },
+        "quality" : {
+          "brightness" : 47.864525,
+          "sharpness" : 7.58945
+        },
+        "confidence" : 77.297714
+      } ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Face",
+        "confidence" : 65.49711,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Halo",
+        "confidence" : 55.853863,
+        "instances" : [ ],
+        "parents" : [ ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "2.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "5.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Halo #Face"
+  }
+}</TEXT></FIELD>
+</FIELDS>

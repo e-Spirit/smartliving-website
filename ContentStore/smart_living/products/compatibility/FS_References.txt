@@ -1,0 +1,12 @@
+[self]
+uid=compatibility
+gid=8aa9c90a-690b-4cd0-87ff-b63c67a8cf3b
+uidType=CONTENTSTORE
+class=de.espirit.firstspirit.store.access.contentstore.Content2Impl
+
+[requiredProjectId]
+uid=smartliving.compatibility
+gid=331527fd-506c-42af-b70b-ddb873f12799
+uidType=TEMPLATESTORE_SCHEMA
+class=de.espirit.firstspirit.store.access.templatestore.TableTemplateImpl
+

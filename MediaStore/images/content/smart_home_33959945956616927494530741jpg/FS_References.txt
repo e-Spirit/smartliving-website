@@ -1,0 +1,12 @@
+[self]
+uid=smart_home_33959945956616927494530741jpg
+gid=2bfa3ae7-662e-439a-bc23-f767d78133f3
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+
+[requiredProjectId]
+uid=metadata
+gid=70a3c894-c1c8-4a8b-ac05-378c1699a025
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
+

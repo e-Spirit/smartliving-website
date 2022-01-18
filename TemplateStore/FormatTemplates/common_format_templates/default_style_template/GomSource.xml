@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_INPUT_COMBOBOX name="bgcolor" hFill="yes" sortOrder="ascending" useLanguages="no">
+    <ENTRIES>
+      <ENTRY value="">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="White"/>
+          <LANGINFO lang="DE" label="Weiß"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="#FF0000">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Light red"/>
+          <LANGINFO lang="DE" label="Hellrot"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="#800000">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Dark red"/>
+          <LANGINFO lang="DE" label="Dunkelrot"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="#00FF00">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Light green"/>
+          <LANGINFO lang="DE" label="Hellgrün"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="#008000">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Dark green"/>
+          <LANGINFO lang="DE" label="Dunkelgrün"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="#0000FF">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Light blue"/>
+          <LANGINFO lang="DE" label="Hellblau"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="#000080">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Dark blue"/>
+          <LANGINFO lang="DE" label="Dunkelblau"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="#FFFF00">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Yellow"/>
+          <LANGINFO lang="DE" label="Gelb"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="#C0C0C0">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Silver"/>
+          <LANGINFO lang="DE" label="Silber"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="#808080">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Gray"/>
+          <LANGINFO lang="DE" label="Grau"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="#000000">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Black"/>
+          <LANGINFO lang="DE" label="Schwarz"/>
+        </LANGINFOS>
+      </ENTRY>
+    </ENTRIES>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Background color"/>
+      <LANGINFO lang="DE" label="Hintergrundfarbe"/>
+    </LANGINFOS>
+  </CMS_INPUT_COMBOBOX>
+
+  <CMS_INPUT_COMBOBOX name="color" hFill="yes" sortOrder="ascending" useLanguages="no">
+    <ENTRIES>
+      <ENTRY value="#FFFFFF">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="White"/>
+          <LANGINFO lang="DE" label="Weiß"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="#FF0000">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Light red"/>
+          <LANGINFO lang="DE" label="Hellrot"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="#800000">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Dark red"/>
+          <LANGINFO lang="DE" label="Dunkelrot"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="#00FF00">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Light green"/>
+          <LANGINFO lang="DE" label="Hellgrün"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="#008000">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Dark green"/>
+          <LANGINFO lang="DE" label="Dunkelgrün"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="#0000FF">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Light blue"/>
+          <LANGINFO lang="DE" label="Hellblau"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="#000080">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Dark blue"/>
+          <LANGINFO lang="DE" label="Dunkelblau"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="#FFFF00">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Yellow"/>
+          <LANGINFO lang="DE" label="Gelb"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="#C0C0C0">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Silver"/>
+          <LANGINFO lang="DE" label="Silber"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="#808080">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Gray"/>
+          <LANGINFO lang="DE" label="Grau"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Black"/>
+          <LANGINFO lang="DE" label="Schwarz"/>
+        </LANGINFOS>
+      </ENTRY>
+    </ENTRIES>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Font color"/>
+      <LANGINFO lang="DE" label="Schriftfarbe"/>
+    </LANGINFOS>
+  </CMS_INPUT_COMBOBOX>
+
+  <CMS_INPUT_RADIOBUTTON name="align" gridHeight="1" gridWidth="4" hFill="yes" useLanguages="no">
+    <ENTRIES>
+      <ENTRY value="">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Left"/>
+          <LANGINFO lang="DE" label="Linksbündig"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="center">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Centre"/>
+          <LANGINFO lang="DE" label="Zentriert"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="right">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Right"/>
+          <LANGINFO lang="DE" label="Rechtsbündig"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="block">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Justify"/>
+          <LANGINFO lang="DE" label="Blocksatz"/>
+        </LANGINFOS>
+      </ENTRY>
+    </ENTRIES>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Horizontal alignment"/>
+      <LANGINFO lang="DE" label="Horizontale Ausrichtung"/>
+    </LANGINFOS>
+  </CMS_INPUT_RADIOBUTTON>
+
+</CMS_MODULE>

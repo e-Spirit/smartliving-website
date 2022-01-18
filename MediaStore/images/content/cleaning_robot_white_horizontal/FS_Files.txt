@@ -1,0 +1,5 @@
+# mimeType        name
+text/plain;UTF-8  FS_Info.txt
+text/plain;UTF-8  FS_References.txt
+image/jpeg        Picture_cleaning_robot_white_horizontal_ORIGINAL.jpeg
+text/xml;UTF-8    StoreElement.xml

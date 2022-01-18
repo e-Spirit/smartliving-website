@@ -1,0 +1,39 @@
+<!-- Interactive Image SECTION START -->
+<div class=" bg-gray square_shape2" >
+	<div class="section-content"$CMS_VALUE(editorId(reloadPreview: true))$>
+		<div class="container">
+		$CMS_IF(!st_headline.isEmpty)$
+			<h3 class="font-40 font-weight-300" $CMS_VALUE(editorId(editorName:"st_headline"))$>$CMS_VALUE(st_headline)$</h3>
+		$CMS_END_IF$
+        	<div class="row">        
+				<div class="col-md-8 col-sm-12">
+                	<div class="item-interactive">
+					$CMS_IF(!st_imagemap.isEmpty)$
+                    	<img src="$CMS_REF(st_imagemap)$" alt="Imagemap" >
+                        $CMS_FOR(area, st_imagemap.areas)$
+       					<span id="marker$CMS_VALUE(#for.index)$"> <img src="$CMS_REF(media:"create_section_64")$"> </span>
+       						<a href="#test-popup" class="open-popup-link hidden-md hidden-lg" id="popup$CMS_VALUE(#for.index)$">  
+                            <span> <img src="$CMS_REF(media:"create_section_64")$" > </span></a>
+    									$CMS_END_FOR$
+								$CMS_END_IF$										   
+                                </div>
+                            </div>  
+                            <div id="mapTarget" class="col-md-4 col-sm-6 interactive-image p-t30 text-black" style="display: none;">
+                                <h3 class="interactive-headline text-uppercase"></h3>
+								<img src="" class="interactive-response" />
+								<div class="interactive-text">
+									<p>/p>
+                            	</div>
+							    <div id="test-popup" class="white-popup mfp-hide">
+                                    <h2 class="popup-title"></h2>
+                                    <img src="" class="popup-image">
+                                 	<p class="popup-text-of-product"></p>
+                                </div>
+                        	</div>
+                  		</div>
+                  	</div>
+            	</div>
+        <!-- Interactive Image SECTION END -->
+    
+$CMS_RENDER(template:"interactive_image")$
+  

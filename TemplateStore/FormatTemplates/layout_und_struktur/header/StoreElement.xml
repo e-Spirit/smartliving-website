@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="8225145934362896544" name="header">
+	<LANG displayname="Header" language="EN"/>
+	<LANG displayname="Kopfzeile" language="DE"/>
+	<style tag="header" view="marked">
+		<attr name="align" value="left"/>
+		<render/>
+	</style>
+</FORMATTEMPLATE>

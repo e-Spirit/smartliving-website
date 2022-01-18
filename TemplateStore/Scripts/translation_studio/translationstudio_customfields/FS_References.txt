@@ -1,0 +1,6 @@
+[self]
+uid=translationstudio_customfields
+gid=b759c03f-54f6-42d8-9bca-42441881564e
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
+

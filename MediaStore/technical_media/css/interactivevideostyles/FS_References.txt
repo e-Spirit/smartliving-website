@@ -1,0 +1,6 @@
+[self]
+uid=interactivevideostyles
+gid=e5437acb-2d5f-439d-a5c8-bb2efc1da39e
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+

@@ -1,0 +1,6 @@
+[self]
+uid=global_footer
+gid=af3cde69-3930-4953-a4d5-06a142e23fff
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
+

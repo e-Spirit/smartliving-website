@@ -1,0 +1,79 @@
+/*
+
+	This format template allows you to add custom input fields to all TranslationStudio workflow
+    forms.
+
+    To do so, please do the following:
+
+    Edit the comment field and set to either
+
+        tabbed
+
+    or
+
+        form
+
+    KEEP LOWERCASE!
+
+    tabbed - adds the form to the "additional information" tab at the end of the workflow form
+    form - adds the form to the bottom of the request form
+
+    THE CMS_COMMENT TAG    
+
+                    H A S    
+
+    TO BE THE FIRST ELEMENT INSIDE THE CMS_MODULE
+
+    1st: Add input components to the this FORM
+
+        You may add the following components:
+
+            CMS_INPUT_TEXT
+            CMS_INPUT_TEXTAREA 
+
+            CMS_INPUT_COMBOBOX
+            CMS_INPUT_RADIOBUTTON
+
+            CMS_INPUT_DATE
+
+    2nd: provide form defaults
+
+        You may provide form defaults which will be set automatically
+
+    3th: add the following fields to allow for an automatic evaluation of the custom input
+
+        <CMS_INPUT_TEXT name="st_fts_custom_filename_type" hFill="yes" hidden="yes" useLanguages="no">
+            <LANGINFOS>
+              <LANGINFO lang="*" label="Filename type"/>
+            </LANGINFOS>
+        </CMS_INPUT_TEXT>
+
+        <CMS_INPUT_TEXTAREA name="st_fts_custom_file_content" hFill="yes" hidden="yes" useLanguages="no">
+            <LANGINFOS>
+              <LANGINFO lang="*" label="Custom file content"/>
+            </LANGINFOS>
+        </CMS_INPUT_TEXTAREA>
+
+
+        st_fts_custom_filename_type     
+        provide the custom file name's type, e.g. xml (will be in lowercase later)
+        
+        st_fts_custom_file_content      
+        This will be the content of the custom file. You may print the target field's value by using
+        a template value {input_component_name}
+
+        For example, to print the option value of your custom field st_custom_option_department
+        you may simply paste {st_custom_option_department}
+
+        Apart from your input components, you may access the following data
+
+        * Source Language   {source_language}
+        * Target Language   {target_language}
+        * Completion date   {completion_date}
+
+    4th: add a custom hook if necessary 
+
+        If you do not use the st_fts_custom_file_content AND st_fts_custom_filename_type fields, you may add
+        a custom hook to evaluate the input field's yourself.
+
+*/

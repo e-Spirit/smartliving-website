@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MEDIUM filename="cleaning_robot_black_horizontal" id="-4780583289670424616" meta="1" type="pic" uniquedescription="cleaning_robot_black_horizontal">
+	<LANG displayname="Black Vacuum Cleaning Robot Horizontal" language="EN"/>
+	<LANG displayname="Schwarzer Staubsaugroboter Horizontal" language="DE"/>
+	<PICTURE>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:2038,&quot;x&quot;:1356,&quot;h&quot;:3168,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:3801,&quot;x&quot;:475,&quot;h&quot;:2534,&quot;y&quot;:316},&quot;title&quot;:&quot;Image center&quot;},&quot;flip&quot;:false}" cropData="1356.0,0.0,2038.0,3168.0,0,false" extension="jpg" height="560" mimetype="image/jpeg" resolutionid="product_teaser" width="360"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:3169,&quot;x&quot;:791,&quot;h&quot;:3168,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:3801,&quot;x&quot;:475,&quot;h&quot;:2534,&quot;y&quot;:316},&quot;title&quot;:&quot;Image center&quot;},&quot;flip&quot;:false}" cropData="791.0,0.0,3169.0,3168.0,0,false" extension="jpg" height="480" mimetype="image/jpeg" resolutionid="square" width="480"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:4752,&quot;x&quot;:0,&quot;h&quot;:1625,&quot;y&quot;:770},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:3801,&quot;x&quot;:475,&quot;h&quot;:2534,&quot;y&quot;:316},&quot;title&quot;:&quot;Image center&quot;},&quot;flip&quot;:false}" cropData="0.0,770.0,4752.0,1625.0,0,false" extension="jpg" height="400" mimetype="image/jpeg" resolutionid="landscape" width="1170"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:4752,&quot;x&quot;:0,&quot;h&quot;:2674,&quot;y&quot;:247},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:3801,&quot;x&quot;:475,&quot;h&quot;:2534,&quot;y&quot;:316},&quot;title&quot;:&quot;Image center&quot;},&quot;flip&quot;:false}" cropData="0.0,247.0,4752.0,2674.0,0,false" extension="jpg" height="1080" mimetype="image/jpeg" resolutionid="banner_slider" width="1920"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:4752,&quot;x&quot;:0,&quot;h&quot;:2971,&quot;y&quot;:98},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:3801,&quot;x&quot;:475,&quot;h&quot;:2534,&quot;y&quot;:316},&quot;title&quot;:&quot;Image center&quot;},&quot;flip&quot;:false}" cropData="0.0,98.0,4752.0,2971.0,0,false" extension="jpg" height="500" mimetype="image/jpeg" resolutionid="portrait" width="800"/>
+		<RESOLUTION extension="jpeg" height="3168" mimetype="image/jpeg" resolutionid="ORIGINAL" width="4752"/>
+	</PICTURE>
+</MEDIUM>

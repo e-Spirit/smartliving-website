@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RULES>
+	<RULE>
+		<WITH>
+			<IN_GROUP name="Administrators"/>
+		</WITH>
+		<DO>
+			<PROPERTY name="VISIBLE" source="st_seconds"/>
+		</DO>
+	</RULE>
+</RULES>

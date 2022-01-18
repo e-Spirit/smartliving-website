@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="-7206948243037995145" name="inserted">
+	<LANG displayname="Eingefügt" language="DE"/>
+	<LANG displayname="Inserted" language="EN"/>
+	<style system="1" tag="inserted" view="inline" visible="0">
+		<attr name="align" value="LEFT"/>
+		<attr name="color" value="#578316"/>
+		<attr name="font-style" value="underline"/>
+		<attr name="font" value="sansserif"/>
+		<attr name="name" value="inserted"/>
+		<render>
+			<channel conversion="Convert HTML" name="html" templateSetId="9062318847741885912"/>
+		</render>
+	</style>
+</FORMATTEMPLATE>

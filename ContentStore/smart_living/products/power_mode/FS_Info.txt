@@ -1,0 +1,9 @@
+AllChildren: 1
+ExportPermissions: AllPermissions
+ExportVersion: 3.2
+HierarchicElement: true
+Language_DE: Deutsch
+Language_EN: English
+PresentationChannel_-1268668680467729278: HTML
+TemplateName_4803053730686577647: smartliving.power_mode
+TemplateSet_9062318847741885912: html

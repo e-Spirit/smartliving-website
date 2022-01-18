@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MEDIUM filename="blinds" id="4718340324179905164" meta="1" type="pic" uniquedescription="blinds">
+	<LANG displayname="Blinds" language="EN"/>
+	<LANG displayname="Jalousien" language="DE"/>
+	<PICTURE description="Blinds">
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:1219,&quot;x&quot;:650,&quot;h&quot;:417,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:246,&quot;x&quot;:1273,&quot;h&quot;:318,&quot;y&quot;:0},&quot;ox&quot;:-0.8270420498318143,&quot;oy&quot;:-0.5604230668809679,&quot;title&quot;:&quot;Face&quot;},&quot;flip&quot;:false}" cropData="650.0,0.0,1219.0,417.0,0,false" extension="jpg" height="400" mimetype="image/jpeg" resolutionid="landscape" width="1170"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:1546,&quot;x&quot;:373,&quot;h&quot;:869,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:246,&quot;x&quot;:1273,&quot;h&quot;:318,&quot;y&quot;:0},&quot;ox&quot;:-0.8270420498318143,&quot;oy&quot;:-0.5604230668809679,&quot;title&quot;:&quot;Face&quot;},&quot;flip&quot;:false}" cropData="373.0,0.0,1546.0,869.0,0,false" extension="jpg" height="1080" mimetype="image/jpeg" resolutionid="banner_slider" width="1920"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:560,&quot;x&quot;:1016,&quot;h&quot;:869,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:246,&quot;x&quot;:1273,&quot;h&quot;:318,&quot;y&quot;:0},&quot;ox&quot;:-0.8270420498318143,&quot;oy&quot;:-0.5604230668809679,&quot;title&quot;:&quot;Face&quot;},&quot;flip&quot;:false}" cropData="1016.0,0.0,560.0,869.0,0,false" extension="jpg" height="560" mimetype="image/jpeg" resolutionid="product_teaser" width="360"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:801,&quot;x&quot;:872,&quot;h&quot;:500,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:246,&quot;x&quot;:1273,&quot;h&quot;:318,&quot;y&quot;:0},&quot;ox&quot;:-0.8270420498318143,&quot;oy&quot;:-0.5604230668809679,&quot;title&quot;:&quot;Face&quot;},&quot;flip&quot;:false}" cropData="872.0,0.0,801.0,500.0,0,false" extension="jpg" height="500" mimetype="image/jpeg" resolutionid="portrait" width="800"/>
+		<RESOLUTION extension="jpg" height="869" mimetype="image/jpeg" resolutionid="ORIGINAL" width="1920"/>
+	</PICTURE>
+</MEDIUM>

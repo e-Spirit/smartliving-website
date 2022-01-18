@@ -1,0 +1,6 @@
+[self]
+uid=/smart_living/promotions
+gid=afb479f3-746d-455d-ac77-96a0457aa5a2
+store=CONTENTSTORE
+class=de.espirit.firstspirit.store.access.contentstore.ContentFolderImpl
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PAGEREF htmlname="outdoor_cams" id="-8986198548955451374" pageref="-9028957586288138903" uniquedescription="outdoorcams">
+	<CONTENTPARAMETER pagecount="1" query="231827941431346377" source="product" templateid="-4892632167028164903">
+		<PARAM class="java.util.UUID" name="category" value="4b0411e6-10d9-4d56-8be6-8066305ccb0e"/>
+	</CONTENTPARAMETER>
+	<LANG displayname="Außenkameras Übersicht" language="DE"/>
+	<LANG displayname="Outdoor Cams Overview" language="EN"/>
+	<PAGE_LANG_SPEC language="DE" showinpagegrp="1" showinsitemap="1"/>
+	<PAGE_LANG_SPEC language="EN" showinpagegrp="1" showinsitemap="1"/>
+</PAGEREF>

@@ -1,0 +1,6 @@
+[self]
+uid=smartliving.author
+gid=9543f62c-ef5b-47b1-9edd-6af5e70ab7f6
+uidType=TEMPLATESTORE_SCHEMA
+class=de.espirit.firstspirit.store.access.templatestore.TableTemplateImpl
+

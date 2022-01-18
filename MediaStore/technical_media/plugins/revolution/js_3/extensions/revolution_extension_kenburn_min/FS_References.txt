@@ -1,0 +1,6 @@
+[self]
+uid=revolution_extension_kenburn_min
+gid=e2464f5e-3028-41e0-a6c2-53cd75c68d05
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+

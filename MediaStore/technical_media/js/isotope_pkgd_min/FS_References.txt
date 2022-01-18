@@ -1,0 +1,6 @@
+[self]
+uid=isotope_pkgd_min
+gid=bf60e393-ee8a-4032-8da2-ba27f516f7b9
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+

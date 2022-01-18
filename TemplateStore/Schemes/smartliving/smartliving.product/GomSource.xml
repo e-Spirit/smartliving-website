@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_GROUP name="bezeichner" tabs="top">
+
+    <CMS_GROUP name="product">
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Product"/>
+        <LANGINFO lang="DE" label="Produkt"/>
+      </LANGINFOS>
+
+      <CMS_INPUT_TEXT name="tt_name" hFill="yes" singleLine="no" useLanguages="yes">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Product name"/>
+          <LANGINFO lang="DE" label="Produktname"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+      <CMS_INPUT_TEXTAREA name="tt_abstract" hFill="yes">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Description"/>
+          <LANGINFO lang="DE" label="Beschreibung"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXTAREA>
+
+      <CMS_INPUT_CHECKBOX name="tt_categories" hFill="yes" useLanguages="no">
+        <CMS_INCLUDE_OPTIONS type="database">
+          <LABELS>
+            <LABEL lang="*">#item.name_EN</LABEL>
+            <LABEL lang="DE">#item.name_DE</LABEL>
+          </LABELS>
+          <TABLE>smartliving.product_category</TABLE>
+        </CMS_INCLUDE_OPTIONS>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Categories"/>
+          <LANGINFO lang="DE" label="Kategorien"/>
+        </LANGINFOS>
+      </CMS_INPUT_CHECKBOX>
+
+      <CMS_INPUT_CHECKBOX name="tt_compatibility" hFill="yes" useLanguages="no">
+        <CMS_INCLUDE_OPTIONS type="database">
+          <LABELS>
+            <LABEL lang="*">#item.name_EN</LABEL>
+            <LABEL lang="DE">#item.name_DE</LABEL>
+          </LABELS>
+          <TABLE>smartliving.compatibility</TABLE>
+        </CMS_INCLUDE_OPTIONS>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Compatibility"/>
+          <LANGINFO lang="DE" label="Kompatibilität"/>
+        </LANGINFOS>
+      </CMS_INPUT_CHECKBOX>
+
+      <CMS_INPUT_DOM name="tt_delivery" hFill="yes" listConfig="sorted:Ordered[boolean],orderedStyle:Select Ordered Class[outlineNone:No outline|simpleOutline:Simple Outline|numCount:Num Count|lowerAlpha:Lower Alpha],unorderedStyle:Select unordered Style[styled:Styled|unstyled:Unstyled|circle:Circle|rightAngle:Right Angle|arrow:Simple Arrow|checked:Checked|greenChecked:Green Checked|yellowChecked:Yellow Checked|chevron:Chevron|greenArrow:Green Arrow|redCircle:Red Circle]">
+        <FORMATS>
+          <TEMPLATE name="u"/>
+        </FORMATS>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Description of the scope of delivery"/>
+          <LANGINFO lang="DE" label="Beschreibung des Lieferumfangs"/>
+        </LANGINFOS>
+        <LINKEDITORS>
+          <LINKEDITOR name="internal_link"/>
+          <LINKEDITOR name="external_link"/>
+        </LINKEDITORS>
+      </CMS_INPUT_DOM>
+
+      <FS_CATALOG name="tt_media" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Pictures"/>
+          <LANGINFO lang="DE" label="Bilder"/>
+        </LANGINFOS>
+        <TEMPLATES type="section">
+          <TEMPLATE uid="product_pictures"/>
+        </TEMPLATES>
+      </FS_CATALOG>
+
+      <CMS_INPUT_DOM name="tt_installation" hFill="yes" listConfig="sorted:Ordered[boolean],orderedStyle:Select Ordered Class[outlineNone:No outline|simpleOutline:Simple Outline|numCount:Num Count|lowerAlpha:Lower Alpha],unorderedStyle:Select unordered Style[styled:Styled|unstyled:Unstyled|circle:Circle|rightAngle:Right Angle|arrow:Simple Arrow|checked:Checked|greenChecked:Green Checked|yellowChecked:Yellow Checked|chevron:Chevron|greenArrow:Green Arrow|redCircle:Red Circle]">
+        <FORMATS>
+          <TEMPLATE name="u"/>
+        </FORMATS>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Installation guide"/>
+          <LANGINFO lang="DE" label="Anleitung zur Installation"/>
+        </LANGINFOS>
+        <LINKEDITORS>
+          <LINKEDITOR name="internal_link"/>
+          <LINKEDITOR name="external_link"/>
+        </LINKEDITORS>
+      </CMS_INPUT_DOM>
+
+      <CMS_INPUT_COMBOBOX name="tt_mode" hFill="yes" singleLine="no" useLanguages="no">
+        <CMS_INCLUDE_OPTIONS type="database">
+          <LABELS>
+            <LABEL lang="*">#item.name_EN</LABEL>
+            <LABEL lang="DE">#item.name_DE</LABEL>
+          </LABELS>
+          <TABLE>smartliving.power_mode</TABLE>
+        </CMS_INCLUDE_OPTIONS>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Power mode"/>
+          <LANGINFO lang="DE" label="Betriebsmodus"/>
+        </LANGINFOS>
+      </CMS_INPUT_COMBOBOX>
+
+      <CMS_INPUT_TEXT name="tt_price" hFill="yes" singleLine="no" useLanguages="yes">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Price"/>
+          <LANGINFO lang="DE" label="Preis"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+    </CMS_GROUP>
+
+    <CMS_GROUP name="Teaser">
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Teaser"/>
+      </LANGINFOS>
+
+      <CMS_INPUT_TEXTAREA name="tt_teaser_text" hFill="yes" useLanguages="yes">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Teaser text"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXTAREA>
+
+      <FS_REFERENCE name="tt_teaser_image" hFill="yes" upload="yes" useLanguages="no">
+        <FILTER>
+          <ALLOW type="picture"/>
+          <HIDE type="folders"/>
+        </FILTER>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Teaser image"/>
+          <LANGINFO lang="DE" label="Teaser Bild"/>
+        </LANGINFOS>
+        <PROJECTS>
+          <LOCAL name=".">
+            <SOURCES>
+              <FOLDER name="productimages" store="mediastore"/>
+            </SOURCES>
+          </LOCAL>
+        </PROJECTS>
+      </FS_REFERENCE>
+
+      <CMS_INPUT_TEXT name="tt_teaser_image_alt" hFill="yes" singleLine="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Teaser Image Alt Text"/>
+          <LANGINFO lang="*" label="Teaser Bild Alt Text"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+    </CMS_GROUP>
+
+    <CMS_GROUP name="related_products">
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Related Products"/>
+        <LANGINFO lang="DE" label="Ähnliche Produkte"/>
+      </LANGINFOS>
+
+      <CMS_INPUT_RADIOBUTTON name="tt_showrelatedproducts" hFill="yes" useLanguages="no">
+        <ENTRIES>
+          <ENTRY value="no">
+            <LANGINFOS>
+              <LANGINFO lang="*" label="Don't show related products"/>
+              <LANGINFO lang="DE" label="Keine Produktempfehlungen anzeigen"/>
+            </LANGINFOS>
+          </ENTRY>
+          <ENTRY value="man">
+            <LANGINFOS>
+              <LANGINFO lang="*" label="Show manually defined related products"/>
+              <LANGINFO lang="DE" label="Manuell definierte Produktempfehlungen anzeigen"/>
+            </LANGINFOS>
+          </ENTRY>
+        </ENTRIES>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Related Products"/>
+          <LANGINFO lang="DE" label="Produktempfehlungen"/>
+        </LANGINFOS>
+      </CMS_INPUT_RADIOBUTTON>
+
+      <FS_INDEX name="tt_relatedproducts" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Manual product recommendation"/>
+          <LANGINFO lang="DE" label="Manuelle Auswahl ähnlicher Produkte"/>
+        </LANGINFOS>
+        <SOURCE name="DatasetDataAccessPlugin">
+          <TEMPLATE uid="smartliving.product"/>
+        </SOURCE>
+      </FS_INDEX>
+
+    </CMS_GROUP>
+
+  </CMS_GROUP>
+
+</CMS_MODULE>

@@ -1,0 +1,6 @@
+[self]
+uid=/translation_studio
+gid=44cf5f7d-de9a-43e8-a7ce-37c2fc43894d
+store=CONTENTSTORE
+class=de.espirit.firstspirit.store.access.contentstore.ContentFolderImpl
+

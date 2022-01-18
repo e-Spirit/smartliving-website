@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_GROUP tabs="top">
+
+    <CMS_GROUP>
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Main text"/>
+        <LANGINFO lang="DE" label="Haupttext"/>
+      </LANGINFOS>
+
+      <CMS_INPUT_TEXT name="st_kicker" hFill="yes" maxInputLength="30" singleLine="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Kicker"/>
+          <LANGINFO lang="DE" label="Dachzeile"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+      <CMS_INPUT_DOM name="st_headline" bold="no" hFill="yes" italic="no" list="no" maxCharacters="100">
+        <FORMATS>
+          <TEMPLATE name="span_yellow_text"/>
+          <TEMPLATE name="standard"/>
+        </FORMATS>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Headline"/>
+          <LANGINFO lang="DE" label="Überschrift"/>
+        </LANGINFOS>
+        <LINKEDITORS>
+          <LINKEDITOR name="internal_link"/>
+          <LINKEDITOR name="external_link"/>
+        </LINKEDITORS>
+      </CMS_INPUT_DOM>
+
+      <CMS_INPUT_DOM name="st_text" hFill="yes" list="no">
+        <FORMATS>
+          <TEMPLATE name="standard"/>
+          <TEMPLATE name="h3"/>
+        </FORMATS>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Text"/>
+        </LANGINFOS>
+        <LINKEDITORS>
+          <LINKEDITOR name="internal_link"/>
+          <LINKEDITOR name="external_link"/>
+        </LINKEDITORS>
+      </CMS_INPUT_DOM>
+
+    </CMS_GROUP>
+
+    <CMS_GROUP>
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Picture"/>
+        <LANGINFO lang="DE" label="Bild"/>
+      </LANGINFOS>
+
+      <FS_REFERENCE name="st_picture" hFill="yes" upload="yes" useLanguages="no">
+        <FILTER>
+          <ALLOW type="media"/>
+        </FILTER>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Picture" description="Please choose a picture"/>
+          <LANGINFO lang="DE" label="Bild" description="Bitte wählen Sie ein Bild aus"/>
+        </LANGINFOS>
+        <PROJECTS>
+          <LOCAL name="." uploadFolder="content">
+            <SOURCES>
+              <FOLDER name="images" store="mediastore"/>
+            </SOURCES>
+          </LOCAL>
+        </PROJECTS>
+      </FS_REFERENCE>
+
+      <CMS_INPUT_TEXT name="st_picture_alt" hFill="yes" singleLine="no" useLanguages="yes">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Alternative text"/>
+          <LANGINFO lang="DE" label="Alternativer Text"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+    </CMS_GROUP>
+
+    <CMS_GROUP>
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Jumbo text"/>
+        <LANGINFO lang="DE" label="Jumbo Text"/>
+      </LANGINFOS>
+
+      <CMS_INPUT_TEXT name="st_jumbo_headline" singleLine="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Jumbo text under picture"/>
+          <LANGINFO lang="DE" label="Jumbo Text unterhalb des Bildes"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+    </CMS_GROUP>
+
+    <CMS_GROUP>
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Button"/>
+      </LANGINFOS>
+
+      <CMS_INPUT_LINK name="st_button">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Button Link"/>
+        </LANGINFOS>
+        <LINKEDITORS>
+          <LINKEDITOR name="button_with_link"/>
+        </LINKEDITORS>
+      </CMS_INPUT_LINK>
+
+    </CMS_GROUP>
+
+  </CMS_GROUP>
+
+</CMS_MODULE>

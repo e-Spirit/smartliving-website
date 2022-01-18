@@ -1,0 +1,6 @@
+[self]
+uid=meta_italic
+gid=1d0c041e-93da-4fd9-b81d-bcda283d3e6c
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+

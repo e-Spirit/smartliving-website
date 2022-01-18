@@ -1,0 +1,12 @@
+[self]
+uid=smartliving.product_category
+gid=7ee4c572-b0fb-454d-bca0-6f4b86f0d566
+uidType=TEMPLATESTORE_SCHEMA
+class=de.espirit.firstspirit.store.access.templatestore.TableTemplateImpl
+
+[optionalId]
+uid=prod_overview
+gid=c4660fe3-11f6-479b-b14e-08fe090c939e
+uidType=SITESTORE_LEAF
+class=de.espirit.firstspirit.store.access.sitestore.PageRefImpl
+

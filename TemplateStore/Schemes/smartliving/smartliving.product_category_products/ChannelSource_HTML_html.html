@@ -1,0 +1,43 @@
+$CMS_IF(#cs.isFirstContentRow)$
+<div class="section-full p-tb90">
+	<div class="container">
+	</div>
+	<!-- GALLERY CONTENT START -->
+	<div class="portfolio-wrap mfp-gallery work-grid clearfix">
+		<div class="container-fluid">
+			<div class="row">
+$CMS_END_IF$
+				$CMS_IF(!#row.teaser_image.isEmpty())$
+					<div $CMS_VALUE(editorId(
+							entity: #cs, 
+							view: "product", 
+							editorName: "tt_teaser_image", 
+							resolution: "product_teaser"
+							)
+					)$>
+					<div class="masonry-item $CMS_FOR(category, #row.product_categoryList)$$CMS_VALUE(category.name.replaceAll("\\s",""))$ $CMS_END_FOR$col-lg-3 col-md-6 col-sm-6 m-b30"$CMS_VALUE(editorId(entity:product, view:"product",reloadPreview:true))$>
+						<div class="wt-img-effect " >
+							<img src="$CMS_REF(#row.teaser_image, resolution:"product_teaser")$" alt="$CMS_VALUE(if(#row.teaser_image_alt.isEmpty,"",#row.teaser_image_alt.convert2()))$" >
+							<div class="overlay-bx-2 ">
+								<div class="line-amiation">
+									$CMS_IF(!ps_product_detailpage.isEmpty())$
+									<div class="text-white font-weight-300 p-a40">
+										<h2><a href="$CMS_REF(pageref:ps_product_detailpage.getUid(),contentId:#row.getId())$" class="text-white font-20 letter-spacing-4 text-uppercase">$CMS_VALUE(if(!#row.name.isEmpty(), #row.name))$</a></h2>
+										<p>$CMS_VALUE(if(!#row.teaser_text.isEmpty(), #row.teaser_text))$</p>
+										$CMS_IF(!#row.price.isEmpty())$<h5>$CMS_VALUE(translations.get("price"))$: $CMS_VALUE(#row.price)$</h5>$CMS_END_IF$
+										<a href="$CMS_REF(pageref:ps_product_detailpage.getUid(),contentId:#row.getId())$" class="v-button letter-spacing-4 font-12 text-uppercase p-l20">$CMS_VALUE(translations.get("read_more"))$</a>
+									</div>
+									$CMS_END_IF$
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>                                                                                                
+				$CMS_END_IF$ 
+$CMS_IF(#cs.isLastContentRow)$
+			</div>
+		</div>
+	</div>
+	<!-- GALLERY CONTENT END -->
+</div>    
+$CMS_END_IF$                        

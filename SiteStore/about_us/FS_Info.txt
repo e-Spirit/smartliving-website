@@ -1,0 +1,10 @@
+AllChildren: 1
+ExportPermissions: AllPermissions
+ExportVersion: 3.2
+HierarchicElement: true
+Language_DE: Deutsch
+Language_EN: English
+PresentationChannel_-1268668680467729278: HTML
+StartNodeUidType_268378056064338893: SITESTORE_FOLDER
+StartNodeUid_268378056064338893: company
+TemplateSet_9062318847741885912: html

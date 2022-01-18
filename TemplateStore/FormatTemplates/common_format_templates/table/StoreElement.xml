@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="-7698832186831548099" name="table">
+	<LANG displayname="Tabelle" language="DE"/>
+	<LANG displayname="Table" language="EN"/>
+	<style system="1" tag="table" view="table" visible="0">
+		<attr name="border-color" value="black"/>
+		<attr name="border-style" value="plain"/>
+		<attr name="display" value="block"/>
+		<render>
+			<channel conversion="Convert HTML" name="html" templateSetId="9062318847741885912"/>
+		</render>
+	</style>
+</FORMATTEMPLATE>

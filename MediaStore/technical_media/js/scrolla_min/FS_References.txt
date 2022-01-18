@@ -1,0 +1,6 @@
+[self]
+uid=scrolla_min
+gid=604eb523-fdcc-4573-9c05-f2b23ac0fc88
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+

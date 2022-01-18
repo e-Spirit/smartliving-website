@@ -1,0 +1,10 @@
+# mimeType        name
+text/plain;UTF-8  FS_Info.txt
+text/plain;UTF-8  FS_References.txt
+image/jpeg        Picture_hp_stage_2_53977581_ORIGINAL.jpeg
+image/jpeg        Picture_hp_stage_2_53977581_banner_slider.jpg
+image/jpeg        Picture_hp_stage_2_53977581_landscape.jpg
+image/jpeg        Picture_hp_stage_2_53977581_portrait.jpg
+image/jpeg        Picture_hp_stage_2_53977581_product_teaser.jpg
+text/xml;UTF-8    StoreElement.xml
+text/xml          meta.xml

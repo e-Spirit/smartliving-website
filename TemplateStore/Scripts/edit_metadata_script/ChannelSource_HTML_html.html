@@ -1,0 +1,40 @@
+//!Beanshell
+scriptFormData = context.showForm();
+//context.showActionDialog();
+//wfFormData = context.getFormData();
+
+if (scriptFormData != null) {
+	
+	
+	tmp_md_alt_text = scriptFormData.get(null, "sc_md_alt_text").get();
+	tmp_md_region = scriptFormData.get(null, "sc_md_region").get();
+	tmp_md_country = scriptFormData.get(null, "sc_md_country").get();
+	tmp_md_language = scriptFormData.get(null, "sc_md_language").get();
+	tmp_md_creation_date = scriptFormData.get(null, "sc_md_creation_date").get();
+	tmp_md_licensing = scriptFormData.get(null, "sc_md_licensing").get();
+	
+	/*
+	tmp_md_alt_text = wfFormData.get(null, "wf_md_alt_text").get();
+	tmp_md_region = wfFormData.get(null, "wf_md_region").get();
+	tmp_md_country = wfFormData.get(null, "wf_md_country").get();
+	tmp_md_language = wfFormData.get(null, "wf_md_language").get();
+	tmp_md_creation_date = wfFormData.get(null, "wf_md_creation_date").get();
+	tmp_md_licensing = wfFormData.get(null, "wf_md_licensing").get();
+	*/
+	
+	element = context.getElement();
+	element.setLock(true, true);
+
+	metaFormData = element.getMetaFormData();
+	metaFormData.get(null, "md_alt_text").set(tmp_md_alt_text);
+	metaFormData.get(null, "md_region").set(tmp_md_region);
+	metaFormData.get(null, "md_country").set(tmp_md_country);
+	metaFormData.get(null, "md_language").set(tmp_md_language);
+	metaFormData.get(null, "md_creation_date").set(tmp_md_creation_date);
+	metaFormData.get(null, "md_licensing").set(tmp_md_licensing);
+
+	element.setMetaFormData(metaFormData);
+	element.save();
+	element.setLock(false);
+}
+context.doTransition("finish");

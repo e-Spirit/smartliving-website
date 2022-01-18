@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RULES>
+	<!-- Recursion-Checkbox will only be dsiplayed in SA -->
+	<RULE>
+		<WITH>
+			<NOT>
+				<PROPERTY name="WEB" source="#global"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<PROPERTY name="VISIBLE" source="wf_releaseRecursively"/>
+		</DO>
+	</RULE>
+</RULES>

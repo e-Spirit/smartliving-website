@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RULES>
+	<RULE>
+		<WITH>
+			<EQUAL>
+				<PROPERTY name="ENTRY" source="lt_link_toggle"/>
+				<TEXT>internal</TEXT>
+			</EQUAL>
+		</WITH>
+		<DO>
+			<PROPERTY name="VISIBLE" source="lt_internal"/>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<EQUAL>
+				<PROPERTY name="ENTRY" source="lt_link_toggle"/>
+				<TEXT>product</TEXT>
+			</EQUAL>
+		</WITH>
+		<DO>
+			<PROPERTY name="VISIBLE" source="lt_product_link"/>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<EQUAL>
+				<PROPERTY name="ENTRY" source="lt_link_toggle"/>
+				<TEXT>external</TEXT>
+			</EQUAL>
+		</WITH>
+		<DO>
+			<PROPERTY name="VISIBLE" source="lt_url"/>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="lt_link_toggle"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="SAVE">
+				<PROPERTY name="VALID" source="lt_link_toggle"/>
+				<MESSAGE lang="*" text="Please select a link type!"/>
+				<MESSAGE lang="DE" text="Bitte wählen Sie einen Link Type aus!"/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<RULE>
+		<IF>
+			<EQUAL>
+				<PROPERTY name="ENTRY" source="lt_link_toggle"/>
+				<TEXT>internal</TEXT>
+			</EQUAL>
+		</IF>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="lt_internal"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="SAVE">
+				<PROPERTY name="VALID" source="lt_internal"/>
+				<MESSAGE lang="*" text="Please select a pageref!"/>
+				<MESSAGE lang="DE" text="Bitte wählen Sie eine Seite aus!"/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<RULE>
+		<IF>
+			<EQUAL>
+				<PROPERTY name="ENTRY" source="lt_link_toggle"/>
+				<TEXT>external</TEXT>
+			</EQUAL>
+		</IF>
+		<WITH>
+			<MATCHES regex="(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,})">
+				<PROPERTY name="VALUE" source="lt_url"/>
+			</MATCHES>
+		</WITH>
+		<DO>
+			<VALIDATION scope="SAVE">
+				<PROPERTY name="VALID" source="lt_url"/>
+				<MESSAGE lang="*" text="Please use a valid URL"/>
+				<MESSAGE lang="DE" text="Bitte eine valide URL nutzen"/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<RULE>
+		<IF>
+			<EQUAL>
+				<PROPERTY name="ENTRY" source="lt_link_toggle"/>
+				<TEXT>product</TEXT>
+			</EQUAL>
+		</IF>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="lt_product_link"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="SAVE">
+				<PROPERTY name="VALID" source="lt_product_link"/>
+				<MESSAGE lang="*" text="Please select a product!"/>
+				<MESSAGE lang="DE" text="Bitte wählen Sie eine Produkt aus!"/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+</RULES>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element temporal="1" version="4.0">
+		<xs:complexType uuid="8015f674-003c-41aa-9a18-5f6088839106" vName="translations">
+			<xs:sequence>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="6b398598-1d5c-463d-af1c-563f86b1f8bf" vName="changed by"/>
+				<xs:element hidden="1" javaType="java.util.UUID" length="16" nullable="1" readonly="1" type="xs:uuid" uuid="5724fd0b-b657-4dff-bcfb-26b5ff11c54e" vName="FS_GID"/>
+				<xs:element hidden="1" javaType="java.lang.Integer" type="xs:long" uuid="5325c58e-ccf7-4021-9523-5f6e29a7cc06" vName="fs_id"/>
+				<xs:element hidden="1" javaType="de.espirit.or.impl.schema.JsonValue" length="65535" nullable="1" type="xs:json" uuid="0245fb05-ebc9-42b8-86c8-fc60bc6f3b48" vName="FS_META_DATA"/>
+				<xs:element javaType="java.lang.String" length="256" nullable="1" type="xs:string" uuid="80366201-b0e5-40f8-ac3a-09874e2bdd37" vName="key"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="96276c64-9844-4e97-9dea-85dfef9203e2" vName="released by"/>
+				<xs:element javaType="java.lang.String" length="256" nullable="1" type="xs:string" uuid="a79677db-ec02-4988-a470-b484c28e2dd8" vName="value_DE"/>
+				<xs:element javaType="java.lang.String" length="256" nullable="1" type="xs:string" uuid="03c289b0-cc6f-48b4-be21-b78ab21abefb" vName="value_EN"/>
+				<xs:element hidden="1" javaType="java.awt.Color" nullable="1" type="xs:integer" uuid="41c179cc-2739-43fb-865d-a2494db90cc5" vName="wf col"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="dae837a2-704c-49e5-a63c-f36e7751fe68" vName="wf id"/>
+				<xs:element type="xs:long" uuid="82aa09dc-b612-48cb-ad45-fda959bab802" vName="fs_release_to" visible="0"/>
+				<xs:element type="xs:long" uuid="31ec357c-1729-4a22-9bc8-ad9b14a181d4" vName="fs_valid_from" visible="0"/>
+				<xs:element type="xs:long" uuid="7a838a5c-888b-421a-a306-0f99c682fec4" vName="fs_valid_to" visible="0"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key vName="pk_translations">
+			<xs:selector xpath="translations"/>
+			<xs:attribute xpath="fs_id"/>
+			<xs:attribute xpath="fs_release_to"/>
+			<xs:attribute xpath="fs_valid_from"/>
+			<xs:attribute xpath="fs_valid_to"/>
+		</xs:key>
+		<xs:complexType uuid="69b76c41-9787-434d-ac47-a49c21f40b98" vName="TRANSACTION_COUNTER" visible="0">
+			<xs:sequence>
+				<xs:element type="xs:long" uuid="9f7e5713-8af4-4076-9212-9fe0b7dac54f" vName="counter" visible="0"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key autoIncrement="1" vName="pk_TRANSACTION_COUNTER">
+			<xs:selector xpath="transaction_counter"/>
+			<xs:attribute xpath="counter"/>
+		</xs:key>
+		<meta name="version">1.1</meta>
+	</xs:element>
+</xs:schema>

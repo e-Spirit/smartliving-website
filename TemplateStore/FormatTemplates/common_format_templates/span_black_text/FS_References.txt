@@ -1,0 +1,6 @@
+[self]
+uid=span_black_text
+gid=caabc77c-0604-4df2-8eb2-38e77f8791a7
+uidType=TEMPLATESTORE_FORMATTEMPLATE
+class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
+

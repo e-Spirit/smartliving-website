@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_GROUP tabs="top">
+
+    <CMS_GROUP>
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Language Settings"/>
+      </LANGINFOS>
+
+      <CMS_LABEL bold="no" size="12">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="All languages combinations given here will be processed"/>
+        </LANGINFOS>
+      </CMS_LABEL>
+
+      <CMS_LABEL bold="yes" size="12">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="simultaneously"/>
+        </LANGINFOS>
+      </CMS_LABEL>
+
+      <CMS_LABEL bold="yes" size="12">
+        <LANGINFOS>
+          <LANGINFO lang="*" label=" "/>
+        </LANGINFOS>
+      </CMS_LABEL>
+
+      <FS_CATALOG name="pt_fts_mappings_standard" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Language combinations to be translated"/>
+        </LANGINFOS>
+        <TEMPLATES type="section">
+          <TEMPLATE uid="fts_language_mapping"/>
+        </TEMPLATES>
+      </FS_CATALOG>
+
+    </CMS_GROUP>
+
+    <CMS_GROUP>
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Technical Settings"/>
+      </LANGINFOS>
+
+      <CMS_LABEL bold="yes" size="12">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Which task is to be used to send translation requests to TranslationStudio? "/>
+        </LANGINFOS>
+      </CMS_LABEL>
+
+      <CMS_LABEL bold="no" size="10">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="See schedule management in ServerManager for available tasks and their name."/>
+        </LANGINFOS>
+      </CMS_LABEL>
+
+      <CMS_INPUT_TEXT name="pt_fts_gen_task_preview_creator" hFill="yes" singleLine="yes" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Scheduled task name to create preview files"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+      <CMS_INPUT_TEXT name="pt_fts_gen_task_queue" hFill="yes" singleLine="yes" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Scheduled task name for requests without a preview file"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+    </CMS_GROUP>
+
+  </CMS_GROUP>
+
+</CMS_MODULE>

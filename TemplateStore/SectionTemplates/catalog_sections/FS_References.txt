@@ -1,0 +1,7 @@
+[self]
+uid=/catalog_sections
+gid=044042e8-5b44-45ae-8f3b-e369813ce833
+store=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.TemplateFolderImpl
+root=de.espirit.firstspirit.store.access.templatestore.SectionTemplatesImpl
+

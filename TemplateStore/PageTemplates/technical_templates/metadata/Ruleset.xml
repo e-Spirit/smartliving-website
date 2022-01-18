@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RULES>
+	<RULE>
+		<WITH>
+			<OR>
+				<EQUAL>
+					<PROPERTY name="STORETYPE" source="#global"/>
+					<TEXT>sitestore</TEXT>
+				</EQUAL>
+				<EQUAL>
+					<PROPERTY name="STORETYPE" source="#global"/>
+					<TEXT>templatestore</TEXT>
+				</EQUAL>
+			</OR>
+		</WITH>
+		<DO>
+			<PROPERTY name="VISIBLE" source="md_keywords"/>
+			<PROPERTY name="VISIBLE" source="md_author"/>
+			<PROPERTY name="VISIBLE" source="md_robot"/>
+			<PROPERTY name="VISIBLE" source="md_description"/>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<PROPERTY name="WEB" source="#global"/>
+		</WITH>
+		<DO>
+			<NOT>
+				<PROPERTY name="VISIBLE" source="md_use_blog_js"/>
+				<PROPERTY name="VISIBLE" source="md_fts_ref_worfklow_on_import"/>
+				<PROPERTY name="VISIBLE" source="md_fts_ref_mappings"/>
+				<PROPERTY name="VISIBLE" source="md_fts_do_not_translate_element"/>
+				<PROPERTY name="VISIBLE" source="md_fts_exclude_from_translation"/>
+			</NOT>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<OR>
+				<EQUAL>
+					<PROPERTY name="STORETYPE" source="#global"/>
+					<TEXT>mediastore</TEXT>
+				</EQUAL>
+				<EQUAL>
+					<PROPERTY name="STORETYPE" source="#global"/>
+					<TEXT>templatestore</TEXT>
+				</EQUAL>
+			</OR>
+		</WITH>
+		<DO>
+			<PROPERTY name="VISIBLE" source="md_alt_text"/>
+			<PROPERTY name="VISIBLE" source="md_creation_date"/>
+			<PROPERTY name="VISIBLE" source="md_licensing"/>
+			<PROPERTY name="VISIBLE" source="md_region"/>
+			<PROPERTY name="VISIBLE" source="md_country"/>
+			<PROPERTY name="VISIBLE" source="md_language"/>
+			<NOT>
+				<PROPERTY name="VISIBLE" source="md_use_blog_js"/>
+				<PROPERTY name="VISIBLE" source="md_fts_ref_worfklow_on_import"/>
+				<PROPERTY name="VISIBLE" source="md_fts_do_not_translate_element"/>
+			</NOT>
+		</DO>
+	</RULE>
+</RULES>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="-6323137624299299806" name="b">
+	<LANG displayname="Bold" language="EN"/>
+	<LANG displayname="Fett" language="DE"/>
+	<style system="1" tag="b" view="marked" visible="0">
+		<attr name="align" value="LEFT"/>
+		<attr name="font-style" value="bold"/>
+		<attr name="font" value="sansserif"/>
+		<attr name="name" value="b"/>
+		<render>
+			<channel conversion="Convert HTML" name="html" templateSetId="9062318847741885912"/>
+		</render>
+	</style>
+</FORMATTEMPLATE>

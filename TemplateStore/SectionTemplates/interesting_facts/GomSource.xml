@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_GROUP tabs="top">
+
+    <CMS_GROUP>
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Background image"/>
+        <LANGINFO lang="DE" label="Hintergrundbild"/>
+      </LANGINFOS>
+
+      <FS_REFERENCE name="st_background_image" hFill="yes" upload="yes" useLanguages="no">
+        <FILTER>
+          <ALLOW type="picture"/>
+          <HIDE type="folders"/>
+        </FILTER>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Background image"/>
+          <LANGINFO lang="DE" label="Hintergrundbild"/>
+        </LANGINFOS>
+        <PROJECTS>
+          <LOCAL name=".">
+            <SOURCES>
+              <FOLDER name="images" store="mediastore"/>
+            </SOURCES>
+          </LOCAL>
+        </PROJECTS>
+      </FS_REFERENCE>
+
+    </CMS_GROUP>
+
+    <CMS_GROUP>
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Content"/>
+        <LANGINFO lang="DE" label="Inhalt"/>
+      </LANGINFOS>
+
+      <CMS_INPUT_TEXT name="st_tagline" hFill="yes" singleLine="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Tagline"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+      <CMS_INPUT_TEXT name="st_headline" hFill="yes" singleLine="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Headline"/>
+          <LANGINFO lang="DE" label="Überschrift"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+      <CMS_INPUT_DOM name="st_text" hFill="yes" listConfig="sorted:Ordered[boolean],orderedStyle:Select Ordered Class[outlineNone:No outline|simpleOutline:Simple Outline|numCount:Num Count|lowerAlpha:Lower Alpha],unorderedStyle:Select unordered Style[styled:Styled|unstyled:Unstyled|circle:Circle|rightAngle:Right Angle|arrow:Simple Arrow|checked:Checked|greenChecked:Green Checked|yellowChecked:Yellow Checked|chevron:Chevron|greenArrow:Green Arrow|redCircle:Red Circle]">
+        <FORMATS>
+          <TEMPLATE name="standard"/>
+          <TEMPLATE name="section_lowercase_text"/>
+          <TEMPLATE name="u"/>
+          <TEMPLATE name="h3"/>
+        </FORMATS>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Text"/>
+        </LANGINFOS>
+        <LINKEDITORS>
+          <LINKEDITOR name="internal_link"/>
+          <LINKEDITOR name="external_link"/>
+        </LINKEDITORS>
+      </CMS_INPUT_DOM>
+
+      <FS_CATALOG name="st_counters">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Counter"/>
+          <LANGINFO lang="DE" label="Zähler"/>
+        </LANGINFOS>
+        <TEMPLATES type="section">
+          <TEMPLATE uid="counter"/>
+        </TEMPLATES>
+      </FS_CATALOG>
+
+    </CMS_GROUP>
+
+  </CMS_GROUP>
+
+</CMS_MODULE>

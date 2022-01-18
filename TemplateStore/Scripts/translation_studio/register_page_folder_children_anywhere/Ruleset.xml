@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RULES>
+	<RULE>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="st_fts_ref_mappings"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="SAVE">
+				<PROPERTY name="VALID" source="st_fts_ref_mappings"/>
+				<MESSAGE lang="*" text="Please choose a valid language mapping!"/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="st_fts_ref_tickets"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="SAVE">
+				<PROPERTY name="VALID" source="st_fts_ref_tickets"/>
+				<MESSAGE lang="*" text="Please choose a valid datasource to save translation requests."/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="st_fts_ref_tickets_tpl"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="SAVE">
+				<PROPERTY name="VALID" source="st_fts_ref_tickets_tpl"/>
+				<MESSAGE lang="*" text="Please choose a valid datasource template to save translation requests."/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="st_create_preview_page"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="SAVE">
+				<PROPERTY name="VALID" source="st_create_preview_page"/>
+				<MESSAGE lang="*" text="Please decide whether to create a preview page or not."/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="st_fts_translation_regular"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="SAVE">
+				<PROPERTY name="VALID" source="st_fts_translation_regular"/>
+				<MESSAGE lang="*" text="Please choose the type of translation."/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="st_fts_toggle_include_subfolder"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="SAVE">
+				<PROPERTY name="VALID" source="st_fts_toggle_include_subfolder"/>
+				<MESSAGE lang="*" text="Please choose the amount of pages to be translated."/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+</RULES>

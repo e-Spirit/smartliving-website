@@ -1,0 +1,6 @@
+[self]
+uid=encodeproductname
+gid=e9f3e615-083a-4f09-8824-6394406c14a6
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
+

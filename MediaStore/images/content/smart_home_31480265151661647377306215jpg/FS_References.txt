@@ -1,0 +1,6 @@
+[self]
+uid=smart_home_31480265151661647377306215jpg
+gid=2547bdd9-a9da-4a3c-98a1-ca10489c5479
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+

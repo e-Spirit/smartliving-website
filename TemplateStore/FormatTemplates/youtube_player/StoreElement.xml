@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="-1643436460370610341" name="youtube_player">
+	<LANG displayname="Youtube Player" language="EN"/>
+	<style tag="youtube_player" view="marked">
+		<attr name="align" value="left"/>
+		<render/>
+	</style>
+</FORMATTEMPLATE>

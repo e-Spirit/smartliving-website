@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="-6635239681226703400" name="p">
+	<LANG displayname="Standard" language="DE"/>
+	<LANG displayname="Standard" language="EN"/>
+	<style cdata="" quote="1" system="1" tag="p" view="flow">
+		<attr name="align" value="LEFT"/>
+		<attr name="font" value="sansserif"/>
+		<attr name="name" value="Standard"/>
+		<render>
+			<channel conversion="Convert HTML" name="html" templateSetId="9062318847741885912"/>
+		</render>
+	</style>
+</FORMATTEMPLATE>

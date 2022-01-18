@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+	<TABLE name="product_category">
+		<ROW>
+			<COLUMN name="FS_GID">a6040168-d73e-48ea-93c0-bb4078555b40</COLUMN>
+			<COLUMN name="name_DE">Türschlösser</COLUMN>
+			<COLUMN name="name_EN">Door Locks</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">f0afb7f8-2168-44ea-9cf2-aaea08123dfd</COLUMN>
+			<COLUMN name="name_DE">Innenraumkameras</COLUMN>
+			<COLUMN name="name_EN">Indoor Cams</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">1cf44d1c-0217-4f47-b099-0a9529eb0c39</COLUMN>
+			<COLUMN name="name_DE">Thermostate</COLUMN>
+			<COLUMN name="name_EN">Thermostats</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">479361a4-0526-4517-a676-7822508d183c</COLUMN>
+			<COLUMN name="name_DE">Inneneinrichtung</COLUMN>
+			<COLUMN name="name_EN">Interior equipment</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">4b0411e6-10d9-4d56-8be6-8066305ccb0e</COLUMN>
+			<COLUMN name="name_DE">Kameras für den Außenbereich</COLUMN>
+			<COLUMN name="name_EN">Outdoor Cams</COLUMN>
+		</ROW>
+	</TABLE>
+</DATA>

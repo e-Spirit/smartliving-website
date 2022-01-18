@@ -1,0 +1,12 @@
+[self]
+uid=power_mode
+gid=f4034728-b259-4072-8a92-6256d35b9a8d
+uidType=CONTENTSTORE
+class=de.espirit.firstspirit.store.access.contentstore.Content2Impl
+
+[requiredProjectId]
+uid=smartliving.power_mode
+gid=95b03461-6d1e-47e6-a948-130a67c01b79
+uidType=TEMPLATESTORE_SCHEMA
+class=de.espirit.firstspirit.store.access.templatestore.TableTemplateImpl
+

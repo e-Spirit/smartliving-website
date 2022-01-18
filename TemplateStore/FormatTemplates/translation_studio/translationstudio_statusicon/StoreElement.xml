@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="-2635525660609610660" name="translationstudio_statusicon">
+	<LANG displayname="FirstSpirit TranslationStudio Status Indicator" language="DE"/>
+	<LANG displayname="FirstSpirit TranslationStudio Status Indicator" language="EN"/>
+	<style tag="translationstudio_statusicon" view="marked">
+		<attr name="align" value="left"/>
+		<render/>
+	</style>
+</FORMATTEMPLATE>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_INPUT_COMBOBOX name="st_fts_language_source" hFill="yes" singleLine="yes" useLanguages="no">
+    <CMS_INCLUDE_OPTIONS type="language">
+      <LABELS>
+        <LABEL lang="*">#item.abbreviation</LABEL>
+      </LABELS>
+    </CMS_INCLUDE_OPTIONS>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Source Language" description="Choose Source Language"/>
+      <LANGINFO lang="DE" label="Quellsprache" description="Bitte wählen Sie die Quellsprache"/>
+    </LANGINFOS>
+  </CMS_INPUT_COMBOBOX>
+
+  <CMS_INPUT_COMBOBOX name="st_fts_language_target" hFill="yes" singleLine="yes" useLanguages="no">
+    <CMS_INCLUDE_OPTIONS type="language">
+      <LABELS>
+        <LABEL lang="*">#item.abbreviation</LABEL>
+      </LABELS>
+    </CMS_INCLUDE_OPTIONS>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Target Language" description="Choose Target Language"/>
+      <LANGINFO lang="DE" label="Zielsprache" description="Bitte wählen Sie die Zielsprache"/>
+    </LANGINFOS>
+  </CMS_INPUT_COMBOBOX>
+
+  <CMS_INPUT_COMBOBOX name="st_fts_tms_project" hFill="yes" singleLine="yes" useLanguages="no">
+    <CMS_INCLUDE_OPTIONS type="public">
+      <NAME>com.idmedia.translationstudio.firstspirit.module.ConfiguredTranslationMemoryProjectListGom</NAME>
+    </CMS_INCLUDE_OPTIONS>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Translate using " description="Choose a connector"/>
+      <LANGINFO lang="DE" label="Übersetze via " description="Connector Projekt auswählen"/>
+    </LANGINFOS>
+  </CMS_INPUT_COMBOBOX>
+
+  <CMS_LABEL bold="no" size="12">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Please choose the default filesystem connector, if you do not have any connector installed."/>
+      <LANGINFO lang="DE" label="Falls kein Connector installiert ist verwenden Sie bitte den Filesystem Connector."/>
+    </LANGINFOS>
+  </CMS_LABEL>
+
+</CMS_MODULE>

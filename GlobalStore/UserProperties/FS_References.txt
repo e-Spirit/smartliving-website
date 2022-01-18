@@ -1,0 +1,6 @@
+[self]
+uid=UserProperties
+gid=8f3876ed-645c-4437-b8a0-66a2aef6d86e
+store=GLOBALSTORE
+class=de.espirit.firstspirit.store.access.globalstore.UserPropertiesImpl
+

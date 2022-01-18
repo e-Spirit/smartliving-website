@@ -1,0 +1,6 @@
+[self]
+uid=uranus
+gid=0d8aea79-7217-41ff-80d8-ce0e9b616675
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+

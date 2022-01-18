@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RULES>
+	<RULE>
+		<WITH>
+			<PROPERTY name="EMPTY" source="st_youtubeVideo"/>
+		</WITH>
+		<DO>
+			<PROPERTY name="ADD" source="st_youtubeVideo"/>
+		</DO>
+	</RULE>
+	<RULE>
+		<IF>
+			<EQUAL>
+				<PROPERTY name="MASTER" source="#global"/>
+				<PROPERTY name="LANG" source="#global"/>
+			</EQUAL>
+		</IF>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="st_youtubeVideo"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="SAVE">
+				<PROPERTY name="VALID" source="st_youtubeVideo"/>
+				<MESSAGE lang="*" text="Please provide a video"/>
+				<MESSAGE lang="DE" text="Ein Video muss angegeben werden"/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="st_itemAlignment"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="SAVE">
+				<PROPERTY name="VALID" source="st_itemAlignment"/>
+				<MESSAGE lang="*" text="This field is required"/>
+				<MESSAGE lang="DE" text="Eine Ausrichtung muss angegeben werden"/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<IN_GROUP name="Administrators"/>
+		</WITH>
+		<DO>
+			<PROPERTY name="VISIBLE" source="st_catalog"/>
+		</DO>
+	</RULE>
+	<!-- Display st_openContentCreator button only in SiteArchitect  -->
+	<ON_EVENT>
+		<WITH>
+			<PROPERTY name="WEB" source="#global"/>
+		</WITH>
+		<DO>
+			<PROPERTY name="VISIBLE" source="st_interactiveVideo"/>
+		</DO>
+	</ON_EVENT>
+</RULES>

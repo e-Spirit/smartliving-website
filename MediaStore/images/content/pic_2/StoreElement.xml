@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MEDIUM filename="pic-2" id="2632535952022056536" meta="1" type="pic" uniquedescription="pic_2">
+	<LANG displayname="Lautsprecher " language="DE"/>
+	<LANG displayname="Speaker " language="EN"/>
+	<PICTURE>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:2058,&quot;x&quot;:1531,&quot;h&quot;:3200,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:4096,&quot;x&quot;:512,&quot;h&quot;:2560,&quot;y&quot;:320},&quot;title&quot;:&quot;Image center&quot;},&quot;flip&quot;:false}" cropData="1531.0,0.0,2058.0,3200.0,0,false" extension="jpg" height="560" mimetype="image/jpeg" resolutionid="product_teaser" width="360"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:3201,&quot;x&quot;:1027,&quot;h&quot;:3200,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:3565,&quot;x&quot;:861,&quot;h&quot;:2100,&quot;y&quot;:609}},&quot;flip&quot;:false}" cropData="1027.0,0.0,3201.0,3200.0,0,false" extension="jpg" height="480" mimetype="image/jpeg" resolutionid="square" width="480"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:5120,&quot;x&quot;:0,&quot;h&quot;:1751,&quot;y&quot;:777},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:3565,&quot;x&quot;:861,&quot;h&quot;:2100,&quot;y&quot;:609}},&quot;flip&quot;:false}" cropData="0.0,777.0,5120.0,1751.0,0,false" extension="jpg" height="400" mimetype="image/jpeg" resolutionid="landscape" width="1170"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:5120,&quot;x&quot;:0,&quot;h&quot;:2880,&quot;y&quot;:160},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:4096,&quot;x&quot;:512,&quot;h&quot;:2560,&quot;y&quot;:320},&quot;title&quot;:&quot;Image center&quot;},&quot;flip&quot;:false}" cropData="0.0,160.0,5120.0,2880.0,0,false" extension="jpg" height="1080" mimetype="image/jpeg" resolutionid="banner_slider" width="1920"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:5120,&quot;x&quot;:0,&quot;h&quot;:3200,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:4096,&quot;x&quot;:512,&quot;h&quot;:2560,&quot;y&quot;:320},&quot;title&quot;:&quot;Image center&quot;},&quot;flip&quot;:false}" cropData="0.0,0.0,5120.0,3200.0,0,false" extension="jpg" height="500" mimetype="image/jpeg" resolutionid="portrait" width="800"/>
+	</PICTURE>
+</MEDIUM>

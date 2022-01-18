@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_GROUP tabs="top">
+
+    <CMS_GROUP>
+      <LANGINFOS>
+        <LANGINFO lang="*" label="General"/>
+        <LANGINFO lang="DE" label="Allgemein"/>
+      </LANGINFOS>
+
+      <FS_REFERENCE name="ps_logo" hFill="yes" useLanguages="no">
+        <FILTER>
+          <ALLOW type="picture"/>
+        </FILTER>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Logo" description="Please choose a logo"/>
+          <LANGINFO lang="DE" label="Logo" description="Bitte wählen Sie ein Logo aus"/>
+        </LANGINFOS>
+        <PROJECTS>
+          <LOCAL name=".">
+            <SOURCES>
+              <FOLDER name="logo" store="mediastore"/>
+            </SOURCES>
+          </LOCAL>
+        </PROJECTS>
+      </FS_REFERENCE>
+
+      <FS_REFERENCE name="ps_footer" hFill="yes" useLanguages="no">
+        <FILTER>
+          <ALLOW type="gcapage"/>
+        </FILTER>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Footer"/>
+        </LANGINFOS>
+        <PROJECTS>
+          <LOCAL name=".">
+            <SOURCES>
+              <FOLDER name="root" store="globalstore"/>
+            </SOURCES>
+          </LOCAL>
+        </PROJECTS>
+      </FS_REFERENCE>
+
+    </CMS_GROUP>
+
+    <CMS_GROUP>
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Seitenreferenzen"/>
+        <LANGINFO lang="EN" label="Page references"/>
+      </LANGINFOS>
+
+      <FS_REFERENCE name="ps_homepage" useLanguages="no">
+        <FILTER>
+          <ALLOW type="pageref"/>
+        </FILTER>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Homepage"/>
+        </LANGINFOS>
+        <PROJECTS>
+          <LOCAL name=".">
+            <SOURCES>
+              <FOLDER name="root" store="sitestore"/>
+            </SOURCES>
+          </LOCAL>
+        </PROJECTS>
+      </FS_REFERENCE>
+
+      <FS_REFERENCE name="ps_product_detailpage" useLanguages="no">
+        <FILTER>
+          <ALLOW type="pageref"/>
+        </FILTER>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Product Detail page"/>
+          <LANGINFO lang="DE" label="Produktdetailseite"/>
+        </LANGINFOS>
+        <PROJECTS>
+          <LOCAL name=".">
+            <SOURCES>
+              <FOLDER name="root" store="sitestore"/>
+            </SOURCES>
+          </LOCAL>
+        </PROJECTS>
+      </FS_REFERENCE>
+
+      <FS_REFERENCE name="ps_special_dealer_page" useLanguages="no">
+        <FILTER>
+          <ALLOW type="pageref"/>
+        </FILTER>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Specialized Dealer Page"/>
+          <LANGINFO lang="DE" label="Spezialisierte Händler Seite"/>
+        </LANGINFOS>
+        <PROJECTS>
+          <LOCAL name=".">
+            <SOURCES>
+              <FOLDER name="root" store="sitestore"/>
+            </SOURCES>
+          </LOCAL>
+        </PROJECTS>
+      </FS_REFERENCE>
+
+      <FS_REFERENCE name="ps_dealer_contact_detailpage" useLanguages="no">
+        <FILTER>
+          <ALLOW type="pageref"/>
+        </FILTER>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Dealer Contact Detail page"/>
+          <LANGINFO lang="DE" label="Händler Kontakt Detail Seite"/>
+        </LANGINFOS>
+        <PROJECTS>
+          <LOCAL name=".">
+            <SOURCES>
+              <FOLDER name="root" store="sitestore"/>
+            </SOURCES>
+          </LOCAL>
+        </PROJECTS>
+      </FS_REFERENCE>
+
+      <FS_REFERENCE name="ps_news_detailpage" useLanguages="no">
+        <FILTER>
+          <ALLOW type="pageref"/>
+        </FILTER>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="News Detail page"/>
+          <LANGINFO lang="DE" label="News Detail Seite"/>
+        </LANGINFOS>
+        <PROJECTS>
+          <LOCAL name=".">
+            <SOURCES>
+              <FOLDER name="root" store="sitestore"/>
+            </SOURCES>
+          </LOCAL>
+        </PROJECTS>
+      </FS_REFERENCE>
+
+      <FS_REFERENCE name="ps_news_overviewpage" useLanguages="no">
+        <FILTER>
+          <ALLOW type="pageref"/>
+        </FILTER>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="News Overview page"/>
+          <LANGINFO lang="DE" label="News Overview Seite"/>
+        </LANGINFOS>
+        <PROJECTS>
+          <LOCAL name=".">
+            <SOURCES>
+              <FOLDER name="root" store="sitestore"/>
+            </SOURCES>
+          </LOCAL>
+        </PROJECTS>
+      </FS_REFERENCE>
+
+    </CMS_GROUP>
+
+    <CMS_GROUP>
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Theming"/>
+      </LANGINFOS>
+
+      <CMS_INPUT_TEXT name="ps_button" hFill="yes" singleLine="no" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Button color"/>
+          <LANGINFO lang="DE" label="Button Farbe"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+      <CMS_INPUT_TEXT name="ps_background" hFill="yes" singleLine="no" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Background-highlighting color"/>
+          <LANGINFO lang="DE" label="Hintergrund-highlighting Farbe"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+      <CMS_INPUT_TEXT name="ps_footercolor" hFill="yes" singleLine="no" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Footer color"/>
+          <LANGINFO lang="DE" label="Footer Farbe"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+      <CMS_INPUT_TEXT name="ps_text_highlighting" hFill="yes" singleLine="no" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Text-Highlighting color"/>
+          <LANGINFO lang="DE" label="Text-Highlighing Farbe"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+      <CMS_INPUT_TEXT name="ps_banneropacity" hFill="yes" singleLine="no" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="banner opacity"/>
+          <LANGINFO lang="*" label="Banner Deckkraft"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+      <CMS_INPUT_TEXT name="ps_contentopacity" hFill="yes" singleLine="no" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="content opacity"/>
+          <LANGINFO lang="*" label="Deckkaft des Inhaltes"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+      <CMS_INPUT_TEXT name="ps_global_slider_delay" hFill="yes" singleLine="no" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="global slider delay (in MS)"/>
+          <LANGINFO lang="*" label="Globale Anzeigezeit für Slides (in MS)"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+      <CMS_INPUT_TOGGLE name="ps_global_slider_autoslide">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Activate global auto slide on slider elements"/>
+          <LANGINFO lang="DE" label="Aktiviere globales Autoslide auf Slider Elementen"/>
+        </LANGINFOS>
+      </CMS_INPUT_TOGGLE>
+
+    </CMS_GROUP>
+
+    <CMS_GROUP>
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Google Maps"/>
+      </LANGINFOS>
+
+      <CMS_INPUT_TEXT name="CONFIG_GOOGLE_MAPS_API_KEY" hFill="yes" singleLine="no" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="GOOGLE MAPS API KEY"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+    </CMS_GROUP>
+
+  </CMS_GROUP>
+
+</CMS_MODULE>

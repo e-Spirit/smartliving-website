@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="5132882055671182267" name="deleted_block">
+	<LANG displayname="Deleted (Block)" language="EN"/>
+	<LANG displayname="Gelöscht (Absatz)" language="DE"/>
+	<style attr="deleted" system="1" tag="deleted_block" view="marked" visible="0">
+		<attr name="align" value="LEFT"/>
+		<attr name="background-color" value="#f1e5ea"/>
+		<attr name="border-color" value="#bc7897"/>
+		<attr name="font" value="sansserif"/>
+		<attr name="name" value="deleted_block"/>
+		<render>
+			<channel conversion="Convert HTML" name="html" templateSetId="9062318847741885912"/>
+		</render>
+	</style>
+</FORMATTEMPLATE>

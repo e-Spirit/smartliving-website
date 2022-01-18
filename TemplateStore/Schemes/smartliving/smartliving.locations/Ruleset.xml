@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RULES>
+	<RULE>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="tt_company"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="RELEASE">
+				<PROPERTY name="VALID" source="tt_company"/>
+				<MESSAGE lang="*" text="Company must be filled"/>
+				<MESSAGE lang="de" text="Firma darf nicht leer sein."/>
+			</VALIDATION>
+			<VALIDATION scope="RELEASE">
+				<PROPERTY name="VALID" source="tt_dummy_locationtype"/>
+				<MESSAGE lang="*" text="Locationtype must be filled"/>
+				<MESSAGE lang="de" text="Locationtyp darf nicht leer sein."/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<OR>
+				<PROPERTY name="EMPTY" source="tt_website"/>
+				<MATCHES regex="https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&amp;//=]*)">
+					<PROPERTY name="VALUE" source="tt_website"/>
+				</MATCHES>
+			</OR>
+		</WITH>
+		<DO>
+			<VALIDATION scope="RELEASE">
+				<PROPERTY name="VALID" source="tt_website"/>
+				<MESSAGE lang="*" text="Please fill in complete URL, e.g. https://www.helukabel.com"/>
+				<MESSAGE lang="de" text="Bitte geben Sie eine vollständige URL an, z.B. https://www.helukabel.com"/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+</RULES>

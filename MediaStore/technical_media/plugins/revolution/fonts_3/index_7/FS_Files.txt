@@ -1,0 +1,4 @@
+# mimeType        name
+text/plain;UTF-8  FS_Info.txt
+text/plain;UTF-8  FS_References.txt
+text/xml;UTF-8    StoreElement.xml

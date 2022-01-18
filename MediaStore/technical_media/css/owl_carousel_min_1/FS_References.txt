@@ -1,0 +1,6 @@
+[self]
+uid=owl_carousel_min_1
+gid=56e898ac-3dd9-4054-88a5-6ca9df129b72
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+

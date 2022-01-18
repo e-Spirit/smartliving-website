@@ -1,0 +1,6 @@
+[self]
+uid=font_awesome
+gid=5fc5ac35-13d1-41c6-9c4f-4c934c05758f
+uidType=MEDIASTORE_FOLDER
+class=de.espirit.firstspirit.store.access.mediastore.MediaFolderImpl
+

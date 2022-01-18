@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+	<TABLE name="compatibility">
+		<ROW>
+			<COLUMN name="FS_GID">e3c88c25-6c9d-47f6-80d8-9ca826192f54</COLUMN>
+			<COLUMN name="name_DE">Amazon Alexa</COLUMN>
+			<COLUMN name="name_EN">Amazon Alexa</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">ecf088a0-e4ea-415c-a5bb-692351079c86</COLUMN>
+			<COLUMN name="name_DE">Philips Hue</COLUMN>
+			<COLUMN name="name_EN">Philips Hue</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">1c4d4e98-95bb-46e4-9743-cb99def87586</COLUMN>
+			<COLUMN name="name_DE">Apple HomeKit</COLUMN>
+			<COLUMN name="name_EN">Apple HomeKit</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">25bf7350-e063-4bfe-b558-3e325e1670ae</COLUMN>
+			<COLUMN name="name_DE">ZigBee</COLUMN>
+			<COLUMN name="name_EN">ZigBee</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">39c6816b-3f44-4394-bea4-528eb69aba50</COLUMN>
+			<COLUMN name="name_DE">Devolo Smart Home</COLUMN>
+			<COLUMN name="name_EN">Devolo Smart Home</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">4a545f52-4bf0-4474-a818-4c023a60d90a</COLUMN>
+			<COLUMN name="name_DE">Bosch Smart Home</COLUMN>
+			<COLUMN name="name_EN">Bosch Smart Home</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">6ed2a9b4-f6e7-4b80-9bfa-28f944cbb8f6</COLUMN>
+			<COLUMN name="name_DE">Google Home</COLUMN>
+			<COLUMN name="name_EN">Google Home</COLUMN>
+		</ROW>
+	</TABLE>
+</DATA>

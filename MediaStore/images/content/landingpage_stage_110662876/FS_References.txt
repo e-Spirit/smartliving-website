@@ -1,0 +1,12 @@
+[self]
+uid=landingpage_stage_110662876
+gid=6f0e7096-4261-46fb-b257-7e6a6dda797a
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+
+[requiredProjectId]
+uid=metadata
+gid=70a3c894-c1c8-4a8b-ac05-378c1699a025
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
+

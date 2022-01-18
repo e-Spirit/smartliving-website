@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MEDIUM filename="slide1" id="2390722154089139112" meta="1" type="pic" uniquedescription="slide1">
+	<LANG displayname="Couple with tablet" language="EN"/>
+	<LANG displayname="Ein Paar mit einem Tablet" language="DE"/>
+	<PICTURE>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:1003,&quot;x&quot;:656,&quot;h&quot;:627,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:328,&quot;x&quot;:1072,&quot;h&quot;:274,&quot;y&quot;:37},&quot;title&quot;:&quot;Around 2 faces&quot;},&quot;flip&quot;:false}" cropData="656.0,0.0,1003.0,627.0,0,false" extension="jpg" height="500" mimetype="image/jpeg" resolutionid="portrait" width="800"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:1545,&quot;x&quot;:341,&quot;h&quot;:869,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:328,&quot;x&quot;:1072,&quot;h&quot;:274,&quot;y&quot;:37},&quot;title&quot;:&quot;Around 2 faces&quot;},&quot;flip&quot;:false}" cropData="341.0,0.0,1545.0,869.0,0,false" extension="jpg" height="1080" mimetype="image/jpeg" resolutionid="banner_slider" width="1920"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:1658,&quot;x&quot;:262,&quot;h&quot;:568,&quot;y&quot;:11},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:328,&quot;x&quot;:1072,&quot;h&quot;:274,&quot;y&quot;:37},&quot;title&quot;:&quot;Around 2 faces&quot;},&quot;flip&quot;:false}" cropData="262.0,11.0,1658.0,568.0,0,false" extension="jpg" height="400" mimetype="image/jpeg" resolutionid="landscape" width="1170"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:560,&quot;x&quot;:908,&quot;h&quot;:869,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:328,&quot;x&quot;:1072,&quot;h&quot;:274,&quot;y&quot;:37},&quot;title&quot;:&quot;Around 2 faces&quot;},&quot;flip&quot;:false}" cropData="908.0,0.0,560.0,869.0,0,false" extension="jpg" height="560" mimetype="image/jpeg" resolutionid="product_teaser" width="360"/>
+		<RESOLUTION extension="jpg" height="869" mimetype="image/jpeg" resolutionid="ORIGINAL" width="1920"/>
+	</PICTURE>
+</MEDIUM>

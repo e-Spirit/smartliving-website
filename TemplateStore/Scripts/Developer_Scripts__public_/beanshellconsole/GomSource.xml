@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_COMMENT>
+		($Id: BeanShellConsole_GUI.xml 19171 2008-01-24 09:24:17Z gockel $)
+  </CMS_COMMENT>
+
+  <CMS_GROUP name="service">
+
+    <CMS_INPUT_COMBOBOX name="serviceName" convertEntities="none" hFill="no" noBreak="no">
+      <ENTRIES>
+        <ENTRY value="PackageManager">
+          <LANGINFOS>
+            <LANGINFO lang="*" label="PackageManager"/>
+          </LANGINFOS>
+        </ENTRY>
+        <ENTRY value="PermissionService">
+          <LANGINFOS>
+            <LANGINFO lang="*" label="PermissionService"/>
+          </LANGINFOS>
+        </ENTRY>
+        <ENTRY value="-manual-">
+          <LANGINFOS>
+            <LANGINFO lang="*" label="-manual-"/>
+          </LANGINFOS>
+        </ENTRY>
+      </ENTRIES>
+      <LANGINFOS>
+        <LANGINFO lang="*" label="ServiceName" description="Please choose the service name"/>
+      </LANGINFOS>
+    </CMS_INPUT_COMBOBOX>
+
+    <CMS_INPUT_TEXT name="manualServiceName">
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Manual service name" description="Choose -manual- in upper combobox to use this manual name"/>
+      </LANGINFOS>
+    </CMS_INPUT_TEXT>
+
+  </CMS_GROUP>
+
+</CMS_MODULE>

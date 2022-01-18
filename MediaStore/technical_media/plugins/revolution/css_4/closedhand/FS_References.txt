@@ -1,0 +1,6 @@
+[self]
+uid=closedhand
+gid=1d9ef0d1-39d7-4d51-a6f2-9e77eb6ae59a
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+

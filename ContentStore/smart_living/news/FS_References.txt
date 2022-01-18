@@ -1,0 +1,6 @@
+[self]
+uid=/smart_living/news
+gid=4d4c087a-c1a6-4ff9-bcf7-77a09f1743c0
+store=CONTENTSTORE
+class=de.espirit.firstspirit.store.access.contentstore.ContentFolderImpl
+

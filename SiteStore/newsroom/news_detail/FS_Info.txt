@@ -1,0 +1,10 @@
+AllChildren: 1
+ExportPermissions: AllPermissions
+ExportVersion: 3.2
+HierarchicElement: true
+Language_DE: Deutsch
+Language_EN: English
+PresentationChannel_-1268668680467729278: HTML
+StartNodeUidType_9081905402405159148: SITESTORE_LEAF
+StartNodeUid_9081905402405159148: news_detail
+TemplateSet_9062318847741885912: html

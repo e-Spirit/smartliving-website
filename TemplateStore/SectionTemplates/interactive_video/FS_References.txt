@@ -1,0 +1,7 @@
+[self]
+uid=/interactive_video
+gid=b916fac0-de2f-4eb7-bcc5-4dd15869d6d8
+store=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.TemplateFolderImpl
+root=de.espirit.firstspirit.store.access.templatestore.SectionTemplatesImpl
+

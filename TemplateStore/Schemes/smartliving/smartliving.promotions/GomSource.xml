@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_GROUP tabs="top">
+
+    <CMS_GROUP>
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Article"/>
+        <LANGINFO lang="DE" label="Artikel"/>
+      </LANGINFOS>
+
+      <CMS_INPUT_TEXT name="headline" hFill="yes" singleLine="no" useLanguages="yes">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Headline"/>
+          <LANGINFO lang="DE" label="Überschrift"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+      <FS_REFERENCE name="image" hFill="yes" imagePreview="yes" upload="yes" useLanguages="no">
+        <FILTER>
+          <HIDE type="file"/>
+          <ALLOW type="picture"/>
+        </FILTER>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Image"/>
+        </LANGINFOS>
+        <PROJECTS>
+          <LOCAL name=".">
+            <SOURCES>
+              <FOLDER name="images" store="mediastore"/>
+            </SOURCES>
+          </LOCAL>
+        </PROJECTS>
+      </FS_REFERENCE>
+
+      <CMS_INPUT_LINK name="link" hFill="yes" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Link"/>
+        </LANGINFOS>
+        <LINKEDITORS>
+          <LINKEDITOR name="internal_link"/>
+          <LINKEDITOR name="external_link"/>
+          <LINKEDITOR name="download_link"/>
+          <LINKEDITOR name="product_link"/>
+          <LINKEDITOR name="news_link"/>
+        </LINKEDITORS>
+      </CMS_INPUT_LINK>
+
+    </CMS_GROUP>
+
+    <CMS_GROUP>
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Configuration"/>
+      </LANGINFOS>
+
+      <FS_INDEX name="tagging" height="3" useLanguages="no" viewMode="details">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Tags"/>
+        </LANGINFOS>
+        <SOURCE name="DatasetDataAccessPlugin">
+          <TEMPLATE uid="smartliving.tags"/>
+        </SOURCE>
+      </FS_INDEX>
+
+      <CMS_INPUT_RADIOBUTTON name="mode" hFill="yes" useLanguages="no">
+        <ENTRIES>
+          <ENTRY value="light">
+            <LANGINFOS>
+              <LANGINFO lang="*" label="Light"/>
+              <LANGINFO lang="DE" label="Hell"/>
+            </LANGINFOS>
+          </ENTRY>
+          <ENTRY value="dark">
+            <LANGINFOS>
+              <LANGINFO lang="*" label="Dark"/>
+              <LANGINFO lang="DE" label="Dunkel"/>
+            </LANGINFOS>
+          </ENTRY>
+        </ENTRIES>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Mode"/>
+          <LANGINFO lang="DE" label="Erscheinungsbild"/>
+        </LANGINFOS>
+      </CMS_INPUT_RADIOBUTTON>
+
+    </CMS_GROUP>
+
+  </CMS_GROUP>
+
+</CMS_MODULE>

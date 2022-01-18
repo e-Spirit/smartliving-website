@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_INPUT_TEXT name="pt_title" hFill="yes" singleLine="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Page title"/>
+      <LANGINFO lang="DE" label="Seitentitel"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <FS_CATALOG name="pt_slider" useLanguages="yes">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Stage" description="add slides"/>
+      <LANGINFO lang="DE" label="Bühne" description="füge Slides hinzu"/>
+    </LANGINFOS>
+    <TEMPLATES type="section">
+      <TEMPLATE uid="single_slide"/>
+    </TEMPLATES>
+  </FS_CATALOG>
+
+  <FS_BUTTON
+    name="pt_create_section2"
+    hidden="yes"
+    icon="media:absatz_icon"
+    onClick="class:NewSection"
+    style="firstspirit"
+    useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Create section"/>
+      <LANGINFO lang="DE" label="Absatz anlegen"/>
+    </LANGINFOS>
+  </FS_BUTTON>
+
+  <CMS_INPUT_TOGGLE name="pt_show_chat" hidden="yes">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Show Chatbot"/>
+      <LANGINFO lang="*" label="Chatbot anzeigen"/>
+    </LANGINFOS>
+  </CMS_INPUT_TOGGLE>
+
+  <FS_BUTTON
+    name="pt_create_section"
+    hidden="yes"
+    onClick="class:NewSection"
+    onDrop="class:NewSection"
+    style="link"
+    useLanguages="no">
+    <DROPTYPES>
+      <TYPE value="section"/>
+    </DROPTYPES>
+    <LANGINFOS>
+      <LANGINFO lang="*" label=" "/>
+    </LANGINFOS>
+  </FS_BUTTON>
+
+</CMS_MODULE>

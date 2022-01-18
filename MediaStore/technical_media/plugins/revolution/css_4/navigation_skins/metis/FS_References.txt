@@ -1,0 +1,6 @@
+[self]
+uid=metis
+gid=3adce255-96a2-41ce-8d49-203dee950bd4
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+

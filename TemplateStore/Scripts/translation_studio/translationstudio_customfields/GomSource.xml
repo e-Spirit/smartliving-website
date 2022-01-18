@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_COMMENT>
+      tabbed
+    </CMS_COMMENT>
+
+  <CMS_GROUP name="sc_group_additional">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Additional Information"/>
+    </LANGINFOS>
+
+    <CMS_INPUT_TEXTAREA name="sc_message" hFill="yes" hidden="no" useLanguages="no">
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Additional Information"/>
+      </LANGINFOS>
+    </CMS_INPUT_TEXTAREA>
+
+  </CMS_GROUP>
+
+</CMS_MODULE>

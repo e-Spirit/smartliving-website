@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='md_creation_date'><DATE>1637241109995</DATE></FIELD>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Text",
+        "confidence" : 98.52774,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Number",
+        "confidence" : 97.286644,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Symbol"
+        }, {
+          "name" : "Text"
+        } ]
+      }, {
+        "name" : "Symbol",
+        "confidence" : 97.286644,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Logo",
+        "confidence" : 63.48205,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Symbol"
+        } ]
+      }, {
+        "name" : "Trademark",
+        "confidence" : 63.48205,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Symbol"
+        } ]
+      }, {
+        "name" : "Word",
+        "confidence" : 57.8974,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Alphabet",
+        "confidence" : 57.892864,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Text"
+        } ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "2.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ {
+        "detectedText" : "S",
+        "type" : "LINE",
+        "id" : 0,
+        "parentId" : null,
+        "confidence" : 90.58373,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.14459242,
+            "height" : 0.5495515,
+            "left" : 0.4057585,
+            "top" : 0.1440795
+          },
+          "polygon" : [ {
+            "x" : 0.4332972,
+            "y" : 0.1440795
+          }, {
+            "x" : 0.5503509,
+            "y" : 0.15000919
+          }, {
+            "x" : 0.52281225,
+            "y" : 0.693631
+          }, {
+            "x" : 0.4057585,
+            "y" : 0.6877013
+          } ]
+        }
+      }, {
+        "detectedText" : "e-",
+        "type" : "LINE",
+        "id" : 1,
+        "parentId" : null,
+        "confidence" : 89.96831,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.1859375,
+            "height" : 0.38541666,
+            "left" : 0.25039062,
+            "top" : 0.3111979
+          },
+          "polygon" : [ {
+            "x" : 0.25039062,
+            "y" : 0.3111979
+          }, {
+            "x" : 0.4363281,
+            "y" : 0.3111979
+          }, {
+            "x" : 0.4363281,
+            "y" : 0.69661456
+          }, {
+            "x" : 0.25039062,
+            "y" : 0.69661456
+          } ]
+        }
+      }, {
+        "detectedText" : "S",
+        "type" : "WORD",
+        "id" : 2,
+        "parentId" : 0,
+        "confidence" : 90.58373,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.105709836,
+            "height" : 0.5495515,
+            "left" : 0.42519978,
+            "top" : 0.1440795
+          },
+          "polygon" : [ {
+            "x" : 0.4332972,
+            "y" : 0.1440795
+          }, {
+            "x" : 0.5309096,
+            "y" : 0.16055425
+          }, {
+            "x" : 0.52281225,
+            "y" : 0.693631
+          }, {
+            "x" : 0.42519978,
+            "y" : 0.6771562
+          } ]
+        }
+      }, {
+        "detectedText" : "e-",
+        "type" : "WORD",
+        "id" : 3,
+        "parentId" : 1,
+        "confidence" : 89.96831,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.1859375,
+            "height" : 0.38541666,
+            "left" : 0.25039062,
+            "top" : 0.3111979
+          },
+          "polygon" : [ {
+            "x" : 0.25039062,
+            "y" : 0.3111979
+          }, {
+            "x" : 0.4363281,
+            "y" : 0.3111979
+          }, {
+            "x" : 0.4363281,
+            "y" : 0.69661456
+          }, {
+            "x" : 0.25039062,
+            "y" : 0.69661456
+          } ]
+        }
+      } ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "5.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Symbol #Text #Trademark #Alphabet #Number #Word #Logo"
+  }
+}</TEXT></FIELD>
+</FIELDS>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+	<TABLE name="contacts">
+		<ROW>
+			<COLUMN name="FS_GID">6e0765c9-3ddd-46da-b5bc-2ee03cfe00e1</COLUMN>
+			<NULL_COLUMN name="department_DE"/>
+			<COLUMN name="department_EN">Test department</COLUMN>
+			<COLUMN name="email">doe@test.com</COLUMN>
+			<COLUMN name="image">&lt;CMS_VALUE name="image" tag="FS_REFERENCE"&gt;&lt;LANG id="§" set="1"&gt;&lt;UID&gt;hp_stage_1_1&lt;/UID&gt;&lt;UIDTYPE&gt;MEDIASTORE_LEAF&lt;/UIDTYPE&gt;&lt;REMOTE/&gt;&lt;/LANG&gt;&lt;/CMS_VALUE&gt;</COLUMN>
+			<COLUMN name="name">John Doe</COLUMN>
+			<COLUMN name="phone">123456</COLUMN>
+		</ROW>
+	</TABLE>
+</DATA>

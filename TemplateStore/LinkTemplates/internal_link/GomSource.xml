@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_INPUT_TEXT name="lt_text" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Anzeigetext"/>
+      <LANGINFO lang="EN" label="Displaytext"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <FS_REFERENCE name="lt_link" hFill="yes" sections="no" useLanguages="no">
+    <FILTER>
+      <ALLOW type="pageref"/>
+    </FILTER>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Ziel"/>
+      <LANGINFO lang="EN" label="Target"/>
+    </LANGINFOS>
+    <PROJECTS>
+      <LOCAL name=".">
+        <SOURCES>
+          <FOLDER name="root" store="sitestore"/>
+        </SOURCES>
+      </LOCAL>
+    </PROJECTS>
+  </FS_REFERENCE>
+
+</CMS_MODULE>

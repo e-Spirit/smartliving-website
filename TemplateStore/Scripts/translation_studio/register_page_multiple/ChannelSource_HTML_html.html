@@ -1,0 +1,56 @@
+import com.idmedia.translationstudio.api.firstspirit.IClientWorkflowAPI;
+import com.idmedia.translationstudio.api.firstspirit.IRegisterPageOperation;
+import com.idmedia.translationstudio.api.firstspirit.ITranslationRequestMultiplePagesForm;
+import com.idmedia.translationstudio.api.firstspirit.ITranslationWorkflowFormMultiplePages;
+import de.espirit.firstspirit.access.store.templatestore.WorkflowScriptContext;
+
+
+/*************************************************
+ * Configuration
+ ************************************************/
+
+scheduled_task_no_preview = "fts_queue";
+scheduled_task_preview_files = "fts_create_preview_files";
+
+/************************************************
+ * TranslationStudio Script
+ ************************************************/
+WorkflowScriptContext wsc = (WorkflowScriptContext) context;
+
+IClientWorkflowAPI pApi = com.idmedia.translationstudio.firstspirit.api.TranslationStudio.get(wsc);
+ITranslationWorkflowFormMultiplePages pForm = pApi.requestFormFactory().createMappingsFormPagesMultipleContextFree();
+
+if (!pForm.showForm(true))
+    wsc.doTransition("cancel");
+else
+{
+    ITranslationRequestMultiplePagesForm p = pForm.getResult();
+    if (p == null)
+    {
+        wsc.doTransition("cancel");
+        return;
+    }
+
+    pApi.requestRegisterOperationFactory().requestRegisterPageOperation().register(p.getElements(), p, true);
+
+    try
+    {
+        if (p.createPreviewPage())
+            wsc.doTransition("success_preview");
+        else
+            wsc.doTransition("success_queued");
+    }
+    catch (e)
+    {
+        /* legacy */
+        context.logError("Please check your workflow (transition) permissions. There seems to be a problem here.");
+
+        if (p.createPreviewPage())
+            new com.idmedia.translationstudio.firstspirit.api.util.ExecuteGenerationTaskOperation(wsc).perform("fts_create_preview_files");
+        else
+            new com.idmedia.translationstudio.firstspirit.api.util.ExecuteGenerationTaskOperation(wsc).perform("fts_queue");
+
+        wsc.doTransition("cancel");
+    }
+
+}

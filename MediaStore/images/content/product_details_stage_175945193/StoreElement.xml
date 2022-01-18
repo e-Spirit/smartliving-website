@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MEDIUM filename="product_details_stage_175945193" id="5512730780534892112" meta="1" type="pic" uniquedescription="product_details_stage_175945193">
+	<LANG displayname="Blinds white" language="EN"/>
+	<LANG displayname="Jalousien Weiß" language="DE"/>
+	<PICTURE>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:1368,&quot;x&quot;:2542,&quot;h&quot;:2127,&quot;y&quot;:53},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:528,&quot;x&quot;:3218,&quot;h&quot;:888,&quot;y&quot;:906},&quot;ox&quot;:-0.8281295776367188,&quot;oy&quot;:-0.40857866075303817,&quot;title&quot;:&quot;Face&quot;},&quot;flip&quot;:false}" cropData="2542.0,53.0,1368.0,2127.0,0,false" extension="jpg" height="560" mimetype="image/jpeg" resolutionid="product_teaser" width="360"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:3150,&quot;x&quot;:1368,&quot;h&quot;:1969,&quot;y&quot;:86},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:528,&quot;x&quot;:3218,&quot;h&quot;:888,&quot;y&quot;:906},&quot;ox&quot;:-0.8281295776367188,&quot;oy&quot;:-0.40857866075303817,&quot;title&quot;:&quot;Face&quot;},&quot;flip&quot;:false}" cropData="1368.0,86.0,3150.0,1969.0,0,false" extension="jpg" height="500" mimetype="image/jpeg" resolutionid="portrait" width="800"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:3274,&quot;x&quot;:1317,&quot;h&quot;:1842,&quot;y&quot;:175},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:528,&quot;x&quot;:3218,&quot;h&quot;:888,&quot;y&quot;:906},&quot;ox&quot;:-0.8281295776367188,&quot;oy&quot;:-0.40857866075303817,&quot;title&quot;:&quot;Face&quot;},&quot;flip&quot;:false}" cropData="1317.0,175.0,3274.0,1842.0,0,false" extension="jpg" height="1080" mimetype="image/jpeg" resolutionid="banner_slider" width="1920"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:3986,&quot;x&quot;:1018,&quot;h&quot;:1363,&quot;y&quot;:510},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:528,&quot;x&quot;:3218,&quot;h&quot;:888,&quot;y&quot;:906},&quot;ox&quot;:-0.8281295776367188,&quot;oy&quot;:-0.40857866075303817,&quot;title&quot;:&quot;Face&quot;},&quot;flip&quot;:false}" cropData="1018.0,510.0,3986.0,1363.0,0,false" extension="jpg" height="400" mimetype="image/jpeg" resolutionid="landscape" width="1170"/>
+		<RESOLUTION extension="jpeg" height="3978" mimetype="image/jpeg" resolutionid="ORIGINAL" width="5706"/>
+	</PICTURE>
+</MEDIUM>

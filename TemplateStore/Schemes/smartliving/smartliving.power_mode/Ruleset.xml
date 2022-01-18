@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RULES>
+	<!-- Mandatory: tt_text -->
+	<RULE>
+		<WITH>
+			<PROPERTY name="EMPTY" source="tt_text"/>
+		</WITH>
+		<DO>
+			<NOT>
+				<VALIDATION scope="Save">
+					<PROPERTY name="VALID" source="tt_text"/>
+					<MESSAGE lang="*" text="Please add a text."/>
+					<MESSAGE lang="DE" text="Bitte geben sie einen Text an."/>
+				</VALIDATION>
+			</NOT>
+		</DO>
+	</RULE>
+</RULES>

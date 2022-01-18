@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <FS_REFERENCE name="tt_target_translatable_page" hFill="yes" imagePreview="no" upload="no" useLanguages="no">
+    <FILTER>
+      <ALLOW type="page"/>
+    </FILTER>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Page to be translated"/>
+    </LANGINFOS>
+  </FS_REFERENCE>
+
+  <FS_REFERENCE name="tt_ref_mapping" hFill="yes" imagePreview="no" upload="no" useLanguages="no">
+    <FILTER>
+      <ALLOW type="page"/>
+    </FILTER>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Translation Languages"/>
+    </LANGINFOS>
+  </FS_REFERENCE>
+
+  <CMS_INPUT_TOGGLE name="tt_translate_page_form" type="radio" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Translate Page Form"/>
+    </LANGINFOS>
+    <OFF>
+      <LANGINFO lang="*" label="No"/>
+    </OFF>
+    <ON>
+      <LANGINFO lang="*" label="Yes"/>
+    </ON>
+  </CMS_INPUT_TOGGLE>
+
+  <CMS_INPUT_TOGGLE name="tt_keepNontranslatables" type="radio" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Kepp non-translatables"/>
+    </LANGINFOS>
+    <OFF>
+      <LANGINFO lang="*" label="No"/>
+    </OFF>
+    <ON>
+      <LANGINFO lang="*" label="Yes"/>
+    </ON>
+  </CMS_INPUT_TOGGLE>
+
+  <CMS_INPUT_TOGGLE name="tt_isFragment" type="radio" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Is a fragment project"/>
+    </LANGINFOS>
+    <OFF>
+      <LANGINFO lang="*" label="No"/>
+    </OFF>
+    <ON>
+      <LANGINFO lang="*" label="Yes"/>
+    </ON>
+  </CMS_INPUT_TOGGLE>
+
+  <CMS_INPUT_TOGGLE
+    name="tt_fts_translation_regular"
+    type="radio"
+    hFill="yes"
+    preset="copy"
+    singleLine="no"
+    useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Translation Type"/>
+    </LANGINFOS>
+    <OFF>
+      <LANGINFO lang="*" label="Regular translation using quotes"/>
+    </OFF>
+    <ON>
+      <LANGINFO lang="*" label="Urgent translation processed immediately"/>
+    </ON>
+  </CMS_INPUT_TOGGLE>
+
+  <CMS_INPUT_TEXT name="tt_target_translate_ids" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Ids to translate (p:id:revisionNr), space separated"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_NUMBER name="tt_project_id" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Project Id"/>
+    </LANGINFOS>
+  </CMS_INPUT_NUMBER>
+
+  <CMS_INPUT_TEXT name="tt_target_schema_uid" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Schema Uid"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_TEXT name="tt_target_content2_id" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Content2 Id"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_NUMBER name="tt_target_page_id" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Page Id"/>
+    </LANGINFOS>
+  </CMS_INPUT_NUMBER>
+
+  <CMS_INPUT_DATE name="tt_translate_register_date" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Date of Registration" format="MM.dd.yyyy HH:mm"/>
+    </LANGINFOS>
+  </CMS_INPUT_DATE>
+
+  <CMS_INPUT_DATE name="tt_translate_expected_completion_date" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Date translation is due" format="MM.dd.yyyy HH:mm"/>
+    </LANGINFOS>
+  </CMS_INPUT_DATE>
+
+  <CMS_INPUT_DATE name="tt_translate_export_date" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Export Date" format="MM.dd.yyyy HH:mm"/>
+    </LANGINFOS>
+  </CMS_INPUT_DATE>
+
+  <CMS_INPUT_DATE name="tt_translate_completed_date" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Date of Import" format="MM.dd.yyyy HH:mm"/>
+    </LANGINFOS>
+  </CMS_INPUT_DATE>
+
+  <CMS_INPUT_TEXT name="tt_translate_register_user" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Initiator"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_TEXT name="tt_translate_job" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Translation Job Id"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_TEXT name="tt_translate_workflow_on_import_id" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Arbeitsablauf nach Import"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_TEXTAREA name="tt_translate_notification" hFill="yes" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Translation Message"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXTAREA>
+
+  <CMS_INPUT_TEXT name="tt_requestUid" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="request id"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_NUMBER name="tt_word_count" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Words"/>
+    </LANGINFOS>
+  </CMS_INPUT_NUMBER>
+
+</CMS_MODULE>

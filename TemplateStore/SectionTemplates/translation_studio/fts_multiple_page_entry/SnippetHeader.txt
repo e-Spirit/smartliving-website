@@ -1,0 +1,1 @@
+st_fts_page.get().getDisplayName(#global.language)

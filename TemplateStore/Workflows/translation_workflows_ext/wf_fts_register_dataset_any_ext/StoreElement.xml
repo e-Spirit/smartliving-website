@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WORKFLOW alwaysActive="1" contextfree="0" id="-2747983199453172551" name="wf_fts_register_dataset_any_ext" webedit="1" workflowid="-260653280493631833">
+	<LANG displayname="Translate datasets from ANY data source" language="DE"/>
+	<LANG displayname="Translate datasets from ANY data source" language="EN"/>
+</WORKFLOW>

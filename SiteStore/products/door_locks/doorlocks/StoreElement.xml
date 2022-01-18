@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PAGEREF htmlname="door_locks" id="-8260935432587499496" pageref="-9028957586288138903" uniquedescription="doorlocks">
+	<CONTENTPARAMETER pagecount="1" query="231827941431346377" source="product" templateid="-4892632167028164903">
+		<PARAM class="java.util.UUID" name="category" value="a6040168-d73e-48ea-93c0-bb4078555b40"/>
+	</CONTENTPARAMETER>
+	<LANG displayname="Door Locks Overview" language="EN"/>
+	<LANG displayname="Intelligente Türschlösser Übersicht" language="DE"/>
+	<PAGE_LANG_SPEC language="DE" showinpagegrp="1" showinsitemap="1"/>
+	<PAGE_LANG_SPEC language="EN" showinpagegrp="1" showinsitemap="1"/>
+</PAGEREF>

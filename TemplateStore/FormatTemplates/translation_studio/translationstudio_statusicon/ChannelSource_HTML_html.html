@@ -1,0 +1,8 @@
+$--
+
+	This format template allows you to add a status indicator icon to the FirstSpirit preview
+	
+--$$--
+--$$CMS_IF(#global.preview)$$--
+	<script type="text/javascript" src="/translationstudio/pagestatusicon?project=$CMS_VALUE(#global.project.id)$&page=$CMS_VALUE(#global.page.id)$&_t=$CMS_VALUE(#global.now.getTime())$"></script>
+--$$CMS_END_IF$

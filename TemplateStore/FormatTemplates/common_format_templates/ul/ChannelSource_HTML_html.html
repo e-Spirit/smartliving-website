@@ -1,0 +1,34 @@
+$--Map that holds all classes--$
+$CMS_SET(set_classList, {:})$
+$CMS_SET(void, set_classList.put("styled", "list-simple p-l15"))$
+$CMS_SET(void, set_classList.put("unstyled", "list-unstyled list-simple"))$
+$CMS_SET(void, set_classList.put("outlineNone", "list-num-count upper-alpha list-outline-none"))$
+$CMS_SET(void, set_classList.put("simpleOutline", "list-num-count upper-alpha list-outline"))$
+$CMS_SET(void, set_classList.put("numCount", "list-num-count"))$
+$CMS_SET(void, set_classList.put("lowerAlpha", "list-num-count lower-alpha"))$
+$CMS_SET(void, set_classList.put("circle", "list-circle"))$
+$CMS_SET(void, set_classList.put("rightAngle", "list-angle-right"))$
+$CMS_SET(void, set_classList.put("arrow", "list-arrow"))$
+$CMS_SET(void, set_classList.put("checked", "list-checked"))$
+$CMS_SET(void, set_classList.put("greenChecked", "list-check secondry"))$
+$CMS_SET(void, set_classList.put("yellowChecked", "list-check-circle primary"))$
+$CMS_SET(void, set_classList.put("chevron", "list-chevron-circle orange"))$
+$CMS_SET(void, set_classList.put("greenArrow", "list-arrow-circle green"))$
+$CMS_SET(void, set_classList.put("redCircle", "list-times-circle red"))$
+
+$CMS_IF(#list.attr("sorted") != null)$
+	$CMS_SET(set_classParam, set_classList.get(#list.attr("unorderedStyle")))$
+$CMS_ELSE$
+	$CMS_SET(set_classParam, set_classList.get("styled"))$
+$CMS_END_IF$
+
+$CMS_SET(set_listTag, "<ul class=\""+set_classParam+"\">")$
+$CMS_SET(set_listCloseTag, "</ul>")$
+
+$CMS_IF(#list.attr("sorted").equals("1"))$
+	$CMS_SET(set_classParam, set_classList.get(#list.attr("orderedStyle")))$
+	$CMS_SET(set_listTag, "<ol class=\"" + set_classParam+"\">")$
+	$CMS_SET(set_listCloseTag, "</ol>")$
+$CMS_END_IF$
+
+$CMS_VALUE(set_listTag)$$CMS_VALUE(#content)$$CMS_VALUE(set_listCloseTag)$

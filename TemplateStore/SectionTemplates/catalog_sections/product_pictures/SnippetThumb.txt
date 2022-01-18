@@ -1,0 +1,1 @@
+if(!st_media.isEmpty(), st_media, medium("new_logo_caps_1"))

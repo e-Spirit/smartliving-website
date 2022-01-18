@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_kicker'><TEXT>Ambient Assisted Living</TEXT></FIELD>
+	<FIELD name='st_headline'><DOM><standard><span_yellow_text>Vereinfachen</span_yellow_text> Sie Ihr Leben</standard></DOM></FIELD>
+	<FIELD name='st_text'><DOM><standard>Smart Home, Smart Living - es gibt viele Möglichkeiten, die Vorteile zu beschreiben, die mit moderner Technik einhergehen und so mehr Komfort und Sicherheit bieten. Menschen mit Behinderungen oder ältere Menschen können auch von einem solchen Konzept profitieren und in der Lage sein, für längere Jahre im eigenen Haus zu bleiben. <br/><br/>Ambient Assisted Living ist eine besonderes Konzept eines Smart Home. Es bietet Methoden, Konzepte, elektronische Systeme, Produkte und Dienstleistungen, die ältere Menschen oder Menschen mit Behinderungen in ihrem täglichen Leben unterstützen. <br/><br/>Die demographische Entwicklung konfrontiert uns mit verschiedenen Herausforderungen.</standard></DOM></FIELD>
+	<FIELD name='st_jumbo_headline'><TEXT>Ambient Assisted Living</TEXT></FIELD>
+	<FIELD name='st_button'><LINK/></FIELD>
+</FIELDS>

@@ -1,0 +1,10 @@
+# mimeType        name
+text/plain;UTF-8  FS_Info.txt
+text/plain;UTF-8  FS_References.txt
+image/jpeg        Picture_landingpage_teaser_security-camera_1_139050781_ORIGINAL.jpeg
+image/jpeg        Picture_landingpage_teaser_security-camera_1_139050781_banner_slider.jpg
+image/jpeg        Picture_landingpage_teaser_security-camera_1_139050781_landscape.jpg
+image/jpeg        Picture_landingpage_teaser_security-camera_1_139050781_portrait.jpg
+image/jpeg        Picture_landingpage_teaser_security-camera_1_139050781_product_teaser.jpg
+text/xml;UTF-8    StoreElement.xml
+text/xml          meta.xml

@@ -1,0 +1,161 @@
+<div class="section-full p-tb90 theming-background square_shape2" $CMS_VALUE(editorId(reloadPreview:true))$>
+	<div class="container">
+		<div class="section-content">
+			<div class="row">
+			$CMS_IF(!tt_media.isEmpty())$
+			<div class="col-md-6 col-sm-12">
+				<div class="m-about m-l50 m-r50">
+					<div class="owl-carousel about-us-carousel owl-btn-bottom-right">
+					$CMS_VALUE(tt_media)$
+					</div>
+				</div>
+			</div>
+			$CMS_END_IF$
+			<div class="col-md-6 col-sm-12 project-detail-containt bg-black square_shape3">
+				<div class="p-lr20 p-tb80">
+					<div class="bg-white p-lr30 p-tb50 text-black">
+						<h2 class="m-t0"><span class="font-34 text-uppercase" $CMS_IF(#global.preview)$$CMS_VALUE(editorId(entity:#row, view:"product", editorName:"tt_name"))$$CMS_END_IF$>$CMS_VALUE(#row.name)$</span>
+						</h2>
+						<p $CMS_IF(#global.preview)$$CMS_VALUE(editorId(editorName:"tt_abstract"))$$CMS_END_IF$>$CMS_VALUE(#row.abstract, default: "")$</p>
+						<div class="product-block">
+							<div class="row">
+								$CMS_IF(!tt_price.isEmpty())$
+								<div class="col-md-12 col-sm-12 m-b30">
+									<h2 class="m-t0"><span class="font-34 text-uppercase" $CMS_IF(#global.preview)$$CMS_VALUE(editorId(editorName:"tt_price"))$$CMS_END_IF$>$CMS_VALUE(tt_price)$ ($CMS_VALUE(translations.get("price"))$)</h2>
+								</div>
+								$CMS_END_IF$
+								<div class="col-md-6 col-sm-6 m-b30 lists-in-accordion" >
+									<h5 class="text-uppercase">$CMS_VALUE(translations.get("categories"))$</h5>
+									$CMS_IF(!#row.product_categoryList.isEmpty())$
+									<ul $CMS_IF(#global.preview)$$CMS_VALUE(editorId(editorName:"tt_categories"))$$CMS_END_IF$>
+									$CMS_FOR(for_entry, #row.product_categoryList)$
+									<li>$CMS_VALUE(for_entry.name, default:"")$</li>
+									$CMS_END_FOR$
+									</ul>
+									$CMS_END_IF$
+								</div>
+								<div class="col-md-6 col-sm-6 m-b30  lists-in-accordion">
+									<h5 class="text-uppercase">$CMS_VALUE(translations.get("compatibility"))$</h5>
+									$CMS_IF(!#row.compatibilityList.isEmpty())$
+									<ul $CMS_IF(#global.preview)$$CMS_VALUE(editorId(editorName:"tt_compatibility"))$$CMS_END_IF$>
+									$CMS_FOR(for_entry, #row.compatibilityList)$
+									<li>$CMS_VALUE(for_entry.name, default:"")$</li>
+									$CMS_END_FOR$
+									</ul>
+									$CMS_END_IF$
+								</div>
+							</div>
+							<div class="section-content p-b30">
+								<div class=" wt-accordion acc-bg-dark" id="accordion_product">
+									<div class="panel wt-panel">
+										<div class="acod-head">
+											<h6 class="acod-title text-uppercase">
+												<a data-toggle="collapse" href="#collapseOne" class="collapsed">
+												$CMS_VALUE(translations.get("delivery"))$
+												<span class="indicator"><i
+													class="fa fa-plus"></i></span>
+												</a>
+											</h6>
+										</div>
+										<div id="collapseOne" class="acod-body collapse">
+											<div class="acod-content p-tb15 lists-in-accordion" $CMS_IF(#global.preview)$$CMS_VALUE(editorId(editorName:"tt_delivery"))$$CMS_END_IF$>$CMS_VALUE(#row.delivery, default: "")$
+										</div>
+									</div>
+								</div>
+								<div class="panel wt-panel">
+									<div class="acod-head">
+										<h6 class="acod-title text-uppercase">
+											<a data-toggle="collapse" href="#collapseTwo"
+												class="collapsed">
+											$CMS_VALUE(translations.get("installation"))$
+											<span class="indicator"><i
+												class="fa fa-plus"></i></span>
+											</a>
+										</h6>
+									</div>
+									<div id="collapseTwo" class="acod-body collapse">
+										<div class="acod-content p-tb15 lists-in-accordion" $CMS_IF(#global.preview)$$CMS_VALUE(editorId(editorName:"tt_installation"))$$CMS_END_IF$>$CMS_VALUE(#row.installation, default: "")$
+									</div>
+								</div>
+							</div>
+							<div class="panel wt-panel">
+								<div class="acod-head">
+									<h6 class="acod-title text-uppercase">
+										<a data-toggle="collapse" href="#collapseThree"
+											class="collapsed">
+										$CMS_VALUE(translations.get("compatibility"))$
+										<span class="indicator"><i
+											class="fa fa-plus"></i></span>
+										</a>
+									</h6>
+								</div>
+								<div id="collapseThree" class="acod-body collapse">
+									<div class="acod-content p-tb15 lists-in-accordion">
+										<ul $CMS_IF(#global.preview)$$CMS_VALUE(editorId(editorName:"tt_compatibility"))$$CMS_END_IF$>
+										$CMS_FOR(for_entry,#row.compatibilityList)$
+										<li>$CMS_VALUE(for_entry.name, default:"")$</li>
+										$CMS_END_FOR$
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					$CMS_IF(!ps_special_dealer_page.isEmpty())$
+					<button class="theming-button m-b15 site-button m-r15 text-uppercase letter-spacing-2" type="button" onclick="javascript:location.href='$CMS_REF(ps_special_dealer_page)$';" style="float: right;">$CMS_VALUE(translations.get("searchspecdealer"))$</button>
+					$CMS_END_IF$
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+</div>
+$CMS_IF(tt_showrelatedproducts == "man" && !tt_relatedproducts.empty)$
+<!-- RELATED PRODUCTS SLIDER START -->
+        <div class="section-full p-t90 p-lr80 latest_project-outer square_shape3">
+            <!-- TITLE START -->
+            <div class="section-head text-left">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="text-uppercase font-36">$CMS_VALUE(translations.get("product_recommendations"))$</h2>
+                        <div class="wt-separator-outer">
+                            <div class="wt-separator bg-black"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- TITLE END -->
+            <!-- IMAGE CAROUSEL START -->
+            <div class="section-content">
+                <div class="owl-carousel owl-carousel-filter  owl-btn-bottom-left">
+                    $CMS_FOR(for_prod,tt_relatedproducts.values)$
+    					<!-- COLUMNS $CMS_VALUE(#for.index+1)$ -->
+	                    <div class="item fadingcol building-col">
+	                        <div class="wt-img-effect ">
+	                            <img src="$CMS_REF(for_prod.formData.tt_teaser_image, resolution:"product_teaser")$" alt="$CMS_VALUE(if(for_prod.formData.tt_teaser_image_alt.isEmpty,"",for_prod.formData.tt_teaser_image_alt.convert2()))$">
+	                            <div class="overlay-bx-2 ">
+	                                <div class="line-amiation">
+	                                    <div class="text-white  font-weight-300 p-a40">
+	                                        <h2><a href="$CMS_REF(ps_product_detailpage, contentId:for_prod.entity.id)$"
+	                                               class="text-white font-20 letter-spacing-4 text-uppercase">$CMS_VALUE(for_prod.formData.tt_name)$</a></h2>
+	                                        <p>$CMS_VALUE(for_prod.formData.tt_teaser_text, default:"")$
+	                                        </p>
+	                                        <a href="$CMS_REF(ps_product_detailpage, contentId:for_prod.entity.id)$"
+	                                           class="v-button letter-spacing-4 font-12 text-uppercase p-l20">$CMS_VALUE(translations.get("read_more"))$</a>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+					$CMS_END_FOR$
+                </div>
+            </div>
+            <div class="hilite-title p-lr20 m-tb20 text-right text-uppercase bdr-gray bdr-right">
+                <strong>$CMS_VALUE(translations.get("product_recommendations_jumbo1"))$</strong>
+                <span class="text-black">$CMS_VALUE(translations.get("product_recommendations_jumbo2"))$</span>
+            </div>
+        </div>
+<!-- RELATED PRODUCTS SLIDER END -->
+$CMS_END_IF$

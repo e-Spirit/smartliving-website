@@ -1,0 +1,7 @@
+import de.espirit.firstspirit.agency.OperationAgent;
+import de.espirit.firstspirit.ui.operations.RequestOperation;
+
+message = context.requireSpecialist(OperationAgent.TYPE).getOperation(RequestOperation.TYPE);
+message.setTitle("Project UUID");
+message.setKind(RequestOperation.Kind.INFO);
+message.perform("Project UUID: " + context.project.uuid);

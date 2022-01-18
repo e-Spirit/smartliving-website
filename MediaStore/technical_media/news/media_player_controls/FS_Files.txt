@@ -1,0 +1,6 @@
+# mimeType        name
+text/plain;UTF-8  FS_Info.txt
+text/plain;UTF-8  FS_References.txt
+image/svg+xml     Picture_media_player_controls_ORIGINAL.svg
+text/xml;UTF-8    StoreElement.xml
+text/xml          meta.xml

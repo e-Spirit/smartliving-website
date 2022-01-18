@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <FS_REFERENCE name="st_media" hFill="yes" imagePreview="yes" upload="yes" useLanguages="no">
+    <FILTER>
+      <HIDE type="file"/>
+      <ALLOW type="picture"/>
+    </FILTER>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Medium" description="Please choose a medium"/>
+      <LANGINFO lang="DE" label="Medium" description="Bitte wählen Sie ein Medium aus"/>
+    </LANGINFOS>
+    <PROJECTS>
+      <LOCAL name=".">
+        <SOURCES>
+          <FOLDER name="images" store="mediastore"/>
+        </SOURCES>
+      </LOCAL>
+    </PROJECTS>
+  </FS_REFERENCE>
+
+  <CMS_INPUT_TEXT name="st_media_alt_text" hFill="yes" singleLine="no" useLanguages="yes">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Alternative text"/>
+      <LANGINFO lang="DE" label="Alternativer Text"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+</CMS_MODULE>

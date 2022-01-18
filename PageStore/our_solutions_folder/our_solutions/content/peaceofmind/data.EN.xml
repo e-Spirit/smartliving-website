@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_kicker'><TEXT>Home Security</TEXT></FIELD>
+	<FIELD name='st_headline'><DOM><standard><span_yellow_text>Peace</span_yellow_text> of Mind</standard></DOM></FIELD>
+	<FIELD name='st_text'><DOM><standard>A security solution from Smart Living proivides you peace of mind with industry leading whole-home protection. Our affordable solutions that provide a simple start and grow with you.<br/><br/>Life is easier because your home security system will interface with your existing smart home adding secure and intelligent interactions to fully enhance your comfort while you're home and keep you at ease when you are away.<br/><br/>Prepare for the unexpected with industry leading brands and the choice of the experts.</standard><standard><CMS_LINK linktemplate="internal_link" type="genericLink"><TEMPLATECONTENT><CMS_VALUE name="lt_text"><LANG id="§" set="1"><TEXT>Linked Paragraph for tests.</TEXT></LANG></CMS_VALUE><CMS_VALUE name="lt_link"><LANG id="§" set="1"><UID>news_overview</UID><UIDTYPE>SITESTORE_LEAF</UIDTYPE><REMOTE/></LANG></CMS_VALUE></TEMPLATECONTENT></CMS_LINK></standard></DOM></FIELD>
+	<FIELD name='st_jumbo_headline'><TEXT>Home Security</TEXT></FIELD>
+	<FIELD name='st_button'><LINK/></FIELD>
+</FIELDS>

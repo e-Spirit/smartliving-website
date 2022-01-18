@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_INPUT_TOGGLE name="md_use_blog_js" type="radio" hFill="yes" preset="copy" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Use Blog Js"/>
+      <LANGINFO lang="DE" label="Blog Js Benutzen"/>
+    </LANGINFOS>
+  </CMS_INPUT_TOGGLE>
+
+  <CMS_INPUT_TEXT name="md_robot" hFill="yes" singleLine="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Meta Robot"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_TEXT name="md_keywords" hFill="yes" singleLine="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Meta Keywords"/>
+      <LANGINFO lang="DE" label="Meta Schlüsselwörter"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_TEXT name="md_author" hFill="yes" singleLine="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Meta Author"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_TEXT name="md_description" hFill="yes" singleLine="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Meta Description"/>
+      <LANGINFO lang="DE" label="Meta Beschreibung"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <FS_REFERENCE
+    name="md_fts_ref_worfklow_on_import"
+    allowEmpty="yes"
+    hFill="yes"
+    hidden="no"
+    imagePreview="no"
+    upload="no"
+    useLanguages="no">
+    <FILTER>
+      <ALLOW type="workflow"/>
+    </FILTER>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Workflow to be executed after import of translation"/>
+    </LANGINFOS>
+    <PROJECTS>
+      <LOCAL name=".">
+        <SOURCES>
+          <FOLDER name="root" store="templatestore"/>
+        </SOURCES>
+      </LOCAL>
+    </PROJECTS>
+  </FS_REFERENCE>
+
+  <CMS_INPUT_TOGGLE
+    name="md_fts_do_not_translate_element"
+    type="radio"
+    allowEmpty="yes"
+    hFill="yes"
+    preset="copy"
+    singleLine="no"
+    useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Do not translate this element"/>
+    </LANGINFOS>
+    <OFF>
+      <LANGINFO lang="*" label="No, please translate element"/>
+    </OFF>
+    <ON>
+      <LANGINFO lang="*" label="Yes, exclude from translation"/>
+    </ON>
+  </CMS_INPUT_TOGGLE>
+
+  <CMS_INPUT_TEXT name="md_alt_text" hFill="yes" singleLine="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Alternative text"/>
+      <LANGINFO lang="DE" label="Alternative Beschreibung"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_COMBOBOX name="md_region" hFill="yes" singleLine="no" useLanguages="no">
+    <ENTRIES>
+      <ENTRY value="region_na">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="North America"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="region_eu">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Europe"/>
+        </LANGINFOS>
+      </ENTRY>
+    </ENTRIES>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Region"/>
+    </LANGINFOS>
+  </CMS_INPUT_COMBOBOX>
+
+  <CMS_INPUT_COMBOBOX name="md_country" hFill="yes" singleLine="no" useLanguages="no">
+    <ENTRIES>
+      <ENTRY value="country_us">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="United States of America"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="country_de">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Germany"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="country_ca">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Canada"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="country_gb">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="United Kingdom"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="country_at">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Austria"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="country_ar">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Argentina"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="country_us">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Italy"/>
+        </LANGINFOS>
+      </ENTRY>
+    </ENTRIES>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Country"/>
+    </LANGINFOS>
+  </CMS_INPUT_COMBOBOX>
+
+  <CMS_INPUT_COMBOBOX name="md_language" hFill="yes" singleLine="no" useLanguages="no">
+    <CMS_INCLUDE_OPTIONS type="language">
+      <LABELS>
+        <LABEL lang="*">#item.name</LABEL>
+      </LABELS>
+    </CMS_INCLUDE_OPTIONS>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Language"/>
+    </LANGINFOS>
+  </CMS_INPUT_COMBOBOX>
+
+  <CMS_INPUT_DATE name="md_creation_date" hFill="yes" preset="created" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Creation date"/>
+    </LANGINFOS>
+  </CMS_INPUT_DATE>
+
+  <CMS_INPUT_COMBOBOX name="md_licensing" hFill="yes" singleLine="no" useLanguages="no">
+    <ENTRIES>
+      <ENTRY value="license_rm">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Rights Managed (RM) License"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="license_eu">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Editorial Use License"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="license_rf">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Royalty Free License (RF)"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="license_rfe">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Royalty Free Extended License"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="license_cc">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Creative Commons License"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="license_pd">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Public Domain"/>
+        </LANGINFOS>
+      </ENTRY>
+    </ENTRIES>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Licensing"/>
+    </LANGINFOS>
+  </CMS_INPUT_COMBOBOX>
+
+  <CMS_INPUT_TEXTAREA name="fsai_focusPreference">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="FS AI - Focus Preferences"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXTAREA>
+
+  <CMS_INPUT_TEXTAREA name="fsai_facesPayload">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="FS AI - Faces Payload"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXTAREA>
+
+  <CMS_INPUT_TEXTAREA name="fsai_objectsPayload">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="FS AI - Objects Payload"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXTAREA>
+
+  <CMS_INPUT_TEXTAREA name="fsai_textPayload">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="FS AI - Text Payload"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXTAREA>
+
+  <CMS_INPUT_TEXTAREA name="fsai_unsafeContentPayload">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="FS AI - Unsafe Content Payload"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXTAREA>
+
+  <CMS_INPUT_TEXTAREA name="fsai_tags">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="FS AI - Tags"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXTAREA>
+
+  <CMS_INPUT_LIST name="md_fts_exclude_from_translation" hFill="yes" hidden="yes" useLanguages="no">
+    <CMS_INCLUDE_OPTIONS type="language"/>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Translationstudio will not translate this element into the following language(s):"/>
+    </LANGINFOS>
+  </CMS_INPUT_LIST>
+
+</CMS_MODULE>

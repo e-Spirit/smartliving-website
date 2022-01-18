@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="-3446877865970065804" name="inserted_block">
+	<LANG displayname="Eingefügt (Absatz)" language="DE"/>
+	<LANG displayname="Inserted (Block)" language="EN"/>
+	<style attr="inserted" system="1" tag="inserted_block" view="marked" visible="0">
+		<attr name="align" value="LEFT"/>
+		<attr name="background-color" value="#e8f1e7"/>
+		<attr name="border-color" value="#9fbd81"/>
+		<attr name="font" value="sansserif"/>
+		<attr name="name" value="inserted_block"/>
+		<render>
+			<channel conversion="Convert HTML" name="html" templateSetId="9062318847741885912"/>
+		</render>
+	</style>
+</FORMATTEMPLATE>

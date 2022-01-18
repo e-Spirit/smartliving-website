@@ -1,0 +1,12 @@
+[self]
+uid=hp_stage_2_53977581
+gid=ae20f60a-6181-4f7e-aa15-84c6db2ba511
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+
+[requiredProjectId]
+uid=metadata
+gid=70a3c894-c1c8-4a8b-ac05-378c1699a025
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
+

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_GROUP name="group_contextElements" tabs="top">
+
+    <FS_INDEX name="st_youtubeVideo" height="1" useLanguages="yes" viewMode="details">
+      <LANGINFOS>
+        <LANGINFO lang="*" label="YouTube Video"/>
+      </LANGINFOS>
+      <SOURCE name="YouTube-DAP-Integration/YoutubeVideoDataAccessPlugin"/>
+    </FS_INDEX>
+
+    <FS_CATALOG name="st_catalog" useLanguages="yes" viewMode="details">
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Video contextual Elements"/>
+        <LANGINFO lang="DE" label="Video kontextuelle Elemente"/>
+      </LANGINFOS>
+      <TEMPLATES type="section">
+        <TEMPLATE uid="interactive_video_text_item"/>
+        <TEMPLATE uid="interactive_video_image_item"/>
+        <TEMPLATE uid="interactivevideo_product"/>
+      </TEMPLATES>
+    </FS_CATALOG>
+
+  </CMS_GROUP>
+
+  <FS_BUTTON
+    name="st_interactiveVideo"
+    alwaysEnabled="no"
+    hFill="no"
+    onClick="class:InteractiveVideoButton"
+    style="button"
+    useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Edit Timeline elements"/>
+      <LANGINFO lang="DE" label="Timeline Elemente bearbeiten"/>
+    </LANGINFOS>
+    <PARAMS>
+      <PARAM name="catalog">#field.st_catalog</PARAM>
+      <PARAM name="videoUrlResolver">class:InteractiveVideoUrlParser</PARAM>
+      <PARAM name="videoUrlPattern">https://www.youtube.com/watch?v=${id}</PARAM>
+      <PARAM name="videoIdField">#field.st_youtubeVideo</PARAM>
+    </PARAMS>
+  </FS_BUTTON>
+
+  <CMS_INPUT_TOGGLE name="st_autoPlay" type="radio" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Autoplay" description="Autoplay"/>
+      <LANGINFO lang="DE" label="Autoplay" description="Automatisches Abspielen"/>
+    </LANGINFOS>
+    <OFF>
+      <LANGINFO lang="*" label="No"/>
+      <LANGINFO lang="DE" label="Nein"/>
+    </OFF>
+    <ON>
+      <LANGINFO lang="*" label="Yes"/>
+      <LANGINFO lang="DE" label="Ja"/>
+    </ON>
+  </CMS_INPUT_TOGGLE>
+
+</CMS_MODULE>

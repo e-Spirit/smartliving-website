@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='md_creation_date'><DATE>1637182120846</DATE></FIELD>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Chair",
+        "confidence" : 90.956375,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Furniture"
+        } ]
+      }, {
+        "name" : "Furniture",
+        "confidence" : 90.956375,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Mouse",
+        "confidence" : 80.84047,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.56794786,
+            "height" : 0.7480936,
+            "left" : 0.2653615,
+            "top" : 0.23124136
+          },
+          "confidence" : 80.84047
+        } ],
+        "parents" : [ {
+          "name" : "Hardware"
+        }, {
+          "name" : "Computer"
+        }, {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Electronics",
+        "confidence" : 80.84047,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Computer",
+        "confidence" : 80.84047,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Hardware",
+        "confidence" : 80.84047,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "2.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "5.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Computer #Hardware #Chair #Mouse #Furniture #Electronics"
+  }
+}</TEXT></FIELD>
+</FIELDS>

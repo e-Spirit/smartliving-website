@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_INPUT_TEXT name="wf_md_alt_text" hFill="yes" singleLine="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Alternative text"/>
+      <LANGINFO lang="DE" label="Alternative Beschreibung"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_COMBOBOX name="wf_md_region" hFill="yes" singleLine="no" useLanguages="no">
+    <ENTRIES>
+      <ENTRY value="region_na">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="North America"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="region_eu">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Europe"/>
+        </LANGINFOS>
+      </ENTRY>
+    </ENTRIES>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Region"/>
+    </LANGINFOS>
+  </CMS_INPUT_COMBOBOX>
+
+  <CMS_INPUT_COMBOBOX name="wf_md_country" hFill="yes" singleLine="no" useLanguages="no">
+    <ENTRIES>
+      <ENTRY value="country_us">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="United States of America"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="country_de">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Germany"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="country_ca">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Canada"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="country_gb">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="United Kingdom"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="country_at">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Austria"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="country_ar">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Argentina"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="country_us">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Italy"/>
+        </LANGINFOS>
+      </ENTRY>
+    </ENTRIES>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Country"/>
+    </LANGINFOS>
+  </CMS_INPUT_COMBOBOX>
+
+  <CMS_INPUT_COMBOBOX name="wf_md_language" hFill="yes" singleLine="no" useLanguages="no">
+    <CMS_INCLUDE_OPTIONS type="language">
+      <LABELS>
+        <LABEL lang="*">#item.name</LABEL>
+      </LABELS>
+    </CMS_INCLUDE_OPTIONS>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Language"/>
+    </LANGINFOS>
+  </CMS_INPUT_COMBOBOX>
+
+  <CMS_INPUT_DATE name="wf_md_creation_date" hFill="yes" preset="created" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Creation date"/>
+    </LANGINFOS>
+  </CMS_INPUT_DATE>
+
+  <CMS_INPUT_COMBOBOX name="wf_md_licensing" hFill="yes" singleLine="no" useLanguages="no">
+    <ENTRIES>
+      <ENTRY value="license_rm">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Rights Managed (RM) License"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="license_eu">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Editorial Use License"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="license_rf">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Royalty Free License (RF)"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="license_rfe">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Royalty Free Extended License"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="license_cc">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Creative Commons License"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="license_pd">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Public Domain"/>
+        </LANGINFOS>
+      </ENTRY>
+    </ENTRIES>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Licensing"/>
+    </LANGINFOS>
+  </CMS_INPUT_COMBOBOX>
+
+</CMS_MODULE>

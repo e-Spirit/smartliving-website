@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SITENODE id="-99604798305687611" name="thermostats" startnodeid="-1424140618637586962">
+	<LANG displayname="Thermostate" language="DE"/>
+	<LANG displayname="Thermostats" language="EN"/>
+	<NODE_LANG_SPEC label="Thermostate" language="DE"/>
+	<NODE_LANG_SPEC label="Thermostats" language="EN"/>
+</SITENODE>

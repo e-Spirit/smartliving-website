@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MEDIUM filename="radio_socket_outlet_70856156" id="-1551534070406808183" meta="1" type="pic" uniquedescription="radio_socket_outlet_1">
+	<LANG displayname="WLAN Steckdose" language="DE"/>
+	<LANG displayname="WLAN powerplug" language="EN"/>
+	<PICTURE>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:3158,&quot;x&quot;:1577,&quot;h&quot;:4912,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:2486,&quot;x&quot;:1954,&quot;h&quot;:1910,&quot;y&quot;:1587},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="1577.0,0.0,3158.0,4912.0,0,false" extension="jpg" height="560" mimetype="image/jpeg" resolutionid="product_teaser" width="360"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:5177,&quot;x&quot;:544,&quot;h&quot;:3236,&quot;y&quot;:852},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:2486,&quot;x&quot;:1954,&quot;h&quot;:1910,&quot;y&quot;:1587},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="544.0,852.0,5177.0,3236.0,0,false" extension="jpg" height="500" mimetype="image/jpeg" resolutionid="portrait" width="800"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:5752,&quot;x&quot;:253,&quot;h&quot;:3236,&quot;y&quot;:852},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:2486,&quot;x&quot;:1954,&quot;h&quot;:1910,&quot;y&quot;:1587},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="253.0,852.0,5752.0,3236.0,0,false" extension="jpg" height="1080" mimetype="image/jpeg" resolutionid="banner_slider" width="1920"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:6205,&quot;x&quot;:0,&quot;h&quot;:2123,&quot;y&quot;:1451},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:2486,&quot;x&quot;:1954,&quot;h&quot;:1910,&quot;y&quot;:1587},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="0.0,1451.0,6205.0,2123.0,0,false" extension="jpg" height="400" mimetype="image/jpeg" resolutionid="landscape" width="1170"/>
+		<RESOLUTION extension="jpg" height="4912" mimetype="image/jpeg" resolutionid="ORIGINAL" width="6205"/>
+	</PICTURE>
+</MEDIUM>

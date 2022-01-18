@@ -1,0 +1,9 @@
+AllChildren: 1
+ExportPermissions: AllPermissions
+ExportVersion: 3.2
+Language_DE: Deutsch
+Language_EN: English
+PagePath: /about_us/services_folder
+PresentationChannel_-1268668680467729278: HTML
+TemplateName_7532391163569512: standard
+TemplateSet_9062318847741885912: html

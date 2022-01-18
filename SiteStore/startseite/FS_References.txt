@@ -1,0 +1,12 @@
+[self]
+uid=startseite
+gid=5a7cdf48-5031-4fcd-b6c7-99e802d0ce57
+uidType=SITESTORE_FOLDER
+class=de.espirit.firstspirit.store.access.sitestore.PageRefFolderImpl
+
+[nextSibling]
+uid=our_solutions
+gid=aa684dc6-2220-4d71-b468-f3e056b0c4f0
+uidType=SITESTORE_FOLDER
+class=de.espirit.firstspirit.store.access.sitestore.PageRefFolderImpl
+

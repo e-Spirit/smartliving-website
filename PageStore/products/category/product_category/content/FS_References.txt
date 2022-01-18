@@ -1,0 +1,6 @@
+[self]
+uid=product_category~#~content
+gid=84d5322e-abbb-4b0f-8642-e3f9dea57569
+store=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.BodyImpl
+

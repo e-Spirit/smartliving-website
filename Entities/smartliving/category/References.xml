@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ENTITY_REFS>
+	<REFS sourceType="category">
+		<SOURCE uuid="93d252dc-5964-4c1d-aaed-1652a2d2045c">
+			<ATTR name="newsList" targetType="news">
+				<TARGET uuid="aab51540-f988-48ae-9311-02276126a340"/>
+				<TARGET uuid="eb98ea90-177f-401e-b7ee-1c3440b55ef8"/>
+				<TARGET uuid="f78aff5b-eda1-4bc4-bfbf-25702a662b38"/>
+				<TARGET uuid="11bc590d-5ab8-46ee-8e4d-70bf124ba83a"/>
+				<TARGET uuid="456b76b1-8cae-432d-b71e-9c9993b78f7a"/>
+				<TARGET uuid="5d2d882d-bf1c-4286-99ab-a2697709d38d"/>
+			</ATTR>
+		</SOURCE>
+		<SOURCE uuid="07d9022e-dd96-4f07-bbda-5f3f13df84e8">
+			<ATTR name="newsList" targetType="news">
+				<TARGET uuid="3d1d0440-e96f-405a-822c-154136eca3d3"/>
+				<TARGET uuid="4c1ffb05-8762-4b61-aa67-c6e5b96cd1a4"/>
+			</ATTR>
+		</SOURCE>
+		<SOURCE uuid="449511b5-6497-49a3-89d7-91d48f3c3686">
+			<ATTR name="newsList" targetType="news">
+				<TARGET uuid="94db23a8-6dff-4fd8-90b2-f19ced929c86"/>
+			</ATTR>
+		</SOURCE>
+	</REFS>
+</ENTITY_REFS>

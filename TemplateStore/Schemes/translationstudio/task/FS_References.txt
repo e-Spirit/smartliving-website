@@ -1,0 +1,6 @@
+[self]
+uid=task
+gid=ff3dd5c8-252c-4c60-a424-a80642b0525f
+uidType=TEMPLATESTORE_SCHEMA
+class=de.espirit.firstspirit.store.access.templatestore.TableTemplateImpl
+

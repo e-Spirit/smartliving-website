@@ -1,0 +1,6 @@
+[self]
+uid=extensions
+gid=faa9aabb-21cc-4c36-9478-01fe91c7b2b5
+uidType=MEDIASTORE_FOLDER
+class=de.espirit.firstspirit.store.access.mediastore.MediaFolderImpl
+

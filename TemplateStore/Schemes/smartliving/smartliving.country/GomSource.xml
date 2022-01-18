@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_INPUT_TEXT name="tt_country" hFill="yes" singleLine="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Country"/>
+      <LANGINFO lang="DE" label="Land"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_COMBOBOX name="tt_continent" hFill="yes" singleLine="no" useLanguages="no">
+    <CMS_INCLUDE_OPTIONS type="database">
+      <LABELS>
+        <LABEL lang="*">#item.continent</LABEL>
+      </LABELS>
+      <TABLE>smartliving.continent</TABLE>
+    </CMS_INCLUDE_OPTIONS>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Continent"/>
+      <LANGINFO lang="DE" label="Kontinent"/>
+    </LANGINFOS>
+  </CMS_INPUT_COMBOBOX>
+
+</CMS_MODULE>

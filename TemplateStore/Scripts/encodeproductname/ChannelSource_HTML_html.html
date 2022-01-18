@@ -1,0 +1,25 @@
+/**
+ * Call this script inside any template to represent some string as a number interpreted as a string.
+ * The returning value is bound to MAX_ENCODED_LENGTH characters
+ * The returning value is almost unique for different parameters and may be used sku for a product feed
+ * The returning value is NOT an ID
+ * The returning value is the same for any two parameters with the same value
+ *
+ * Example usage:
+ * $CMS_RENDER(script:"encodeproductname", encode: product.name)$
+ **/
+
+// define the maximum size of an encoded product name 
+MAX_ENCODED_LENGTH = 50;
+
+toBeEncoded = gc.getVariableValue("encode");
+encodedValue = "";
+for (entry: toBeEncoded.getBytes("US-ASCII")) {
+    encodedValue = encodedValue + entry.toString();
+}
+
+if (encodedValue.length() > MAX_ENCODED_LENGTH) {
+    // cut everything but the last MAX_ENCODED_LENGTH number of characters to avoid long encodings
+    encodedValue = encodedValue.substring(encodedValue.length() - MAX_ENCODED_LENGTH);
+}
+result.setValue(encodedValue);

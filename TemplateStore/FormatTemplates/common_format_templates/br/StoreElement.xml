@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="-4948868433222700615" name="br">
+	<LANG displayname="Line break" language="EN"/>
+	<LANG displayname="Zeilenumbruch" language="DE"/>
+	<style cdata="" quote="1" system="1" tag="br" view="break" visible="0">
+		<attr name="align" value="LEFT"/>
+		<attr name="font" value="sansserif"/>
+		<attr name="name" value="LineBreak"/>
+		<render>
+			<channel conversion="Convert HTML" name="html" templateSetId="9062318847741885912"/>
+		</render>
+	</style>
+</FORMATTEMPLATE>

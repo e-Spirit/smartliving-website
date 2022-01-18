@@ -1,0 +1,104 @@
+//!Beanshell
+
+import bsh.util.JConsole;
+import de.espirit.firstspirit.agency.UIAgent;
+
+title = "Beanshell Console for node '"
+ + context.getProperty("nodeName")
+ + "' [ID=" + context.getProperty("nodeId") + "] / "
+ + context.getProperty("storeName");
+
+frame = new JFrame(title);
+console = new JConsole();
+frame.getContentPane().add(console, "Center");
+frame.pack();
+frame.setBounds(100, 100, 600, 400);
+frame.setIconImages(context.requireSpecialist(UIAgent.TYPE).getApplicationWindow().getIconImages());
+
+interpreter = new bsh.Interpreter(console);
+interpreter.setShowResults(true);
+bsh.system.icons.eye = frame.getIconImage();
+
+// getting service to instanciate
+getService() {
+	interpreter.set("service", null);
+	formData = context.showForm(false, "service");
+	if (formData != null) {
+		formField = formData.get(null, "serviceName");
+		if (formField != null) {
+			editor = formField.get();
+			if (editor != null) {
+				serviceName = null;
+				selectedValue = editor.getValue();
+				if ("-manual-".equals(selectedValue)) {
+					formField = formData.get(null, "manualServiceName");
+					if (formField != null) {
+						serviceName = formField.get();
+					}
+				} else {
+					serviceName = selectedValue;
+				}
+				if (serviceName != null && !serviceName.isEmpty()) {
+					try {
+						service = context.getConnection().getService(serviceName);
+						interpreter.set("service", service);
+					} catch (Exception e) {
+						context.logError("error getting service: '" + serviceName + "' - " + e.toString());
+					}
+				}
+			}
+		}
+	}
+}
+
+// editor frame to edit multi-line source code
+editor()  {
+	this.ta = new TextArea(15,40);
+	this.frame = new Frame("Editor");
+	frame.add(ta, "Center");
+
+	this.p = new Panel();
+	this.b = new Button("Eval");
+	b.addActionListener(this);
+	p.add(b);
+	b = new Button("Clear");
+	b.addActionListener(this);
+	p.add(b);
+	b = new Button("Close");
+	b.addActionListener(this);
+	p.add(b);
+
+	frame.add(p, "South");
+	frame.pack();
+	frame.show();
+
+	actionPerformed(e)
+	{
+		if ( e.getActionCommand().equals("Close") )
+			frame.dispose();
+		else if ( e.getActionCommand().equals("Clear") )
+			ta.setText("");
+		else
+			this.interpreter.eval( ta.getText() );
+	}
+
+	print("Editor started...");
+	return frame;
+}
+
+// clear console
+cls() {
+	console.getViewport().getView().setText("");
+}
+
+interpreter.set("context", context);
+interpreter.set("e", context.element);
+interpreter.set("console", console);
+interpreter.set("interpreter", interpreter);
+
+ns = interpreter.getNameSpace();
+ns.setParent(this.namespace);
+
+new Thread( interpreter ).start();
+
+frame.setVisible(true);

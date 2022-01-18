@@ -1,0 +1,6 @@
+[self]
+uid=product_overview
+gid=8baee7b2-41ca-4d20-90ad-be0f016e8cae
+uidType=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.PageFolderImpl
+

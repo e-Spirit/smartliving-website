@@ -1,0 +1,7 @@
+[self]
+uid=/translation_studio
+gid=743ca9f2-71b1-4144-9d42-7cd99e39a6b7
+store=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.TemplateFolderImpl
+root=de.espirit.firstspirit.store.access.templatestore.SectionTemplatesImpl
+

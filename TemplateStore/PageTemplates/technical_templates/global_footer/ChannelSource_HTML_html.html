@@ -1,0 +1,32 @@
+<!-- FOOTER START -->
+<footer class="site-footer footer-wide relative overflow-hide" $CMS_IF(#global.preview)$$CMS_VALUE(editorId())$$CMS_END_IF$>
+<div class="theming-footer footer-bottom overlay-wraper">
+	<div class="overlay-main bg-black" style="opacity:0;"></div>
+	<div class="container p-t30">
+		<div class="row">
+			<div class="col-md-4 wt-footer-bot-left">		
+			$CMS_IF(!ps_logo.isEmpty())$<a href="#">
+				<img src="$CMS_REF(ps_logo)$" width="140" height="58" alt="">
+				</a>$CMS_END_IF$
+			</div>
+			<div class="col-md-4 text-center copyright-block p-t15" $CMS_IF(#global.preview)$$CMS_VALUE(editorId(editorName:"gc_copyright"))$$CMS_END_IF$>
+			<span class="copyrights-text">&copy; $CMS_VALUE(if(!gc_copyright.isEmpty, gc_copyright.convert2))$</span>
+		</div>
+		<div class="col-md-4 wt-footer-bot-right p-t15" >
+			<ul class="copyrights-nav pull-right" $CMS_IF(#global.preview)$$CMS_VALUE(editorId(target:gc_linklist))$$CMS_END_IF$> 
+			$CMS_IF(!gc_linklist.isEmpty)$
+				$CMS_FOR(for_link, gc_linklist)$
+					<li>$CMS_VALUE(for_link)$</li>
+				$CMS_END_FOR$
+			$CMS_ELSE$
+				$CMS_IF(#global.preview)$
+				<li>$CMS_VALUE(translations.get("empty.list.error"))$</li>
+				$CMS_END_IF$
+			$CMS_END_IF$
+			</ul>
+		</div>
+	</div>
+</div>
+</footer>
+<!-- FOOTER END -->
+

@@ -1,0 +1,6 @@
+[self]
+uid=zeus
+gid=23461bfd-9c06-4109-b478-db44fa582a48
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+

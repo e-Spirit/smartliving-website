@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MEDIUM filename="smarthome_panel" id="1864532478576500598" meta="1" type="pic" uniquedescription="5">
+	<LANG displayname="Smarthome Panel" language="DE"/>
+	<LANG displayname="Smarthome Panel" language="EN"/>
+	<PICTURE>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:1340,&quot;x&quot;:580,&quot;h&quot;:838,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:688,&quot;x&quot;:1133,&quot;h&quot;:445,&quot;y&quot;:180},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="580.0,0.0,1340.0,838.0,0,false" extension="jpg" height="500" mimetype="image/jpeg" resolutionid="portrait" width="800"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:1546,&quot;x&quot;:374,&quot;h&quot;:869,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:688,&quot;x&quot;:1133,&quot;h&quot;:445,&quot;y&quot;:180},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="374.0,0.0,1546.0,869.0,0,false" extension="jpg" height="1080" mimetype="image/jpeg" resolutionid="banner_slider" width="1920"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:1920,&quot;x&quot;:0,&quot;h&quot;:658,&quot;y&quot;:77},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:688,&quot;x&quot;:1133,&quot;h&quot;:445,&quot;y&quot;:180},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="0.0,77.0,1920.0,658.0,0,false" extension="jpg" height="400" mimetype="image/jpeg" resolutionid="landscape" width="1170"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:559,&quot;x&quot;:1163,&quot;h&quot;:869,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:688,&quot;x&quot;:1133,&quot;h&quot;:445,&quot;y&quot;:180},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="1163.0,0.0,559.0,869.0,0,false" extension="jpg" height="560" mimetype="image/jpeg" resolutionid="product_teaser" width="360"/>
+		<RESOLUTION extension="jpg" height="869" mimetype="image/jpeg" resolutionid="ORIGINAL" width="1920"/>
+	</PICTURE>
+</MEDIUM>

@@ -1,0 +1,6 @@
+[self]
+uid=privacy_policy~#~content
+gid=4f247bdf-f5cb-448b-8ffc-da124149c7f9
+store=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.BodyImpl
+

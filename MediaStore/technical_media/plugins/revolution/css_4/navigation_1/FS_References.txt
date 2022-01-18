@@ -1,0 +1,6 @@
+[self]
+uid=navigation_1
+gid=766e7a74-8bc0-4e27-95ed-82469a2b5844
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+

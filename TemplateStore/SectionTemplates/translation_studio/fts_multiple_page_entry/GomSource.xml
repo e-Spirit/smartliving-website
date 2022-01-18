@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <FS_REFERENCE
+    name="st_fts_page"
+    allowEmpty="no"
+    hFill="yes"
+    imagePreview="no"
+    sections="no"
+    upload="no"
+    useLanguages="no">
+    <FILTER>
+      <ALLOW type="page"/>
+    </FILTER>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Page to translate" description="Choose a page"/>
+    </LANGINFOS>
+    <PROJECTS>
+      <LOCAL name=".">
+        <SOURCES>
+          <FOLDER name="root" store="pagestore"/>
+        </SOURCES>
+      </LOCAL>
+    </PROJECTS>
+  </FS_REFERENCE>
+
+</CMS_MODULE>

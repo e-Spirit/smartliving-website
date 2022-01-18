@@ -1,0 +1,6 @@
+[self]
+uid=privacy_policy_folder
+gid=33183839-70eb-4d48-84df-60a0355b38bc
+uidType=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.PageFolderImpl
+

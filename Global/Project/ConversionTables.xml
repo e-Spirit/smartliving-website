@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OBJECT class="java.util.ArrayList">
+	<OBJECT class="de.espirit.firstspirit.server.templatemanagement.ConversionTableImpl">
+		<FIELD name="name">
+			<OBJECT class="java.lang.String">Convert HTML</OBJECT>
+		</FIELD>
+		<FIELD name="table">
+			<OBJECT class="java.lang.String">H4sIAAAAAAAAAItOzs8rSy0qieXiMqgwTrZVUsspsVYCsVOB7HQI28gIyFY2NoFwzICcxNwCCMccLGNprQQAcdsgtkkAAAA=</OBJECT>
+		</FIELD>
+	</OBJECT>
+</OBJECT>

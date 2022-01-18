@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_tagline'><TEXT>Tag</TEXT></FIELD>
+	<FIELD name='st_headline'><TEXT>Überschrift</TEXT></FIELD>
+	<FIELD name='st_counters'><CATALOG><CARD id="e625d357-bfe4-4a65-b32c-3c7aa75a678f" template="counter" type="TEMPLATESTORE"><TEMPLATECONTENT><CMS_VALUE name="st_text"><LANG id="§" set="1"><TEXT>A</TEXT></LANG></CMS_VALUE><CMS_VALUE name="st_number"><LANG id="§" set="1"><FIG>10</FIG></LANG></CMS_VALUE></TEMPLATECONTENT></CARD><CARD id="3a8d7b26-0f68-4eb5-b851-412c09f10a49" template="counter" type="TEMPLATESTORE"><TEMPLATECONTENT><CMS_VALUE name="st_text"><LANG id="§" set="1"><TEXT>B</TEXT></LANG></CMS_VALUE><CMS_VALUE name="st_number"><LANG id="§" set="1"><FIG>20</FIG></LANG></CMS_VALUE></TEMPLATECONTENT></CARD><CARD id="c926488b-5774-4edb-93a6-9837d3711269" template="counter" type="TEMPLATESTORE"><TEMPLATECONTENT><CMS_VALUE name="st_text"><LANG id="§" set="1"><TEXT>C</TEXT></LANG></CMS_VALUE><CMS_VALUE name="st_number"><LANG id="§" set="1"><FIG>30</FIG></LANG></CMS_VALUE></TEMPLATECONTENT></CARD></CATALOG></FIELD>
+</FIELDS>

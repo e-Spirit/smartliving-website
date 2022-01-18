@@ -1,0 +1,6 @@
+[self]
+uid=homepage
+gid=713bc395-202f-481e-a95c-2d573136e221
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
+

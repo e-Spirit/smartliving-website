@@ -1,0 +1,12 @@
+[self]
+uid=smartliving.tags
+gid=c6a14ebd-bfd4-40f1-a24a-cb41233c4670
+uidType=TEMPLATESTORE_SCHEMA
+class=de.espirit.firstspirit.store.access.templatestore.TableTemplateImpl
+
+[optionalId]
+uid=news_detail
+gid=1d1ff6cb-689b-4e4f-9bf3-fc571d785eea
+uidType=SITESTORE_LEAF
+class=de.espirit.firstspirit.store.access.sitestore.PageRefImpl
+

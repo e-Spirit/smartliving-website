@@ -1,0 +1,6 @@
+[self]
+uid=erinyen
+gid=b5f7559b-5521-43c0-a7fc-c8a62ace0f2d
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+

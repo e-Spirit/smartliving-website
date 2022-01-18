@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element temporal="1" version="4.0">
+		<xs:complexType uuid="de499959-39a4-44d0-bac0-12e69fac6c6d" vName="requests">
+			<xs:sequence>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="1452089a-07d6-4850-aa1d-8a90a202639a" vName="changed by"/>
+				<xs:element javaType="java.lang.String" length="200" nullable="1" type="xs:string" uuid="04e3d7f3-5375-48e2-9dd9-50d8c71e59bc" vName="content2Id"/>
+				<xs:element javaType="java.util.Date" nullable="1" type="xs:date" uuid="705f62dd-d4f3-436b-9646-a75eda310456" vName="dateComplete"/>
+				<xs:element javaType="java.util.Date" nullable="1" type="xs:date" uuid="cce65633-45d3-40e8-8ede-0282c2804fae" vName="dateExpectCompletion"/>
+				<xs:element javaType="java.util.Date" nullable="1" type="xs:date" uuid="5b9b7cc6-02f5-4e12-ac25-0673d8871130" vName="dateExport"/>
+				<xs:element javaType="java.util.Date" nullable="1" type="xs:date" uuid="ab9824d9-7836-4d33-992a-aca75e1eebcd" vName="dateRegister"/>
+				<xs:element hidden="1" javaType="java.util.UUID" length="16" nullable="1" readonly="1" type="xs:uuid" uuid="e55a9cba-28a8-43c6-8c2e-53b9502dea77" vName="FS_GID"/>
+				<xs:element hidden="1" javaType="java.lang.Integer" type="xs:long" uuid="2f286e02-d1b6-44b0-aa60-a36bee4c8a41" vName="fs_id"/>
+				<xs:element hidden="1" javaType="de.espirit.or.impl.schema.JsonValue" length="65535" nullable="1" type="xs:json" uuid="bbe57bea-b308-41db-8e8e-ecd2ad9a2ffd" vName="FS_META_DATA"/>
+				<xs:element javaType="java.lang.Boolean" nullable="1" type="xs:boolean" uuid="87ab8340-2caa-4903-b1d9-b3022351cfe8" vName="isfragmentproject"/>
+				<xs:element javaType="java.lang.Boolean" nullable="1" type="xs:boolean" uuid="86f65936-7d89-4419-a021-016282db8ee3" vName="keepNontranslatables"/>
+				<xs:element javaType="de.espirit.firstspirit.client.editorcomponent.EditorWrapper" length="65535" nullable="1" type="xml" uuid="f716a25d-12f8-4144-8562-d761ca8c4191" vName="mapping"/>
+				<xs:element javaType="de.espirit.firstspirit.client.editorcomponent.EditorWrapper" length="65535" nullable="1" type="xml" uuid="1a884e8e-bd53-46dd-b5a0-18a56a3db3a4" vName="message"/>
+				<xs:element javaType="de.espirit.firstspirit.client.editorcomponent.EditorWrapper" length="65535" nullable="1" type="xml" uuid="db020fa1-06dc-43ef-a2f3-59095502047e" vName="page"/>
+				<xs:element javaType="java.lang.Long" nullable="1" type="xs:long" uuid="0969e2cb-fa05-4f03-a97d-55f68a3e8c8e" vName="pageId"/>
+				<xs:element javaType="java.lang.Long" nullable="1" type="xs:long" uuid="b3026863-ffe5-4aec-8fdc-e2732e742767" vName="project"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="1e45421e-dfa8-4f61-9fc3-94b5395369f4" vName="released by"/>
+				<xs:element javaType="java.lang.String" length="50" nullable="1" type="xs:string" uuid="1fd2dabb-297f-4835-93f1-48a23317011c" vName="requestuid"/>
+				<xs:element javaType="java.lang.String" length="200" nullable="1" type="xs:string" uuid="374b310b-2d02-4779-b31f-79bbb73358ab" vName="schemaUid"/>
+				<xs:element javaType="de.espirit.firstspirit.client.editorcomponent.EditorWrapper" length="65535" nullable="1" type="xml" uuid="9d9f2649-5ef0-4e90-9761-863427f5d536" vName="translateIds"/>
+				<xs:element javaType="java.lang.Boolean" nullable="1" type="xs:boolean" uuid="a094afd9-8c6c-45ce-bffc-af3c8a9fbdc6" vName="translatePageForm"/>
+				<xs:element javaType="java.lang.Boolean" nullable="1" type="xs:boolean" uuid="8ad8da11-dd45-4e39-87cb-850e943f6cf1" vName="translateRegular"/>
+				<xs:element javaType="java.lang.String" length="100" nullable="1" type="xs:string" uuid="06b7a422-d56e-419d-bcfd-86e9d2293811" vName="translationJob"/>
+				<xs:element javaType="java.lang.String" length="200" nullable="1" type="xs:string" uuid="4f5e3b5d-66b7-4648-b30c-2249becbcd89" vName="user"/>
+				<xs:element hidden="1" javaType="java.awt.Color" nullable="1" type="xs:integer" uuid="738d035d-b485-4bbe-8920-3f0591a21653" vName="wf col"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="29590b3b-05b8-4d6b-8e24-bf59fda91df3" vName="wf id"/>
+				<xs:element javaType="java.lang.Long" nullable="1" type="xs:long" uuid="21efebed-a7ec-42b0-a714-b76a2b634684" vName="wordCount"/>
+				<xs:element javaType="java.lang.String" length="100" nullable="1" type="xs:string" uuid="f26e0a38-da99-48b1-8623-e5cc3d315ab7" vName="workflowOnImportId"/>
+				<xs:element type="xs:long" uuid="07eb3fda-a643-4063-a6dc-2cca38c4266f" vName="fs_release_to" visible="0"/>
+				<xs:element type="xs:long" uuid="34ddf20b-33b0-4fc7-ba83-c5598e0eb3c8" vName="fs_valid_from" visible="0"/>
+				<xs:element type="xs:long" uuid="196f9c52-59bb-4a99-b72f-59745bb3a94b" vName="fs_valid_to" visible="0"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key vName="pk_requests">
+			<xs:selector xpath="requests"/>
+			<xs:attribute xpath="fs_id"/>
+			<xs:attribute xpath="fs_release_to"/>
+			<xs:attribute xpath="fs_valid_from"/>
+			<xs:attribute xpath="fs_valid_to"/>
+		</xs:key>
+		<xs:complexType uuid="27942c61-ca4b-4144-aebd-d3bead8e4553" vName="task">
+			<xs:sequence>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="9eb6a01b-e02a-41e9-a01d-581818b6a6fe" vName="changed by"/>
+				<xs:element javaType="java.lang.Long" nullable="1" type="xs:long" uuid="5062db6d-7e18-4b0d-970f-f5d5caa29e34" vName="content2id"/>
+				<xs:element javaType="java.lang.Boolean" nullable="1" type="xs:boolean" uuid="8aaf05e1-7d17-4544-a91b-6834e948110e" vName="createPreview"/>
+				<xs:element javaType="java.lang.Long" nullable="1" type="xs:long" uuid="af1f9c93-60fa-438f-9d4c-0038ca6a14d8" vName="datasetId"/>
+				<xs:element javaType="java.util.Date" nullable="1" type="xs:date" uuid="5ae679c7-b48f-468e-ba93-f6d8eb04859f" vName="dateRegister"/>
+				<xs:element hidden="1" javaType="java.util.UUID" length="16" nullable="1" readonly="1" type="xs:uuid" uuid="f1e481ac-9699-4aab-9401-5200eb1a8ab3" vName="FS_GID"/>
+				<xs:element hidden="1" javaType="java.lang.Integer" type="xs:long" uuid="eba9d1ef-439b-4951-9aa1-6f825ba0a466" vName="fs_id"/>
+				<xs:element hidden="1" javaType="de.espirit.or.impl.schema.JsonValue" length="65535" nullable="1" type="xs:json" uuid="f410f0ad-4852-41cc-bcc2-9a5840dccc82" vName="FS_META_DATA"/>
+				<xs:element javaType="java.lang.Long" nullable="1" type="xs:long" uuid="9de5fe64-76ec-42a4-aac9-771698f42c8f" vName="project"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="bc6caf92-07c6-49d5-bd38-840d7be73d63" vName="released by"/>
+				<xs:element hidden="1" javaType="java.awt.Color" nullable="1" type="xs:integer" uuid="47ae2b2e-f059-4659-81e6-4ec944cf3297" vName="wf col"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="dcbe4231-713c-4f69-bba4-946ff19f0707" vName="wf id"/>
+				<xs:element type="xs:long" uuid="66a72ebb-85f0-4d28-b099-eee687499640" vName="fs_release_to" visible="0"/>
+				<xs:element type="xs:long" uuid="189ebb41-7e5a-4124-ae87-b8911b659d91" vName="fs_valid_from" visible="0"/>
+				<xs:element type="xs:long" uuid="73a99784-7501-4376-96c7-16c8215c6cbd" vName="fs_valid_to" visible="0"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key vName="pk_task">
+			<xs:selector xpath="task"/>
+			<xs:attribute xpath="fs_id"/>
+			<xs:attribute xpath="fs_release_to"/>
+			<xs:attribute xpath="fs_valid_from"/>
+			<xs:attribute xpath="fs_valid_to"/>
+		</xs:key>
+		<xs:complexType uuid="332633e6-45ec-47a0-9956-8c8299675a22" vName="transaction_counter" visible="0">
+			<xs:sequence>
+				<xs:element type="xs:long" uuid="5ed2ae80-1304-4a6b-848f-5668cdd75753" vName="counter" visible="0"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key autoIncrement="1" vName="pk_transaction_counter">
+			<xs:selector xpath="transaction_counter"/>
+			<xs:attribute xpath="counter"/>
+		</xs:key>
+		<meta name="version">1.1</meta>
+	</xs:element>
+</xs:schema>

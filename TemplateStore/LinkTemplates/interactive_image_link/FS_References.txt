@@ -1,0 +1,12 @@
+[self]
+uid=interactive_image_link
+gid=29a318db-3ccf-45a0-9c28-90bfb97d22f7
+uidType=TEMPLATESTORE_LINKTEMPLATE
+class=de.espirit.firstspirit.store.access.templatestore.LinkTemplateImpl
+
+[optionalId]
+uid=images
+gid=5d06d9c5-0362-430e-9ce2-ca1f174e5b65
+uidType=MEDIASTORE_FOLDER
+class=de.espirit.firstspirit.store.access.mediastore.MediaFolderImpl
+

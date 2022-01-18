@@ -1,0 +1,6 @@
+[self]
+uid=scr_fts_register_execute_preview
+gid=3d9c43ac-48cf-497e-aa8c-75a673e026dd
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
+

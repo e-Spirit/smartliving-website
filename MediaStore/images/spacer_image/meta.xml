@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='md_alt_text'><TEXT>New Meta</TEXT></FIELD>
+	<FIELD name='md_region'><SEL><VALUE>region_eu</VALUE></SEL></FIELD>
+	<FIELD name='md_country'><SEL><VALUE>country_de</VALUE></SEL></FIELD>
+	<FIELD name='md_language'><SEL><VALUE>EN</VALUE></SEL></FIELD>
+	<FIELD name='md_creation_date'><DATE>1627982424793</DATE></FIELD>
+	<FIELD name='md_licensing'><SEL><VALUE>license_eu</VALUE></SEL></FIELD>
+</FIELDS>

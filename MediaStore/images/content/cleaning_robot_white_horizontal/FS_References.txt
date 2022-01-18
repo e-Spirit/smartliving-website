@@ -1,0 +1,6 @@
+[self]
+uid=cleaning_robot_white_horizontal
+gid=0ab6f09b-d252-458c-9f2a-29a7ece9547a
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+

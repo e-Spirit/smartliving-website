@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MEDIUM filename="smoke_detector_84858268" id="3566179446970382747" meta="1" type="pic" uniquedescription="smoke_detector_1">
+	<LANG displayname="Rauchmelder" language="DE"/>
+	<LANG displayname="Smoke detector" language="EN"/>
+	<PICTURE>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:2407,&quot;x&quot;:1475,&quot;h&quot;:3744,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:2123,&quot;x&quot;:1607,&quot;h&quot;:1578,&quot;y&quot;:331},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="1475.0,0.0,2407.0,3744.0,0,false" extension="jpg" height="560" mimetype="image/jpeg" resolutionid="product_teaser" width="360"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:5612,&quot;x&quot;:0,&quot;h&quot;:1920,&quot;y&quot;:412},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:2123,&quot;x&quot;:1607,&quot;h&quot;:1578,&quot;y&quot;:331},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="0.0,412.0,5612.0,1920.0,0,false" extension="jpg" height="400" mimetype="image/jpeg" resolutionid="landscape" width="1170"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:5612,&quot;x&quot;:0,&quot;h&quot;:3158,&quot;y&quot;:132},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:2123,&quot;x&quot;:1607,&quot;h&quot;:1578,&quot;y&quot;:331},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="0.0,132.0,5612.0,3158.0,0,false" extension="jpg" height="1080" mimetype="image/jpeg" resolutionid="banner_slider" width="1920"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:5612,&quot;x&quot;:0,&quot;h&quot;:3508,&quot;y&quot;:53},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:2123,&quot;x&quot;:1607,&quot;h&quot;:1578,&quot;y&quot;:331},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="0.0,53.0,5612.0,3508.0,0,false" extension="jpg" height="500" mimetype="image/jpeg" resolutionid="portrait" width="800"/>
+		<RESOLUTION extension="jpg" height="3744" mimetype="image/jpeg" resolutionid="ORIGINAL" width="5612"/>
+	</PICTURE>
+</MEDIUM>

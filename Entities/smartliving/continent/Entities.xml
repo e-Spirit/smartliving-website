@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+	<TABLE name="continent">
+		<ROW>
+			<COLUMN name="FS_GID">a7fa5e82-39cf-4534-8bbb-46ee6727121a</COLUMN>
+			<COLUMN name="continent_DE">Europa</COLUMN>
+			<COLUMN name="continent_EN">Europe</COLUMN>
+		</ROW>
+	</TABLE>
+</DATA>

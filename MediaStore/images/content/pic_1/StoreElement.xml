@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MEDIUM filename="pic-1" id="6039934285178190162" meta="1" type="pic" uniquedescription="pic_1">
+	<LANG displayname="Modern building" language="EN"/>
+	<LANG displayname="Modernes Gebäude" language="DE"/>
+	<PICTURE>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:1000,&quot;x&quot;:0,&quot;h&quot;:343,&quot;y&quot;:77},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:772,&quot;x&quot;:206,&quot;h&quot;:595,&quot;y&quot;:2},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="0.0,77.0,1000.0,343.0,0,false" extension="jpg" height="400" mimetype="image/jpeg" resolutionid="landscape" width="1170"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:1000,&quot;x&quot;:0,&quot;h&quot;:563,&quot;y&quot;:17},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:772,&quot;x&quot;:206,&quot;h&quot;:595,&quot;y&quot;:2},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="0.0,17.0,1000.0,563.0,0,false" extension="jpg" height="1080" mimetype="image/jpeg" resolutionid="banner_slider" width="1920"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:1000,&quot;x&quot;:0,&quot;h&quot;:625,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:772,&quot;x&quot;:206,&quot;h&quot;:595,&quot;y&quot;:2},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="0.0,0.0,1000.0,625.0,0,false" extension="jpg" height="500" mimetype="image/jpeg" resolutionid="portrait" width="800"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:403,&quot;x&quot;:447,&quot;h&quot;:625,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:772,&quot;x&quot;:206,&quot;h&quot;:595,&quot;y&quot;:2},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="447.0,0.0,403.0,625.0,0,false" extension="jpg" height="560" mimetype="image/jpeg" resolutionid="product_teaser" width="360"/>
+		<RESOLUTION extension="jpg" height="625" mimetype="image/jpeg" resolutionid="ORIGINAL" width="1000"/>
+	</PICTURE>
+</MEDIUM>

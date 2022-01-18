@@ -1,0 +1,6 @@
+[self]
+uid=news
+gid=214ad461-feec-45bc-8a99-6dfa622b3c10
+uidType=MEDIASTORE_FOLDER
+class=de.espirit.firstspirit.store.access.mediastore.MediaFolderImpl
+

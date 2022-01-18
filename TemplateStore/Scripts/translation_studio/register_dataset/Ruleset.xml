@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RULES>
+	<RULE>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="st_fts_ref_mappings"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="SAVE">
+				<PROPERTY name="VALID" source="st_fts_ref_mappings"/>
+				<MESSAGE lang="*" text="Please choose a valid language mapping!"/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+</RULES>
