@@ -52,24 +52,7 @@
 
                                     <div class="news-content" $CMS_VALUE(editorId(entity: #row, view:"news", editorName:"text"))$>
                                         $CMS_VALUE(text, default:"")$
-                                    </div>
-                                    
-                                    <div class="container" style="margin:50px 0 25px 0; padding:0;">
-									  $CMS_IF(!video.empty)$
-									    <div style="position: relative; padding-bottom: 56.25%; height: 0; background: #000;">
-									      $CMS_IF(video_thumbnail.empty)$
-									        <iframe width="1200" height="675" src="https://www.youtube-nocookie.com/embed/$CMS_VALUE(video.values.first.id)$" frameborder="0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-									      $CMS_ELSE$
-									        <div style="background: center / contain no-repeat url('$CMS_REF(video_thumbnail)$') #000; position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: grid; place-items: center; cursor: pointer;"
-									          onclick='this.outerHTML = `<iframe width="1200" height="675" src="https://www.youtube-nocookie.com/embed/$CMS_VALUE(video.values.first.id)$?autoplay=1" frameborder="0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>`'>
-									          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width: 120px; stroke: rgba(255,255,255,0.6); stroke-width: 1.5; fill: none;">
-									            <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z M9.75 15.02l5.75-3.27-5.75-3.27v6.54z"/>
-									          </svg>
-									        </div>
-									      $CMS_END_IF$
-									    </div>
-									  $CMS_END_IF$
-									</div>
+                                    </div>                                                                
 
 						            <div class="tag-container">
 						            	<h2 class="text-uppercase">Tags</h2>

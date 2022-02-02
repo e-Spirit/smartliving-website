@@ -74,38 +74,7 @@
         </PROJECTS>
       </FS_REFERENCE>
 
-    </CMS_GROUP>
-
-    <CMS_GROUP>
-      <LANGINFOS>
-        <LANGINFO lang="*" label="Video"/>
-      </LANGINFOS>
-
-      <FS_INDEX name="video" height="1" useLanguages="no" viewMode="details">
-        <LANGINFOS>
-          <LANGINFO lang="*" label="YouTube Video"/>
-        </LANGINFOS>
-        <SOURCE name="YouTube-DAP-Integration/YoutubeVideoDataAccessPlugin"/>
-      </FS_INDEX>
-
-      <FS_REFERENCE name="video_thumbnail" hFill="yes" imagePreview="yes" upload="yes" useLanguages="no">
-        <FILTER>
-          <HIDE type="file"/>
-          <ALLOW type="picture"/>
-        </FILTER>
-        <LANGINFOS>
-          <LANGINFO lang="*" label="Thumbnail"/>
-        </LANGINFOS>
-        <PROJECTS>
-          <LOCAL name=".">
-            <SOURCES>
-              <FOLDER name="images" store="mediastore"/>
-            </SOURCES>
-          </LOCAL>
-        </PROJECTS>
-      </FS_REFERENCE>
-
-    </CMS_GROUP>
+    </CMS_GROUP>  
 
     <CMS_GROUP>
       <LANGINFOS>

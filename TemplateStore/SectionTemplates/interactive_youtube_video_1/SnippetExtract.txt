@@ -1,1 +1,0 @@
-if(!st_youtubeVideo.isEmpty(), st_youtubeVideo.snippets.first.extract)
