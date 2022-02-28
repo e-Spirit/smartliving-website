@@ -5,8 +5,11 @@ This is the FirstSpirit Smartliving Website Reference Demo project which can be 
 
 After installation you can use the following command to import the project to your FirstSpirit server:
 
-`fs-cli import --layerMapping "*:CREATE_NEW"`<br/><br/>
+`fs-cli import -c [connection_mode] -port [port] -u "[user_name]" -pwd "[user_password]" -h [hostname] -p "[project_name]" -lm "*:[db_layer_name]" -sd [local_sync_directory]`<br/><br/>
 
-If you do not want to create new db layer mapping and want to import the project using existing db layer, please use:
+If you want to create a new db layer mapping and don't want to import the project using an existing db layer, please use `-lm "*:CREATE_NEW"`<br/><br/>
 
-`fs-cli import --layerMapping "*:[your_db_layer_name]"`
+
+Example:
+
+`fs-cli import -c HTTP -port 8000 -u "Admin" -pwd "Admin" -h myhost.com -p "SmartLiving Website Reference" -lm "*:FirstSpiritDBA" -sd /home/smartliving-website`
