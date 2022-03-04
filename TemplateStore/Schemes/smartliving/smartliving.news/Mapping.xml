@@ -208,64 +208,6 @@
 			<OBJECT class="java.util.HashMap">
 				<OBJECT class="java.lang.String">DE</OBJECT>
 				<ARRAY type="java.lang.String">
-					<OBJECT class="java.lang.String">video</OBJECT>
-				</ARRAY>
-				<OBJECT class="java.lang.String">EN</OBJECT>
-				<ARRAY type="java.lang.String">
-					<OBJECT class="java.lang.String">video</OBJECT>
-				</ARRAY>
-			</OBJECT>
-		</FIELD>
-		<FIELD name="_dbReferenceName"><NULL/><!-- class java.lang.String --></FIELD>
-		<FIELD name="_displayNames">
-			<OBJECT class="java.util.HashMap">
-				<OBJECT class="java.lang.String">DE</OBJECT>
-				<OBJECT class="java.lang.String">YouTube Video</OBJECT>
-				<OBJECT class="java.lang.String">EN</OBJECT>
-				<OBJECT class="java.lang.String">YouTube Video</OBJECT>
-			</OBJECT>
-		</FIELD>
-		<FIELD name="_name">
-			<OBJECT class="java.lang.String">video</OBJECT>
-		</FIELD>
-		<FIELD name="_valueListAttribute"><NULL/><!-- class [Ljava.lang.String; --></FIELD>
-		<FIELD name="_visible" type="boolean">false</FIELD>
-		<FIELD name="_width" type="int">120</FIELD>
-	</OBJECT>
-	<OBJECT class="de.espirit.firstspirit.access.store.templatestore.FieldMapping">
-		<FIELD name="_dbAttributeNames">
-			<OBJECT class="java.util.HashMap">
-				<OBJECT class="java.lang.String">DE</OBJECT>
-				<ARRAY type="java.lang.String">
-					<OBJECT class="java.lang.String">video_thumbnail</OBJECT>
-				</ARRAY>
-				<OBJECT class="java.lang.String">EN</OBJECT>
-				<ARRAY type="java.lang.String">
-					<OBJECT class="java.lang.String">video_thumbnail</OBJECT>
-				</ARRAY>
-			</OBJECT>
-		</FIELD>
-		<FIELD name="_dbReferenceName"><NULL/><!-- class java.lang.String --></FIELD>
-		<FIELD name="_displayNames">
-			<OBJECT class="java.util.HashMap">
-				<OBJECT class="java.lang.String">DE</OBJECT>
-				<OBJECT class="java.lang.String">Thumbnail</OBJECT>
-				<OBJECT class="java.lang.String">EN</OBJECT>
-				<OBJECT class="java.lang.String">Thumbnail</OBJECT>
-			</OBJECT>
-		</FIELD>
-		<FIELD name="_name">
-			<OBJECT class="java.lang.String">video_thumbnail</OBJECT>
-		</FIELD>
-		<FIELD name="_valueListAttribute"><NULL/><!-- class [Ljava.lang.String; --></FIELD>
-		<FIELD name="_visible" type="boolean">false</FIELD>
-		<FIELD name="_width" type="int">120</FIELD>
-	</OBJECT>
-	<OBJECT class="de.espirit.firstspirit.access.store.templatestore.FieldMapping">
-		<FIELD name="_dbAttributeNames">
-			<OBJECT class="java.util.HashMap">
-				<OBJECT class="java.lang.String">DE</OBJECT>
-				<ARRAY type="java.lang.String">
 					<OBJECT class="java.lang.String">category</OBJECT>
 				</ARRAY>
 				<OBJECT class="java.lang.String">EN</OBJECT>

@@ -5,55 +5,7 @@
   "version" : 2,
   "languageToResponse" : {
     "§" : {
-      "faceDetails" : [ {
-        "boundingBox" : {
-          "width" : 0.023693664,
-          "height" : 0.044081647,
-          "left" : 0.6855427,
-          "top" : 0.10471618
-        },
-        "ageRange" : null,
-        "smile" : null,
-        "eyeglasses" : null,
-        "sunglasses" : null,
-        "gender" : null,
-        "beard" : null,
-        "mustache" : null,
-        "eyesOpen" : null,
-        "mouthOpen" : null,
-        "emotions" : null,
-        "landmarks" : [ {
-          "type" : "eyeLeft",
-          "x" : 0.7099732,
-          "y" : 0.11631641
-        }, {
-          "type" : "eyeRight",
-          "x" : 0.7129354,
-          "y" : 0.12589657
-        }, {
-          "type" : "mouthLeft",
-          "x" : 0.7000942,
-          "y" : 0.12515494
-        }, {
-          "type" : "mouthRight",
-          "x" : 0.7025137,
-          "y" : 0.13294698
-        }, {
-          "type" : "nose",
-          "x" : 0.71007895,
-          "y" : 0.12022487
-        } ],
-        "pose" : {
-          "roll" : -6.683262,
-          "yaw" : 3.1902966,
-          "pitch" : 2.0967207
-        },
-        "quality" : {
-          "brightness" : 98.85029,
-          "sharpness" : 0.7846416
-        },
-        "confidence" : 74.02617
-      } ],
+      "faceDetails" : [ ],
       "orientationCorrection" : null
     }
   }

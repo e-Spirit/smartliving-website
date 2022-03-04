@@ -11,8 +11,8 @@ store=PAGESTORE
 class=de.espirit.firstspirit.store.access.pagestore.SectionImpl
 
 [nextSibling]
-uid=blueprint~#~content~#~video
-gid=68c87620-e3e5-4821-b222-d6a1ec4ab314
+uid=blueprint~#~content~#~text__picture__table
+gid=01af4537-4ed6-44ef-911f-c7bddae5529c
 store=PAGESTORE
 class=de.espirit.firstspirit.store.access.pagestore.SectionImpl
 

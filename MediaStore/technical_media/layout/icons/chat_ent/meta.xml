@@ -69,14 +69,14 @@
           "name" : "Astronomy"
         } ]
       }, {
-        "name" : "Space",
+        "name" : "Universe",
         "confidence" : 92.69319,
         "instances" : [ ],
         "parents" : [ {
           "name" : "Astronomy"
         } ]
       }, {
-        "name" : "Universe",
+        "name" : "Space",
         "confidence" : 92.69319,
         "instances" : [ ],
         "parents" : [ {

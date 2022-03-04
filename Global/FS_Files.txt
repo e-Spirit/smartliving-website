@@ -1,4 +1,7 @@
 # mimeType        name
+application/json  Modules/ProjectApps/System/AdvancedUrlFactory Configuration/configuration.json
+application/octet-stream  Modules/ProjectApps/System/AdvancedUrlFactory Configuration/customConversionTable.conf
+text/plain        Modules/ProjectApps/System/AdvancedUrlFactory Configuration/version.txt
 text/xml          Project/ConversionTables.xml
 text/xml          Project/CustomProperties.xml
 text/xml          Project/EditorialLanguages.xml
@@ -7,3 +10,4 @@ text/xml          Project/PresentationChannels.xml
 text/xml          Project/Project.xml
 text/xml          Project/Resolutions.xml
 text/xml          Project/TemplateSets.xml
+text/xml          Schedule/Entries.xml

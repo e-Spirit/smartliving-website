@@ -7,10 +7,10 @@
     "§" : {
       "faceDetails" : [ {
         "boundingBox" : {
-          "width" : 0.092677794,
-          "height" : 0.22342648,
-          "left" : 0.5640994,
-          "top" : 0.22800237
+          "width" : 0.09675592,
+          "height" : 0.21727307,
+          "left" : 0.5711976,
+          "top" : 0.2343588
         },
         "ageRange" : null,
         "smile" : null,
@@ -24,35 +24,35 @@
         "emotions" : null,
         "landmarks" : [ {
           "type" : "eyeLeft",
-          "x" : 0.59667116,
-          "y" : 0.3318085
+          "x" : 0.59572065,
+          "y" : 0.33185044
         }, {
           "type" : "eyeRight",
-          "x" : 0.60276085,
-          "y" : 0.32105193
+          "x" : 0.6025175,
+          "y" : 0.32122272
         }, {
           "type" : "mouthLeft",
-          "x" : 0.5982994,
-          "y" : 0.40805513
+          "x" : 0.59670603,
+          "y" : 0.40692183
         }, {
           "type" : "mouthRight",
-          "x" : 0.60268825,
-          "y" : 0.4000235
+          "x" : 0.6015924,
+          "y" : 0.398876
         }, {
           "type" : "nose",
-          "x" : 0.5714244,
-          "y" : 0.36431602
+          "x" : 0.57038367,
+          "y" : 0.36363712
         } ],
         "pose" : {
-          "roll" : -38.26355,
-          "yaw" : -74.53166,
-          "pitch" : 36.77208
+          "roll" : -27.551498,
+          "yaw" : -76.53807,
+          "pitch" : 26.13667
         },
         "quality" : {
-          "brightness" : 97.34388,
-          "sharpness" : 78.6435
+          "brightness" : 96.77303,
+          "sharpness" : 83.147415
         },
-        "confidence" : 99.98432
+        "confidence" : 99.98623
       } ],
       "orientationCorrection" : null
     }

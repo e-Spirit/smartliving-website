@@ -4,14 +4,3 @@ gid=44a15149-a2e1-46eb-9973-3f93d6c40dab
 uidType=GLOBALSTORE
 class=de.espirit.firstspirit.store.access.globalstore.GlobalStoreRootImpl
 
-[optionalProjectId]
-uid=delete
-gid=90d4481b-d9ba-4ba4-8cc5-5a57fc1c108f
-uidType=TEMPLATESTORE
-class=de.espirit.firstspirit.store.access.templatestore.WorkflowImpl
-
-uid=release
-gid=5bb013ba-905d-408f-bbb5-cba72854321b
-uidType=TEMPLATESTORE
-class=de.espirit.firstspirit.store.access.templatestore.WorkflowImpl
-

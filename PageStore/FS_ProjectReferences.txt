@@ -9,9 +9,3 @@ type=Group
 gid=57c16654-7fa0-38c8-a976-00b2074367e3
 class=de.espirit.firstspirit.server.projectmanagement.GroupDTO
 
-[WorkflowPermission-Group]
-name=Everyone
-type=Group
-gid=57c16654-7fa0-38c8-a976-00b2074367e3
-class=de.espirit.firstspirit.server.projectmanagement.GroupDTO
-

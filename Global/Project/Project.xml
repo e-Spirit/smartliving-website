@@ -23,12 +23,8 @@
 	<FIELD name="_enableMediaSizeLimit" type="boolean">false</FIELD>
 	<FIELD name="_enableMediaStrictMimeCheck" type="boolean">false</FIELD>
 	<FIELD name="_forbidPolyglotDataHierarchy" type="boolean">true</FIELD>
-	<FIELD name="_futureTimelineProvider">
-		<OBJECT class="java.lang.String">de.espirit.firstspirit.client.plugin.timeline.SectionLifespanTimelineProvider</OBJECT>
-	</FIELD>
-	<FIELD name="_historyTimelineProvider">
-		<OBJECT class="java.lang.String">de.espirit.firstspirit.client.plugin.timeline.ReleaseRevisionTimelineProvider</OBJECT>
-	</FIELD>
+	<FIELD name="_futureTimelineProvider"><NULL/><!-- class java.lang.String --></FIELD>
+	<FIELD name="_historyTimelineProvider"><NULL/><!-- class java.lang.String --></FIELD>
 	<FIELD name="_inlinePreviewConstraints">
 		<OBJECT class="de.espirit.firstspirit.server.projectmanagement.InlinePreviewConstraintsDTO">
 			<FIELD name="_browserEngineFileExtensions">
@@ -71,6 +67,9 @@
 			<FIELD name="_maxFileSize" type="long">0</FIELD>
 			<FIELD name="_maxImageSize" type="long">0</FIELD>
 		</OBJECT>
+	</FIELD>
+	<FIELD name="_mediaNotTranslatedStrategy">
+		<OBJECT class="de.espirit.firstspirit.access.project.Project$MediaNotTranslatedStrategy">IGNORE</OBJECT>
 	</FIELD>
 	<FIELD name="_metadataDescriptions">
 		<OBJECT class="java.util.ArrayList">

@@ -1,5 +1,4 @@
 blueprint~#~content~#~facts
 blueprint~#~content~#~teaser
 blueprint~#~content~#~featured_products
-blueprint~#~content~#~video
 blueprint~#~content~#~text__picture__table
