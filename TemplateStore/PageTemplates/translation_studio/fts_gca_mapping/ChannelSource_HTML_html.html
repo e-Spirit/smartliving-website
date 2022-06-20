@@ -1,0 +1,12 @@
+$CMS_TRIM(level:4)$
+	$CMS_FOR(_mapping, pt_fts_mappings_standard)$
+		$CMS_SET(_formdata, _mapping)$ 
+		$CMS_SET(_langSrc)$$CMS_VALUE(_formdata.get(#global.language, "st_fts_language_source").get(), default:"")$$CMS_END_SET$
+		$CMS_SET(_langTarget)$$CMS_VALUE(_formdata.get(#global.language, "st_fts_language_target").get(), default:"")$$CMS_END_SET$
+
+		$CMS_IF(!_langSrc.toString.isEmpty && !_langTarget.toString.isEmpty)$
+			$CMS_VALUE(_langSrc)$ - $CMS_VALUE(_langTarget)$
+		$CMS_END_IF$
+		$CMS_IF(!#for.isLast)$<br>$CMS_END_IF$
+	$CMS_END_FOR$
+$CMS_END_TRIM$

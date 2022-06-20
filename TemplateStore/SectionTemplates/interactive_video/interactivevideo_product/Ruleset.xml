@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RULES>
+	<!-- maximum entries -->
+	<RULE>
+		<WITH>
+			<GREATER_THAN>
+				<PROPERTY name="SIZE" source="st_product"/>
+				<NUMBER>0</NUMBER>
+			</GREATER_THAN>
+		</WITH>
+		<DO>
+			<NOT>
+				<PROPERTY name="ADD" source="st_product"/>
+			</NOT>
+		</DO>
+	</RULE>
+	<!-- maximum entries -->
+	<RULE>
+		<WITH>
+			<GREATER_THAN>
+				<PROPERTY name="SIZE" source="st_product"/>
+				<NUMBER>1</NUMBER>
+			</GREATER_THAN>
+		</WITH>
+		<DO>
+			<NOT>
+				<VALIDATION scope="RELEASE">
+					<PROPERTY name="VALID" source="st_product"/>
+					<MESSAGE lang="*" text="This form element must not contain more than one entry!"/>
+					<MESSAGE lang="DE" text="Diese Eingabekomponente darf nicht mehr als einen Eintrag enthalten!"/>
+				</VALIDATION>
+			</NOT>
+		</DO>
+	</RULE>
+	<!-- mandatory -->
+	<RULE>
+		<WITH>
+			<PROPERTY name="EMPTY" source="st_time"/>
+		</WITH>
+		<DO>
+			<NOT>
+				<VALIDATION scope="RELEASE">
+					<PROPERTY name="VALID" source="st_time"/>
+					<MESSAGE lang="*" text="This form element must not be empty!"/>
+					<MESSAGE lang="DE" text="Diese Eingabekomponente darf nicht leer sein!"/>
+				</VALIDATION>
+			</NOT>
+		</DO>
+	</RULE>
+	<!-- editable -->
+	<RULE>
+		<WITH>
+			<IN_GROUP name="Administrators"/>
+		</WITH>
+		<DO>
+			<PROPERTY name="EDITABLE" source="st_time"/>
+		</DO>
+	</RULE>
+</RULES>

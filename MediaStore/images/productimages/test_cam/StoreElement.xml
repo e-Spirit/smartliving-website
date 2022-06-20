@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MEDIUM filename="test_cam" id="5268124357136171128" meta="1" type="pic" uniquedescription="test_cam">
+	<LANG displayname="Security Camera" language="EN"/>
+	<LANG displayname="Sicherheitskamera" language="DE"/>
+	<PICTURE>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:1024,&quot;x&quot;:0,&quot;h&quot;:640,&quot;y&quot;:80},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:585,&quot;x&quot;:14,&quot;h&quot;:301,&quot;y&quot;:413},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="0.0,80.0,1024.0,640.0,0,false" extension="jpg" height="500" mimetype="image/jpeg" resolutionid="portrait" width="800"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:1280,&quot;x&quot;:0,&quot;h&quot;:439,&quot;y&quot;:256},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:585,&quot;x&quot;:14,&quot;h&quot;:301,&quot;y&quot;:413},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="0.0,256.0,1280.0,439.0,0,false" extension="jpg" height="400" mimetype="image/jpeg" resolutionid="landscape" width="1170"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:1280,&quot;x&quot;:0,&quot;h&quot;:720,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:585,&quot;x&quot;:14,&quot;h&quot;:301,&quot;y&quot;:413},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="0.0,0.0,1280.0,720.0,0,false" extension="jpg" height="1080" mimetype="image/jpeg" resolutionid="banner_slider" width="1920"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:463,&quot;x&quot;:101,&quot;h&quot;:720,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:585,&quot;x&quot;:14,&quot;h&quot;:301,&quot;y&quot;:413},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="101.0,0.0,463.0,720.0,0,false" extension="jpg" height="560" mimetype="image/jpeg" resolutionid="product_teaser" width="360"/>
+		<RESOLUTION extension="jpg" height="720" mimetype="image/jpeg" resolutionid="ORIGINAL" width="1280"/>
+	</PICTURE>
+</MEDIUM>

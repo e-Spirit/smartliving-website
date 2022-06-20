@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_INPUT_NUMBER name="st_seconds" type="double" allowEmpty="no" hFill="no" min="0.0" singleLine="yes" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Second of appearance:" format="0.000"/>
+    </LANGINFOS>
+  </CMS_INPUT_NUMBER>
+
+  <FS_REFERENCE
+    name="st_image"
+    allowEmpty="no"
+    hFill="yes"
+    imagePreview="yes"
+    sections="no"
+    upload="yes"
+    useLanguages="no">
+    <FILTER>
+      <ALLOW type="picture"/>
+    </FILTER>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Image"/>
+    </LANGINFOS>
+    <PROJECTS>
+      <LOCAL name="."/>
+    </PROJECTS>
+  </FS_REFERENCE>
+
+  <FS_REFERENCE name="st_callToAction" hFill="yes">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Set Reference"/>
+    </LANGINFOS>
+    <PROJECTS>
+      <LOCAL name=".">
+        <SOURCES>
+          <FOLDER name="root" store="SITESTORE"/>
+        </SOURCES>
+      </LOCAL>
+    </PROJECTS>
+  </FS_REFERENCE>
+
+</CMS_MODULE>

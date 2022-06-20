@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+	<TABLE name="country">
+		<ROW>
+			<COLUMN name="FS_GID">cb0f38d2-55d7-4215-9036-7b9efb9d0692</COLUMN>
+			<COLUMN name="country_DE">Deutschland</COLUMN>
+			<COLUMN name="country_EN">Germany</COLUMN>
+		</ROW>
+	</TABLE>
+</DATA>

@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='lt_url'><TEXT>https://</TEXT></FIELD>
+	<FIELD name='lt_link_behavior'><SEL><VALUE>_self</VALUE></SEL></FIELD>
+</FIELDS>

@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='md_creation_date'><DATE>1637182165646</DATE></FIELD>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ {
+        "boundingBox" : {
+          "width" : 0.03231543,
+          "height" : 0.05687007,
+          "left" : 0.5024617,
+          "top" : 0.28597787
+        },
+        "ageRange" : null,
+        "smile" : null,
+        "eyeglasses" : null,
+        "sunglasses" : null,
+        "gender" : null,
+        "beard" : null,
+        "mustache" : null,
+        "eyesOpen" : null,
+        "mouthOpen" : null,
+        "emotions" : null,
+        "landmarks" : [ {
+          "type" : "eyeLeft",
+          "x" : 0.5144492,
+          "y" : 0.31056657
+        }, {
+          "type" : "eyeRight",
+          "x" : 0.5264213,
+          "y" : 0.31103802
+        }, {
+          "type" : "mouthLeft",
+          "x" : 0.51346374,
+          "y" : 0.3283574
+        }, {
+          "type" : "mouthRight",
+          "x" : 0.52355146,
+          "y" : 0.32869253
+        }, {
+          "type" : "nose",
+          "x" : 0.5213077,
+          "y" : 0.32564417
+        } ],
+        "pose" : {
+          "roll" : 1.1115161,
+          "yaw" : 16.357286,
+          "pitch" : -38.801754
+        },
+        "quality" : {
+          "brightness" : 92.29506,
+          "sharpness" : 7.58945
+        },
+        "confidence" : 99.98478
+      } ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Flooring",
+        "confidence" : 99.81705,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Person",
+        "confidence" : 99.81705,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.16699862,
+            "height" : 0.59498125,
+            "left" : 0.44753495,
+            "top" : 0.24143471
+          },
+          "confidence" : 99.67015
+        }, {
+          "boundingBox" : {
+            "width" : 0.0491489,
+            "height" : 0.36240628,
+            "left" : 0.94832027,
+            "top" : 0.6343723
+          },
+          "confidence" : 75.4191
+        } ],
+        "parents" : [ ]
+      }, {
+        "name" : "Human",
+        "confidence" : 99.81705,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Floor",
+        "confidence" : 99.327255,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Pants",
+        "confidence" : 98.70971,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Clothing"
+        } ]
+      }, {
+        "name" : "Clothing",
+        "confidence" : 98.70971,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Apparel",
+        "confidence" : 98.70971,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Interior Design",
+        "confidence" : 95.33309,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Indoors"
+        } ]
+      }, {
+        "name" : "Indoors",
+        "confidence" : 95.33309,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Wood",
+        "confidence" : 94.20034,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Housing",
+        "confidence" : 91.54165,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Building"
+        } ]
+      }, {
+        "name" : "Building",
+        "confidence" : 91.54165,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Hardwood",
+        "confidence" : 89.66432,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Wood"
+        } ]
+      }, {
+        "name" : "Long Sleeve",
+        "confidence" : 82.31075,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Sleeve"
+        }, {
+          "name" : "Clothing"
+        } ]
+      }, {
+        "name" : "Sleeve",
+        "confidence" : 82.31075,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Clothing"
+        } ]
+      }, {
+        "name" : "Furniture",
+        "confidence" : 82.30376,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Door",
+        "confidence" : 79.094444,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Handrail",
+        "confidence" : 73.51198,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Banister",
+        "confidence" : 73.51198,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Table",
+        "confidence" : 68.88979,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Furniture"
+        } ]
+      }, {
+        "name" : "Jeans",
+        "confidence" : 68.158966,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Pants"
+        }, {
+          "name" : "Clothing"
+        } ]
+      }, {
+        "name" : "Denim",
+        "confidence" : 68.158966,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Pants"
+        }, {
+          "name" : "Clothing"
+        } ]
+      }, {
+        "name" : "Shop",
+        "confidence" : 60.494785,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Window",
+        "confidence" : 60.07007,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Corridor",
+        "confidence" : 57.364273,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Shelf",
+        "confidence" : 57.277767,
+        "instances" : [ ],
+        "parents" : [ ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "2.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "5.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Indoors #Flooring #Handrail #Jeans #Sleeve #Building #Window #Person #Long Sleeve #Banister #Housing #Clothing #Apparel #Wood #Interior Design #Denim #Furniture #Human #Table #Shop #Floor #Corridor #Hardwood #Pants #Shelf #Door"
+  }
+}</TEXT></FIELD>
+</FIELDS>

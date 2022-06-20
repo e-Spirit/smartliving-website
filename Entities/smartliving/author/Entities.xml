@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+	<TABLE name="author">
+		<ROW>
+			<COLUMN name="FS_GID">51b14111-7d41-4bad-ab81-a0e161e2ffd3</COLUMN>
+			<COLUMN name="name">John Doe</COLUMN>
+		</ROW>
+	</TABLE>
+</DATA>

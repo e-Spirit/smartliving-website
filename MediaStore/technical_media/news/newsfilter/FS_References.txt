@@ -1,0 +1,6 @@
+[self]
+uid=newsfilter
+gid=e25cf983-7cc2-40e1-8262-4d2b3896fbce
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+

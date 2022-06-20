@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RULES>
+	<!-- Formatting restriction (only valid currency values): tt_price -->
+	<RULE>
+		<WITH>
+			<OR>
+				<AND>
+					<EQUAL>
+						<PROPERTY name="LANG" source="#global"/>
+						<TEXT>DE</TEXT>
+					</EQUAL>
+					<MATCHES regex="^\d+(,\d{1,2})?\s?€?$">
+						<PROPERTY name="VALUE" source="tt_price"/>
+					</MATCHES>
+				</AND>
+				<AND>
+					<EQUAL>
+						<PROPERTY name="LANG" source="#global"/>
+						<TEXT>EN</TEXT>
+					</EQUAL>
+					<MATCHES regex="^\$?\s?\d+(.\d{1,2})?$">
+						<PROPERTY name="VALUE" source="tt_price"/>
+					</MATCHES>
+				</AND>
+				<MATCHES regex="">
+					<PROPERTY name="VALUE" source="tt_price"/>
+				</MATCHES>
+			</OR>
+		</WITH>
+		<DO>
+			<VALIDATION scope="SAVE">
+				<PROPERTY name="VALID" source="tt_price"/>
+				<MESSAGE lang="*" text="Bitte das richtiges Format angeben."/>
+				<MESSAGE lang="EN" text="Please enter a correct format."/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<!-- Mandatory: tt_price -->
+	<RULE>
+		<IF>
+			<EQUAL>
+				<PROPERTY name="LANG" source="#global"/>
+				<PROPERTY name="MASTER" source="#global"/>
+			</EQUAL>
+		</IF>
+		<WITH>
+			<PROPERTY name="EMPTY" source="tt_price"/>
+		</WITH>
+		<DO>
+			<NOT>
+				<VALIDATION scope="Release">
+					<PROPERTY name="VALID" source="tt_price"/>
+					<MESSAGE lang="*" text="Bitte einen Preis hinzufügen."/>
+					<MESSAGE lang="EN" text="Please add a price."/>
+				</VALIDATION>
+			</NOT>
+		</DO>
+	</RULE>
+	<!-- Mandatory: tt_teaser_image -->
+	<RULE>
+		<IF>
+			<EQUAL>
+				<PROPERTY name="LANG" source="#global"/>
+				<PROPERTY name="MASTER" source="#global"/>
+			</EQUAL>
+		</IF>
+		<WITH>
+			<PROPERTY name="EMPTY" source="tt_teaser_image"/>
+		</WITH>
+		<DO>
+			<NOT>
+				<VALIDATION scope="Release">
+					<PROPERTY name="VALID" source="tt_teaser_image"/>
+					<MESSAGE lang="*" text="Bitte ein Bild hinzufügen."/>
+					<MESSAGE lang="EN" text="Please add a picture."/>
+				</VALIDATION>
+			</NOT>
+		</DO>
+	</RULE>
+	<!-- Mandatory: tt_images -->
+	<RULE>
+		<IF>
+			<EQUAL>
+				<PROPERTY name="LANG" source="#global"/>
+				<PROPERTY name="MASTER" source="#global"/>
+			</EQUAL>
+		</IF>
+		<WITH>
+			<PROPERTY name="EMPTY" source="tt_pictures"/>
+		</WITH>
+		<DO>
+			<NOT>
+				<VALIDATION scope="Release">
+					<PROPERTY name="VALID" source="tt_pictures"/>
+					<MESSAGE lang="*" text="Bitte mindestens ein Bild der Bildergalerie hinzufügen."/>
+					<MESSAGE lang="EN" text="Please add at least one picture to the gallery."/>
+				</VALIDATION>
+			</NOT>
+		</DO>
+	</RULE>
+	<!-- Mandatory: tt_delivery -->
+	<RULE>
+		<IF>
+			<EQUAL>
+				<PROPERTY name="LANG" source="#global"/>
+				<PROPERTY name="MASTER" source="#global"/>
+			</EQUAL>
+		</IF>
+		<WITH>
+			<PROPERTY name="EMPTY" source="tt_delivery"/>
+		</WITH>
+		<DO>
+			<NOT>
+				<VALIDATION scope="Release">
+					<PROPERTY name="VALID" source="tt_delivery"/>
+					<MESSAGE lang="*" text="Bitte eine Beschreibung der Lieferung hinzufügen."/>
+					<MESSAGE lang="EN" text="Please add a delivery description."/>
+				</VALIDATION>
+			</NOT>
+		</DO>
+	</RULE>
+	<!-- Mandatory: tt_installation -->
+	<RULE>
+		<IF>
+			<EQUAL>
+				<PROPERTY name="LANG" source="#global"/>
+				<PROPERTY name="MASTER" source="#global"/>
+			</EQUAL>
+		</IF>
+		<WITH>
+			<PROPERTY name="EMPTY" source="tt_installation"/>
+		</WITH>
+		<DO>
+			<NOT>
+				<VALIDATION scope="Release">
+					<PROPERTY name="VALID" source="tt_installation"/>
+					<MESSAGE lang="*" text="Bitte eine Bedienungsanleitung hinzufügen."/>
+					<MESSAGE lang="EN" text="Please add an installation guide."/>
+				</VALIDATION>
+			</NOT>
+		</DO>
+	</RULE>
+	<!-- Mandatory: tt_categories -->
+	<RULE>
+		<IF>
+			<EQUAL>
+				<PROPERTY name="LANG" source="#global"/>
+				<PROPERTY name="MASTER" source="#global"/>
+			</EQUAL>
+		</IF>
+		<WITH>
+			<PROPERTY name="EMPTY" source="tt_categories"/>
+		</WITH>
+		<DO>
+			<NOT>
+				<VALIDATION scope="Release">
+					<PROPERTY name="VALID" source="tt_categories"/>
+					<MESSAGE lang="*" text="Bitte eine Kategorie auswählen."/>
+					<MESSAGE lang="EN" text="Please add categories."/>
+				</VALIDATION>
+			</NOT>
+		</DO>
+	</RULE>
+	<!-- Mandatory: tt_compatibility -->
+	<RULE>
+		<IF>
+			<EQUAL>
+				<PROPERTY name="LANG" source="#global"/>
+				<PROPERTY name="MASTER" source="#global"/>
+			</EQUAL>
+		</IF>
+		<WITH>
+			<PROPERTY name="EMPTY" source="tt_compatibility"/>
+		</WITH>
+		<DO>
+			<NOT>
+				<VALIDATION scope="Release">
+					<PROPERTY name="VALID" source="tt_compatibility"/>
+					<MESSAGE lang="*" text="Bitte eine Kompatiblität hinzufügen."/>
+					<MESSAGE lang="EN" text="Please add compatibilities."/>
+				</VALIDATION>
+			</NOT>
+		</DO>
+	</RULE>
+	<!-- Mandatory: tt_name -->
+	<RULE>
+		<IF>
+			<EQUAL>
+				<PROPERTY name="LANG" source="#global"/>
+				<PROPERTY name="MASTER" source="#global"/>
+			</EQUAL>
+		</IF>
+		<WITH>
+			<PROPERTY name="EMPTY" source="tt_name"/>
+		</WITH>
+		<DO>
+			<NOT>
+				<VALIDATION scope="Release">
+					<PROPERTY name="VALID" source="tt_name"/>
+					<MESSAGE lang="*" text="Bitte einen Produktnamen wählen."/>
+					<MESSAGE lang="EN" text="Please add a product name."/>
+				</VALIDATION>
+			</NOT>
+		</DO>
+	</RULE>
+	<!-- Mandatory: tt_abstract -->
+	<RULE>
+		<IF>
+			<EQUAL>
+				<PROPERTY name="LANG" source="#global"/>
+				<PROPERTY name="MASTER" source="#global"/>
+			</EQUAL>
+		</IF>
+		<WITH>
+			<PROPERTY name="EMPTY" source="tt_abstract"/>
+		</WITH>
+		<DO>
+			<NOT>
+				<VALIDATION scope="Release">
+					<PROPERTY name="VALID" source="tt_abstract"/>
+					<MESSAGE lang="*" text="Bitte eine Beschreibung hinzufügen."/>
+					<MESSAGE lang="EN" text="Please add a description."/>
+				</VALIDATION>
+			</NOT>
+		</DO>
+	</RULE>
+	<!-- Mandatory: tt_teaser_text -->
+	<RULE>
+		<IF>
+			<EQUAL>
+				<PROPERTY name="LANG" source="#global"/>
+				<PROPERTY name="MASTER" source="#global"/>
+			</EQUAL>
+		</IF>
+		<WITH>
+			<PROPERTY name="EMPTY" source="tt_teaser_text"/>
+		</WITH>
+		<DO>
+			<NOT>
+				<VALIDATION scope="Release">
+					<PROPERTY name="VALID" source="tt_teaser_text"/>
+					<MESSAGE lang="*" text="Bitte einen Teaser Text hinzufügen."/>
+					<MESSAGE lang="EN" text="Please add a short teaser text."/>
+				</VALIDATION>
+			</NOT>
+		</DO>
+	</RULE>
+	<!-- Manual products are only available, if the corresponding option is selected in: tt_relatedproducts -->
+	<RULE>
+		<WITH>
+			<EQUAL>
+				<PROPERTY name="ENTRY" source="tt_showrelatedproducts"/>
+				<TEXT>man</TEXT>
+			</EQUAL>
+		</WITH>
+		<DO>
+			<PROPERTY name="VISIBLE" source="tt_relatedproducts"/>
+		</DO>
+	</RULE>
+	<!-- Mandatory: tt_relatedproducts, if tt_showrelatedproducts is set to manual -->
+	<RULE>
+		<IF>
+			<EQUAL>
+				<PROPERTY name="LANG" source="#global"/>
+				<PROPERTY name="MASTER" source="#global"/>
+			</EQUAL>
+		</IF>
+		<WITH>
+			<AND>
+				<PROPERTY name="EMPTY" source="tt_relatedproducts"/>
+				<EQUAL>
+					<PROPERTY name="ENTRY" source="tt_showrelatedproducts"/>
+					<TEXT>man</TEXT>
+				</EQUAL>
+			</AND>
+		</WITH>
+		<DO>
+			<NOT>
+				<VALIDATION scope="RELEASE">
+					<PROPERTY name="VALID" source="tt_relatedproducts"/>
+					<MESSAGE lang="*" text="Select as least one related product."/>
+					<MESSAGE lang="DE" text="Wähle mindestens ein ähnliches Produkt aus."/>
+				</VALIDATION>
+			</NOT>
+		</DO>
+	</RULE>
+</RULES>

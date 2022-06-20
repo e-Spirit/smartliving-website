@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PAGEREF htmlname="interiorequipment" id="4512760142183723942" pageref="-9028957586288138903" uniquedescription="interiorequipment">
+	<CONTENTPARAMETER pagecount="1" query="231827941431346377" source="product" templateid="-4892632167028164903">
+		<PARAM class="java.util.UUID" name="category" value="479361a4-0526-4517-a676-7822508d183c"/>
+	</CONTENTPARAMETER>
+	<LANG displayname="Inneneinrichtung Übersicht" language="DE"/>
+	<LANG displayname="Interior Equipment Overview" language="EN"/>
+	<PAGE_LANG_SPEC language="DE" showinpagegrp="1" showinsitemap="1"/>
+	<PAGE_LANG_SPEC language="EN" showinpagegrp="1" showinsitemap="1"/>
+</PAGEREF>

@@ -1,0 +1,6 @@
+[self]
+uid=URLProperties
+gid=b7410999-b1b2-4a7c-8993-ad2cd3c2700a
+store=GLOBALSTORE
+class=de.espirit.firstspirit.store.access.globalstore.URLPropertiesImpl
+

@@ -1,0 +1,6 @@
+[self]
+uid=smartliving.all_news
+gid=fc4867b1-378d-4426-a123-618d0f101fee
+uidType=TEMPLATESTORE_SCHEMA
+class=de.espirit.firstspirit.store.access.templatestore.QueryImpl
+

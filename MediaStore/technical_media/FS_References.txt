@@ -1,0 +1,6 @@
+[self]
+uid=technical_media
+gid=328ca369-702f-47d1-b01f-bbbd3a05c0f2
+uidType=MEDIASTORE_FOLDER
+class=de.espirit.firstspirit.store.access.mediastore.MediaFolderImpl
+

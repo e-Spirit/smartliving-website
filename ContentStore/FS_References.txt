@@ -1,0 +1,6 @@
+[self]
+uid=root
+gid=61c55190-dd53-4bb0-bf54-69f4ac6150cd
+uidType=CONTENTSTORE
+class=de.espirit.firstspirit.store.access.contentstore.ContentStoreRootImpl
+

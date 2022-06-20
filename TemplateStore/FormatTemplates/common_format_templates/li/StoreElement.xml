@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="-4059940629220680391" name="li">
+	<LANG displayname="List entry" language="EN"/>
+	<LANG displayname="Listeneintrag" language="DE"/>
+	<style cdata="" parent="ul" quote="" system="1" tag="li" view="litem" visible="0">
+		<attr name="align" value="LEFT"/>
+		<attr name="font" value="sansserif"/>
+		<attr name="name" value="List-Entry"/>
+		<render>
+			<channel conversion="Convert HTML" name="html" templateSetId="9062318847741885912"/>
+		</render>
+	</style>
+</FORMATTEMPLATE>

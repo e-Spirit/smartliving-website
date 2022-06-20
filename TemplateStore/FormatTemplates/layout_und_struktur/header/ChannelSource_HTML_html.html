@@ -1,0 +1,68 @@
+<CMS_HEADER>
+  <CMS_FUNCTION name="Navigation" resultname="fr_nav">
+    <CMS_PARAM name="expansionVisibility" value="all"/>
+    <CMS_ARRAY_PARAM name="innerBeginHTML">
+      <CMS_ARRAY_ELEMENT index="0"><![CDATA[<ul class="sub-menu">]]></CMS_ARRAY_ELEMENT>
+    </CMS_ARRAY_PARAM>
+    <CMS_ARRAY_PARAM name="beginHTML">
+      <CMS_ARRAY_ELEMENT index="0..1"><![CDATA[<li>]]></CMS_ARRAY_ELEMENT>
+    </CMS_ARRAY_PARAM>
+    <CMS_ARRAY_PARAM name="unselectedHTML">
+      <CMS_ARRAY_ELEMENT index="0..1"><![CDATA[<a href="$CMS_REF(#nav.ref)$">$CMS_VALUE(#nav.label)$</a>]]>
+      </CMS_ARRAY_ELEMENT>
+    </CMS_ARRAY_PARAM>
+    <CMS_ARRAY_PARAM name="selectedHTML">
+      <CMS_ARRAY_ELEMENT index="0..1"><![CDATA[<a href="$CMS_REF(#nav.ref)$">$CMS_VALUE(#nav.label)$</a>]]></CMS_ARRAY_ELEMENT>
+    </CMS_ARRAY_PARAM>
+    <CMS_ARRAY_PARAM name="endHTML">
+      <CMS_ARRAY_ELEMENT index="0..1"><![CDATA[</li>]]></CMS_ARRAY_ELEMENT>
+    </CMS_ARRAY_PARAM>
+    <CMS_ARRAY_PARAM name="innerEndHTML">
+      <CMS_ARRAY_ELEMENT index="0"><![CDATA[</ul>]]></CMS_ARRAY_ELEMENT>
+    </CMS_ARRAY_PARAM>
+  </CMS_FUNCTION>
+</CMS_HEADER>        
+<!-- HEADER START -->
+<header class="site-header header-style-1 nav-wide" style="z-index: $CMS_VALUE(if(#global.preview && #global.is("WEBEDIT"), 200001011, 500))$">
+    <div class="sticky-header main-bar-wraper">
+        <div class="main-bar bg-white p-t10">
+            <div class="container">
+                $CMS_IF(!ps_logo.isEmpty())$
+	                <div class="logo-header">
+	                    <div class="logo-header-inner logo-header-one">
+	                        <a href="$CMS_REF(ps_homepage)$">
+	                            <img src="$CMS_REF(ps_logo)$" width="171" height="49" alt="" />
+	                        </a>
+	                    </div>
+	                </div>
+                $CMS_END_IF$
+                <!-- NAV Toggle Button -->	
+                <button data-target=".header-nav" data-toggle="collapse" type="button" class="navbar-toggle collapsed">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- MAIN Nav -->
+                <div class="header-nav navbar-collapse collapse">
+                    <ul class="nav navbar-nav"> 
+                        $CMS_VALUE(fr_nav)$
+                        <li>
+                            <a href="javascript:;"><i class="fa fa-globe-europe fa-lg" style="font-size:1.33em;"></i></a>
+                            <ul class="sub-menu">
+                                $CMS_FOR(for_language, #global.project.languages)$
+	                                $CMS_IF(!#global.dataset.isEmpty())$            
+	                                	<li><a href="$CMS_REF(#global.node, lang:for_language, contentId:#global.dataset.entity.id)$">$CMS_VALUE(for_language.name)$</a></li>
+	                                $CMS_ELSE$
+	                                	<li><a href="$CMS_REF(#global.node, lang:for_language)$">$CMS_VALUE(for_language.name)$</a></li>
+	                                $CMS_END_IF$
+                                $CMS_END_FOR$
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- HEADER END -->

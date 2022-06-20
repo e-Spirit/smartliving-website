@@ -1,0 +1,238 @@
+.lists-in-accordion li{
+margin-left:2em;
+}
+
+
+.glyphicon-chevron-right:before {
+	font-family: "FontAwesome";
+	content: "\f078";
+	color: #777;
+	transition: color .2s ease;
+}
+
+.header-nav .has-child.nav-active > a+.submenu-toogle.glyphicon-chevron-right:before {
+	font-family: "FontAwesome";
+	content: "\f077";
+	color: #000;
+}
+
+.blog-post .owl-next{
+top: 50% !important;
+}
+
+.blog-post .owl-prev{
+top: 50% !important;
+}
+
+.link_error {
+	border: 2px solid red;
+	padding: 0 5px 0 5px;
+}
+
+.link_error[data-tooltip] {
+    position: relative;
+}
+ 
+.link_error[data-tooltip]::after {
+  content: attr(data-tooltip);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s;
+ 
+  display: block;  
+  position: absolute; 
+  bottom: 1em;
+  left: -6em;
+  width: 15em;
+  padding: 0.5em;
+  z-index: 100;
+  color: #000; 
+  background-color: #ffebe6;
+  border: solid 1px #c32e04;
+  border-radius: 0.5em;  
+}
+ 
+.link_error[data-tooltip]:hover::after {
+  opacity: 1;
+}
+
+.btn-dark, .btn-dark:hover {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.bg-white-faq{
+background-color:white;
+z-index:10;
+}
+
+.table table td{
+	border-bottom: 1px solid #ccc;
+}
+
+.table-hover tbody tr:hover td {
+	background: #dddddd;
+}
+
+td {
+	white-space: normal;
+	word-wrap: break-word;
+}
+
+table {
+	table-layout: fixed;
+}
+
+@media (min-width: 768px) {
+	.float-right-on-desktop {
+		float: right;
+	}
+}
+
+.theming-background{
+	background-color:$CMS_VALUE(ps_background)$;
+}
+.theming-footer{
+	background-color:$CMS_VALUE(ps_footercolor)$;
+}
+.theming-button{
+	background-color:$CMS_VALUE(ps_button)$;
+}
+.theming-text-highlighting{
+	color:$CMS_VALUE(ps_text_highlighting)$;
+}
+.theming-banner-opacity{
+	opacity:$CMS_VALUE(ps_banneropacity)$;
+}
+.theming-content-opacity{
+opacity:$CMS_VALUE(ps_contentopacity)$;
+}
+
+/*@media (min-width: 1600px) {
+    .container,
+    .image-single__caption,
+    .image-single__credit,
+    .video-embedded__caption,
+    .video-embedded__credit {
+        max-width: 1570px;
+		width: 1570px;
+    }
+}
+
+.container {
+	border: 5px solid red;
+}
+
+.mask {
+    z-index: 1;
+    background: -webkit-gradient(linear,left top,left bottom,from(transparent),to(#000));
+    background: linear-gradient(transparent,#000);
+    height: 400px;
+    opacity: 1;
+    -webkit-transform: matrix(1,0,0,1,0,0);
+    transform: matrix(1,0,0,1,0,0);
+    -webkit-transform-origin: 50% 50% 0;
+    transform-origin: 50% 50% 0;
+    bottom: 0;
+    right: 0;
+    position: relative;
+    left: 0;
+}
+*/
+
+/*
+source
+http://stackoverflow.com/a/23935891/3853728
+*/
+
+.img-gradient{
+  position:relative;
+  display:inline-block;
+}
+
+
+/* 
+#002f4b,#dc4225 
+Convert HEX to RGBA - http://hex2rgba.devoth.com/
+*/
+.img-gradient:after {
+  pointer-events: none;
+  content:'';
+  position:absolute;
+  left:0; top:0;
+  width:100%; height:100%;
+  display:inline-block;
+background: rgb(0,0,0);
+background: -moz-linear-gradient(0deg, rgba(0,0,0,0.9416141456582633) 0%, rgba(0,0,0,0.3785889355742297) 28%, rgba(0,0,0,0) 49%);
+background: -webkit-linear-gradient(0deg, rgba(0,0,0,0.9416141456582633) 0%, rgba(0,0,0,0.3785889355742297) 28%, rgba(0,0,0,0) 49%);
+background: linear-gradient(0deg, rgba(0,0,0,0.9416141456582633) 0%, rgba(0,0,0,0.3785889355742297) 28%, rgba(0,0,0,0) 49%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+}
+.img-gradient img{
+  display:block;
+}
+.img-gradient{
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.article-header {
+	font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+    color: #000;
+}
+
+.fake-bar {
+	background-color: #565364;
+    height: 50px;
+}
+
+.fake-bar-left {
+	float: left;
+	margin: 15px 0px 0px 15px;
+}
+
+.fake-bar-right{
+	float: right;
+    margin: 15px 15px 0px 0px;
+}
+
+.fake-bar, .fake-bar a{
+	color: #fff;
+}
+
+.btn {
+	color: #000;
+	background-color: #efefef;
+	bordercolor: #efefef;
+}
+
+.category-btn {
+    color: #efefef;
+    background-color: #000;
+    border-color: #000;
+}
+
+.tag-container {
+	padding-bottom: 100px;
+	float: left;
+}
+
+.category-right {
+	float: right;
+}
+
+.standard {
+	object-fit: cover;
+	$--height: 400px;--$
+}
+
+.event__data-wrapper__month {
+	font-weight: 600;
+	font-size: 16px;
+	padding-bottom: 16px;
+}

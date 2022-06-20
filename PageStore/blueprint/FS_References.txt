@@ -1,0 +1,12 @@
+[self]
+uid=blueprint
+gid=57009eee-e233-4a65-a177-4cb2d7b373e0
+uidType=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.PageImpl
+
+[requiredProjectId]
+uid=standard
+gid=1b6428fc-f157-44ce-a3b9-ceb8800a2476
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
+

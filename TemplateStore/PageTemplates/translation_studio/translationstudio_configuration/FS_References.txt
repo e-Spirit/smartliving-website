@@ -1,0 +1,6 @@
+[self]
+uid=translationstudio_configuration
+gid=092f8a7d-fbb5-40f1-83b2-9238555ccdbd
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
+

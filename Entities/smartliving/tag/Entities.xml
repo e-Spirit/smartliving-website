@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+	<TABLE name="tag">
+		<ROW>
+			<COLUMN name="FS_GID">819abc3f-302c-4d6d-9b5c-b0874688e95a</COLUMN>
+			<COLUMN name="name_DE">Geräte</COLUMN>
+			<COLUMN name="name_EN">Gadgets</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">e4d4916d-8b46-445c-b175-0b6fc85b4234</COLUMN>
+			<COLUMN name="name_DE">Smarthome</COLUMN>
+			<COLUMN name="name_EN">Smarthome</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">30501cc7-102f-41ec-8838-b780b98d9425</COLUMN>
+			<COLUMN name="name_DE">Sicherheit</COLUMN>
+			<COLUMN name="name_EN">Security</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">381a6a55-6556-4a22-86f8-a7cf91ece348</COLUMN>
+			<COLUMN name="name_DE">Technologie</COLUMN>
+			<COLUMN name="name_EN">Technology</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">4a5449a6-7754-4439-85e9-13e8e13b2015</COLUMN>
+			<COLUMN name="name_DE">Mobilität</COLUMN>
+			<COLUMN name="name_EN">Mobility</COLUMN>
+		</ROW>
+	</TABLE>
+</DATA>

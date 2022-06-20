@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="-6832423890409316069" name="td">
+	<LANG displayname="Tabellenzelle" language="DE"/>
+	<LANG displayname="Table cell" language="EN"/>
+	<style parent="tr" system="1" tag="td" view="table_cell" visible="0">
+		<attr name="align" value="LEFT"/>
+		<attr name="name" value="td"/>
+		<render>
+			<channel conversion="Convert HTML" name="html" templateSetId="9062318847741885912"/>
+		</render>
+	</style>
+</FORMATTEMPLATE>

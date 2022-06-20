@@ -1,0 +1,70 @@
+#mercury-widget .header .brand {
+	/* Change header image */
+	background-image: url($CMS_REF(media:"new_logo_caps_2_smartchat")$);
+}
+
+#mercury-widget .header {
+	/* Change header background color */
+	background-color: #fff;
+}
+
+#mercury-widget.overlay #chat-widget {
+	/* Change overlay width */
+	width: 500px;
+	left: 40px;
+}
+
+#mercury-widget .message-list .response-wrap.USER .response {
+	/* Change background color of message bubbles sent by user */
+	background-color: #000000;
+}
+
+#mercury-widget .message-list .response-wrap.BOT .response {
+	/* Change background color of message bubbles received from bot */
+	background-color: #ffffff;
+}
+
+#mercury-widget .close {
+	background-image: url($CMS_REF(media:"close")$);
+	height: 30px;
+	width: 30px;
+	opacity: 1;
+}
+
+#mercury-widget .fullscreen-toggle {
+	display: none;
+}
+
+
+#mercury-widget .message-list .response-wrap.HANDOVER .response {
+	/* Change background color of message bubbles received from handover */
+	background-color: #D3D3D3;
+}
+
+#mercury-widget .open-toggle {
+	/* Change background color of the button used to toggle the chat widget */
+	background-color: #000000;
+    z-index: 99;
+	left: 40px;
+}
+
+#mercury-widget.overlay #chat-widget {
+	/* Change drop shadow around the widget */
+	-webkit-box-shadow: black 10px 10px 40px 0px;
+	box-shadow: black 10px 10px 40px 0px;
+}
+
+#mercury-widget #chat-widget {
+	/* Change the main background color */
+	background-color: #D3D3D3;
+}
+
+#mercury-widget .input-row input {
+	/* Change the background color of the text input field */
+	background-color: #FFFFFF;
+}
+
+#mercury-widget .message-list .response-wrap.BOT .response:before {
+	background-image: url($CMS_REF(media:"chat_ent")$);
+}
+

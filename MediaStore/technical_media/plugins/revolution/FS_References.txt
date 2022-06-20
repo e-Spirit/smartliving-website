@@ -1,0 +1,6 @@
+[self]
+uid=revolution
+gid=9207e255-d8dc-470b-8f5e-f9391c624f32
+uidType=MEDIASTORE_FOLDER
+class=de.espirit.firstspirit.store.access.mediastore.MediaFolderImpl
+

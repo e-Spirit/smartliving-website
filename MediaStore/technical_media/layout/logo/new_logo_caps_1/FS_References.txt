@@ -1,0 +1,12 @@
+[self]
+uid=new_logo_caps_1
+gid=5a31d025-dd75-48e2-abbd-dfc59cba116b
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+
+[requiredProjectId]
+uid=metadata
+gid=70a3c894-c1c8-4a8b-ac05-378c1699a025
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
+

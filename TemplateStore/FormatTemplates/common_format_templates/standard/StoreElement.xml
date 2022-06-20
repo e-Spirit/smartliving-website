@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="1491546486177354006" name="standard">
+	<LANG displayname="Standard" language="DE"/>
+	<LANG displayname="Standard" language="EN"/>
+	<style tag="standard" view="flow">
+		<attr name="align" value="LEFT"/>
+		<attr name="background-color" value=""/>
+		<attr name="border-color" value=""/>
+		<attr name="color" value=""/>
+		<attr name="font-size" value=""/>
+		<attr name="font-style" value=""/>
+		<attr name="font" value=""/>
+		<attr name="tooltip" value=""/>
+		<render/>
+	</style>
+</FORMATTEMPLATE>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="-1195113094993036304" name="interactivevideo_unpack">
+	<LANG displayname="InteractiveVideo Header" language="EN"/>
+	<style tag="interactivevideo_unpack" view="marked">
+		<attr name="align" value="left"/>
+		<render/>
+	</style>
+</FORMATTEMPLATE>

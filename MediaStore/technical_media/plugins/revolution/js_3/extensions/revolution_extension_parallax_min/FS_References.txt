@@ -1,0 +1,6 @@
+[self]
+uid=revolution_extension_parallax_min
+gid=4b093cb9-5d00-4d61-b42a-ae4ae1bb3f2c
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+

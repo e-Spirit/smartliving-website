@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MEDIUM filename="configuration_111099336" id="3170230621439639021" meta="1" type="pic" uniquedescription="configuration_111099336">
+	<LANG displayname="Configuration on a tablet" language="EN"/>
+	<LANG displayname="Einstellungen auf einem Tablet" language="DE"/>
+	<PICTURE>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:1934,&quot;x&quot;:0,&quot;h&quot;:3007,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:2109,&quot;x&quot;:0,&quot;h&quot;:1838,&quot;y&quot;:1092},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="0.0,0.0,1934.0,3007.0,0,false" extension="jpg" height="560" mimetype="image/jpeg" resolutionid="product_teaser" width="360"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:4522,&quot;x&quot;:0,&quot;h&quot;:1547,&quot;y&quot;:1170},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:2109,&quot;x&quot;:0,&quot;h&quot;:1838,&quot;y&quot;:1092},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="0.0,1170.0,4522.0,1547.0,0,false" extension="jpg" height="400" mimetype="image/jpeg" resolutionid="landscape" width="1170"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:4522,&quot;x&quot;:0,&quot;h&quot;:2544,&quot;y&quot;:371},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:2109,&quot;x&quot;:0,&quot;h&quot;:1838,&quot;y&quot;:1092},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="0.0,371.0,4522.0,2544.0,0,false" extension="jpg" height="1080" mimetype="image/jpeg" resolutionid="banner_slider" width="1920"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:4522,&quot;x&quot;:0,&quot;h&quot;:2828,&quot;y&quot;:144},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:2109,&quot;x&quot;:0,&quot;h&quot;:1838,&quot;y&quot;:1092},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="0.0,144.0,4522.0,2828.0,0,false" extension="jpg" height="500" mimetype="image/jpeg" resolutionid="portrait" width="800"/>
+		<RESOLUTION extension="jpeg" height="3007" mimetype="image/jpeg" resolutionid="ORIGINAL" width="4522"/>
+	</PICTURE>
+</MEDIUM>

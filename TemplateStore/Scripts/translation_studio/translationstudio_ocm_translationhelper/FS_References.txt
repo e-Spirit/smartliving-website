@@ -1,0 +1,6 @@
+[self]
+uid=translationstudio_ocm_translationhelper
+gid=c7eb7939-83f8-4a63-8811-682bf8a826da
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
+

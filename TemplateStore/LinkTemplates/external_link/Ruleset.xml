@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RULES>
+	<RULE>
+		<WITH>
+			<MATCHES regex="(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,})">
+				<PROPERTY name="VALUE" source="lt_url"/>
+			</MATCHES>
+		</WITH>
+		<DO>
+			<VALIDATION scope="SAVE">
+				<PROPERTY name="VALID" source="lt_url"/>
+				<MESSAGE lang="*" text="Please use a valid URL"/>
+				<MESSAGE lang="DE" text="Bitte eine valide URL nutzen"/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+</RULES>

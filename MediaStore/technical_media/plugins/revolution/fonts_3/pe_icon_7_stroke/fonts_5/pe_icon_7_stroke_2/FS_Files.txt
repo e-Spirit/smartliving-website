@@ -1,0 +1,5 @@
+# mimeType        name
+text/plain;UTF-8  FS_Info.txt
+text/plain;UTF-8  FS_References.txt
+image/svg+xml     File_Pe-icon-7-stroke.svg
+text/xml;UTF-8    StoreElement.xml

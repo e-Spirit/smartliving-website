@@ -1,0 +1,10 @@
+$CMS_IF(!st_slide.isEmpty())$
+<div id="welcome_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="goodnews-header" data-source="gallery" style="background:#eeeeee;padding:0px;" $CMS_VALUE(editorId(reloadPreview:true))$>
+	<div id="welcome" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.3.1">
+		<ul>	
+			$CMS_VALUE(st_slide)$
+		</ul>
+		<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+	</div>
+</div>
+$CMS_END_IF$

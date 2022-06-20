@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='pt_title'><TEXT>Vielen Dank</TEXT></FIELD>
+	<FIELD name='pt_add_sections'><STATE>true</STATE></FIELD>
+	<FIELD name='pt_text'><TEXT>Vielen Dank, unser Fachhändler wird sich bei Ihnen melden!</TEXT></FIELD>
+</FIELDS>

@@ -1,0 +1,6 @@
+[self]
+uid=root
+gid=3ef72957-643e-4181-8960-75b615f838b4
+uidType=MEDIASTORE_FOLDER
+class=de.espirit.firstspirit.store.access.mediastore.MediaStoreRootImpl
+

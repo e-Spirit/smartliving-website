@@ -1,0 +1,12 @@
+[self]
+uid=counter
+gid=795cd66f-57f0-46d7-9908-0470dcb97cf2
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.SectionTemplateImpl
+
+[optionalId]
+uid=home
+gid=c8a158a3-2ba3-427c-a7e4-7d41d9844464
+uidType=SITESTORE_LEAF
+class=de.espirit.firstspirit.store.access.sitestore.PageRefImpl
+

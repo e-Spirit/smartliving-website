@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_tagline'><TEXT>WER WIR SIND</TEXT></FIELD>
+	<FIELD name='st_headline'><TEXT>Smart Living</TEXT></FIELD>
+	<FIELD name='st_text'><DOM><standard><b>SMART LIVING</b> ist ein weltweit führender Anbieter für Smart Home Lösungen sowohl für private Haushalte als auch für umfassende Unternehmenslösungen. Seit 2014 haben wir viele smarte Projekte mit namenhaften Partnern im nationalen und internationalen Bereich durchgeführt.</standard></DOM></FIELD>
+	<FIELD name='st_counters'><CATALOG><CARD id="70b14ca5-84aa-4bc8-9769-f38d7ecd50c7" template="counter" type="TEMPLATESTORE"><TEMPLATECONTENT><CMS_VALUE name="st_text"><LANG id="§" set="1"><TEXT>Individuelle Produkte</TEXT></LANG></CMS_VALUE><CMS_VALUE name="st_number"><LANG id="§" set="1"><FIG>10</FIG></LANG></CMS_VALUE></TEMPLATECONTENT></CARD><CARD id="574f0440-3060-4ed8-9167-622cdf7d626a" template="counter" type="TEMPLATESTORE"><TEMPLATECONTENT><CMS_VALUE name="st_text"><LANG id="§" set="1"><TEXT>Mitarbeiter</TEXT></LANG></CMS_VALUE><CMS_VALUE name="st_number"><LANG id="§" set="1"><FIG>180</FIG></LANG></CMS_VALUE></TEMPLATECONTENT></CARD><CARD id="5640dc8a-f612-47c9-b7ab-9ce9bc0b7029" template="counter" type="TEMPLATESTORE"><TEMPLATECONTENT><CMS_VALUE name="st_text"><LANG id="§" set="1"><TEXT>Fachhändler</TEXT></LANG></CMS_VALUE><CMS_VALUE name="st_number"><LANG id="§" set="1"><FIG>3200</FIG></LANG></CMS_VALUE></TEMPLATECONTENT></CARD></CATALOG></FIELD>
+</FIELDS>

@@ -1,0 +1,6 @@
+storeElement = context.getElement();
+
+return 
+(storeElement instanceof de.espirit.firstspirit.access.store.pagestore.Page)
+|| 
+(storeElement instanceof de.espirit.firstspirit.access.store.sitestore.PageRef);

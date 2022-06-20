@@ -1,0 +1,41 @@
+<!-- COMPANY DETAIL SECTION START -->
+$CMS_IF(#global.is("WEBEDIT"))$
+<div $CMS_VALUE(editorId(reloadPreview:true))$>
+$CMS_END_IF$
+	<div class="section-full p-tb100 overlay-wraper bg-top-center bg-parallax" $CMS_VALUE(editorId(editorName:"st_background_image", resolution: "banner_slider"))$  data-stellar-background-ratio="0.5" $CMS_IF(!st_background_image.isEmpty())$style="background-image:url('$CMS_REF(st_background_image, resolution:"banner_slider")$');" $CMS_END_IF$  >
+	     <div class="overlay-main theming-content-opacity bg-black"></div>
+	     <div class="container ">
+	       	<div class="row">
+	         	<div class="col-md-6 col-sm-12">
+	               <div class="some-facts">
+	                  <div class="text-white text-uppercase">
+	                  	   $CMS_IF(!st_tagline.isEmpty())$
+	                       <span class="font-40 font-weight-300" $CMS_VALUE(editorId(editorName:"st_tagline"))$>$CMS_VALUE(st_tagline)$</span>
+	                       $CMS_END_IF$
+	                       $CMS_IF(!st_headline.isEmpty())$
+	                       <h2 class="font-50" $CMS_VALUE(editorId(editorName:"st_headline"))$>
+	                           	<span class="theming-text-highlighting">$CMS_VALUE(st_headline)$</span>
+	                       </h2>
+	                       $CMS_END_IF$
+	                       $CMS_IF(!st_text.isEmpty())$
+	                         	<p class="font-18 font-weight-300" $CMS_VALUE(editorId(editorName:"st_text"))$>
+	                         		$CMS_VALUE(st_text)$
+	                          	</p>
+	                       $CMS_END_IF$
+	                   </div>
+	               </div>
+	          </div>
+	          $CMS_IF(!st_counters.isEmpty())$
+	               <div class="col-md-6 col-sm-12">
+	                    <div class="row some-facts-counter">
+	                  				$CMS_VALUE(st_counters)$ 
+	                    </div>
+	               </div>
+	           $CMS_END_IF$
+	           </div>
+	      </div>
+	</div>
+$CMS_IF(#global.is("WEBEDIT"))$
+</div>
+$CMS_END_IF$
+<!-- COMPANY DETAIL SECTION End -->

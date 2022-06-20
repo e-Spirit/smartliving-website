@@ -1,0 +1,1 @@
+if(!st_image.empty, st_image)

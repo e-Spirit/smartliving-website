@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OBJECT class="java.util.ArrayList">
+	<OBJECT class="de.espirit.firstspirit.server.templatemanagement.PresentationChannelImpl">
+		<FIELD name="_contentProcessor"><NULL/><!-- class java.lang.String --></FIELD>
+		<FIELD name="_params">
+			<OBJECT class="java.util.HashMap">
+			</OBJECT>
+		</FIELD>
+		<FIELD name="m_ID" type="long">-1268668680467729278</FIELD>
+		<FIELD name="m_extension">
+			<OBJECT class="java.lang.String">html</OBJECT>
+		</FIELD>
+		<FIELD name="m_mode" type="int">0</FIELD>
+		<FIELD name="m_name">
+			<OBJECT class="java.lang.String">HTML</OBJECT>
+		</FIELD>
+	</OBJECT>
+</OBJECT>

@@ -1,0 +1,17 @@
+[self]
+uid=accordion
+gid=22b78d70-14fc-41f3-a0b6-d39079abda97
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.SectionTemplateImpl
+
+[optionalId]
+uid=services
+gid=0bc56bb7-a852-4603-a4bc-2e219634169f
+uidType=SITESTORE_LEAF
+class=de.espirit.firstspirit.store.access.sitestore.PageRefImpl
+
+uid=single_accordion
+gid=8d9b85a3-5757-4d2e-829f-27af95ba768d
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.SectionTemplateImpl
+

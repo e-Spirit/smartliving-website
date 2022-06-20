@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='pt_fts_gen_task_preview_creator'><TEXT>fts_create_preview_files</TEXT></FIELD>
+	<FIELD name='pt_fts_gen_task_queue'><TEXT>fts_queue</TEXT></FIELD>
+</FIELDS>

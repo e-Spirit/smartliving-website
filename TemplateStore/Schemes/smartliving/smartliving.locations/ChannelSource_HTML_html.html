@@ -1,0 +1,43 @@
+<CMS_HEADER>
+</CMS_HEADER>
+
+<section $CMS_VALUE(editorId())$>
+	<div class="item">
+		<h1 $CMS_VALUE(editorId(editorName:"tt_location_name"))$>Titel$CMS_VALUE(tt_location_name)$</h1>
+		
+
+		Type: <span class="type">$CMS_VALUE(tt_location_type.value.name)$</span><br/>
+		<span>Description:</span><br/>
+		<span>Address</span><br/>
+		<span></span>
+
+	</div>
+</section>
+
+
+
+$CMS_TRIM(level:4)$
+	$CMS_SET(set_locObject, {:})$
+	$CMS_SET(set_markerObject, {:})$
+	$CMS_SET(void, set_markerObject.put("default", ref(tt_location_type.value.pin).url))$
+	$CMS_SET(void, set_markerObject.put("selected", ref(tt_location_type.value.pin_selected).url))$
+
+	$CMS_SET(void, set_locObject.put("type", tt_location_type.value.name.convert2))$
+	$CMS_SET(void, set_locObject.put("continent", tt_country.value.continent.name.convert2))$
+	$CMS_SET(void, set_locObject.put("country", tt_country.value.name.convert2))$
+	$CMS_SET(void, set_locObject.put("description", tt_description.convert2))$
+	$CMS_SET(void, set_locObject.put("company", tt_company.convert2))$
+	$CMS_SET(void, set_locObject.put("street", tt_street.convert2))$
+	$CMS_SET(void, set_locObject.put("city", tt_city.convert2))$
+	$CMS_SET(void, set_locObject.put("plz", tt_plz))$
+	$CMS_SET(void, set_locObject.put("phone", tt_phone.convert2))$
+	$CMS_SET(void, set_locObject.put("fax", tt_fax.convert2))$
+	$CMS_SET(void, set_locObject.put("mail", tt_mail.convert2))$
+	$CMS_SET(void, set_locObject.put("website", tt_website.convert2))$
+	$CMS_SET(void, set_locObject.put("lat", tt_lat))$
+	$CMS_SET(void, set_locObject.put("lon", tt_long))$
+	$CMS_SET(void, set_locObject.put("priority", tt_priority))$
+	$CMS_SET(void, set_locObject.put("marker", set_markerObject))$
+	
+	$CMS_VALUE(json(set_locObject))$
+$CMS_END_TRIM$

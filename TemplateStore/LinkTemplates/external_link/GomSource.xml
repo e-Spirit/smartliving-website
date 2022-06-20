@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_INPUT_TEXT name="lt_text" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Anzeigetext"/>
+      <LANGINFO lang="EN" label="Displaytext"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_TEXT name="lt_url" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="URL"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_RADIOBUTTON name="lt_link_behavior" gridHeight="1" gridWidth="2" hFill="yes" useLanguages="no">
+    <ENTRIES>
+      <ENTRY value="_self">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Open in the same tab"/>
+          <LANGINFO lang="DE" label="Im selben Tab öffnen"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="_blank">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Open in a new tab/window"/>
+          <LANGINFO lang="DE" label="Im neuen Tab/Fenster öffnen"/>
+        </LANGINFOS>
+      </ENTRY>
+    </ENTRIES>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Behavior"/>
+      <LANGINFO lang="DE" label="Verhalten"/>
+    </LANGINFOS>
+  </CMS_INPUT_RADIOBUTTON>
+
+</CMS_MODULE>

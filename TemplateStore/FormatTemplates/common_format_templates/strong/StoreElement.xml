@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="6250303495807626765" name="strong">
+	<LANG displayname="Fett" language="DE"/>
+	<LANG displayname="Strong" language="EN"/>
+	<style tag="strong" view="marked">
+		<attr name="align" value="left"/>
+		<render/>
+	</style>
+</FORMATTEMPLATE>

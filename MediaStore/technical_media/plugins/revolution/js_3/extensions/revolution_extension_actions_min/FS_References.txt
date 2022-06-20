@@ -1,0 +1,6 @@
+[self]
+uid=revolution_extension_actions_min
+gid=bd5049a1-dcc8-4ce5-8330-ce9ed7a749a8
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RULES>
+	<!-- Mandatory: tt_key -->
+	<RULE>
+		<WITH>
+			<PROPERTY name="EMPTY" source="tt_key"/>
+		</WITH>
+		<DO>
+			<NOT>
+				<VALIDATION scope="Save">
+					<PROPERTY name="VALID" source="tt_key"/>
+					<MESSAGE lang="*" text="Please add a key."/>
+					<MESSAGE lang="DE" text="Bitte geben sie einen Key an."/>
+				</VALIDATION>
+			</NOT>
+		</DO>
+	</RULE>
+	<!-- Mandatory: tt_value -->
+	<RULE>
+		<WITH>
+			<PROPERTY name="EMPTY" source="tt_value"/>
+		</WITH>
+		<DO>
+			<NOT>
+				<VALIDATION scope="Save">
+					<PROPERTY name="VALID" source="tt_value"/>
+					<MESSAGE lang="*" text="Please add a value."/>
+					<MESSAGE lang="DE" text="Bitte geben sie einen Wert an."/>
+				</VALIDATION>
+			</NOT>
+		</DO>
+	</RULE>
+</RULES>

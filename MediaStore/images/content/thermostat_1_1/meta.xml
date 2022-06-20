@@ -1,0 +1,342 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='md_creation_date'><DATE>1637182165698</DATE></FIELD>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Clock",
+        "confidence" : 92.49372,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Digital Clock",
+        "confidence" : 92.19453,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Clock"
+        } ]
+      }, {
+        "name" : "Wood",
+        "confidence" : 64.12095,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Alarm Clock",
+        "confidence" : 59.72673,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Clock"
+        } ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "2.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ {
+        "detectedText" : "°C",
+        "type" : "LINE",
+        "id" : 0,
+        "parentId" : null,
+        "confidence" : 86.43247,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.023071289,
+            "height" : 0.0390625,
+            "left" : 0.7998047,
+            "top" : 0.35742188
+          },
+          "polygon" : [ {
+            "x" : 0.7998047,
+            "y" : 0.35742188
+          }, {
+            "x" : 0.822876,
+            "y" : 0.35742188
+          }, {
+            "x" : 0.822876,
+            "y" : 0.39648438
+          }, {
+            "x" : 0.7998047,
+            "y" : 0.39648438
+          } ]
+        }
+      }, {
+        "detectedText" : "21",
+        "type" : "LINE",
+        "id" : 1,
+        "parentId" : null,
+        "confidence" : 99.93843,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.11695231,
+            "height" : 0.2134006,
+            "left" : 0.67458063,
+            "top" : 0.35790366
+          },
+          "polygon" : [ {
+            "x" : 0.67458063,
+            "y" : 0.35890812
+          }, {
+            "x" : 0.7896794,
+            "y" : 0.35790366
+          }, {
+            "x" : 0.79153293,
+            "y" : 0.5702998
+          }, {
+            "x" : 0.67643416,
+            "y" : 0.57130426
+          } ]
+        }
+      }, {
+        "detectedText" : "A/C",
+        "type" : "LINE",
+        "id" : 2,
+        "parentId" : null,
+        "confidence" : 99.794556,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.05049884,
+            "height" : 0.05277922,
+            "left" : 0.52665496,
+            "top" : 0.6265862
+          },
+          "polygon" : [ {
+            "x" : 0.52773887,
+            "y" : 0.6265862
+          }, {
+            "x" : 0.5771538,
+            "y" : 0.6276213
+          }, {
+            "x" : 0.57606995,
+            "y" : 0.6793654
+          }, {
+            "x" : 0.52665496,
+            "y" : 0.6783303
+          } ]
+        }
+      }, {
+        "detectedText" : "AUTO",
+        "type" : "LINE",
+        "id" : 3,
+        "parentId" : null,
+        "confidence" : 99.94176,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.04895746,
+            "height" : 0.04099477,
+            "left" : 0.61794907,
+            "top" : 0.63992
+          },
+          "polygon" : [ {
+            "x" : 0.61864996,
+            "y" : 0.63992
+          }, {
+            "x" : 0.66690654,
+            "y" : 0.6407623
+          }, {
+            "x" : 0.6662057,
+            "y" : 0.68091476
+          }, {
+            "x" : 0.61794907,
+            "y" : 0.6800724
+          } ]
+        }
+      }, {
+        "detectedText" : "A/C",
+        "type" : "LINE",
+        "id" : 4,
+        "parentId" : null,
+        "confidence" : 99.972824,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.05493164,
+            "height" : 0.053710938,
+            "left" : 0.7327881,
+            "top" : 0.63183594
+          },
+          "polygon" : [ {
+            "x" : 0.7327881,
+            "y" : 0.63183594
+          }, {
+            "x" : 0.7877197,
+            "y" : 0.63183594
+          }, {
+            "x" : 0.7877197,
+            "y" : 0.6855469
+          }, {
+            "x" : 0.7327881,
+            "y" : 0.6855469
+          } ]
+        }
+      }, {
+        "detectedText" : "°C",
+        "type" : "WORD",
+        "id" : 5,
+        "parentId" : 0,
+        "confidence" : 86.43247,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.023071289,
+            "height" : 0.0390625,
+            "left" : 0.7998047,
+            "top" : 0.35742188
+          },
+          "polygon" : [ {
+            "x" : 0.7998047,
+            "y" : 0.35742188
+          }, {
+            "x" : 0.822876,
+            "y" : 0.35742188
+          }, {
+            "x" : 0.822876,
+            "y" : 0.39648438
+          }, {
+            "x" : 0.7998047,
+            "y" : 0.39648438
+          } ]
+        }
+      }, {
+        "detectedText" : "21",
+        "type" : "WORD",
+        "id" : 6,
+        "parentId" : 1,
+        "confidence" : 99.93843,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.11533356,
+            "height" : 0.2134006,
+            "left" : 0.67539,
+            "top" : 0.35790366
+          },
+          "polygon" : [ {
+            "x" : 0.67539,
+            "y" : 0.35968593
+          }, {
+            "x" : 0.7896794,
+            "y" : 0.35790366
+          }, {
+            "x" : 0.79072356,
+            "y" : 0.569522
+          }, {
+            "x" : 0.67643416,
+            "y" : 0.57130426
+          } ]
+        }
+      }, {
+        "detectedText" : "A/C",
+        "type" : "WORD",
+        "id" : 7,
+        "parentId" : 2,
+        "confidence" : 99.794556,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.049502086,
+            "height" : 0.05277922,
+            "left" : 0.5271534,
+            "top" : 0.6265862
+          },
+          "polygon" : [ {
+            "x" : 0.52773887,
+            "y" : 0.6265862
+          }, {
+            "x" : 0.57665545,
+            "y" : 0.628361
+          }, {
+            "x" : 0.57606995,
+            "y" : 0.6793654
+          }, {
+            "x" : 0.5271534,
+            "y" : 0.67759067
+          } ]
+        }
+      }, {
+        "detectedText" : "AUTO",
+        "type" : "WORD",
+        "id" : 8,
+        "parentId" : 3,
+        "confidence" : 99.94176,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.04832239,
+            "height" : 0.04099477,
+            "left" : 0.61826664,
+            "top" : 0.63992
+          },
+          "polygon" : [ {
+            "x" : 0.61864996,
+            "y" : 0.63992
+          }, {
+            "x" : 0.666589,
+            "y" : 0.64138937
+          }, {
+            "x" : 0.6662057,
+            "y" : 0.68091476
+          }, {
+            "x" : 0.61826664,
+            "y" : 0.6794454
+          } ]
+        }
+      }, {
+        "detectedText" : "A/C",
+        "type" : "WORD",
+        "id" : 9,
+        "parentId" : 4,
+        "confidence" : 99.972824,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.05493164,
+            "height" : 0.053710938,
+            "left" : 0.7327881,
+            "top" : 0.63183594
+          },
+          "polygon" : [ {
+            "x" : 0.7327881,
+            "y" : 0.63183594
+          }, {
+            "x" : 0.7877197,
+            "y" : 0.63183594
+          }, {
+            "x" : 0.7877197,
+            "y" : 0.6855469
+          }, {
+            "x" : 0.7327881,
+            "y" : 0.6855469
+          } ]
+        }
+      } ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "5.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Digital Clock #Alarm Clock #Wood #Clock"
+  }
+}</TEXT></FIELD>
+</FIELDS>

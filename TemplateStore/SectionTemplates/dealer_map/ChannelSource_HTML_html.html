@@ -1,0 +1,46 @@
+<CMS_HEADER>
+	<CMS_FUNCTION name="contentSelect" resultname="fr_locations">
+  		<CMS_PARAM name="schema" value="smartliving" />
+		<QUERY entityType="locations">
+
+		</QUERY>
+	</CMS_FUNCTION>
+</CMS_HEADER>
+
+
+
+<script src="$CMS_REF(media:"dealer_map_js")$"></script>
+<script
+      src="https://maps.googleapis.com/maps/api/js?key=$CMS_VALUE(CONFIG_GOOGLE_MAPS_API_KEY)$&callback=DealerMap.initMap"
+      defer
+    ></script>
+
+<div class="dealer-map container section-full p-t90 p-b90">
+	<div class="col-12 col-md-9 m-lr0 p-lr0" id="map"></div>
+    <div class="col-12 col-md-3 m-lr0 p-lr0 theming-background" id="sidebar"></div>
+</div>
+<script>
+  const BLUE_ICON = "$CMS_REF(media:"marker_blue")$"
+  const BLUE_ICON_BIG = "$CMS_REF(media:"marker_blue_big")$"
+  const BLACK_ICON = "$CMS_REF(media:"marker_black")$"
+  const BLACK_ICON_BIG = "$CMS_REF(media:"marker_black_big")$"
+
+  DealerMap.data.places = [
+  $CMS_FOR(for_location, fr_locations)$
+	 {    
+      pos:  { lat: $CMS_VALUE(for_location.lat)$, lng: $CMS_VALUE(for_location.lon)$ },
+      content: '<div class="info-box"><h3 class="theming-text-highlighting">$CMS_VALUE(for_location.firma)$</h3><p>$CMS_VALUE(for_location.street)$<br/>$CMS_VALUE(for_location.plz)$ $CMS_VALUE(for_location.city)$$CMS_IF(!for_location.phonenumber.isEmpty)$<br/>Tel: $CMS_VALUE(for_location.phonenumber)$$CMS_END_IF$</p></div>',
+      innerContent: '<h3 class="theming-text-highlighting">$CMS_VALUE(for_location.firma)$</h3><p>$CMS_VALUE(for_location.street)$<br/>$CMS_VALUE(for_location.plz)$ $CMS_VALUE(for_location.city)$$CMS_IF(!for_location.phonenumber.isEmpty)$<br/>Tel: $CMS_VALUE(for_location.phonenumber)$$CMS_END_IF$</p>',
+      marker: null,
+      listEntry: null,
+      icon: BLUE_ICON,
+      icon_active: BLUE_ICON_BIG,
+    }$CMS_IF(!#for.isLast)$,$CMS_END_IF$
+$CMS_END_FOR$
+   
+  ];
+  DealerMap.data.activePlaces = DealerMap.data.places;
+</script>
+$--
+$CMS_RENDER(template: "specialized_dealer_map", prm_dealer: st_dealer, prm_header: st_header, prm_contactHeader: st_contactHeader)$
+--$

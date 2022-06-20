@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_INPUT_COMBOBOX name="tt_location_type" hFill="yes" singleLine="no" useLanguages="no">
+    <CMS_INCLUDE_OPTIONS type="database">
+      <LABELS>
+        <LABEL lang="*">#item.name_EN</LABEL>
+        <LABEL lang="DE">#item.name_DE</LABEL>
+      </LABELS>
+      <TABLE>smartliving.type</TABLE>
+    </CMS_INCLUDE_OPTIONS>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Locationtype"/>
+      <LANGINFO lang="DE" label="Standorttype"/>
+    </LANGINFOS>
+  </CMS_INPUT_COMBOBOX>
+
+  <CMS_INPUT_TEXT name="tt_company" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Company"/>
+      <LANGINFO lang="DE" label="Firma"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_TEXTAREA name="tt_description" hFill="yes" useLanguages="yes">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Description"/>
+      <LANGINFO lang="DE" label="Ergänzende Beschreibung"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXTAREA>
+
+  <CMS_INPUT_TEXT name="tt_street" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Straße"/>
+      <LANGINFO lang="DE" label="Street"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_TEXT name="tt_city" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="City"/>
+      <LANGINFO lang="DE" label="Stadt"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_NUMBER name="tt_plz" hFill="yes" noBreak="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="PLZ"/>
+    </LANGINFOS>
+  </CMS_INPUT_NUMBER>
+
+  <CMS_INPUT_TEXT name="tt_phone" hFill="yes" noBreak="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Phonenumber"/>
+      <LANGINFO lang="DE" label="Telefonnummer"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_TEXT name="tt_fax" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Fax"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_TEXT name="tt_mail" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="E-mail"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_TEXT name="tt_website" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Website"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_TEXT name="tt_lat" hFill="yes" noBreak="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Lat"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_TEXT name="tt_long" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Long"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_COMBOBOX name="lt_country" hFill="yes" noBreak="yes" singleLine="no" useLanguages="no">
+    <CMS_INCLUDE_OPTIONS type="database">
+      <LABELS>
+        <LABEL lang="*">#item.country_EN</LABEL>
+        <LABEL lang="DE">#item.country_DE</LABEL>
+      </LABELS>
+      <TABLE>smartliving.country</TABLE>
+    </CMS_INCLUDE_OPTIONS>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Country"/>
+      <LANGINFO lang="DE" label="Land"/>
+    </LANGINFOS>
+  </CMS_INPUT_COMBOBOX>
+
+  <CMS_INPUT_NUMBER name="tt_priority" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Priorität"/>
+    </LANGINFOS>
+  </CMS_INPUT_NUMBER>
+
+</CMS_MODULE>

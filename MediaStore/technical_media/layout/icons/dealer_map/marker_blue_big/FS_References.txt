@@ -1,0 +1,12 @@
+[self]
+uid=marker_blue_big
+gid=ed4040f3-2d3f-44e9-a8ff-7bb236d8fc9c
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+
+[requiredProjectId]
+uid=metadata
+gid=70a3c894-c1c8-4a8b-ac05-378c1699a025
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
+

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='md_robot'><TEXT>iamrobot</TEXT></FIELD>
+	<FIELD name='md_keywords'><TEXT>SmartLiving</TEXT></FIELD>
+	<FIELD name='md_author'><TEXT>Peter Hase</TEXT></FIELD>
+	<FIELD name='md_description'><TEXT>This is the Imprint of SmartLiving</TEXT></FIELD>
+	<FIELD name='md_creation_date'><DATE>1632344039988</DATE></FIELD>
+</FIELDS>

@@ -1,0 +1,12 @@
+[self]
+uid=product_details_stage_175945193
+gid=3d4ed0f6-a688-4d88-aa78-d6f6c9f0a122
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+
+[requiredProjectId]
+uid=metadata
+gid=70a3c894-c1c8-4a8b-ac05-378c1699a025
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
+

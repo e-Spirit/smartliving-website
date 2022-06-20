@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RULES>
+	<RULE>
+		<WITH>
+			<NOT>
+				<EQUAL>
+					<PROPERTY name="ENTRY" source="st_picAlignment"/>
+					<TEXT>fullWidth</TEXT>
+				</EQUAL>
+			</NOT>
+		</WITH>
+		<DO>
+			<PROPERTY name="VISIBLE" source="st_frame"/>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<NOT>
+				<GREATER_THAN>
+					<PROPERTY name="LENGTH" source="st_headline"/>
+					<NUMBER>50</NUMBER>
+				</GREATER_THAN>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="SAVE">
+				<PROPERTY name="VALID" source="st_headline"/>
+				<MESSAGE lang="*" text="Only 50 characters allowed!"/>
+				<MESSAGE lang="DE" text="Es sind nur 50 Zeichen zugelassen!"/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+</RULES>

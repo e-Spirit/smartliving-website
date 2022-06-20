@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+	<TABLE name="category">
+		<ROW>
+			<COLUMN name="FS_GID">93d252dc-5964-4c1d-aaed-1652a2d2045c</COLUMN>
+			<COLUMN name="name_DE">Pressemitteilung</COLUMN>
+			<COLUMN name="name_EN">Press Release</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">07d9022e-dd96-4f07-bbda-5f3f13df84e8</COLUMN>
+			<COLUMN name="name_DE">Blogartikel</COLUMN>
+			<COLUMN name="name_EN">Blog Article</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">449511b5-6497-49a3-89d7-91d48f3c3686</COLUMN>
+			<COLUMN name="name_DE">Veranstaltung</COLUMN>
+			<COLUMN name="name_EN">Event</COLUMN>
+		</ROW>
+	</TABLE>
+</DATA>

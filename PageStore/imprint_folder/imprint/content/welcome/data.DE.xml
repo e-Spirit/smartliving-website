@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_headline'><DOM><standard>IMPRESSUM</standard></DOM></FIELD>
+	<FIELD name='st_text'><DOM><standard>Dies ist ein Dummy-Projekt. Alle Informationen auf dieser Seite sind unsinnig und völlig fiktiv. </standard></DOM></FIELD>
+</FIELDS>

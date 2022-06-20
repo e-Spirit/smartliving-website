@@ -1,0 +1,1 @@
+medium("preview_icon_facts")

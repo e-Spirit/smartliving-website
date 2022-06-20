@@ -1,0 +1,2 @@
+connection = context.userService.connection;
+return false && connection.user.isProjectAdmin(connection.project);

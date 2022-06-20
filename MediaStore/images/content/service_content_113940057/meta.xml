@@ -1,0 +1,918 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='md_creation_date'><DATE>1637182165697</DATE></FIELD>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ {
+        "boundingBox" : {
+          "width" : 0.25587755,
+          "height" : 0.5874757,
+          "left" : 0.08681882,
+          "top" : 0.15581852
+        },
+        "ageRange" : null,
+        "smile" : null,
+        "eyeglasses" : null,
+        "sunglasses" : null,
+        "gender" : null,
+        "beard" : null,
+        "mustache" : null,
+        "eyesOpen" : null,
+        "mouthOpen" : null,
+        "emotions" : null,
+        "landmarks" : [ {
+          "type" : "eyeLeft",
+          "x" : 0.25059977,
+          "y" : 0.41255015
+        }, {
+          "type" : "eyeRight",
+          "x" : 0.28887716,
+          "y" : 0.40470478
+        }, {
+          "type" : "mouthLeft",
+          "x" : 0.24520591,
+          "y" : 0.60678464
+        }, {
+          "type" : "mouthRight",
+          "x" : 0.2758157,
+          "y" : 0.59735966
+        }, {
+          "type" : "nose",
+          "x" : 0.33702058,
+          "y" : 0.51407284
+        } ],
+        "pose" : {
+          "roll" : -2.3507266,
+          "yaw" : 68.54305,
+          "pitch" : -10.718969
+        },
+        "quality" : {
+          "brightness" : 95.272354,
+          "sharpness" : 96.61495
+        },
+        "confidence" : 99.999985
+      } ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Person",
+        "confidence" : 98.76514,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.8577556,
+            "height" : 0.9235049,
+            "left" : 0.017262558,
+            "top" : 0.059291076
+          },
+          "confidence" : 98.76514
+        } ],
+        "parents" : [ ]
+      }, {
+        "name" : "Human",
+        "confidence" : 98.76514,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Mobile Phone",
+        "confidence" : 95.22558,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.28652316,
+            "height" : 0.41602832,
+            "left" : 0.66989845,
+            "top" : 0.22666946
+          },
+          "confidence" : 95.22558
+        } ],
+        "parents" : [ {
+          "name" : "Phone"
+        }, {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Phone",
+        "confidence" : 95.22558,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Cell Phone",
+        "confidence" : 95.22558,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Phone"
+        }, {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Electronics",
+        "confidence" : 95.22558,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Finger",
+        "confidence" : 73.85054,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Text",
+        "confidence" : 60.87848,
+        "instances" : [ ],
+        "parents" : [ ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "2.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ {
+        "detectedText" : "3",
+        "type" : "LINE",
+        "id" : 0,
+        "parentId" : null,
+        "confidence" : 97.84609,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.007818604,
+            "height" : 0.01953125,
+            "left" : 0.8646072,
+            "top" : 0.37109375
+          },
+          "polygon" : [ {
+            "x" : 0.8646072,
+            "y" : 0.37109375
+          }, {
+            "x" : 0.87242585,
+            "y" : 0.37109375
+          }, {
+            "x" : 0.87242585,
+            "y" : 0.390625
+          }, {
+            "x" : 0.8646072,
+            "y" : 0.390625
+          } ]
+        }
+      }, {
+        "detectedText" : "2",
+        "type" : "LINE",
+        "id" : 1,
+        "parentId" : null,
+        "confidence" : 97.56922,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.008470153,
+            "height" : 0.018554688,
+            "left" : 0.8242111,
+            "top" : 0.37890625
+          },
+          "polygon" : [ {
+            "x" : 0.8242111,
+            "y" : 0.37890625
+          }, {
+            "x" : 0.8326813,
+            "y" : 0.37890625
+          }, {
+            "x" : 0.8326813,
+            "y" : 0.39746094
+          }, {
+            "x" : 0.8242111,
+            "y" : 0.39746094
+          } ]
+        }
+      }, {
+        "detectedText" : "M",
+        "type" : "LINE",
+        "id" : 2,
+        "parentId" : null,
+        "confidence" : 21.692497,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.013807394,
+            "height" : 0.015201756,
+            "left" : 0.7587983,
+            "top" : 0.39386404
+          },
+          "polygon" : [ {
+            "x" : 0.7643374,
+            "y" : 0.39386404
+          }, {
+            "x" : 0.7726057,
+            "y" : 0.3980045
+          }, {
+            "x" : 0.7670666,
+            "y" : 0.4090658
+          }, {
+            "x" : 0.7587983,
+            "y" : 0.40492535
+          } ]
+        }
+      }, {
+        "detectedText" : "6",
+        "type" : "LINE",
+        "id" : 3,
+        "parentId" : null,
+        "confidence" : 96.92041,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.01179439,
+            "height" : 0.020167688,
+            "left" : 0.864564,
+            "top" : 0.41313586
+          },
+          "polygon" : [ {
+            "x" : 0.864564,
+            "y" : 0.41431025
+          }, {
+            "x" : 0.8739926,
+            "y" : 0.41313586
+          }, {
+            "x" : 0.8763584,
+            "y" : 0.43212914
+          }, {
+            "x" : 0.8669297,
+            "y" : 0.43330353
+          } ]
+        }
+      }, {
+        "detectedText" : "5",
+        "type" : "LINE",
+        "id" : 4,
+        "parentId" : null,
+        "confidence" : 96.61529,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.008470153,
+            "height" : 0.018554688,
+            "left" : 0.8255142,
+            "top" : 0.41992188
+          },
+          "polygon" : [ {
+            "x" : 0.8255142,
+            "y" : 0.41992188
+          }, {
+            "x" : 0.8339844,
+            "y" : 0.41992188
+          }, {
+            "x" : 0.8339844,
+            "y" : 0.43847656
+          }, {
+            "x" : 0.8255142,
+            "y" : 0.43847656
+          } ]
+        }
+      }, {
+        "detectedText" : "4",
+        "type" : "LINE",
+        "id" : 5,
+        "parentId" : null,
+        "confidence" : 92.1886,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.008237711,
+            "height" : 0.015884006,
+            "left" : 0.78702855,
+            "top" : 0.4290998
+          },
+          "polygon" : [ {
+            "x" : 0.78702855,
+            "y" : 0.42989174
+          }, {
+            "x" : 0.79338646,
+            "y" : 0.4290998
+          }, {
+            "x" : 0.7952663,
+            "y" : 0.4441919
+          }, {
+            "x" : 0.78890836,
+            "y" : 0.4449838
+          } ]
+        }
+      }, {
+        "detectedText" : "В",
+        "type" : "LINE",
+        "id" : 6,
+        "parentId" : null,
+        "confidence" : 41.132633,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.006515503,
+            "height" : 0.013671875,
+            "left" : 0.7642685,
+            "top" : 0.43359375
+          },
+          "polygon" : [ {
+            "x" : 0.7642685,
+            "y" : 0.43359375
+          }, {
+            "x" : 0.770784,
+            "y" : 0.43359375
+          }, {
+            "x" : 0.770784,
+            "y" : 0.44726562
+          }, {
+            "x" : 0.7642685,
+            "y" : 0.44726562
+          } ]
+        }
+      }, {
+        "detectedText" : "9",
+        "type" : "LINE",
+        "id" : 7,
+        "parentId" : null,
+        "confidence" : 96.611824,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.01195484,
+            "height" : 0.020663474,
+            "left" : 0.8664886,
+            "top" : 0.4549928
+          },
+          "polygon" : [ {
+            "x" : 0.8664886,
+            "y" : 0.45617968
+          }, {
+            "x" : 0.87601745,
+            "y" : 0.4549928
+          }, {
+            "x" : 0.8784434,
+            "y" : 0.47446936
+          }, {
+            "x" : 0.8689145,
+            "y" : 0.47565627
+          } ]
+        }
+      }, {
+        "detectedText" : "8",
+        "type" : "LINE",
+        "id" : 8,
+        "parentId" : null,
+        "confidence" : 97.44377,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.011325635,
+            "height" : 0.020197777,
+            "left" : 0.82677287,
+            "top" : 0.46010092
+          },
+          "polygon" : [ {
+            "x" : 0.82677287,
+            "y" : 0.46121553
+          }, {
+            "x" : 0.8357216,
+            "y" : 0.46010092
+          }, {
+            "x" : 0.8380985,
+            "y" : 0.47918406
+          }, {
+            "x" : 0.82914984,
+            "y" : 0.4802987
+          } ]
+        }
+      }, {
+        "detectedText" : "7",
+        "type" : "LINE",
+        "id" : 9,
+        "parentId" : null,
+        "confidence" : 94.36426,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.007818604,
+            "height" : 0.01953125,
+            "left" : 0.7890274,
+            "top" : 0.46679688
+          },
+          "polygon" : [ {
+            "x" : 0.7890274,
+            "y" : 0.46679688
+          }, {
+            "x" : 0.79684603,
+            "y" : 0.46679688
+          }, {
+            "x" : 0.79684603,
+            "y" : 0.48632812
+          }, {
+            "x" : 0.7890274,
+            "y" : 0.48632812
+          } ]
+        }
+      }, {
+        "detectedText" : "C",
+        "type" : "LINE",
+        "id" : 10,
+        "parentId" : null,
+        "confidence" : 48.237995,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.006515503,
+            "height" : 0.013671875,
+            "left" : 0.76622313,
+            "top" : 0.47265625
+          },
+          "polygon" : [ {
+            "x" : 0.76622313,
+            "y" : 0.47265625
+          }, {
+            "x" : 0.77273864,
+            "y" : 0.47265625
+          }, {
+            "x" : 0.77273864,
+            "y" : 0.48632812
+          }, {
+            "x" : 0.76622313,
+            "y" : 0.48632812
+          } ]
+        }
+      }, {
+        "detectedText" : "0",
+        "type" : "LINE",
+        "id" : 11,
+        "parentId" : null,
+        "confidence" : 87.58794,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.008470153,
+            "height" : 0.018554688,
+            "left" : 0.8307266,
+            "top" : 0.5019531
+          },
+          "polygon" : [ {
+            "x" : 0.8307266,
+            "y" : 0.5019531
+          }, {
+            "x" : 0.8391968,
+            "y" : 0.5019531
+          }, {
+            "x" : 0.8391968,
+            "y" : 0.5205078
+          }, {
+            "x" : 0.8307266,
+            "y" : 0.5205078
+          } ]
+        }
+      }, {
+        "detectedText" : "D",
+        "type" : "LINE",
+        "id" : 12,
+        "parentId" : null,
+        "confidence" : 94.40927,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.0071670534,
+            "height" : 0.013671875,
+            "left" : 0.7681778,
+            "top" : 0.51171875
+          },
+          "polygon" : [ {
+            "x" : 0.7681778,
+            "y" : 0.51171875
+          }, {
+            "x" : 0.77534485,
+            "y" : 0.51171875
+          }, {
+            "x" : 0.77534485,
+            "y" : 0.5253906
+          }, {
+            "x" : 0.7681778,
+            "y" : 0.5253906
+          } ]
+        }
+      }, {
+        "detectedText" : "x",
+        "type" : "LINE",
+        "id" : 13,
+        "parentId" : null,
+        "confidence" : 66.26334,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.015089639,
+            "height" : 0.019781394,
+            "left" : 0.7898736,
+            "top" : 0.50599825
+          },
+          "polygon" : [ {
+            "x" : 0.7898736,
+            "y" : 0.50802624
+          }, {
+            "x" : 0.8019923,
+            "y" : 0.50599825
+          }, {
+            "x" : 0.80496323,
+            "y" : 0.5237517
+          }, {
+            "x" : 0.7928445,
+            "y" : 0.52577966
+          } ]
+        }
+      }, {
+        "detectedText" : "3",
+        "type" : "WORD",
+        "id" : 14,
+        "parentId" : 0,
+        "confidence" : 97.84609,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.007818604,
+            "height" : 0.01953125,
+            "left" : 0.8646072,
+            "top" : 0.37109375
+          },
+          "polygon" : [ {
+            "x" : 0.8646072,
+            "y" : 0.37109375
+          }, {
+            "x" : 0.87242585,
+            "y" : 0.37109375
+          }, {
+            "x" : 0.87242585,
+            "y" : 0.390625
+          }, {
+            "x" : 0.8646072,
+            "y" : 0.390625
+          } ]
+        }
+      }, {
+        "detectedText" : "2",
+        "type" : "WORD",
+        "id" : 15,
+        "parentId" : 1,
+        "confidence" : 97.56922,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.008470153,
+            "height" : 0.018554688,
+            "left" : 0.8242111,
+            "top" : 0.37890625
+          },
+          "polygon" : [ {
+            "x" : 0.8242111,
+            "y" : 0.37890625
+          }, {
+            "x" : 0.8326813,
+            "y" : 0.37890625
+          }, {
+            "x" : 0.8326813,
+            "y" : 0.39746094
+          }, {
+            "x" : 0.8242111,
+            "y" : 0.39746094
+          } ]
+        }
+      }, {
+        "detectedText" : "M",
+        "type" : "WORD",
+        "id" : 16,
+        "parentId" : 2,
+        "confidence" : 21.692497,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.009751511,
+            "height" : 0.015201756,
+            "left" : 0.76082623,
+            "top" : 0.39386404
+          },
+          "polygon" : [ {
+            "x" : 0.7643374,
+            "y" : 0.39386404
+          }, {
+            "x" : 0.7705778,
+            "y" : 0.39854068
+          }, {
+            "x" : 0.7670666,
+            "y" : 0.4090658
+          }, {
+            "x" : 0.76082623,
+            "y" : 0.40438917
+          } ]
+        }
+      }, {
+        "detectedText" : "6",
+        "type" : "WORD",
+        "id" : 17,
+        "parentId" : 3,
+        "confidence" : 96.92041,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.010157776,
+            "height" : 0.020167688,
+            "left" : 0.8653823,
+            "top" : 0.41313586
+          },
+          "polygon" : [ {
+            "x" : 0.8653823,
+            "y" : 0.41474903
+          }, {
+            "x" : 0.8739926,
+            "y" : 0.41313586
+          }, {
+            "x" : 0.8755401,
+            "y" : 0.43169037
+          }, {
+            "x" : 0.8669297,
+            "y" : 0.43330353
+          } ]
+        }
+      }, {
+        "detectedText" : "5",
+        "type" : "WORD",
+        "id" : 18,
+        "parentId" : 4,
+        "confidence" : 96.61529,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.008470153,
+            "height" : 0.018554688,
+            "left" : 0.8255142,
+            "top" : 0.41992188
+          },
+          "polygon" : [ {
+            "x" : 0.8255142,
+            "y" : 0.41992188
+          }, {
+            "x" : 0.8339844,
+            "y" : 0.41992188
+          }, {
+            "x" : 0.8339844,
+            "y" : 0.43847656
+          }, {
+            "x" : 0.8255142,
+            "y" : 0.43847656
+          } ]
+        }
+      }, {
+        "detectedText" : "4",
+        "type" : "WORD",
+        "id" : 19,
+        "parentId" : 5,
+        "confidence" : 92.1886,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.006948948,
+            "height" : 0.015884006,
+            "left" : 0.78767294,
+            "top" : 0.4290998
+          },
+          "polygon" : [ {
+            "x" : 0.78767294,
+            "y" : 0.43017024
+          }, {
+            "x" : 0.79338646,
+            "y" : 0.4290998
+          }, {
+            "x" : 0.7946219,
+            "y" : 0.44391337
+          }, {
+            "x" : 0.78890836,
+            "y" : 0.4449838
+          } ]
+        }
+      }, {
+        "detectedText" : "В",
+        "type" : "WORD",
+        "id" : 20,
+        "parentId" : 6,
+        "confidence" : 41.132633,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.006515503,
+            "height" : 0.013671875,
+            "left" : 0.7642685,
+            "top" : 0.43359375
+          },
+          "polygon" : [ {
+            "x" : 0.7642685,
+            "y" : 0.43359375
+          }, {
+            "x" : 0.770784,
+            "y" : 0.43359375
+          }, {
+            "x" : 0.770784,
+            "y" : 0.44726562
+          }, {
+            "x" : 0.7642685,
+            "y" : 0.44726562
+          } ]
+        }
+      }, {
+        "detectedText" : "9",
+        "type" : "WORD",
+        "id" : 21,
+        "parentId" : 7,
+        "confidence" : 96.611824,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.01027813,
+            "height" : 0.020663474,
+            "left" : 0.8673269,
+            "top" : 0.4549928
+          },
+          "polygon" : [ {
+            "x" : 0.8673269,
+            "y" : 0.456621
+          }, {
+            "x" : 0.87601745,
+            "y" : 0.4549928
+          }, {
+            "x" : 0.8776051,
+            "y" : 0.47402808
+          }, {
+            "x" : 0.8689145,
+            "y" : 0.47565627
+          } ]
+        }
+      }, {
+        "detectedText" : "8",
+        "type" : "WORD",
+        "id" : 22,
+        "parentId" : 8,
+        "confidence" : 97.44377,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.009686661,
+            "height" : 0.020197777,
+            "left" : 0.8275924,
+            "top" : 0.46010092
+          },
+          "polygon" : [ {
+            "x" : 0.8275924,
+            "y" : 0.46162397
+          }, {
+            "x" : 0.8357216,
+            "y" : 0.46010092
+          }, {
+            "x" : 0.837279,
+            "y" : 0.47877562
+          }, {
+            "x" : 0.82914984,
+            "y" : 0.4802987
+          } ]
+        }
+      }, {
+        "detectedText" : "7",
+        "type" : "WORD",
+        "id" : 23,
+        "parentId" : 9,
+        "confidence" : 94.36426,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.007818604,
+            "height" : 0.01953125,
+            "left" : 0.7890274,
+            "top" : 0.46679688
+          },
+          "polygon" : [ {
+            "x" : 0.7890274,
+            "y" : 0.46679688
+          }, {
+            "x" : 0.79684603,
+            "y" : 0.46679688
+          }, {
+            "x" : 0.79684603,
+            "y" : 0.48632812
+          }, {
+            "x" : 0.7890274,
+            "y" : 0.48632812
+          } ]
+        }
+      }, {
+        "detectedText" : "C",
+        "type" : "WORD",
+        "id" : 24,
+        "parentId" : 10,
+        "confidence" : 48.237995,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.006515503,
+            "height" : 0.013671875,
+            "left" : 0.76622313,
+            "top" : 0.47265625
+          },
+          "polygon" : [ {
+            "x" : 0.76622313,
+            "y" : 0.47265625
+          }, {
+            "x" : 0.77273864,
+            "y" : 0.47265625
+          }, {
+            "x" : 0.77273864,
+            "y" : 0.48632812
+          }, {
+            "x" : 0.76622313,
+            "y" : 0.48632812
+          } ]
+        }
+      }, {
+        "detectedText" : "0",
+        "type" : "WORD",
+        "id" : 25,
+        "parentId" : 11,
+        "confidence" : 87.58794,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.008470153,
+            "height" : 0.018554688,
+            "left" : 0.8307266,
+            "top" : 0.5019531
+          },
+          "polygon" : [ {
+            "x" : 0.8307266,
+            "y" : 0.5019531
+          }, {
+            "x" : 0.8391968,
+            "y" : 0.5019531
+          }, {
+            "x" : 0.8391968,
+            "y" : 0.5205078
+          }, {
+            "x" : 0.8307266,
+            "y" : 0.5205078
+          } ]
+        }
+      }, {
+        "detectedText" : "D",
+        "type" : "WORD",
+        "id" : 26,
+        "parentId" : 12,
+        "confidence" : 94.40927,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.0071670534,
+            "height" : 0.013671875,
+            "left" : 0.7681778,
+            "top" : 0.51171875
+          },
+          "polygon" : [ {
+            "x" : 0.7681778,
+            "y" : 0.51171875
+          }, {
+            "x" : 0.77534485,
+            "y" : 0.51171875
+          }, {
+            "x" : 0.77534485,
+            "y" : 0.5253906
+          }, {
+            "x" : 0.7681778,
+            "y" : 0.5253906
+          } ]
+        }
+      }, {
+        "detectedText" : "x",
+        "type" : "WORD",
+        "id" : 27,
+        "parentId" : 13,
+        "confidence" : 66.26334,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.012933731,
+            "height" : 0.019781394,
+            "left" : 0.79095155,
+            "top" : 0.50599825
+          },
+          "polygon" : [ {
+            "x" : 0.79095155,
+            "y" : 0.5087563
+          }, {
+            "x" : 0.8019923,
+            "y" : 0.50599825
+          }, {
+            "x" : 0.8038853,
+            "y" : 0.5230216
+          }, {
+            "x" : 0.7928445,
+            "y" : 0.52577966
+          } ]
+        }
+      } ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "5.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Cell Phone #Finger #Text #Person #Phone #Mobile Phone #Electronics #Human"
+  }
+}</TEXT></FIELD>
+</FIELDS>

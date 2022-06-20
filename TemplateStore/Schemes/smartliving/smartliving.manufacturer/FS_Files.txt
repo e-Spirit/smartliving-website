@@ -1,0 +1,11 @@
+# mimeType        name
+text/plain;UTF-8  FS_Info.txt
+text/plain;UTF-8  FS_References.txt
+text/html;UTF-8   ChannelSource_HTML_html.html
+text/xml;UTF-8    GomSource.xml
+text/xml;UTF-8    Mapping.xml
+text/xml;UTF-8    Ruleset.xml
+text/plain;UTF-8  SnippetExtract.txt
+text/plain;UTF-8  SnippetHeader.txt
+text/plain;UTF-8  SnippetThumb.txt
+text/xml;UTF-8    StoreElement.xml

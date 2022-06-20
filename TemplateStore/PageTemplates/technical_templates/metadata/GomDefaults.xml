@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='md_region'><SEL><VALUE>region_na</VALUE></SEL></FIELD>
+	<FIELD name='md_country'><SEL><VALUE>country_us</VALUE></SEL></FIELD>
+	<FIELD name='md_language'><SEL><VALUE>EN</VALUE></SEL></FIELD>
+	<FIELD name='md_creation_date'><DATE>1627975373350</DATE></FIELD>
+	<FIELD name='md_licensing'><SEL><VALUE>license_cc</VALUE></SEL></FIELD>
+</FIELDS>

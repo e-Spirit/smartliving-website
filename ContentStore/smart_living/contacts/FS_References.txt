@@ -1,0 +1,6 @@
+[self]
+uid=/smart_living/contacts
+gid=6103ebc2-e731-48d5-b012-f000c6635054
+store=CONTENTSTORE
+class=de.espirit.firstspirit.store.access.contentstore.ContentFolderImpl
+

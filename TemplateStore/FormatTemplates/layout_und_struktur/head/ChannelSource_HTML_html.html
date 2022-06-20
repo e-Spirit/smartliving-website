@@ -1,0 +1,85 @@
+<!-- META -->
+<meta charset="$CMS_VALUE(#global.encoding)$">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+$CMS_IF(!#global.node.meta("md_keywords").isEmpty())$
+<meta name="keywords" content="$CMS_VALUE(#global.node.meta("md_keywords").replaceAll("\"",""))$" />
+$CMS_END_IF$
+$CMS_IF(!#global.node.meta("md_author").isEmpty())$
+<meta name="author" content="$CMS_VALUE(#global.node.meta("md_author").replaceAll("\"",""))$" />
+$CMS_END_IF$
+$CMS_IF(!#global.node.meta("md_robot").isEmpty())$
+<meta name="robots" content="$CMS_VALUE(#global.node.meta("md_robot").replaceAll("\"",""))$" />
+$CMS_END_IF$
+$CMS_IF(!#global.node.meta("md_description").isEmpty())$
+<meta name="description" content="$CMS_VALUE(#global.node.meta("md_description").replaceAll("\"",""))$" />
+$CMS_END_IF$
+<!-- FAVICONS ICON -->
+<link rel="icon" href="$CMS_REF(media:"favicon")$" type="image/x-icon" />
+<link rel="shortcut icon" type="image/x-icon" href="$CMS_REF(media:"favicon")$" />
+
+<!-- PAGE TITLE HERE -->
+<title>$CMS_VALUE(pt_title,default:"SmartHome")$</title>
+
+<!-- MOBILE SPECIFIC -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- [if lt IE 9]>
+	<script src="$CMS_REF(media:"html5shiv_min")$"></script>
+	<script src="$CMS_REF(media:"respond_min")$"></script>
+<![endif] -->
+
+<!-- BOOTSTRAP STYLE SHEET -->
+<link rel="stylesheet" type="text/css" href="$CMS_REF(media:"bootstrap_min_1")$">
+<!-- FONTAWESOME STYLE SHEET -->
+$--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">--$
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!-- OWL CAROUSEL STYLE SHEET -->
+<link rel="stylesheet" type="text/css" href="$CMS_REF(media:"owl_carousel_min_1")$">
+
+<!-- MAGNIFIC POPUP STYLE SHEET -->
+<link rel="stylesheet" type="text/css" href="$CMS_REF(media:"magnific_popup_min_1")$">
+<!-- LOADER STYLE SHEET -->
+<link rel="stylesheet" type="text/css" href="$CMS_REF(media:"loader_min")$">
+<!-- MAIN STYLE SHEET -->
+<link rel="stylesheet" type="text/css" href="$CMS_REF(media:"style")$">
+<!-- REVOLUTION SLIDER 4 STYLE -->
+<link rel="stylesheet" type="text/css" href="$CMS_REF(media:"rev_slider_4")$">
+
+<!-- REVOLUTION SLIDER CSS -->
+<link rel="stylesheet" type="text/css" href="$CMS_REF(media:"settings_1")$">
+<!-- REVOLUTION NAVIGATION STYLE -->
+<link rel="stylesheet" type="text/css" href="$CMS_REF(media:"navigation_1")$">
+
+<!-- DEALER MAP CSS -->
+<link rel="stylesheet" type="text/css" href="$CMS_REF(media:"dealer_map_css")$">
+
+<!-- CUSTOM CSS-->
+<link rel="stylesheet" type="text/css" href="$CMS_REF(media:"custom_1")$?$CMS_VALUE(#global.now.getTimeInMillis())$">
+<link rel="stylesheet" type="text/css" href="$CMS_REF(media:"responsive")$?$CMS_VALUE(#global.now.getTimeInMillis())$">
+$CMS_IF("news_overview".equals(#global.node.uid))$
+	<link rel="stylesheet" type="text/css" href="$CMS_REF(media:"news_css")$?$CMS_VALUE(#global.now.getTimeInMillis())$">
+$CMS_END_IF$
+
+<!-- GOOGLE FONTS -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,800,800i,900"
+    rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Crete+Round:400,400i&amp;subset=latin-ext" rel="stylesheet">
+$CMS_IF(!pt_show_chat.isEmpty && pt_show_chat)$
+<!-- MERCURY CHAT -->
+$-- <link href="$CMS_REF(media:"mercury_enterprise")$" rel="stylesheet"> --$
+<link href="https://widget.mercury.ai/css/widget.css" rel="stylesheet">
+<link href="$CMS_REF(media:"mercury_enterprise")$" rel="stylesheet">
+
+<script src="https://widget.mercury.ai/js/widget.js"></script>
+<script>
+  var id = Math.random().toString(36).substr(2, 9);
+  window.mercury_user = {
+    user_id: id,
+    first_name: 'Harry',
+    last_name: 'Home',
+    startIntent: 'Acknowledge/Welcome()'
+  };
+</script>
+$CMS_END_IF$

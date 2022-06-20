@@ -1,0 +1,54 @@
+<!-- WELCOME SECTION START -->
+            <div class="section-full p-t90 theming-background" $CMS_VALUE(editorId(reloadPreview:true))$>
+                <div class="container">
+                    <div class="section-content">
+                    	<div class="row">
+                    		<div class="col-md-5 col-sm-12 text-uppercase text-black">
+                    			$CMS_IF(!st_kicker.isEmpty())$
+                            	<span class="font-30 font-weight-300" $CMS_VALUE(editorId(editorName:"st_kicker"))$>$CMS_VALUE(st_kicker)$</span>                    
+								$CMS_END_IF$
+								$CMS_IF(!st_headline.isEmpty())$
+                                <h2 class="font-40" $CMS_VALUE(editorId(editorName:"st_headline"))$>
+                                	$CMS_VALUE(st_headline)$
+                                </h2>
+                                $CMS_END_IF$
+                                $CMS_IF(!st_text.isEmpty())$
+                                <p $CMS_VALUE(editorId(editorName:"st_text"))$>
+                                	$CMS_VALUE(st_text)$
+                                </p>
+                                $CMS_END_IF$
+                                $CMS_IF(!st_button.isEmpty)$
+									$CMS_VALUE(st_button)$
+								$CMS_END_IF$                    
+                            </div>
+                            $CMS_IF(!st_picture.isEmpty())$
+                        	<div class="col-md-7 col-sm-12">
+                            	<div class="m-carousel-1 m-l100">
+                            		<div class="owl-carousel home-carousel-1 owl-btn-vertical-center">
+                            			<div class="item">								  
+										 <div class="ow-img wt-img-effect zoom-slow" $CMS_VALUE(editorId(editorName:"st_picture", resolution:"portrait"))$>
+										    <a href="javascript:void(0);">
+											$CMS_IF(st_picture != null)$
+											  <img src="$CMS_REF(st_picture, resolution:"portrait")$" alt="$CMS_VALUE(if(st_picture_alt.isEmpty,"",st_picture_alt.convert2()))$" />
+											$CMS_END_IF$
+											</a>
+										  </div>
+										</div>
+                                   	</div>
+                               </div>
+                            </div>
+							$CMS_END_IF$
+                        </div>
+                        
+                        <div class="hilite-title p-lr20 m-tb20 text-right text-uppercase bdr-gray bdr-right" style="min-height:50px;" $CMS_VALUE(editorId(editorName:"st_jumbo_headline"))$>
+                        $CMS_IF(!st_jumbo_headline.isEmpty())$
+                        <div>
+                        <strong>$CMS_VALUE(st_jumbo_headline)$</strong>
+                        </div>
+                        $CMS_END_IF$
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>   
+            <!-- WELCOME  SECTION END --> 

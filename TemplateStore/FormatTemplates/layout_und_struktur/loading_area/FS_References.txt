@@ -1,0 +1,6 @@
+[self]
+uid=loading_area
+gid=b2a11963-d57c-4559-bf37-2a89cdc6187b
+uidType=TEMPLATESTORE_FORMATTEMPLATE
+class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
+

@@ -1,0 +1,6 @@
+[self]
+uid=font_awesome_min_1
+gid=ac1b8c11-528d-4ffa-b72f-91da0efdfba4
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+

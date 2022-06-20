@@ -1,0 +1,53 @@
+$CMS_IF("fullWidth".equals(st_picAlignment))$
+	$CMS_SET(set_res,"landscape")$
+$CMS_ELSE$
+	$CMS_SET(set_res,"portrait")$
+$CMS_END_IF$
+$CMS_SET(set_image)$
+	<div class="item">
+		<div class="ow-img"$CMS_VALUE(editorId(editorName:"st_picture", resolution:set_res))$>
+			<img src="$CMS_REF(st_picture, resolution:set_res)$" alt="$CMS_VALUE(if(st_picture_alt.isEmpty,"",st_picture_alt.convert2()))$">
+		</div>
+	</div>
+$CMS_END_SET$
+$CMS_SET(set_text)$
+	<div class="m-about-containt text-black text-uppercase p-t30 table table-hover" $CMS_VALUE(editorId(editorName:"st_text"))$>
+		$CMS_VALUE(st_text, default:"")$
+	</div>
+$CMS_END_SET$
+<div class="section-full p-tb90 theming-background square_shape2" $CMS_VALUE(editorId(reloadPreview:true))$ data-test-id="$CMS_VALUE(#global.section.id)$">
+	<div class="container">
+		<div class="section-content">
+			<div class="row">
+				$CMS_IF(!st_headline.empty)$
+					<div class="col-md-12 text-uppercase" >
+						<h2 class="font-40"$CMS_VALUE(editorId(editorName:"st_headline"))$>$CMS_VALUE(st_headline)$</h3>
+					</div>
+				$CMS_END_IF$
+				$CMS_IF("fullWidth".equals(st_picAlignment))$
+					$CMS_IF(!st_picture.isEmpty)$
+					<div class="col-md-12 col-sm-12">
+						<div p-t30">
+							$CMS_VALUE(set_image)$
+						</div>
+					</div>
+					$CMS_END_IF$
+					<div class="col-md-12 col-sm-12">
+						$CMS_VALUE(set_text)$
+					</div>  
+				$CMS_ELSE$
+					$CMS_IF(!st_picture.isEmpty)$
+					<div class="col-md-6 col-sm-6 $CMS_VALUE(if("right".equals(st_picAlignment), "float-right-on-desktop", ""))$">
+						<div class="$CMS_VALUE(if(st_frame, "m-about m-l50 m-r50", ""))$ p-t30">
+							$CMS_VALUE(set_image)$
+						</div>
+					</div>
+					$CMS_END_IF$
+					<div class="col-md-6 col-sm-6">
+						$CMS_VALUE(set_text)$
+					</div>  
+				$CMS_END_IF$             
+			</div>
+		</div>
+	</div>
+</div>   

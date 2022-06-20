@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='md_creation_date'><DATE>1637182120847</DATE></FIELD>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Housing",
+        "confidence" : 99.697586,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Building"
+        } ]
+      }, {
+        "name" : "Building",
+        "confidence" : 99.697586,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Chair",
+        "confidence" : 99.59917,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.17432325,
+            "height" : 0.36885902,
+            "left" : 0.6882644,
+            "top" : 0.5987904
+          },
+          "confidence" : 99.59917
+        }, {
+          "boundingBox" : {
+            "width" : 0.08835136,
+            "height" : 0.25416356,
+            "left" : 0.20565468,
+            "top" : 0.5646141
+          },
+          "confidence" : 99.30401
+        } ],
+        "parents" : [ {
+          "name" : "Furniture"
+        } ]
+      }, {
+        "name" : "Furniture",
+        "confidence" : 99.59917,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Indoors",
+        "confidence" : 99.08195,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Table",
+        "confidence" : 97.632706,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Furniture"
+        } ]
+      }, {
+        "name" : "Couch",
+        "confidence" : 97.25768,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.28530505,
+            "height" : 0.319229,
+            "left" : 0.34448323,
+            "top" : 0.5893637
+          },
+          "confidence" : 97.25768
+        } ],
+        "parents" : [ {
+          "name" : "Furniture"
+        } ]
+      }, {
+        "name" : "Penthouse",
+        "confidence" : 96.69374,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Room",
+        "confidence" : 93.51904,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Indoors"
+        } ]
+      }, {
+        "name" : "Interior Design",
+        "confidence" : 93.004974,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Indoors"
+        } ]
+      }, {
+        "name" : "Living Room",
+        "confidence" : 92.74238,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Room"
+        }, {
+          "name" : "Indoors"
+        } ]
+      }, {
+        "name" : "Coffee Table",
+        "confidence" : 87.26339,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Table"
+        }, {
+          "name" : "Furniture"
+        } ]
+      }, {
+        "name" : "Condo",
+        "confidence" : 76.07726,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Housing"
+        }, {
+          "name" : "Building"
+        } ]
+      }, {
+        "name" : "Rug",
+        "confidence" : 64.13823,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.5707029,
+            "height" : 0.3302533,
+            "left" : 0.27520084,
+            "top" : 0.6677467
+          },
+          "confidence" : 64.13823
+        } ],
+        "parents" : [ ]
+      }, {
+        "name" : "Urban",
+        "confidence" : 61.522476,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "City",
+        "confidence" : 60.046837,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Urban"
+        }, {
+          "name" : "Building"
+        } ]
+      }, {
+        "name" : "Town",
+        "confidence" : 60.046837,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Urban"
+        }, {
+          "name" : "Building"
+        } ]
+      }, {
+        "name" : "Lobby",
+        "confidence" : 58.88455,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Room"
+        }, {
+          "name" : "Indoors"
+        } ]
+      }, {
+        "name" : "Cushion",
+        "confidence" : 58.26937,
+        "instances" : [ ],
+        "parents" : [ ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "2.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "5.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Housing #Living Room #Town #City #Indoors #Interior Design #Cushion #Room #Furniture #Table #Lobby #Coffee Table #Rug #Penthouse #Urban #Couch #Condo #Building #Chair"
+  }
+}</TEXT></FIELD>
+</FIELDS>

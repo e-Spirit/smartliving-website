@@ -1,0 +1,6 @@
+[self]
+uid=about_us
+gid=45844b98-22e3-4a18-8310-6277bbd99887
+uidType=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.PageFolderImpl
+

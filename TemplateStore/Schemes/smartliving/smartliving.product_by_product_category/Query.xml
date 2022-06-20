@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- WIZARD MODE -->
+<QUERY entityType="product">
+	<FILTERPARAM parameter="category" datatype="java.util.UUID"/>
+	<EQ attribute="product_categoryList.FS_GID" parameter="category"/>
+</QUERY>

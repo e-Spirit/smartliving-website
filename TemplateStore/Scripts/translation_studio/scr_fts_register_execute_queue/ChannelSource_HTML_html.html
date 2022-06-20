@@ -1,0 +1,11 @@
+import de.espirit.firstspirit.access.store.templatestore.WorkflowScriptContext;
+
+/************************************************
+ * TranslationStudio Script
+ ************************************************/      
+ 
+WorkflowScriptContext wsc = (WorkflowScriptContext) context;
+
+new com.idmedia.translationstudio.firstspirit.api.util.ExecuteGenerationTaskOperation(wsc).perform("fts_queue");
+
+wsc.doTransition("done_queued");

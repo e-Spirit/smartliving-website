@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MEDIUM filename="single-product-img" id="8089210912149035972" meta="1" type="pic" uniquedescription="single_product_img">
+	<LANG displayname="Doorbell" language="EN"/>
+	<LANG displayname="Tuerklingel 2" language="DE"/>
+	<PICTURE>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:472,&quot;x&quot;:14,&quot;h&quot;:734,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:400,&quot;x&quot;:50,&quot;h&quot;:587,&quot;y&quot;:73},&quot;title&quot;:&quot;Image center&quot;},&quot;flip&quot;:false}" cropData="14.0,0.0,472.0,734.0,0,false" extension="jpg" height="560" mimetype="image/jpeg" resolutionid="product_teaser" width="360"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:500,&quot;x&quot;:0,&quot;h&quot;:172,&quot;y&quot;:280},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:400,&quot;x&quot;:50,&quot;h&quot;:587,&quot;y&quot;:73},&quot;title&quot;:&quot;Image center&quot;},&quot;flip&quot;:false}" cropData="0.0,280.0,500.0,172.0,0,false" extension="jpg" height="400" mimetype="image/jpeg" resolutionid="landscape" width="1170"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:500,&quot;x&quot;:0,&quot;h&quot;:282,&quot;y&quot;:225},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:400,&quot;x&quot;:50,&quot;h&quot;:587,&quot;y&quot;:73},&quot;title&quot;:&quot;Image center&quot;},&quot;flip&quot;:false}" cropData="0.0,225.0,500.0,282.0,0,false" extension="jpg" height="1080" mimetype="image/jpeg" resolutionid="banner_slider" width="1920"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:500,&quot;x&quot;:0,&quot;h&quot;:314,&quot;y&quot;:209},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:400,&quot;x&quot;:50,&quot;h&quot;:587,&quot;y&quot;:73},&quot;title&quot;:&quot;Image center&quot;},&quot;flip&quot;:false}" cropData="0.0,209.0,500.0,314.0,0,false" extension="jpg" height="500" mimetype="image/jpeg" resolutionid="portrait" width="800"/>
+		<RESOLUTION extension="jpg" height="734" mimetype="image/jpeg" resolutionid="ORIGINAL" width="500"/>
+	</PICTURE>
+</MEDIUM>

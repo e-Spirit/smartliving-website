@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='md_creation_date'><DATE>1637180411867</DATE></FIELD>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Text",
+        "confidence" : 93.59915,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Logo",
+        "confidence" : 90.49748,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Symbol"
+        } ]
+      }, {
+        "name" : "Trademark",
+        "confidence" : 90.49748,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Symbol"
+        } ]
+      }, {
+        "name" : "Symbol",
+        "confidence" : 90.49748,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Label",
+        "confidence" : 83.35269,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Text"
+        } ]
+      }, {
+        "name" : "Home Decor",
+        "confidence" : 75.878136,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Number",
+        "confidence" : 61.848602,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Symbol"
+        }, {
+          "name" : "Text"
+        } ]
+      }, {
+        "name" : "Word",
+        "confidence" : 58.99596,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "First Aid",
+        "confidence" : 56.724438,
+        "instances" : [ ],
+        "parents" : [ ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "2.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ {
+        "detectedText" : "!",
+        "type" : "LINE",
+        "id" : 0,
+        "parentId" : null,
+        "confidence" : 95.2397,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.083848104,
+            "height" : 0.3188205,
+            "left" : 0.081202276,
+            "top" : 0.24620005
+          },
+          "polygon" : [ {
+            "x" : 0.08397841,
+            "y" : 0.24620005
+          }, {
+            "x" : 0.16505037,
+            "y" : 0.24690756
+          }, {
+            "x" : 0.16227424,
+            "y" : 0.56502056
+          }, {
+            "x" : 0.081202276,
+            "y" : 0.56431305
+          } ]
+        }
+      }, {
+        "detectedText" : "!",
+        "type" : "WORD",
+        "id" : 1,
+        "parentId" : 0,
+        "confidence" : 95.2397,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.08205152,
+            "height" : 0.3188205,
+            "left" : 0.08210056,
+            "top" : 0.24620005
+          },
+          "polygon" : [ {
+            "x" : 0.08397841,
+            "y" : 0.24620005
+          }, {
+            "x" : 0.16415209,
+            "y" : 0.24704178
+          }, {
+            "x" : 0.16227424,
+            "y" : 0.56502056
+          }, {
+            "x" : 0.08210056,
+            "y" : 0.5641788
+          } ]
+        }
+      } ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "5.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Home Decor #Symbol #Text #Trademark #Label #Number #Word #First Aid #Logo"
+  }
+}</TEXT></FIELD>
+</FIELDS>

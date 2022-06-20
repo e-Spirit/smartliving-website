@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='md_keywords'><TEXT>test</TEXT></FIELD>
+	<FIELD name='md_author'><TEXT>Author</TEXT></FIELD>
+	<FIELD name='md_creation_date'><DATE>1632344047346</DATE></FIELD>
+</FIELDS>

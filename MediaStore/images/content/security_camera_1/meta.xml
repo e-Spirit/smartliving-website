@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='md_creation_date'><DATE>1637182165696</DATE></FIELD>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Person",
+        "confidence" : 99.67854,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.52614594,
+            "height" : 0.642909,
+            "left" : 0.010162038,
+            "top" : 0.33291128
+          },
+          "confidence" : 99.67854
+        } ],
+        "parents" : [ ]
+      }, {
+        "name" : "Human",
+        "confidence" : 99.67854,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Mobile Phone",
+        "confidence" : 99.307014,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.25752395,
+            "height" : 0.39564458,
+            "left" : 0.16998589,
+            "top" : 0.109469265
+          },
+          "confidence" : 99.307014
+        } ],
+        "parents" : [ {
+          "name" : "Phone"
+        }, {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Cell Phone",
+        "confidence" : 99.307014,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Phone"
+        }, {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Electronics",
+        "confidence" : 99.307014,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Phone",
+        "confidence" : 99.307014,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Camera",
+        "confidence" : 64.27385,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Finger",
+        "confidence" : 58.609604,
+        "instances" : [ ],
+        "parents" : [ ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "2.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "5.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Camera #Cell Phone #Finger #Person #Phone #Mobile Phone #Electronics #Human"
+  }
+}</TEXT></FIELD>
+</FIELDS>

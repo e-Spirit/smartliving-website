@@ -1,0 +1,6 @@
+[self]
+uid=partner
+gid=41039e81-d6e2-470a-a400-fb46955c0c8d
+uidType=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.PageFolderImpl
+

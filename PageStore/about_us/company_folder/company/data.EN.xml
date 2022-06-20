@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='pt_title'><TEXT>Company</TEXT></FIELD>
+	<FIELD name='pt_add_sections'><STATE>true</STATE></FIELD>
+	<FIELD name='pt_show_chat'><STATE>false</STATE></FIELD>
+	<FIELD name='pt_text'><TEXT>Company</TEXT></FIELD>
+</FIELDS>

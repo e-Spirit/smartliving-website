@@ -1,0 +1,49 @@
+import com.idmedia.translationstudio.api.firstspirit.IClientWorkflowAPI;
+import com.idmedia.translationstudio.api.firstspirit.IRegisterPageFolderOperation;
+import com.idmedia.translationstudio.api.firstspirit.ITranslationRequestForm;
+import com.idmedia.translationstudio.api.firstspirit.ITranslationWorkflowForm;
+import de.espirit.firstspirit.access.store.pagestore.PageFolder;
+import de.espirit.firstspirit.access.store.templatestore.WorkflowScriptContext;
+
+/************************************************
+ * TranslationStudio Script
+ ************************************************/
+
+WorkflowScriptContext wsc = (WorkflowScriptContext) context;
+
+IClientWorkflowAPI pApi = com.idmedia.translationstudio.firstspirit.api.TranslationStudio.get(wsc);
+ITranslationWorkflowForm pForm = pApi.requestFormFactory().createMappingsFormPages();
+
+if (!pForm.showForm(true))
+    wsc.doTransition("cancel");
+else
+{
+    ITranslationRequestForm p = pForm.getResult();
+    if (p == null)
+    {
+        wsc.doTransition("cancel");
+        return;
+    }
+
+    pApi.requestRegisterOperationFactory().requestRegisterPageFolderOperation().register((PageFolder) wsc.getElement(), p, true);
+    
+    try
+    {
+        if (p.createPreviewPage())
+            wsc.doTransition("success_preview");
+        else
+            wsc.doTransition("success_queued");
+    }
+    catch (e)
+    {
+        /* legacy */
+        context.logError("Please check your workflow (transition) permissions. There seems to be a problem here.");
+
+        if (p.createPreviewPage())
+            new com.idmedia.translationstudio.firstspirit.api.util.ExecuteGenerationTaskOperation(wsc).perform("fts_create_preview_files");
+        else
+            new com.idmedia.translationstudio.firstspirit.api.util.ExecuteGenerationTaskOperation(wsc).perform("fts_queue");
+
+        wsc.doTransition("cancel");
+    }
+}

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_kicker'><TEXT>Climate Control</TEXT></FIELD>
+	<FIELD name='st_headline'><DOM><standard>Economic &amp; Environmental <span_yellow_text>Benefits</span_yellow_text></standard></DOM></FIELD>
+	<FIELD name='st_text'><DOM><standard>An average family can spend thousands on their annual energy bill. This is more than any other utility cost!<br/><br/>But new innovations in smart home technology aim to change this, making it better for the environment and your wallet. <br/><br/>Smart home technology lets you intelligently manage the temperatures in your home. Reach optimum climate controlled comfort while saving energy at the same time. Good for you. Good for the environment.</standard></DOM></FIELD>
+	<FIELD name='st_jumbo_headline'><TEXT>Climate Control</TEXT></FIELD>
+	<FIELD name='st_button'><LINK/></FIELD>
+</FIELDS>

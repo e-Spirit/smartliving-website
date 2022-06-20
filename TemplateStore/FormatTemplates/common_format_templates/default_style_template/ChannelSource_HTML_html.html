@@ -1,0 +1,6 @@
+$CMS_IF(!#style.isEmpty)$$--
+	--$ style='$--
+	--$$CMS_VALUE(if(!color.isEmpty, "color:" + color + ";"))$$--
+	--$$CMS_VALUE(if(!align.isEmpty, "text-align:" + if(align == "block", "justify", align) + ";"))$$--
+	--$$CMS_VALUE(if(!bgcolor.isEmpty, "background-color:" + bgcolor + ";"))$'$--
+--$$CMS_END_IF$

@@ -1,0 +1,7 @@
+[self]
+uid=/Developer Scripts (public)
+gid=f3793078-10e3-4d21-80c8-cce21e3b695e
+store=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.ScriptFolderImpl
+root=de.espirit.firstspirit.store.access.templatestore.ScriptsImpl
+

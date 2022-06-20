@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="$CMS_VALUE(#global.language.abbreviation.toLowerCase)$">
+<head>
+$CMS_RENDER(template:"head")$
+</head>
+<body class="footer-fixed">
+  $--CMS_RENDER(template:"chatbot")--$
+  $-- Chatbot is based on Fragments, can be activated again when it has been redesigned --$
+	<div class="page-wraper"> 
+	    $CMS_RENDER(template:"header")$
+        <!-- CONTENT START -->
+        <div class="page-content">
+        	<div $CMS_VALUE(editorId(reloadPreview:true))$>
+        	$CMS_IF(pt_slider.length > 0)$
+            <div id="welcome_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="goodnews-header" data-source="gallery" style="background:#eeeeee;padding:0px;">
+                <div id="welcome" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.3.1">
+                    <ul>	
+                    $CMS_VALUE(pt_slider)$
+                    </ul>
+                    <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	
+                </div>
+            </div>
+            $CMS_END_IF$
+            </div>
+        	$CMS_VALUE(#global.getPage().getBodyByName("content"))$
+        	$CMS_IF(#global.is("WEBEDIT"))$
+				$CMS_RENDER(template:"add_new_section",label:"Add Content",body:"content", dropEditorName:"pt_create_section")$
+			$CMS_END_IF$
+        </div>
+        <!-- CONTENT END -->
+        $CMS_VALUE(#global.gca(ps_footer.get().uid))$
+        $CMS_RENDER(template:"top_button")$
+    </div>
+    $CMS_IF(#global.is("WEBEDIT"))$
+	    <script type="text/javascript">
+			function fs_UtilCreateNewSection(pageId, bodyId){
+				top.WE_API.Common.execute(
+					"class:NewSection",
+					{
+						page: pageId,
+						body: bodyId
+					}
+				);
+			}
+		</script>
+	$CMS_END_IF$
+$--CMS_RENDER(template:"loading_area")--$
+$CMS_RENDER(template:"js_section")$
+</body>
+</html>

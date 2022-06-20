@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='md_creation_date'><DATE>1637180401111</DATE></FIELD>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Symbol",
+        "confidence" : 91.95258,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Logo",
+        "confidence" : 85.26643,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Symbol"
+        } ]
+      }, {
+        "name" : "Trademark",
+        "confidence" : 85.26643,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Symbol"
+        } ]
+      }, {
+        "name" : "Triangle",
+        "confidence" : 81.31737,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Text",
+        "confidence" : 65.83043,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Business Card",
+        "confidence" : 64.86019,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.8341212,
+            "height" : 0.7189809,
+            "left" : 0.048461687,
+            "top" : 0.18671587
+          },
+          "confidence" : 64.86019
+        } ],
+        "parents" : [ {
+          "name" : "Paper"
+        }, {
+          "name" : "Text"
+        } ]
+      }, {
+        "name" : "Paper",
+        "confidence" : 64.86019,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Star Symbol",
+        "confidence" : 59.124012,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Symbol"
+        } ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "2.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "5.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Triangle #Symbol #Star Symbol #Text #Trademark #Paper #Business Card #Logo"
+  }
+}</TEXT></FIELD>
+</FIELDS>

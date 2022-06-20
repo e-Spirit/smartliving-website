@@ -1,0 +1,13 @@
+//!Beanshell
+
+import de.espirit.firstspirit.access.store.Store;
+import de.espirit.firstspirit.access.store.contentstore.ContentFolder;
+import de.espirit.firstspirit.access.store.globalstore.ProjectProperties;
+
+boolean isContentFolder(storeElement) {
+	return storeElement.getStore().getType() == Store.Type.CONTENTSTORE
+		&& storeElement instanceof ContentFolder;
+}
+
+storeElement = context.getElement();
+return storeElement != null && !isContentFolder(storeElement);

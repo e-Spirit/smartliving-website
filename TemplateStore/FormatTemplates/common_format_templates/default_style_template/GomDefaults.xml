@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='bgcolor'><SEL><VALUE/></SEL></FIELD>
+	<FIELD name='color'><SEL><VALUE/></SEL></FIELD>
+	<FIELD name='align'><SEL><VALUE/></SEL></FIELD>
+</FIELDS>

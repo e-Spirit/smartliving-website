@@ -1,0 +1,19 @@
+<div data-time="$CMS_VALUE(st_time)$">
+	<div class="wt-img-effect">
+		$CMS_IF(!st_product.isEmpty())$
+		$CMS_SET(set_product, st_product.values.first.entity)$
+		$CMS_SET(set_contentId, set_product.id)$
+		<img src="$CMS_REF(set_product.teaser_image)$" alt="">
+		<div class="overlay-bx-2 ">
+			<div class="line-amiation">
+				<div class="text-white font-weight-300 p-a40">
+					<h2><a href="$CMS_REF(pageref:ps_product_detailpage.getUid(), contentId: set_contentId)$" class="text-white font-20 letter-spacing-4 text-uppercase">$CMS_VALUE(set_product.name, default: "Produkt")$</a></h2>
+					<p>$CMS_VALUE(set_product.abstract, default: "")$</p>
+					<h5></h5>
+					<a href="$CMS_REF(pageref:ps_product_detailpage.getUid(), contentId: set_contentId)$" class="v-button letter-spacing-4 font-12 text-uppercase p-l20">Details</a>
+				</div>
+			</div>
+		</div>
+		$CMS_END_IF$
+	</div>
+</div>

@@ -1,0 +1,17 @@
+[self]
+uid=wf_fts_register_dataset_ext
+gid=8b0663a9-c808-4218-9ba4-29eadf11dcb7
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.WorkflowImpl
+
+[optionalId]
+uid=register_dataset
+gid=995758ba-95a9-4cc1-8ee7-ce9db7502f68
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
+
+uid=scr_fts_register_execute_queue
+gid=5ba046a3-5119-4e93-8e33-250125bf98a4
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
+

@@ -1,0 +1,6 @@
+[self]
+uid=global.translations
+gid=cd8f8f6f-58de-405f-b2ab-bc9e63b946c7
+uidType=TEMPLATESTORE_SCHEMA
+class=de.espirit.firstspirit.store.access.templatestore.TableTemplateImpl
+

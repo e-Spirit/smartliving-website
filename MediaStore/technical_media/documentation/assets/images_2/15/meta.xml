@@ -1,0 +1,3568 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='md_creation_date'><DATE>1637241060086</DATE></FIELD>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Text",
+        "confidence" : 97.571304,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Page",
+        "confidence" : 96.84827,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Text"
+        } ]
+      }, {
+        "name" : "Document",
+        "confidence" : 94.234276,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.94939363,
+            "height" : 0.8616928,
+            "left" : 0.016192308,
+            "top" : 0.062366717
+          },
+          "confidence" : 94.234276
+        } ],
+        "parents" : [ {
+          "name" : "Text"
+        } ]
+      }, {
+        "name" : "File",
+        "confidence" : 59.52844,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Paper",
+        "confidence" : 55.273914,
+        "instances" : [ ],
+        "parents" : [ ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "2.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ {
+        "detectedText" : "//",
+        "type" : "LINE",
+        "id" : 0,
+        "parentId" : null,
+        "confidence" : 95.00247,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.011560605,
+            "height" : 0.021484375,
+            "left" : 0.034283172,
+            "top" : 0.033203125
+          },
+          "polygon" : [ {
+            "x" : 0.034283172,
+            "y" : 0.033203125
+          }, {
+            "x" : 0.04584378,
+            "y" : 0.033203125
+          }, {
+            "x" : 0.04584378,
+            "y" : 0.0546875
+          }, {
+            "x" : 0.034283172,
+            "y" : 0.0546875
+          } ]
+        }
+      }, {
+        "detectedText" : "google map 1 function custom",
+        "type" : "LINE",
+        "id" : 1,
+        "parentId" : null,
+        "confidence" : 99.278145,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.1678281,
+            "height" : 0.022460938,
+            "left" : 0.058201667,
+            "top" : 0.033203125
+          },
+          "polygon" : [ {
+            "x" : 0.058201667,
+            "y" : 0.033203125
+          }, {
+            "x" : 0.22602977,
+            "y" : 0.033203125
+          }, {
+            "x" : 0.22602977,
+            "y" : 0.055664062
+          }, {
+            "x" : 0.058201667,
+            "y" : 0.055664062
+          } ]
+        }
+      }, {
+        "detectedText" : "if (jQuery ('#gmap_canvas').ength)",
+        "type" : "LINE",
+        "id" : 2,
+        "parentId" : null,
+        "confidence" : 55.36963,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.20290855,
+            "height" : 0.036132812,
+            "left" : 0.057803027,
+            "top" : 0.08203125
+          },
+          "polygon" : [ {
+            "x" : 0.057803027,
+            "y" : 0.08203125
+          }, {
+            "x" : 0.26071158,
+            "y" : 0.08203125
+          }, {
+            "x" : 0.26071158,
+            "y" : 0.11816406
+          }, {
+            "x" : 0.057803027,
+            "y" : 0.11816406
+          } ]
+        }
+      }, {
+        "detectedText" : "function init_map1 () I",
+        "type" : "LINE",
+        "id" : 3,
+        "parentId" : null,
+        "confidence" : 70.43899,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.1295585,
+            "height" : 0.03125,
+            "left" : 0.08172152,
+            "top" : 0.13964844
+          },
+          "polygon" : [ {
+            "x" : 0.08172152,
+            "y" : 0.13964844
+          }, {
+            "x" : 0.21128003,
+            "y" : 0.13964844
+          }, {
+            "x" : 0.21128003,
+            "y" : 0.17089844
+          }, {
+            "x" : 0.08172152,
+            "y" : 0.17089844
+          } ]
+        }
+      }, {
+        "detectedText" : "var myOptions = |",
+        "type" : "LINE",
+        "id" : 4,
+        "parentId" : null,
+        "confidence" : 61.675877,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.10444409,
+            "height" : 0.034179688,
+            "left" : 0.10524137,
+            "top" : 0.19140625
+          },
+          "polygon" : [ {
+            "x" : 0.10524137,
+            "y" : 0.19140625
+          }, {
+            "x" : 0.20968546,
+            "y" : 0.19140625
+          }, {
+            "x" : 0.20968546,
+            "y" : 0.22558594
+          }, {
+            "x" : 0.10524137,
+            "y" : 0.22558594
+          } ]
+        }
+      }, {
+        "detectedText" : "zoom: 10,",
+        "type" : "LINE",
+        "id" : 5,
+        "parentId" : null,
+        "confidence" : 99.20645,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.05102612,
+            "height" : 0.01953125,
+            "left" : 0.12995715,
+            "top" : 0.2265625
+          },
+          "polygon" : [ {
+            "x" : 0.12995715,
+            "y" : 0.2265625
+          }, {
+            "x" : 0.18098326,
+            "y" : 0.2265625
+          }, {
+            "x" : 0.18098326,
+            "y" : 0.24609375
+          }, {
+            "x" : 0.12995715,
+            "y" : 0.24609375
+          } ]
+        }
+      }, {
+        "detectedText" : "-0.12775829999998223),",
+        "type" : "LINE",
+        "id" : 6,
+        "parentId" : null,
+        "confidence" : 78.07475,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.13130148,
+            "height" : 0.027314236,
+            "left" : 0.3850133,
+            "top" : 0.24965376
+          },
+          "polygon" : [ {
+            "x" : 0.38510707,
+            "y" : 0.24965376
+          }, {
+            "x" : 0.5163148,
+            "y" : 0.25011176
+          }, {
+            "x" : 0.51622105,
+            "y" : 0.276968
+          }, {
+            "x" : 0.3850133,
+            "y" : 0.27651
+          } ]
+        }
+      }, {
+        "detectedText" : "center: new google.maps.LatLng 51.5073509,",
+        "type" : "LINE",
+        "id" : 7,
+        "parentId" : null,
+        "confidence" : 91.1031,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.24915098,
+            "height" : 0.02734375,
+            "left" : 0.12995715,
+            "top" : 0.25
+          },
+          "polygon" : [ {
+            "x" : 0.12995715,
+            "y" : 0.25
+          }, {
+            "x" : 0.37910813,
+            "y" : 0.25
+          }, {
+            "x" : 0.37910813,
+            "y" : 0.27734375
+          }, {
+            "x" : 0.12995715,
+            "y" : 0.27734375
+          } ]
+        }
+      }, {
+        "detectedText" : "mapTypeId: google.maps.MapTypeId.ROADMAP,",
+        "type" : "LINE",
+        "id" : 8,
+        "parentId" : null,
+        "confidence" : 77.32607,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.24524757,
+            "height" : 0.032284588,
+            "left" : 0.12871358,
+            "top" : 0.27501118
+          },
+          "polygon" : [ {
+            "x" : 0.12871358,
+            "y" : 0.27543914
+          }, {
+            "x" : 0.37390557,
+            "y" : 0.27501118
+          }, {
+            "x" : 0.37396115,
+            "y" : 0.30686784
+          }, {
+            "x" : 0.12876919,
+            "y" : 0.30729577
+          } ]
+        }
+      }, {
+        "detectedText" : "// This is where you would paste any style found on Snazzy Maps.",
+        "type" : "LINE",
+        "id" : 9,
+        "parentId" : null,
+        "confidence" : 98.730156,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.38070267,
+            "height" : 0.0234375,
+            "left" : 0.1295585,
+            "top" : 0.30664062
+          },
+          "polygon" : [ {
+            "x" : 0.1295585,
+            "y" : 0.30664062
+          }, {
+            "x" : 0.5102612,
+            "y" : 0.30664062
+          }, {
+            "x" : 0.5102612,
+            "y" : 0.33007812
+          }, {
+            "x" : 0.1295585,
+            "y" : 0.33007812
+          } ]
+        }
+      }, {
+        "detectedText" : "styles: [{\"featureType\":\"water\", \"elementType\" \"geometry\", \"stylers\":[{\"color\":\"#9e9e9\"), {\"lightness\":17)) {\"featureType\":\"landscape\", \"elementType",
+        "type" : "LINE",
+        "id" : 10,
+        "parentId" : null,
+        "confidence" : 72.79981,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.87004286,
+            "height" : 0.030273438,
+            "left" : 0.12995715,
+            "top" : 0.33105466
+          },
+          "polygon" : [ {
+            "x" : 0.12995715,
+            "y" : 0.33105466
+          }, {
+            "x" : 1.0,
+            "y" : 0.33105466
+          }, {
+            "x" : 1.0,
+            "y" : 0.3613281
+          }, {
+            "x" : 0.12995715,
+            "y" : 0.3613281
+          } ]
+        }
+      }, {
+        "detectedText" : ");",
+        "type" : "LINE",
+        "id" : 11,
+        "parentId" : null,
+        "confidence" : 35.75951,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.009567398,
+            "height" : 0.018554688,
+            "left" : 0.106437296,
+            "top" : 0.3642578
+          },
+          "polygon" : [ {
+            "x" : 0.106437296,
+            "y" : 0.3642578
+          }, {
+            "x" : 0.11600469,
+            "y" : 0.3642578
+          }, {
+            "x" : 0.11600469,
+            "y" : 0.3828125
+          }, {
+            "x" : 0.106437296,
+            "y" : 0.3828125
+          } ]
+        }
+      }, {
+        "detectedText" : "// Let's also add a marker while we're at it",
+        "type" : "LINE",
+        "id" : 12,
+        "parentId" : null,
+        "confidence" : 98.49191,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.26190752,
+            "height" : 0.021484375,
+            "left" : 0.10603865,
+            "top" : 0.38867188
+          },
+          "polygon" : [ {
+            "x" : 0.10603865,
+            "y" : 0.38867188
+          }, {
+            "x" : 0.36794615,
+            "y" : 0.38867188
+          }, {
+            "x" : 0.36794615,
+            "y" : 0.41015625
+          }, {
+            "x" : 0.10603865,
+            "y" : 0.41015625
+          } ]
+        }
+      }, {
+        "detectedText" : "map = new google.maps.Map (document.getElementByd'gmap_canvas) myOptions);",
+        "type" : "LINE",
+        "id" : 13,
+        "parentId" : null,
+        "confidence" : 76.00859,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.4584378,
+            "height" : 0.04083587,
+            "left" : 0.10524137,
+            "top" : 0.40836376
+          },
+          "polygon" : [ {
+            "x" : 0.10524137,
+            "y" : 0.40836376
+          }, {
+            "x" : 0.56367916,
+            "y" : 0.40836376
+          }, {
+            "x" : 0.56367916,
+            "y" : 0.44919962
+          }, {
+            "x" : 0.10524137,
+            "y" : 0.44919962
+          } ]
+        }
+      }, {
+        "detectedText" : "marker - new google.maps.Marker ({",
+        "type" : "LINE",
+        "id" : 14,
+        "parentId" : null,
+        "confidence" : 80.5756,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.19653028,
+            "height" : 0.03071625,
+            "left" : 0.10484273,
+            "top" : 0.4408902
+          },
+          "polygon" : [ {
+            "x" : 0.10484273,
+            "y" : 0.4408902
+          }, {
+            "x" : 0.301373,
+            "y" : 0.4408902
+          }, {
+            "x" : 0.301373,
+            "y" : 0.47160643
+          }, {
+            "x" : 0.10484273,
+            "y" : 0.47160643
+          } ]
+        }
+      }, {
+        "detectedText" : "map: map,",
+        "type" : "LINE",
+        "id" : 15,
+        "parentId" : null,
+        "confidence" : 98.76258,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.051823404,
+            "height" : 0.016601562,
+            "left" : 0.12915987,
+            "top" : 0.4765625
+          },
+          "polygon" : [ {
+            "x" : 0.12915987,
+            "y" : 0.4765625
+          }, {
+            "x" : 0.18098326,
+            "y" : 0.4765625
+          }, {
+            "x" : 0.18098326,
+            "y" : 0.49316406
+          }, {
+            "x" : 0.12915987,
+            "y" : 0.49316406
+          } ]
+        }
+      }, {
+        "detectedText" : "position: new google.ma",
+        "type" : "LINE",
+        "id" : 16,
+        "parentId" : null,
+        "confidence" : 97.81728,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.14111911,
+            "height" : 0.025390625,
+            "left" : 0.12876122,
+            "top" : 0.49902344
+          },
+          "polygon" : [ {
+            "x" : 0.12876122,
+            "y" : 0.49902344
+          }, {
+            "x" : 0.26988032,
+            "y" : 0.49902344
+          }, {
+            "x" : 0.26988032,
+            "y" : 0.52441406
+          }, {
+            "x" : 0.12876122,
+            "y" : 0.52441406
+          } ]
+        }
+      }, {
+        "detectedText" : "9999998223),",
+        "type" : "LINE",
+        "id" : 17,
+        "parentId" : null,
+        "confidence" : 89.230545,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.06896499,
+            "height" : 0.021484375,
+            "left" : 0.4584378,
+            "top" : 0.5
+          },
+          "polygon" : [ {
+            "x" : 0.4584378,
+            "y" : 0.5
+          }, {
+            "x" : 0.52740276,
+            "y" : 0.5
+          }, {
+            "x" : 0.52740276,
+            "y" : 0.5214844
+          }, {
+            "x" : 0.4584378,
+            "y" : 0.5214844
+          } ]
+        }
+      }, {
+        "detectedText" : "REPLACE LOCATION",
+        "type" : "LINE",
+        "id" : 18,
+        "parentId" : null,
+        "confidence" : 99.87476,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.11560608,
+            "height" : 0.025390625,
+            "left" : 0.2822382,
+            "top" : 0.5019531
+          },
+          "polygon" : [ {
+            "x" : 0.2822382,
+            "y" : 0.5019531
+          }, {
+            "x" : 0.39784428,
+            "y" : 0.5019531
+          }, {
+            "x" : 0.39784428,
+            "y" : 0.52734375
+          }, {
+            "x" : 0.2822382,
+            "y" : 0.52734375
+          } ]
+        }
+      }, {
+        "detectedText" : "optimized: false,",
+        "type" : "LINE",
+        "id" : 19,
+        "parentId" : null,
+        "confidence" : 98.65654,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.099261746,
+            "height" : 0.022460938,
+            "left" : 0.1295585,
+            "top" : 0.52734375
+          },
+          "polygon" : [ {
+            "x" : 0.1295585,
+            "y" : 0.52734375
+          }, {
+            "x" : 0.22882025,
+            "y" : 0.52734375
+          }, {
+            "x" : 0.22882025,
+            "y" : 0.5498047
+          }, {
+            "x" : 0.1295585,
+            "y" : 0.5498047
+          } ]
+        }
+      }, {
+        "detectedText" : "LATITUDE AND LONGITUDE",
+        "type" : "LINE",
+        "id" : 20,
+        "parentId" : null,
+        "confidence" : 99.81145,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.16025393,
+            "height" : 0.02539068,
+            "left" : 0.28183955,
+            "top" : 0.5458984
+          },
+          "polygon" : [ {
+            "x" : 0.28183955,
+            "y" : 0.5458984
+          }, {
+            "x" : 0.4420935,
+            "y" : 0.5458984
+          }, {
+            "x" : 0.4420935,
+            "y" : 0.57128906
+          }, {
+            "x" : 0.28183955,
+            "y" : 0.57128906
+          } ]
+        }
+      }, {
+        "detectedText" : "icon: new google.maps.M",
+        "type" : "LINE",
+        "id" : 21,
+        "parentId" : null,
+        "confidence" : 96.44008,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.13952455,
+            "height" : 0.02734375,
+            "left" : 0.1295585,
+            "top" : 0.5517578
+          },
+          "polygon" : [ {
+            "x" : 0.1295585,
+            "y" : 0.5517578
+          }, {
+            "x" : 0.26908305,
+            "y" : 0.5517578
+          }, {
+            "x" : 0.26908305,
+            "y" : 0.57910156
+          }, {
+            "x" : 0.1295585,
+            "y" : 0.57910156
+          } ]
+        }
+      }, {
+        "detectedText" : "1);",
+        "type" : "LINE",
+        "id" : 22,
+        "parentId" : null,
+        "confidence" : 23.19244,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.01554702,
+            "height" : 0.01953125,
+            "left" : 0.106437296,
+            "top" : 0.5830078
+          },
+          "polygon" : [ {
+            "x" : 0.106437296,
+            "y" : 0.5830078
+          }, {
+            "x" : 0.12198432,
+            "y" : 0.5830078
+          }, {
+            "x" : 0.12198432,
+            "y" : 0.60253906
+          }, {
+            "x" : 0.106437296,
+            "y" : 0.60253906
+          } ]
+        }
+      }, {
+        "detectedText" : "marker.setDraggable (true);",
+        "type" : "LINE",
+        "id" : 23,
+        "parentId" : null,
+        "confidence" : 81.86321,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.1560159,
+            "height" : 0.02856566,
+            "left" : 0.103583746,
+            "top" : 0.63359857
+          },
+          "polygon" : [ {
+            "x" : 0.10368156,
+            "y" : 0.63359857
+          }, {
+            "x" : 0.25959963,
+            "y" : 0.6341429
+          }, {
+            "x" : 0.2595018,
+            "y" : 0.6621643
+          }, {
+            "x" : 0.103583746,
+            "y" : 0.66162
+          } ]
+        }
+      }, {
+        "detectedText" : "// marker on click show infowindow",
+        "type" : "LINE",
+        "id" : 24,
+        "parentId" : null,
+        "confidence" : 98.300186,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.20370583,
+            "height" : 0.021484375,
+            "left" : 0.10564002,
+            "top" : 0.66308594
+          },
+          "polygon" : [ {
+            "x" : 0.10564002,
+            "y" : 0.66308594
+          }, {
+            "x" : 0.30934584,
+            "y" : 0.66308594
+          }, {
+            "x" : 0.30934584,
+            "y" : 0.6845703
+          }, {
+            "x" : 0.10564002,
+            "y" : 0.6845703
+          } ]
+        }
+      }, {
+        "detectedText" : "infowindow = new google.maps.InfoWindow(",
+        "type" : "LINE",
+        "id" : 25,
+        "parentId" : null,
+        "confidence" : 75.61106,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.24675913,
+            "height" : 0.03125,
+            "left" : 0.10524137,
+            "top" : 0.6875
+          },
+          "polygon" : [ {
+            "x" : 0.10524137,
+            "y" : 0.6875
+          }, {
+            "x" : 0.3520005,
+            "y" : 0.6875
+          }, {
+            "x" : 0.3520005,
+            "y" : 0.71875
+          }, {
+            "x" : 0.10524137,
+            "y" : 0.71875
+          } ]
+        }
+      }, {
+        "detectedText" : "content: &lt;strong&gt;Title&lt;/strong&gt;br&gt;London, United Kingdom&lt;br&gt;",
+        "type" : "LINE",
+        "id" : 26,
+        "parentId" : null,
+        "confidence" : 80.815315,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.37396628,
+            "height" : 0.030273438,
+            "left" : 0.12991661,
+            "top" : 0.71484375
+          },
+          "polygon" : [ {
+            "x" : 0.12991661,
+            "y" : 0.71484375
+          }, {
+            "x" : 0.5038829,
+            "y" : 0.71484375
+          }, {
+            "x" : 0.5038829,
+            "y" : 0.7451172
+          }, {
+            "x" : 0.12991661,
+            "y" : 0.7451172
+          } ]
+        }
+      }, {
+        "detectedText" : "11;",
+        "type" : "LINE",
+        "id" : 27,
+        "parentId" : null,
+        "confidence" : 57.163845,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.017176924,
+            "height" : 0.022020971,
+            "left" : 0.10561708,
+            "top" : 0.74661034
+          },
+          "polygon" : [ {
+            "x" : 0.10654757,
+            "y" : 0.74661034
+          }, {
+            "x" : 0.12279401,
+            "y" : 0.7473197
+          }, {
+            "x" : 0.12186352,
+            "y" : 0.76863134
+          }, {
+            "x" : 0.10561708,
+            "y" : 0.767922
+          } ]
+        }
+      }, {
+        "detectedText" : "google.maps.event.addListener (marker,",
+        "type" : "LINE",
+        "id" : 28,
+        "parentId" : null,
+        "confidence" : 88.28596,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.22047262,
+            "height" : 0.032243636,
+            "left" : 0.10402158,
+            "top" : 0.76909846
+          },
+          "polygon" : [ {
+            "x" : 0.10402158,
+            "y" : 0.76909846
+          }, {
+            "x" : 0.3244942,
+            "y" : 0.76909846
+          }, {
+            "x" : 0.3244942,
+            "y" : 0.8013421
+          }, {
+            "x" : 0.10402158,
+            "y" : 0.8013421
+          } ]
+        }
+      }, {
+        "detectedText" : "//",
+        "type" : "WORD",
+        "id" : 29,
+        "parentId" : 0,
+        "confidence" : 95.00247,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.011560605,
+            "height" : 0.021484375,
+            "left" : 0.034283172,
+            "top" : 0.033203125
+          },
+          "polygon" : [ {
+            "x" : 0.034283172,
+            "y" : 0.033203125
+          }, {
+            "x" : 0.04584378,
+            "y" : 0.033203125
+          }, {
+            "x" : 0.04584378,
+            "y" : 0.0546875
+          }, {
+            "x" : 0.034283172,
+            "y" : 0.0546875
+          } ]
+        }
+      }, {
+        "detectedText" : "google",
+        "type" : "WORD",
+        "id" : 30,
+        "parentId" : 1,
+        "confidence" : 99.1797,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.0354791,
+            "height" : 0.021484375,
+            "left" : 0.058201667,
+            "top" : 0.034179688
+          },
+          "polygon" : [ {
+            "x" : 0.058201667,
+            "y" : 0.034179688
+          }, {
+            "x" : 0.09368077,
+            "y" : 0.034179688
+          }, {
+            "x" : 0.09368077,
+            "y" : 0.055664062
+          }, {
+            "x" : 0.058201667,
+            "y" : 0.055664062
+          } ]
+        }
+      }, {
+        "detectedText" : "map",
+        "type" : "WORD",
+        "id" : 31,
+        "parentId" : 1,
+        "confidence" : 100.0,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.018337512,
+            "height" : 0.016601562,
+            "left" : 0.099261746,
+            "top" : 0.038085938
+          },
+          "polygon" : [ {
+            "x" : 0.099261746,
+            "y" : 0.038085938
+          }, {
+            "x" : 0.11759926,
+            "y" : 0.038085938
+          }, {
+            "x" : 0.11759926,
+            "y" : 0.0546875
+          }, {
+            "x" : 0.099261746,
+            "y" : 0.0546875
+          } ]
+        }
+      }, {
+        "detectedText" : "1",
+        "type" : "WORD",
+        "id" : 32,
+        "parentId" : 1,
+        "confidence" : 98.88327,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.0051823403,
+            "height" : 0.017578125,
+            "left" : 0.12397753,
+            "top" : 0.034179688
+          },
+          "polygon" : [ {
+            "x" : 0.12397753,
+            "y" : 0.034179688
+          }, {
+            "x" : 0.12915987,
+            "y" : 0.034179688
+          }, {
+            "x" : 0.12915987,
+            "y" : 0.051757812
+          }, {
+            "x" : 0.12397753,
+            "y" : 0.051757812
+          } ]
+        }
+      }, {
+        "detectedText" : "function",
+        "type" : "WORD",
+        "id" : 33,
+        "parentId" : 1,
+        "confidence" : 99.290825,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.04823563,
+            "height" : 0.01953125,
+            "left" : 0.13553813,
+            "top" : 0.033203125
+          },
+          "polygon" : [ {
+            "x" : 0.13553813,
+            "y" : 0.033203125
+          }, {
+            "x" : 0.18377376,
+            "y" : 0.033203125
+          }, {
+            "x" : 0.18377376,
+            "y" : 0.052734375
+          }, {
+            "x" : 0.13553813,
+            "y" : 0.052734375
+          } ]
+        }
+      }, {
+        "detectedText" : "custom",
+        "type" : "WORD",
+        "id" : 34,
+        "parentId" : 1,
+        "confidence" : 99.03695,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.036675025,
+            "height" : 0.0146484375,
+            "left" : 0.18935473,
+            "top" : 0.037109375
+          },
+          "polygon" : [ {
+            "x" : 0.18935473,
+            "y" : 0.037109375
+          }, {
+            "x" : 0.22602977,
+            "y" : 0.037109375
+          }, {
+            "x" : 0.22602977,
+            "y" : 0.051757812
+          }, {
+            "x" : 0.18935473,
+            "y" : 0.051757812
+          } ]
+        }
+      }, {
+        "detectedText" : "if",
+        "type" : "WORD",
+        "id" : 35,
+        "parentId" : 2,
+        "confidence" : 98.01605,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.01275653,
+            "height" : 0.01953125,
+            "left" : 0.057803027,
+            "top" : 0.087890625
+          },
+          "polygon" : [ {
+            "x" : 0.057803027,
+            "y" : 0.087890625
+          }, {
+            "x" : 0.070559554,
+            "y" : 0.087890625
+          }, {
+            "x" : 0.070559554,
+            "y" : 0.107421875
+          }, {
+            "x" : 0.057803027,
+            "y" : 0.107421875
+          } ]
+        }
+      }, {
+        "detectedText" : "(jQuery ('#gmap_canvas').ength)",
+        "type" : "WORD",
+        "id" : 36,
+        "parentId" : 2,
+        "confidence" : 12.7232,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.19134794,
+            "height" : 0.036132812,
+            "left" : 0.06936363,
+            "top" : 0.08203125
+          },
+          "polygon" : [ {
+            "x" : 0.06936363,
+            "y" : 0.08203125
+          }, {
+            "x" : 0.26071158,
+            "y" : 0.08203125
+          }, {
+            "x" : 0.26071158,
+            "y" : 0.11816406
+          }, {
+            "x" : 0.06936363,
+            "y" : 0.11816406
+          } ]
+        }
+      }, {
+        "detectedText" : "function",
+        "type" : "WORD",
+        "id" : 37,
+        "parentId" : 3,
+        "confidence" : 98.42449,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.04823563,
+            "height" : 0.01953125,
+            "left" : 0.08172152,
+            "top" : 0.14257812
+          },
+          "polygon" : [ {
+            "x" : 0.08172152,
+            "y" : 0.14257812
+          }, {
+            "x" : 0.12995715,
+            "y" : 0.14257812
+          }, {
+            "x" : 0.12995715,
+            "y" : 0.16210938
+          }, {
+            "x" : 0.08172152,
+            "y" : 0.16210938
+          } ]
+        }
+      }, {
+        "detectedText" : "init_map1 ()",
+        "type" : "WORD",
+        "id" : 38,
+        "parentId" : 3,
+        "confidence" : 70.99197,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.07653918,
+            "height" : 0.03125,
+            "left" : 0.13474084,
+            "top" : 0.13964844
+          },
+          "polygon" : [ {
+            "x" : 0.13474084,
+            "y" : 0.13964844
+          }, {
+            "x" : 0.21128003,
+            "y" : 0.13964844
+          }, {
+            "x" : 0.21128003,
+            "y" : 0.17089844
+          }, {
+            "x" : 0.13474084,
+            "y" : 0.17089844
+          } ]
+        }
+      }, {
+        "detectedText" : "I",
+        "type" : "WORD",
+        "id" : 39,
+        "parentId" : 3,
+        "confidence" : 41.900505,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.003587774,
+            "height" : 0.0146484375,
+            "left" : 0.20769225,
+            "top" : 0.14648438
+          },
+          "polygon" : [ {
+            "x" : 0.20769225,
+            "y" : 0.14648438
+          }, {
+            "x" : 0.21128003,
+            "y" : 0.14648438
+          }, {
+            "x" : 0.21128003,
+            "y" : 0.16113281
+          }, {
+            "x" : 0.20769225,
+            "y" : 0.16113281
+          } ]
+        }
+      }, {
+        "detectedText" : "var",
+        "type" : "WORD",
+        "id" : 40,
+        "parentId" : 4,
+        "confidence" : 98.43845,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.018337512,
+            "height" : 0.013671875,
+            "left" : 0.10524137,
+            "top" : 0.20214844
+          },
+          "polygon" : [ {
+            "x" : 0.10524137,
+            "y" : 0.20214844
+          }, {
+            "x" : 0.12357888,
+            "y" : 0.20214844
+          }, {
+            "x" : 0.12357888,
+            "y" : 0.21582031
+          }, {
+            "x" : 0.10524137,
+            "y" : 0.21582031
+          } ]
+        }
+      }, {
+        "detectedText" : "myOptions = |",
+        "type" : "WORD",
+        "id" : 41,
+        "parentId" : 4,
+        "confidence" : 24.913292,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.0825188,
+            "height" : 0.034179688,
+            "left" : 0.12716666,
+            "top" : 0.19140625
+          },
+          "polygon" : [ {
+            "x" : 0.12716666,
+            "y" : 0.19140625
+          }, {
+            "x" : 0.20968546,
+            "y" : 0.19140625
+          }, {
+            "x" : 0.20968546,
+            "y" : 0.22558594
+          }, {
+            "x" : 0.12716666,
+            "y" : 0.22558594
+          } ]
+        }
+      }, {
+        "detectedText" : "zoom:",
+        "type" : "WORD",
+        "id" : 42,
+        "parentId" : 5,
+        "confidence" : 98.83944,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.02790491,
+            "height" : 0.0146484375,
+            "left" : 0.12995715,
+            "top" : 0.22949219
+          },
+          "polygon" : [ {
+            "x" : 0.12995715,
+            "y" : 0.22949219
+          }, {
+            "x" : 0.15786205,
+            "y" : 0.22949219
+          }, {
+            "x" : 0.15786205,
+            "y" : 0.24414062
+          }, {
+            "x" : 0.12995715,
+            "y" : 0.24414062
+          } ]
+        }
+      }, {
+        "detectedText" : "10,",
+        "type" : "WORD",
+        "id" : 43,
+        "parentId" : 5,
+        "confidence" : 99.573456,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.015148379,
+            "height" : 0.01953125,
+            "left" : 0.16583489,
+            "top" : 0.2265625
+          },
+          "polygon" : [ {
+            "x" : 0.16583489,
+            "y" : 0.2265625
+          }, {
+            "x" : 0.18098326,
+            "y" : 0.2265625
+          }, {
+            "x" : 0.18098326,
+            "y" : 0.24609375
+          }, {
+            "x" : 0.16583489,
+            "y" : 0.24609375
+          } ]
+        }
+      }, {
+        "detectedText" : "-0.12775829999998223),",
+        "type" : "WORD",
+        "id" : 44,
+        "parentId" : 6,
+        "confidence" : 78.07475,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.13120455,
+            "height" : 0.027314236,
+            "left" : 0.38506177,
+            "top" : 0.24965376
+          },
+          "polygon" : [ {
+            "x" : 0.38510707,
+            "y" : 0.24965376
+          }, {
+            "x" : 0.51626635,
+            "y" : 0.2510268
+          }, {
+            "x" : 0.51622105,
+            "y" : 0.276968
+          }, {
+            "x" : 0.38506177,
+            "y" : 0.27559495
+          } ]
+        }
+      }, {
+        "detectedText" : "center:",
+        "type" : "WORD",
+        "id" : 45,
+        "parentId" : 7,
+        "confidence" : 99.20247,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.039864156,
+            "height" : 0.0146484375,
+            "left" : 0.12995715,
+            "top" : 0.25683594
+          },
+          "polygon" : [ {
+            "x" : 0.12995715,
+            "y" : 0.25683594
+          }, {
+            "x" : 0.1698213,
+            "y" : 0.25683594
+          }, {
+            "x" : 0.1698213,
+            "y" : 0.27148438
+          }, {
+            "x" : 0.12995715,
+            "y" : 0.27148438
+          } ]
+        }
+      }, {
+        "detectedText" : "new",
+        "type" : "WORD",
+        "id" : 46,
+        "parentId" : 7,
+        "confidence" : 98.35833,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.018337512,
+            "height" : 0.013671875,
+            "left" : 0.17699686,
+            "top" : 0.25683594
+          },
+          "polygon" : [ {
+            "x" : 0.17699686,
+            "y" : 0.25683594
+          }, {
+            "x" : 0.19533436,
+            "y" : 0.25683594
+          }, {
+            "x" : 0.19533436,
+            "y" : 0.2705078
+          }, {
+            "x" : 0.17699686,
+            "y" : 0.2705078
+          } ]
+        }
+      }, {
+        "detectedText" : "google.maps.LatLng",
+        "type" : "WORD",
+        "id" : 47,
+        "parentId" : 7,
+        "confidence" : 73.58128,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.109227784,
+            "height" : 0.026367188,
+            "left" : 0.2005167,
+            "top" : 0.25097656
+          },
+          "polygon" : [ {
+            "x" : 0.2005167,
+            "y" : 0.25097656
+          }, {
+            "x" : 0.30974448,
+            "y" : 0.25097656
+          }, {
+            "x" : 0.30974448,
+            "y" : 0.27734375
+          }, {
+            "x" : 0.2005167,
+            "y" : 0.27734375
+          } ]
+        }
+      }, {
+        "detectedText" : "51.5073509,",
+        "type" : "WORD",
+        "id" : 48,
+        "parentId" : 7,
+        "confidence" : 93.27031,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.06537721,
+            "height" : 0.025390625,
+            "left" : 0.3137309,
+            "top" : 0.25
+          },
+          "polygon" : [ {
+            "x" : 0.3137309,
+            "y" : 0.25
+          }, {
+            "x" : 0.37910813,
+            "y" : 0.25
+          }, {
+            "x" : 0.37910813,
+            "y" : 0.27539062
+          }, {
+            "x" : 0.3137309,
+            "y" : 0.27539062
+          } ]
+        }
+      }, {
+        "detectedText" : "mapTypeId:",
+        "type" : "WORD",
+        "id" : 49,
+        "parentId" : 8,
+        "confidence" : 98.61232,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.05899895,
+            "height" : 0.022460938,
+            "left" : 0.12876122,
+            "top" : 0.28027344
+          },
+          "polygon" : [ {
+            "x" : 0.12876122,
+            "y" : 0.28027344
+          }, {
+            "x" : 0.18776017,
+            "y" : 0.28027344
+          }, {
+            "x" : 0.18776017,
+            "y" : 0.30273438
+          }, {
+            "x" : 0.12876122,
+            "y" : 0.30273438
+          } ]
+        }
+      }, {
+        "detectedText" : "google.maps.MapTypeId.ROADMAP,",
+        "type" : "WORD",
+        "id" : 50,
+        "parentId" : 8,
+        "confidence" : 56.03983,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.1802364,
+            "height" : 0.032171164,
+            "left" : 0.1937133,
+            "top" : 0.27501118
+          },
+          "polygon" : [ {
+            "x" : 0.1937133,
+            "y" : 0.276571
+          }, {
+            "x" : 0.37390557,
+            "y" : 0.27501118
+          }, {
+            "x" : 0.3739497,
+            "y" : 0.30562255
+          }, {
+            "x" : 0.19375747,
+            "y" : 0.30718234
+          } ]
+        }
+      }, {
+        "detectedText" : "//",
+        "type" : "WORD",
+        "id" : 51,
+        "parentId" : 9,
+        "confidence" : 97.58218,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.011959246,
+            "height" : 0.020507812,
+            "left" : 0.1295585,
+            "top" : 0.30664062
+          },
+          "polygon" : [ {
+            "x" : 0.1295585,
+            "y" : 0.30664062
+          }, {
+            "x" : 0.14151776,
+            "y" : 0.30664062
+          }, {
+            "x" : 0.14151776,
+            "y" : 0.32714844
+          }, {
+            "x" : 0.1295585,
+            "y" : 0.32714844
+          } ]
+        }
+      }, {
+        "detectedText" : "This",
+        "type" : "WORD",
+        "id" : 52,
+        "parentId" : 9,
+        "confidence" : 99.26185,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.023519851,
+            "height" : 0.016601562,
+            "left" : 0.14749737,
+            "top" : 0.30859372
+          },
+          "polygon" : [ {
+            "x" : 0.14749737,
+            "y" : 0.30859372
+          }, {
+            "x" : 0.17101721,
+            "y" : 0.30859372
+          }, {
+            "x" : 0.17101721,
+            "y" : 0.32519528
+          }, {
+            "x" : 0.14749737,
+            "y" : 0.32519528
+          } ]
+        }
+      }, {
+        "detectedText" : "is",
+        "type" : "WORD",
+        "id" : 53,
+        "parentId" : 9,
+        "confidence" : 99.12082,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.011161963,
+            "height" : 0.016601562,
+            "left" : 0.17779413,
+            "top" : 0.30859375
+          },
+          "polygon" : [ {
+            "x" : 0.17779413,
+            "y" : 0.30859375
+          }, {
+            "x" : 0.1889561,
+            "y" : 0.30859375
+          }, {
+            "x" : 0.1889561,
+            "y" : 0.3251953
+          }, {
+            "x" : 0.17779413,
+            "y" : 0.3251953
+          } ]
+        }
+      }, {
+        "detectedText" : "where",
+        "type" : "WORD",
+        "id" : 54,
+        "parentId" : 9,
+        "confidence" : 98.350655,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.029898116,
+            "height" : 0.018554688,
+            "left" : 0.19493572,
+            "top" : 0.3076172
+          },
+          "polygon" : [ {
+            "x" : 0.19493572,
+            "y" : 0.3076172
+          }, {
+            "x" : 0.22483383,
+            "y" : 0.3076172
+          }, {
+            "x" : 0.22483383,
+            "y" : 0.32617188
+          }, {
+            "x" : 0.19493572,
+            "y" : 0.32617188
+          } ]
+        }
+      }, {
+        "detectedText" : "you",
+        "type" : "WORD",
+        "id" : 55,
+        "parentId" : 9,
+        "confidence" : 99.770065,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.018337512,
+            "height" : 0.016601562,
+            "left" : 0.23081346,
+            "top" : 0.3125
+          },
+          "polygon" : [ {
+            "x" : 0.23081346,
+            "y" : 0.3125
+          }, {
+            "x" : 0.24915098,
+            "y" : 0.3125
+          }, {
+            "x" : 0.24915098,
+            "y" : 0.32910156
+          }, {
+            "x" : 0.23081346,
+            "y" : 0.32910156
+          } ]
+        }
+      }, {
+        "detectedText" : "would",
+        "type" : "WORD",
+        "id" : 56,
+        "parentId" : 9,
+        "confidence" : 99.81852,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.029499475,
+            "height" : 0.015625,
+            "left" : 0.2551306,
+            "top" : 0.3095703
+          },
+          "polygon" : [ {
+            "x" : 0.2551306,
+            "y" : 0.3095703
+          }, {
+            "x" : 0.28463006,
+            "y" : 0.3095703
+          }, {
+            "x" : 0.28463006,
+            "y" : 0.3251953
+          }, {
+            "x" : 0.2551306,
+            "y" : 0.3251953
+          } ]
+        }
+      }, {
+        "detectedText" : "paste",
+        "type" : "WORD",
+        "id" : 57,
+        "parentId" : 9,
+        "confidence" : 99.80496,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.029499475,
+            "height" : 0.015625,
+            "left" : 0.2906097,
+            "top" : 0.3125
+          },
+          "polygon" : [ {
+            "x" : 0.2906097,
+            "y" : 0.3125
+          }, {
+            "x" : 0.32010916,
+            "y" : 0.3125
+          }, {
+            "x" : 0.32010916,
+            "y" : 0.328125
+          }, {
+            "x" : 0.2906097,
+            "y" : 0.328125
+          } ]
+        }
+      }, {
+        "detectedText" : "any",
+        "type" : "WORD",
+        "id" : 58,
+        "parentId" : 9,
+        "confidence" : 98.658195,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.018337512,
+            "height" : 0.017578125,
+            "left" : 0.32648742,
+            "top" : 0.31152344
+          },
+          "polygon" : [ {
+            "x" : 0.32648742,
+            "y" : 0.31152344
+          }, {
+            "x" : 0.34482494,
+            "y" : 0.31152344
+          }, {
+            "x" : 0.34482494,
+            "y" : 0.32910156
+          }, {
+            "x" : 0.32648742,
+            "y" : 0.32910156
+          } ]
+        }
+      }, {
+        "detectedText" : "style",
+        "type" : "WORD",
+        "id" : 59,
+        "parentId" : 9,
+        "confidence" : 98.616425,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.029100833,
+            "height" : 0.01953125,
+            "left" : 0.35080457,
+            "top" : 0.3095703
+          },
+          "polygon" : [ {
+            "x" : 0.35080457,
+            "y" : 0.3095703
+          }, {
+            "x" : 0.3799054,
+            "y" : 0.3095703
+          }, {
+            "x" : 0.3799054,
+            "y" : 0.32910156
+          }, {
+            "x" : 0.35080457,
+            "y" : 0.32910156
+          } ]
+        }
+      }, {
+        "detectedText" : "found",
+        "type" : "WORD",
+        "id" : 60,
+        "parentId" : 9,
+        "confidence" : 99.456184,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.029499475,
+            "height" : 0.015625,
+            "left" : 0.3866823,
+            "top" : 0.3095703
+          },
+          "polygon" : [ {
+            "x" : 0.3866823,
+            "y" : 0.3095703
+          }, {
+            "x" : 0.41618177,
+            "y" : 0.3095703
+          }, {
+            "x" : 0.41618177,
+            "y" : 0.3251953
+          }, {
+            "x" : 0.3866823,
+            "y" : 0.3251953
+          } ]
+        }
+      }, {
+        "detectedText" : "on",
+        "type" : "WORD",
+        "id" : 61,
+        "parentId" : 9,
+        "confidence" : 99.07081,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.012357889,
+            "height" : 0.0146484375,
+            "left" : 0.4221614,
+            "top" : 0.31152344
+          },
+          "polygon" : [ {
+            "x" : 0.4221614,
+            "y" : 0.31152344
+          }, {
+            "x" : 0.4345193,
+            "y" : 0.31152344
+          }, {
+            "x" : 0.4345193,
+            "y" : 0.32617188
+          }, {
+            "x" : 0.4221614,
+            "y" : 0.32617188
+          } ]
+        }
+      }, {
+        "detectedText" : "Snazzy",
+        "type" : "WORD",
+        "id" : 62,
+        "parentId" : 9,
+        "confidence" : 99.75645,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.0354791,
+            "height" : 0.018554688,
+            "left" : 0.44049892,
+            "top" : 0.3095703
+          },
+          "polygon" : [ {
+            "x" : 0.44049892,
+            "y" : 0.3095703
+          }, {
+            "x" : 0.47597802,
+            "y" : 0.3095703
+          }, {
+            "x" : 0.47597802,
+            "y" : 0.328125
+          }, {
+            "x" : 0.44049892,
+            "y" : 0.328125
+          } ]
+        }
+      }, {
+        "detectedText" : "Maps.",
+        "type" : "WORD",
+        "id" : 63,
+        "parentId" : 9,
+        "confidence" : 94.22498,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.029100833,
+            "height" : 0.022460938,
+            "left" : 0.48116037,
+            "top" : 0.3076172
+          },
+          "polygon" : [ {
+            "x" : 0.48116037,
+            "y" : 0.3076172
+          }, {
+            "x" : 0.5102612,
+            "y" : 0.3076172
+          }, {
+            "x" : 0.5102612,
+            "y" : 0.33007812
+          }, {
+            "x" : 0.48116037,
+            "y" : 0.33007812
+          } ]
+        }
+      }, {
+        "detectedText" : "styles:",
+        "type" : "WORD",
+        "id" : 64,
+        "parentId" : 10,
+        "confidence" : 98.49006,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.039864156,
+            "height" : 0.020507812,
+            "left" : 0.12995715,
+            "top" : 0.3359375
+          },
+          "polygon" : [ {
+            "x" : 0.12995715,
+            "y" : 0.3359375
+          }, {
+            "x" : 0.1698213,
+            "y" : 0.3359375
+          }, {
+            "x" : 0.1698213,
+            "y" : 0.3564453
+          }, {
+            "x" : 0.12995715,
+            "y" : 0.3564453
+          } ]
+        }
+      }, {
+        "detectedText" : "[{\"featureType\":\"water\",",
+        "type" : "WORD",
+        "id" : 65,
+        "parentId" : 10,
+        "confidence" : 51.50545,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.1419164,
+            "height" : 0.028320312,
+            "left" : 0.17819278,
+            "top" : 0.33203125
+          },
+          "polygon" : [ {
+            "x" : 0.17819278,
+            "y" : 0.33203125
+          }, {
+            "x" : 0.32010916,
+            "y" : 0.33203125
+          }, {
+            "x" : 0.32010916,
+            "y" : 0.36035156
+          }, {
+            "x" : 0.17819278,
+            "y" : 0.36035156
+          } ]
+        }
+      }, {
+        "detectedText" : "\"elementType\"",
+        "type" : "WORD",
+        "id" : 66,
+        "parentId" : 10,
+        "confidence" : 97.76355,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.0777351,
+            "height" : 0.024414062,
+            "left" : 0.32090646,
+            "top" : 0.33398438
+          },
+          "polygon" : [ {
+            "x" : 0.32090646,
+            "y" : 0.33398438
+          }, {
+            "x" : 0.39864156,
+            "y" : 0.33398438
+          }, {
+            "x" : 0.39864156,
+            "y" : 0.35839844
+          }, {
+            "x" : 0.32090646,
+            "y" : 0.35839844
+          } ]
+        }
+      }, {
+        "detectedText" : "\"geometry\",",
+        "type" : "WORD",
+        "id" : 67,
+        "parentId" : 10,
+        "confidence" : 96.077065,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.06418129,
+            "height" : 0.022460938,
+            "left" : 0.40422255,
+            "top" : 0.3349609
+          },
+          "polygon" : [ {
+            "x" : 0.40422255,
+            "y" : 0.3349609
+          }, {
+            "x" : 0.46840382,
+            "y" : 0.3349609
+          }, {
+            "x" : 0.46840382,
+            "y" : 0.35742185
+          }, {
+            "x" : 0.40422255,
+            "y" : 0.35742185
+          } ]
+        }
+      }, {
+        "detectedText" : "\"stylers\":[{\"color\":\"#9e9e9\"),",
+        "type" : "WORD",
+        "id" : 68,
+        "parentId" : 10,
+        "confidence" : 13.037865,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.1861656,
+            "height" : 0.030273438,
+            "left" : 0.46880242,
+            "top" : 0.33105466
+          },
+          "polygon" : [ {
+            "x" : 0.46880242,
+            "y" : 0.33105466
+          }, {
+            "x" : 0.654968,
+            "y" : 0.33105466
+          }, {
+            "x" : 0.654968,
+            "y" : 0.3613281
+          }, {
+            "x" : 0.46880242,
+            "y" : 0.3613281
+          } ]
+        }
+      }, {
+        "detectedText" : "{\"lightness\":17))",
+        "type" : "WORD",
+        "id" : 69,
+        "parentId" : 10,
+        "confidence" : 48.997673,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.112416916,
+            "height" : 0.026367188,
+            "left" : 0.6549681,
+            "top" : 0.3330078
+          },
+          "polygon" : [ {
+            "x" : 0.6549681,
+            "y" : 0.3330078
+          }, {
+            "x" : 0.767385,
+            "y" : 0.3330078
+          }, {
+            "x" : 0.767385,
+            "y" : 0.359375
+          }, {
+            "x" : 0.6549681,
+            "y" : 0.359375
+          } ]
+        }
+      }, {
+        "detectedText" : "{\"featureType\":\"landscape\",",
+        "type" : "WORD",
+        "id" : 70,
+        "parentId" : 10,
+        "confidence" : 78.77757,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.16025391,
+            "height" : 0.025390625,
+            "left" : 0.7685809,
+            "top" : 0.33398438
+          },
+          "polygon" : [ {
+            "x" : 0.7685809,
+            "y" : 0.33398438
+          }, {
+            "x" : 0.92883486,
+            "y" : 0.33398438
+          }, {
+            "x" : 0.92883486,
+            "y" : 0.359375
+          }, {
+            "x" : 0.7685809,
+            "y" : 0.359375
+          } ]
+        }
+      }, {
+        "detectedText" : "\"elementType",
+        "type" : "WORD",
+        "id" : 71,
+        "parentId" : 10,
+        "confidence" : 97.74926,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.07036789,
+            "height" : 0.024414062,
+            "left" : 0.9296321,
+            "top" : 0.33398438
+          },
+          "polygon" : [ {
+            "x" : 0.9296321,
+            "y" : 0.33398438
+          }, {
+            "x" : 1.0,
+            "y" : 0.33398438
+          }, {
+            "x" : 1.0,
+            "y" : 0.35839844
+          }, {
+            "x" : 0.9296321,
+            "y" : 0.35839844
+          } ]
+        }
+      }, {
+        "detectedText" : ");",
+        "type" : "WORD",
+        "id" : 72,
+        "parentId" : 11,
+        "confidence" : 35.75951,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.009567398,
+            "height" : 0.018554688,
+            "left" : 0.106437296,
+            "top" : 0.3642578
+          },
+          "polygon" : [ {
+            "x" : 0.106437296,
+            "y" : 0.3642578
+          }, {
+            "x" : 0.11600469,
+            "y" : 0.3642578
+          }, {
+            "x" : 0.11600469,
+            "y" : 0.3828125
+          }, {
+            "x" : 0.106437296,
+            "y" : 0.3828125
+          } ]
+        }
+      }, {
+        "detectedText" : "//",
+        "type" : "WORD",
+        "id" : 73,
+        "parentId" : 12,
+        "confidence" : 95.569115,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.011161963,
+            "height" : 0.021484375,
+            "left" : 0.10603865,
+            "top" : 0.38867188
+          },
+          "polygon" : [ {
+            "x" : 0.10603865,
+            "y" : 0.38867188
+          }, {
+            "x" : 0.11720062,
+            "y" : 0.38867188
+          }, {
+            "x" : 0.11720062,
+            "y" : 0.41015625
+          }, {
+            "x" : 0.10603865,
+            "y" : 0.41015625
+          } ]
+        }
+      }, {
+        "detectedText" : "Let's",
+        "type" : "WORD",
+        "id" : 74,
+        "parentId" : 12,
+        "confidence" : 97.76457,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.029898116,
+            "height" : 0.018554688,
+            "left" : 0.12318024,
+            "top" : 0.38964844
+          },
+          "polygon" : [ {
+            "x" : 0.12318024,
+            "y" : 0.38964844
+          }, {
+            "x" : 0.15307836,
+            "y" : 0.38964844
+          }, {
+            "x" : 0.15307836,
+            "y" : 0.40820312
+          }, {
+            "x" : 0.12318024,
+            "y" : 0.40820312
+          } ]
+        }
+      }, {
+        "detectedText" : "also",
+        "type" : "WORD",
+        "id" : 75,
+        "parentId" : 12,
+        "confidence" : 100.0,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.02312121,
+            "height" : 0.015625,
+            "left" : 0.15985526,
+            "top" : 0.39160156
+          },
+          "polygon" : [ {
+            "x" : 0.15985526,
+            "y" : 0.39160156
+          }, {
+            "x" : 0.18297647,
+            "y" : 0.39160156
+          }, {
+            "x" : 0.18297647,
+            "y" : 0.40722656
+          }, {
+            "x" : 0.15985526,
+            "y" : 0.40722656
+          } ]
+        }
+      }, {
+        "detectedText" : "add",
+        "type" : "WORD",
+        "id" : 76,
+        "parentId" : 12,
+        "confidence" : 99.16781,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.017938871,
+            "height" : 0.017578125,
+            "left" : 0.18935473,
+            "top" : 0.390625
+          },
+          "polygon" : [ {
+            "x" : 0.18935473,
+            "y" : 0.390625
+          }, {
+            "x" : 0.20729361,
+            "y" : 0.390625
+          }, {
+            "x" : 0.20729361,
+            "y" : 0.40820312
+          }, {
+            "x" : 0.18935473,
+            "y" : 0.40820312
+          } ]
+        }
+      }, {
+        "detectedText" : "a",
+        "type" : "WORD",
+        "id" : 77,
+        "parentId" : 12,
+        "confidence" : 98.650795,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.0051823403,
+            "height" : 0.01171875,
+            "left" : 0.21367188,
+            "top" : 0.3955078
+          },
+          "polygon" : [ {
+            "x" : 0.21367188,
+            "y" : 0.3955078
+          }, {
+            "x" : 0.21885422,
+            "y" : 0.3955078
+          }, {
+            "x" : 0.21885422,
+            "y" : 0.40722656
+          }, {
+            "x" : 0.21367188,
+            "y" : 0.40722656
+          } ]
+        }
+      }, {
+        "detectedText" : "marker",
+        "type" : "WORD",
+        "id" : 78,
+        "parentId" : 12,
+        "confidence" : 98.99194,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.036675025,
+            "height" : 0.017578125,
+            "left" : 0.2244352,
+            "top" : 0.390625
+          },
+          "polygon" : [ {
+            "x" : 0.2244352,
+            "y" : 0.390625
+          }, {
+            "x" : 0.26111022,
+            "y" : 0.390625
+          }, {
+            "x" : 0.26111022,
+            "y" : 0.40820312
+          }, {
+            "x" : 0.2244352,
+            "y" : 0.40820312
+          } ]
+        }
+      }, {
+        "detectedText" : "while",
+        "type" : "WORD",
+        "id" : 79,
+        "parentId" : 12,
+        "confidence" : 99.60136,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.029499475,
+            "height" : 0.015625,
+            "left" : 0.2666912,
+            "top" : 0.39160156
+          },
+          "polygon" : [ {
+            "x" : 0.2666912,
+            "y" : 0.39160156
+          }, {
+            "x" : 0.29619068,
+            "y" : 0.39160156
+          }, {
+            "x" : 0.29619068,
+            "y" : 0.40722656
+          }, {
+            "x" : 0.2666912,
+            "y" : 0.40722656
+          } ]
+        }
+      }, {
+        "detectedText" : "we're",
+        "type" : "WORD",
+        "id" : 80,
+        "parentId" : 12,
+        "confidence" : 98.462654,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.030296758,
+            "height" : 0.018554688,
+            "left" : 0.30217028,
+            "top" : 0.390625
+          },
+          "polygon" : [ {
+            "x" : 0.30217028,
+            "y" : 0.390625
+          }, {
+            "x" : 0.33246705,
+            "y" : 0.390625
+          }, {
+            "x" : 0.33246705,
+            "y" : 0.4091797
+          }, {
+            "x" : 0.30217028,
+            "y" : 0.4091797
+          } ]
+        }
+      }, {
+        "detectedText" : "at",
+        "type" : "WORD",
+        "id" : 81,
+        "parentId" : 12,
+        "confidence" : 97.14433,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.011560605,
+            "height" : 0.0146484375,
+            "left" : 0.3388453,
+            "top" : 0.3935547
+          },
+          "polygon" : [ {
+            "x" : 0.3388453,
+            "y" : 0.3935547
+          }, {
+            "x" : 0.35040593,
+            "y" : 0.3935547
+          }, {
+            "x" : 0.35040593,
+            "y" : 0.40820312
+          }, {
+            "x" : 0.3388453,
+            "y" : 0.40820312
+          } ]
+        }
+      }, {
+        "detectedText" : "it",
+        "type" : "WORD",
+        "id" : 82,
+        "parentId" : 12,
+        "confidence" : 99.56652,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.011161963,
+            "height" : 0.016601562,
+            "left" : 0.3567842,
+            "top" : 0.39160156
+          },
+          "polygon" : [ {
+            "x" : 0.3567842,
+            "y" : 0.39160156
+          }, {
+            "x" : 0.36794615,
+            "y" : 0.39160156
+          }, {
+            "x" : 0.36794615,
+            "y" : 0.40820312
+          }, {
+            "x" : 0.3567842,
+            "y" : 0.40820312
+          } ]
+        }
+      }, {
+        "detectedText" : "map",
+        "type" : "WORD",
+        "id" : 83,
+        "parentId" : 13,
+        "confidence" : 99.21901,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.018736154,
+            "height" : 0.016601562,
+            "left" : 0.10524137,
+            "top" : 0.421875
+          },
+          "polygon" : [ {
+            "x" : 0.10524137,
+            "y" : 0.421875
+          }, {
+            "x" : 0.12397753,
+            "y" : 0.421875
+          }, {
+            "x" : 0.12397753,
+            "y" : 0.43847656
+          }, {
+            "x" : 0.10524137,
+            "y" : 0.43847656
+          } ]
+        }
+      }, {
+        "detectedText" : "=",
+        "type" : "WORD",
+        "id" : 84,
+        "parentId" : 13,
+        "confidence" : 61.317165,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.017093875,
+            "height" : 0.016682291,
+            "left" : 0.12099607,
+            "top" : 0.41976187
+          },
+          "polygon" : [ {
+            "x" : 0.12099607,
+            "y" : 0.4223239
+          }, {
+            "x" : 0.1377297,
+            "y" : 0.41976187
+          }, {
+            "x" : 0.13808994,
+            "y" : 0.43388212
+          }, {
+            "x" : 0.121356316,
+            "y" : 0.43644416
+          } ]
+        }
+      }, {
+        "detectedText" : "new",
+        "type" : "WORD",
+        "id" : 85,
+        "parentId" : 13,
+        "confidence" : 97.85928,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.018736154,
+            "height" : 0.013671875,
+            "left" : 0.14072047,
+            "top" : 0.421875
+          },
+          "polygon" : [ {
+            "x" : 0.14072047,
+            "y" : 0.421875
+          }, {
+            "x" : 0.15945663,
+            "y" : 0.421875
+          }, {
+            "x" : 0.15945663,
+            "y" : 0.43554688
+          }, {
+            "x" : 0.14072047,
+            "y" : 0.43554688
+          } ]
+        }
+      }, {
+        "detectedText" : "google.maps.Map",
+        "type" : "WORD",
+        "id" : 86,
+        "parentId" : 13,
+        "confidence" : 91.69557,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.0920862,
+            "height" : 0.02734375,
+            "left" : 0.16424032,
+            "top" : 0.41503906
+          },
+          "polygon" : [ {
+            "x" : 0.16424032,
+            "y" : 0.41503906
+          }, {
+            "x" : 0.25632653,
+            "y" : 0.41503906
+          }, {
+            "x" : 0.25632653,
+            "y" : 0.4423828
+          }, {
+            "x" : 0.16424032,
+            "y" : 0.4423828
+          } ]
+        }
+      }, {
+        "detectedText" : "(document.getElementByd'gmap_canvas)",
+        "type" : "WORD",
+        "id" : 87,
+        "parentId" : 13,
+        "confidence" : 12.541853,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.24045804,
+            "height" : 0.04083587,
+            "left" : 0.25429267,
+            "top" : 0.40836376
+          },
+          "polygon" : [ {
+            "x" : 0.2543676,
+            "y" : 0.40836376
+          }, {
+            "x" : 0.4947507,
+            "y" : 0.41120857
+          }, {
+            "x" : 0.49467573,
+            "y" : 0.44919962
+          }, {
+            "x" : 0.25429267,
+            "y" : 0.44635478
+          } ]
+        }
+      }, {
+        "detectedText" : "myOptions);",
+        "type" : "WORD",
+        "id" : 88,
+        "parentId" : 13,
+        "confidence" : 93.418625,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.06418129,
+            "height" : 0.01953125,
+            "left" : 0.49949786,
+            "top" : 0.4189453
+          },
+          "polygon" : [ {
+            "x" : 0.49949786,
+            "y" : 0.4189453
+          }, {
+            "x" : 0.56367916,
+            "y" : 0.4189453
+          }, {
+            "x" : 0.56367916,
+            "y" : 0.43847656
+          }, {
+            "x" : 0.49949786,
+            "y" : 0.43847656
+          } ]
+        }
+      }, {
+        "detectedText" : "marker",
+        "type" : "WORD",
+        "id" : 89,
+        "parentId" : 14,
+        "confidence" : 98.20687,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.037073664,
+            "height" : 0.017578125,
+            "left" : 0.10484273,
+            "top" : 0.4453125
+          },
+          "polygon" : [ {
+            "x" : 0.10484273,
+            "y" : 0.4453125
+          }, {
+            "x" : 0.1419164,
+            "y" : 0.4453125
+          }, {
+            "x" : 0.1419164,
+            "y" : 0.46289062
+          }, {
+            "x" : 0.10484273,
+            "y" : 0.46289062
+          } ]
+        }
+      }, {
+        "detectedText" : "-",
+        "type" : "WORD",
+        "id" : 90,
+        "parentId" : 14,
+        "confidence" : 93.95242,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.007175548,
+            "height" : 0.0087890625,
+            "left" : 0.14709873,
+            "top" : 0.4501953
+          },
+          "polygon" : [ {
+            "x" : 0.14709873,
+            "y" : 0.4501953
+          }, {
+            "x" : 0.15427428,
+            "y" : 0.4501953
+          }, {
+            "x" : 0.15427428,
+            "y" : 0.45898438
+          }, {
+            "x" : 0.14709873,
+            "y" : 0.45898438
+          } ]
+        }
+      }, {
+        "detectedText" : "new",
+        "type" : "WORD",
+        "id" : 91,
+        "parentId" : 14,
+        "confidence" : 98.13286,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.018736154,
+            "height" : 0.0126953125,
+            "left" : 0.15865934,
+            "top" : 0.44921875
+          },
+          "polygon" : [ {
+            "x" : 0.15865934,
+            "y" : 0.44921875
+          }, {
+            "x" : 0.1773955,
+            "y" : 0.44921875
+          }, {
+            "x" : 0.1773955,
+            "y" : 0.46191406
+          }, {
+            "x" : 0.15865934,
+            "y" : 0.46191406
+          } ]
+        }
+      }, {
+        "detectedText" : "google.maps.Marker",
+        "type" : "WORD",
+        "id" : 92,
+        "parentId" : 14,
+        "confidence" : 85.99467,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.111290455,
+            "height" : 0.03071625,
+            "left" : 0.18174627,
+            "top" : 0.4408902
+          },
+          "polygon" : [ {
+            "x" : 0.18174627,
+            "y" : 0.44245607
+          }, {
+            "x" : 0.29296833,
+            "y" : 0.4408902
+          }, {
+            "x" : 0.29303673,
+            "y" : 0.47004056
+          }, {
+            "x" : 0.18181467,
+            "y" : 0.47160643
+          } ]
+        }
+      }, {
+        "detectedText" : "({",
+        "type" : "WORD",
+        "id" : 93,
+        "parentId" : 14,
+        "confidence" : 26.591194,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.009567398,
+            "height" : 0.018554688,
+            "left" : 0.29180562,
+            "top" : 0.44628906
+          },
+          "polygon" : [ {
+            "x" : 0.29180562,
+            "y" : 0.44628906
+          }, {
+            "x" : 0.301373,
+            "y" : 0.44628906
+          }, {
+            "x" : 0.301373,
+            "y" : 0.46484375
+          }, {
+            "x" : 0.29180562,
+            "y" : 0.46484375
+          } ]
+        }
+      }, {
+        "detectedText" : "map:",
+        "type" : "WORD",
+        "id" : 94,
+        "parentId" : 15,
+        "confidence" : 97.68623,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.022722568,
+            "height" : 0.016601562,
+            "left" : 0.12915987,
+            "top" : 0.4765625
+          },
+          "polygon" : [ {
+            "x" : 0.12915987,
+            "y" : 0.4765625
+          }, {
+            "x" : 0.15188244,
+            "y" : 0.4765625
+          }, {
+            "x" : 0.15188244,
+            "y" : 0.49316406
+          }, {
+            "x" : 0.12915987,
+            "y" : 0.49316406
+          } ]
+        }
+      }, {
+        "detectedText" : "map,",
+        "type" : "WORD",
+        "id" : 95,
+        "parentId" : 15,
+        "confidence" : 99.83892,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.022323927,
+            "height" : 0.015625,
+            "left" : 0.15865934,
+            "top" : 0.47753906
+          },
+          "polygon" : [ {
+            "x" : 0.15865934,
+            "y" : 0.47753906
+          }, {
+            "x" : 0.18098326,
+            "y" : 0.47753906
+          }, {
+            "x" : 0.18098326,
+            "y" : 0.49316406
+          }, {
+            "x" : 0.15865934,
+            "y" : 0.49316406
+          } ]
+        }
+      }, {
+        "detectedText" : "position:",
+        "type" : "WORD",
+        "id" : 96,
+        "parentId" : 16,
+        "confidence" : 97.41702,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.05341797,
+            "height" : 0.022460938,
+            "left" : 0.12876122,
+            "top" : 0.5
+          },
+          "polygon" : [ {
+            "x" : 0.12876122,
+            "y" : 0.5
+          }, {
+            "x" : 0.1821792,
+            "y" : 0.5
+          }, {
+            "x" : 0.1821792,
+            "y" : 0.52246094
+          }, {
+            "x" : 0.12876122,
+            "y" : 0.52246094
+          } ]
+        }
+      }, {
+        "detectedText" : "new",
+        "type" : "WORD",
+        "id" : 97,
+        "parentId" : 16,
+        "confidence" : 98.71128,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.018337512,
+            "height" : 0.013671875,
+            "left" : 0.1889561,
+            "top" : 0.50390625
+          },
+          "polygon" : [ {
+            "x" : 0.1889561,
+            "y" : 0.50390625
+          }, {
+            "x" : 0.20729361,
+            "y" : 0.50390625
+          }, {
+            "x" : 0.20729361,
+            "y" : 0.5175781
+          }, {
+            "x" : 0.1889561,
+            "y" : 0.5175781
+          } ]
+        }
+      }, {
+        "detectedText" : "google.ma",
+        "type" : "WORD",
+        "id" : 98,
+        "parentId" : 16,
+        "confidence" : 97.32355,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.057404384,
+            "height" : 0.025390625,
+            "left" : 0.21247596,
+            "top" : 0.49902344
+          },
+          "polygon" : [ {
+            "x" : 0.21247596,
+            "y" : 0.49902344
+          }, {
+            "x" : 0.26988032,
+            "y" : 0.49902344
+          }, {
+            "x" : 0.26988032,
+            "y" : 0.52441406
+          }, {
+            "x" : 0.21247596,
+            "y" : 0.52441406
+          } ]
+        }
+      }, {
+        "detectedText" : "9999998223),",
+        "type" : "WORD",
+        "id" : 99,
+        "parentId" : 17,
+        "confidence" : 89.230545,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.06896499,
+            "height" : 0.021484375,
+            "left" : 0.4584378,
+            "top" : 0.5
+          },
+          "polygon" : [ {
+            "x" : 0.4584378,
+            "y" : 0.5
+          }, {
+            "x" : 0.52740276,
+            "y" : 0.5
+          }, {
+            "x" : 0.52740276,
+            "y" : 0.5214844
+          }, {
+            "x" : 0.4584378,
+            "y" : 0.5214844
+          } ]
+        }
+      }, {
+        "detectedText" : "REPLACE",
+        "type" : "WORD",
+        "id" : 100,
+        "parentId" : 18,
+        "confidence" : 100.0,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.050627477,
+            "height" : 0.0234375,
+            "left" : 0.2822382,
+            "top" : 0.5029296
+          },
+          "polygon" : [ {
+            "x" : 0.2822382,
+            "y" : 0.5029296
+          }, {
+            "x" : 0.3328657,
+            "y" : 0.5029296
+          }, {
+            "x" : 0.3328657,
+            "y" : 0.5263671
+          }, {
+            "x" : 0.2822382,
+            "y" : 0.5263671
+          } ]
+        }
+      }, {
+        "detectedText" : "LOCATION",
+        "type" : "WORD",
+        "id" : 101,
+        "parentId" : 18,
+        "confidence" : 99.749535,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.0613908,
+            "height" : 0.025390625,
+            "left" : 0.33645347,
+            "top" : 0.5019531
+          },
+          "polygon" : [ {
+            "x" : 0.33645347,
+            "y" : 0.5019531
+          }, {
+            "x" : 0.39784428,
+            "y" : 0.5019531
+          }, {
+            "x" : 0.39784428,
+            "y" : 0.52734375
+          }, {
+            "x" : 0.33645347,
+            "y" : 0.52734375
+          } ]
+        }
+      }, {
+        "detectedText" : "optimized:",
+        "type" : "WORD",
+        "id" : 102,
+        "parentId" : 19,
+        "confidence" : 98.19531,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.058201667,
+            "height" : 0.022460938,
+            "left" : 0.1295585,
+            "top" : 0.52734375
+          },
+          "polygon" : [ {
+            "x" : 0.1295585,
+            "y" : 0.52734375
+          }, {
+            "x" : 0.18776017,
+            "y" : 0.52734375
+          }, {
+            "x" : 0.18776017,
+            "y" : 0.5498047
+          }, {
+            "x" : 0.1295585,
+            "y" : 0.5498047
+          } ]
+        }
+      }, {
+        "detectedText" : "false,",
+        "type" : "WORD",
+        "id" : 103,
+        "parentId" : 19,
+        "confidence" : 99.117775,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.03348589,
+            "height" : 0.021484375,
+            "left" : 0.19533436,
+            "top" : 0.52734375
+          },
+          "polygon" : [ {
+            "x" : 0.19533436,
+            "y" : 0.52734375
+          }, {
+            "x" : 0.22882025,
+            "y" : 0.52734375
+          }, {
+            "x" : 0.22882025,
+            "y" : 0.5488281
+          }, {
+            "x" : 0.19533436,
+            "y" : 0.5488281
+          } ]
+        }
+      }, {
+        "detectedText" : "LATITUDE",
+        "type" : "WORD",
+        "id" : 104,
+        "parentId" : 20,
+        "confidence" : 99.923965,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.057404384,
+            "height" : 0.025390625,
+            "left" : 0.28183955,
+            "top" : 0.5458984
+          },
+          "polygon" : [ {
+            "x" : 0.28183955,
+            "y" : 0.5458984
+          }, {
+            "x" : 0.33924395,
+            "y" : 0.5458984
+          }, {
+            "x" : 0.33924395,
+            "y" : 0.571289
+          }, {
+            "x" : 0.28183955,
+            "y" : 0.571289
+          } ]
+        }
+      }, {
+        "detectedText" : "AND",
+        "type" : "WORD",
+        "id" : 105,
+        "parentId" : 20,
+        "confidence" : 100.0,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.026310343,
+            "height" : 0.0234375,
+            "left" : 0.34203446,
+            "top" : 0.546875
+          },
+          "polygon" : [ {
+            "x" : 0.34203446,
+            "y" : 0.546875
+          }, {
+            "x" : 0.3683448,
+            "y" : 0.546875
+          }, {
+            "x" : 0.3683448,
+            "y" : 0.5703125
+          }, {
+            "x" : 0.34203446,
+            "y" : 0.5703125
+          } ]
+        }
+      }, {
+        "detectedText" : "LONGITUDE",
+        "type" : "WORD",
+        "id" : 106,
+        "parentId" : 20,
+        "confidence" : 99.51037,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.069762275,
+            "height" : 0.025390625,
+            "left" : 0.3723312,
+            "top" : 0.54589844
+          },
+          "polygon" : [ {
+            "x" : 0.3723312,
+            "y" : 0.54589844
+          }, {
+            "x" : 0.4420935,
+            "y" : 0.54589844
+          }, {
+            "x" : 0.4420935,
+            "y" : 0.57128906
+          }, {
+            "x" : 0.3723312,
+            "y" : 0.57128906
+          } ]
+        }
+      }, {
+        "detectedText" : "icon:",
+        "type" : "WORD",
+        "id" : 107,
+        "parentId" : 21,
+        "confidence" : 98.089745,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.02830355,
+            "height" : 0.018554688,
+            "left" : 0.1295585,
+            "top" : 0.5546875
+          },
+          "polygon" : [ {
+            "x" : 0.1295585,
+            "y" : 0.5546875
+          }, {
+            "x" : 0.15786205,
+            "y" : 0.5546875
+          }, {
+            "x" : 0.15786205,
+            "y" : 0.5732422
+          }, {
+            "x" : 0.1295585,
+            "y" : 0.5732422
+          } ]
+        }
+      }, {
+        "detectedText" : "new",
+        "type" : "WORD",
+        "id" : 108,
+        "parentId" : 21,
+        "confidence" : 98.4559,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.018337512,
+            "height" : 0.013671875,
+            "left" : 0.1650376,
+            "top" : 0.55859375
+          },
+          "polygon" : [ {
+            "x" : 0.1650376,
+            "y" : 0.55859375
+          }, {
+            "x" : 0.18337512,
+            "y" : 0.55859375
+          }, {
+            "x" : 0.18337512,
+            "y" : 0.5722656
+          }, {
+            "x" : 0.1650376,
+            "y" : 0.5722656
+          } ]
+        }
+      }, {
+        "detectedText" : "google.maps.M",
+        "type" : "WORD",
+        "id" : 109,
+        "parentId" : 21,
+        "confidence" : 92.774574,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.08052559,
+            "height" : 0.02734375,
+            "left" : 0.18855746,
+            "top" : 0.5517578
+          },
+          "polygon" : [ {
+            "x" : 0.18855746,
+            "y" : 0.5517578
+          }, {
+            "x" : 0.26908305,
+            "y" : 0.5517578
+          }, {
+            "x" : 0.26908305,
+            "y" : 0.57910156
+          }, {
+            "x" : 0.18855746,
+            "y" : 0.57910156
+          } ]
+        }
+      }, {
+        "detectedText" : "1);",
+        "type" : "WORD",
+        "id" : 110,
+        "parentId" : 22,
+        "confidence" : 23.19244,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.01554702,
+            "height" : 0.01953125,
+            "left" : 0.106437296,
+            "top" : 0.5830078
+          },
+          "polygon" : [ {
+            "x" : 0.106437296,
+            "y" : 0.5830078
+          }, {
+            "x" : 0.12198432,
+            "y" : 0.5830078
+          }, {
+            "x" : 0.12198432,
+            "y" : 0.60253906
+          }, {
+            "x" : 0.106437296,
+            "y" : 0.60253906
+          } ]
+        }
+      }, {
+        "detectedText" : "marker.setDraggable",
+        "type" : "WORD",
+        "id" : 111,
+        "parentId" : 23,
+        "confidence" : 90.08197,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.11610012,
+            "height" : 0.028426427,
+            "left" : 0.103597976,
+            "top" : 0.63359857
+          },
+          "polygon" : [ {
+            "x" : 0.10368156,
+            "y" : 0.63359857
+          }, {
+            "x" : 0.2196981,
+            "y" : 0.6358191
+          }, {
+            "x" : 0.2196145,
+            "y" : 0.66202503
+          }, {
+            "x" : 0.103597976,
+            "y" : 0.6598045
+          } ]
+        }
+      }, {
+        "detectedText" : "(true);",
+        "type" : "WORD",
+        "id" : 112,
+        "parentId" : 23,
+        "confidence" : 73.64445,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.03826959,
+            "height" : 0.020507812,
+            "left" : 0.22124606,
+            "top" : 0.6376953
+          },
+          "polygon" : [ {
+            "x" : 0.22124606,
+            "y" : 0.6376953
+          }, {
+            "x" : 0.25951564,
+            "y" : 0.6376953
+          }, {
+            "x" : 0.25951564,
+            "y" : 0.6582031
+          }, {
+            "x" : 0.22124606,
+            "y" : 0.6582031
+          } ]
+        }
+      }, {
+        "detectedText" : "//",
+        "type" : "WORD",
+        "id" : 113,
+        "parentId" : 24,
+        "confidence" : 94.087814,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.011959246,
+            "height" : 0.021484375,
+            "left" : 0.10564002,
+            "top" : 0.66308594
+          },
+          "polygon" : [ {
+            "x" : 0.10564002,
+            "y" : 0.66308594
+          }, {
+            "x" : 0.11759926,
+            "y" : 0.66308594
+          }, {
+            "x" : 0.11759926,
+            "y" : 0.6845703
+          }, {
+            "x" : 0.10564002,
+            "y" : 0.6845703
+          } ]
+        }
+      }, {
+        "detectedText" : "marker",
+        "type" : "WORD",
+        "id" : 114,
+        "parentId" : 24,
+        "confidence" : 99.128365,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.036675025,
+            "height" : 0.017578125,
+            "left" : 0.1227816,
+            "top" : 0.66503906
+          },
+          "polygon" : [ {
+            "x" : 0.1227816,
+            "y" : 0.66503906
+          }, {
+            "x" : 0.15945663,
+            "y" : 0.66503906
+          }, {
+            "x" : 0.15945663,
+            "y" : 0.6826172
+          }, {
+            "x" : 0.1227816,
+            "y" : 0.6826172
+          } ]
+        }
+      }, {
+        "detectedText" : "on",
+        "type" : "WORD",
+        "id" : 115,
+        "parentId" : 24,
+        "confidence" : 98.59811,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.011959246,
+            "height" : 0.0146484375,
+            "left" : 0.16543625,
+            "top" : 0.66796875
+          },
+          "polygon" : [ {
+            "x" : 0.16543625,
+            "y" : 0.66796875
+          }, {
+            "x" : 0.1773955,
+            "y" : 0.66796875
+          }, {
+            "x" : 0.1773955,
+            "y" : 0.6826172
+          }, {
+            "x" : 0.16543625,
+            "y" : 0.6826172
+          } ]
+        }
+      }, {
+        "detectedText" : "click",
+        "type" : "WORD",
+        "id" : 116,
+        "parentId" : 24,
+        "confidence" : 99.689545,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.029499475,
+            "height" : 0.015625,
+            "left" : 0.18377376,
+            "top" : 0.6660156
+          },
+          "polygon" : [ {
+            "x" : 0.18377376,
+            "y" : 0.6660156
+          }, {
+            "x" : 0.21327323,
+            "y" : 0.6660156
+          }, {
+            "x" : 0.21327323,
+            "y" : 0.6816406
+          }, {
+            "x" : 0.18377376,
+            "y" : 0.6816406
+          } ]
+        }
+      }, {
+        "detectedText" : "show",
+        "type" : "WORD",
+        "id" : 117,
+        "parentId" : 24,
+        "confidence" : 99.88071,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.023519851,
+            "height" : 0.015625,
+            "left" : 0.2196515,
+            "top" : 0.6660156
+          },
+          "polygon" : [ {
+            "x" : 0.2196515,
+            "y" : 0.6660156
+          }, {
+            "x" : 0.24317135,
+            "y" : 0.6660156
+          }, {
+            "x" : 0.24317135,
+            "y" : 0.6816406
+          }, {
+            "x" : 0.2196515,
+            "y" : 0.6816406
+          } ]
+        }
+      }, {
+        "detectedText" : "infowindow",
+        "type" : "WORD",
+        "id" : 118,
+        "parentId" : 24,
+        "confidence" : 98.416565,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.060194876,
+            "height" : 0.01953125,
+            "left" : 0.24915098,
+            "top" : 0.6640625
+          },
+          "polygon" : [ {
+            "x" : 0.24915098,
+            "y" : 0.6640625
+          }, {
+            "x" : 0.30934584,
+            "y" : 0.6640625
+          }, {
+            "x" : 0.30934584,
+            "y" : 0.68359375
+          }, {
+            "x" : 0.24915098,
+            "y" : 0.68359375
+          } ]
+        }
+      }, {
+        "detectedText" : "infowindow =",
+        "type" : "WORD",
+        "id" : 119,
+        "parentId" : 25,
+        "confidence" : 77.69816,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.07813375,
+            "height" : 0.021484375,
+            "left" : 0.10524137,
+            "top" : 0.6904297
+          },
+          "polygon" : [ {
+            "x" : 0.10524137,
+            "y" : 0.6904297
+          }, {
+            "x" : 0.18337512,
+            "y" : 0.6904297
+          }, {
+            "x" : 0.18337512,
+            "y" : 0.71191406
+          }, {
+            "x" : 0.10524137,
+            "y" : 0.71191406
+          } ]
+        }
+      }, {
+        "detectedText" : "new",
+        "type" : "WORD",
+        "id" : 120,
+        "parentId" : 25,
+        "confidence" : 98.22713,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.019134795,
+            "height" : 0.0126953125,
+            "left" : 0.1821792,
+            "top" : 0.69628906
+          },
+          "polygon" : [ {
+            "x" : 0.1821792,
+            "y" : 0.69628906
+          }, {
+            "x" : 0.20131399,
+            "y" : 0.69628906
+          }, {
+            "x" : 0.20131399,
+            "y" : 0.7089844
+          }, {
+            "x" : 0.1821792,
+            "y" : 0.7089844
+          } ]
+        }
+      }, {
+        "detectedText" : "google.maps.InfoWindow(",
+        "type" : "WORD",
+        "id" : 121,
+        "parentId" : 25,
+        "confidence" : 50.907898,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.14630145,
+            "height" : 0.03125,
+            "left" : 0.20569904,
+            "top" : 0.6875
+          },
+          "polygon" : [ {
+            "x" : 0.20569904,
+            "y" : 0.6875
+          }, {
+            "x" : 0.3520005,
+            "y" : 0.6875
+          }, {
+            "x" : 0.3520005,
+            "y" : 0.71875
+          }, {
+            "x" : 0.20569904,
+            "y" : 0.71875
+          } ]
+        }
+      }, {
+        "detectedText" : "content:",
+        "type" : "WORD",
+        "id" : 122,
+        "parentId" : 26,
+        "confidence" : 97.241455,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.045926336,
+            "height" : 0.018145295,
+            "left" : 0.12991661,
+            "top" : 0.7202452
+          },
+          "polygon" : [ {
+            "x" : 0.12998742,
+            "y" : 0.7202452
+          }, {
+            "x" : 0.17584294,
+            "y" : 0.7213915
+          }, {
+            "x" : 0.17577215,
+            "y" : 0.7383905
+          }, {
+            "x" : 0.12991661,
+            "y" : 0.7372442
+          } ]
+        }
+      }, {
+        "detectedText" : "&lt;strong&gt;Title&lt;/strong&gt;br&gt;London,",
+        "type" : "WORD",
+        "id" : 123,
+        "parentId" : 26,
+        "confidence" : 35.216957,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.20250991,
+            "height" : 0.030273438,
+            "left" : 0.18297647,
+            "top" : 0.71484375
+          },
+          "polygon" : [ {
+            "x" : 0.18297647,
+            "y" : 0.71484375
+          }, {
+            "x" : 0.3854864,
+            "y" : 0.71484375
+          }, {
+            "x" : 0.3854864,
+            "y" : 0.7451172
+          }, {
+            "x" : 0.18297647,
+            "y" : 0.7451172
+          } ]
+        }
+      }, {
+        "detectedText" : "United",
+        "type" : "WORD",
+        "id" : 124,
+        "parentId" : 26,
+        "confidence" : 99.619896,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.036675025,
+            "height" : 0.017578125,
+            "left" : 0.39186466,
+            "top" : 0.71972656
+          },
+          "polygon" : [ {
+            "x" : 0.39186466,
+            "y" : 0.71972656
+          }, {
+            "x" : 0.42853966,
+            "y" : 0.71972656
+          }, {
+            "x" : 0.42853966,
+            "y" : 0.7373047
+          }, {
+            "x" : 0.39186466,
+            "y" : 0.7373047
+          } ]
+        }
+      }, {
+        "detectedText" : "Kingdom&lt;br&gt;",
+        "type" : "WORD",
+        "id" : 125,
+        "parentId" : 26,
+        "confidence" : 91.18296,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.07016091,
+            "height" : 0.021484375,
+            "left" : 0.43372196,
+            "top" : 0.7197265
+          },
+          "polygon" : [ {
+            "x" : 0.43372196,
+            "y" : 0.7197265
+          }, {
+            "x" : 0.5038829,
+            "y" : 0.7197265
+          }, {
+            "x" : 0.5038829,
+            "y" : 0.7412109
+          }, {
+            "x" : 0.43372196,
+            "y" : 0.7412109
+          } ]
+        }
+      }, {
+        "detectedText" : "11;",
+        "type" : "WORD",
+        "id" : 126,
+        "parentId" : 27,
+        "confidence" : 57.163845,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.01603833,
+            "height" : 0.022020971,
+            "left" : 0.10618638,
+            "top" : 0.74661034
+          },
+          "polygon" : [ {
+            "x" : 0.10654757,
+            "y" : 0.74661034
+          }, {
+            "x" : 0.12222471,
+            "y" : 0.7482801
+          }, {
+            "x" : 0.12186352,
+            "y" : 0.76863134
+          }, {
+            "x" : 0.10618638,
+            "y" : 0.7669616
+          } ]
+        }
+      }, {
+        "detectedText" : "google.maps.event.addListener",
+        "type" : "WORD",
+        "id" : 127,
+        "parentId" : 28,
+        "confidence" : 78.46165,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.17704622,
+            "height" : 0.032243636,
+            "left" : 0.10402158,
+            "top" : 0.76909846
+          },
+          "polygon" : [ {
+            "x" : 0.10402158,
+            "y" : 0.7706361
+          }, {
+            "x" : 0.28102335,
+            "y" : 0.76909846
+          }, {
+            "x" : 0.28106782,
+            "y" : 0.7998045
+          }, {
+            "x" : 0.10406602,
+            "y" : 0.8013421
+          } ]
+        }
+      }, {
+        "detectedText" : "(marker,",
+        "type" : "WORD",
+        "id" : 128,
+        "parentId" : 28,
+        "confidence" : 98.110275,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.04345193,
+            "height" : 0.020507812,
+            "left" : 0.28104228,
+            "top" : 0.77441406
+          },
+          "polygon" : [ {
+            "x" : 0.28104228,
+            "y" : 0.77441406
+          }, {
+            "x" : 0.3244942,
+            "y" : 0.77441406
+          }, {
+            "x" : 0.3244942,
+            "y" : 0.7949219
+          }, {
+            "x" : 0.28104228,
+            "y" : 0.7949219
+          } ]
+        }
+      } ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "5.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Page #File #Text #Paper #Document"
+  }
+}</TEXT></FIELD>
+</FIELDS>

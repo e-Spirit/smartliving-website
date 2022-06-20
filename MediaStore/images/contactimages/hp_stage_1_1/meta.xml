@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='md_creation_date'><DATE>1636542757703</DATE></FIELD>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ {
+        "boundingBox" : {
+          "width" : 0.111575425,
+          "height" : 0.08919194,
+          "left" : 0.4293614,
+          "top" : 0.11429714
+        },
+        "ageRange" : null,
+        "smile" : null,
+        "eyeglasses" : null,
+        "sunglasses" : null,
+        "gender" : null,
+        "beard" : null,
+        "mustache" : null,
+        "eyesOpen" : null,
+        "mouthOpen" : null,
+        "emotions" : null,
+        "landmarks" : [ {
+          "type" : "eyeLeft",
+          "x" : 0.47212774,
+          "y" : 0.15345794
+        }, {
+          "type" : "eyeRight",
+          "x" : 0.51622915,
+          "y" : 0.15440527
+        }, {
+          "type" : "mouthLeft",
+          "x" : 0.46814358,
+          "y" : 0.18145788
+        }, {
+          "type" : "mouthRight",
+          "x" : 0.50534225,
+          "y" : 0.18217148
+        }, {
+          "type" : "nose",
+          "x" : 0.49696133,
+          "y" : 0.1778241
+        } ],
+        "pose" : {
+          "roll" : 0.5911073,
+          "yaw" : 15.80959,
+          "pitch" : -39.51977
+        },
+        "quality" : {
+          "brightness" : 91.91103,
+          "sharpness" : 26.177368
+        },
+        "confidence" : 99.987686
+      } ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Clothing",
+        "confidence" : 99.677315,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Apparel",
+        "confidence" : 99.677315,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Pants",
+        "confidence" : 99.45533,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Clothing"
+        } ]
+      }, {
+        "name" : "Person",
+        "confidence" : 98.83298,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.5449007,
+            "height" : 0.9028,
+            "left" : 0.25422335,
+            "top" : 0.057696003
+          },
+          "confidence" : 98.83298
+        } ],
+        "parents" : [ ]
+      }, {
+        "name" : "Human",
+        "confidence" : 98.83298,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Sleeve",
+        "confidence" : 90.256584,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Clothing"
+        } ]
+      }, {
+        "name" : "Long Sleeve",
+        "confidence" : 87.23643,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Sleeve"
+        }, {
+          "name" : "Clothing"
+        } ]
+      }, {
+        "name" : "Man",
+        "confidence" : 85.09814,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Footwear",
+        "confidence" : 82.792435,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Clothing"
+        } ]
+      }, {
+        "name" : "Shoe",
+        "confidence" : 77.22798,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Footwear"
+        }, {
+          "name" : "Clothing"
+        } ]
+      }, {
+        "name" : "Jeans",
+        "confidence" : 69.93814,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Pants"
+        }, {
+          "name" : "Clothing"
+        } ]
+      }, {
+        "name" : "Denim",
+        "confidence" : 69.93814,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Pants"
+        }, {
+          "name" : "Clothing"
+        } ]
+      }, {
+        "name" : "Shirt",
+        "confidence" : 69.760185,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Clothing"
+        } ]
+      }, {
+        "name" : "Photography",
+        "confidence" : 64.07722,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Photo",
+        "confidence" : 64.07722,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Portrait",
+        "confidence" : 62.775574,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Face"
+        }, {
+          "name" : "Photography"
+        }, {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Face",
+        "confidence" : 62.775574,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Female",
+        "confidence" : 61.012154,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Standing",
+        "confidence" : 57.837254,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Home Decor",
+        "confidence" : 56.820446,
+        "instances" : [ ],
+        "parents" : [ ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "2.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "5.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Female #Clothing #Apparel #Man #Denim #Photography #Human #Face #Shirt #Home Decor #Jeans #Portrait #Footwear #Sleeve #Pants #Person #Shoe #Long Sleeve #Standing #Photo"
+  }
+}</TEXT></FIELD>
+</FIELDS>

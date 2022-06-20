@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='md_creation_date'><DATE>1637180408507</DATE></FIELD>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Text",
+        "confidence" : 89.607086,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Label",
+        "confidence" : 69.44273,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Text"
+        } ]
+      }, {
+        "name" : "Number",
+        "confidence" : 60.84223,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Symbol"
+        }, {
+          "name" : "Text"
+        } ]
+      }, {
+        "name" : "Symbol",
+        "confidence" : 60.84223,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Plot",
+        "confidence" : 59.612896,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Word",
+        "confidence" : 58.41112,
+        "instances" : [ ],
+        "parents" : [ ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "2.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "5.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Symbol #Text #Label #Plot #Number #Word"
+  }
+}</TEXT></FIELD>
+</FIELDS>

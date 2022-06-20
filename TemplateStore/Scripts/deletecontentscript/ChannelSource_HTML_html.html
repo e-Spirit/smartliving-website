@@ -1,0 +1,22 @@
+//!Beanshell
+import de.espirit.firstspirit.access.*;
+import de.espirit.firstspirit.access.store.contentstore.*;
+import de.espirit.firstspirit.ui.operations.RequestOperation;
+import de.espirit.firstspirit.agency.OperationAgent;
+ 
+workflowable = context.getWorkflowable();
+if (workflowable instanceof ContentWorkflowable) {
+    message = "Entity Löschen:\n  content=" + workflowable.getContent().getName() + "\n  entity=" + workflowable.getEntity().getKeyValue();
+    requestOperation = context.requireSpecialist(OperationAgent.TYPE).getOperation(RequestOperation.TYPE);
+    requestOperation.setKind(RequestOperation.Kind.INFO);
+    requestOperation.addOk();
+    requestOperation.perform(message);}
+else {
+    message = "StoreElement Löschen:\n  store=" + workflowable.getStore().getName() + "\n  id=" + workflowable.getId();
+    requestOperation = context.requireSpecialist(OperationAgent.TYPE).getOperation(RequestOperation.TYPE);
+    requestOperation.setKind(RequestOperation.Kind.INFO);
+    requestOperation.addOk();
+    requestOperation.perform(message);
+}
+workflowable.delete();
+context.doTransition("->Ende");

@@ -1,0 +1,9 @@
+<div class="item">
+  <div class="ow-img wt-img-effect zoom-slow" $CMS_VALUE(editorId(editorName:"st_media", resolution:"product_teaser"))$>
+    <a href="javascript:void(0);">
+	$CMS_IF(st_media != null)$
+	  <img src="$CMS_REF(st_media, resolution:"product_teaser")$" alt="$CMS_VALUE(if(st_media_alt_text.isEmpty,"",st_media_alt_text.convert2()))$" />
+	$CMS_END_IF$
+	</a>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SITENODE id="1425558655277621015" name="imprint" startnodeid="4151253816892235589">
+	<LANG displayname="Impressum" language="DE"/>
+	<LANG displayname="Imprint" language="EN"/>
+	<NODE_LANG_SPEC label="Impressum" language="DE" visible="0"/>
+	<NODE_LANG_SPEC label="Imprint" language="EN" visible="0"/>
+</SITENODE>

@@ -1,0 +1,12 @@
+[self]
+uid=news_link
+gid=3316d2c1-a884-4d3b-a9f5-7322cfbdfb81
+uidType=TEMPLATESTORE_LINKTEMPLATE
+class=de.espirit.firstspirit.store.access.templatestore.LinkTemplateImpl
+
+[optionalId]
+uid=news
+gid=9ef61052-582e-4678-a238-7c20e128debc
+uidType=CONTENTSTORE
+class=de.espirit.firstspirit.store.access.contentstore.Content2Impl
+

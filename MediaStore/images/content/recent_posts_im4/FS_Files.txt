@@ -1,0 +1,10 @@
+# mimeType        name
+text/plain;UTF-8  FS_Info.txt
+text/plain;UTF-8  FS_References.txt
+image/jpeg        Picture_recent-posts-im4_ORIGINAL.jpg
+image/jpeg        Picture_recent-posts-im4_banner_slider.jpg
+image/jpeg        Picture_recent-posts-im4_landscape.jpg
+image/jpeg        Picture_recent-posts-im4_portrait.jpg
+image/jpeg        Picture_recent-posts-im4_product_teaser.jpg
+text/xml;UTF-8    StoreElement.xml
+text/xml          meta.xml

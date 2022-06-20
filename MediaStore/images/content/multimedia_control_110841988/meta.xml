@@ -1,0 +1,815 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='md_creation_date'><DATE>1637182120835</DATE></FIELD>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Tablet Computer",
+        "confidence" : 97.3959,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.46023786,
+            "height" : 0.52749485,
+            "left" : 0.2669745,
+            "top" : 0.2826159
+          },
+          "confidence" : 97.3959
+        } ],
+        "parents" : [ {
+          "name" : "Computer"
+        }, {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Electronics",
+        "confidence" : 97.3959,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Computer",
+        "confidence" : 97.3959,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Person",
+        "confidence" : 95.75005,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.21397695,
+            "height" : 0.41060513,
+            "left" : 0.21420664,
+            "top" : 0.57504064
+          },
+          "confidence" : 95.75005
+        }, {
+          "boundingBox" : {
+            "width" : 0.64221525,
+            "height" : 0.5776986,
+            "left" : 0.24123141,
+            "top" : 0.420653
+          },
+          "confidence" : 94.45134
+        } ],
+        "parents" : [ ]
+      }, {
+        "name" : "Human",
+        "confidence" : 95.75005,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Hand",
+        "confidence" : 72.68429,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "White Board",
+        "confidence" : 61.44371,
+        "instances" : [ ],
+        "parents" : [ ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "2.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ {
+        "detectedText" : "Smart Home",
+        "type" : "LINE",
+        "id" : 0,
+        "parentId" : null,
+        "confidence" : 99.489334,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.064778924,
+            "height" : 0.015405655,
+            "left" : 0.35255852,
+            "top" : 0.33480397
+          },
+          "polygon" : [ {
+            "x" : 0.3527491,
+            "y" : 0.33480397
+          }, {
+            "x" : 0.41733745,
+            "y" : 0.33564946
+          }, {
+            "x" : 0.41714683,
+            "y" : 0.35020962
+          }, {
+            "x" : 0.35255852,
+            "y" : 0.3493641
+          } ]
+        }
+      }, {
+        "detectedText" : "Home",
+        "type" : "LINE",
+        "id" : 1,
+        "parentId" : null,
+        "confidence" : 99.42056,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.023428345,
+            "height" : 0.009765625,
+            "left" : 0.43017045,
+            "top" : 0.41308594
+          },
+          "polygon" : [ {
+            "x" : 0.43017045,
+            "y" : 0.41308594
+          }, {
+            "x" : 0.4535988,
+            "y" : 0.41308594
+          }, {
+            "x" : 0.4535988,
+            "y" : 0.42285156
+          }, {
+            "x" : 0.43017045,
+            "y" : 0.42285156
+          } ]
+        }
+      }, {
+        "detectedText" : "17°",
+        "type" : "LINE",
+        "id" : 2,
+        "parentId" : null,
+        "confidence" : 99.933235,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.026682282,
+            "height" : 0.024414062,
+            "left" : 0.6195496,
+            "top" : 0.43359375
+          },
+          "polygon" : [ {
+            "x" : 0.6195496,
+            "y" : 0.43359375
+          }, {
+            "x" : 0.64623183,
+            "y" : 0.43359375
+          }, {
+            "x" : 0.64623183,
+            "y" : 0.4580078
+          }, {
+            "x" : 0.6195496,
+            "y" : 0.4580078
+          } ]
+        }
+      }, {
+        "detectedText" : "22.6°",
+        "type" : "LINE",
+        "id" : 3,
+        "parentId" : null,
+        "confidence" : 99.67133,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.040999603,
+            "height" : 0.024414062,
+            "left" : 0.37290114,
+            "top" : 0.43945312
+          },
+          "polygon" : [ {
+            "x" : 0.37290114,
+            "y" : 0.43945312
+          }, {
+            "x" : 0.41390076,
+            "y" : 0.43945312
+          }, {
+            "x" : 0.41390076,
+            "y" : 0.4638672
+          }, {
+            "x" : 0.37290114,
+            "y" : 0.4638672
+          } ]
+        }
+      }, {
+        "detectedText" : "CLOUDY",
+        "type" : "LINE",
+        "id" : 4,
+        "parentId" : null,
+        "confidence" : 98.805984,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.035793304,
+            "height" : 0.01171875,
+            "left" : 0.61499405,
+            "top" : 0.46777344
+          },
+          "polygon" : [ {
+            "x" : 0.61499405,
+            "y" : 0.46777344
+          }, {
+            "x" : 0.65078735,
+            "y" : 0.46777344
+          }, {
+            "x" : 0.65078735,
+            "y" : 0.4794922
+          }, {
+            "x" : 0.61499405,
+            "y" : 0.4794922
+          } ]
+        }
+      }, {
+        "detectedText" : "45%",
+        "type" : "LINE",
+        "id" : 5,
+        "parentId" : null,
+        "confidence" : 99.47642,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.016920472,
+            "height" : 0.01171875,
+            "left" : 0.40869445,
+            "top" : 0.5419922
+          },
+          "polygon" : [ {
+            "x" : 0.40869445,
+            "y" : 0.5419922
+          }, {
+            "x" : 0.42561492,
+            "y" : 0.5419922
+          }, {
+            "x" : 0.42561492,
+            "y" : 0.55371094
+          }, {
+            "x" : 0.40869445,
+            "y" : 0.55371094
+          } ]
+        }
+      }, {
+        "detectedText" : "Monday",
+        "type" : "LINE",
+        "id" : 6,
+        "parentId" : null,
+        "confidence" : 98.476456,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.031237792,
+            "height" : 0.013671875,
+            "left" : 0.53299487,
+            "top" : 0.5732422
+          },
+          "polygon" : [ {
+            "x" : 0.53299487,
+            "y" : 0.5732422
+          }, {
+            "x" : 0.56423265,
+            "y" : 0.5732422
+          }, {
+            "x" : 0.56423265,
+            "y" : 0.58691406
+          }, {
+            "x" : 0.53299487,
+            "y" : 0.58691406
+          } ]
+        }
+      }, {
+        "detectedText" : "Tuesday Tednesday",
+        "type" : "LINE",
+        "id" : 7,
+        "parentId" : null,
+        "confidence" : 99.786514,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.08785629,
+            "height" : 0.0146484375,
+            "left" : 0.57855,
+            "top" : 0.5732421
+          },
+          "polygon" : [ {
+            "x" : 0.57855,
+            "y" : 0.5732421
+          }, {
+            "x" : 0.6664063,
+            "y" : 0.5732421
+          }, {
+            "x" : 0.6664063,
+            "y" : 0.58789057
+          }, {
+            "x" : 0.57855,
+            "y" : 0.58789057
+          } ]
+        }
+      }, {
+        "detectedText" : "Camera",
+        "type" : "LINE",
+        "id" : 8,
+        "parentId" : null,
+        "confidence" : 98.02954,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.030587006,
+            "height" : 0.0126953125,
+            "left" : 0.61108935,
+            "top" : 0.71972656
+          },
+          "polygon" : [ {
+            "x" : 0.61108935,
+            "y" : 0.71972656
+          }, {
+            "x" : 0.6416763,
+            "y" : 0.71972656
+          }, {
+            "x" : 0.6416763,
+            "y" : 0.7324219
+          }, {
+            "x" : 0.61108935,
+            "y" : 0.7324219
+          } ]
+        }
+      }, {
+        "detectedText" : "Music",
+        "type" : "LINE",
+        "id" : 9,
+        "parentId" : null,
+        "confidence" : 97.32128,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.025380706,
+            "height" : 0.013671875,
+            "left" : 0.4217102,
+            "top" : 0.7207031
+          },
+          "polygon" : [ {
+            "x" : 0.4217102,
+            "y" : 0.7207031
+          }, {
+            "x" : 0.44709092,
+            "y" : 0.7207031
+          }, {
+            "x" : 0.44709092,
+            "y" : 0.734375
+          }, {
+            "x" : 0.4217102,
+            "y" : 0.734375
+          } ]
+        }
+      }, {
+        "detectedText" : "Network",
+        "type" : "LINE",
+        "id" : 10,
+        "parentId" : null,
+        "confidence" : 99.449196,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.033190154,
+            "height" : 0.0126953125,
+            "left" : 0.48418579,
+            "top" : 0.7216797
+          },
+          "polygon" : [ {
+            "x" : 0.48418579,
+            "y" : 0.7216797
+          }, {
+            "x" : 0.51737595,
+            "y" : 0.7216797
+          }, {
+            "x" : 0.51737595,
+            "y" : 0.734375
+          }, {
+            "x" : 0.48418579,
+            "y" : 0.734375
+          } ]
+        }
+      }, {
+        "detectedText" : "Security",
+        "type" : "LINE",
+        "id" : 11,
+        "parentId" : null,
+        "confidence" : 100.0,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.03188858,
+            "height" : 0.0126953125,
+            "left" : 0.5486137,
+            "top" : 0.7226562
+          },
+          "polygon" : [ {
+            "x" : 0.5486137,
+            "y" : 0.7226562
+          }, {
+            "x" : 0.58050233,
+            "y" : 0.7226562
+          }, {
+            "x" : 0.58050233,
+            "y" : 0.7353515
+          }, {
+            "x" : 0.5486137,
+            "y" : 0.7353515
+          } ]
+        }
+      }, {
+        "detectedText" : "Smart",
+        "type" : "WORD",
+        "id" : 12,
+        "parentId" : 0,
+        "confidence" : 99.28674,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.030901527,
+            "height" : 0.014960697,
+            "left" : 0.35256952,
+            "top" : 0.33480483
+          },
+          "polygon" : [ {
+            "x" : 0.3528166,
+            "y" : 0.33480483
+          }, {
+            "x" : 0.38347107,
+            "y" : 0.33604804
+          }, {
+            "x" : 0.38322398,
+            "y" : 0.34976554
+          }, {
+            "x" : 0.35256952,
+            "y" : 0.34852234
+          } ]
+        }
+      }, {
+        "detectedText" : "Home",
+        "type" : "WORD",
+        "id" : 13,
+        "parentId" : 0,
+        "confidence" : 99.69193,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.030587006,
+            "height" : 0.013671875,
+            "left" : 0.38656768,
+            "top" : 0.3359375
+          },
+          "polygon" : [ {
+            "x" : 0.38656768,
+            "y" : 0.3359375
+          }, {
+            "x" : 0.4171547,
+            "y" : 0.3359375
+          }, {
+            "x" : 0.4171547,
+            "y" : 0.34960938
+          }, {
+            "x" : 0.38656768,
+            "y" : 0.34960938
+          } ]
+        }
+      }, {
+        "detectedText" : "Home",
+        "type" : "WORD",
+        "id" : 14,
+        "parentId" : 1,
+        "confidence" : 99.42056,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.023428345,
+            "height" : 0.009765625,
+            "left" : 0.43017045,
+            "top" : 0.41308594
+          },
+          "polygon" : [ {
+            "x" : 0.43017045,
+            "y" : 0.41308594
+          }, {
+            "x" : 0.4535988,
+            "y" : 0.41308594
+          }, {
+            "x" : 0.4535988,
+            "y" : 0.42285156
+          }, {
+            "x" : 0.43017045,
+            "y" : 0.42285156
+          } ]
+        }
+      }, {
+        "detectedText" : "17°",
+        "type" : "WORD",
+        "id" : 15,
+        "parentId" : 2,
+        "confidence" : 99.933235,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.026682282,
+            "height" : 0.024414062,
+            "left" : 0.6195496,
+            "top" : 0.43359375
+          },
+          "polygon" : [ {
+            "x" : 0.6195496,
+            "y" : 0.43359375
+          }, {
+            "x" : 0.64623183,
+            "y" : 0.43359375
+          }, {
+            "x" : 0.64623183,
+            "y" : 0.4580078
+          }, {
+            "x" : 0.6195496,
+            "y" : 0.4580078
+          } ]
+        }
+      }, {
+        "detectedText" : "22.6°",
+        "type" : "WORD",
+        "id" : 16,
+        "parentId" : 3,
+        "confidence" : 99.67133,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.040999603,
+            "height" : 0.024414062,
+            "left" : 0.37290114,
+            "top" : 0.43945312
+          },
+          "polygon" : [ {
+            "x" : 0.37290114,
+            "y" : 0.43945312
+          }, {
+            "x" : 0.41390076,
+            "y" : 0.43945312
+          }, {
+            "x" : 0.41390076,
+            "y" : 0.4638672
+          }, {
+            "x" : 0.37290114,
+            "y" : 0.4638672
+          } ]
+        }
+      }, {
+        "detectedText" : "CLOUDY",
+        "type" : "WORD",
+        "id" : 17,
+        "parentId" : 4,
+        "confidence" : 98.805984,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.035793304,
+            "height" : 0.01171875,
+            "left" : 0.61499405,
+            "top" : 0.46777344
+          },
+          "polygon" : [ {
+            "x" : 0.61499405,
+            "y" : 0.46777344
+          }, {
+            "x" : 0.65078735,
+            "y" : 0.46777344
+          }, {
+            "x" : 0.65078735,
+            "y" : 0.4794922
+          }, {
+            "x" : 0.61499405,
+            "y" : 0.4794922
+          } ]
+        }
+      }, {
+        "detectedText" : "45%",
+        "type" : "WORD",
+        "id" : 18,
+        "parentId" : 5,
+        "confidence" : 99.47642,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.016920472,
+            "height" : 0.01171875,
+            "left" : 0.40869445,
+            "top" : 0.5419922
+          },
+          "polygon" : [ {
+            "x" : 0.40869445,
+            "y" : 0.5419922
+          }, {
+            "x" : 0.42561492,
+            "y" : 0.5419922
+          }, {
+            "x" : 0.42561492,
+            "y" : 0.55371094
+          }, {
+            "x" : 0.40869445,
+            "y" : 0.55371094
+          } ]
+        }
+      }, {
+        "detectedText" : "Monday",
+        "type" : "WORD",
+        "id" : 19,
+        "parentId" : 6,
+        "confidence" : 98.476456,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.031237792,
+            "height" : 0.013671875,
+            "left" : 0.53299487,
+            "top" : 0.5732422
+          },
+          "polygon" : [ {
+            "x" : 0.53299487,
+            "y" : 0.5732422
+          }, {
+            "x" : 0.56423265,
+            "y" : 0.5732422
+          }, {
+            "x" : 0.56423265,
+            "y" : 0.58691406
+          }, {
+            "x" : 0.53299487,
+            "y" : 0.58691406
+          } ]
+        }
+      }, {
+        "detectedText" : "Tuesday",
+        "type" : "WORD",
+        "id" : 20,
+        "parentId" : 7,
+        "confidence" : 99.836174,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.033190154,
+            "height" : 0.0126953125,
+            "left" : 0.57855,
+            "top" : 0.57421875
+          },
+          "polygon" : [ {
+            "x" : 0.57855,
+            "y" : 0.57421875
+          }, {
+            "x" : 0.6117401,
+            "y" : 0.57421875
+          }, {
+            "x" : 0.6117401,
+            "y" : 0.58691406
+          }, {
+            "x" : 0.57855,
+            "y" : 0.58691406
+          } ]
+        }
+      }, {
+        "detectedText" : "Tednesday",
+        "type" : "WORD",
+        "id" : 21,
+        "parentId" : 7,
+        "confidence" : 99.73686,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.043602753,
+            "height" : 0.0146484375,
+            "left" : 0.6228035,
+            "top" : 0.5732421
+          },
+          "polygon" : [ {
+            "x" : 0.6228035,
+            "y" : 0.5732421
+          }, {
+            "x" : 0.6664063,
+            "y" : 0.5732421
+          }, {
+            "x" : 0.6664063,
+            "y" : 0.58789057
+          }, {
+            "x" : 0.6228035,
+            "y" : 0.58789057
+          } ]
+        }
+      }, {
+        "detectedText" : "Camera",
+        "type" : "WORD",
+        "id" : 22,
+        "parentId" : 8,
+        "confidence" : 98.02954,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.030587006,
+            "height" : 0.0126953125,
+            "left" : 0.61108935,
+            "top" : 0.71972656
+          },
+          "polygon" : [ {
+            "x" : 0.61108935,
+            "y" : 0.71972656
+          }, {
+            "x" : 0.6416763,
+            "y" : 0.71972656
+          }, {
+            "x" : 0.6416763,
+            "y" : 0.7324219
+          }, {
+            "x" : 0.61108935,
+            "y" : 0.7324219
+          } ]
+        }
+      }, {
+        "detectedText" : "Music",
+        "type" : "WORD",
+        "id" : 23,
+        "parentId" : 9,
+        "confidence" : 97.32128,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.025380706,
+            "height" : 0.013671875,
+            "left" : 0.4217102,
+            "top" : 0.7207031
+          },
+          "polygon" : [ {
+            "x" : 0.4217102,
+            "y" : 0.7207031
+          }, {
+            "x" : 0.44709092,
+            "y" : 0.7207031
+          }, {
+            "x" : 0.44709092,
+            "y" : 0.734375
+          }, {
+            "x" : 0.4217102,
+            "y" : 0.734375
+          } ]
+        }
+      }, {
+        "detectedText" : "Network",
+        "type" : "WORD",
+        "id" : 24,
+        "parentId" : 10,
+        "confidence" : 99.449196,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.033190154,
+            "height" : 0.0126953125,
+            "left" : 0.48418579,
+            "top" : 0.7216797
+          },
+          "polygon" : [ {
+            "x" : 0.48418579,
+            "y" : 0.7216797
+          }, {
+            "x" : 0.51737595,
+            "y" : 0.7216797
+          }, {
+            "x" : 0.51737595,
+            "y" : 0.734375
+          }, {
+            "x" : 0.48418579,
+            "y" : 0.734375
+          } ]
+        }
+      }, {
+        "detectedText" : "Security",
+        "type" : "WORD",
+        "id" : 25,
+        "parentId" : 11,
+        "confidence" : 100.0,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.03188858,
+            "height" : 0.0126953125,
+            "left" : 0.5486137,
+            "top" : 0.7226562
+          },
+          "polygon" : [ {
+            "x" : 0.5486137,
+            "y" : 0.7226562
+          }, {
+            "x" : 0.58050233,
+            "y" : 0.7226562
+          }, {
+            "x" : 0.58050233,
+            "y" : 0.7353515
+          }, {
+            "x" : 0.5486137,
+            "y" : 0.7353515
+          } ]
+        }
+      } ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "5.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Computer #White Board #Tablet Computer #Person #Electronics #Human #Hand"
+  }
+}</TEXT></FIELD>
+</FIELDS>

@@ -1,0 +1,6 @@
+[self]
+uid=purl
+gid=94159c1e-cdc4-42f4-a052-eca5dd80e382
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+

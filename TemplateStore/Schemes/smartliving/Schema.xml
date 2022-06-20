@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element temporal="1" version="4.0">
+		<xs:complexType uuid="8433d25b-379b-4196-9e2e-738866dd686a" vName="author">
+			<xs:sequence>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="e44dee66-1118-4ae1-b428-a9b9ea863b4b" vName="changed by"/>
+				<xs:element hidden="1" javaType="java.util.UUID" length="16" nullable="1" readonly="1" type="xs:uuid" uuid="2544a887-91bc-490f-ab4a-e29d69d5133c" vName="FS_GID"/>
+				<xs:element hidden="1" javaType="java.lang.Integer" type="xs:long" uuid="afd14a22-ee99-4e31-9b69-e40056040b41" vName="fs_id"/>
+				<xs:element hidden="1" javaType="de.espirit.or.impl.schema.JsonValue" length="65535" nullable="1" type="xs:json" uuid="f08848f3-7d39-49b2-ab4a-a26f6e2e8c9d" vName="FS_META_DATA"/>
+				<xs:element javaType="java.lang.String" length="128" nullable="1" type="xs:string" uuid="a6944df1-0e11-44af-b33d-20bab874fc84" vName="name"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="a02d14dc-e98b-4752-b96c-08eb43e88227" vName="released by"/>
+				<xs:element hidden="1" javaType="java.awt.Color" nullable="1" type="xs:integer" uuid="f51ad56f-0144-4ab8-9801-3c12cc982cbb" vName="wf col"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="cb6f0184-2b5c-43b9-82ba-cf9358e5a0d0" vName="wf id"/>
+				<xs:element type="xs:long" uuid="3cb064b6-48fe-4dc9-a606-bfe1468d7ab8" vName="fs_release_to" visible="0"/>
+				<xs:element type="xs:long" uuid="782ba0b0-51a8-4360-8fc8-94f921e5e922" vName="fs_valid_from" visible="0"/>
+				<xs:element type="xs:long" uuid="64f9db2b-11bb-4e9f-bf0b-c3b4a628a622" vName="fs_valid_to" visible="0"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key vName="pk_author">
+			<xs:selector xpath="author"/>
+			<xs:attribute xpath="fs_id"/>
+			<xs:attribute xpath="fs_release_to"/>
+			<xs:attribute xpath="fs_valid_from"/>
+			<xs:attribute xpath="fs_valid_to"/>
+		</xs:key>
+		<xs:complexType uuid="f0838d00-4111-4fd2-860f-9713eff9e21c" vName="rt_author_news_authorlist" visible="0">
+			<xs:sequence>
+				<xs:element type="xs:long" uuid="19102c68-985b-45a3-b7bc-85e42c145d0f" vName="auth_fs_id" visible="0"/>
+				<xs:element type="xs:long" uuid="393e66b6-051d-4e60-905a-eb127e083c82" vName="fs_release_to" visible="0"/>
+				<xs:element type="xs:long" uuid="8bf8cbd0-12f1-4142-860f-ae3c6611ec37" vName="fs_valid_from" visible="0"/>
+				<xs:element type="xs:long" uuid="113ffe14-b8ff-41a1-8fd7-0ed81f7dc115" vName="fs_valid_to" visible="0"/>
+				<xs:element type="xs:long" uuid="4deed5ad-d63a-449e-9114-c84b5d02e92d" vName="news_fs_id" visible="0"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key vName="pk_rt_AUTHOR_NEWS_authorList">
+			<xs:selector xpath="rt_author_news_authorlist"/>
+			<xs:attribute xpath="auth_fs_id"/>
+			<xs:attribute xpath="fs_release_to"/>
+			<xs:attribute xpath="fs_valid_from"/>
+			<xs:attribute xpath="fs_valid_to"/>
+			<xs:attribute xpath="news_fs_id"/>
+		</xs:key>
+		<xs:keyref refer="news" source="author" tfield="newsList" vName="fk_rt_AUTHOR_NEWS_authorList_NEWS">
+			<xs:selector xpath="rt_author_news_authorlist"/>
+			<xs:attribute xpath="news_fs_id"/>
+		</xs:keyref>
+		<xs:keyref refer="author" source="news" tfield="authorList" vName="fk_rt_AUTHOR_NEWS_authorList_AUTHOR">
+			<xs:selector xpath="rt_author_news_authorlist"/>
+			<xs:attribute xpath="auth_fs_id"/>
+		</xs:keyref>
+		<xs:complexType uuid="ec2ee6e6-cb9e-48a5-a78b-1a8eeaedd1ca" vName="category">
+			<xs:sequence>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="3169ca80-4bcd-4a85-b173-a23b821e2df6" vName="changed by"/>
+				<xs:element hidden="1" javaType="java.util.UUID" length="16" nullable="1" readonly="1" type="xs:uuid" uuid="eafa2bbc-a7ef-4a87-8411-1f5d9d30cbba" vName="FS_GID"/>
+				<xs:element hidden="1" javaType="java.lang.Integer" type="xs:long" uuid="5386d2c6-4d47-42ed-ac91-950ce10b00a0" vName="fs_id"/>
+				<xs:element hidden="1" javaType="de.espirit.or.impl.schema.JsonValue" length="65535" nullable="1" type="xs:json" uuid="0a10fe42-03b7-4b6a-840f-d145a9bab863" vName="FS_META_DATA"/>
+				<xs:element javaType="java.lang.String" length="512" nullable="1" type="xs:string" uuid="45fb4dc9-7fb3-447e-9267-5b0a5dc292ad" vName="name_DE"/>
+				<xs:element javaType="java.lang.String" length="512" nullable="1" type="xs:string" uuid="773be7a3-14ab-4d81-a509-54f1c01c5c18" vName="name_EN"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="056ff908-b8f6-4dad-ae9d-a046ad173e58" vName="released by"/>
+				<xs:element hidden="1" javaType="java.awt.Color" nullable="1" type="xs:integer" uuid="01dfea98-f651-4c76-b3bc-9ad96f7465e4" vName="wf col"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="6068513a-79c0-4c02-972b-6fe306369d47" vName="wf id"/>
+				<xs:element type="xs:long" uuid="380b6d52-85d2-4981-9844-a10cae69758d" vName="fs_release_to" visible="0"/>
+				<xs:element type="xs:long" uuid="60eeed8b-2124-401d-ac1a-764e8e0d97e7" vName="fs_valid_from" visible="0"/>
+				<xs:element type="xs:long" uuid="cf5e853f-df31-4d26-a165-e89354b2b974" vName="fs_valid_to" visible="0"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key vName="pk_category">
+			<xs:selector xpath="category"/>
+			<xs:attribute xpath="fs_id"/>
+			<xs:attribute xpath="fs_release_to"/>
+			<xs:attribute xpath="fs_valid_from"/>
+			<xs:attribute xpath="fs_valid_to"/>
+		</xs:key>
+		<xs:keyref field="newsList" refer="category" tfield="category" vName="fk_NEWS_CATEGORY">
+			<xs:selector xpath="news"/>
+			<xs:attribute xpath="cate_fs_id"/>
+		</xs:keyref>
+		<xs:complexType uuid="8ac7cc29-6cd1-4ef5-8137-dcdec2064e0c" vName="compatibility">
+			<xs:sequence>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="cbcaeadc-f912-4c7b-a9d4-2a793672ac6e" vName="changed by"/>
+				<xs:element hidden="1" javaType="java.util.UUID" length="16" nullable="1" readonly="1" type="xs:uuid" uuid="cc32f755-fde8-4ac9-a3a5-c0e79b6e0d1e" vName="FS_GID"/>
+				<xs:element hidden="1" javaType="java.lang.Integer" type="xs:long" uuid="0c150999-54d6-4303-aabd-9281b649b9ca" vName="fs_id"/>
+				<xs:element hidden="1" javaType="de.espirit.or.impl.schema.JsonValue" length="65535" nullable="1" type="xs:json" uuid="47519b69-2302-40da-9063-8cfea105423c" vName="FS_META_DATA"/>
+				<xs:element javaType="java.lang.String" length="64" nullable="1" type="xs:string" uuid="0f2c7c17-13a5-400a-bdbb-d5bc863ef3f7" vName="name_DE"/>
+				<xs:element javaType="java.lang.String" length="64" nullable="1" type="xs:string" uuid="19b9a5c3-385c-4b8d-af0f-e5f6798a0445" vName="name_EN"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="399b4a95-88f2-4714-88a9-72aaaa92df32" vName="released by"/>
+				<xs:element hidden="1" javaType="java.awt.Color" nullable="1" type="xs:integer" uuid="d7d70f67-a7bc-416a-aa39-296dfa6141bc" vName="wf col"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="8c1a8754-1b46-480b-ba22-5a938e428f73" vName="wf id"/>
+				<xs:element type="xs:long" uuid="62016379-b893-49eb-b105-385069ce0e09" vName="fs_release_to" visible="0"/>
+				<xs:element type="xs:long" uuid="a3ba11ac-de5c-43fd-a676-562938309ae3" vName="fs_valid_from" visible="0"/>
+				<xs:element type="xs:long" uuid="7f38fb84-1eee-403e-8910-86aba5c415e1" vName="fs_valid_to" visible="0"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key vName="pk_compatibility">
+			<xs:selector xpath="compatibility"/>
+			<xs:attribute xpath="fs_id"/>
+			<xs:attribute xpath="fs_release_to"/>
+			<xs:attribute xpath="fs_valid_from"/>
+			<xs:attribute xpath="fs_valid_to"/>
+		</xs:key>
+		<xs:complexType uuid="1ab6d89f-bede-42bc-8c02-be3bdb809f58" vName="rt_compatibility_product_compatibilitylist3" visible="0">
+			<xs:sequence>
+				<xs:element type="xs:long" uuid="abf0546f-961b-446f-9a7a-f3cc933a1f9c" vName="comp_fs_id" visible="0"/>
+				<xs:element type="xs:long" uuid="f17cd95a-ba5f-42fe-9096-82d3a497fb63" vName="fs_release_to" visible="0"/>
+				<xs:element type="xs:long" uuid="6b020ecc-322a-471d-8ad1-7c7827c37822" vName="fs_valid_from" visible="0"/>
+				<xs:element type="xs:long" uuid="6aa64c7e-422b-4839-b2d7-1fe8f51beb9b" vName="fs_valid_to" visible="0"/>
+				<xs:element type="xs:long" uuid="9c73b971-888d-41c5-b853-1a7cb9c6961a" vName="prod_fs_id" visible="0"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key vName="pk_rt_compatibility_product_compatibilityList">
+			<xs:selector xpath="rt_compatibility_product_compatibilitylist3"/>
+			<xs:attribute xpath="comp_fs_id"/>
+			<xs:attribute xpath="fs_release_to"/>
+			<xs:attribute xpath="fs_valid_from"/>
+			<xs:attribute xpath="fs_valid_to"/>
+			<xs:attribute xpath="prod_fs_id"/>
+		</xs:key>
+		<xs:keyref refer="product" source="compatibility" tfield="productList" vName="fk_rt_compatibility_product_compatibilityList_product">
+			<xs:selector xpath="rt_compatibility_product_compatibilitylist3"/>
+			<xs:attribute xpath="prod_fs_id"/>
+		</xs:keyref>
+		<xs:keyref refer="compatibility" source="product" tfield="compatibilityList" vName="fk_rt_compatibility_product_compatibilityList_compatibility">
+			<xs:selector xpath="rt_compatibility_product_compatibilitylist3"/>
+			<xs:attribute xpath="comp_fs_id"/>
+		</xs:keyref>
+		<xs:complexType uuid="bec9270d-9d89-43e5-8036-29a311748d7e" vName="contacts">
+			<xs:sequence>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="d9829c26-13e8-4b51-8371-d331cdb19c8c" vName="changed by"/>
+				<xs:element javaType="java.lang.String" length="256" nullable="1" type="xs:string" uuid="b1c6469d-ff88-4f96-a1d7-0a7a676ff549" vName="department_DE"/>
+				<xs:element javaType="java.lang.String" length="256" nullable="1" type="xs:string" uuid="5c21427f-effd-4a23-9f79-e0aecdead017" vName="department_EN"/>
+				<xs:element javaType="java.lang.String" length="256" nullable="1" type="xs:string" uuid="eb5f74e5-af5d-48fc-9555-4f8eb8d23142" vName="email"/>
+				<xs:element hidden="1" javaType="java.util.UUID" length="16" nullable="1" readonly="1" type="xs:uuid" uuid="2913efb4-34aa-408a-8908-97d5a68a2b97" vName="FS_GID"/>
+				<xs:element hidden="1" javaType="java.lang.Integer" type="xs:long" uuid="77ef1cd9-7ea7-479b-8d2e-63d155ffcb38" vName="fs_id"/>
+				<xs:element hidden="1" javaType="de.espirit.or.impl.schema.JsonValue" length="65535" nullable="1" type="xs:json" uuid="48a8bc61-c260-40ca-876c-9b5c6f80c7d2" vName="FS_META_DATA"/>
+				<xs:element javaType="de.espirit.firstspirit.client.editorcomponent.EditorWrapper" length="65535" nullable="1" type="xml" uuid="b8de4021-d435-4492-aa26-d33003dfd2bd" vName="image"/>
+				<xs:element javaType="java.lang.String" length="256" nullable="1" type="xs:string" uuid="9336996e-ac90-4fcf-9a5c-97d068c8ae80" vName="name"/>
+				<xs:element javaType="java.lang.String" length="256" nullable="1" type="xs:string" uuid="8dc76bcf-a14e-438b-ba79-e84813f106ca" vName="phone"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="9a7d3214-9916-4a3f-9729-56c8a0e5d47d" vName="released by"/>
+				<xs:element hidden="1" javaType="java.awt.Color" nullable="1" type="xs:integer" uuid="0cf61402-9cb1-4fae-a5b8-a67b60db5d22" vName="wf col"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="dab931c4-f151-4b45-b2c7-d185d0e47ca0" vName="wf id"/>
+				<xs:element type="xs:long" uuid="15312725-8013-4bb6-a1db-69c41224a371" vName="fs_release_to" visible="0"/>
+				<xs:element type="xs:long" uuid="58978629-a459-4cb5-9586-3875615c9229" vName="fs_valid_from" visible="0"/>
+				<xs:element type="xs:long" uuid="a7409ef5-f872-4840-bc1e-2ebff36fcd44" vName="fs_valid_to" visible="0"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key vName="pk_contacts">
+			<xs:selector xpath="contacts"/>
+			<xs:attribute xpath="fs_id"/>
+			<xs:attribute xpath="fs_release_to"/>
+			<xs:attribute xpath="fs_valid_from"/>
+			<xs:attribute xpath="fs_valid_to"/>
+		</xs:key>
+		<xs:complexType uuid="11af7f9b-be65-4eb3-87bc-b5807577797f" vName="continent">
+			<xs:sequence>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="a51baf2a-acee-4e06-8039-5025efcdc717" vName="changed by"/>
+				<xs:element javaType="java.lang.String" length="1024" nullable="1" type="xs:string" uuid="454988fd-7a52-4adf-9e3a-01356d19c5ba" vName="continent_DE"/>
+				<xs:element javaType="java.lang.String" length="1024" nullable="1" type="xs:string" uuid="297bef9c-b1d7-4bc2-bb93-a9c3d789899e" vName="continent_EN"/>
+				<xs:element hidden="1" javaType="java.util.UUID" length="16" nullable="1" readonly="1" type="xs:uuid" uuid="2369c28d-c628-4b9d-af0e-0f48051552aa" vName="FS_GID"/>
+				<xs:element hidden="1" javaType="java.lang.Integer" type="xs:long" uuid="7e188873-b6d2-46dd-b82a-173999c00318" vName="fs_id"/>
+				<xs:element hidden="1" javaType="de.espirit.or.impl.schema.JsonValue" length="65535" nullable="1" type="xs:json" uuid="34e641d5-4e3c-4ba0-831b-bf285c21a022" vName="FS_META_DATA"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="10ff6b12-3c79-47d8-9a12-c3e4bd8ee952" vName="released by"/>
+				<xs:element hidden="1" javaType="java.awt.Color" nullable="1" type="xs:integer" uuid="3995ff71-8a89-4db7-89f4-48c927ea730b" vName="wf col"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="a1c5aa96-c6e8-40b6-b465-f42fbf598ecd" vName="wf id"/>
+				<xs:element type="xs:long" uuid="4b7583da-3e32-4f57-abf7-fc052cac5816" vName="fs_release_to" visible="0"/>
+				<xs:element type="xs:long" uuid="504bdf3e-ec90-4484-9efa-13fd9f661bd4" vName="fs_valid_from" visible="0"/>
+				<xs:element type="xs:long" uuid="1329273c-2184-4f9a-8a2e-c8c2bf4e9397" vName="fs_valid_to" visible="0"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key vName="pk_continent">
+			<xs:selector xpath="continent"/>
+			<xs:attribute xpath="fs_id"/>
+			<xs:attribute xpath="fs_release_to"/>
+			<xs:attribute xpath="fs_valid_from"/>
+			<xs:attribute xpath="fs_valid_to"/>
+		</xs:key>
+		<xs:keyref field="countryList" refer="continent" tfield="continent" vName="fk_country_continent">
+			<xs:selector xpath="country"/>
+			<xs:attribute xpath="cont_fs_id"/>
+		</xs:keyref>
+		<xs:complexType uuid="9a8a1ccd-a099-44b4-a659-b676591b9651" vName="country">
+			<xs:sequence>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="85a0cca4-df40-4722-a481-6d9499cddabf" vName="changed by"/>
+				<xs:element javaType="java.lang.String" length="1024" nullable="1" type="xs:string" uuid="0650f56d-0877-494a-9c03-543357e25ad3" vName="country_DE"/>
+				<xs:element javaType="java.lang.String" length="1024" nullable="1" type="xs:string" uuid="945a2b37-1b1e-4a1a-bd01-a0516931bc1f" vName="country_EN"/>
+				<xs:element hidden="1" javaType="java.util.UUID" length="16" nullable="1" readonly="1" type="xs:uuid" uuid="a7884be2-0403-4dbd-8c33-3567dd1f33b2" vName="FS_GID"/>
+				<xs:element hidden="1" javaType="java.lang.Integer" type="xs:long" uuid="c2b2a30a-c225-458f-90f5-f4250e441af1" vName="fs_id"/>
+				<xs:element hidden="1" javaType="de.espirit.or.impl.schema.JsonValue" length="65535" nullable="1" type="xs:json" uuid="67018516-b2b8-4b6a-951c-456a03a9f13d" vName="FS_META_DATA"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="3805c4be-659d-4102-ab5a-7136f43eef95" vName="released by"/>
+				<xs:element hidden="1" javaType="java.awt.Color" nullable="1" type="xs:integer" uuid="2d80c528-b899-470e-b0be-1491cdbb21b3" vName="wf col"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="80cbceda-571a-49a0-922b-be65bccf317d" vName="wf id"/>
+				<xs:element nullable="1" type="xs:long" uuid="6d786ebf-81fc-4ddf-9717-c7a379f1e89b" vName="cont_fs_id" visible="0"/>
+				<xs:element type="xs:long" uuid="ebc18191-47a7-4c52-8f2b-6609e58231ca" vName="fs_release_to" visible="0"/>
+				<xs:element type="xs:long" uuid="85d5ab06-5c98-4236-b95e-c752aae10777" vName="fs_valid_from" visible="0"/>
+				<xs:element type="xs:long" uuid="62a468d8-3e71-44aa-91d7-bcc85521bd43" vName="fs_valid_to" visible="0"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key vName="pk_country">
+			<xs:selector xpath="country"/>
+			<xs:attribute xpath="fs_id"/>
+			<xs:attribute xpath="fs_release_to"/>
+			<xs:attribute xpath="fs_valid_from"/>
+			<xs:attribute xpath="fs_valid_to"/>
+		</xs:key>
+		<xs:keyref field="locationsList" refer="country" tfield="country" vName="fk_locations_country">
+			<xs:selector xpath="locations"/>
+			<xs:attribute xpath="coun_fs_id"/>
+		</xs:keyref>
+		<xs:complexType uuid="4eb947de-76a7-465a-80dd-22684cc28968" vName="locations">
+			<xs:sequence>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="63947623-eba6-4e7e-9ccb-d59529011573" vName="changed by"/>
+				<xs:element javaType="java.lang.String" length="128" nullable="1" type="xs:string" uuid="f8f8d7f2-9297-4d7b-9b79-802cec4f5863" vName="city"/>
+				<xs:element javaType="java.lang.String" length="1024" nullable="1" type="xs:string" uuid="14084ebb-466a-41b3-8101-74df99d7835e" vName="description_DE"/>
+				<xs:element javaType="java.lang.String" length="1024" nullable="1" type="xs:string" uuid="9515f2af-fc3b-4186-b62f-094f01ba166b" vName="description_EN"/>
+				<xs:element javaType="java.lang.String" length="1024" nullable="1" type="xs:string" uuid="4ac42546-e3b8-4812-b1b8-5b5094b64dd0" vName="email"/>
+				<xs:element javaType="java.lang.String" length="64" nullable="1" type="xs:string" uuid="2bec602c-cc4b-4da0-bd5f-cad2e16039ff" vName="fax"/>
+				<xs:element javaType="java.lang.String" length="64" nullable="1" type="xs:string" uuid="d1c4e8f3-6c28-498f-b044-56e584d8ee74" vName="firma"/>
+				<xs:element hidden="1" javaType="java.util.UUID" length="16" nullable="1" readonly="1" type="xs:uuid" uuid="6930a5f5-1b92-4f74-b748-558cfbcd9c2a" vName="FS_GID"/>
+				<xs:element hidden="1" javaType="java.lang.Integer" type="xs:long" uuid="d9758db4-3d50-49b7-a3fa-cd25b3ef49a3" vName="fs_id"/>
+				<xs:element hidden="1" javaType="de.espirit.or.impl.schema.JsonValue" length="65535" nullable="1" type="xs:json" uuid="e647e93a-099a-434d-a1b7-4c63a40684ae" vName="FS_META_DATA"/>
+				<xs:element javaType="java.lang.String" length="64" nullable="1" type="xs:string" uuid="6ee20273-92e8-4641-bef8-2b973ee1cdb9" vName="lat"/>
+				<xs:element javaType="java.lang.String" length="128" nullable="1" type="xs:string" uuid="29fc668a-6088-4cc1-b081-76c30ebb7487" vName="locationtype"/>
+				<xs:element javaType="java.lang.String" length="64" nullable="1" type="xs:string" uuid="abe33fdc-2277-4a63-8ecd-7fdad294e872" vName="lon"/>
+				<xs:element javaType="java.lang.String" length="64" nullable="1" type="xs:string" uuid="55cba5f7-ad8c-47ad-abc3-1739e2c7a359" vName="phonenumber"/>
+				<xs:element javaType="java.lang.Integer" nullable="1" type="xs:integer" uuid="38b4fec6-d202-4c5d-96cc-657d36e91138" vName="plz"/>
+				<xs:element javaType="java.lang.Integer" nullable="1" type="xs:integer" uuid="c7ef5918-2432-4cdf-ad88-6a537c885391" vName="priority"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="e7ffc2c5-5fa7-4e59-8244-af9f17216eb2" vName="released by"/>
+				<xs:element javaType="java.lang.String" length="128" nullable="1" type="xs:string" uuid="23f4e2ad-ba8a-4b78-824f-17a6ab0287c1" vName="street"/>
+				<xs:element javaType="java.lang.String" length="2048" nullable="1" type="xs:string" uuid="9d43166e-2da2-4f59-bd06-3ac9429d1974" vName="website"/>
+				<xs:element hidden="1" javaType="java.awt.Color" nullable="1" type="xs:integer" uuid="d2a4ac6e-6d92-4ff8-a1f6-2a7ecc3c54f8" vName="wf col"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="a33f7b8d-d9d3-4c3b-b0f5-ad7761863f47" vName="wf id"/>
+				<xs:element nullable="1" type="xs:long" uuid="c9cf4d46-9a04-4232-8ce5-7dd64fd4d71b" vName="coun_fs_id" visible="0"/>
+				<xs:element type="xs:long" uuid="74b8079f-0890-4cc9-b023-8976447fed23" vName="fs_release_to" visible="0"/>
+				<xs:element type="xs:long" uuid="76d72ea4-bcb4-4bb1-9b66-9255aa77fc1f" vName="fs_valid_from" visible="0"/>
+				<xs:element type="xs:long" uuid="076f2191-cc41-4cfc-920f-d2b1a1efb3e7" vName="fs_valid_to" visible="0"/>
+				<xs:element nullable="1" type="xs:long" uuid="a1ea6892-55a8-4822-ab57-9f512be6c099" vName="type_fs_id" visible="0"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key vName="pk_locations">
+			<xs:selector xpath="locations"/>
+			<xs:attribute xpath="fs_id"/>
+			<xs:attribute xpath="fs_release_to"/>
+			<xs:attribute xpath="fs_valid_from"/>
+			<xs:attribute xpath="fs_valid_to"/>
+		</xs:key>
+		<xs:complexType uuid="fde6ce76-8ee7-4569-8198-9fa46a9917d2" vName="manufacturer">
+			<xs:sequence>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="3067e581-2272-4cb4-8fe0-7a1632f65382" vName="changed by"/>
+				<xs:element hidden="1" javaType="java.util.UUID" length="16" nullable="1" readonly="1" type="xs:uuid" uuid="14786927-4e26-48d5-90d3-b9864da926ee" vName="FS_GID"/>
+				<xs:element hidden="1" javaType="java.lang.Integer" type="xs:long" uuid="b685b59b-76c8-4399-875c-505caea2e98d" vName="fs_id"/>
+				<xs:element hidden="1" javaType="de.espirit.or.impl.schema.JsonValue" length="65535" nullable="1" type="xs:json" uuid="d6e245a6-72e6-427b-b435-d01c1f487241" vName="FS_META_DATA"/>
+				<xs:element javaType="java.lang.String" length="255" nullable="1" type="xs:string" uuid="06b0844f-1452-4bec-bec3-7810181403e4" vName="name_DE"/>
+				<xs:element javaType="java.lang.String" length="255" nullable="1" type="xs:string" uuid="7f200803-ac27-445a-bfc9-984f165e329b" vName="name_EN"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="f415173d-bcf5-4f50-b1e0-1de4d69018b0" vName="released by"/>
+				<xs:element hidden="1" javaType="java.awt.Color" nullable="1" type="xs:integer" uuid="0781ba5f-8da5-4ad4-90dc-1560db429645" vName="wf col"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="12b455f0-83ed-4c14-9c58-3111f186cd9e" vName="wf id"/>
+				<xs:element type="xs:long" uuid="8009705a-74ad-4cb8-9218-7f97ba2dee5a" vName="fs_release_to" visible="0"/>
+				<xs:element type="xs:long" uuid="e7825bef-cffa-4989-ab54-e1f88da70fc7" vName="fs_valid_from" visible="0"/>
+				<xs:element type="xs:long" uuid="60206fae-f297-4a8a-9aa9-44778a8ee2d1" vName="fs_valid_to" visible="0"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key vName="pk_manufacturer">
+			<xs:selector xpath="manufacturer"/>
+			<xs:attribute xpath="fs_id"/>
+			<xs:attribute xpath="fs_release_to"/>
+			<xs:attribute xpath="fs_valid_from"/>
+			<xs:attribute xpath="fs_valid_to"/>
+		</xs:key>
+		<xs:complexType uuid="bb74a2aa-1a4c-4054-a660-5a12c91815eb" vName="news">
+			<xs:sequence>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="d1e10b39-4497-4fb5-bf33-4c4b1ebca14a" vName="changed by"/>
+				<xs:element javaType="java.util.Date" nullable="1" type="xs:date" uuid="f33e358c-f242-416f-a30d-f22d394a897e" vName="date"/>
+				<xs:element javaType="de.espirit.firstspirit.client.editorcomponent.EditorWrapper" length="65535" nullable="1" type="xml" uuid="d8e8af24-d6fd-43ba-8573-eda5b17c6b28" vName="distribution_channel"/>
+				<xs:element hidden="1" javaType="java.util.UUID" length="16" nullable="1" readonly="1" type="xs:uuid" uuid="68d67224-f783-4115-9874-e91feae9ff85" vName="FS_GID"/>
+				<xs:element hidden="1" javaType="java.lang.Integer" type="xs:long" uuid="e6683dc2-1814-46ab-ac91-efeef93de088" vName="fs_id"/>
+				<xs:element hidden="1" javaType="de.espirit.or.impl.schema.JsonValue" length="65535" nullable="1" type="xs:json" uuid="30d66a61-9189-404e-8d28-7e0e7b85e668" vName="FS_META_DATA"/>
+				<xs:element javaType="de.espirit.firstspirit.client.editorcomponent.EditorWrapper" length="65535" nullable="1" type="xml" uuid="00f5983b-dd65-44ea-9db2-01c0d638f047" vName="image"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="ffc5b7fe-5da9-479d-bec5-4acae618dc12" vName="released by"/>
+				<xs:element javaType="de.espirit.firstspirit.client.editorcomponent.EditorWrapper" length="65535" nullable="1" type="xml" uuid="0957ba02-b703-4f15-82b9-ae1dc7852bd4" vName="teaser_DE"/>
+				<xs:element javaType="de.espirit.firstspirit.client.editorcomponent.EditorWrapper" length="65535" nullable="1" type="xml" uuid="260169a0-7d82-4dde-84f7-439e467143cb" vName="teaser_EN"/>
+				<xs:element javaType="de.espirit.firstspirit.client.editorcomponent.EditorWrapper" length="65535" nullable="1" type="xml" uuid="3342bd4b-e17a-4ada-9e61-529ab71238a6" vName="text_DE"/>
+				<xs:element javaType="de.espirit.firstspirit.client.editorcomponent.EditorWrapper" length="65535" nullable="1" type="xml" uuid="1fa02795-a02f-48f4-8a75-98a1d89f8396" vName="text_EN"/>
+				<xs:element javaType="java.lang.String" length="512" nullable="1" type="xs:string" uuid="26e58749-f21a-4d9a-a5b3-f028652c0e30" vName="title_DE"/>
+				<xs:element javaType="java.lang.String" length="512" nullable="1" type="xs:string" uuid="3786d49f-e494-403a-9e04-c3c61d4cab9b" vName="title_EN"/>
+				<xs:element javaType="de.espirit.firstspirit.client.editorcomponent.EditorWrapper" length="65535" nullable="1" type="xml" uuid="5b038827-8fbf-4a8d-aec5-ea39a057b3ce" vName="video"/>
+				<xs:element javaType="de.espirit.firstspirit.client.editorcomponent.EditorWrapper" length="65535" nullable="1" type="xml" uuid="1bed593a-3f5a-4050-a19f-3ab400e09e16" vName="video_thumbnail"/>
+				<xs:element javaType="java.lang.String" length="4096" nullable="1" type="xs:string" uuid="c3556c72-ff37-4e3a-8e70-7ec8bd0cd50c" vName="voice_text_DE"/>
+				<xs:element javaType="java.lang.String" length="4096" nullable="1" type="xs:string" uuid="0c104d9f-26a8-4a5d-ab45-ee5f68321665" vName="voice_text_EN"/>
+				<xs:element hidden="1" javaType="java.awt.Color" nullable="1" type="xs:integer" uuid="160b59e8-f655-4178-896a-528e8317ac85" vName="wf col"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="428099b0-8150-4cbe-98ba-6550d30430ed" vName="wf id"/>
+				<xs:element nullable="1" type="xs:long" uuid="d4b7592c-fae3-4191-9f14-abc92c05474c" vName="auth_fs_id" visible="0"/>
+				<xs:element nullable="1" type="xs:long" uuid="536bcd7b-668d-4870-80da-7c89ebee042e" vName="cate_fs_id" visible="0"/>
+				<xs:element type="xs:long" uuid="c2ee70a2-8d54-438f-8e40-c8069fa4dea7" vName="fs_release_to" visible="0"/>
+				<xs:element type="xs:long" uuid="9882a053-4e98-4663-bea0-feda117ace12" vName="fs_valid_from" visible="0"/>
+				<xs:element type="xs:long" uuid="217050bd-fa55-4fb2-8a08-4a10b3fe9387" vName="fs_valid_to" visible="0"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key vName="pk_news">
+			<xs:selector xpath="news"/>
+			<xs:attribute xpath="fs_id"/>
+			<xs:attribute xpath="fs_release_to"/>
+			<xs:attribute xpath="fs_valid_from"/>
+			<xs:attribute xpath="fs_valid_to"/>
+		</xs:key>
+		<xs:complexType uuid="6736d579-30ef-419c-b64a-3238c6e0cdde" vName="rt_news_tag_taglist" visible="0">
+			<xs:sequence>
+				<xs:element type="xs:long" uuid="1bd73d98-7124-497d-8b78-29fc8a3b143a" vName="fs_release_to" visible="0"/>
+				<xs:element type="xs:long" uuid="95cdb749-7f8d-4d67-86b7-99a1f8770e18" vName="fs_valid_from" visible="0"/>
+				<xs:element type="xs:long" uuid="88007f32-8e1e-44b0-87b6-b298d5bf9e1a" vName="fs_valid_to" visible="0"/>
+				<xs:element type="xs:long" uuid="24445f08-244a-4adc-90e2-04ea05f18490" vName="news_fs_id" visible="0"/>
+				<xs:element type="xs:long" uuid="fbbf9871-625f-4657-84bd-97169804b035" vName="tag_fs_id" visible="0"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key vName="pk_rt_NEWS_tag_tagList">
+			<xs:selector xpath="rt_news_tag_taglist"/>
+			<xs:attribute xpath="fs_release_to"/>
+			<xs:attribute xpath="fs_valid_from"/>
+			<xs:attribute xpath="fs_valid_to"/>
+			<xs:attribute xpath="news_fs_id"/>
+			<xs:attribute xpath="tag_fs_id"/>
+		</xs:key>
+		<xs:keyref refer="tag" source="news" tfield="tagList" vName="fk_rt_NEWS_tag_tagList_tag">
+			<xs:selector xpath="rt_news_tag_taglist"/>
+			<xs:attribute xpath="tag_fs_id"/>
+		</xs:keyref>
+		<xs:keyref refer="news" source="tag" tfield="newsList" vName="fk_rt_NEWS_tag_tagList_NEWS">
+			<xs:selector xpath="rt_news_tag_taglist"/>
+			<xs:attribute xpath="news_fs_id"/>
+		</xs:keyref>
+		<xs:complexType uuid="f77e7042-9d19-4a99-9f4d-f1af04ba467d" vName="power_mode">
+			<xs:sequence>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="0f72376f-2814-4364-8944-aff0c7a173d2" vName="changed by"/>
+				<xs:element hidden="1" javaType="java.util.UUID" length="16" nullable="1" readonly="1" type="xs:uuid" uuid="ab42974c-9a59-4a6f-a8b7-00ecf9cbdd4f" vName="FS_GID"/>
+				<xs:element hidden="1" javaType="java.lang.Integer" type="xs:long" uuid="346b0101-cbb4-48ad-a3f8-36e9ce33b9b1" vName="fs_id"/>
+				<xs:element hidden="1" javaType="de.espirit.or.impl.schema.JsonValue" length="65535" nullable="1" type="xs:json" uuid="bb314c34-3522-4368-ae07-1b3adaaf70e0" vName="FS_META_DATA"/>
+				<xs:element javaType="java.lang.String" length="64" nullable="1" type="xs:string" uuid="a190f955-14d6-4adf-9e2d-853523d44f2f" vName="name_DE"/>
+				<xs:element javaType="java.lang.String" length="64" nullable="1" type="xs:string" uuid="38ee49ac-b0d6-4d1e-8076-4d3fb4fbc330" vName="name_EN"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="12d78a6e-6f95-4c81-8341-deebaf95655f" vName="released by"/>
+				<xs:element hidden="1" javaType="java.awt.Color" nullable="1" type="xs:integer" uuid="ef78bb53-b3a9-482e-8a6e-8862e0c75252" vName="wf col"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="cf774962-d5ae-4548-b231-448e79a851a3" vName="wf id"/>
+				<xs:element type="xs:long" uuid="f66ed39a-0868-484d-8cf6-f5ea18461e8e" vName="fs_release_to" visible="0"/>
+				<xs:element type="xs:long" uuid="9b25b5b3-5caf-4c6a-9a4c-3bf8164da52a" vName="fs_valid_from" visible="0"/>
+				<xs:element type="xs:long" uuid="cb957d5d-8ab6-41a3-b7fb-6e9fe6e340ec" vName="fs_valid_to" visible="0"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key vName="pk_power_mode">
+			<xs:selector xpath="power_mode"/>
+			<xs:attribute xpath="fs_id"/>
+			<xs:attribute xpath="fs_release_to"/>
+			<xs:attribute xpath="fs_valid_from"/>
+			<xs:attribute xpath="fs_valid_to"/>
+		</xs:key>
+		<xs:complexType uuid="3a7a89f5-755d-4e83-ab1c-7d96e7b60f54" vName="product">
+			<xs:sequence>
+				<xs:element javaType="java.lang.String" length="2048" nullable="1" type="xs:string" uuid="005931c3-932f-47ec-a0b1-dfd24952518b" vName="abstract_DE"/>
+				<xs:element javaType="java.lang.String" length="2048" nullable="1" type="xs:string" uuid="c469eb2b-50f0-4f14-8b4d-2f103ea1d7ec" vName="abstract_EN"/>
+				<xs:element javaType="de.espirit.firstspirit.client.editorcomponent.EditorWrapper" length="65535" nullable="1" type="xml" uuid="cc3707c6-b29c-40e6-8aaa-997a4a0666ee" vName="alexa_text_DE"/>
+				<xs:element javaType="de.espirit.firstspirit.client.editorcomponent.EditorWrapper" length="65535" nullable="1" type="xml" uuid="5e1fd3fd-dae1-4bc8-98da-de3cb669d11c" vName="alexa_text_EN"/>
+				<xs:element javaType="de.espirit.firstspirit.client.editorcomponent.EditorWrapper" length="65535" nullable="1" type="xml" uuid="0dbf1641-1f08-42f6-b06d-84444d534100" vName="app_text_DE"/>
+				<xs:element javaType="de.espirit.firstspirit.client.editorcomponent.EditorWrapper" length="65535" nullable="1" type="xml" uuid="073f42ed-6097-489a-91e7-b53f8b2042ff" vName="app_text_EN"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="ac973368-eb32-4276-bd43-9e98b161115f" vName="changed by"/>
+				<xs:element javaType="de.espirit.firstspirit.client.editorcomponent.EditorWrapper" length="65535" nullable="1" type="xml" uuid="38f10db6-a27a-4f11-92ff-592ad92b4749" vName="delivery_DE"/>
+				<xs:element javaType="de.espirit.firstspirit.client.editorcomponent.EditorWrapper" length="65535" nullable="1" type="xml" uuid="5818225a-c6f3-4b63-b03a-33fec32d6caa" vName="delivery_EN"/>
+				<xs:element hidden="1" javaType="java.util.UUID" length="16" nullable="1" readonly="1" type="xs:uuid" uuid="15d39a21-8506-46ef-be32-6b78c3dd382b" vName="FS_GID"/>
+				<xs:element hidden="1" javaType="java.lang.Integer" type="xs:long" uuid="c4d1789b-a8e3-4f01-8ac3-ae7414c8b92b" vName="fs_id"/>
+				<xs:element hidden="1" javaType="de.espirit.or.impl.schema.JsonValue" length="65535" nullable="1" type="xs:json" uuid="7202d843-5643-4429-8176-de9b0d19a910" vName="FS_META_DATA"/>
+				<xs:element javaType="de.espirit.firstspirit.client.editorcomponent.EditorWrapper" length="65535" nullable="1" type="xml" uuid="1f1dbf01-d79a-4ba8-a97f-40b04525052a" vName="installation_DE"/>
+				<xs:element javaType="de.espirit.firstspirit.client.editorcomponent.EditorWrapper" length="65535" nullable="1" type="xml" uuid="0321a7cf-1689-4349-b8bb-cdb73c7be7a6" vName="installation_EN"/>
+				<xs:element javaType="de.espirit.firstspirit.client.editorcomponent.EditorWrapper" length="65535" nullable="1" type="xml" uuid="73083b3a-160e-4a65-b19c-160ecaf621bb" vName="media"/>
+				<xs:element javaType="java.lang.String" length="256" nullable="1" type="xs:string" uuid="5db2d913-aa2c-4428-8f0f-0c4bc64909de" vName="name_DE"/>
+				<xs:element javaType="java.lang.String" length="256" nullable="1" type="xs:string" uuid="0a220249-1726-48bc-93c9-5e06c5461810" vName="name_EN"/>
+				<xs:element javaType="java.lang.String" length="64" nullable="1" type="xs:string" uuid="7b6aa1c0-c405-44b0-a48d-1a90ed49f9e9" vName="price_DE"/>
+				<xs:element javaType="java.lang.String" length="64" nullable="1" type="xs:string" uuid="ac14fa85-3425-4919-a17a-80f230aec1ec" vName="price_EN"/>
+				<xs:element javaType="java.lang.String" length="64" nullable="1" type="xs:string" uuid="6096856a-83dd-4058-a8cd-34a6cbc50c5b" vName="rel_prod_mode"/>
+				<xs:element javaType="de.espirit.firstspirit.client.editorcomponent.EditorWrapper" length="65535" nullable="1" type="xml" uuid="e6fbda6f-acfc-4659-aa6e-e563cc863384" vName="relatedproducts"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="65d4b963-9aa5-4701-bcd2-76d85914478e" vName="released by"/>
+				<xs:element javaType="de.espirit.firstspirit.client.editorcomponent.EditorWrapper" length="65535" nullable="1" type="xml" uuid="bfa12a18-fe2d-49c2-8e98-4dde162b29f3" vName="teaser_image"/>
+				<xs:element javaType="java.lang.String" length="128" nullable="1" type="xs:string" uuid="b8a3dd26-a53f-4474-bdf3-f287337ffe7e" vName="teaser_image_alt_DE"/>
+				<xs:element javaType="java.lang.String" length="128" nullable="1" type="xs:string" uuid="9c185368-d9ce-4fe0-b360-baacd4d3ea08" vName="teaser_image_alt_EN"/>
+				<xs:element javaType="java.lang.String" length="256" nullable="1" type="xs:string" uuid="dee58548-868e-4d45-a2d1-9575dd44b04a" vName="teaser_text_DE"/>
+				<xs:element javaType="java.lang.String" length="256" nullable="1" type="xs:string" uuid="b42ee340-3daa-4833-8382-5c53340ca32f" vName="teaser_text_EN"/>
+				<xs:element hidden="1" javaType="java.awt.Color" nullable="1" type="xs:integer" uuid="f3dd7028-e207-4711-8929-999461ab6d51" vName="wf col"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="4ad67a48-2a3c-45e8-828b-7c9ac4084d3d" vName="wf id"/>
+				<xs:element type="xs:long" uuid="3e4236b0-fe64-4dd9-ac78-79075a5e14ff" vName="fs_release_to" visible="0"/>
+				<xs:element type="xs:long" uuid="5b4f81f4-1f59-42b6-ba76-0e9b5aa6a26c" vName="fs_valid_from" visible="0"/>
+				<xs:element type="xs:long" uuid="1ebf07df-5a0b-41d7-9c9c-c159150dac80" vName="fs_valid_to" visible="0"/>
+				<xs:element nullable="1" type="xs:long" uuid="7595f473-4880-4fc2-95b9-3cc0396fa5b9" vName="manu_fs_id" visible="0"/>
+				<xs:element nullable="1" type="xs:long" uuid="5caadaba-d310-4395-8278-8c7895cda152" vName="powe_fs_id" visible="0"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key vName="pk_product">
+			<xs:selector xpath="product"/>
+			<xs:attribute xpath="fs_id"/>
+			<xs:attribute xpath="fs_release_to"/>
+			<xs:attribute xpath="fs_valid_from"/>
+			<xs:attribute xpath="fs_valid_to"/>
+		</xs:key>
+		<xs:keyref refer="manufacturer" tfield="manufacturer" vName="fk_product_manufacturer">
+			<xs:selector xpath="product"/>
+			<xs:attribute xpath="manu_fs_id"/>
+		</xs:keyref>
+		<xs:keyref refer="power_mode" tfield="power_mode" vName="fk_product_power_mode">
+			<xs:selector xpath="product"/>
+			<xs:attribute xpath="powe_fs_id"/>
+		</xs:keyref>
+		<xs:complexType uuid="04ec5dc3-c05e-4be5-8382-6f1397c902de" vName="rt_product_product_category_product_categorylist3" visible="0">
+			<xs:sequence>
+				<xs:element type="xs:long" uuid="2ebfb495-2f78-498c-8a02-0e1cd9a6eeb7" vName="fs_release_to" visible="0"/>
+				<xs:element type="xs:long" uuid="34322179-0cfa-4bde-b38b-6508969e3f7e" vName="fs_valid_from" visible="0"/>
+				<xs:element type="xs:long" uuid="a8421769-9898-459a-97ac-157c8bae6600" vName="fs_valid_to" visible="0"/>
+				<xs:element type="xs:long" uuid="0d29c996-1f17-48d4-b59a-311a14e5e042" vName="prod_fs_id" visible="0"/>
+				<xs:element type="xs:long" uuid="c4aef565-6145-4e8d-b21a-3a63a415f82a" vName="prod_fs_id0" visible="0"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key vName="pk_rt_product_product_category_product_categoryList">
+			<xs:selector xpath="rt_product_product_category_product_categorylist3"/>
+			<xs:attribute xpath="fs_release_to"/>
+			<xs:attribute xpath="fs_valid_from"/>
+			<xs:attribute xpath="fs_valid_to"/>
+			<xs:attribute xpath="prod_fs_id"/>
+			<xs:attribute xpath="prod_fs_id0"/>
+		</xs:key>
+		<xs:keyref refer="product_category" source="product" tfield="product_categoryList" vName="fk_rt_product_product_category_product_categoryList_product_category">
+			<xs:selector xpath="rt_product_product_category_product_categorylist3"/>
+			<xs:attribute xpath="prod_fs_id"/>
+		</xs:keyref>
+		<xs:keyref refer="product" source="product_category" tfield="productList" vName="fk_rt_product_product_category_product_categoryList_product">
+			<xs:selector xpath="rt_product_product_category_product_categorylist3"/>
+			<xs:attribute xpath="prod_fs_id0"/>
+		</xs:keyref>
+		<xs:complexType uuid="92235490-9c3d-489f-9fe2-c3416a7a4f62" vName="product_category">
+			<xs:sequence>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="5e6f9202-dfd5-448f-8992-dfff3b853bb1" vName="changed by"/>
+				<xs:element hidden="1" javaType="java.util.UUID" length="16" nullable="1" readonly="1" type="xs:uuid" uuid="a0298238-7737-4040-abd3-11829c457ff3" vName="FS_GID"/>
+				<xs:element hidden="1" javaType="java.lang.Integer" type="xs:long" uuid="fe6ee80e-93b0-4c4c-8675-68f97ec943a0" vName="fs_id"/>
+				<xs:element hidden="1" javaType="de.espirit.or.impl.schema.JsonValue" length="65535" nullable="1" type="xs:json" uuid="99907f1b-619f-4c7d-9b53-8c7a4f1a7deb" vName="FS_META_DATA"/>
+				<xs:element javaType="java.lang.String" length="255" nullable="1" type="xs:string" uuid="ad9a39d1-36a9-4321-a845-c2a4d42adc80" vName="name_DE"/>
+				<xs:element javaType="java.lang.String" length="255" nullable="1" type="xs:string" uuid="c7424331-0d20-43b6-8b27-ea0f79c3fcfc" vName="name_EN"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="0594f304-3481-4044-aec1-c040c458aac0" vName="released by"/>
+				<xs:element hidden="1" javaType="java.awt.Color" nullable="1" type="xs:integer" uuid="5d9495e2-8ee8-48fe-a381-481fc0cff53c" vName="wf col"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="50b9aceb-bf0d-48d0-bc46-3c2351cdb3d5" vName="wf id"/>
+				<xs:element type="xs:long" uuid="e9085547-0b68-4134-a8e3-3c8a3b430661" vName="fs_release_to" visible="0"/>
+				<xs:element type="xs:long" uuid="d68952c8-b6b0-4af6-a7c9-d7516a1804ed" vName="fs_valid_from" visible="0"/>
+				<xs:element type="xs:long" uuid="6680233c-4082-4712-965a-f9d147f79b08" vName="fs_valid_to" visible="0"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key vName="pk_product_category">
+			<xs:selector xpath="product_category"/>
+			<xs:attribute xpath="fs_id"/>
+			<xs:attribute xpath="fs_release_to"/>
+			<xs:attribute xpath="fs_valid_from"/>
+			<xs:attribute xpath="fs_valid_to"/>
+		</xs:key>
+		<xs:complexType uuid="830e9034-42eb-4788-b462-37faa0913ef5" vName="promotions">
+			<xs:sequence>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="45b84e81-b087-4fb9-b734-2a7fcccdfb58" vName="changed by"/>
+				<xs:element hidden="1" javaType="java.util.UUID" length="16" nullable="1" readonly="1" type="xs:uuid" uuid="3c46a1ca-157c-46cd-9a0c-fb55bd3d4358" vName="FS_GID"/>
+				<xs:element hidden="1" javaType="java.lang.Integer" type="xs:long" uuid="c01158ed-b6ec-4827-afe6-d4ca4c68de3d" vName="fs_id"/>
+				<xs:element hidden="1" javaType="de.espirit.or.impl.schema.JsonValue" length="65535" nullable="1" type="xs:json" uuid="341f3f3e-56d5-43ad-891e-b59fc27c50cc" vName="FS_META_DATA"/>
+				<xs:element javaType="java.lang.String" length="512" nullable="1" type="xs:string" uuid="d3c53dfb-2a3e-4716-9440-e2dc566ec84e" vName="headline_DE"/>
+				<xs:element javaType="java.lang.String" length="512" nullable="1" type="xs:string" uuid="e4d2bfde-ad53-46b3-b31c-26d294a4f216" vName="headline_EN"/>
+				<xs:element javaType="de.espirit.firstspirit.client.editorcomponent.EditorWrapper" length="65535" nullable="1" type="xml" uuid="18ca1bda-356a-45df-aa5b-20e25a56f3fa" vName="image"/>
+				<xs:element javaType="de.espirit.firstspirit.client.editorcomponent.EditorWrapper" length="65535" nullable="1" type="xml" uuid="3bf2da53-9f23-48bc-8b6a-ad57fc741da4" vName="link"/>
+				<xs:element javaType="java.lang.String" length="64" nullable="1" type="xs:string" uuid="6044d4e4-a1c9-426e-9841-6879d0dbe654" vName="mode"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="47ba6f73-4e7f-4642-b85b-1bb723fd3ccd" vName="released by"/>
+				<xs:element hidden="1" javaType="java.awt.Color" nullable="1" type="xs:integer" uuid="f6ac8b11-184c-441d-b144-d0c269ba6748" vName="wf col"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="32668760-73d1-4a9a-ae91-8a418a26e8ce" vName="wf id"/>
+				<xs:element type="xs:long" uuid="0c48640b-7c44-43e7-aefb-1e1940bcdba5" vName="fs_release_to" visible="0"/>
+				<xs:element type="xs:long" uuid="a13439fc-9367-45b8-ae27-8c00a671efd0" vName="fs_valid_from" visible="0"/>
+				<xs:element type="xs:long" uuid="46cf0774-c965-464d-a6ef-db715456f832" vName="fs_valid_to" visible="0"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key vName="pk_promotions">
+			<xs:selector xpath="promotions"/>
+			<xs:attribute xpath="fs_id"/>
+			<xs:attribute xpath="fs_release_to"/>
+			<xs:attribute xpath="fs_valid_from"/>
+			<xs:attribute xpath="fs_valid_to"/>
+		</xs:key>
+		<xs:complexType uuid="23c71d6b-7fcd-426a-9da5-b7120e5563c5" vName="rt_promotions_tag_promotionslist" visible="0">
+			<xs:sequence>
+				<xs:element type="xs:long" uuid="faadfe87-992d-46d3-8458-0334d24c3196" vName="fs_release_to" visible="0"/>
+				<xs:element type="xs:long" uuid="3ba4fcae-0447-463a-b550-dfadfc877fd6" vName="fs_valid_from" visible="0"/>
+				<xs:element type="xs:long" uuid="295039c7-8f15-425a-a1f8-1d8831a06113" vName="fs_valid_to" visible="0"/>
+				<xs:element type="xs:long" uuid="5e9c6183-feaa-4059-bbf8-03b2802140c0" vName="prom_fs_id" visible="0"/>
+				<xs:element type="xs:long" uuid="50ac8b17-4311-49a7-8aba-af4db6df451f" vName="tag_fs_id" visible="0"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key vName="pk_rt_promotions_tag_promotionsList">
+			<xs:selector xpath="rt_promotions_tag_promotionslist"/>
+			<xs:attribute xpath="fs_release_to"/>
+			<xs:attribute xpath="fs_valid_from"/>
+			<xs:attribute xpath="fs_valid_to"/>
+			<xs:attribute xpath="prom_fs_id"/>
+			<xs:attribute xpath="tag_fs_id"/>
+		</xs:key>
+		<xs:keyref refer="tag" source="promotions" tfield="tagList" vName="fk_rt_promotions_tag_promotionsList_tag">
+			<xs:selector xpath="rt_promotions_tag_promotionslist"/>
+			<xs:attribute xpath="tag_fs_id"/>
+		</xs:keyref>
+		<xs:keyref refer="promotions" source="tag" tfield="promotionsList" vName="fk_rt_promotions_tag_promotionsList_promotions">
+			<xs:selector xpath="rt_promotions_tag_promotionslist"/>
+			<xs:attribute xpath="prom_fs_id"/>
+		</xs:keyref>
+		<xs:complexType uuid="95e8d7d1-17d9-43b7-ad08-a51b43314316" vName="tag">
+			<xs:sequence>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="9c4a2a18-f632-4b07-b5f5-b589aeb6081a" vName="changed by"/>
+				<xs:element hidden="1" javaType="java.util.UUID" length="16" nullable="1" readonly="1" type="xs:uuid" uuid="b999c409-26e9-43a5-95a9-25e3bc395a9a" vName="FS_GID"/>
+				<xs:element hidden="1" javaType="java.lang.Integer" type="xs:long" uuid="60c46c80-338a-4b01-a107-0378b38dc5fb" vName="fs_id"/>
+				<xs:element hidden="1" javaType="de.espirit.or.impl.schema.JsonValue" length="65535" nullable="1" type="xs:json" uuid="c3a6831a-3fcd-400f-9a96-a1144fa08916" vName="FS_META_DATA"/>
+				<xs:element javaType="java.lang.String" length="64" nullable="1" type="xs:string" uuid="2ad4d14a-8bcd-4e7a-9131-8e71be1799fa" vName="name_DE"/>
+				<xs:element javaType="java.lang.String" length="64" nullable="1" type="xs:string" uuid="f6f86e0b-c81b-46ee-9306-e1cf3e3193f6" vName="name_EN"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="e2bd6b9a-cfb0-44ef-9bd1-e6321ad039d4" vName="released by"/>
+				<xs:element hidden="1" javaType="java.awt.Color" nullable="1" type="xs:integer" uuid="c5cbc924-5b1d-4ec5-bfca-727c728f8d2c" vName="wf col"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="ac915462-8e1c-47a6-8e02-0eaf9238bff7" vName="wf id"/>
+				<xs:element type="xs:long" uuid="e161b3ec-8ba7-461f-a3a0-3e15984c76cb" vName="fs_release_to" visible="0"/>
+				<xs:element type="xs:long" uuid="129a2610-5e5e-4c63-98ef-7507e8892972" vName="fs_valid_from" visible="0"/>
+				<xs:element type="xs:long" uuid="bc0e133e-58e7-4c95-a733-028cb578c9d6" vName="fs_valid_to" visible="0"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key vName="pk_tag">
+			<xs:selector xpath="tag"/>
+			<xs:attribute xpath="fs_id"/>
+			<xs:attribute xpath="fs_release_to"/>
+			<xs:attribute xpath="fs_valid_from"/>
+			<xs:attribute xpath="fs_valid_to"/>
+		</xs:key>
+		<xs:complexType uuid="4f936fe3-2570-4d95-b5ea-b7a2ec80c9a9" vName="type">
+			<xs:sequence>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="3b00cce7-e551-4bdb-9b8a-a775ceba241a" vName="changed by"/>
+				<xs:element hidden="1" javaType="java.util.UUID" length="16" nullable="1" readonly="1" type="xs:uuid" uuid="c714a705-8ab3-498f-8426-6c65b910761b" vName="FS_GID"/>
+				<xs:element hidden="1" javaType="java.lang.Integer" type="xs:long" uuid="d5ee0536-e5d1-4659-a8ed-e00395a8f03a" vName="fs_id"/>
+				<xs:element hidden="1" javaType="de.espirit.or.impl.schema.JsonValue" length="65535" nullable="1" type="xs:json" uuid="01364a12-3303-4d4a-8dbc-714505f404bd" vName="FS_META_DATA"/>
+				<xs:element javaType="java.lang.String" length="2048" nullable="1" type="xs:string" uuid="a58e73bb-4888-4c2a-8547-d949a55c75fd" vName="name_DE"/>
+				<xs:element javaType="java.lang.String" length="2048" nullable="1" type="xs:string" uuid="9cf0c613-1260-4b47-bc0c-deb5eff6affb" vName="name_EN"/>
+				<xs:element javaType="de.espirit.firstspirit.client.editorcomponent.EditorWrapper" length="65535" nullable="1" type="xml" uuid="f4f0f90e-9bc2-48d8-b05d-02bec73a4725" vName="pin"/>
+				<xs:element javaType="de.espirit.firstspirit.client.editorcomponent.EditorWrapper" length="65535" nullable="1" type="xml" uuid="dfd0b66a-fad1-4c64-86ec-c03953e0fa44" vName="pin_selected"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="7cdcc8f3-db50-4e7d-88cc-9ca78f3dab78" vName="released by"/>
+				<xs:element hidden="1" javaType="java.awt.Color" nullable="1" type="xs:integer" uuid="d4ef8deb-638e-4ee5-9d06-31b238a81667" vName="wf col"/>
+				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="98884593-4065-499c-8483-e630a0dfdcec" vName="wf id"/>
+				<xs:element type="xs:long" uuid="39452254-c4bd-4574-86d5-ec11640938e2" vName="fs_release_to" visible="0"/>
+				<xs:element type="xs:long" uuid="9064ea07-ada7-47e6-a4b2-c7875c6e98b8" vName="fs_valid_from" visible="0"/>
+				<xs:element type="xs:long" uuid="b4654ab6-7efe-4766-9b08-7a4c0e1ce6ba" vName="fs_valid_to" visible="0"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key vName="pk_type">
+			<xs:selector xpath="type"/>
+			<xs:attribute xpath="fs_id"/>
+			<xs:attribute xpath="fs_release_to"/>
+			<xs:attribute xpath="fs_valid_from"/>
+			<xs:attribute xpath="fs_valid_to"/>
+		</xs:key>
+		<xs:keyref field="locationsList" refer="type" tfield="type" vName="fk_locations_type">
+			<xs:selector xpath="locations"/>
+			<xs:attribute xpath="type_fs_id"/>
+		</xs:keyref>
+		<xs:complexType uuid="35addc2b-85fb-4b44-b54e-ca94ae9c3584" vName="TRANSACTION_COUNTER" visible="0">
+			<xs:sequence>
+				<xs:element type="xs:long" uuid="749dc2f8-063e-4107-accd-6012b07fa5aa" vName="counter" visible="0"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key autoIncrement="1" vName="pk_TRANSACTION_COUNTER">
+			<xs:selector xpath="transaction_counter"/>
+			<xs:attribute xpath="counter"/>
+		</xs:key>
+		<meta name="version">1.1</meta>
+	</xs:element>
+</xs:schema>

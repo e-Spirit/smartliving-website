@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OBJECT class="java.util.ArrayList">
+	<OBJECT class="de.espirit.firstspirit.server.projectmanagement.ResolutionDTO">
+		<FIELD name="_descriptions"><NULL/><!-- interface java.util.Map --></FIELD>
+		<FIELD name="_keepAspectRatio" type="boolean">false</FIELD>
+		<FIELD name="_names"><NULL/><!-- interface java.util.Map --></FIELD>
+		<FIELD name="_smartCropping" type="boolean">false</FIELD>
+		<FIELD name="_tags">
+			<OBJECT class="java.util.TreeSet">
+			</OBJECT>
+		</FIELD>
+		<FIELD name="m_description">
+			<OBJECT class="java.lang.String"></OBJECT>
+		</FIELD>
+		<FIELD name="m_height" type="int">0</FIELD>
+		<FIELD name="m_name">
+			<OBJECT class="java.lang.String">ORIGINAL</OBJECT>
+		</FIELD>
+		<FIELD name="m_width" type="int">0</FIELD>
+	</OBJECT>
+	<OBJECT class="de.espirit.firstspirit.server.projectmanagement.ResolutionDTO">
+		<FIELD name="_descriptions">
+			<OBJECT class="java.util.HashMap">
+				<OBJECT class="java.lang.String">DE</OBJECT>
+				<OBJECT class="java.lang.String"></OBJECT>
+				<OBJECT class="java.lang.String">EN</OBJECT>
+				<OBJECT class="java.lang.String"></OBJECT>
+			</OBJECT>
+		</FIELD>
+		<FIELD name="_keepAspectRatio" type="boolean">false</FIELD>
+		<FIELD name="_names">
+			<OBJECT class="java.util.HashMap">
+				<OBJECT class="java.lang.String">DE</OBJECT>
+				<OBJECT class="java.lang.String">Banner</OBJECT>
+				<OBJECT class="java.lang.String">EN</OBJECT>
+				<OBJECT class="java.lang.String">Banner</OBJECT>
+			</OBJECT>
+		</FIELD>
+		<FIELD name="_smartCropping" type="boolean">true</FIELD>
+		<FIELD name="_tags">
+			<OBJECT class="java.util.TreeSet">
+				<OBJECT class="java.lang.String">SmartCropping</OBJECT>
+			</OBJECT>
+		</FIELD>
+		<FIELD name="m_description">
+			<OBJECT class="java.lang.String">banner_slider</OBJECT>
+		</FIELD>
+		<FIELD name="m_height" type="int">1080</FIELD>
+		<FIELD name="m_name">
+			<OBJECT class="java.lang.String">banner_slider</OBJECT>
+		</FIELD>
+		<FIELD name="m_width" type="int">1920</FIELD>
+	</OBJECT>
+	<OBJECT class="de.espirit.firstspirit.server.projectmanagement.ResolutionDTO">
+		<FIELD name="_descriptions">
+			<OBJECT class="java.util.HashMap">
+				<OBJECT class="java.lang.String">DE</OBJECT>
+				<OBJECT class="java.lang.String"></OBJECT>
+				<OBJECT class="java.lang.String">EN</OBJECT>
+				<OBJECT class="java.lang.String"></OBJECT>
+			</OBJECT>
+		</FIELD>
+		<FIELD name="_keepAspectRatio" type="boolean">false</FIELD>
+		<FIELD name="_names">
+			<OBJECT class="java.util.HashMap">
+				<OBJECT class="java.lang.String">DE</OBJECT>
+				<OBJECT class="java.lang.String">Portrait</OBJECT>
+				<OBJECT class="java.lang.String">EN</OBJECT>
+				<OBJECT class="java.lang.String">Portrait</OBJECT>
+			</OBJECT>
+		</FIELD>
+		<FIELD name="_smartCropping" type="boolean">true</FIELD>
+		<FIELD name="_tags">
+			<OBJECT class="java.util.TreeSet">
+				<OBJECT class="java.lang.String">SmartCropping</OBJECT>
+			</OBJECT>
+		</FIELD>
+		<FIELD name="m_description">
+			<OBJECT class="java.lang.String">portrait</OBJECT>
+		</FIELD>
+		<FIELD name="m_height" type="int">500</FIELD>
+		<FIELD name="m_name">
+			<OBJECT class="java.lang.String">portrait</OBJECT>
+		</FIELD>
+		<FIELD name="m_width" type="int">800</FIELD>
+	</OBJECT>
+	<OBJECT class="de.espirit.firstspirit.server.projectmanagement.ResolutionDTO">
+		<FIELD name="_descriptions">
+			<OBJECT class="java.util.HashMap">
+				<OBJECT class="java.lang.String">DE</OBJECT>
+				<OBJECT class="java.lang.String"></OBJECT>
+				<OBJECT class="java.lang.String">EN</OBJECT>
+				<OBJECT class="java.lang.String"></OBJECT>
+			</OBJECT>
+		</FIELD>
+		<FIELD name="_keepAspectRatio" type="boolean">false</FIELD>
+		<FIELD name="_names">
+			<OBJECT class="java.util.HashMap">
+				<OBJECT class="java.lang.String">DE</OBJECT>
+				<OBJECT class="java.lang.String">Header Banner Mobile</OBJECT>
+				<OBJECT class="java.lang.String">EN</OBJECT>
+				<OBJECT class="java.lang.String">Header Banner Mobile</OBJECT>
+			</OBJECT>
+		</FIELD>
+		<FIELD name="_smartCropping" type="boolean">false</FIELD>
+		<FIELD name="_tags">
+			<OBJECT class="java.util.TreeSet">
+			</OBJECT>
+		</FIELD>
+		<FIELD name="m_description">
+			<OBJECT class="java.lang.String">header_banner_mobile</OBJECT>
+		</FIELD>
+		<FIELD name="m_height" type="int">800</FIELD>
+		<FIELD name="m_name">
+			<OBJECT class="java.lang.String">header_banner_mobile</OBJECT>
+		</FIELD>
+		<FIELD name="m_width" type="int">600</FIELD>
+	</OBJECT>
+	<OBJECT class="de.espirit.firstspirit.server.projectmanagement.ResolutionDTO">
+		<FIELD name="_descriptions">
+			<OBJECT class="java.util.HashMap">
+				<OBJECT class="java.lang.String">DE</OBJECT>
+				<OBJECT class="java.lang.String"></OBJECT>
+				<OBJECT class="java.lang.String">EN</OBJECT>
+				<OBJECT class="java.lang.String"></OBJECT>
+			</OBJECT>
+		</FIELD>
+		<FIELD name="_keepAspectRatio" type="boolean">false</FIELD>
+		<FIELD name="_names">
+			<OBJECT class="java.util.HashMap">
+				<OBJECT class="java.lang.String">DE</OBJECT>
+				<OBJECT class="java.lang.String">Product Teaser</OBJECT>
+				<OBJECT class="java.lang.String">EN</OBJECT>
+				<OBJECT class="java.lang.String">Product Teaser</OBJECT>
+			</OBJECT>
+		</FIELD>
+		<FIELD name="_smartCropping" type="boolean">true</FIELD>
+		<FIELD name="_tags">
+			<OBJECT class="java.util.TreeSet">
+				<OBJECT class="java.lang.String">SmartCropping</OBJECT>
+			</OBJECT>
+		</FIELD>
+		<FIELD name="m_description">
+			<OBJECT class="java.lang.String">product_teaser</OBJECT>
+		</FIELD>
+		<FIELD name="m_height" type="int">560</FIELD>
+		<FIELD name="m_name">
+			<OBJECT class="java.lang.String">product_teaser</OBJECT>
+		</FIELD>
+		<FIELD name="m_width" type="int">360</FIELD>
+	</OBJECT>
+	<OBJECT class="de.espirit.firstspirit.server.projectmanagement.ResolutionDTO">
+		<FIELD name="_descriptions">
+			<OBJECT class="java.util.HashMap">
+				<OBJECT class="java.lang.String">DE</OBJECT>
+				<OBJECT class="java.lang.String"></OBJECT>
+				<OBJECT class="java.lang.String">EN</OBJECT>
+				<OBJECT class="java.lang.String"></OBJECT>
+			</OBJECT>
+		</FIELD>
+		<FIELD name="_keepAspectRatio" type="boolean">false</FIELD>
+		<FIELD name="_names">
+			<OBJECT class="java.util.HashMap">
+				<OBJECT class="java.lang.String">DE</OBJECT>
+				<OBJECT class="java.lang.String">Landscape</OBJECT>
+				<OBJECT class="java.lang.String">EN</OBJECT>
+				<OBJECT class="java.lang.String">Landscape</OBJECT>
+			</OBJECT>
+		</FIELD>
+		<FIELD name="_smartCropping" type="boolean">true</FIELD>
+		<FIELD name="_tags">
+			<OBJECT class="java.util.TreeSet">
+				<OBJECT class="java.lang.String">SmartCropping</OBJECT>
+			</OBJECT>
+		</FIELD>
+		<FIELD name="m_description">
+			<OBJECT class="java.lang.String">landscape</OBJECT>
+		</FIELD>
+		<FIELD name="m_height" type="int">400</FIELD>
+		<FIELD name="m_name">
+			<OBJECT class="java.lang.String">landscape</OBJECT>
+		</FIELD>
+		<FIELD name="m_width" type="int">1170</FIELD>
+	</OBJECT>
+	<OBJECT class="de.espirit.firstspirit.server.projectmanagement.ResolutionDTO">
+		<FIELD name="_descriptions">
+			<OBJECT class="java.util.HashMap">
+				<OBJECT class="java.lang.String">DE</OBJECT>
+				<OBJECT class="java.lang.String"></OBJECT>
+				<OBJECT class="java.lang.String">EN</OBJECT>
+				<OBJECT class="java.lang.String"></OBJECT>
+			</OBJECT>
+		</FIELD>
+		<FIELD name="_keepAspectRatio" type="boolean">false</FIELD>
+		<FIELD name="_names">
+			<OBJECT class="java.util.HashMap">
+				<OBJECT class="java.lang.String">DE</OBJECT>
+				<OBJECT class="java.lang.String">Quadrat</OBJECT>
+				<OBJECT class="java.lang.String">EN</OBJECT>
+				<OBJECT class="java.lang.String">Square</OBJECT>
+			</OBJECT>
+		</FIELD>
+		<FIELD name="_smartCropping" type="boolean">true</FIELD>
+		<FIELD name="_tags">
+			<OBJECT class="java.util.TreeSet">
+				<OBJECT class="java.lang.String">SmartCropping</OBJECT>
+			</OBJECT>
+		</FIELD>
+		<FIELD name="m_description">
+			<OBJECT class="java.lang.String">square</OBJECT>
+		</FIELD>
+		<FIELD name="m_height" type="int">480</FIELD>
+		<FIELD name="m_name">
+			<OBJECT class="java.lang.String">square</OBJECT>
+		</FIELD>
+		<FIELD name="m_width" type="int">480</FIELD>
+	</OBJECT>
+</OBJECT>

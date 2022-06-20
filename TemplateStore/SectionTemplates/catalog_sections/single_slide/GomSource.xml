@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_GROUP tabs="top">
+
+    <CMS_GROUP>
+      <LANGINFOS>
+        <LANGINFO lang="*" label="General"/>
+        <LANGINFO lang="DE" label="Allgemein"/>
+      </LANGINFOS>
+
+      <CMS_INPUT_DOM name="st_title" bold="no" hFill="yes" italic="no" list="no" maxCharacters="21" useLanguages="yes">
+        <FORMATS>
+          <TEMPLATE name="standard"/>
+          <TEMPLATE name="span_yellow_text"/>
+        </FORMATS>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Title"/>
+          <LANGINFO lang="DE" label="Titel"/>
+        </LANGINFOS>
+        <LINKEDITORS>
+          <LINKEDITOR name="internal_link"/>
+          <LINKEDITOR name="external_link"/>
+        </LINKEDITORS>
+      </CMS_INPUT_DOM>
+
+      <CMS_INPUT_TEXTAREA name="st_description" hFill="yes" maxInputLength="141" useLanguages="yes">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Description"/>
+          <LANGINFO lang="DE" label="Beschreibung"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXTAREA>
+
+    </CMS_GROUP>
+
+    <CMS_GROUP>
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Button"/>
+      </LANGINFOS>
+
+      <CMS_INPUT_LINK name="st_button" hFill="yes">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Button Link"/>
+        </LANGINFOS>
+        <LINKEDITORS>
+          <LINKEDITOR name="slide_button_with_link"/>
+        </LINKEDITORS>
+      </CMS_INPUT_LINK>
+
+    </CMS_GROUP>
+
+    <CMS_GROUP>
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Picture"/>
+        <LANGINFO lang="DE" label="Bild"/>
+      </LANGINFOS>
+
+      <FS_REFERENCE name="st_picture" hFill="yes" upload="yes">
+        <FILTER>
+          <ALLOW type="picture"/>
+          <HIDE type="folders"/>
+        </FILTER>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Picture" description="Please choose a picture"/>
+          <LANGINFO lang="DE" label="Bild" description="Bitte wählen Sie ein Bild aus"/>
+        </LANGINFOS>
+        <PROJECTS>
+          <LOCAL name=".">
+            <SOURCES>
+              <FOLDER name="images" store="mediastore"/>
+            </SOURCES>
+          </LOCAL>
+        </PROJECTS>
+      </FS_REFERENCE>
+
+      <CMS_INPUT_TEXT name="st_picture_alt" hFill="yes" singleLine="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Alternative text"/>
+          <LANGINFO lang="DE" label="Alternativer Text"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+    </CMS_GROUP>
+
+  </CMS_GROUP>
+
+</CMS_MODULE>

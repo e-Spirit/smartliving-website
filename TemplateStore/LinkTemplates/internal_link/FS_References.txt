@@ -1,0 +1,12 @@
+[self]
+uid=internal_link
+gid=87fd47ca-fbb8-47f4-a51d-e39ccf3e0af9
+uidType=TEMPLATESTORE_LINKTEMPLATE
+class=de.espirit.firstspirit.store.access.templatestore.LinkTemplateImpl
+
+[optionalId]
+uid=root
+gid=d1b8c782-2a90-4ea7-8a7f-889cdf41bea1
+uidType=SITESTORE_FOLDER
+class=de.espirit.firstspirit.store.access.sitestore.SiteStoreRootImpl
+

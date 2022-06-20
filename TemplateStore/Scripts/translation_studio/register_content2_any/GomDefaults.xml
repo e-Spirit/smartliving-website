@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_fts_ref_tickets'><UID>translationstudio_requests</UID><UIDTYPE>CONTENTSTORE</UIDTYPE><REMOTE/></FIELD>
+	<FIELD name='st_fts_ref_tickets_tpl'><UID>requests</UID><UIDTYPE>TEMPLATESTORE_SCHEMA</UIDTYPE><REMOTE/></FIELD>
+	<FIELD name='st_fts_ref_ticketslist'><UID>translationstudio_list</UID><UIDTYPE>CONTENTSTORE</UIDTYPE><REMOTE/></FIELD>
+	<FIELD name='st_fts_ref_ticketslist_tpl'><UID>task</UID><UIDTYPE>TEMPLATESTORE_SCHEMA</UIDTYPE><REMOTE/></FIELD>
+	<FIELD name='st_fts_translation_regular'><STATE>true</STATE></FIELD>
+	<FIELD name='st_create_preview_page'><STATE>false</STATE></FIELD>
+	<FIELD name='st_fts_translate_page_form'><STATE>true</STATE></FIELD>
+	<FIELD name='st_fts_translate_section_form'><STATE>true</STATE></FIELD>
+	<FIELD name='st_keep_nontranslatables'><STATE>false</STATE></FIELD>
+	<FIELD name='st_is_fragment'><STATE>false</STATE></FIELD>
+	<FIELD name='st_fts_translate_notify_user'><STATE>true</STATE></FIELD>
+</FIELDS>

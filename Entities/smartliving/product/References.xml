@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ENTITY_REFS>
+	<REFS sourceType="product">
+		<SOURCE uuid="892b8719-3c3d-48a6-905c-cbb933634a86">
+			<ATTR name="compatibilityList" targetType="compatibility">
+				<TARGET uuid="e3c88c25-6c9d-47f6-80d8-9ca826192f54"/>
+			</ATTR>
+			<ATTR name="power_mode" targetType="power_mode">
+				<TARGET uuid="425afa4b-2517-4b99-8713-1955c1b7fead"/>
+			</ATTR>
+			<ATTR name="product_categoryList" targetType="product_category">
+				<TARGET uuid="479361a4-0526-4517-a676-7822508d183c"/>
+			</ATTR>
+		</SOURCE>
+		<SOURCE uuid="8f4eeb66-9b72-4b56-91f3-f5317aa292a1">
+			<ATTR name="compatibilityList" targetType="compatibility">
+				<TARGET uuid="e3c88c25-6c9d-47f6-80d8-9ca826192f54"/>
+				<TARGET uuid="1c4d4e98-95bb-46e4-9743-cb99def87586"/>
+				<TARGET uuid="6ed2a9b4-f6e7-4b80-9bfa-28f944cbb8f6"/>
+			</ATTR>
+			<ATTR name="power_mode" targetType="power_mode">
+				<TARGET uuid="6e73214b-5545-4833-98d6-bd5e21544d2c"/>
+			</ATTR>
+			<ATTR name="product_categoryList" targetType="product_category">
+				<TARGET uuid="479361a4-0526-4517-a676-7822508d183c"/>
+			</ATTR>
+		</SOURCE>
+		<SOURCE uuid="ac1e8cb6-cc22-403d-90d3-15200e00a945">
+			<ATTR name="compatibilityList" targetType="compatibility">
+				<TARGET uuid="e3c88c25-6c9d-47f6-80d8-9ca826192f54"/>
+				<TARGET uuid="6ed2a9b4-f6e7-4b80-9bfa-28f944cbb8f6"/>
+			</ATTR>
+			<ATTR name="power_mode" targetType="power_mode">
+				<TARGET uuid="425afa4b-2517-4b99-8713-1955c1b7fead"/>
+			</ATTR>
+			<ATTR name="product_categoryList" targetType="product_category">
+				<TARGET uuid="1cf44d1c-0217-4f47-b099-0a9529eb0c39"/>
+				<TARGET uuid="479361a4-0526-4517-a676-7822508d183c"/>
+			</ATTR>
+		</SOURCE>
+		<SOURCE uuid="b169fbc8-832c-4e50-bea0-06c4e3e9063e">
+			<ATTR name="compatibilityList" targetType="compatibility">
+				<TARGET uuid="e3c88c25-6c9d-47f6-80d8-9ca826192f54"/>
+			</ATTR>
+			<ATTR name="power_mode" targetType="power_mode">
+				<TARGET uuid="425afa4b-2517-4b99-8713-1955c1b7fead"/>
+			</ATTR>
+			<ATTR name="product_categoryList" targetType="product_category">
+				<TARGET uuid="479361a4-0526-4517-a676-7822508d183c"/>
+			</ATTR>
+		</SOURCE>
+		<SOURCE uuid="c1c43bde-2a67-4f99-980b-25fa9c4f1de6">
+			<ATTR name="compatibilityList" targetType="compatibility">
+				<TARGET uuid="25bf7350-e063-4bfe-b558-3e325e1670ae"/>
+				<TARGET uuid="39c6816b-3f44-4394-bea4-528eb69aba50"/>
+				<TARGET uuid="4a545f52-4bf0-4474-a818-4c023a60d90a"/>
+				<TARGET uuid="6ed2a9b4-f6e7-4b80-9bfa-28f944cbb8f6"/>
+			</ATTR>
+			<ATTR name="power_mode" targetType="power_mode">
+				<TARGET uuid="425afa4b-2517-4b99-8713-1955c1b7fead"/>
+			</ATTR>
+			<ATTR name="product_categoryList" targetType="product_category">
+				<TARGET uuid="a6040168-d73e-48ea-93c0-bb4078555b40"/>
+			</ATTR>
+		</SOURCE>
+		<SOURCE uuid="ca373d94-c443-4237-a3c9-cd800db18b67">
+			<ATTR name="compatibilityList" targetType="compatibility">
+				<TARGET uuid="e3c88c25-6c9d-47f6-80d8-9ca826192f54"/>
+				<TARGET uuid="ecf088a0-e4ea-415c-a5bb-692351079c86"/>
+				<TARGET uuid="6ed2a9b4-f6e7-4b80-9bfa-28f944cbb8f6"/>
+			</ATTR>
+			<ATTR name="power_mode" targetType="power_mode">
+				<TARGET uuid="425afa4b-2517-4b99-8713-1955c1b7fead"/>
+			</ATTR>
+			<ATTR name="product_categoryList" targetType="product_category">
+				<TARGET uuid="479361a4-0526-4517-a676-7822508d183c"/>
+			</ATTR>
+		</SOURCE>
+		<SOURCE uuid="e7515a90-4347-4e73-9be6-89d62fd1a4e6">
+			<ATTR name="compatibilityList" targetType="compatibility">
+				<TARGET uuid="e3c88c25-6c9d-47f6-80d8-9ca826192f54"/>
+				<TARGET uuid="ecf088a0-e4ea-415c-a5bb-692351079c86"/>
+				<TARGET uuid="39c6816b-3f44-4394-bea4-528eb69aba50"/>
+				<TARGET uuid="4a545f52-4bf0-4474-a818-4c023a60d90a"/>
+				<TARGET uuid="6ed2a9b4-f6e7-4b80-9bfa-28f944cbb8f6"/>
+			</ATTR>
+			<ATTR name="power_mode" targetType="power_mode">
+				<TARGET uuid="425afa4b-2517-4b99-8713-1955c1b7fead"/>
+			</ATTR>
+			<ATTR name="product_categoryList" targetType="product_category">
+				<TARGET uuid="4b0411e6-10d9-4d56-8be6-8066305ccb0e"/>
+			</ATTR>
+		</SOURCE>
+		<SOURCE uuid="ea3425f3-f894-4fe4-8df6-3a642a44b917">
+			<ATTR name="compatibilityList" targetType="compatibility">
+				<TARGET uuid="e3c88c25-6c9d-47f6-80d8-9ca826192f54"/>
+				<TARGET uuid="1c4d4e98-95bb-46e4-9743-cb99def87586"/>
+				<TARGET uuid="39c6816b-3f44-4394-bea4-528eb69aba50"/>
+				<TARGET uuid="4a545f52-4bf0-4474-a818-4c023a60d90a"/>
+				<TARGET uuid="6ed2a9b4-f6e7-4b80-9bfa-28f944cbb8f6"/>
+			</ATTR>
+			<ATTR name="power_mode" targetType="power_mode">
+				<TARGET uuid="425afa4b-2517-4b99-8713-1955c1b7fead"/>
+			</ATTR>
+			<ATTR name="product_categoryList" targetType="product_category">
+				<TARGET uuid="1cf44d1c-0217-4f47-b099-0a9529eb0c39"/>
+			</ATTR>
+		</SOURCE>
+		<SOURCE uuid="0bf13263-85be-4e27-aadc-f363711e0b33">
+			<ATTR name="compatibilityList" targetType="compatibility">
+				<TARGET uuid="e3c88c25-6c9d-47f6-80d8-9ca826192f54"/>
+				<TARGET uuid="25bf7350-e063-4bfe-b558-3e325e1670ae"/>
+			</ATTR>
+			<ATTR name="power_mode" targetType="power_mode">
+				<TARGET uuid="60ba23ed-21a2-417e-a90b-7507cad93cfb"/>
+			</ATTR>
+			<ATTR name="product_categoryList" targetType="product_category">
+				<TARGET uuid="f0afb7f8-2168-44ea-9cf2-aaea08123dfd"/>
+				<TARGET uuid="479361a4-0526-4517-a676-7822508d183c"/>
+				<TARGET uuid="4b0411e6-10d9-4d56-8be6-8066305ccb0e"/>
+			</ATTR>
+		</SOURCE>
+		<SOURCE uuid="1c7c8fea-c4e6-4409-ae12-cfb79e097fd0">
+			<ATTR name="compatibilityList" targetType="compatibility">
+				<TARGET uuid="e3c88c25-6c9d-47f6-80d8-9ca826192f54"/>
+			</ATTR>
+			<ATTR name="power_mode" targetType="power_mode">
+				<TARGET uuid="6e73214b-5545-4833-98d6-bd5e21544d2c"/>
+			</ATTR>
+			<ATTR name="product_categoryList" targetType="product_category">
+				<TARGET uuid="a6040168-d73e-48ea-93c0-bb4078555b40"/>
+				<TARGET uuid="4b0411e6-10d9-4d56-8be6-8066305ccb0e"/>
+			</ATTR>
+		</SOURCE>
+		<SOURCE uuid="3ce38334-2a6f-415e-a619-cfae74bea3b9">
+			<ATTR name="compatibilityList" targetType="compatibility">
+				<TARGET uuid="e3c88c25-6c9d-47f6-80d8-9ca826192f54"/>
+				<TARGET uuid="ecf088a0-e4ea-415c-a5bb-692351079c86"/>
+				<TARGET uuid="6ed2a9b4-f6e7-4b80-9bfa-28f944cbb8f6"/>
+			</ATTR>
+			<ATTR name="power_mode" targetType="power_mode">
+				<TARGET uuid="6e73214b-5545-4833-98d6-bd5e21544d2c"/>
+			</ATTR>
+			<ATTR name="product_categoryList" targetType="product_category">
+				<TARGET uuid="a6040168-d73e-48ea-93c0-bb4078555b40"/>
+			</ATTR>
+		</SOURCE>
+		<SOURCE uuid="4add2feb-1ad0-49b7-9c40-658dd9561a40">
+			<ATTR name="compatibilityList" targetType="compatibility">
+				<TARGET uuid="e3c88c25-6c9d-47f6-80d8-9ca826192f54"/>
+				<TARGET uuid="39c6816b-3f44-4394-bea4-528eb69aba50"/>
+				<TARGET uuid="4a545f52-4bf0-4474-a818-4c023a60d90a"/>
+				<TARGET uuid="6ed2a9b4-f6e7-4b80-9bfa-28f944cbb8f6"/>
+			</ATTR>
+			<ATTR name="power_mode" targetType="power_mode">
+				<TARGET uuid="425afa4b-2517-4b99-8713-1955c1b7fead"/>
+			</ATTR>
+			<ATTR name="product_categoryList" targetType="product_category">
+				<TARGET uuid="479361a4-0526-4517-a676-7822508d183c"/>
+			</ATTR>
+		</SOURCE>
+		<SOURCE uuid="59b8d45a-68bb-41a9-b70f-0b699d752638">
+			<ATTR name="compatibilityList" targetType="compatibility">
+				<TARGET uuid="e3c88c25-6c9d-47f6-80d8-9ca826192f54"/>
+				<TARGET uuid="4a545f52-4bf0-4474-a818-4c023a60d90a"/>
+				<TARGET uuid="6ed2a9b4-f6e7-4b80-9bfa-28f944cbb8f6"/>
+			</ATTR>
+			<ATTR name="power_mode" targetType="power_mode">
+				<TARGET uuid="6e73214b-5545-4833-98d6-bd5e21544d2c"/>
+			</ATTR>
+			<ATTR name="product_categoryList" targetType="product_category">
+				<TARGET uuid="a6040168-d73e-48ea-93c0-bb4078555b40"/>
+			</ATTR>
+		</SOURCE>
+		<SOURCE uuid="6fa0e07b-cb25-4869-9d47-63610134b600">
+			<ATTR name="compatibilityList" targetType="compatibility">
+				<TARGET uuid="39c6816b-3f44-4394-bea4-528eb69aba50"/>
+				<TARGET uuid="4a545f52-4bf0-4474-a818-4c023a60d90a"/>
+				<TARGET uuid="6ed2a9b4-f6e7-4b80-9bfa-28f944cbb8f6"/>
+			</ATTR>
+			<ATTR name="power_mode" targetType="power_mode">
+				<TARGET uuid="6e73214b-5545-4833-98d6-bd5e21544d2c"/>
+			</ATTR>
+			<ATTR name="product_categoryList" targetType="product_category">
+				<TARGET uuid="479361a4-0526-4517-a676-7822508d183c"/>
+			</ATTR>
+		</SOURCE>
+		<SOURCE uuid="7f87fe35-ab9e-4dfc-9016-263b66e940b2">
+			<ATTR name="compatibilityList" targetType="compatibility">
+				<TARGET uuid="6ed2a9b4-f6e7-4b80-9bfa-28f944cbb8f6"/>
+			</ATTR>
+			<ATTR name="power_mode" targetType="power_mode">
+				<TARGET uuid="425afa4b-2517-4b99-8713-1955c1b7fead"/>
+			</ATTR>
+			<ATTR name="product_categoryList" targetType="product_category">
+				<TARGET uuid="4b0411e6-10d9-4d56-8be6-8066305ccb0e"/>
+			</ATTR>
+		</SOURCE>
+	</REFS>
+</ENTITY_REFS>

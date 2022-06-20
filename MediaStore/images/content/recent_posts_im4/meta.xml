@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='md_creation_date'><DATE>1637182120850</DATE></FIELD>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Person",
+        "confidence" : 98.437454,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.35271388,
+            "height" : 0.38280785,
+            "left" : 0.6391857,
+            "top" : 0.0056174044
+          },
+          "confidence" : 98.437454
+        }, {
+          "boundingBox" : {
+            "width" : 0.437185,
+            "height" : 0.84507865,
+            "left" : 0.011568485,
+            "top" : 0.13128747
+          },
+          "confidence" : 87.86243
+        } ],
+        "parents" : [ ]
+      }, {
+        "name" : "Human",
+        "confidence" : 98.437454,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Phone",
+        "confidence" : 95.05644,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Electronics",
+        "confidence" : 95.05644,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Mobile Phone",
+        "confidence" : 93.8939,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.33869797,
+            "height" : 0.684434,
+            "left" : 0.22326069,
+            "top" : 0.24175741
+          },
+          "confidence" : 93.8939
+        } ],
+        "parents" : [ {
+          "name" : "Phone"
+        }, {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Cell Phone",
+        "confidence" : 93.8939,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Phone"
+        }, {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Text",
+        "confidence" : 77.21873,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Iphone",
+        "confidence" : 64.42428,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Mobile Phone"
+        }, {
+          "name" : "Phone"
+        }, {
+          "name" : "Electronics"
+        } ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "2.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "5.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Cell Phone #Text #Person #Phone #Mobile Phone #Electronics #Human #Iphone"
+  }
+}</TEXT></FIELD>
+</FIELDS>

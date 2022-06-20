@@ -1,0 +1,21 @@
+//!Beanshell
+
+//Version: $Revision: 61189 $ $Date: 2014-03-06 12:27:45 +0100 (Do, 06 Mrz 2014) $
+
+import de.espirit.firstspirit.access.store.pagestore.DataProvider;
+import de.espirit.firstspirit.access.store.templatestore.GomSourceProvider;
+
+storeElement = context.getElement();
+xml = null;
+
+if (storeElement instanceof DataProvider) {
+	xml = storeElement.getData().toXml();
+} else if (storeElement instanceof GomSourceProvider) {
+	xml = storeElement.getDefaults().toXml();
+}
+
+if (xml != null) {
+	print(xml);
+} else {
+	print("No data available!");
+}

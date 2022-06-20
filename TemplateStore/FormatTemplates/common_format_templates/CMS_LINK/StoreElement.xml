@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="3856895397850790522" name="CMS_LINK">
+	<LANG displayname="Link" language="EN"/>
+	<LANG displayname="Verweis" language="DE"/>
+	<style cdata="" quote="1" system="1" tag="CMS_LINK" view="link" visible="0">
+		<attr name="align" value="LEFT"/>
+		<attr name="font" value="sansserif"/>
+		<attr name="name" value="Link"/>
+		<render>
+			<channel conversion="Convert HTML" name="html" templateSetId="9062318847741885912"/>
+		</render>
+	</style>
+</FORMATTEMPLATE>

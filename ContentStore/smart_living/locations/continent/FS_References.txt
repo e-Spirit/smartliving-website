@@ -1,0 +1,12 @@
+[self]
+uid=continent
+gid=93944d65-1523-4543-b82f-62e4378c1ee7
+uidType=CONTENTSTORE
+class=de.espirit.firstspirit.store.access.contentstore.Content2Impl
+
+[requiredProjectId]
+uid=smartliving.continent
+gid=11d3a3b9-3469-41f2-bb8a-0d8224748e70
+uidType=TEMPLATESTORE_SCHEMA
+class=de.espirit.firstspirit.store.access.templatestore.TableTemplateImpl
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_INPUT_TEXT name="st_header_acc" hFill="yes" singleLine="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Title"/>
+      <LANGINFO lang="DE" label="Titel"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_DOM
+    name="st_text_acc"
+    hFill="yes"
+    listConfig="sorted:Ordered[boolean],orderedStyle:Select Ordered Class[outlineNone:No outline|simpleOutline:Simple Outline|numCount:Num Count|lowerAlpha:Lower Alpha],unorderedStyle:Select unordered Style[styled:Styled|unstyled:Unstyled|circle:Circle|rightAngle:Right Angle|arrow:Simple Arrow|checked:Checked|greenChecked:Green Checked|yellowChecked:Yellow Checked|chevron:Chevron|greenArrow:Green Arrow|redCircle:Red Circle]"
+    listDefaultConfig="sorted=false,unorderedStyle=unstyled"
+    rows="10">
+    <FORMATS>
+      <TEMPLATE name="standard_p_tag"/>
+      <TEMPLATE name="section_lowercase_text"/>
+      <TEMPLATE name="ul"/>
+      <TEMPLATE name="u"/>
+      <TEMPLATE name="h3"/>
+    </FORMATS>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Text"/>
+    </LANGINFOS>
+    <LINKEDITORS>
+      <LINKEDITOR name="internal_link"/>
+      <LINKEDITOR name="external_link"/>
+    </LINKEDITORS>
+  </CMS_INPUT_DOM>
+
+</CMS_MODULE>

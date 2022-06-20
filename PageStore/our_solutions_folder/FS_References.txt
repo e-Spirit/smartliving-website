@@ -1,0 +1,6 @@
+[self]
+uid=our_solutions_folder
+gid=7a8b1b82-aa20-4468-a90a-9a64d582fbe4
+uidType=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.PageFolderImpl
+

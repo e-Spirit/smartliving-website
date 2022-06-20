@@ -1,0 +1,1 @@
+st_fts_language_source + " - " + st_fts_language_target

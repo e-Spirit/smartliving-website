@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OBJECT class="de.espirit.firstspirit.server.projectmanagement.ProjectDTO">
+	<FIELD name="_actionConfiguration">
+		<OBJECT class="de.espirit.firstspirit.server.projectmanagement.ActionConfigurationDTO">
+			<FIELD name="_favoriteActions">
+				<OBJECT class="java.util.ArrayList">
+				</OBJECT>
+			</FIELD>
+		</OBJECT>
+	</FIELD>
+	<FIELD name="_activeWebServer">
+		<OBJECT class="java.util.HashMap">
+		</OBJECT>
+	</FIELD>
+	<FIELD name="_allowLanguageHiding" type="boolean">false</FIELD>
+	<FIELD name="_allowUidChanges" type="boolean">true</FIELD>
+	<FIELD name="_allowedApplications"><NULL/><!-- interface java.util.List --></FIELD>
+	<FIELD name="_barAdmin" type="boolean">false</FIELD>
+	<FIELD name="_cacheWeight" type="double">1.0</FIELD>
+	<FIELD name="_checkAllowedApplications" type="boolean">false</FIELD>
+	<FIELD name="_deleteWorkflow"><NULL/><!-- class java.lang.String --></FIELD>
+	<FIELD name="_enableMediaExtRestrictions" type="boolean">false</FIELD>
+	<FIELD name="_enableMediaSizeLimit" type="boolean">false</FIELD>
+	<FIELD name="_enableMediaStrictMimeCheck" type="boolean">false</FIELD>
+	<FIELD name="_forbidPolyglotDataHierarchy" type="boolean">true</FIELD>
+	<FIELD name="_futureTimelineProvider"><NULL/><!-- class java.lang.String --></FIELD>
+	<FIELD name="_historyTimelineProvider"><NULL/><!-- class java.lang.String --></FIELD>
+	<FIELD name="_inlinePreviewConstraints">
+		<OBJECT class="de.espirit.firstspirit.server.projectmanagement.InlinePreviewConstraintsDTO">
+			<FIELD name="_browserEngineFileExtensions">
+				<OBJECT class="java.lang.String">pdf,html,htm,url,swf</OBJECT>
+			</FIELD>
+			<FIELD name="_build" type="long">0</FIELD>
+			<FIELD name="_enabled" type="boolean">true</FIELD>
+			<FIELD name="_gDataApiCredentials">
+				<OBJECT class="de.espirit.common.util.Pair">
+					<FIELD name="_key"><NULL/><!-- class java.lang.Object --></FIELD>
+					<FIELD name="_value"><NULL/><!-- class java.lang.Object --></FIELD>
+				</OBJECT>
+			</FIELD>
+			<FIELD name="_graphicsEngineActive" type="boolean">true</FIELD>
+			<FIELD name="_graphicsEngineFileExtensions">
+				<OBJECT class="java.lang.String">png,jpg,jpeg,bmp,gif,psd</OBJECT>
+			</FIELD>
+			<FIELD name="_inlinePreviewControlAdjustable" type="boolean">true</FIELD>
+			<FIELD name="_inlinePreviewControlOption">
+				<OBJECT class="de.espirit.firstspirit.access.project.InlinePreviewConstraints$InlinePreviewControlOption">BOTH</OBJECT>
+			</FIELD>
+			<FIELD name="_mediaPlayerFileExtensions">
+				<OBJECT class="java.lang.String">avi,mpg,mpeg,wmv,asf,mp3,mp4</OBJECT>
+			</FIELD>
+			<FIELD name="_mediaPreviewEnabled" type="boolean">true</FIELD>
+			<FIELD name="_textEditorFileExtensions">
+				<OBJECT class="java.lang.String">css,js,txt,xml,csv,json,as</OBJECT>
+			</FIELD>
+			<FIELD name="_zoomFactor" type="float">0.8</FIELD>
+			<FIELD name="_zoomFactorAdjustable" type="boolean">true</FIELD>
+		</OBJECT>
+	</FIELD>
+	<FIELD name="_maximumApplicationWidth" type="int">-1</FIELD>
+	<FIELD name="_mediaConstraints">
+		<OBJECT class="de.espirit.firstspirit.server.mediamanagement.MediaConstraintsDTO">
+			<FIELD name="_allowedFileNameExtensions">
+				<OBJECT class="de.espirit.firstspirit.server.mediamanagement.MediaConstraintsDTO$IgnoreCaseStringSet">
+				</OBJECT>
+			</FIELD>
+			<FIELD name="_maxFileSize" type="long">0</FIELD>
+			<FIELD name="_maxImageSize" type="long">0</FIELD>
+		</OBJECT>
+	</FIELD>
+	<FIELD name="_mediaNotTranslatedStrategy">
+		<OBJECT class="de.espirit.firstspirit.access.project.Project$MediaNotTranslatedStrategy">IGNORE</OBJECT>
+	</FIELD>
+	<FIELD name="_metadataDescriptions">
+		<OBJECT class="java.util.ArrayList">
+			<OBJECT class="de.espirit.firstspirit.server.projectmanagement.MetadataDescriptionDTO">
+				<FIELD name="_names">
+					<OBJECT class="java.util.HashMap">
+						<NULL/>
+						<OBJECT class="java.lang.String">Media</OBJECT>
+						<OBJECT class="java.lang.String">DE</OBJECT>
+						<OBJECT class="java.lang.String">Medium</OBJECT>
+						<OBJECT class="java.lang.String">EN</OBJECT>
+						<OBJECT class="java.lang.String">Media</OBJECT>
+					</OBJECT>
+				</FIELD>
+				<FIELD name="_type">
+					<OBJECT class="de.espirit.firstspirit.access.project.MetadataDescription$MetadataType">MEDIA</OBJECT>
+				</FIELD>
+			</OBJECT>
+		</OBJECT>
+	</FIELD>
+	<FIELD name="_pluggabilitySetting">
+		<OBJECT class="java.util.EnumMap" type="de.espirit.firstspirit.module.WebEnvironment$WebScope">
+			<OBJECT class="de.espirit.firstspirit.module.WebEnvironment$WebScope">GLOBAL</OBJECT>
+			<OBJECT class="de.espirit.firstspirit.server.projectmanagement.WebAppConfigContainer$PluggabilitySetting">USE_GLOBAL_SETTING</OBJECT>
+			<OBJECT class="de.espirit.firstspirit.module.WebEnvironment$WebScope">LIVE</OBJECT>
+			<OBJECT class="de.espirit.firstspirit.server.projectmanagement.WebAppConfigContainer$PluggabilitySetting">USE_GLOBAL_SETTING</OBJECT>
+			<OBJECT class="de.espirit.firstspirit.module.WebEnvironment$WebScope">PREVIEW</OBJECT>
+			<OBJECT class="de.espirit.firstspirit.server.projectmanagement.WebAppConfigContainer$PluggabilitySetting">USE_GLOBAL_SETTING</OBJECT>
+			<OBJECT class="de.espirit.firstspirit.module.WebEnvironment$WebScope">STAGING</OBJECT>
+			<OBJECT class="de.espirit.firstspirit.server.projectmanagement.WebAppConfigContainer$PluggabilitySetting">USE_GLOBAL_SETTING</OBJECT>
+			<OBJECT class="de.espirit.firstspirit.module.WebEnvironment$WebScope">WEBEDIT</OBJECT>
+			<OBJECT class="de.espirit.firstspirit.server.projectmanagement.WebAppConfigContainer$PluggabilitySetting">USE_GLOBAL_SETTING</OBJECT>
+		</OBJECT>
+	</FIELD>
+	<FIELD name="_previewParameterTemplate" type="long">-1</FIELD>
+	<FIELD name="_previewViewports">
+		<OBJECT class="java.util.ArrayList">
+			<OBJECT class="de.espirit.firstspirit.server.projectmanagement.PreviewViewportDTO">
+				<FIELD name="_height" type="int">800</FIELD>
+				<FIELD name="_icon">
+					<OBJECT class="de.espirit.firstspirit.access.project.PreviewViewport$ViewportIcon">NOTEBOOK</OBJECT>
+				</FIELD>
+				<FIELD name="_scaling" type="int">100</FIELD>
+				<FIELD name="_templateSetId" type="long">9062318847741885912</FIELD>
+				<FIELD name="_width" type="int">1280</FIELD>
+			</OBJECT>
+			<OBJECT class="de.espirit.firstspirit.server.projectmanagement.PreviewViewportDTO">
+				<FIELD name="_height" type="int">768</FIELD>
+				<FIELD name="_icon">
+					<OBJECT class="de.espirit.firstspirit.access.project.PreviewViewport$ViewportIcon">TABLET</OBJECT>
+				</FIELD>
+				<FIELD name="_scaling" type="int">100</FIELD>
+				<FIELD name="_templateSetId" type="long">9062318847741885912</FIELD>
+				<FIELD name="_width" type="int">1024</FIELD>
+			</OBJECT>
+			<OBJECT class="de.espirit.firstspirit.server.projectmanagement.PreviewViewportDTO">
+				<FIELD name="_height" type="int">800</FIELD>
+				<FIELD name="_icon">
+					<OBJECT class="de.espirit.firstspirit.access.project.PreviewViewport$ViewportIcon">SMARTPHONE</OBJECT>
+				</FIELD>
+				<FIELD name="_scaling" type="int">80</FIELD>
+				<FIELD name="_templateSetId" type="long">9062318847741885912</FIELD>
+				<FIELD name="_width" type="int">480</FIELD>
+			</OBJECT>
+		</OBJECT>
+	</FIELD>
+	<FIELD name="_redirectTemplate" type="long">-1</FIELD>
+	<FIELD name="_revisionComments">
+		<OBJECT class="java.util.HashMap">
+			<OBJECT class="de.espirit.firstspirit.access.store.Store$Type">CONTENTSTORE</OBJECT>
+			<OBJECT class="de.espirit.firstspirit.access.project.Project$CommentMode">NO</OBJECT>
+			<OBJECT class="de.espirit.firstspirit.access.store.Store$Type">GLOBALSTORE</OBJECT>
+			<OBJECT class="de.espirit.firstspirit.access.project.Project$CommentMode">NO</OBJECT>
+			<OBJECT class="de.espirit.firstspirit.access.store.Store$Type">MEDIASTORE</OBJECT>
+			<OBJECT class="de.espirit.firstspirit.access.project.Project$CommentMode">NO</OBJECT>
+			<OBJECT class="de.espirit.firstspirit.access.store.Store$Type">PAGESTORE</OBJECT>
+			<OBJECT class="de.espirit.firstspirit.access.project.Project$CommentMode">NO</OBJECT>
+			<OBJECT class="de.espirit.firstspirit.access.store.Store$Type">SITESTORE</OBJECT>
+			<OBJECT class="de.espirit.firstspirit.access.project.Project$CommentMode">NO</OBJECT>
+			<OBJECT class="de.espirit.firstspirit.access.store.Store$Type">TEMPLATESTORE</OBJECT>
+			<OBJECT class="de.espirit.firstspirit.access.project.Project$CommentMode">NO</OBJECT>
+		</OBJECT>
+	</FIELD>
+	<FIELD name="_revisionId" type="long">1</FIELD>
+	<FIELD name="_searchIndexPathLengthToFollow"><NULL/><!-- class java.lang.Integer --></FIELD>
+	<FIELD name="_secureDefaultAllow" type="boolean">false</FIELD>
+	<FIELD name="_selectedWebServer">
+		<OBJECT class="java.util.HashMap">
+		</OBJECT>
+	</FIELD>
+	<FIELD name="_showReferenceNames" type="boolean">true</FIELD>
+	<FIELD name="_useMappingBasedSchemaMerge" type="boolean">false</FIELD>
+	<FIELD name="_useServerLockForDataset" type="boolean">true</FIELD>
+	<FIELD name="_webAppsConfigChanged">
+		<OBJECT class="java.util.HashMap">
+			<OBJECT class="java.lang.String">PREVIEW</OBJECT>
+			<OBJECT class="java.lang.Boolean">true</OBJECT>
+			<OBJECT class="java.lang.String">WEBEDIT</OBJECT>
+			<OBJECT class="java.lang.Boolean">true</OBJECT>
+		</OBJECT>
+	</FIELD>
+	<FIELD name="_webeditDefaultTemplate" type="long">-1</FIELD>
+	<FIELD name="_webeditDefaultWorkflow" type="long">4957742419529482047</FIELD>
+	<FIELD name="_webeditPreviewUrl"><NULL/><!-- class java.lang.String --></FIELD>
+	<FIELD name="_webeditStoreMapping">
+		<OBJECT class="java.lang.String">de.espirit.firstspirit.webedit.server.store.SynchronousStoreMappingPlugin</OBJECT>
+	</FIELD>
+	<FIELD name="_webeditSystemFolder" type="long">3176758073824746563</FIELD>
+	<FIELD name="_webeditWorkflowGroupProvider">
+		<OBJECT class="java.lang.String">com.espirit.moddev.basicworkflows.util.BasicWorkflowStatusProvider</OBJECT>
+	</FIELD>
+	<FIELD name="m_HTMLEncoding">
+		<OBJECT class="java.lang.String">ISO-8859-1</OBJECT>
+	</FIELD>
+	<FIELD name="m_absoluteLinks" type="boolean">false</FIELD>
+	<FIELD name="m_active" type="boolean">true</FIELD>
+	<FIELD name="m_allowEveryone" type="boolean">false</FIELD>
+	<FIELD name="m_averageGenerationTime" type="long">0</FIELD>
+	<FIELD name="m_averagePageGenerationTime" type="long">0</FIELD>
+	<FIELD name="m_brokenLinkMedia">
+		<OBJECT class="java.lang.String"></OBJECT>
+	</FIELD>
+	<FIELD name="m_brokenLinkPage">
+		<OBJECT class="java.lang.String"></OBJECT>
+	</FIELD>
+	<FIELD name="m_checkPermissions" type="boolean">true</FIELD>
+	<FIELD name="m_createBackup" type="boolean">true</FIELD>
+	<FIELD name="m_createFileBackup" type="boolean">true</FIELD>
+	<FIELD name="m_createMailForTask" type="boolean">true</FIELD>
+	<FIELD name="m_createPictureBackup" type="boolean">true</FIELD>
+	<FIELD name="m_createSiteStoreBackup" type="boolean">true</FIELD>
+	<FIELD name="m_deploy_only_if" type="int">2</FIELD>
+	<FIELD name="m_deploymentCount" type="int">0</FIELD>
+	<FIELD name="m_description">
+		<OBJECT class="java.lang.String">_TARGET_PROJECT_</OBJECT>
+	</FIELD>
+	<FIELD name="m_email">
+		<OBJECT class="java.lang.String"></OBJECT>
+	</FIELD>
+	<FIELD name="m_everyone">
+		<OBJECT class="java.util.HashSet">
+			<OBJECT class="java.lang.Long">1000438474281731692</OBJECT>
+		</OBJECT>
+	</FIELD>
+	<FIELD name="m_generateComment" type="boolean">true</FIELD>
+	<FIELD name="m_generationCount" type="int">0</FIELD>
+	<FIELD name="m_id" type="long">-5802341919937733185</FIELD>
+	<FIELD name="m_lastModified"><NULL/><!-- class java.util.Date --></FIELD>
+	<FIELD name="m_maximum_warning_count" type="int">100</FIELD>
+	<FIELD name="m_metadataTemplateId" type="long">-6893060654742945510</FIELD>
+	<FIELD name="m_name">
+		<OBJECT class="java.lang.String">_TARGET_PROJECT_</OBJECT>
+	</FIELD>
+	<FIELD name="m_notTranslatedAlternativePage">
+		<OBJECT class="java.lang.String"></OBJECT>
+	</FIELD>
+	<FIELD name="m_notranslationstrategy" type="int">0</FIELD>
+	<FIELD name="m_permissionVar"><NULL/><!-- class java.lang.String --></FIELD>
+	<FIELD name="m_proxyName">
+		<OBJECT class="java.lang.String"></OBJECT>
+	</FIELD>
+	<FIELD name="m_proxyPass">
+		<OBJECT class="java.lang.String"></OBJECT>
+	</FIELD>
+	<FIELD name="m_proxyUser">
+		<OBJECT class="java.lang.String"></OBJECT>
+	</FIELD>
+	<FIELD name="m_quotaHDD" type="long">-1</FIELD>
+	<FIELD name="m_quotaMail"><NULL/><!-- class java.lang.String --></FIELD>
+	<FIELD name="m_quotaPages" type="long">-1</FIELD>
+	<FIELD name="m_referencesCalculated" type="boolean">true</FIELD>
+	<FIELD name="m_remoteProjectConfigs">
+		<OBJECT class="java.util.ArrayList">
+		</OBJECT>
+	</FIELD>
+	<FIELD name="m_renderExternalLinks" type="boolean">false</FIELD>
+	<FIELD name="m_secureAccessURL"><NULL/><!-- class java.lang.String --></FIELD>
+	<FIELD name="m_secureMediaFolder"><NULL/><!-- class java.lang.String --></FIELD>
+	<FIELD name="m_serverMajorVersion">
+		<OBJECT class="java.lang.String">5</OBJECT>
+	</FIELD>
+	<FIELD name="m_serverMinorVersion">
+		<OBJECT class="java.lang.String">2</OBJECT>
+	</FIELD>
+	<FIELD name="m_statistisStartTime" type="long">1</FIELD>
+	<FIELD name="m_storeTypeMedia" type="int">0</FIELD>
+	<FIELD name="m_useDatabase" type="boolean">false</FIELD>
+	<FIELD name="m_usePreviewServlet" type="boolean">false</FIELD>
+	<FIELD name="m_useRelease" type="boolean">true</FIELD>
+	<FIELD name="m_useWebEdit" type="boolean">true</FIELD>
+	<FIELD name="m_webeditTemplateSet" type="long">9062318847741885912</FIELD>
+	<FIELD name="m_webeditTheme"><NULL/><!-- class java.lang.String --></FIELD>
+	<FIELD name="previewLoginPass">
+		<OBJECT class="java.lang.String"></OBJECT>
+	</FIELD>
+	<FIELD name="previewLoginUser">
+		<OBJECT class="java.lang.String"></OBJECT>
+	</FIELD>
+	<FIELD name="usePreviewLogin" type="boolean">false</FIELD>
+</OBJECT>

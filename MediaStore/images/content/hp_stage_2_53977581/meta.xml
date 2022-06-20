@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='md_alt_text'><TEXT>Alt</TEXT></FIELD>
+	<FIELD name='md_region'><SEL><VALUE>region_eu</VALUE></SEL></FIELD>
+	<FIELD name='md_country'><SEL><VALUE>country_gb</VALUE></SEL></FIELD>
+	<FIELD name='md_language'><SEL><VALUE>EN</VALUE></SEL></FIELD>
+	<FIELD name='md_creation_date'><DATE>1627981084142</DATE></FIELD>
+	<FIELD name='md_licensing'><SEL><VALUE>license_rfe</VALUE></SEL></FIELD>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Building",
+        "confidence" : 97.637436,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Villa",
+        "confidence" : 96.32261,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "House"
+        }, {
+          "name" : "Housing"
+        }, {
+          "name" : "Building"
+        } ]
+      }, {
+        "name" : "Housing",
+        "confidence" : 96.32261,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Building"
+        } ]
+      }, {
+        "name" : "House",
+        "confidence" : 96.32261,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Housing"
+        }, {
+          "name" : "Building"
+        } ]
+      }, {
+        "name" : "Water",
+        "confidence" : 87.94839,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Pool",
+        "confidence" : 84.74119,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Water"
+        } ]
+      }, {
+        "name" : "Swimming Pool",
+        "confidence" : 73.86499,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.8309809,
+            "height" : 0.26914635,
+            "left" : 0.16496447,
+            "top" : 0.63294667
+          },
+          "confidence" : 0.0
+        } ],
+        "parents" : [ {
+          "name" : "Pool"
+        }, {
+          "name" : "Water"
+        } ]
+      }, {
+        "name" : "Architecture",
+        "confidence" : 71.63084,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Building"
+        } ]
+      }, {
+        "name" : "Mansion",
+        "confidence" : 67.42545,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "House"
+        }, {
+          "name" : "Housing"
+        }, {
+          "name" : "Building"
+        } ]
+      }, {
+        "name" : "Door",
+        "confidence" : 58.732548,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Hotel",
+        "confidence" : 55.074284,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Building"
+        } ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "2.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "5.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Housing #Swimming Pool #Water #Hotel #Architecture #Building #House #Pool #Door #Villa #Mansion"
+  }
+}</TEXT></FIELD>
+</FIELDS>

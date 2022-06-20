@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEMPLATE comment="" filename="counter" id="-821604001152005050" previewPageRefUid="home" templateid="3763225060891630588" type="section">
+	<EXTENSION file="html" link="html" templateSet="9062318847741885912"/>
+	<EXTENSION file="json" link="json" templateSet="15845"/>
+	<LANG displayname="Counter" language="EN"/>
+	<LANG displayname="Zähler" language="DE"/>
+</TEMPLATE>

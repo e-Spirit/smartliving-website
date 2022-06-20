@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SCHEMAGRAPH scale="1.0">
+	<TABLE height="43" name="power_mode" width="113" x="1274" y="248"/>
+	<TABLE height="225" name="locations" width="153" x="270" y="332"/>
+	<TABLE height="69" name="country" width="136" x="579" y="495"/>
+	<TABLE height="56" name="category" width="119" x="386" y="157"/>
+	<TABLE height="355" name="product" width="186" x="1001" y="355"/>
+	<TABLE height="56" name="continent" width="144" x="548" y="307"/>
+	<TABLE height="56" name="product_category" width="119" x="1057" y="193"/>
+	<TABLE height="56" name="compatibility" width="113" x="790" y="353"/>
+	<TABLE height="95" name="contacts" width="146" x="1028" y="26"/>
+	<TABLE height="225" name="news" width="147" x="30" y="30"/>
+	<TABLE height="43" name="author" width="102" x="101" y="428"/>
+	<TABLE height="82" name="type" width="125" x="289" y="674"/>
+	<TABLE height="43" name="manufacturer" width="119" x="878" y="226"/>
+	<TABLE height="69" name="tag" width="132" x="403" y="45"/>
+	<TABLE height="95" name="promotions" width="134" x="706" y="43"/>
+	<REFERENCE name="news.authorList">
+		<POINT x="121" y="255"/>
+		<POINT x="148" y="428"/>
+	</REFERENCE>
+	<REFERENCE name="product.compatibilityList">
+		<POINT x="1001" y="475"/>
+		<POINT x="892" y="409"/>
+	</REFERENCE>
+	<REFERENCE name="type.locationsList">
+		<POINT x="350" y="674"/>
+		<POINT x="348" y="557"/>
+	</REFERENCE>
+	<REFERENCE name="country.locationsList">
+		<POINT x="579" y="510"/>
+		<POINT x="423" y="466"/>
+	</REFERENCE>
+	<REFERENCE name="continent.countryList">
+		<POINT x="623" y="363"/>
+		<POINT x="642" y="495"/>
+	</REFERENCE>
+	<REFERENCE name="product.product_categoryList">
+		<POINT x="1106" y="355"/>
+		<POINT x="1114" y="249"/>
+	</REFERENCE>
+	<REFERENCE name="category.newsList">
+		<POINT x="386" y="177"/>
+		<POINT x="177" y="151"/>
+	</REFERENCE>
+	<REFERENCE name="product.manufacturer">
+		<POINT x="1001" y="363"/>
+		<POINT x="949" y="269"/>
+	</REFERENCE>
+	<REFERENCE name="news.tagList">
+		<POINT x="177" y="129"/>
+		<POINT x="403" y="90"/>
+	</REFERENCE>
+	<REFERENCE name="product.power_mode">
+		<POINT x="1187" y="429"/>
+		<POINT x="1311" y="291"/>
+	</REFERENCE>
+	<REFERENCE name="tag.promotionsList">
+		<POINT x="535" y="81"/>
+		<POINT x="706" y="88"/>
+	</REFERENCE>
+</SCHEMAGRAPH>

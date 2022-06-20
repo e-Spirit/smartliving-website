@@ -1,0 +1,6 @@
+[self]
+uid=ro_sanswebtext_bold
+gid=36c3409f-6efb-44ea-b54c-fa1b74e834ac
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+

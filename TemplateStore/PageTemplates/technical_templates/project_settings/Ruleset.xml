@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RULES>
+	<RULE>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="ps_homepage"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="SAVE">
+				<PROPERTY name="VALID" source="ps_homepage"/>
+				<MESSAGE lang="*" text="Please choose a page reference."/>
+				<MESSAGE lang="DE" text="Bitte wählen sie eine Seitenreferenz aus."/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="ps_news_detailpage"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="SAVE">
+				<PROPERTY name="VALID" source="ps_news_detailpage"/>
+				<MESSAGE lang="*" text="Please choose a page reference."/>
+				<MESSAGE lang="DE" text="Bitte wählen sie eine Seitenreferenz aus."/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="ps_news_overviewpage"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="SAVE">
+				<PROPERTY name="VALID" source="ps_news_overviewpage"/>
+				<MESSAGE lang="*" text="Please choose a page reference."/>
+				<MESSAGE lang="DE" text="Bitte wählen sie eine Seitenreferenz aus."/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="ps_news_overviewpage_press_releases"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="SAVE">
+				<PROPERTY name="VALID" source="ps_news_overviewpage_press_releases"/>
+				<MESSAGE lang="*" text="Please choose a page reference."/>
+				<MESSAGE lang="DE" text="Bitte wählen sie eine Seitenreferenz aus."/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<!-- Mandatory: ps_product_detailpage -->
+	<RULE>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="ps_product_detailpage"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="SAVE">
+				<PROPERTY name="VALID" source="ps_product_detailpage"/>
+				<MESSAGE lang="*" text="Please choose a page reference."/>
+				<MESSAGE lang="DE" text="Bitte wählen sie eine Seitenreferenz aus."/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<!-- Mandatory: ps_special_dealer_page -->
+	<RULE>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="ps_special_dealer_page"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="SAVE">
+				<PROPERTY name="VALID" source="ps_special_dealer_page"/>
+				<MESSAGE lang="*" text="Please choose a page reference."/>
+				<MESSAGE lang="DE" text="Bitte wählen sie eine Seitenreferenz aus."/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<!-- Mandatory: ps_dealer_contact_detailpage -->
+	<RULE>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="ps_dealer_contact_detailpage"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="SAVE">
+				<PROPERTY name="VALID" source="ps_dealer_contact_detailpage"/>
+				<MESSAGE lang="*" text="Please choose a page reference."/>
+				<MESSAGE lang="DE" text="Bitte wählen sie eine Seitenreferenz aus."/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<OR>
+				<MATCHES regex="^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$">
+					<PROPERTY name="VALUE" source="ps_button"/>
+				</MATCHES>
+				<MATCHES regex="^$">
+					<PROPERTY name="VALUE" source="ps_button"/>
+				</MATCHES>
+			</OR>
+		</WITH>
+		<DO>
+			<VALIDATION scope="SAVE">
+				<PROPERTY name="VALID" source="ps_button"/>
+				<MESSAGE lang="*" text="bitte einen Hexcode eingeben"/>
+				<MESSAGE lang="EN" text="please enter a hexcode"/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<OR>
+				<MATCHES regex="^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$">
+					<PROPERTY name="VALUE" source="ps_footercolor"/>
+				</MATCHES>
+				<MATCHES regex="^$">
+					<PROPERTY name="VALUE" source="ps_footercolor"/>
+				</MATCHES>
+			</OR>
+		</WITH>
+		<DO>
+			<VALIDATION scope="SAVE">
+				<PROPERTY name="VALID" source="ps_footercolor"/>
+				<MESSAGE lang="*" text="bitte einen Hexcode eingeben"/>
+				<MESSAGE lang="EN" text="please enter a hexcode"/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<OR>
+				<MATCHES regex="^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$">
+					<PROPERTY name="VALUE" source="ps_text_highlighting"/>
+				</MATCHES>
+				<MATCHES regex="^$">
+					<PROPERTY name="VALUE" source="ps_text_highlighting"/>
+				</MATCHES>
+			</OR>
+		</WITH>
+		<DO>
+			<VALIDATION scope="SAVE">
+				<PROPERTY name="VALID" source="ps_text_highlighting"/>
+				<MESSAGE lang="*" text="bitte einen Hexcode eingeben"/>
+				<MESSAGE lang="EN" text="please enter a hexcode"/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<OR>
+				<MATCHES regex="^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$">
+					<PROPERTY name="VALUE" source="ps_background"/>
+				</MATCHES>
+				<MATCHES regex="^$">
+					<PROPERTY name="VALUE" source="ps_background"/>
+				</MATCHES>
+			</OR>
+		</WITH>
+		<DO>
+			<VALIDATION scope="SAVE">
+				<PROPERTY name="VALID" source="ps_background"/>
+				<MESSAGE lang="*" text="bitte einen Hexcode eingeben"/>
+				<MESSAGE lang="EN" text="please enter a hexcode"/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<OR>
+				<MATCHES regex="^(?:0*(?:\.\d+)?|1(\.0*)?)$">
+					<PROPERTY name="VALUE" source="ps_banneropacity"/>
+				</MATCHES>
+				<MATCHES regex="^$">
+					<PROPERTY name="VALUE" source="ps_banneropacity"/>
+				</MATCHES>
+			</OR>
+		</WITH>
+		<DO>
+			<VALIDATION scope="SAVE">
+				<PROPERTY name="VALID" source="ps_banneropacity"/>
+				<MESSAGE lang="*" text="bitte eine Zahl von 0-1 eingeben"/>
+				<MESSAGE lang="EN" text="please enter a number in range of 0-1"/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<OR>
+				<MATCHES regex="^(?:0*(?:\.\d+)?|1(\.0*)?)$">
+					<PROPERTY name="VALUE" source="ps_contentopacity"/>
+				</MATCHES>
+				<MATCHES regex="^$">
+					<PROPERTY name="VALUE" source="ps_contentopacity"/>
+				</MATCHES>
+			</OR>
+		</WITH>
+		<DO>
+			<VALIDATION scope="SAVE">
+				<PROPERTY name="VALID" source="ps_contentopacity"/>
+				<MESSAGE lang="*" text="bitte eine Zahl von 0-1 eingeben"/>
+				<MESSAGE lang="EN" text="please enter a number in range of 0-1"/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<!-- Must be a positive integer: ps_global_slider_delay -->
+	<RULE>
+		<WITH>
+			<OR>
+				<MATCHES regex="^([0-9]+)">
+					<PROPERTY name="VALUE" source="ps_global_slider_delay"/>
+				</MATCHES>
+			</OR>
+		</WITH>
+		<DO>
+			<VALIDATION scope="SAVE">
+				<PROPERTY name="VALID" source="ps_global_slider_delay"/>
+				<MESSAGE lang="*" text="bitte eine positive ganze Zahl eingeben"/>
+				<MESSAGE lang="EN" text="please enter a positive whole number"/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+</RULES>

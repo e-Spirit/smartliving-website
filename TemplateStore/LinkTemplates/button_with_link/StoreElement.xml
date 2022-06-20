@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LINKTEMPLATE cat="url" id="-5860388051932636477" name="button_with_link" txt="lt_button_text">
+	<LANG displayname="Button mit Link" language="DE"/>
+	<LANG displayname="Button with Link" language="EN"/>
+</LINKTEMPLATE>

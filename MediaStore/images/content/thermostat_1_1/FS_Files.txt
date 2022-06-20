@@ -1,0 +1,11 @@
+# mimeType        name
+text/plain;UTF-8  FS_Info.txt
+text/plain;UTF-8  FS_References.txt
+image/jpeg        Picture_thermostat_1_161668622_ORIGINAL.jpg
+image/jpeg        Picture_thermostat_1_161668622_banner_slider.jpg
+image/jpeg        Picture_thermostat_1_161668622_landscape.jpg
+image/jpeg        Picture_thermostat_1_161668622_portrait.jpg
+image/jpeg        Picture_thermostat_1_161668622_product_teaser.jpg
+image/jpeg        Picture_thermostat_1_161668622_square.jpg
+text/xml;UTF-8    StoreElement.xml
+text/xml          meta.xml

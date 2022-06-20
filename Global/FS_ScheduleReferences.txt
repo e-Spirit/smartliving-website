@@ -1,0 +1,12 @@
+[projects]
+name=_TARGET_PROJECT_
+type=Project
+gid=b6091e7c-c8e7-3e9e-baa2-f81bbd473c36
+class=de.espirit.firstspirit.access.project.Project
+
+[templateSets]
+name=html
+type=TemplateSet
+gid=654ff473-d3e1-3482-b4c9-a3669b4ee593
+class=de.espirit.firstspirit.access.project.TemplateSet
+

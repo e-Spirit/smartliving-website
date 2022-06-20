@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MEDIUM filename="AdobeStock_200064973" id="-6817384201709859359" meta="1" type="pic" uniquedescription="outdoor_camera_1">
+	<LANG displayname="Aussenkamera" language="DE"/>
+	<LANG displayname="Outdoor camera" language="EN"/>
+	<PICTURE>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:2574,&quot;x&quot;:2723,&quot;h&quot;:4002,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:3660,&quot;x&quot;:2162,&quot;h&quot;:2974,&quot;y&quot;:532},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="2723.0,0.0,2574.0,4002.0,0,false" extension="jpg" height="560" mimetype="image/jpeg" resolutionid="product_teaser" width="360"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:6000,&quot;x&quot;:0,&quot;h&quot;:2053,&quot;y&quot;:996},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:3660,&quot;x&quot;:2162,&quot;h&quot;:2974,&quot;y&quot;:532},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="0.0,996.0,6000.0,2053.0,0,false" extension="jpg" height="400" mimetype="image/jpeg" resolutionid="landscape" width="1170"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:6000,&quot;x&quot;:0,&quot;h&quot;:3376,&quot;y&quot;:320},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:3660,&quot;x&quot;:2162,&quot;h&quot;:2974,&quot;y&quot;:532},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="0.0,320.0,6000.0,3376.0,0,false" extension="jpg" height="1080" mimetype="image/jpeg" resolutionid="banner_slider" width="1920"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:6000,&quot;x&quot;:0,&quot;h&quot;:3751,&quot;y&quot;:128},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:3660,&quot;x&quot;:2162,&quot;h&quot;:2974,&quot;y&quot;:532},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="0.0,128.0,6000.0,3751.0,0,false" extension="jpg" height="500" mimetype="image/jpeg" resolutionid="portrait" width="800"/>
+		<RESOLUTION extension="jpeg" height="4002" mimetype="image/jpeg" resolutionid="ORIGINAL" width="6000"/>
+	</PICTURE>
+</MEDIUM>

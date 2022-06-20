@@ -1,0 +1,444 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='md_alt_text'><TEXT>sda</TEXT></FIELD>
+	<FIELD name='md_region'><SEL/></FIELD>
+	<FIELD name='md_country'><SEL/></FIELD>
+	<FIELD name='md_language'><SEL/></FIELD>
+	<FIELD name='md_creation_date'><DATE>1627981872041</DATE></FIELD>
+	<FIELD name='md_licensing'><SEL/></FIELD>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Wood",
+        "confidence" : 98.66193,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Chair",
+        "confidence" : 96.30814,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.26416424,
+            "height" : 0.30327067,
+            "left" : 0.5806883,
+            "top" : 0.69336903
+          },
+          "confidence" : 96.30814
+        } ],
+        "parents" : [ {
+          "name" : "Furniture"
+        } ]
+      }, {
+        "name" : "Furniture",
+        "confidence" : 96.30814,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Hardwood",
+        "confidence" : 94.99761,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Wood"
+        } ]
+      }, {
+        "name" : "Monitor",
+        "confidence" : 92.7165,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Screen"
+        }, {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Display",
+        "confidence" : 92.7165,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Screen"
+        }, {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Screen",
+        "confidence" : 92.7165,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Electronics",
+        "confidence" : 92.7165,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Living Room",
+        "confidence" : 88.60135,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Room"
+        }, {
+          "name" : "Indoors"
+        } ]
+      }, {
+        "name" : "Room",
+        "confidence" : 88.60135,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Indoors"
+        } ]
+      }, {
+        "name" : "Indoors",
+        "confidence" : 88.60135,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Tablet Computer",
+        "confidence" : 88.30625,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.35776174,
+            "height" : 0.34152946,
+            "left" : 0.022816015,
+            "top" : 0.2833021
+          },
+          "confidence" : 88.30625
+        } ],
+        "parents" : [ {
+          "name" : "Computer"
+        }, {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Computer",
+        "confidence" : 88.30625,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Interior Design",
+        "confidence" : 72.271706,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Indoors"
+        } ]
+      }, {
+        "name" : "TV",
+        "confidence" : 68.03053,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Monitor"
+        }, {
+          "name" : "Screen"
+        }, {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Television",
+        "confidence" : 68.03053,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Monitor"
+        }, {
+          "name" : "Screen"
+        }, {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Flooring",
+        "confidence" : 65.51309,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Entertainment Center",
+        "confidence" : 59.045742,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "2.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ {
+        "detectedText" : "32",
+        "type" : "LINE",
+        "id" : 0,
+        "parentId" : null,
+        "confidence" : 98.56054,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.01757126,
+            "height" : 0.017578125,
+            "left" : 0.10542755,
+            "top" : 0.36328125
+          },
+          "polygon" : [ {
+            "x" : 0.10542755,
+            "y" : 0.36328125
+          }, {
+            "x" : 0.12299881,
+            "y" : 0.36328125
+          }, {
+            "x" : 0.12299881,
+            "y" : 0.38085938
+          }, {
+            "x" : 0.10542755,
+            "y" : 0.38085938
+          } ]
+        }
+      }, {
+        "detectedText" : "1 Feb",
+        "type" : "LINE",
+        "id" : 1,
+        "parentId" : null,
+        "confidence" : 97.50902,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.03188858,
+            "height" : 0.02734375,
+            "left" : 0.14057007,
+            "top" : 0.3623047
+          },
+          "polygon" : [ {
+            "x" : 0.14057007,
+            "y" : 0.3623047
+          }, {
+            "x" : 0.17245865,
+            "y" : 0.3623047
+          }, {
+            "x" : 0.17245865,
+            "y" : 0.38964844
+          }, {
+            "x" : 0.14057007,
+            "y" : 0.38964844
+          } ]
+        }
+      }, {
+        "detectedText" : "Sunny",
+        "type" : "LINE",
+        "id" : 2,
+        "parentId" : null,
+        "confidence" : 99.36084,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.02212677,
+            "height" : 0.0146484375,
+            "left" : 0.10412598,
+            "top" : 0.38671875
+          },
+          "polygon" : [ {
+            "x" : 0.10412598,
+            "y" : 0.38671875
+          }, {
+            "x" : 0.12625274,
+            "y" : 0.38671875
+          }, {
+            "x" : 0.12625274,
+            "y" : 0.4013672
+          }, {
+            "x" : 0.10412598,
+            "y" : 0.4013672
+          } ]
+        }
+      }, {
+        "detectedText" : "Wednesday",
+        "type" : "LINE",
+        "id" : 3,
+        "parentId" : null,
+        "confidence" : 96.31394,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.030587006,
+            "height" : 0.009765625,
+            "left" : 0.14057007,
+            "top" : 0.390625
+          },
+          "polygon" : [ {
+            "x" : 0.14057007,
+            "y" : 0.390625
+          }, {
+            "x" : 0.17115708,
+            "y" : 0.390625
+          }, {
+            "x" : 0.17115708,
+            "y" : 0.40039062
+          }, {
+            "x" : 0.14057007,
+            "y" : 0.40039062
+          } ]
+        }
+      }, {
+        "detectedText" : "32",
+        "type" : "WORD",
+        "id" : 4,
+        "parentId" : 0,
+        "confidence" : 98.56054,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.01757126,
+            "height" : 0.017578125,
+            "left" : 0.10542755,
+            "top" : 0.36328125
+          },
+          "polygon" : [ {
+            "x" : 0.10542755,
+            "y" : 0.36328125
+          }, {
+            "x" : 0.12299881,
+            "y" : 0.36328125
+          }, {
+            "x" : 0.12299881,
+            "y" : 0.38085938
+          }, {
+            "x" : 0.10542755,
+            "y" : 0.38085938
+          } ]
+        }
+      }, {
+        "detectedText" : "1",
+        "type" : "WORD",
+        "id" : 5,
+        "parentId" : 1,
+        "confidence" : 97.237915,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.008460236,
+            "height" : 0.025390625,
+            "left" : 0.14057007,
+            "top" : 0.3623047
+          },
+          "polygon" : [ {
+            "x" : 0.14057007,
+            "y" : 0.3623047
+          }, {
+            "x" : 0.1490303,
+            "y" : 0.3623047
+          }, {
+            "x" : 0.1490303,
+            "y" : 0.3876953
+          }, {
+            "x" : 0.14057007,
+            "y" : 0.3876953
+          } ]
+        }
+      }, {
+        "detectedText" : "Feb",
+        "type" : "WORD",
+        "id" : 6,
+        "parentId" : 1,
+        "confidence" : 97.78013,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.020825196,
+            "height" : 0.015625,
+            "left" : 0.15163346,
+            "top" : 0.37402344
+          },
+          "polygon" : [ {
+            "x" : 0.15163346,
+            "y" : 0.37402344
+          }, {
+            "x" : 0.17245865,
+            "y" : 0.37402344
+          }, {
+            "x" : 0.17245865,
+            "y" : 0.38964844
+          }, {
+            "x" : 0.15163346,
+            "y" : 0.38964844
+          } ]
+        }
+      }, {
+        "detectedText" : "Sunny",
+        "type" : "WORD",
+        "id" : 7,
+        "parentId" : 2,
+        "confidence" : 99.36084,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.02212677,
+            "height" : 0.0146484375,
+            "left" : 0.10412598,
+            "top" : 0.38671875
+          },
+          "polygon" : [ {
+            "x" : 0.10412598,
+            "y" : 0.38671875
+          }, {
+            "x" : 0.12625274,
+            "y" : 0.38671875
+          }, {
+            "x" : 0.12625274,
+            "y" : 0.4013672
+          }, {
+            "x" : 0.10412598,
+            "y" : 0.4013672
+          } ]
+        }
+      }, {
+        "detectedText" : "Wednesday",
+        "type" : "WORD",
+        "id" : 8,
+        "parentId" : 3,
+        "confidence" : 96.31394,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.030587006,
+            "height" : 0.009765625,
+            "left" : 0.14057007,
+            "top" : 0.390625
+          },
+          "polygon" : [ {
+            "x" : 0.14057007,
+            "y" : 0.390625
+          }, {
+            "x" : 0.17115708,
+            "y" : 0.390625
+          }, {
+            "x" : 0.17115708,
+            "y" : 0.40039062
+          }, {
+            "x" : 0.14057007,
+            "y" : 0.40039062
+          } ]
+        }
+      } ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "5.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Living Room #Computer #Monitor #TV #Wood #Indoors #Interior Design #Room #Screen #Furniture #Flooring #Entertainment Center #Tablet Computer #Hardwood #Chair #Display #Electronics #Television"
+  }
+}</TEXT></FIELD>
+</FIELDS>

@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='md_creation_date'><DATE>1637180402757</DATE></FIELD>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Text",
+        "confidence" : 80.13463,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Label",
+        "confidence" : 77.19201,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Text"
+        } ]
+      }, {
+        "name" : "Road",
+        "confidence" : 66.33102,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Word",
+        "confidence" : 63.880474,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Building",
+        "confidence" : 62.86815,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "City",
+        "confidence" : 62.671284,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Urban"
+        }, {
+          "name" : "Building"
+        } ]
+      }, {
+        "name" : "Town",
+        "confidence" : 62.671284,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Urban"
+        }, {
+          "name" : "Building"
+        } ]
+      }, {
+        "name" : "Urban",
+        "confidence" : 62.671284,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Symbol",
+        "confidence" : 62.002686,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Logo",
+        "confidence" : 61.595078,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Symbol"
+        } ]
+      }, {
+        "name" : "Trademark",
+        "confidence" : 61.595078,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Symbol"
+        } ]
+      }, {
+        "name" : "Triangle",
+        "confidence" : 59.869396,
+        "instances" : [ ],
+        "parents" : [ ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "2.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "5.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Town #Triangle #City #Urban #Symbol #Text #Trademark #Label #Road #Building #Word #Logo"
+  }
+}</TEXT></FIELD>
+</FIELDS>

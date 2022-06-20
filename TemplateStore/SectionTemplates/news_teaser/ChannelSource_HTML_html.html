@@ -1,0 +1,96 @@
+<!-- NEWS TEASER SECTION START -->
+<div class="section-full p-t140 bg-repeat " $CMS_VALUE(editorId())$>
+    <div class="container">
+        <div class="section-content">
+            <!-- TITLE START -->
+            <div class="section-head text-left">
+                <h2 class="text-uppercase font-36" $CMS_VALUE(editorId(editorName:"st_title"))$>$CMS_VALUE(st_title, default:"")$</h2>
+                <a href="$CMS_REF(ps_news_overviewpage)$" class="theming-button btn btn-dark" style="float:right;">$CMS_VALUE(translations.get("enter_newsroom"))$</a>
+                <div class="wt-separator-outer">
+                    <div class="wt-separator bg-black"></div>
+                </div>
+            </div>
+            <!-- TITLE END -->
+            <div class="row" $CMS_VALUE(editorId(editorName:"st_news"))$>
+            	$CMS_SET(set_newsCount, st_news.values.size )$
+            	$CMS_IF(set_newsCount == 1)$     
+            		$CMS_SET(set_objectId, st_news.identifiers[0])$
+            		$CMS_SET(newsitem, st_news.values[0])$
+            		<div class="col-md-12 col-sm-12" $CMS_VALUE(editorId(editorName: "st_news", externalReference: set_objectId))$>       	
+						 <div class="overlay-wraper bg-no-repeat bg-cover latest-blog-dark-outer2 m-b30"
+					        $CMS_IF(!newsitem.formData.image.empty)$
+								style="background-image:url($CMS_REF(newsitem.formData.image)$);" 
+							$CMS_END_IF$>
+							<div class="overlay-main bg-black theming-content-opacity"></div>
+					    	<div class="latest-blog-square text-white">
+					            <h2 class="m-t0 m-b10"><span class="text-white font-30 text-uppercase">$CMS_VALUE(newsitem.formData.title, default:"")$</span></h2>
+					            <p class="font-weight-300">$CMS_VALUE(newsitem.formData.teaser, default:"")$</p>
+					            <a href="$CMS_REF(ps_news_detailpage, contentId:newsitem.entity.get("fs_id"))$" class="letter-spacing-4 font-12 text-white text-uppercase">$CMS_VALUE(translations.get("read_more"))$</a>
+					            <div class="v-date  theming-text-highlighting font-weight-700 text-uppercase">$CMS_VALUE(newsitem.formData.date.format("dd MMM yyyy"))$</div>
+					        </div>
+					    </div>
+					</div>
+	            $CMS_ELSIF(set_newsCount == 2)$
+		            $CMS_FOR(i, [0..1])$
+		            	<div class="col-md-6 col-sm-12"  >
+			            	$CMS_SET(newsitem, st_news.values[i])$
+					        $CMS_SET(set_objectId, st_news.identifiers[i])$		            	
+			            	<div $CMS_VALUE(editorId(editorName:"st_news", externalReference: set_objectId))$>
+								<div class="overlay-wraper bg-no-repeat bg-cover latest-blog-dark-outer p-a20 m-b30"
+							        $CMS_IF(!newsitem.formData.image.empty)$
+										style="background-image:url($CMS_REF(newsitem.formData.image)$);" 
+									$CMS_END_IF$>
+									<div class="overlay-main bg-black theming-content-opacity"></div>
+							    	<div class="theming-button latest-blog-dark text-uppercase p-a20">
+							        	<h3 class="m-a0"><span class="text-white">$CMS_VALUE(newsitem.formData.title, default:"")$<br /></span></h3>
+								        <a href="$CMS_REF(ps_news_detailpage, contentId:newsitem.entity.get("fs_id"))$" class="letter-spacing-4 font-12 text-white text-uppercase">$CMS_VALUE(translations.get("read_more"))$</a>
+							    	    <div class="v-date  theming-text-highlighting font-weight-700">$CMS_VALUE(newsitem.formData.date.format("dd MMM yyyy"))$</div>
+								    </div>
+								</div>
+							</div>
+						</div>
+					$CMS_END_FOR$
+				$CMS_ELSIF(set_newsCount > 2)$
+					<div class="col-md-6 col-sm-12"  >
+			            $CMS_FOR(i, [0..1])$
+			            	$CMS_SET(newsitem, st_news.values[i])$
+					        $CMS_SET(set_objectId, st_news.identifiers[i])$
+			            	<div $CMS_VALUE(editorId(editorName:"st_news", externalReference: set_objectId))$>
+								<div class="overlay-wraper bg-no-repeat bg-cover latest-blog-dark-outer p-a20 m-b30"
+							        $CMS_IF(!newsitem.formData.image.empty)$
+										style="background-image:url($CMS_REF(newsitem.formData.image)$);" 
+									$CMS_END_IF$>
+									<div class="overlay-main bg-black theming-content-opacity"></div>
+							    	<div class="theming-button latest-blog-dark text-uppercase p-a20">
+							        	<h3 class="m-a0"><span class="text-white">$CMS_VALUE(newsitem.formData.title, default:"")$<br /></span></h3>
+								        <a href="$CMS_REF(ps_news_detailpage, contentId:newsitem.entity.get("fs_id"))$" class="letter-spacing-4 font-12 text-white text-uppercase">$CMS_VALUE(translations.get("read_more"))$</a>
+							    	    <div class="v-date  theming-text-highlighting font-weight-700">$CMS_VALUE(newsitem.formData.date.format("dd MMM yyyy"))$</div>
+								    </div>
+								</div>
+							</div>
+						$CMS_END_FOR$
+					</div>
+					$CMS_SET(newsitem, st_news.values[2])$
+			        $CMS_SET(set_objectId, st_news.identifiers[2])$
+			        
+	           	 	<div class="col-md-6 col-sm-12" 
+	           	 		$CMS_VALUE(editorId(editorName:"st_news", externalReference: set_objectId))$ >
+						 <div class="overlay-wraper bg-no-repeat bg-cover latest-blog-dark-outer2 m-b30"
+					        $CMS_IF(!newsitem.formData.image.empty)$
+								style="background-image:url($CMS_REF(newsitem.formData.image)$);" 
+							$CMS_END_IF$>
+							<div class="overlay-main bg-black theming-content-opacity"></div>
+					    	<div class="latest-blog-square text-white">
+					            <h2 class="m-t0 m-b10"><span class="text-white font-30 text-uppercase">$CMS_VALUE(newsitem.formData.title, default:"")$</span></h2>
+					            <p class="font-weight-300">$CMS_VALUE(newsitem.formData.teaser, default:"")$</p>
+					            <a href="$CMS_REF(ps_news_detailpage, contentId:newsitem.entity.get("fs_id"))$" class="letter-spacing-4 font-12 text-white text-uppercase">$CMS_VALUE(translations.get("read_more"))$</a>
+					            <div class="v-date  theming-text-highlighting font-weight-700 text-uppercase">$CMS_VALUE(newsitem.formData.date.format("dd MMM yyyy"))$</div>
+					        </div>
+					    </div>
+	                </div>
+            	$CMS_END_IF$
+            </div>
+        </div>
+    </div>
+</div>
+<!-- NEWS TEASER SECTION END -->

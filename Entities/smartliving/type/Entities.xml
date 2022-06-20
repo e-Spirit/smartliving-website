@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+	<TABLE name="type">
+		<ROW>
+			<COLUMN name="FS_GID">27a16c59-d7c5-44fb-b435-6f0e6d4142cd</COLUMN>
+			<COLUMN name="name_DE">Niederlassung</COLUMN>
+			<COLUMN name="name_EN">Branch Office</COLUMN>
+			<COLUMN name="pin">&lt;CMS_VALUE name="tt_pin" tag="FS_REFERENCE"&gt;&lt;LANG id="§" set="1"&gt;&lt;UID&gt;marker_blue&lt;/UID&gt;&lt;UIDTYPE&gt;MEDIASTORE_LEAF&lt;/UIDTYPE&gt;&lt;REMOTE/&gt;&lt;/LANG&gt;&lt;/CMS_VALUE&gt;</COLUMN>
+			<COLUMN name="pin_selected">&lt;CMS_VALUE name="tt_pin_selected" tag="FS_REFERENCE"&gt;&lt;LANG id="§" set="1"&gt;&lt;UID&gt;marker_blue_big&lt;/UID&gt;&lt;UIDTYPE&gt;MEDIASTORE_LEAF&lt;/UIDTYPE&gt;&lt;REMOTE/&gt;&lt;/LANG&gt;&lt;/CMS_VALUE&gt;</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">73b76962-1e13-40d1-a992-15ad02a4468a</COLUMN>
+			<COLUMN name="name_DE">Vertriebspartner</COLUMN>
+			<COLUMN name="name_EN">Sales Partner</COLUMN>
+			<COLUMN name="pin">&lt;CMS_VALUE name="tt_pin" tag="FS_REFERENCE"&gt;&lt;LANG id="§" set="1"&gt;&lt;UID&gt;marker_black&lt;/UID&gt;&lt;UIDTYPE&gt;MEDIASTORE_LEAF&lt;/UIDTYPE&gt;&lt;REMOTE/&gt;&lt;/LANG&gt;&lt;/CMS_VALUE&gt;</COLUMN>
+			<COLUMN name="pin_selected">&lt;CMS_VALUE name="tt_pin_selected" tag="FS_REFERENCE"&gt;&lt;LANG id="§" set="1"&gt;&lt;UID&gt;marker_black_big&lt;/UID&gt;&lt;UIDTYPE&gt;MEDIASTORE_LEAF&lt;/UIDTYPE&gt;&lt;REMOTE/&gt;&lt;/LANG&gt;&lt;/CMS_VALUE&gt;</COLUMN>
+		</ROW>
+	</TABLE>
+</DATA>

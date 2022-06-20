@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- WIZARD MODE -->
+<QUERY entityType="news">
+	<FILTERPARAM parameter="param" datatype="java.lang.Integer" value="-1"/>
+	<NEQ attribute="fs_id" parameter="param"/>
+</QUERY>

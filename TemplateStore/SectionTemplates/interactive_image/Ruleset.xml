@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RULES>
+	<RULE>
+		<IF>
+			<AND>
+				<EQUAL>
+					<PROPERTY name="LANG" source="#global"/>
+					<PROPERTY name="MASTER" source="#global"/>
+				</EQUAL>
+			</AND>
+		</IF>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="st_imagemap"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="Save">
+				<PROPERTY name="VALID" source="st_imagemap"/>
+				<MESSAGE lang="*" text="Please select an image."/>
+				<MESSAGE lang="DE" text="Bitte ein Bild auswählen."/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<RULE>
+		<IF>
+			<AND>
+				<NOT>
+					<EQUAL>
+						<PROPERTY name="LANG" source="#global"/>
+						<PROPERTY name="MASTER" source="#global"/>
+					</EQUAL>
+				</NOT>
+				<PROPERTY name="TRANSLATED" source="#global"/>
+			</AND>
+		</IF>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="st_imagemap"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="Save">
+				<PROPERTY name="VALID" source="st_imagemap"/>
+				<MESSAGE lang="*" text="Please select an image."/>
+				<MESSAGE lang="DE" text="Bitte ein Bild auswählen."/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+</RULES>

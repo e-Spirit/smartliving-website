@@ -1,0 +1,6 @@
+[self]
+uid=bootstrap_min_2
+gid=f873c727-3b02-46d8-9a27-0f0fb4e4da01
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+

@@ -1,0 +1,6 @@
+[self]
+uid=hephaistos
+gid=5487dda5-d0a7-4e1f-837e-a7d97ba721ad
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="1128862994787298838" name="js_section">
+	<LANG displayname="Javascript" language="DE"/>
+	<LANG displayname="Javascript" language="EN"/>
+	<style tag="js_section" view="marked">
+		<attr name="align" value="left"/>
+		<render>
+			<channel conversion="Convert HTML" name="html" templateSetId="9062318847741885912"/>
+		</render>
+	</style>
+</FORMATTEMPLATE>

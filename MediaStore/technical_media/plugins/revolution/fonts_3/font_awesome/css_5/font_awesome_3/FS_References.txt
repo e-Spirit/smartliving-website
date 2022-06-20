@@ -1,0 +1,6 @@
+[self]
+uid=font_awesome_3
+gid=23187d54-1938-4983-9c4f-211467cd53a7
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+

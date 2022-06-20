@@ -1,0 +1,32 @@
+$CMS_IF(!st_color.isEmpty())$
+	$CMS_IF(st_color.equals("acc-bg-dark"))$
+		$CMS_SET(set_linkColor, "white")$
+	$CMS_END_IF$
+$CMS_END_IF$
+<!-- SECTION CONTENTG START -->
+<div class="section-full p-tb80 bg-white-faq" $CMS_VALUE(editorId(reloadPreview: true))$>
+	<!-- LOCATION BLOCK-->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-9">
+				<div class="m-b50">
+					<!-- TITLE START -->
+					<div class="section-head">
+						<h3 $CMS_VALUE(editorId(editorName:"st_header"))$>$CMS_VALUE(st_header.convert2(),default:"")$</h3>
+						<div class="wt-separator-outer">
+							<div class="wt-separator bg-black"></div>
+						</div>
+					</div>
+					<!-- TITLE END -->
+					<!-- ACCORDION  DEFAULT -->
+					<div class="section-content">
+						$CMS_SET(set_accName,"accordion"+#global.section.id)$
+						<div class="wt-accordion lists-in-accordion m-b10 $CMS_VALUE(st_color,default:"")$" id="$CMS_VALUE(set_accName)$")$>
+							$CMS_VALUE(st_acc, default:"")$
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,926 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OBJECT class="de.espirit.firstspirit.workflow.model.WorkflowImpl">
+	<FIELD name="activities">
+		<OBJECT class="java.util.Vector">
+			<OBJECT class="de.espirit.firstspirit.workflow.model.ActivityImpl">
+				<FIELD name="_descriptions">
+					<OBJECT class="java.util.HashMap">
+						<OBJECT class="java.lang.String">DE</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">EN</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">ES</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">FR</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+					</OBJECT>
+				</FIELD>
+				<FIELD name="_names">
+					<OBJECT class="java.util.HashMap">
+						<OBJECT class="java.lang.String">DE</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">EN</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">ES</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">FR</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+					</OBJECT>
+				</FIELD>
+				<FIELD name="automatic" type="boolean">false</FIELD>
+				<FIELD name="description">
+					<OBJECT class="java.lang.String"></OBJECT>
+				</FIELD>
+				<FIELD name="email_groups">
+					<OBJECT class="java.util.Vector">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="email_props" type="int">0</FIELD>
+				<FIELD name="email_text">
+					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+				</FIELD>
+				<FIELD name="email_title">
+					<OBJECT class="java.lang.String"></OBJECT>
+				</FIELD>
+				<FIELD name="email_user">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="id" type="long">2</FIELD>
+				<FIELD name="name">
+					<OBJECT class="java.lang.String">register dataset</OBJECT>
+				</FIELD>
+				<FIELD name="script">
+					<OBJECT class="java.lang.String">register_dataset</OBJECT>
+				</FIELD>
+				<FIELD name="type" type="int">0</FIELD>
+				<FIELD name="x" type="int">232</FIELD>
+				<FIELD name="y" type="int">69</FIELD>
+			</OBJECT>
+			<OBJECT class="de.espirit.firstspirit.workflow.model.ActivityImpl">
+				<FIELD name="_descriptions">
+					<OBJECT class="java.util.HashMap">
+						<OBJECT class="java.lang.String">DE</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">EN</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+					</OBJECT>
+				</FIELD>
+				<FIELD name="_names">
+					<OBJECT class="java.util.HashMap">
+						<OBJECT class="java.lang.String">DE</OBJECT>
+						<OBJECT class="java.lang.String">Activity</OBJECT>
+						<OBJECT class="java.lang.String">EN</OBJECT>
+						<OBJECT class="java.lang.String">execute_queued</OBJECT>
+					</OBJECT>
+				</FIELD>
+				<FIELD name="automatic" type="boolean">true</FIELD>
+				<FIELD name="description">
+					<OBJECT class="java.lang.String"></OBJECT>
+				</FIELD>
+				<FIELD name="email_groups">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="email_props" type="int">0</FIELD>
+				<FIELD name="email_text">
+					<OBJECT class="java.lang.String"></OBJECT>
+				</FIELD>
+				<FIELD name="email_title">
+					<OBJECT class="java.lang.String"></OBJECT>
+				</FIELD>
+				<FIELD name="email_user">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="id" type="long">7</FIELD>
+				<FIELD name="name">
+					<OBJECT class="java.lang.String">execute_queued</OBJECT>
+				</FIELD>
+				<FIELD name="script">
+					<OBJECT class="java.lang.String">scr_fts_register_execute_queue</OBJECT>
+				</FIELD>
+				<FIELD name="type" type="int">0</FIELD>
+				<FIELD name="x" type="int">609</FIELD>
+				<FIELD name="y" type="int">71</FIELD>
+			</OBJECT>
+		</OBJECT>
+	</FIELD>
+	<FIELD name="endStates">
+		<OBJECT class="java.util.HashSet">
+			<OBJECT class="java.lang.Long">11</OBJECT>
+			<OBJECT class="java.lang.Long">6</OBJECT>
+			<OBJECT class="java.lang.Long">8</OBJECT>
+		</OBJECT>
+	</FIELD>
+	<FIELD name="errorState" type="long">6</FIELD>
+	<FIELD name="name">
+		<OBJECT class="java.lang.String">wf_fts_register_dataset_ext</OBJECT>
+	</FIELD>
+	<FIELD name="startState" type="long">0</FIELD>
+	<FIELD name="states">
+		<OBJECT class="java.util.Vector">
+			<OBJECT class="de.espirit.firstspirit.workflow.model.StateImpl">
+				<FIELD name="_descriptions">
+					<OBJECT class="java.util.HashMap">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="_names">
+					<OBJECT class="java.util.HashMap">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="b" type="int">0</FIELD>
+				<FIELD name="description">
+					<OBJECT class="java.lang.String"></OBJECT>
+				</FIELD>
+				<FIELD name="duration" type="long">0</FIELD>
+				<FIELD name="editorMode" type="int">0</FIELD>
+				<FIELD name="g" type="int">0</FIELD>
+				<FIELD name="groups">
+					<OBJECT class="java.util.Vector">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="id" type="long">0</FIELD>
+				<FIELD name="lockStoreElement" type="boolean">false</FIELD>
+				<FIELD name="name">
+					<OBJECT class="java.lang.String">Start</OBJECT>
+				</FIELD>
+				<FIELD name="r" type="int">0</FIELD>
+				<FIELD name="release" type="boolean">false</FIELD>
+				<FIELD name="type" type="int">1</FIELD>
+				<FIELD name="user">
+					<OBJECT class="java.util.Vector">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="x" type="int">30</FIELD>
+				<FIELD name="y" type="int">130</FIELD>
+			</OBJECT>
+			<OBJECT class="de.espirit.firstspirit.workflow.model.StateImpl">
+				<FIELD name="_descriptions">
+					<OBJECT class="java.util.HashMap">
+						<OBJECT class="java.lang.String">AR</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">DE</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">EN</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">EN_AU</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">ES</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">FR</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">IN</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">NO</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">SG</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+					</OBJECT>
+				</FIELD>
+				<FIELD name="_names">
+					<OBJECT class="java.util.HashMap">
+						<OBJECT class="java.lang.String">AR</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">DE</OBJECT>
+						<OBJECT class="java.lang.String">Error</OBJECT>
+						<OBJECT class="java.lang.String">EN</OBJECT>
+						<OBJECT class="java.lang.String">Error</OBJECT>
+						<OBJECT class="java.lang.String">EN_AU</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">ES</OBJECT>
+						<OBJECT class="java.lang.String">Error</OBJECT>
+						<OBJECT class="java.lang.String">FR</OBJECT>
+						<OBJECT class="java.lang.String">Error</OBJECT>
+						<OBJECT class="java.lang.String">IN</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">NO</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">SG</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+					</OBJECT>
+				</FIELD>
+				<FIELD name="b" type="int">0</FIELD>
+				<FIELD name="description">
+					<OBJECT class="java.lang.String"></OBJECT>
+				</FIELD>
+				<FIELD name="duration" type="long">0</FIELD>
+				<FIELD name="editorMode" type="int">0</FIELD>
+				<FIELD name="g" type="int">0</FIELD>
+				<FIELD name="groups">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="id" type="long">6</FIELD>
+				<FIELD name="lockStoreElement" type="boolean">false</FIELD>
+				<FIELD name="name">
+					<OBJECT class="java.lang.String">StatusError</OBJECT>
+				</FIELD>
+				<FIELD name="r" type="int">0</FIELD>
+				<FIELD name="release" type="boolean">false</FIELD>
+				<FIELD name="type" type="int">1</FIELD>
+				<FIELD name="user">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="x" type="int">490</FIELD>
+				<FIELD name="y" type="int">359</FIELD>
+			</OBJECT>
+			<OBJECT class="de.espirit.firstspirit.workflow.model.StateImpl">
+				<FIELD name="_descriptions">
+					<OBJECT class="java.util.HashMap">
+						<OBJECT class="java.lang.String">DE</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">EN</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">ES</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">FR</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+					</OBJECT>
+				</FIELD>
+				<FIELD name="_names">
+					<OBJECT class="java.util.HashMap">
+						<OBJECT class="java.lang.String">DE</OBJECT>
+						<OBJECT class="java.lang.String">Ende</OBJECT>
+						<OBJECT class="java.lang.String">EN</OBJECT>
+						<OBJECT class="java.lang.String">Status</OBJECT>
+						<OBJECT class="java.lang.String">ES</OBJECT>
+						<OBJECT class="java.lang.String">Status</OBJECT>
+						<OBJECT class="java.lang.String">FR</OBJECT>
+						<OBJECT class="java.lang.String">Status</OBJECT>
+					</OBJECT>
+				</FIELD>
+				<FIELD name="b" type="int">0</FIELD>
+				<FIELD name="description">
+					<OBJECT class="java.lang.String"></OBJECT>
+				</FIELD>
+				<FIELD name="duration" type="long">0</FIELD>
+				<FIELD name="editorMode" type="int">0</FIELD>
+				<FIELD name="g" type="int">0</FIELD>
+				<FIELD name="groups">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="id" type="long">8</FIELD>
+				<FIELD name="lockStoreElement" type="boolean">false</FIELD>
+				<FIELD name="name">
+					<OBJECT class="java.lang.String">Status</OBJECT>
+				</FIELD>
+				<FIELD name="r" type="int">0</FIELD>
+				<FIELD name="release" type="boolean">false</FIELD>
+				<FIELD name="type" type="int">1</FIELD>
+				<FIELD name="user">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="x" type="int">594</FIELD>
+				<FIELD name="y" type="int">296</FIELD>
+			</OBJECT>
+			<OBJECT class="de.espirit.firstspirit.workflow.model.StateImpl">
+				<FIELD name="_descriptions">
+					<OBJECT class="java.util.HashMap">
+						<OBJECT class="java.lang.String">DE</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">EN</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">ES</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">FR</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+					</OBJECT>
+				</FIELD>
+				<FIELD name="_names">
+					<OBJECT class="java.util.HashMap">
+						<OBJECT class="java.lang.String">DE</OBJECT>
+						<OBJECT class="java.lang.String">Success</OBJECT>
+						<OBJECT class="java.lang.String">EN</OBJECT>
+						<OBJECT class="java.lang.String">Status</OBJECT>
+						<OBJECT class="java.lang.String">ES</OBJECT>
+						<OBJECT class="java.lang.String">Status</OBJECT>
+						<OBJECT class="java.lang.String">FR</OBJECT>
+						<OBJECT class="java.lang.String">Status</OBJECT>
+					</OBJECT>
+				</FIELD>
+				<FIELD name="b" type="int">0</FIELD>
+				<FIELD name="description">
+					<OBJECT class="java.lang.String"></OBJECT>
+				</FIELD>
+				<FIELD name="duration" type="long">0</FIELD>
+				<FIELD name="editorMode" type="int">0</FIELD>
+				<FIELD name="g" type="int">0</FIELD>
+				<FIELD name="groups">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="id" type="long">9</FIELD>
+				<FIELD name="lockStoreElement" type="boolean">false</FIELD>
+				<FIELD name="name">
+					<OBJECT class="java.lang.String">StatusSuccess</OBJECT>
+				</FIELD>
+				<FIELD name="r" type="int">0</FIELD>
+				<FIELD name="release" type="boolean">false</FIELD>
+				<FIELD name="type" type="int">1</FIELD>
+				<FIELD name="user">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="x" type="int">521</FIELD>
+				<FIELD name="y" type="int">128</FIELD>
+			</OBJECT>
+			<OBJECT class="de.espirit.firstspirit.workflow.model.StateImpl">
+				<FIELD name="_descriptions">
+					<OBJECT class="java.util.HashMap">
+						<OBJECT class="java.lang.String">DE</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">EN</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+					</OBJECT>
+				</FIELD>
+				<FIELD name="_names">
+					<OBJECT class="java.util.HashMap">
+						<OBJECT class="java.lang.String">DE</OBJECT>
+						<OBJECT class="java.lang.String">Status</OBJECT>
+						<OBJECT class="java.lang.String">EN</OBJECT>
+						<OBJECT class="java.lang.String">End</OBJECT>
+					</OBJECT>
+				</FIELD>
+				<FIELD name="b" type="int">0</FIELD>
+				<FIELD name="description">
+					<OBJECT class="java.lang.String"></OBJECT>
+				</FIELD>
+				<FIELD name="duration" type="long">0</FIELD>
+				<FIELD name="editorMode" type="int">0</FIELD>
+				<FIELD name="g" type="int">0</FIELD>
+				<FIELD name="groups">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="id" type="long">11</FIELD>
+				<FIELD name="lockStoreElement" type="boolean">false</FIELD>
+				<FIELD name="name">
+					<OBJECT class="java.lang.String">End</OBJECT>
+				</FIELD>
+				<FIELD name="r" type="int">0</FIELD>
+				<FIELD name="release" type="boolean">false</FIELD>
+				<FIELD name="type" type="int">1</FIELD>
+				<FIELD name="user">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="x" type="int">850</FIELD>
+				<FIELD name="y" type="int">136</FIELD>
+			</OBJECT>
+		</OBJECT>
+	</FIELD>
+	<FIELD name="transitions">
+		<OBJECT class="java.util.Vector">
+			<OBJECT class="de.espirit.firstspirit.workflow.model.TransitionImpl">
+				<FIELD name="_descriptions">
+					<OBJECT class="java.util.HashMap">
+						<OBJECT class="java.lang.String">DE</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">EN</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+					</OBJECT>
+				</FIELD>
+				<FIELD name="_names">
+					<OBJECT class="java.util.HashMap">
+						<OBJECT class="java.lang.String">DE</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">EN</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+					</OBJECT>
+				</FIELD>
+				<FIELD name="description">
+					<OBJECT class="java.lang.String"></OBJECT>
+				</FIELD>
+				<FIELD name="email_groups">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="email_props" type="int">0</FIELD>
+				<FIELD name="email_text">
+					<OBJECT class="java.lang.String"></OBJECT>
+				</FIELD>
+				<FIELD name="email_title">
+					<OBJECT class="java.lang.String"></OBJECT>
+				</FIELD>
+				<FIELD name="email_user">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="groups">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="id" type="long">1</FIELD>
+				<FIELD name="labelPos">
+					<ARRAY type="double">
+						<OBJECT class="java.lang.Double">500.0</OBJECT>
+						<OBJECT class="java.lang.Double">0.0</OBJECT>
+					</ARRAY>
+				</FIELD>
+				<FIELD name="name">
+					<OBJECT class="java.lang.String"></OBJECT>
+				</FIELD>
+				<FIELD name="noEditorGroups">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="points">
+					<ARRAY type="[I">
+						<ARRAY type="int">
+							<OBJECT class="java.lang.Integer">90</OBJECT>
+							<OBJECT class="java.lang.Integer">160</OBJECT>
+						</ARRAY>
+						<ARRAY type="int">
+							<OBJECT class="java.lang.Integer">140</OBJECT>
+							<OBJECT class="java.lang.Integer">160</OBJECT>
+						</ARRAY>
+					</ARRAY>
+				</FIELD>
+				<FIELD name="port_source" type="int">1</FIELD>
+				<FIELD name="port_target" type="int">0</FIELD>
+				<FIELD name="position" type="int">0</FIELD>
+				<FIELD name="source" type="long">0</FIELD>
+				<FIELD name="storeElementRights" type="int">4</FIELD>
+				<FIELD name="target" type="long">2</FIELD>
+				<FIELD name="taskRights" type="int">0</FIELD>
+				<FIELD name="type" type="int">2</FIELD>
+				<FIELD name="useFixedRights" type="boolean">false</FIELD>
+				<FIELD name="useStoreElementRights" type="boolean">true</FIELD>
+				<FIELD name="useTaskRights" type="boolean">false</FIELD>
+				<FIELD name="user">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+			</OBJECT>
+			<OBJECT class="de.espirit.firstspirit.workflow.model.TransitionImpl">
+				<FIELD name="_descriptions">
+					<OBJECT class="java.util.HashMap">
+						<OBJECT class="java.lang.String">DE</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">EN</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">ES</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">FR</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">PT</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+					</OBJECT>
+				</FIELD>
+				<FIELD name="_names">
+					<OBJECT class="java.util.HashMap">
+						<OBJECT class="java.lang.String">DE</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">EN</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">ES</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">FR</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">PT</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+					</OBJECT>
+				</FIELD>
+				<FIELD name="description">
+					<OBJECT class="java.lang.String"></OBJECT>
+				</FIELD>
+				<FIELD name="email_groups">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="email_props" type="int">0</FIELD>
+				<FIELD name="email_text">
+					<OBJECT class="java.lang.String"></OBJECT>
+				</FIELD>
+				<FIELD name="email_title">
+					<OBJECT class="java.lang.String"></OBJECT>
+				</FIELD>
+				<FIELD name="email_user">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="groups">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="id" type="long">3</FIELD>
+				<FIELD name="labelPos">
+					<ARRAY type="double">
+						<OBJECT class="java.lang.Double">500.0</OBJECT>
+						<OBJECT class="java.lang.Double">0.0</OBJECT>
+					</ARRAY>
+				</FIELD>
+				<FIELD name="name">
+					<OBJECT class="java.lang.String">cancel</OBJECT>
+				</FIELD>
+				<FIELD name="noEditorGroups">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="points">
+					<ARRAY type="[I">
+						<ARRAY type="int">
+							<OBJECT class="java.lang.Integer">340</OBJECT>
+							<OBJECT class="java.lang.Integer">160</OBJECT>
+						</ARRAY>
+						<ARRAY type="int">
+							<OBJECT class="java.lang.Integer">640</OBJECT>
+							<OBJECT class="java.lang.Integer">162</OBJECT>
+						</ARRAY>
+					</ARRAY>
+				</FIELD>
+				<FIELD name="port_source" type="int">1</FIELD>
+				<FIELD name="port_target" type="int">0</FIELD>
+				<FIELD name="position" type="int">0</FIELD>
+				<FIELD name="source" type="long">2</FIELD>
+				<FIELD name="storeElementRights" type="int">4</FIELD>
+				<FIELD name="target" type="long">8</FIELD>
+				<FIELD name="taskRights" type="int">0</FIELD>
+				<FIELD name="type" type="int">2</FIELD>
+				<FIELD name="useFixedRights" type="boolean">false</FIELD>
+				<FIELD name="useStoreElementRights" type="boolean">true</FIELD>
+				<FIELD name="useTaskRights" type="boolean">false</FIELD>
+				<FIELD name="user">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+			</OBJECT>
+			<OBJECT class="de.espirit.firstspirit.workflow.model.TransitionImpl">
+				<FIELD name="_descriptions">
+					<OBJECT class="java.util.HashMap">
+						<OBJECT class="java.lang.String">DE</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">EN</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">ES</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">FR</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">PT</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+					</OBJECT>
+				</FIELD>
+				<FIELD name="_names">
+					<OBJECT class="java.util.HashMap">
+						<OBJECT class="java.lang.String">DE</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">EN</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">ES</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">FR</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">PT</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+					</OBJECT>
+				</FIELD>
+				<FIELD name="description">
+					<OBJECT class="java.lang.String"></OBJECT>
+				</FIELD>
+				<FIELD name="email_groups">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="email_props" type="int">0</FIELD>
+				<FIELD name="email_text">
+					<OBJECT class="java.lang.String"></OBJECT>
+				</FIELD>
+				<FIELD name="email_title">
+					<OBJECT class="java.lang.String"></OBJECT>
+				</FIELD>
+				<FIELD name="email_user">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="groups">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="id" type="long">5</FIELD>
+				<FIELD name="labelPos">
+					<ARRAY type="double">
+						<OBJECT class="java.lang.Double">500.0</OBJECT>
+						<OBJECT class="java.lang.Double">0.0</OBJECT>
+					</ARRAY>
+				</FIELD>
+				<FIELD name="name">
+					<OBJECT class="java.lang.String">error</OBJECT>
+				</FIELD>
+				<FIELD name="noEditorGroups">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="points">
+					<ARRAY type="[I">
+						<ARRAY type="int">
+							<OBJECT class="java.lang.Integer">270</OBJECT>
+							<OBJECT class="java.lang.Integer">60</OBJECT>
+						</ARRAY>
+						<ARRAY type="int">
+							<OBJECT class="java.lang.Integer">370</OBJECT>
+							<OBJECT class="java.lang.Integer">60</OBJECT>
+						</ARRAY>
+					</ARRAY>
+				</FIELD>
+				<FIELD name="port_source" type="int">1</FIELD>
+				<FIELD name="port_target" type="int">0</FIELD>
+				<FIELD name="position" type="int">0</FIELD>
+				<FIELD name="source" type="long">2</FIELD>
+				<FIELD name="storeElementRights" type="int">4</FIELD>
+				<FIELD name="target" type="long">6</FIELD>
+				<FIELD name="taskRights" type="int">0</FIELD>
+				<FIELD name="type" type="int">2</FIELD>
+				<FIELD name="useFixedRights" type="boolean">false</FIELD>
+				<FIELD name="useStoreElementRights" type="boolean">true</FIELD>
+				<FIELD name="useTaskRights" type="boolean">false</FIELD>
+				<FIELD name="user">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+			</OBJECT>
+			<OBJECT class="de.espirit.firstspirit.workflow.model.TransitionImpl">
+				<FIELD name="_descriptions">
+					<OBJECT class="java.util.HashMap">
+						<OBJECT class="java.lang.String">DE</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">EN</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">ES</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">FR</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">PT</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+					</OBJECT>
+				</FIELD>
+				<FIELD name="_names">
+					<OBJECT class="java.util.HashMap">
+						<OBJECT class="java.lang.String">DE</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">EN</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">ES</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">FR</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">PT</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+					</OBJECT>
+				</FIELD>
+				<FIELD name="description">
+					<OBJECT class="java.lang.String"></OBJECT>
+				</FIELD>
+				<FIELD name="email_groups">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="email_props" type="int">33</FIELD>
+				<FIELD name="email_text">
+					<OBJECT class="java.lang.String">das Element wurde registriert.</OBJECT>
+				</FIELD>
+				<FIELD name="email_title">
+					<OBJECT class="java.lang.String">Registrierung abgeschlossen</OBJECT>
+				</FIELD>
+				<FIELD name="email_user">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="groups">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="id" type="long">4</FIELD>
+				<FIELD name="labelPos">
+					<ARRAY type="double">
+						<OBJECT class="java.lang.Double">500.0</OBJECT>
+						<OBJECT class="java.lang.Double">0.0</OBJECT>
+					</ARRAY>
+				</FIELD>
+				<FIELD name="name">
+					<OBJECT class="java.lang.String">success_queued</OBJECT>
+				</FIELD>
+				<FIELD name="noEditorGroups">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="points">
+					<ARRAY type="[I">
+						<ARRAY type="int">
+							<OBJECT class="java.lang.Integer">270</OBJECT>
+							<OBJECT class="java.lang.Integer">60</OBJECT>
+						</ARRAY>
+						<ARRAY type="int">
+							<OBJECT class="java.lang.Integer">370</OBJECT>
+							<OBJECT class="java.lang.Integer">60</OBJECT>
+						</ARRAY>
+					</ARRAY>
+				</FIELD>
+				<FIELD name="port_source" type="int">1</FIELD>
+				<FIELD name="port_target" type="int">0</FIELD>
+				<FIELD name="position" type="int">0</FIELD>
+				<FIELD name="source" type="long">2</FIELD>
+				<FIELD name="storeElementRights" type="int">4</FIELD>
+				<FIELD name="target" type="long">9</FIELD>
+				<FIELD name="taskRights" type="int">0</FIELD>
+				<FIELD name="type" type="int">2</FIELD>
+				<FIELD name="useFixedRights" type="boolean">false</FIELD>
+				<FIELD name="useStoreElementRights" type="boolean">true</FIELD>
+				<FIELD name="useTaskRights" type="boolean">false</FIELD>
+				<FIELD name="user">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+			</OBJECT>
+			<OBJECT class="de.espirit.firstspirit.workflow.model.TransitionImpl">
+				<FIELD name="_descriptions">
+					<OBJECT class="java.util.HashMap">
+						<OBJECT class="java.lang.String">DE</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">EN</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">ES</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">FR</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">PT</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+					</OBJECT>
+				</FIELD>
+				<FIELD name="_names">
+					<OBJECT class="java.util.HashMap">
+						<OBJECT class="java.lang.String">DE</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">EN</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">ES</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">FR</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">PT</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+					</OBJECT>
+				</FIELD>
+				<FIELD name="description">
+					<OBJECT class="java.lang.String"></OBJECT>
+				</FIELD>
+				<FIELD name="email_groups">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="email_props" type="int">0</FIELD>
+				<FIELD name="email_text">
+					<OBJECT class="java.lang.String"></OBJECT>
+				</FIELD>
+				<FIELD name="email_title">
+					<OBJECT class="java.lang.String"></OBJECT>
+				</FIELD>
+				<FIELD name="email_user">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="groups">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="id" type="long">10</FIELD>
+				<FIELD name="labelPos">
+					<ARRAY type="double">
+						<OBJECT class="java.lang.Double">500.0</OBJECT>
+						<OBJECT class="java.lang.Double">0.0</OBJECT>
+					</ARRAY>
+				</FIELD>
+				<FIELD name="name">
+					<OBJECT class="java.lang.String"></OBJECT>
+				</FIELD>
+				<FIELD name="noEditorGroups">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="points">
+					<ARRAY type="[I">
+						<ARRAY type="int">
+							<OBJECT class="java.lang.Integer">579</OBJECT>
+							<OBJECT class="java.lang.Integer">158</OBJECT>
+						</ARRAY>
+						<ARRAY type="int">
+							<OBJECT class="java.lang.Integer">701</OBJECT>
+							<OBJECT class="java.lang.Integer">159</OBJECT>
+						</ARRAY>
+					</ARRAY>
+				</FIELD>
+				<FIELD name="port_source" type="int">1</FIELD>
+				<FIELD name="port_target" type="int">0</FIELD>
+				<FIELD name="position" type="int">0</FIELD>
+				<FIELD name="source" type="long">9</FIELD>
+				<FIELD name="storeElementRights" type="int">4</FIELD>
+				<FIELD name="target" type="long">7</FIELD>
+				<FIELD name="taskRights" type="int">0</FIELD>
+				<FIELD name="type" type="int">2</FIELD>
+				<FIELD name="useFixedRights" type="boolean">false</FIELD>
+				<FIELD name="useStoreElementRights" type="boolean">true</FIELD>
+				<FIELD name="useTaskRights" type="boolean">false</FIELD>
+				<FIELD name="user">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+			</OBJECT>
+			<OBJECT class="de.espirit.firstspirit.workflow.model.TransitionImpl">
+				<FIELD name="_descriptions">
+					<OBJECT class="java.util.HashMap">
+						<OBJECT class="java.lang.String">DE</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">EN</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">ES</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">FR</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">PT</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+					</OBJECT>
+				</FIELD>
+				<FIELD name="_names">
+					<OBJECT class="java.util.HashMap">
+						<OBJECT class="java.lang.String">DE</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">EN</OBJECT>
+						<OBJECT class="java.lang.String">success_queued</OBJECT>
+						<OBJECT class="java.lang.String">ES</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">FR</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">PT</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+					</OBJECT>
+				</FIELD>
+				<FIELD name="description">
+					<OBJECT class="java.lang.String"></OBJECT>
+				</FIELD>
+				<FIELD name="email_groups">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="email_props" type="int">0</FIELD>
+				<FIELD name="email_text">
+					<OBJECT class="java.lang.String"></OBJECT>
+				</FIELD>
+				<FIELD name="email_title">
+					<OBJECT class="java.lang.String"></OBJECT>
+				</FIELD>
+				<FIELD name="email_user">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="groups">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="id" type="long">12</FIELD>
+				<FIELD name="labelPos">
+					<ARRAY type="double">
+						<OBJECT class="java.lang.Double">500.0</OBJECT>
+						<OBJECT class="java.lang.Double">0.0</OBJECT>
+					</ARRAY>
+				</FIELD>
+				<FIELD name="name">
+					<OBJECT class="java.lang.String">done_queued</OBJECT>
+				</FIELD>
+				<FIELD name="noEditorGroups">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+				<FIELD name="points">
+					<ARRAY type="[I">
+						<ARRAY type="int">
+							<OBJECT class="java.lang.Integer">735</OBJECT>
+							<OBJECT class="java.lang.Integer">162</OBJECT>
+						</ARRAY>
+						<ARRAY type="int">
+							<OBJECT class="java.lang.Integer">835</OBJECT>
+							<OBJECT class="java.lang.Integer">174</OBJECT>
+						</ARRAY>
+					</ARRAY>
+				</FIELD>
+				<FIELD name="port_source" type="int">1</FIELD>
+				<FIELD name="port_target" type="int">0</FIELD>
+				<FIELD name="position" type="int">0</FIELD>
+				<FIELD name="source" type="long">7</FIELD>
+				<FIELD name="storeElementRights" type="int">4</FIELD>
+				<FIELD name="target" type="long">11</FIELD>
+				<FIELD name="taskRights" type="int">0</FIELD>
+				<FIELD name="type" type="int">2</FIELD>
+				<FIELD name="useFixedRights" type="boolean">false</FIELD>
+				<FIELD name="useStoreElementRights" type="boolean">true</FIELD>
+				<FIELD name="useTaskRights" type="boolean">false</FIELD>
+				<FIELD name="user">
+					<OBJECT class="java.util.ArrayList">
+					</OBJECT>
+				</FIELD>
+			</OBJECT>
+		</OBJECT>
+	</FIELD>
+</OBJECT>

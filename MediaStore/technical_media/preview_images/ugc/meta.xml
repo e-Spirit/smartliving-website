@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='md_creation_date'><DATE>1637180407439</DATE></FIELD>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Business Card",
+        "confidence" : 79.66846,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.9222074,
+            "height" : 0.63086957,
+            "left" : 0.0400293,
+            "top" : 0.17740484
+          },
+          "confidence" : 79.66846
+        } ],
+        "parents" : [ {
+          "name" : "Paper"
+        }, {
+          "name" : "Text"
+        } ]
+      }, {
+        "name" : "Paper",
+        "confidence" : 79.66846,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Text",
+        "confidence" : 79.66846,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Logo",
+        "confidence" : 74.49795,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Symbol"
+        } ]
+      }, {
+        "name" : "Trademark",
+        "confidence" : 74.49795,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Symbol"
+        } ]
+      }, {
+        "name" : "Symbol",
+        "confidence" : 74.49795,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Label",
+        "confidence" : 70.41978,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Text"
+        } ]
+      }, {
+        "name" : "Face",
+        "confidence" : 68.958954,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Art",
+        "confidence" : 58.44454,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Word",
+        "confidence" : 57.603104,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Badminton",
+        "confidence" : 57.10262,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Sport"
+        } ]
+      }, {
+        "name" : "Sport",
+        "confidence" : 57.10262,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Sports",
+        "confidence" : 57.10262,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Graphics",
+        "confidence" : 55.217674,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Art"
+        } ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "2.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "5.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Symbol #Text #Trademark #Paper #Label #Badminton #Face #Sport #Art #Sports #Graphics #Word #Business Card #Logo"
+  }
+}</TEXT></FIELD>
+</FIELDS>

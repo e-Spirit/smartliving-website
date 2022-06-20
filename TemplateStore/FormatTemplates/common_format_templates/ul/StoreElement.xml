@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="-4362305581761023854" name="ul">
+	<LANG displayname="List" language="EN"/>
+	<LANG displayname="Liste" language="DE"/>
+	<style system="1" tag="ul" view="list" visible="0">
+		<attr name="align" value="left"/>
+		<attr name="defaultParagraph" value="li"/>
+		<attr name="font" value="sansserif"/>
+		<render>
+			<channel conversion="Convert HTML" name="html" templateSetId="9062318847741885912"/>
+		</render>
+	</style>
+</FORMATTEMPLATE>

@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='md_creation_date'><DATE>1636964260661</DATE></FIELD>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Logo",
+        "confidence" : 98.44437,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Symbol"
+        } ]
+      }, {
+        "name" : "Trademark",
+        "confidence" : 98.44437,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Symbol"
+        } ]
+      }, {
+        "name" : "Symbol",
+        "confidence" : 98.44437,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Text",
+        "confidence" : 82.251015,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Badge",
+        "confidence" : 76.71686,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Logo"
+        }, {
+          "name" : "Symbol"
+        } ]
+      }, {
+        "name" : "Number",
+        "confidence" : 75.70228,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Symbol"
+        }, {
+          "name" : "Text"
+        } ]
+      }, {
+        "name" : "Label",
+        "confidence" : 60.569515,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Text"
+        } ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "2.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ {
+        "detectedText" : "24°c",
+        "type" : "LINE",
+        "id" : 0,
+        "parentId" : null,
+        "confidence" : 61.031742,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.1890625,
+            "height" : 0.14257812,
+            "left" : 0.4171875,
+            "top" : 0.4267578
+          },
+          "polygon" : [ {
+            "x" : 0.4171875,
+            "y" : 0.4267578
+          }, {
+            "x" : 0.60625,
+            "y" : 0.4267578
+          }, {
+            "x" : 0.60625,
+            "y" : 0.56933594
+          }, {
+            "x" : 0.4171875,
+            "y" : 0.56933594
+          } ]
+        }
+      }, {
+        "detectedText" : "24°c",
+        "type" : "WORD",
+        "id" : 1,
+        "parentId" : 0,
+        "confidence" : 61.031742,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.1890625,
+            "height" : 0.14257812,
+            "left" : 0.4171875,
+            "top" : 0.4267578
+          },
+          "polygon" : [ {
+            "x" : 0.4171875,
+            "y" : 0.4267578
+          }, {
+            "x" : 0.60625,
+            "y" : 0.4267578
+          }, {
+            "x" : 0.60625,
+            "y" : 0.56933594
+          }, {
+            "x" : 0.4171875,
+            "y" : 0.56933594
+          } ]
+        }
+      } ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "5.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Symbol #Text #Trademark #Label #Badge #Number #Logo"
+  }
+}</TEXT></FIELD>
+</FIELDS>

@@ -1,0 +1,1 @@
+lt_link.get.getDisplayName(#language)

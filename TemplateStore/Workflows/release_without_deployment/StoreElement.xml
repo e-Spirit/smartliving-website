@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WORKFLOW alwaysActive="0" contextfree="0" id="-8730831040319599623" name="release_without_deployment" webedit="1" workflowid="1524095646589965406">
+	<LANG displayname="Freigabe" language="DE"/>
+	<LANG displayname="Release" language="EN"/>
+</WORKFLOW>

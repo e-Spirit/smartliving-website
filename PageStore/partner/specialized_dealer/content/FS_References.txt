@@ -1,0 +1,6 @@
+[self]
+uid=specialized_dealer~#~content
+gid=e723ae1a-0be4-42b3-bc28-1c64bef4c2c7
+store=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.BodyImpl
+

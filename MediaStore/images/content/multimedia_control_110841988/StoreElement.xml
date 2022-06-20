@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MEDIUM filename="multimedia_control_110841988" id="-4739422325289244785" meta="1" type="pic" uniquedescription="multimedia_control_110841988">
+	<LANG displayname="Bedienfeld auf einem Tablet" language="DE"/>
+	<LANG displayname="Controlpanel on a tablet" language="EN"/>
+	<PICTURE>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:1171,&quot;x&quot;:2566,&quot;h&quot;:401,&quot;y&quot;:172},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:106,&quot;x&quot;:3084,&quot;h&quot;:132,&quot;y&quot;:314},&quot;ox&quot;:0.03544774055480957,&quot;oy&quot;:-0.023296896616617838,&quot;title&quot;:&quot;Face&quot;},&quot;flip&quot;:false}" cropData="2566.0,172.0,1171.0,401.0,0,false" extension="jpg" height="400" mimetype="image/jpeg" resolutionid="landscape" width="1170"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:1921,&quot;x&quot;:2215,&quot;h&quot;:1081,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:106,&quot;x&quot;:3084,&quot;h&quot;:132,&quot;y&quot;:314},&quot;ox&quot;:0.03544774055480957,&quot;oy&quot;:-0.023296896616617838,&quot;title&quot;:&quot;Face&quot;},&quot;flip&quot;:false}" cropData="2215.0,0.0,1921.0,1081.0,0,false" extension="jpg" height="1080" mimetype="image/jpeg" resolutionid="banner_slider" width="1920"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:361,&quot;x&quot;:2967,&quot;h&quot;:561,&quot;y&quot;:92},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:106,&quot;x&quot;:3084,&quot;h&quot;:132,&quot;y&quot;:314},&quot;ox&quot;:0.03544774055480957,&quot;oy&quot;:-0.023296896616617838,&quot;title&quot;:&quot;Face&quot;},&quot;flip&quot;:false}" cropData="2967.0,92.0,361.0,561.0,0,false" extension="jpg" height="560" mimetype="image/jpeg" resolutionid="product_teaser" width="360"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:801,&quot;x&quot;:2753,&quot;h&quot;:501,&quot;y&quot;:120},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:106,&quot;x&quot;:3084,&quot;h&quot;:132,&quot;y&quot;:314},&quot;ox&quot;:0.03544774055480957,&quot;oy&quot;:-0.023296896616617838,&quot;title&quot;:&quot;Face&quot;},&quot;flip&quot;:false}" cropData="2753.0,120.0,801.0,501.0,0,false" extension="jpg" height="500" mimetype="image/jpeg" resolutionid="portrait" width="800"/>
+		<RESOLUTION extension="jpeg" height="3000" mimetype="image/jpeg" resolutionid="ORIGINAL" width="4500"/>
+	</PICTURE>
+</MEDIUM>

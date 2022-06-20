@@ -1,0 +1,6 @@
+[self]
+uid=lightbox
+gid=8b2151ba-e3e0-4538-b770-34136203efd2
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+

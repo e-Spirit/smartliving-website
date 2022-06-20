@@ -1,0 +1,6 @@
+[self]
+uid=interactivevideo_unpack
+gid=a995eef0-8209-4060-9b33-59b6354a79a4
+uidType=TEMPLATESTORE_FORMATTEMPLATE
+class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
+

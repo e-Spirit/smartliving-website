@@ -1,0 +1,6 @@
+[self]
+uid=hebe
+gid=059fb8c0-0d92-4bd5-b73d-1ff57c35ee1d
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+

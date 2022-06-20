@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MEDIUM filename="thermostat_1_161668622" id="-5197534743328269331" meta="1" type="pic" uniquedescription="thermostat_1_1">
+	<LANG displayname="Thermostat" language="DE"/>
+	<LANG displayname="Thermostat" language="EN"/>
+	<PICTURE>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:1929,&quot;x&quot;:1701,&quot;h&quot;:3000,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:4266,&quot;x&quot;:533,&quot;h&quot;:2400,&quot;y&quot;:300},&quot;title&quot;:&quot;Image center&quot;},&quot;flip&quot;:false}" cropData="1701.0,0.0,1929.0,3000.0,0,false" extension="jpg" height="560" mimetype="image/jpeg" resolutionid="product_teaser" width="360"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:3001,&quot;x&quot;:1165,&quot;h&quot;:3000,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:4266,&quot;x&quot;:533,&quot;h&quot;:2400,&quot;y&quot;:300},&quot;title&quot;:&quot;Image center&quot;},&quot;flip&quot;:false}" cropData="1165.0,0.0,3001.0,3000.0,0,false" extension="jpg" height="480" mimetype="image/jpeg" resolutionid="square" width="480"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:4801,&quot;x&quot;:266,&quot;h&quot;:3000,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:4266,&quot;x&quot;:533,&quot;h&quot;:2400,&quot;y&quot;:300},&quot;title&quot;:&quot;Image center&quot;},&quot;flip&quot;:false}" cropData="266.0,0.0,4801.0,3000.0,0,false" extension="jpg" height="500" mimetype="image/jpeg" resolutionid="portrait" width="800"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:5333,&quot;x&quot;:0,&quot;h&quot;:1824,&quot;y&quot;:588},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:4266,&quot;x&quot;:533,&quot;h&quot;:2400,&quot;y&quot;:300},&quot;title&quot;:&quot;Image center&quot;},&quot;flip&quot;:false}" cropData="0.0,588.0,5333.0,1824.0,0,false" extension="jpg" height="400" mimetype="image/jpeg" resolutionid="landscape" width="1170"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:5333,&quot;x&quot;:0,&quot;h&quot;:3000,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:4266,&quot;x&quot;:533,&quot;h&quot;:2400,&quot;y&quot;:300},&quot;title&quot;:&quot;Image center&quot;},&quot;flip&quot;:false}" cropData="0.0,0.0,5333.0,3000.0,0,false" extension="jpg" height="1080" mimetype="image/jpeg" resolutionid="banner_slider" width="1920"/>
+		<RESOLUTION extension="jpg" height="3000" mimetype="image/jpeg" resolutionid="ORIGINAL" width="5333"/>
+	</PICTURE>
+</MEDIUM>

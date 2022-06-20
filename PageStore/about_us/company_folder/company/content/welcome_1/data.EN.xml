@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_headline'><DOM><standard><span_yellow_text>OUR </span_yellow_text>TEAM</standard></DOM></FIELD>
+	<FIELD name='st_text'><DOM><standard><b>SMART LIVING</b> is an interdisciplinary team of experts from various disciplines. We are united in our many years of experience with digital technologies and solutions as well as the interest in new and exciting opportunities that are constantly being formed and changed. From this, a team has emerged which sees customer satisfaction as the highest goal and constantly working to achieve it.</standard></DOM></FIELD>
+	<FIELD name='st_jumbo_headline'><TEXT/></FIELD>
+	<FIELD name='st_button'><LINK/></FIELD>
+</FIELDS>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TABLE comment="" description="smartliving.news_overview" filename="news" id="-2948717599565672686" previewPageRefUid="news_overview" templateid="-750883040685655768" type="content">
+	<EXTENSION file="html" link="html" templateSet="9062318847741885912"/>
+	<LANG displayname="News Overview" language="EN"/>
+	<LANG displayname="News Übersciht" language="DE"/>
+</TABLE>

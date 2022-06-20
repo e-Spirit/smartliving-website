@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='pt_title'><TEXT>Fachhändler</TEXT></FIELD>
+	<FIELD name='pt_text'><TEXT>Übersicht aller Fachhändler</TEXT></FIELD>
+</FIELDS>

@@ -1,0 +1,830 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='md_creation_date'><DATE>1637182120828</DATE></FIELD>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Person",
+        "confidence" : 99.29893,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.46644184,
+            "height" : 0.6113564,
+            "left" : 1.705799E-4,
+            "top" : 0.36324406
+          },
+          "confidence" : 99.29893
+        } ],
+        "parents" : [ ]
+      }, {
+        "name" : "Human",
+        "confidence" : 99.29893,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Electronics",
+        "confidence" : 86.3629,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Computer",
+        "confidence" : 84.91012,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Monitor",
+        "confidence" : 71.45617,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Screen"
+        }, {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Display",
+        "confidence" : 71.45617,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Screen"
+        }, {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Screen",
+        "confidence" : 71.45617,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Tablet Computer",
+        "confidence" : 61.478127,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Computer"
+        }, {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "LCD Screen",
+        "confidence" : 59.94093,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Monitor"
+        }, {
+          "name" : "Screen"
+        }, {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Indoors",
+        "confidence" : 58.66458,
+        "instances" : [ ],
+        "parents" : [ ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "2.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ {
+        "detectedText" : "1 Smart Home",
+        "type" : "LINE",
+        "id" : 0,
+        "parentId" : null,
+        "confidence" : 75.094635,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.06935562,
+            "height" : 0.03049609,
+            "left" : 0.21121407,
+            "top" : 0.31541288
+          },
+          "polygon" : [ {
+            "x" : 0.21463208,
+            "y" : 0.31541288
+          }, {
+            "x" : 0.28056967,
+            "y" : 0.32799116
+          }, {
+            "x" : 0.27715167,
+            "y" : 0.34590897
+          }, {
+            "x" : 0.21121407,
+            "y" : 0.3333307
+          } ]
+        }
+      }, {
+        "detectedText" : "Oven",
+        "type" : "LINE",
+        "id" : 1,
+        "parentId" : null,
+        "confidence" : 97.048775,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.02692209,
+            "height" : 0.018280137,
+            "left" : 0.20484006,
+            "top" : 0.34504804
+          },
+          "polygon" : [ {
+            "x" : 0.20775397,
+            "y" : 0.34504804
+          }, {
+            "x" : 0.23176216,
+            "y" : 0.35050258
+          }, {
+            "x" : 0.22884825,
+            "y" : 0.3633282
+          }, {
+            "x" : 0.20484006,
+            "y" : 0.35787368
+          } ]
+        }
+      }, {
+        "detectedText" : "Settings",
+        "type" : "LINE",
+        "id" : 2,
+        "parentId" : null,
+        "confidence" : 96.1561,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.035050977,
+            "height" : 0.022390507,
+            "left" : 0.20323056,
+            "top" : 0.36278188
+          },
+          "polygon" : [ {
+            "x" : 0.20673254,
+            "y" : 0.36278188
+          }, {
+            "x" : 0.23828155,
+            "y" : 0.37012357
+          }, {
+            "x" : 0.23477957,
+            "y" : 0.3851724
+          }, {
+            "x" : 0.20323056,
+            "y" : 0.3778307
+          } ]
+        }
+      }, {
+        "detectedText" : "Actions",
+        "type" : "LINE",
+        "id" : 3,
+        "parentId" : null,
+        "confidence" : 97.74952,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.030924844,
+            "height" : 0.018954106,
+            "left" : 0.1991185,
+            "top" : 0.3767534
+          },
+          "polygon" : [ {
+            "x" : 0.20199966,
+            "y" : 0.3767534
+          }, {
+            "x" : 0.23004334,
+            "y" : 0.38322777
+          }, {
+            "x" : 0.22716217,
+            "y" : 0.3957075
+          }, {
+            "x" : 0.1991185,
+            "y" : 0.38923308
+          } ]
+        }
+      }, {
+        "detectedText" : "180",
+        "type" : "LINE",
+        "id" : 4,
+        "parentId" : null,
+        "confidence" : 98.1625,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.022582943,
+            "height" : 0.018134972,
+            "left" : 0.30610192,
+            "top" : 0.4075226
+          },
+          "polygon" : [ {
+            "x" : 0.30942628,
+            "y" : 0.4075226
+          }, {
+            "x" : 0.32868487,
+            "y" : 0.4123243
+          }, {
+            "x" : 0.3253605,
+            "y" : 0.42565757
+          }, {
+            "x" : 0.30610192,
+            "y" : 0.42085585
+          } ]
+        }
+      }, {
+        "detectedText" : "45",
+        "type" : "LINE",
+        "id" : 5,
+        "parentId" : null,
+        "confidence" : 97.93916,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.019690499,
+            "height" : 0.017583719,
+            "left" : 0.3556665,
+            "top" : 0.42248446
+          },
+          "polygon" : [ {
+            "x" : 0.35927314,
+            "y" : 0.42248446
+          }, {
+            "x" : 0.375357,
+            "y" : 0.4268845
+          }, {
+            "x" : 0.37175035,
+            "y" : 0.4400682
+          }, {
+            "x" : 0.3556665,
+            "y" : 0.43566814
+          } ]
+        }
+      }, {
+        "detectedText" : "Mode",
+        "type" : "LINE",
+        "id" : 6,
+        "parentId" : null,
+        "confidence" : 97.583954,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.02462608,
+            "height" : 0.016926605,
+            "left" : 0.19345464,
+            "top" : 0.3898305
+          },
+          "polygon" : [ {
+            "x" : 0.19604298,
+            "y" : 0.3898305
+          }, {
+            "x" : 0.21808073,
+            "y" : 0.3944746
+          }, {
+            "x" : 0.2154924,
+            "y" : 0.40675712
+          }, {
+            "x" : 0.19345464,
+            "y" : 0.40211302
+          } ]
+        }
+      }, {
+        "detectedText" : "°C",
+        "type" : "LINE",
+        "id" : 7,
+        "parentId" : null,
+        "confidence" : 96.58424,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.015441929,
+            "height" : 0.01568374,
+            "left" : 0.30399945,
+            "top" : 0.42323542
+          },
+          "polygon" : [ {
+            "x" : 0.3066215,
+            "y" : 0.42323542
+          }, {
+            "x" : 0.31944138,
+            "y" : 0.42579708
+          }, {
+            "x" : 0.31681934,
+            "y" : 0.43891916
+          }, {
+            "x" : 0.30399945,
+            "y" : 0.4363575
+          } ]
+        }
+      }, {
+        "detectedText" : "MIN",
+        "type" : "LINE",
+        "id" : 8,
+        "parentId" : null,
+        "confidence" : 97.044136,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.015026074,
+            "height" : 0.01214743,
+            "left" : 0.35475576,
+            "top" : 0.43886548
+          },
+          "polygon" : [ {
+            "x" : 0.3569892,
+            "y" : 0.43886548
+          }, {
+            "x" : 0.36978185,
+            "y" : 0.44205505
+          }, {
+            "x" : 0.3675484,
+            "y" : 0.4510129
+          }, {
+            "x" : 0.35475576,
+            "y" : 0.44782335
+          } ]
+        }
+      }, {
+        "detectedText" : "Dishwasher",
+        "type" : "LINE",
+        "id" : 9,
+        "parentId" : null,
+        "confidence" : 97.66104,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.06081943,
+            "height" : 0.032984372,
+            "left" : 0.17489696,
+            "top" : 0.40899044
+          },
+          "polygon" : [ {
+            "x" : 0.17956825,
+            "y" : 0.40899044
+          }, {
+            "x" : 0.23571639,
+            "y" : 0.42236683
+          }, {
+            "x" : 0.2310451,
+            "y" : 0.44197482
+          }, {
+            "x" : 0.17489696,
+            "y" : 0.42859846
+          } ]
+        }
+      }, {
+        "detectedText" : "Fridge",
+        "type" : "LINE",
+        "id" : 10,
+        "parentId" : null,
+        "confidence" : 97.355156,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.035059243,
+            "height" : 0.024756104,
+            "left" : 0.16669664,
+            "top" : 0.4314305
+          },
+          "polygon" : [ {
+            "x" : 0.17108002,
+            "y" : 0.4314305
+          }, {
+            "x" : 0.20175588,
+            "y" : 0.43947813
+          }, {
+            "x" : 0.19737251,
+            "y" : 0.4561866
+          }, {
+            "x" : 0.16669664,
+            "y" : 0.44813892
+          } ]
+        }
+      }, {
+        "detectedText" : "Freezer",
+        "type" : "LINE",
+        "id" : 11,
+        "parentId" : null,
+        "confidence" : 96.392914,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.042220835,
+            "height" : 0.026189819,
+            "left" : 0.15777816,
+            "top" : 0.45262742
+          },
+          "polygon" : [ {
+            "x" : 0.16203614,
+            "y" : 0.45262742
+          }, {
+            "x" : 0.19999899,
+            "y" : 0.4625868
+          }, {
+            "x" : 0.19574101,
+            "y" : 0.47881725
+          }, {
+            "x" : 0.15777816,
+            "y" : 0.46885788
+          } ]
+        }
+      }, {
+        "detectedText" : "1",
+        "type" : "WORD",
+        "id" : 12,
+        "parentId" : 0,
+        "confidence" : 29.908815,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.0045448304,
+            "height" : 0.0078125,
+            "left" : 0.21425629,
+            "top" : 0.3173828
+          },
+          "polygon" : [ {
+            "x" : 0.21425629,
+            "y" : 0.3173828
+          }, {
+            "x" : 0.21880111,
+            "y" : 0.3173828
+          }, {
+            "x" : 0.21880111,
+            "y" : 0.3251953
+          }, {
+            "x" : 0.21425629,
+            "y" : 0.3251953
+          } ]
+        }
+      }, {
+        "detectedText" : "Smart",
+        "type" : "WORD",
+        "id" : 13,
+        "parentId" : 0,
+        "confidence" : 97.67968,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.031445168,
+            "height" : 0.021032456,
+            "left" : 0.21880004,
+            "top" : 0.31650934
+          },
+          "polygon" : [ {
+            "x" : 0.22038,
+            "y" : 0.31650934
+          }, {
+            "x" : 0.2502452,
+            "y" : 0.32506567
+          }, {
+            "x" : 0.24866526,
+            "y" : 0.33754182
+          }, {
+            "x" : 0.21880004,
+            "y" : 0.32898548
+          } ]
+        }
+      }, {
+        "detectedText" : "Home",
+        "type" : "WORD",
+        "id" : 14,
+        "parentId" : 0,
+        "confidence" : 97.69542,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.030237436,
+            "height" : 0.021066453,
+            "left" : 0.24855375,
+            "top" : 0.3248425
+          },
+          "polygon" : [ {
+            "x" : 0.25019327,
+            "y" : 0.3248425
+          }, {
+            "x" : 0.2787912,
+            "y" : 0.33316794
+          }, {
+            "x" : 0.27715167,
+            "y" : 0.34590897
+          }, {
+            "x" : 0.24855375,
+            "y" : 0.33758354
+          } ]
+        }
+      }, {
+        "detectedText" : "Oven",
+        "type" : "WORD",
+        "id" : 15,
+        "parentId" : 1,
+        "confidence" : 97.048775,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.024275113,
+            "height" : 0.018280137,
+            "left" : 0.20616356,
+            "top" : 0.34504804
+          },
+          "polygon" : [ {
+            "x" : 0.20775397,
+            "y" : 0.34504804
+          }, {
+            "x" : 0.23043866,
+            "y" : 0.35280266
+          }, {
+            "x" : 0.22884825,
+            "y" : 0.3633282
+          }, {
+            "x" : 0.20616356,
+            "y" : 0.35557356
+          } ]
+        }
+      }, {
+        "detectedText" : "Settings",
+        "type" : "WORD",
+        "id" : 16,
+        "parentId" : 2,
+        "confidence" : 96.1561,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.0317389,
+            "height" : 0.022390507,
+            "left" : 0.2048866,
+            "top" : 0.36278188
+          },
+          "polygon" : [ {
+            "x" : 0.20673254,
+            "y" : 0.36278188
+          }, {
+            "x" : 0.23662551,
+            "y" : 0.37327313
+          }, {
+            "x" : 0.23477957,
+            "y" : 0.3851724
+          }, {
+            "x" : 0.2048866,
+            "y" : 0.37468117
+          } ]
+        }
+      }, {
+        "detectedText" : "Actions",
+        "type" : "WORD",
+        "id" : 17,
+        "parentId" : 3,
+        "confidence" : 97.74952,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.02814002,
+            "height" : 0.018954106,
+            "left" : 0.2005109,
+            "top" : 0.3767534
+          },
+          "polygon" : [ {
+            "x" : 0.20199966,
+            "y" : 0.3767534
+          }, {
+            "x" : 0.22865093,
+            "y" : 0.38600412
+          }, {
+            "x" : 0.22716217,
+            "y" : 0.3957075
+          }, {
+            "x" : 0.2005109,
+            "y" : 0.38645676
+          } ]
+        }
+      }, {
+        "detectedText" : "180",
+        "type" : "WORD",
+        "id" : 18,
+        "parentId" : 4,
+        "confidence" : 98.1625,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.019733477,
+            "height" : 0.018134972,
+            "left" : 0.30752665,
+            "top" : 0.4075226
+          },
+          "polygon" : [ {
+            "x" : 0.30942628,
+            "y" : 0.4075226
+          }, {
+            "x" : 0.32726014,
+            "y" : 0.41422865
+          }, {
+            "x" : 0.3253605,
+            "y" : 0.42565757
+          }, {
+            "x" : 0.30752665,
+            "y" : 0.4189515
+          } ]
+        }
+      }, {
+        "detectedText" : "45",
+        "type" : "WORD",
+        "id" : 19,
+        "parentId" : 5,
+        "confidence" : 97.93916,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.01668477,
+            "height" : 0.017583719,
+            "left" : 0.35716936,
+            "top" : 0.42248446
+          },
+          "polygon" : [ {
+            "x" : 0.35927314,
+            "y" : 0.42248446
+          }, {
+            "x" : 0.37385413,
+            "y" : 0.42846575
+          }, {
+            "x" : 0.37175035,
+            "y" : 0.4400682
+          }, {
+            "x" : 0.35716936,
+            "y" : 0.43408686
+          } ]
+        }
+      }, {
+        "detectedText" : "Mode",
+        "type" : "WORD",
+        "id" : 20,
+        "parentId" : 6,
+        "confidence" : 97.583954,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.022335768,
+            "height" : 0.016926605,
+            "left" : 0.19459979,
+            "top" : 0.3898305
+          },
+          "polygon" : [ {
+            "x" : 0.19604298,
+            "y" : 0.3898305
+          }, {
+            "x" : 0.21693556,
+            "y" : 0.39644626
+          }, {
+            "x" : 0.2154924,
+            "y" : 0.40675712
+          }, {
+            "x" : 0.19459979,
+            "y" : 0.40014136
+          } ]
+        }
+      }, {
+        "detectedText" : "°C",
+        "type" : "WORD",
+        "id" : 21,
+        "parentId" : 7,
+        "confidence" : 96.58424,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.013423872,
+            "height" : 0.01568374,
+            "left" : 0.30500847,
+            "top" : 0.42323542
+          },
+          "polygon" : [ {
+            "x" : 0.3066215,
+            "y" : 0.42323542
+          }, {
+            "x" : 0.31843236,
+            "y" : 0.42678836
+          }, {
+            "x" : 0.31681934,
+            "y" : 0.43891916
+          }, {
+            "x" : 0.30500847,
+            "y" : 0.4353662
+          } ]
+        }
+      }, {
+        "detectedText" : "MIN",
+        "type" : "WORD",
+        "id" : 22,
+        "parentId" : 8,
+        "confidence" : 97.044136,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.013117457,
+            "height" : 0.01214743,
+            "left" : 0.3557101,
+            "top" : 0.43886548
+          },
+          "polygon" : [ {
+            "x" : 0.3569892,
+            "y" : 0.43886548
+          }, {
+            "x" : 0.36882752,
+            "y" : 0.44331703
+          }, {
+            "x" : 0.3675484,
+            "y" : 0.4510129
+          }, {
+            "x" : 0.3557101,
+            "y" : 0.44656137
+          } ]
+        }
+      }, {
+        "detectedText" : "Dishwasher",
+        "type" : "WORD",
+        "id" : 23,
+        "parentId" : 9,
+        "confidence" : 97.66104,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.055835973,
+            "height" : 0.032984372,
+            "left" : 0.17738868,
+            "top" : 0.40899044
+          },
+          "polygon" : [ {
+            "x" : 0.17956825,
+            "y" : 0.40899044
+          }, {
+            "x" : 0.23322466,
+            "y" : 0.42820597
+          }, {
+            "x" : 0.2310451,
+            "y" : 0.44197482
+          }, {
+            "x" : 0.17738868,
+            "y" : 0.4227593
+          } ]
+        }
+      }, {
+        "detectedText" : "Fridge",
+        "type" : "WORD",
+        "id" : 24,
+        "parentId" : 10,
+        "confidence" : 97.355156,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.030988287,
+            "height" : 0.024756104,
+            "left" : 0.16873212,
+            "top" : 0.4314305
+          },
+          "polygon" : [ {
+            "x" : 0.17108002,
+            "y" : 0.4314305
+          }, {
+            "x" : 0.19972041,
+            "y" : 0.44276688
+          }, {
+            "x" : 0.19737251,
+            "y" : 0.4561866
+          }, {
+            "x" : 0.16873212,
+            "y" : 0.44485018
+          } ]
+        }
+      }, {
+        "detectedText" : "Freezer",
+        "type" : "WORD",
+        "id" : 25,
+        "parentId" : 11,
+        "confidence" : 96.392914,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.037912965,
+            "height" : 0.026189819,
+            "left" : 0.15993209,
+            "top" : 0.45262742
+          },
+          "polygon" : [ {
+            "x" : 0.16203614,
+            "y" : 0.45262742
+          }, {
+            "x" : 0.19784506,
+            "y" : 0.46673378
+          }, {
+            "x" : 0.19574101,
+            "y" : 0.47881725
+          }, {
+            "x" : 0.15993209,
+            "y" : 0.4647109
+          } ]
+        }
+      } ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "5.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Computer #Monitor #Tablet Computer #Indoors #Display #Person #Screen #Electronics #Human #LCD Screen"
+  }
+}</TEXT></FIELD>
+</FIELDS>

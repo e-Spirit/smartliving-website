@@ -1,0 +1,116 @@
+<CMS_HEADER>
+  <CMS_FUNCTION name="Navigation" resultname="fr_breadcrumb">
+    <CMS_PARAM name="expansionVisibility" value="purepath"/>
+    <CMS_ARRAY_PARAM name="beginHTML">
+      <CMS_ARRAY_ELEMENT index="0"><![CDATA[<i style="margin-left: 4px;margin-right: 7px;color: #fff;font-size:16px;font-weight:900;"class="fas fa-angle-double-right"></i><li>]]></CMS_ARRAY_ELEMENT>
+	  <CMS_ARRAY_ELEMENT index="1..2"><![CDATA[<i style="margin-left: 7px;margin-right: 7px;color: #fff;font-size:16px;font-weight:900;"class="fas fa-angle-double-right"></i><li>]]></CMS_ARRAY_ELEMENT>
+    </CMS_ARRAY_PARAM>
+    <CMS_ARRAY_PARAM name="unselectedHTML">
+      <CMS_ARRAY_ELEMENT index="0..2"><![CDATA[<a href="$CMS_REF(#nav.ref)$">$CMS_VALUE(#nav.label)$</a>]]></CMS_ARRAY_ELEMENT>
+    </CMS_ARRAY_PARAM>
+    <CMS_ARRAY_PARAM name="selectedHTML">
+      <CMS_ARRAY_ELEMENT index="0..2"><![CDATA[<a href="$CMS_REF(#nav.ref)$">$CMS_VALUE(#nav.label)$</a>]]></CMS_ARRAY_ELEMENT>
+    </CMS_ARRAY_PARAM>
+    <CMS_ARRAY_PARAM name="endHTML">
+      <CMS_ARRAY_ELEMENT index="0..2"><![CDATA[</li>]]></CMS_ARRAY_ELEMENT>
+    </CMS_ARRAY_PARAM>
+  </CMS_FUNCTION>
+</CMS_HEADER>
+<!DOCTYPE html>
+<html lang="$CMS_VALUE(#global.language.abbreviation.toLowerCase)$">
+<head> 
+$CMS_RENDER(template:"head")$
+$CMS_RENDER(template:"js_section")$
+
+<!-- $CMS_VALUE(#global.node.uid)$ -->
+</head>
+<body class="footer-fixed">
+	$--CMS_RENDER(template:"chatbot")--$
+	$-- Chatbot is based on Fragments, can be activated again when it has been redesigned --$
+	<div class="page-wraper"> 
+       	$CMS_RENDER(template:"header")$
+        <!-- CONTENT START -->
+        <div class="page-content">
+			<div $CMS_IF(!"news_detail".equals(#global.node.uid))$$CMS_VALUE(editorId(reloadPreview:true))$$CMS_END_IF$>
+			$CMS_IF(!pt_picture.isEmpty())$
+            <!-- INNER PAGE BANNER -->    
+            <div class="wt-bnr-inr overlay-wraper$-- bg-parallax--$ bg-center"$-- data-stellar-background-ratio="0.5"--$ data-test-id="89ee228a" $CMS_VALUE(editorId(editorName:"pt_picture", resolution: ["banner_slider", "header_banner_mobile"], reloadPreview: true))$>
+            	<div class="overlay-main bg-black theming-banner-opacity"></div>
+                <div class="container">
+                    <div class="wt-bnr-inr-entry">
+                    	<div class="banner-title-outer">
+                        	<div class="banner-title-name">
+                        	$CMS_IF(!ss_header_name.isEmpty())$
+                        	<h2 class="text-white text-uppercase letter-spacing-5 font-18 font-weight-300"$CMS_VALUE(editorId(editorName:"ss_header_name"))$ >$CMS_VALUE(ss_header_name, default:"Name")$
+                        		</h2>
+                        	$CMS_ELSE$
+                        		<h2 class="text-white text-uppercase letter-spacing-5 font-18 font-weight-300"$CMS_VALUE(editorId(editorName:"pt_text"))$>$CMS_VALUE(pt_text, default:"Name")$
+                        		</h2>
+                        	$CMS_END_IF$
+                            </div>
+                        </div>
+                        <!-- BREADCRUMB ROW -->                            
+                        <div class="p-tb20">
+                            <div>
+                                $--<ul class="wt-breadcrumb breadcrumb-style-2">--$
+                                <ul class="wt-breadcrumb">
+                                   <li><a href="$CMS_REF(ps_homepage)$">Home</a></li>
+                                   $CMS_VALUE(fr_breadcrumb)$
+                                   $CMS_IF(#global.node.content2Params.tableTemplate.uid.equals("products.product"))$
+										<li>$CMS_VALUE(#global.multiPageParams.data.get(#global.pageParams.index).getValue("name_"+#global.language.abbreviation),default:translations.get("product_page"))$</li>
+								   $CMS_END_IF$
+                                </ul>
+                                
+                            </div>
+                        </div>
+                        <!-- BREADCRUMB ROW END -->                        
+                    </div>
+                </div>
+            </div>
+            <style>
+				.wt-bnr-inr {
+					background-image: url('$CMS_REF(pt_picture,res:"banner_slider")$');
+				}
+				$--CMS_IF(ref(pt_picture, res:"header_banner_mobile").metaData.revision.id != ref(pt_picture).metaData.revision.id)--$
+				@media only screen and (max-width: 991px) {
+					header.site-header {
+						height: 70px;
+					}
+					.wt-bnr-inr {
+						height: calc(100vh - 70px);
+						background-image: url('$CMS_REF(pt_picture,res:"header_banner_mobile")$');
+					}
+					.wt-breadcrumb {
+						display: none;
+					}
+				}
+            </style>
+            <!-- INNER PAGE BANNER END -->
+            $CMS_END_IF$
+            </div>
+        	$CMS_VALUE(#global.getPage().getBodyByName("content"))$
+        	$CMS_IF(#global.is("WEBEDIT") && pt_add_sections)$
+				$CMS_RENDER(template:"add_new_section",label:"Add Content",body:"content", dropEditorName:"pt_create_section")$
+			$CMS_END_IF$
+        </div>
+        <!-- CONTENT END -->
+        $CMS_VALUE(#global.gca(ps_footer.get().uid))$
+        $CMS_RENDER(template:"top_button")$
+    </div>
+    $CMS_IF(#global.is("WEBEDIT"))$
+	   	<script type="text/javascript">
+			function fs_UtilCreateNewSection(pageId, bodyId){
+				top.WE_API.Common.execute(
+					"class:NewSection",
+					{
+						page: pageId,
+						body: bodyId
+					}
+				);
+			}
+		</script>	
+	$CMS_END_IF$
+$--CMS_RENDER(template:"loading_area")--$
+
+</body>
+</html>

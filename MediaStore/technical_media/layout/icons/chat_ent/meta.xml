@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='md_creation_date'><DATE>1637241102744</DATE></FIELD>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Moon",
+        "confidence" : 92.69319,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.63852996,
+            "height" : 0.62999916,
+            "left" : 0.18367073,
+            "top" : 0.15021342
+          },
+          "confidence" : 92.69319
+        } ],
+        "parents" : [ {
+          "name" : "Outer Space"
+        }, {
+          "name" : "Night"
+        }, {
+          "name" : "Astronomy"
+        }, {
+          "name" : "Outdoors"
+        }, {
+          "name" : "Nature"
+        } ]
+      }, {
+        "name" : "Nature",
+        "confidence" : 92.69319,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Outdoors",
+        "confidence" : 92.69319,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Astronomy",
+        "confidence" : 92.69319,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Night",
+        "confidence" : 92.69319,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Outdoors"
+        }, {
+          "name" : "Nature"
+        } ]
+      }, {
+        "name" : "Outer Space",
+        "confidence" : 92.69319,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Astronomy"
+        } ]
+      }, {
+        "name" : "Universe",
+        "confidence" : 92.69319,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Astronomy"
+        } ]
+      }, {
+        "name" : "Space",
+        "confidence" : 92.69319,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Astronomy"
+        } ]
+      }, {
+        "name" : "Silhouette",
+        "confidence" : 86.86781,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Stencil",
+        "confidence" : 74.59165,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Symbol",
+        "confidence" : 68.8269,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "White",
+        "confidence" : 59.433414,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Texture"
+        } ]
+      }, {
+        "name" : "Texture",
+        "confidence" : 59.433414,
+        "instances" : [ ],
+        "parents" : [ ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "2.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "5.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Outdoors #Night #Symbol #Texture #Nature #Silhouette #Universe #White #Outer Space #Moon #Astronomy #Stencil #Space"
+  }
+}</TEXT></FIELD>
+</FIELDS>

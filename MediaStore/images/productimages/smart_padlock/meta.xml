@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='md_alt_text'><TEXT/></FIELD>
+	<FIELD name='md_region'><SEL><VALUE>region_na</VALUE></SEL></FIELD>
+	<FIELD name='md_country'><SEL><VALUE>country_us</VALUE></SEL></FIELD>
+	<FIELD name='md_language'><SEL><VALUE>EN</VALUE></SEL></FIELD>
+	<FIELD name='md_creation_date'><DATE>1627983626810</DATE></FIELD>
+	<FIELD name='md_licensing'><SEL/></FIELD>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Lock",
+        "confidence" : 58.826427,
+        "instances" : [ ],
+        "parents" : [ ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "2.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ {
+        "detectedText" : "SMART",
+        "type" : "LINE",
+        "id" : 0,
+        "parentId" : null,
+        "confidence" : 99.880394,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.07324219,
+            "height" : 0.01484375,
+            "left" : 0.46289062,
+            "top" : 0.7367188
+          },
+          "polygon" : [ {
+            "x" : 0.46289062,
+            "y" : 0.7367188
+          }, {
+            "x" : 0.5361328,
+            "y" : 0.7367188
+          }, {
+            "x" : 0.5361328,
+            "y" : 0.7515625
+          }, {
+            "x" : 0.46289062,
+            "y" : 0.7515625
+          } ]
+        }
+      }, {
+        "detectedText" : "PADLOCK",
+        "type" : "LINE",
+        "id" : 1,
+        "parentId" : null,
+        "confidence" : 100.0,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.09375,
+            "height" : 0.0140625,
+            "left" : 0.453125,
+            "top" : 0.75703126
+          },
+          "polygon" : [ {
+            "x" : 0.453125,
+            "y" : 0.75703126
+          }, {
+            "x" : 0.546875,
+            "y" : 0.75703126
+          }, {
+            "x" : 0.546875,
+            "y" : 0.7710937
+          }, {
+            "x" : 0.453125,
+            "y" : 0.7710937
+          } ]
+        }
+      }, {
+        "detectedText" : "SMART",
+        "type" : "WORD",
+        "id" : 2,
+        "parentId" : 0,
+        "confidence" : 99.880394,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.07324219,
+            "height" : 0.01484375,
+            "left" : 0.46289062,
+            "top" : 0.7367188
+          },
+          "polygon" : [ {
+            "x" : 0.46289062,
+            "y" : 0.7367188
+          }, {
+            "x" : 0.5361328,
+            "y" : 0.7367188
+          }, {
+            "x" : 0.5361328,
+            "y" : 0.7515625
+          }, {
+            "x" : 0.46289062,
+            "y" : 0.7515625
+          } ]
+        }
+      }, {
+        "detectedText" : "PADLOCK",
+        "type" : "WORD",
+        "id" : 3,
+        "parentId" : 1,
+        "confidence" : 100.0,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.09375,
+            "height" : 0.0140625,
+            "left" : 0.453125,
+            "top" : 0.75703126
+          },
+          "polygon" : [ {
+            "x" : 0.453125,
+            "y" : 0.75703126
+          }, {
+            "x" : 0.546875,
+            "y" : 0.75703126
+          }, {
+            "x" : 0.546875,
+            "y" : 0.7710937
+          }, {
+            "x" : 0.453125,
+            "y" : 0.7710937
+          } ]
+        }
+      } ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "5.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Lock"
+  }
+}</TEXT></FIELD>
+</FIELDS>

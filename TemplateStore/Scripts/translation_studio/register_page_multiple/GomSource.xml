@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_GROUP tabs="top">
+
+    <CMS_GROUP>
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Translation Settings"/>
+      </LANGINFOS>
+
+      <FS_CATALOG name="fts_multiple_page_entry" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Pages to translate"/>
+        </LANGINFOS>
+        <TEMPLATES type="section">
+          <TEMPLATE uid="fts_multiple_page_entry"/>
+        </TEMPLATES>
+      </FS_CATALOG>
+
+      <CMS_INPUT_CHECKBOX name="st_fts_ref_mappings" allowEmpty="no" gridWidth="2" hFill="yes" useLanguages="no">
+        <CMS_INCLUDE_OPTIONS type="public">
+          <NAME>com.idmedia.translationstudio.firstspirit.module.LanguageMappingGrom</NAME>
+        </CMS_INCLUDE_OPTIONS>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Source and target languages" description="Choose the source and target languages"/>
+        </LANGINFOS>
+      </CMS_INPUT_CHECKBOX>
+
+      <FS_REFERENCE
+        name="st_fts_ref_tickets"
+        allowEmpty="yes"
+        hFill="yes"
+        hidden="yes"
+        imagePreview="no"
+        upload="no"
+        useLanguages="no">
+        <FILTER>
+          <ALLOW type="content2"/>
+        </FILTER>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Translation Task Tickt Datasource"/>
+        </LANGINFOS>
+        <PROJECTS>
+          <LOCAL name=".">
+            <SOURCES>
+              <FOLDER name="root" store="contentstore"/>
+            </SOURCES>
+          </LOCAL>
+        </PROJECTS>
+      </FS_REFERENCE>
+
+      <FS_REFERENCE
+        name="st_fts_ref_tickets_tpl"
+        allowEmpty="yes"
+        hFill="yes"
+        hidden="yes"
+        imagePreview="no"
+        upload="no"
+        useLanguages="no">
+        <FILTER>
+          <ALLOW type="template"/>
+        </FILTER>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Translation Task Tickt Datasource Template"/>
+        </LANGINFOS>
+        <PROJECTS>
+          <LOCAL name=".">
+            <SOURCES>
+              <FOLDER name="root" store="templatestore"/>
+            </SOURCES>
+          </LOCAL>
+        </PROJECTS>
+      </FS_REFERENCE>
+
+      <FS_REFERENCE
+        name="st_fts_ref_ticketslist"
+        allowEmpty="no"
+        hFill="yes"
+        hidden="yes"
+        imagePreview="no"
+        upload="no"
+        useLanguages="no">
+        <FILTER>
+          <ALLOW type="content2"/>
+        </FILTER>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Translation Request  Task Tickt Datasource"/>
+        </LANGINFOS>
+        <PROJECTS>
+          <LOCAL name=".">
+            <SOURCES>
+              <FOLDER name="root" store="contentstore"/>
+            </SOURCES>
+          </LOCAL>
+        </PROJECTS>
+      </FS_REFERENCE>
+
+      <FS_REFERENCE
+        name="st_fts_ref_ticketslist_tpl"
+        allowEmpty="no"
+        hFill="yes"
+        hidden="yes"
+        imagePreview="no"
+        upload="no"
+        useLanguages="no">
+        <FILTER>
+          <ALLOW type="template"/>
+        </FILTER>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Translation Request Task List Datasource Template"/>
+        </LANGINFOS>
+        <PROJECTS>
+          <LOCAL name=".">
+            <SOURCES>
+              <FOLDER name="root" store="templatestore"/>
+            </SOURCES>
+          </LOCAL>
+        </PROJECTS>
+      </FS_REFERENCE>
+
+      <CMS_INPUT_TOGGLE
+        name="st_fts_translation_regular"
+        type="radio"
+        allowEmpty="yes"
+        hFill="yes"
+        preset="copy"
+        singleLine="no"
+        useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Translate this content"/>
+        </LANGINFOS>
+        <OFF>
+          <LANGINFO lang="*" label="as soon as quotas are fulfilled (i.e. not urgent)"/>
+        </OFF>
+        <ON>
+          <LANGINFO lang="*" label="immediately - it is urgent"/>
+        </ON>
+      </CMS_INPUT_TOGGLE>
+
+      <FS_REFERENCE
+        name="st_fts_ref_worfklow_on_import"
+        allowEmpty="yes"
+        hFill="yes"
+        hidden="no"
+        imagePreview="no"
+        upload="no"
+        useLanguages="no">
+        <FILTER>
+          <ALLOW type="workflow"/>
+        </FILTER>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Workflow to be executed after import of translation"/>
+        </LANGINFOS>
+        <PROJECTS>
+          <LOCAL name=".">
+            <SOURCES>
+              <FOLDER name="root" store="templatestore"/>
+            </SOURCES>
+          </LOCAL>
+        </PROJECTS>
+      </FS_REFERENCE>
+
+      <CMS_INPUT_TOGGLE
+        name="st_create_preview_page"
+        type="radio"
+        allowEmpty="yes"
+        hFill="yes"
+        hidden="no"
+        preset="copy"
+        singleLine="no"
+        useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Create Preview Pages"/>
+        </LANGINFOS>
+        <OFF>
+          <LANGINFO lang="*" label="No"/>
+        </OFF>
+        <ON>
+          <LANGINFO lang="*" label="Yes"/>
+        </ON>
+      </CMS_INPUT_TOGGLE>
+
+      <CMS_INPUT_DATE name="st_fts_date_complete" allowEmpty="yes" hFill="yes" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Due date"/>
+        </LANGINFOS>
+      </CMS_INPUT_DATE>
+
+      <CMS_INPUT_TOGGLE
+        name="st_fts_toggle_include_subfolder"
+        type="radio"
+        allowEmpty="yes"
+        hFill="yes"
+        hidden="yes"
+        preset="copy"
+        singleLine="no"
+        useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Select which pages to add"/>
+        </LANGINFOS>
+        <OFF>
+          <LANGINFO lang="*" label="Pages in selected folder only"/>
+        </OFF>
+        <ON>
+          <LANGINFO lang="*" label="All pages in all subfolders"/>
+        </ON>
+      </CMS_INPUT_TOGGLE>
+
+      <CMS_INPUT_CHECKBOX name="st_fts_sections" hidden="yes" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="All Sections"/>
+        </LANGINFOS>
+      </CMS_INPUT_CHECKBOX>
+
+      <CMS_INPUT_TOGGLE
+        name="st_keep_nontranslatables"
+        type="radio"
+        hFill="yes"
+        hidden="no"
+        preset="copy"
+        singleLine="no"
+        useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Copy latest non-translatable values (toggles etc.) before importing (may overwrite changes!)"/>
+        </LANGINFOS>
+        <OFF>
+          <LANGINFO lang="*" label="No"/>
+        </OFF>
+        <ON>
+          <LANGINFO lang="*" label="Yes"/>
+        </ON>
+      </CMS_INPUT_TOGGLE>
+
+      <CMS_INPUT_TOGGLE
+        name="st_is_fragment"
+        type="radio"
+        hFill="yes"
+        hidden="yes"
+        preset="copy"
+        singleLine="no"
+        useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Is Fragment Project"/>
+        </LANGINFOS>
+        <OFF>
+          <LANGINFO lang="*" label="No"/>
+        </OFF>
+        <ON>
+          <LANGINFO lang="*" label="Yes"/>
+        </ON>
+      </CMS_INPUT_TOGGLE>
+
+    </CMS_GROUP>
+
+    <CMS_GROUP>
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Notification Settings/Data protection settings"/>
+      </LANGINFOS>
+
+      <CMS_INPUT_TOGGLE
+        name="st_fts_translate_notify_user"
+        type="checkbox"
+        allowEmpty="yes"
+        hFill="yes"
+        singleLine="yes"
+        useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="I want to receive notification e-mails (user id needs to be stored)"/>
+        </LANGINFOS>
+        <OFF>
+          <LANGINFO lang="*" label="No, please do not notify me"/>
+        </OFF>
+        <ON>
+          <LANGINFO lang="*" label="Yes, please notify me"/>
+        </ON>
+      </CMS_INPUT_TOGGLE>
+
+      <CMS_LABEL bold="no" size="10">
+        <LANGINFOS>
+          <LANGINFO lang="*" label=" "/>
+        </LANGINFOS>
+      </CMS_LABEL>
+
+      <CMS_LABEL bold="no" size="12">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="TranslationStudio will send notification emails informing you about the progress of your translation request."/>
+        </LANGINFOS>
+      </CMS_LABEL>
+
+      <CMS_LABEL bold="no" size="12">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Notifications are sent on the following occasions:"/>
+        </LANGINFOS>
+      </CMS_LABEL>
+
+      <CMS_LABEL bold="no" size="12">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="1. Successful registration of this request"/>
+        </LANGINFOS>
+      </CMS_LABEL>
+
+      <CMS_LABEL bold="no" size="12">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="2. Translation initiated (e.g. sent to a translator)"/>
+        </LANGINFOS>
+      </CMS_LABEL>
+
+      <CMS_LABEL bold="no" size="12">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="3. Import of translated content into FirstSpirit"/>
+        </LANGINFOS>
+      </CMS_LABEL>
+
+      <CMS_LABEL bold="no" size="10">
+        <LANGINFOS>
+          <LANGINFO lang="*" label=" "/>
+        </LANGINFOS>
+      </CMS_LABEL>
+
+      <CMS_LABEL bold="yes" size="10">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Data protection notice (General Data Protection Regulation)"/>
+        </LANGINFOS>
+      </CMS_LABEL>
+
+      <CMS_LABEL bold="no" size="10">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="TranslationStudio only stores your FirstSpirit user id to send notification e-mails to you."/>
+        </LANGINFOS>
+      </CMS_LABEL>
+
+      <CMS_LABEL bold="no" size="10">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Other personal data will not be stored."/>
+        </LANGINFOS>
+      </CMS_LABEL>
+
+      <CMS_LABEL bold="no" size="10">
+        <LANGINFOS>
+          <LANGINFO lang="*" label=" "/>
+        </LANGINFOS>
+      </CMS_LABEL>
+
+      <CMS_LABEL bold="no" size="10">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="By default, TranslationStudio neither exposes this id to third parties, nor does it use this id"/>
+        </LANGINFOS>
+      </CMS_LABEL>
+
+      <CMS_LABEL bold="no" size="10">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="for purposes other than looking up your e-mail from FirstSpirit to be able to send e-mails to you."/>
+        </LANGINFOS>
+      </CMS_LABEL>
+
+      <CMS_LABEL bold="no" size="10">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="If your user id is stored and used for other purposes (such as renaming the translatable XML),"/>
+        </LANGINFOS>
+      </CMS_LABEL>
+
+      <CMS_LABEL bold="no" size="10">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="it is the obligation of those who activate such features to obtain your consent."/>
+        </LANGINFOS>
+      </CMS_LABEL>
+
+      <CMS_LABEL bold="no" size="10">
+        <LANGINFOS>
+          <LANGINFO lang="*" label=" "/>
+        </LANGINFOS>
+      </CMS_LABEL>
+
+      <CMS_LABEL bold="no" size="10">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Please contact your administrator for further information and for TranslationStudio's GDPR notice."/>
+        </LANGINFOS>
+      </CMS_LABEL>
+
+      <CMS_INPUT_TEXTAREA name="st_fts_custom_text" hFill="yes" hidden="yes" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Custom Text Fields"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXTAREA>
+
+      <CMS_INPUT_TEXTAREA name="st_fts_custom_radio" hFill="yes" hidden="yes" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Custom Radio Button Fields"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXTAREA>
+
+      <CMS_INPUT_TEXTAREA name="st_fts_custom_date" hFill="yes" hidden="yes" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Custom Date Fields"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXTAREA>
+
+    </CMS_GROUP>
+
+  </CMS_GROUP>
+
+</CMS_MODULE>

@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='md_creation_date'><DATE>1637182165628</DATE></FIELD>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ {
+        "boundingBox" : {
+          "width" : 0.13808231,
+          "height" : 0.3354096,
+          "left" : 0.6585142,
+          "top" : -0.005983412
+        },
+        "ageRange" : null,
+        "smile" : null,
+        "eyeglasses" : null,
+        "sunglasses" : null,
+        "gender" : null,
+        "beard" : null,
+        "mustache" : null,
+        "eyesOpen" : null,
+        "mouthOpen" : null,
+        "emotions" : null,
+        "landmarks" : [ {
+          "type" : "eyeLeft",
+          "x" : 0.6837334,
+          "y" : 0.08877841
+        }, {
+          "type" : "eyeRight",
+          "x" : 0.6980161,
+          "y" : 0.052161705
+        }, {
+          "type" : "mouthLeft",
+          "x" : 0.71806985,
+          "y" : 0.20821919
+        }, {
+          "type" : "mouthRight",
+          "x" : 0.72980636,
+          "y" : 0.18022607
+        }, {
+          "type" : "nose",
+          "x" : 0.68150705,
+          "y" : 0.14693224
+        } ],
+        "pose" : {
+          "roll" : -71.74128,
+          "yaw" : -71.52519,
+          "pitch" : 50.90135
+        },
+        "quality" : {
+          "brightness" : 85.28132,
+          "sharpness" : 78.6435
+        },
+        "confidence" : 99.999405
+      } ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Person",
+        "confidence" : 99.31807,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.460989,
+            "height" : 0.98301846,
+            "left" : 0.5384902,
+            "top" : 0.0067139375
+          },
+          "confidence" : 99.31807
+        }, {
+          "boundingBox" : {
+            "width" : 0.18456535,
+            "height" : 0.17043824,
+            "left" : 0.48493683,
+            "top" : 0.8168179
+          },
+          "confidence" : 49.75476
+        } ],
+        "parents" : [ ]
+      }, {
+        "name" : "Human",
+        "confidence" : 99.31807,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Computer",
+        "confidence" : 96.47247,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Electronics",
+        "confidence" : 96.47247,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "LCD Screen",
+        "confidence" : 74.09604,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Monitor"
+        }, {
+          "name" : "Screen"
+        }, {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Screen",
+        "confidence" : 74.09604,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Monitor",
+        "confidence" : 74.09604,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Screen"
+        }, {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Display",
+        "confidence" : 74.09604,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Screen"
+        }, {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Tablet Computer",
+        "confidence" : 67.361145,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.27667427,
+            "height" : 0.39922386,
+            "left" : 0.32489255,
+            "top" : 0.5947893
+          },
+          "confidence" : 57.99973
+        } ],
+        "parents" : [ {
+          "name" : "Computer"
+        }, {
+          "name" : "Electronics"
+        } ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "2.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "5.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Computer #Monitor #Tablet Computer #Display #Person #Screen #Electronics #Human #LCD Screen"
+  }
+}</TEXT></FIELD>
+</FIELDS>

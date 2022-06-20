@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='md_creation_date'><DATE>1637182165692</DATE></FIELD>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Window",
+        "confidence" : 92.28351,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Architecture",
+        "confidence" : 84.929634,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Building"
+        } ]
+      }, {
+        "name" : "Building",
+        "confidence" : 84.929634,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Mailbox",
+        "confidence" : 74.93132,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.4264061,
+            "height" : 0.94314384,
+            "left" : 0.1402939,
+            "top" : 0.031214887
+          },
+          "confidence" : 74.93132
+        } ],
+        "parents" : [ ]
+      }, {
+        "name" : "Letterbox",
+        "confidence" : 74.93132,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Furniture",
+        "confidence" : 59.447586,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Skylight",
+        "confidence" : 59.053043,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Architecture"
+        }, {
+          "name" : "Window"
+        }, {
+          "name" : "Building"
+        } ]
+      }, {
+        "name" : "Limestone",
+        "confidence" : 57.593506,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Cabinet",
+        "confidence" : 55.58437,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Furniture"
+        } ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "2.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "5.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Cabinet #Architecture #Building #Mailbox #Window #Letterbox #Furniture #Skylight #Limestone"
+  }
+}</TEXT></FIELD>
+</FIELDS>

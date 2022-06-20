@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_LABEL bold="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="This page allows you to customize your TranslationStudio forms. The UID has to be exactly:"/>
+    </LANGINFOS>
+  </CMS_LABEL>
+
+  <CMS_LABEL>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="translationstudio_configuration"/>
+    </LANGINFOS>
+  </CMS_LABEL>
+
+  <CMS_LABEL bold="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Empty fields will be ignored."/>
+    </LANGINFOS>
+  </CMS_LABEL>
+
+  <CMS_LABEL bold="yes">
+    <LANGINFOS>
+      <LANGINFO lang="*" label=" "/>
+    </LANGINFOS>
+  </CMS_LABEL>
+
+  <CMS_GROUP tabs="top">
+
+    <CMS_GROUP>
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Form Layout and Settings"/>
+      </LANGINFOS>
+
+      <CMS_INPUT_NUMBER name="pt_width_st_fts_ref_mappings" hFill="yes" min="1.0" singleLine="no" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="How many columns to use to display available source and target languages?"/>
+        </LANGINFOS>
+      </CMS_INPUT_NUMBER>
+
+      <CMS_INPUT_TEXT name="pt_label_tab_translationsettings" hFill="yes" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Label: Tab - Translation Settings"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+      <CMS_INPUT_TEXT name="pt_label_tab_dsgvo" hFill="yes" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Label: Tab - General Data Protection Regulation"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+      <CMS_INPUT_TEXT name="pt_label_submit_request_translation" hFill="yes" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Label: Workflow Button - Request Translation"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+    </CMS_GROUP>
+
+    <CMS_GROUP>
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Change Input Labels"/>
+      </LANGINFOS>
+
+      <CMS_LABEL bold="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="You can overwrite specific fields here. Please execute the TranslationStudio workflows to view changes."/>
+        </LANGINFOS>
+      </CMS_LABEL>
+
+      <CMS_LABEL bold="yes">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Updates will be available on save."/>
+        </LANGINFOS>
+      </CMS_LABEL>
+
+      <CMS_LABEL bold="yes">
+        <LANGINFOS>
+          <LANGINFO lang="*" label=" "/>
+        </LANGINFOS>
+      </CMS_LABEL>
+
+      <CMS_INPUT_TEXT name="pt_label_input_st_fts_ref_mappings" hFill="yes" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Label: Source and target languages"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+      <CMS_INPUT_TEXT name="pt_label_input_st_fts_translation_regular" hFill="yes" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Label: Translate this content"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+      <CMS_INPUT_TEXT name="pt_label_option_off_st_fts_translation_regular" hFill="yes" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Label: as soon as quotas are fulfilled"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+      <CMS_INPUT_TEXT name="pt_label_option_on_st_fts_translation_regular" hFill="yes" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Label: immediately - it is urgent"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+      <CMS_INPUT_TEXT name="pt_label_input_st_fts_ref_worfklow_on_import" hFill="yes" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Label: Workflow to be executed after import of translation"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+      <CMS_INPUT_TEXT name="pt_label_input_st_fts_date_complete" hFill="yes" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Label: Due date"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+      <CMS_INPUT_TEXT name="pt_label_input_st_fts_translate_page_form" hFill="yes" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Label: Translate Page Form (...)"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+      <CMS_INPUT_TEXT name="pt_label_input_st_keep_nontranslatables" hFill="yes" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Label: Copy latest non-translatable values (...)"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+    </CMS_GROUP>
+
+    <CMS_GROUP>
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Hide Fields and Default Values"/>
+      </LANGINFOS>
+
+      <CMS_LABEL>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Check which field is to be hidden (will result in hidden=yes"/>
+        </LANGINFOS>
+      </CMS_LABEL>
+
+      <CMS_INPUT_TOGGLE name="pt_hide_st_create_preview_page" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Hide Option: Create Preview Pages"/>
+        </LANGINFOS>
+      </CMS_INPUT_TOGGLE>
+
+      <CMS_INPUT_RADIOBUTTON name="pt_default_create_preview_page" gridHeight="2" gridWidth="1" useLanguages="no">
+        <ENTRIES>
+          <ENTRY value="yes">
+            <LANGINFOS>
+              <LANGINFO lang="*" label="Yes, set as default in form"/>
+            </LANGINFOS>
+          </ENTRY>
+          <ENTRY value="no">
+            <LANGINFOS>
+              <LANGINFO lang="*" label="No, do not set as default in form"/>
+            </LANGINFOS>
+          </ENTRY>
+        </ENTRIES>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Create preview pages by default"/>
+        </LANGINFOS>
+      </CMS_INPUT_RADIOBUTTON>
+
+      <CMS_INPUT_TOGGLE name="pt_hide_st_keep_nontranslatables" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Hide Option: Copy latest non-translatable values"/>
+        </LANGINFOS>
+      </CMS_INPUT_TOGGLE>
+
+    </CMS_GROUP>
+
+    <CMS_GROUP>
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Validation"/>
+      </LANGINFOS>
+
+      <CMS_INPUT_TOGGLE name="pt_toggle_skip_validation" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Skip UID validation"/>
+        </LANGINFOS>
+      </CMS_INPUT_TOGGLE>
+
+      <CMS_INPUT_TEXTAREA name="pt_text_ignore_content2_fieldnames" hFill="yes" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Ignore the following datasource field names (each name in a new line)"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXTAREA>
+
+    </CMS_GROUP>
+
+    <CMS_GROUP>
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Other Settings"/>
+      </LANGINFOS>
+
+      <CMS_LABEL>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="You have to re-deploy ContentCreator WebApp to activate changes. SiteArchitect only needs restarting."/>
+        </LANGINFOS>
+      </CMS_LABEL>
+
+      <CMS_INPUT_TOGGLE name="pt_translationstudio_hide_report_tms" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Report - hide Connector options"/>
+        </LANGINFOS>
+      </CMS_INPUT_TOGGLE>
+
+      <CMS_INPUT_TOGGLE name="pt_translationstudio_hide_metrics" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Report - hide metrics option"/>
+        </LANGINFOS>
+      </CMS_INPUT_TOGGLE>
+
+      <CMS_INPUT_TOGGLE name="pt_toggle_count_words_page" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Count words per page"/>
+        </LANGINFOS>
+      </CMS_INPUT_TOGGLE>
+
+      <CMS_INPUT_COMBOBOX name="pt_toggle_count_words_language" hFill="yes" singleLine="yes" useLanguages="no">
+        <CMS_INCLUDE_OPTIONS type="language">
+          <LABELS>
+            <LABEL lang="*">#item.abbreviation</LABEL>
+          </LABELS>
+        </CMS_INCLUDE_OPTIONS>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Count words using this language" description="Choose Language"/>
+        </LANGINFOS>
+      </CMS_INPUT_COMBOBOX>
+
+    </CMS_GROUP>
+
+  </CMS_GROUP>
+
+</CMS_MODULE>

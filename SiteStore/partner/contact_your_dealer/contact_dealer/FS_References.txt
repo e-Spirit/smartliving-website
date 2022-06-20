@@ -1,0 +1,12 @@
+[self]
+uid=contact_dealer
+gid=84b85e69-2a7e-4aed-bb41-9e9f12e764fa
+uidType=SITESTORE_LEAF
+class=de.espirit.firstspirit.store.access.sitestore.PageRefImpl
+
+[requiredId]
+uid=contact_dealer
+gid=23c65121-7067-4164-9a98-cee969a40a77
+uidType=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.PageImpl
+

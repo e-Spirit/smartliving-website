@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MEDIUM filename="recent-posts-im4" id="7389735762113899905" meta="1" type="pic" uniquedescription="recent_posts_im4">
+	<LANG displayname="Draft on a smartphone" language="EN"/>
+	<LANG displayname="Entwurf auf einem Smartphone" language="DE"/>
+	<PICTURE>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:290,&quot;x&quot;:322,&quot;h&quot;:450,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:882,&quot;x&quot;:10,&quot;h&quot;:436,&quot;y&quot;:2},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="322.0,0.0,290.0,450.0,0,false" extension="jpg" height="560" mimetype="image/jpeg" resolutionid="product_teaser" width="360"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:721,&quot;x&quot;:95,&quot;h&quot;:450,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:882,&quot;x&quot;:10,&quot;h&quot;:436,&quot;y&quot;:2},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="95.0,0.0,721.0,450.0,0,false" extension="jpg" height="500" mimetype="image/jpeg" resolutionid="portrait" width="800"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:801,&quot;x&quot;:52,&quot;h&quot;:450,&quot;y&quot;:0},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:882,&quot;x&quot;:10,&quot;h&quot;:436,&quot;y&quot;:2},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="52.0,0.0,801.0,450.0,0,false" extension="jpg" height="1080" mimetype="image/jpeg" resolutionid="banner_slider" width="1920"/>
+		<RESOLUTION crop="{&quot;rotate&quot;:0,&quot;selection&quot;:{&quot;w&quot;:900,&quot;x&quot;:0,&quot;h&quot;:309,&quot;y&quot;:44},&quot;focus&quot;:{&quot;bounds&quot;:{&quot;w&quot;:882,&quot;x&quot;:10,&quot;h&quot;:436,&quot;y&quot;:2},&quot;title&quot;:&quot;Around all objects&quot;},&quot;flip&quot;:false}" cropData="0.0,44.0,900.0,309.0,0,false" extension="jpg" height="400" mimetype="image/jpeg" resolutionid="landscape" width="1170"/>
+		<RESOLUTION extension="jpg" height="450" mimetype="image/jpeg" resolutionid="ORIGINAL" width="900"/>
+	</PICTURE>
+</MEDIUM>

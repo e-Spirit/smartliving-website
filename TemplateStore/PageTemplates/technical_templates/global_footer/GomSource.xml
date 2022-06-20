@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <FS_REFERENCE name="gs_logo" hFill="yes" useLanguages="no">
+    <FILTER>
+      <ALLOW type="picture"/>
+    </FILTER>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Logo" description="Please choose a logo"/>
+      <LANGINFO lang="DE" label="Logo" description="Bitte wählen Sie ein Logo aus"/>
+    </LANGINFOS>
+    <PROJECTS>
+      <LOCAL name=".">
+        <SOURCES>
+          <FOLDER name="logo" store="mediastore"/>
+        </SOURCES>
+      </LOCAL>
+    </PROJECTS>
+  </FS_REFERENCE>
+
+  <CMS_INPUT_TEXT name="gc_copyright" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Copyright"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <FS_CATALOG name="gc_linklist" useLanguages="yes">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Linklist"/>
+      <LANGINFO lang="DE" label="Linkliste"/>
+    </LANGINFOS>
+    <TEMPLATES type="link">
+      <TEMPLATE uid="internal_link"/>
+      <TEMPLATE uid="external_link"/>
+    </TEMPLATES>
+  </FS_CATALOG>
+
+</CMS_MODULE>

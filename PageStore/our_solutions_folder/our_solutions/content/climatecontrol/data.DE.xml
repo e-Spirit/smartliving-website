@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_kicker'><TEXT>Klimatisierung</TEXT></FIELD>
+	<FIELD name='st_headline'><DOM><standard>Wirtschaftliche und ökologische <span_yellow_text>Vorteile</span_yellow_text></standard></DOM></FIELD>
+	<FIELD name='st_text'><DOM><standard>Wussten Sie, dass die durchschnittliche Familie über 2.000 Euro jährlich für Energiekosten ausgibt? Dies ist mehr Geld als für alle anderen Versorgungskosten!<br/><br/>Glücklicherweise gibt es heute Möglichkeiten, das Klima und die Temperatur in Ihrem Haus besser zu steuern, so dass sowohl Ihr Bankkonto als auch die Umwelt profitieren. <br/><br/>Die Smart-Home-Technologie verändert die Art und Weise, wie Verbraucher die Temperatur in ihrem Wohnraum steuern, was zu mehr finanziellen Einsparungen führt und gleichzeitig zur Erhaltung der Umwelt beiträgt. Intelligente Klimatisierung ist sowohl eine komfortable als auch bequeme alternative Energielösung für Ihr Zuhause. </standard></DOM></FIELD>
+	<FIELD name='st_jumbo_headline'><TEXT>Klimatisierung</TEXT></FIELD>
+	<FIELD name='st_button'><LINK/></FIELD>
+</FIELDS>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RULES>
+	<!-- Mandatory: st_picture -->
+	<RULE>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="st_picture"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="Save">
+				<PROPERTY name="VALID" source="st_picture"/>
+				<MESSAGE lang="*" text="Please choose a picture"/>
+				<MESSAGE lang="DE" text="Bitte wählen Sie ein Bild aus."/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+</RULES>

@@ -1,0 +1,55 @@
+$--
+Required params:
+___________________
+prm_playerId: id of iframe
+prm_containerId: id of container that holds the Video Context Data
+prm_youtubeDap: FS_INDEX that provides Google Youtube Video, as JSON 
+prm_contextCatalog: FS_CATALOG that provides the CONTEXT Templates
+prm_alignment: String to Set the alignment
+Optional parameters:
+___________________
+prm_youtubeUrlParams: URLSettings as params 
+prm_iframeParams: iFrame Params
+--$
+
+$CMS_SET(set_bottomClasses, {:})$
+$CMS_SET(set_scrollDirection, "down")$
+$CMS_IF(prm_alignment.equals("bottom"))$
+	$--Map then contains the style classes--$
+	$CMS_SET(void, set_bottomClasses.put("player-container","player-maximize"))$
+	$CMS_SET(void, set_bottomClasses.put("player","player-bottom"))$
+	$CMS_SET(void, set_bottomClasses.put("items","bottom-items"))$
+	$CMS_SET(set_scrollDirection, "right")$
+$CMS_END_IF$
+
+<div class="interactive-video">
+	<div class="$CMS_VALUE(set_bottomClasses.get("player-container"), default: "")$ player-container">
+		<div class="$CMS_VALUE(set_bottomClasses.get("player"), default: "")$ player">
+			$-- https://developers.google.com/youtube/player_parameters--$
+			<iframe
+				id="$CMS_VALUE(prm_playerId)$"
+				width="1600" height="1000"$-- responsive 16:10 --$
+				src="https://www.youtube.com/embed/$CMS_VALUE(prm_youtubeDap.values.get(prm_youtubeDap.values.size()-1).id)$?enablejsapi=1$CMS_IF(isSet(prm_youtubeUrlParams))$$CMS_VALUE(prm_youtubeUrlParams)$$CMS_END_IF$"
+				$CMS_IF(isSet(prm_iframeParams))$$CMS_VALUE(prm_iframeParams)$$CMS_END_IF$
+				frameborder="0"></iframe>
+		</div>
+	</div>
+	$CMS_SET(set_videoIds, prm_youtubeDap.getIdentifiers())$
+	$CMS_SET(set_stringedVideoIds, set_videoIds.map(x -> "\"" + x + "\"").toString())$
+	<div class="$CMS_VALUE(set_bottomClasses.get("items"), default: "")$ items" id="$CMS_VALUE(prm_containerId)$">
+		$CMS_VALUE(prm_contextCatalog)$
+	</div>
+</div>
+<div class="indicatorContainer" style="display: inline-block;
+    width: 20px;
+    right: 0px;
+    margin: auto;
+    height: 100%;">
+	$CMS_FOR(for_item, prm_contextCatalog)$
+	<input type="radio" name="interactiveIndicator" style="opacity: 1"></input>
+	$CMS_END_FOR$
+</div>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script type="text/javascript">
+	top.interactiveVideo.linkToYoutube("$CMS_VALUE(prm_playerId)$", "$CMS_VALUE(prm_containerId)$", "$CMS_VALUE(set_scrollDirection)$");
+</script>

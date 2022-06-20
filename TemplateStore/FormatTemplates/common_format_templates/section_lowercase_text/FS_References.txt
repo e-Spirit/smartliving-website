@@ -1,0 +1,6 @@
+[self]
+uid=section_lowercase_text
+gid=3341624a-a0c1-4130-af24-e361b7b384d6
+uidType=TEMPLATESTORE_FORMATTEMPLATE
+class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
+

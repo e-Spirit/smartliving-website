@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_INPUT_NUMBER name="tt_content2_id" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Task Ticket Content2 Id"/>
+    </LANGINFOS>
+  </CMS_INPUT_NUMBER>
+
+  <CMS_INPUT_NUMBER name="tt_dataset_id" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Task Dataset Id"/>
+    </LANGINFOS>
+  </CMS_INPUT_NUMBER>
+
+  <CMS_INPUT_NUMBER name="tt_project_id" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Project Id"/>
+    </LANGINFOS>
+  </CMS_INPUT_NUMBER>
+
+  <CMS_INPUT_TOGGLE name="tt_create_preview" type="radio" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Create Preview"/>
+    </LANGINFOS>
+    <OFF>
+      <LANGINFO lang="*" label="No"/>
+    </OFF>
+    <ON>
+      <LANGINFO lang="*" label="Yes"/>
+    </ON>
+  </CMS_INPUT_TOGGLE>
+
+  <CMS_INPUT_DATE name="tt_translate_register_date" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Date of Registration" format="MM.dd.yyyy HH:mm"/>
+    </LANGINFOS>
+  </CMS_INPUT_DATE>
+
+</CMS_MODULE>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="2818003076113895795" name="tr">
+	<LANG displayname="Tabellenzeile" language="DE"/>
+	<LANG displayname="Table row" language="EN"/>
+	<style parent="table" system="1" tag="tr" view="table_row" visible="0">
+		<attr name="defaultParagraph" value="br"/>
+		<render>
+			<channel conversion="Convert HTML" name="html" templateSetId="9062318847741885912"/>
+		</render>
+	</style>
+</FORMATTEMPLATE>

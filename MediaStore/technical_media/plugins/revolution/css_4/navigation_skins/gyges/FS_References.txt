@@ -1,0 +1,6 @@
+[self]
+uid=gyges
+gid=c906ef6f-50a1-4dfe-ae0d-c7f2f5444c7a
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+

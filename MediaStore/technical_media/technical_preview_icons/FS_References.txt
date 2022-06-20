@@ -1,0 +1,6 @@
+[self]
+uid=technical_preview_icons
+gid=0d00d9b2-8cb5-416b-96ca-07768cb59584
+uidType=MEDIASTORE_FOLDER
+class=de.espirit.firstspirit.store.access.mediastore.MediaFolderImpl
+

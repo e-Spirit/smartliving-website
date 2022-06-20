@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_headline'><DOM><standard>OUR <span_yellow_text>APPROACH</span_yellow_text></standard></DOM></FIELD>
+	<FIELD name='st_text'><DOM><standard>Our philosophy is to meaningfully connect the various parts of our environment and to facilitate a smooth communication with among them. Through the efficient use of new and smart technologies, we create new living environments and situations that guarantee a simpler, safer, more comfortable and more energy-efficient future.</standard><standard>In order to meet the needs of all users, it is our highest priority to offer each customer an individual and custom-made implementation. Every person has different requirements, fears and goals. Therefore, we create - together with our clients - the best fit to support their everyday needs and expectations.</standard><standard/></DOM></FIELD>
+	<FIELD name='st_jumbo_headline'><TEXT>Smart living</TEXT></FIELD>
+</FIELDS>

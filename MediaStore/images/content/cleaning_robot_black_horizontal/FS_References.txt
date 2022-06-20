@@ -1,0 +1,12 @@
+[self]
+uid=cleaning_robot_black_horizontal
+gid=abd9a7f9-1a5a-46fb-b665-a2ad2dcb4414
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+
+[requiredProjectId]
+uid=metadata
+gid=70a3c894-c1c8-4a8b-ac05-378c1699a025
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
+

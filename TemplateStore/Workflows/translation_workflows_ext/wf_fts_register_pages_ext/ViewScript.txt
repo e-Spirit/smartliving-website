@@ -1,0 +1,1 @@
+return context.getElement() instanceof de.espirit.firstspirit.access.store.pagestore.PageFolder;

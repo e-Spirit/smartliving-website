@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='md_creation_date'><DATE>1637182165695</DATE></FIELD>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ {
+        "boundingBox" : {
+          "width" : 0.09675592,
+          "height" : 0.21727307,
+          "left" : 0.5711976,
+          "top" : 0.2343588
+        },
+        "ageRange" : null,
+        "smile" : null,
+        "eyeglasses" : null,
+        "sunglasses" : null,
+        "gender" : null,
+        "beard" : null,
+        "mustache" : null,
+        "eyesOpen" : null,
+        "mouthOpen" : null,
+        "emotions" : null,
+        "landmarks" : [ {
+          "type" : "eyeLeft",
+          "x" : 0.59572065,
+          "y" : 0.33185044
+        }, {
+          "type" : "eyeRight",
+          "x" : 0.6025175,
+          "y" : 0.32122272
+        }, {
+          "type" : "mouthLeft",
+          "x" : 0.59670603,
+          "y" : 0.40692183
+        }, {
+          "type" : "mouthRight",
+          "x" : 0.6015924,
+          "y" : 0.398876
+        }, {
+          "type" : "nose",
+          "x" : 0.57038367,
+          "y" : 0.36363712
+        } ],
+        "pose" : {
+          "roll" : -27.551498,
+          "yaw" : -76.53807,
+          "pitch" : 26.13667
+        },
+        "quality" : {
+          "brightness" : 96.77303,
+          "sharpness" : 83.147415
+        },
+        "confidence" : 99.98623
+      } ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Person",
+        "confidence" : 98.5054,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.5351267,
+            "height" : 0.8022828,
+            "left" : 0.37974277,
+            "top" : 0.17548783
+          },
+          "confidence" : 98.5054
+        } ],
+        "parents" : [ ]
+      }, {
+        "name" : "Human",
+        "confidence" : 98.5054,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Home Decor",
+        "confidence" : 89.54614,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Female",
+        "confidence" : 87.3125,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Clothing",
+        "confidence" : 84.53006,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Apparel",
+        "confidence" : 84.53006,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Face",
+        "confidence" : 77.58833,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Sleeve",
+        "confidence" : 70.917435,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Clothing"
+        } ]
+      }, {
+        "name" : "Girl",
+        "confidence" : 66.610634,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Female"
+        }, {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Woman",
+        "confidence" : 64.6742,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Female"
+        }, {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Electronics",
+        "confidence" : 61.954086,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Dating",
+        "confidence" : 61.534573,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Shirt",
+        "confidence" : 56.59939,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.36903092,
+            "height" : 0.5466214,
+            "left" : 0.5395748,
+            "top" : 0.45312724
+          },
+          "confidence" : 56.59939
+        } ],
+        "parents" : [ {
+          "name" : "Clothing"
+        } ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "2.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "5.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Female #Clothing #Apparel #Woman #Human #Face #Shirt #Girl #Home Decor #Sleeve #Person #Electronics #Dating"
+  }
+}</TEXT></FIELD>
+</FIELDS>

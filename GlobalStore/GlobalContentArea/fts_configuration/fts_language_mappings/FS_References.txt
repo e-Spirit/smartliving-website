@@ -1,0 +1,7 @@
+[self]
+uid=/fts_configuration/fts_language_mappings
+gid=4bb2c2c2-7e1d-494d-8668-486fc6716f5f
+store=GLOBALSTORE
+class=de.espirit.firstspirit.store.access.globalstore.GCAFolderImpl
+root=de.espirit.firstspirit.store.access.globalstore.GlobalContentAreaImpl
+

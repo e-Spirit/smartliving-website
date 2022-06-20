@@ -1,0 +1,6 @@
+[self]
+uid=newsroom_1~#~content
+gid=061f6746-5d10-480b-a2ee-45d50e171ef4
+store=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.BodyImpl
+

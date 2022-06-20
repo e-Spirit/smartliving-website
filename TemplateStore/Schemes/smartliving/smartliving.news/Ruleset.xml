@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RULES>
+	<RULE>
+		<WITH>
+			<CONTAINS source="channel">
+				<TEXT>voice_assistant</TEXT>
+			</CONTAINS>
+		</WITH>
+		<DO>
+			<PROPERTY name="VISIBLE" source="voice_text"/>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<LESS_THAN>
+				<PROPERTY name="SIZE" source="video"/>
+				<NUMBER>1</NUMBER>
+			</LESS_THAN>
+		</WITH>
+		<DO>
+			<PROPERTY name="NEW" source="video"/>
+			<PROPERTY name="ADD" source="video"/>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<LESS_THAN>
+				<PROPERTY name="SIZE" source="author"/>
+				<NUMBER>1</NUMBER>
+			</LESS_THAN>
+		</WITH>
+		<DO>
+			<PROPERTY name="NEW" source="author"/>
+			<PROPERTY name="ADD" source="author"/>
+		</DO>
+	</RULE>
+	<!-- Mandatory: title -->
+	<RULE>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="title"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="Save">
+				<PROPERTY name="VALID" source="title"/>
+				<MESSAGE lang="*" text="Please choose a title"/>
+				<MESSAGE lang="DE" text="Bitte fügen Sie einen Titel hinzu."/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<!-- Mandatory: text -->
+	<RULE>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="text"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="Save">
+				<PROPERTY name="VALID" source="text"/>
+				<MESSAGE lang="*" text="Please add a text"/>
+				<MESSAGE lang="DE" text="Bitte fügen Sie einen Text ein."/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+</RULES>

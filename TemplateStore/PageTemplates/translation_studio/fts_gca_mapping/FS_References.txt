@@ -1,0 +1,12 @@
+[self]
+uid=fts_gca_mapping
+gid=d23b6ac2-612b-4a1f-aa41-53550874d2b5
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
+
+[optionalId]
+uid=fts_language_mapping
+gid=edecdc67-eb28-487a-a34f-3b89d4a14df0
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.SectionTemplateImpl
+

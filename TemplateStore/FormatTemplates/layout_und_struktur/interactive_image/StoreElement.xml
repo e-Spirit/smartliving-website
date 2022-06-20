@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="5461412486038741182" name="interactive_image">
+	<LANG displayname="Interactive Image" language="EN"/>
+	<LANG displayname="Interaktives Bild" language="DE"/>
+	<style tag="interactive_image" view="marked">
+		<attr name="align" value="left"/>
+		<render/>
+	</style>
+</FORMATTEMPLATE>

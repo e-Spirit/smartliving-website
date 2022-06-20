@@ -1,0 +1,11 @@
+# mimeType        name
+text/plain;UTF-8  FS_Info.txt
+text/plain;UTF-8  FS_References.txt
+image/jpeg        Picture_teaser_hp_efficiency_141562551_ORIGINAL.jpeg
+image/jpeg        Picture_teaser_hp_efficiency_141562551_banner_slider.jpg
+image/jpeg        Picture_teaser_hp_efficiency_141562551_landscape.jpg
+image/jpeg        Picture_teaser_hp_efficiency_141562551_portrait.jpg
+image/jpeg        Picture_teaser_hp_efficiency_141562551_product_teaser.jpg
+image/jpeg        Picture_teaser_hp_efficiency_141562551_square.jpg
+text/xml;UTF-8    StoreElement.xml
+text/xml          meta.xml

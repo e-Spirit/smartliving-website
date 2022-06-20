@@ -1,0 +1,6 @@
+[self]
+uid=ro_icons_2_1
+gid=ac9ffaf2-c86f-4b8a-ab02-07001ce558f4
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+

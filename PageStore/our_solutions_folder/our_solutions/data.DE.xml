@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='pt_title'><TEXT>Intelligente Lösungen für ein intelligentes Zuhause</TEXT></FIELD>
+	<FIELD name='pt_add_sections'><STATE>true</STATE></FIELD>
+	<FIELD name='pt_show_chat'><STATE>true</STATE></FIELD>
+	<FIELD name='pt_text'><TEXT>Entdecken Sie die Welt von Smart Living!</TEXT></FIELD>
+</FIELDS>
