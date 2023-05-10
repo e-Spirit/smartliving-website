@@ -14,17 +14,26 @@
 	</FIELD>
 	<FIELD name="_allowLanguageHiding" type="boolean">false</FIELD>
 	<FIELD name="_allowUidChanges" type="boolean">true</FIELD>
-	<FIELD name="_allowedApplications"><NULL/><!-- interface java.util.List --></FIELD>
+	<FIELD name="_allowedApplications">
+		<OBJECT class="java.util.ArrayList">
+			<OBJECT class="java.lang.String">System.SiteArchitectApplicationPlugin</OBJECT>
+			<OBJECT class="java.lang.String">System.ContentCreatorApplicationPlugin</OBJECT>
+		</OBJECT>
+	</FIELD>
 	<FIELD name="_barAdmin" type="boolean">false</FIELD>
 	<FIELD name="_cacheWeight" type="double">1.0</FIELD>
-	<FIELD name="_checkAllowedApplications" type="boolean">false</FIELD>
+	<FIELD name="_checkAllowedApplications" type="boolean">true</FIELD>
 	<FIELD name="_deleteWorkflow"><NULL/><!-- class java.lang.String --></FIELD>
 	<FIELD name="_enableMediaExtRestrictions" type="boolean">false</FIELD>
 	<FIELD name="_enableMediaSizeLimit" type="boolean">false</FIELD>
 	<FIELD name="_enableMediaStrictMimeCheck" type="boolean">false</FIELD>
 	<FIELD name="_forbidPolyglotDataHierarchy" type="boolean">true</FIELD>
-	<FIELD name="_futureTimelineProvider"><NULL/><!-- class java.lang.String --></FIELD>
-	<FIELD name="_historyTimelineProvider"><NULL/><!-- class java.lang.String --></FIELD>
+	<FIELD name="_futureTimelineProvider">
+		<OBJECT class="java.lang.String">de.espirit.firstspirit.client.plugin.timeline.SectionLifespanTimelineProvider</OBJECT>
+	</FIELD>
+	<FIELD name="_historyTimelineProvider">
+		<OBJECT class="java.lang.String">de.espirit.firstspirit.client.plugin.timeline.ReleaseRevisionTimelineProvider</OBJECT>
+	</FIELD>
 	<FIELD name="_inlinePreviewConstraints">
 		<OBJECT class="de.espirit.firstspirit.server.projectmanagement.InlinePreviewConstraintsDTO">
 			<FIELD name="_browserEngineFileExtensions">
@@ -77,11 +86,11 @@
 				<FIELD name="_names">
 					<OBJECT class="java.util.HashMap">
 						<NULL/>
-						<OBJECT class="java.lang.String">Media</OBJECT>
+						<OBJECT class="java.lang.String">Metadata</OBJECT>
 						<OBJECT class="java.lang.String">DE</OBJECT>
-						<OBJECT class="java.lang.String">Medium</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
 						<OBJECT class="java.lang.String">EN</OBJECT>
-						<OBJECT class="java.lang.String">Media</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
 					</OBJECT>
 				</FIELD>
 				<FIELD name="_type">
@@ -104,7 +113,7 @@
 			<OBJECT class="de.espirit.firstspirit.server.projectmanagement.WebAppConfigContainer$PluggabilitySetting">USE_GLOBAL_SETTING</OBJECT>
 		</OBJECT>
 	</FIELD>
-	<FIELD name="_previewParameterTemplate" type="long">-1</FIELD>
+	<FIELD name="_previewParameterTemplate" type="long">-4810975037157709156</FIELD>
 	<FIELD name="_previewViewports">
 		<OBJECT class="java.util.ArrayList">
 			<OBJECT class="de.espirit.firstspirit.server.projectmanagement.PreviewViewportDTO">
@@ -150,7 +159,7 @@
 			<OBJECT class="de.espirit.firstspirit.access.store.Store$Type">SITESTORE</OBJECT>
 			<OBJECT class="de.espirit.firstspirit.access.project.Project$CommentMode">NO</OBJECT>
 			<OBJECT class="de.espirit.firstspirit.access.store.Store$Type">TEMPLATESTORE</OBJECT>
-			<OBJECT class="de.espirit.firstspirit.access.project.Project$CommentMode">NO</OBJECT>
+			<OBJECT class="de.espirit.firstspirit.access.project.Project$CommentMode">OPTIONAL</OBJECT>
 		</OBJECT>
 	</FIELD>
 	<FIELD name="_revisionId" type="long">1</FIELD>
@@ -162,24 +171,28 @@
 	</FIELD>
 	<FIELD name="_showReferenceNames" type="boolean">true</FIELD>
 	<FIELD name="_useMappingBasedSchemaMerge" type="boolean">false</FIELD>
-	<FIELD name="_useServerLockForDataset" type="boolean">true</FIELD>
+	<FIELD name="_useServerLockForDataset" type="boolean">false</FIELD>
 	<FIELD name="_webAppsConfigChanged">
 		<OBJECT class="java.util.HashMap">
+			<OBJECT class="java.lang.String">LIVE</OBJECT>
+			<OBJECT class="java.lang.Boolean">true</OBJECT>
 			<OBJECT class="java.lang.String">PREVIEW</OBJECT>
+			<OBJECT class="java.lang.Boolean">true</OBJECT>
+			<OBJECT class="java.lang.String">STAGING</OBJECT>
 			<OBJECT class="java.lang.Boolean">true</OBJECT>
 			<OBJECT class="java.lang.String">WEBEDIT</OBJECT>
 			<OBJECT class="java.lang.Boolean">true</OBJECT>
 		</OBJECT>
 	</FIELD>
 	<FIELD name="_webeditDefaultTemplate" type="long">-1</FIELD>
-	<FIELD name="_webeditDefaultWorkflow" type="long">4957742419529482047</FIELD>
+	<FIELD name="_webeditDefaultWorkflow" type="long">-1</FIELD>
 	<FIELD name="_webeditPreviewUrl"><NULL/><!-- class java.lang.String --></FIELD>
 	<FIELD name="_webeditStoreMapping">
 		<OBJECT class="java.lang.String">de.espirit.firstspirit.webedit.server.store.SynchronousStoreMappingPlugin</OBJECT>
 	</FIELD>
-	<FIELD name="_webeditSystemFolder" type="long">3176758073824746563</FIELD>
+	<FIELD name="_webeditSystemFolder" type="long">4023975409319881053</FIELD>
 	<FIELD name="_webeditWorkflowGroupProvider">
-		<OBJECT class="java.lang.String">com.espirit.moddev.basicworkflows.util.BasicWorkflowStatusProvider</OBJECT>
+		<OBJECT class="java.lang.String">de.espirit.firstspirit.webedit.server.workflow.SiteStoreElementStatusProviderPlugin</OBJECT>
 	</FIELD>
 	<FIELD name="m_HTMLEncoding">
 		<OBJECT class="java.lang.String">ISO-8859-1</OBJECT>
@@ -219,7 +232,7 @@
 	<FIELD name="m_id" type="long">-5802341919937733185</FIELD>
 	<FIELD name="m_lastModified"><NULL/><!-- class java.util.Date --></FIELD>
 	<FIELD name="m_maximum_warning_count" type="int">100</FIELD>
-	<FIELD name="m_metadataTemplateId" type="long">-6893060654742945510</FIELD>
+	<FIELD name="m_metadataTemplateId" type="long">1243943175232338884</FIELD>
 	<FIELD name="m_name">
 		<OBJECT class="java.lang.String">_TARGET_PROJECT_</OBJECT>
 	</FIELD>

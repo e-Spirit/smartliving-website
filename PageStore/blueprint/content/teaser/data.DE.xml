@@ -1,6 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<FIELDS>
-	<FIELD name='st_headline'><DOM><standard>Überschrift</standard></DOM></FIELD>
-	<FIELD name='st_text'><DOM><standard>Text...</standard></DOM></FIELD>
-	<FIELD name='st_jumbo_headline'><TEXT>HIGHLIGHT</TEXT></FIELD>
-</FIELDS>

@@ -10,3 +10,16 @@ type=TemplateSet
 gid=654ff473-d3e1-3482-b4c9-a3669b4ee593
 class=de.espirit.firstspirit.access.project.TemplateSet
 
+[groups]
+name=Everyone
+type=Group
+gid=57c16654-7fa0-38c8-a976-00b2074367e3
+class=de.espirit.firstspirit.server.projectmanagement.GroupDTO
+
+[elements]
+uid=translationstudio_workspace
+gid=cb52135a-fb11-4c3f-a1a5-f0964f81bfdf
+uidType=SITESTORE_FOLDER
+class=de.espirit.firstspirit.store.access.sitestore.PageRefFolderImpl
+referrerInfos=Schedule entry 'fts_preview' task 'generate'
+

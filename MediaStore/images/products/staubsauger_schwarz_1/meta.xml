@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Electronics",
+        "confidence" : 78.77809,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Electrical Device",
+        "confidence" : 75.97087,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Appliance",
+        "confidence" : 73.876884,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Device"
+        }, {
+          "name" : "Electrical Device"
+        } ]
+      }, {
+        "name" : "Device",
+        "confidence" : 73.876884,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Computer Hardware",
+        "confidence" : 56.434338,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        }, {
+          "name" : "Hardware"
+        } ]
+      }, {
+        "name" : "Hardware",
+        "confidence" : 56.434338,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Speaker",
+        "confidence" : 56.060486,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Vacuum Cleaner",
+        "confidence" : 55.580364,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Appliance"
+        }, {
+          "name" : "Device"
+        }, {
+          "name" : "Electrical Device"
+        } ]
+      }, {
+        "name" : "Cd Player",
+        "confidence" : 55.209225,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Monitor",
+        "confidence" : 55.06966,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Computer Hardware"
+        }, {
+          "name" : "Electronics"
+        }, {
+          "name" : "Hardware"
+        }, {
+          "name" : "Screen"
+        } ]
+      }, {
+        "name" : "Screen",
+        "confidence" : 55.06966,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "6.1",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Computer Hardware #Appliance #Device #Monitor #Electrical Device #Hardware #Speaker #Screen #Electronics #Vacuum Cleaner #Cd Player"
+  }
+}</TEXT></FIELD>
+</FIELDS>

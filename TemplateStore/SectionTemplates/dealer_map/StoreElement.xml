@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEMPLATE comment="" filename="dealer_map" id="5340943522041758196" templateid="-2356724157893583321" type="section">
-	<EXTENSION file="html" link="html" templateSet="9062318847741885912"/>
-	<EXTENSION file="json" link="json" templateSet="15847"/>
-	<LANG displayname="Dealer Map" language="EN"/>
-	<LANG displayname="Fachhändler Karte" language="DE"/>
-</TEMPLATE>

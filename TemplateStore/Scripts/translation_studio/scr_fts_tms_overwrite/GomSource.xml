@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_INPUT_COMBOBOX name="st_fts_tms_project" hFill="yes" singleLine="no" useLanguages="no">
+    <CMS_INCLUDE_OPTIONS type="public">
+      <NAME>com.idmedia.translationstudio.firstspirit.module.ConfiguredTranslationMemoryProjectListGom</NAME>
+    </CMS_INCLUDE_OPTIONS>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Translate using connector " description="Choose a connector"/>
+    </LANGINFOS>
+  </CMS_INPUT_COMBOBOX>
+
+  <CMS_LABEL bold="yes">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Use with caution."/>
+    </LANGINFOS>
+  </CMS_LABEL>
+
+  <CMS_LABEL bold="yes">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="If you choose a connector, it will overwrite the ones set in your source/target language configuration."/>
+    </LANGINFOS>
+  </CMS_LABEL>
+
+</CMS_MODULE>

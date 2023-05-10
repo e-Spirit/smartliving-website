@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ {
+        "boundingBox" : {
+          "width" : 0.33862633,
+          "height" : 0.48068458,
+          "left" : 0.32491463,
+          "top" : 0.2700956
+        },
+        "ageRange" : null,
+        "smile" : null,
+        "eyeglasses" : null,
+        "sunglasses" : null,
+        "gender" : null,
+        "beard" : null,
+        "mustache" : null,
+        "eyesOpen" : null,
+        "mouthOpen" : null,
+        "emotions" : null,
+        "landmarks" : [ {
+          "type" : "eyeLeft",
+          "x" : 0.43511143,
+          "y" : 0.466145
+        }, {
+          "type" : "eyeRight",
+          "x" : 0.58139586,
+          "y" : 0.4665683
+        }, {
+          "type" : "mouthLeft",
+          "x" : 0.4473187,
+          "y" : 0.6310808
+        }, {
+          "type" : "mouthRight",
+          "x" : 0.5693942,
+          "y" : 0.6312344
+        }, {
+          "type" : "nose",
+          "x" : 0.5208922,
+          "y" : 0.5615043
+        } ],
+        "pose" : {
+          "roll" : 0.8256324,
+          "yaw" : 5.984064,
+          "pitch" : 1.5904254
+        },
+        "quality" : {
+          "brightness" : 78.77152,
+          "sharpness" : 3.301857
+        },
+        "confidence" : 99.99729
+      } ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Photography",
+        "confidence" : 100.0,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Face",
+        "confidence" : 99.99652,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Head"
+        }, {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Head",
+        "confidence" : 99.99652,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Person",
+        "confidence" : 99.99652,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.9879997,
+            "height" : 0.971874,
+            "left" : 0.004796638,
+            "top" : 0.02508293
+          },
+          "confidence" : 91.00263
+        } ],
+        "parents" : [ ]
+      }, {
+        "name" : "Portrait",
+        "confidence" : 99.99652,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Face"
+        }, {
+          "name" : "Head"
+        }, {
+          "name" : "Person"
+        }, {
+          "name" : "Photography"
+        } ]
+      }, {
+        "name" : "Body Part",
+        "confidence" : 99.86617,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Neck",
+        "confidence" : 99.86617,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Body Part"
+        }, {
+          "name" : "Face"
+        }, {
+          "name" : "Head"
+        }, {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Adult",
+        "confidence" : 91.00263,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.9879997,
+            "height" : 0.971874,
+            "left" : 0.004796638,
+            "top" : 0.02508293
+          },
+          "confidence" : 91.00263
+        } ],
+        "parents" : [ {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Male",
+        "confidence" : 91.00263,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.9879997,
+            "height" : 0.971874,
+            "left" : 0.004796638,
+            "top" : 0.02508293
+          },
+          "confidence" : 91.00263
+        } ],
+        "parents" : [ {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Man",
+        "confidence" : 91.00263,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.9879997,
+            "height" : 0.971874,
+            "left" : 0.004796638,
+            "top" : 0.02508293
+          },
+          "confidence" : 91.00263
+        } ],
+        "parents" : [ {
+          "name" : "Adult"
+        }, {
+          "name" : "Male"
+        }, {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Hair",
+        "confidence" : 68.363914,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Blonde",
+        "confidence" : 56.751137,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Hair"
+        }, {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Hairdresser",
+        "confidence" : 55.5016,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Lady",
+        "confidence" : 55.399014,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Accessories",
+        "confidence" : 55.34809,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "People",
+        "confidence" : 55.138103,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Person"
+        } ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "6.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Male #Man #Accessories #Hair #Adult #Photography #Head #Body Part #Face #Neck #Blonde #Portrait #People #Person #Hairdresser #Lady"
+  }
+}</TEXT></FIELD>
+</FIELDS>

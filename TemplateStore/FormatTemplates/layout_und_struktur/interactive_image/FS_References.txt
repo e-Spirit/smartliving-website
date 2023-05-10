@@ -1,6 +1,0 @@
-[self]
-uid=interactive_image
-gid=65c25aff-06a3-4b38-b323-fd5131646d4e
-uidType=TEMPLATESTORE_FORMATTEMPLATE
-class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
-

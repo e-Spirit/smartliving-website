@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<FIELDS>
-	<FIELD name='st_kicker'><TEXT>About the topic</TEXT></FIELD>
-	<FIELD name='st_headline'><DOM><standard>Welcome <span_yellow_text>headline</span_yellow_text></standard></DOM></FIELD>
-	<FIELD name='st_text'><DOM><standard>Intro text</standard></DOM></FIELD>
-	<FIELD name='st_jumbo_headline'><TEXT>HIGHLIGHT MESSAGE</TEXT></FIELD>
-</FIELDS>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SITENODE id="811054078792086425" name="door_locks" startnodeid="-7345386088322888965">
+	<LANG displayname="Door locks" language="EN"/>
+	<LANG displayname="Türschlösser" language="DE"/>
+	<NODE_LANG_SPEC label="Door locks" language="EN"/>
+	<NODE_LANG_SPEC label="Türschlösser" language="DE"/>
+</SITENODE>

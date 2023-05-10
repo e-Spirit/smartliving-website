@@ -1,0 +1,12 @@
+[self]
+uid=door_locks_1
+gid=cbb75fc6-dc68-44dc-be48-5359c3c0ae32
+uidType=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.PageImpl
+
+[requiredProjectId]
+uid=standard
+gid=7220147b-39ff-4b67-ae6b-90e6e04af147
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RULES>
+	<RULE>
+		<WITH>
+			<PROPERTY name="EMPTY" source="st_title"/>
+		</WITH>
+		<DO>
+			<NOT>
+				<VALIDATION scope="RELEASE">
+					<PROPERTY name="VALID" source="st_title"/>
+					<MESSAGE lang="*" text="Must not be empty."/>
+				</VALIDATION>
+			</NOT>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<PROPERTY name="EMPTY" source="st_content"/>
+		</WITH>
+		<DO>
+			<NOT>
+				<VALIDATION scope="RELEASE">
+					<PROPERTY name="VALID" source="st_content"/>
+					<MESSAGE lang="*" text="Must not be empty."/>
+				</VALIDATION>
+			</NOT>
+		</DO>
+	</RULE>
+</RULES>

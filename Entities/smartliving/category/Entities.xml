@@ -2,19 +2,39 @@
 <DATA>
 	<TABLE name="category">
 		<ROW>
-			<COLUMN name="FS_GID">93d252dc-5964-4c1d-aaed-1652a2d2045c</COLUMN>
-			<COLUMN name="name_DE">Pressemitteilung</COLUMN>
-			<COLUMN name="name_EN">Press Release</COLUMN>
+			<COLUMN name="FS_GID">92d119f0-158a-4a42-95a6-86d95086aafa</COLUMN>
+			<COLUMN name="name_DE">Kameras für den Außenbereich</COLUMN>
+			<COLUMN name="name_EN">Outdoor Cams</COLUMN>
 		</ROW>
 		<ROW>
-			<COLUMN name="FS_GID">07d9022e-dd96-4f07-bbda-5f3f13df84e8</COLUMN>
-			<COLUMN name="name_DE">Blogartikel</COLUMN>
-			<COLUMN name="name_EN">Blog Article</COLUMN>
+			<COLUMN name="FS_GID">cf19e30f-3f89-415c-a414-1117725ddf87</COLUMN>
+			<COLUMN name="name_DE">Kameras für den Innenbereich</COLUMN>
+			<COLUMN name="name_EN">Indoor Cams</COLUMN>
 		</ROW>
 		<ROW>
-			<COLUMN name="FS_GID">449511b5-6497-49a3-89d7-91d48f3c3686</COLUMN>
-			<COLUMN name="name_DE">Veranstaltung</COLUMN>
-			<COLUMN name="name_EN">Event</COLUMN>
+			<COLUMN name="FS_GID">d4aa4491-e9ee-48bb-9fa4-1fc9bb9f835b</COLUMN>
+			<COLUMN name="name_DE">Thermostate</COLUMN>
+			<COLUMN name="name_EN">Thermostats</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">0c7def99-26f7-4666-8b67-58b2e6a42b6f</COLUMN>
+			<COLUMN name="name_DE">Smarte Leuchten</COLUMN>
+			<COLUMN name="name_EN">Smart bulbs</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">2da190d4-558c-4c80-a9f2-c6b85dbf2c60</COLUMN>
+			<COLUMN name="name_DE">Hausautomation</COLUMN>
+			<COLUMN name="name_EN">Home automation</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">527ded93-41cf-47ea-a8db-cb57e30e2a95</COLUMN>
+			<COLUMN name="name_DE">Inneneinrichtung</COLUMN>
+			<COLUMN name="name_EN">Interior Equipment</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">6e99a566-ed64-4001-a19a-e17b1695c588</COLUMN>
+			<COLUMN name="name_DE">Türschlösser</COLUMN>
+			<COLUMN name="name_EN">Door Locks</COLUMN>
 		</ROW>
 	</TABLE>
 </DATA>

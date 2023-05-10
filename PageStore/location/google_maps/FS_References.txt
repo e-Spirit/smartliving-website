@@ -1,0 +1,12 @@
+[self]
+uid=google_maps
+gid=67269acd-94c9-4075-9f3f-a127dd531ff5
+uidType=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.PageImpl
+
+[requiredProjectId]
+uid=standard
+gid=7220147b-39ff-4b67-ae6b-90e6e04af147
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
+

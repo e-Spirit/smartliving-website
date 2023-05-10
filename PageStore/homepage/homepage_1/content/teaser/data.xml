@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_image'><UID>multimedia_control_110841988</UID><UIDTYPE>MEDIASTORE_LEAF</UIDTYPE><REMOTE/></FIELD>
+	<FIELD name='st_layout'><SEL><VALUE>text-image</VALUE></SEL></FIELD>
+	<FIELD name='st_design'><SEL><VALUE>light</VALUE></SEL></FIELD>
+</FIELDS>

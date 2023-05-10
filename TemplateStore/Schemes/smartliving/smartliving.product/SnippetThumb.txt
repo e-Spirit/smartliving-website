@@ -1,1 +1,1 @@
-if(!tt_pictures.isEmpty(),tt_pictures.snippets[0].thumbnail)
+if(!tt_image.isEmpty(), tt_image)

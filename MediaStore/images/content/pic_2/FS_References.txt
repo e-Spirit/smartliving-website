@@ -1,12 +1,12 @@
 [self]
 uid=pic_2
-gid=d1e0e571-9c32-495d-8bc6-624218c87c54
+gid=361f3196-6448-47db-bedc-0e7639155d8f
 uidType=MEDIASTORE_LEAF
 class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
 
 [requiredProjectId]
 uid=metadata
-gid=70a3c894-c1c8-4a8b-ac05-378c1699a025
+gid=b2c7cf16-33d2-4cf4-b16d-fa4fb256cd68
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
 

@@ -1,6 +1,0 @@
-[self]
-uid=magnific_popup_min_1
-gid=5790d837-db45-4842-b963-e7fa17c4f6df
-uidType=MEDIASTORE_LEAF
-class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
-

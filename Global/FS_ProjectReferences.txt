@@ -1,24 +1,24 @@
-[MetadataTemplate]
-uid=metadata
-gid=70a3c894-c1c8-4a8b-ac05-378c1699a025
+[PreviewParameterTemplate]
+uid=mpp
+gid=c84921bf-f7d6-4ef1-bb9a-4e4863d33f72
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
 
-[WebeditDefaultWorkflow]
-uid=release
-gid=5bb013ba-905d-408f-bbb5-cba72854321b
+[MetadataTemplate]
+uid=metadata
+gid=b2c7cf16-33d2-4cf4-b16d-fa4fb256cd68
 uidType=TEMPLATESTORE
-class=de.espirit.firstspirit.store.access.templatestore.WorkflowImpl
+class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
 
 [WebeditSystemFolder]
 uid=root
-gid=3436de29-2b11-4e9d-bab8-a304eb926c17
+gid=cbc356ff-94ed-4841-844a-1687269b142d
 uidType=PAGESTORE
 class=de.espirit.firstspirit.store.access.pagestore.PageStoreRootImpl
 
 [ProjectPropertiesTemplate]
 uid=project_settings
-gid=22f94575-98f4-46fe-99f6-f3f1461e016c
+gid=ac9a615f-ea62-4e21-a233-39e85400f007
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
 

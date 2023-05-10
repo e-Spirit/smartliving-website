@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CMS_MODULE>
 
-  <CMS_INPUT_TEXT name="lt_text" hFill="yes" singleLine="no" useLanguages="no">
-    <LANGINFOS>
-      <LANGINFO lang="*" label="Anzeigetext"/>
-      <LANGINFO lang="EN" label="Displaytext"/>
-    </LANGINFOS>
-  </CMS_INPUT_TEXT>
-
-  <FS_REFERENCE name="lt_link" hFill="yes" sections="no" useLanguages="no">
+  <FS_REFERENCE name="lt_link" hFill="yes" useLanguages="no">
     <FILTER>
       <ALLOW type="pageref"/>
     </FILTER>
     <LANGINFOS>
-      <LANGINFO lang="*" label="Ziel"/>
-      <LANGINFO lang="EN" label="Target"/>
+      <LANGINFO lang="*" label="Link"/>
     </LANGINFOS>
     <PROJECTS>
       <LOCAL name=".">
@@ -24,5 +16,11 @@
       </LOCAL>
     </PROJECTS>
   </FS_REFERENCE>
+
+  <CMS_INPUT_TEXT name="lt_text" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Text"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
 
 </CMS_MODULE>

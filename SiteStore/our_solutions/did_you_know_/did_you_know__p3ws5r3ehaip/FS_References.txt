@@ -1,0 +1,12 @@
+[self]
+uid=did_you_know__p3ws5r3ehaip
+gid=1fcd4553-37b0-42fe-8edf-942f9fda2ca7
+uidType=SITESTORE_LEAF
+class=de.espirit.firstspirit.store.access.sitestore.PageRefImpl
+
+[requiredId]
+uid=did_you_know__p3ws5r3ehaip
+gid=4167030a-c02e-4f6d-af9e-fbcd5b448d05
+uidType=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.PageImpl
+

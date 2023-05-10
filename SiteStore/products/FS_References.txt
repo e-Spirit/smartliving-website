@@ -1,18 +1,18 @@
 [self]
 uid=products
-gid=742901ac-4486-4c61-b939-fc27363374ec
+gid=c26bb936-5cd7-40a5-bd0f-ea3e21354252
 uidType=SITESTORE_FOLDER
 class=de.espirit.firstspirit.store.access.sitestore.PageRefFolderImpl
 
 [previousSibling]
 uid=our_solutions
-gid=aa684dc6-2220-4d71-b468-f3e056b0c4f0
+gid=6b56db03-a99b-45ad-8b71-79ff4530cb59
 uidType=SITESTORE_FOLDER
 class=de.espirit.firstspirit.store.access.sitestore.PageRefFolderImpl
 
 [nextSibling]
-uid=partner
-gid=d1fed166-afda-44c0-aecb-9221a8458bdf
+uid=locations
+gid=24e52c4b-60d5-45b4-bbf0-70e68835847c
 uidType=SITESTORE_FOLDER
 class=de.espirit.firstspirit.store.access.sitestore.PageRefFolderImpl
 

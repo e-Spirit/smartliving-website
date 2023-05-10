@@ -1,0 +1,6 @@
+[self]
+uid=home_security_special_1lpj585kc7mfj~#~content
+gid=edaf9d8f-dcb3-4f79-b992-607cdb6cd48f
+store=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.BodyImpl
+

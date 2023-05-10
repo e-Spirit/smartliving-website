@@ -1,1 +1,0 @@
-if(!st_header_acc.isEmpty(), st_header_acc, "<No Question>")

@@ -1,0 +1,2 @@
+if(#item.getName().startsWith("bookmark_"), medium("icon_template_stage"), 
+				!st_image.isEmpty(), st_image, medium("icon_template_stage"))

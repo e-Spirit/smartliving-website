@@ -1,1 +1,0 @@
-if(!tt_value.isEmpty(), tt_value)

@@ -1,6 +1,0 @@
-[self]
-uid=icons
-gid=3064ecc4-5a4f-4f7f-96dd-f310cdbc91b0
-uidType=MEDIASTORE_FOLDER
-class=de.espirit.firstspirit.store.access.mediastore.MediaFolderImpl
-

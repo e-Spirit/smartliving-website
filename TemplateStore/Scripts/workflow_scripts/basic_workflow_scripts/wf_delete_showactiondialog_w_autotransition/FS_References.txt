@@ -1,0 +1,6 @@
+[self]
+uid=wf_delete_showactiondialog_w_autotransition
+gid=7d07a795-ca02-4861-b13d-2e54b7e24cd3
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
+

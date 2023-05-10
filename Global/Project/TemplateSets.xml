@@ -3,18 +3,10 @@
 	<OBJECT class="de.espirit.firstspirit.server.templatemanagement.TemplateSetDTO">
 		<FIELD name="_descriptions">
 			<OBJECT class="java.util.HashMap">
-				<OBJECT class="java.lang.String">DE</OBJECT>
-				<OBJECT class="java.lang.String"></OBJECT>
-				<OBJECT class="java.lang.String">EN</OBJECT>
-				<OBJECT class="java.lang.String"></OBJECT>
 			</OBJECT>
 		</FIELD>
 		<FIELD name="_names">
 			<OBJECT class="java.util.HashMap">
-				<OBJECT class="java.lang.String">DE</OBJECT>
-				<OBJECT class="java.lang.String"></OBJECT>
-				<OBJECT class="java.lang.String">EN</OBJECT>
-				<OBJECT class="java.lang.String"></OBJECT>
 			</OBJECT>
 		</FIELD>
 		<FIELD name="_templateInspectionEnabled"><NULL/><!-- class java.lang.Boolean --></FIELD>

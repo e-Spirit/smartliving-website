@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="-2688474459333535934" name="render_image_alt_text">
+	<LANG displayname="Bild alternative Text ausgeben" language="DE"/>
+	<LANG displayname="Render Image Alt Text" language="EN"/>
+	<style tag="render_image_alt_text" view="marked">
+		<attr name="align" value="left"/>
+		<render/>
+	</style>
+</FORMATTEMPLATE>

@@ -1,0 +1,9 @@
+AllChildren: 1
+ExportPermissions: NoPermissions
+ExportVersion: 3.2
+Language_DE: Deutsch
+Language_EN: English
+PagePath: /landing_page_1
+PresentationChannel_-1268668680467729278: HTML
+TemplateName_-4344954757710281538: standard
+TemplateSet_9062318847741885912: html

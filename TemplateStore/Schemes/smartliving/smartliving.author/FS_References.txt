@@ -1,6 +1,12 @@
 [self]
 uid=smartliving.author
-gid=9543f62c-ef5b-47b1-9edd-6af5e70ab7f6
+gid=be432777-1a1d-4746-840d-acf038f77f5c
 uidType=TEMPLATESTORE_SCHEMA
 class=de.espirit.firstspirit.store.access.templatestore.TableTemplateImpl
+
+[optionalId]
+uid=images
+gid=af7a5702-8a1a-401c-a6db-513067bfab17
+uidType=MEDIASTORE_FOLDER
+class=de.espirit.firstspirit.store.access.mediastore.MediaFolderImpl
 

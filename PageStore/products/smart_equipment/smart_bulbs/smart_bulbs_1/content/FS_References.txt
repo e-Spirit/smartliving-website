@@ -1,0 +1,6 @@
+[self]
+uid=smart_bulbs_1~#~content
+gid=b8bef6a6-f0bd-47a2-b914-fbf4766eb671
+store=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.BodyImpl
+

@@ -1,6 +1,0 @@
-[self]
-uid=global
-gid=51937197-dd29-447f-878a-0b904c0255af
-uidType=TEMPLATESTORE
-class=de.espirit.firstspirit.store.access.templatestore.SchemaImpl
-

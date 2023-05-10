@@ -1,54 +1,51 @@
-<!-- WELCOME SECTION START -->
-            <div class="section-full p-t90 theming-background" $CMS_VALUE(editorId(reloadPreview:true))$>
-                <div class="container">
-                    <div class="section-content">
-                    	<div class="row">
-                    		<div class="col-md-5 col-sm-12 text-uppercase text-black">
-                    			$CMS_IF(!st_kicker.isEmpty())$
-                            	<span class="font-30 font-weight-300" $CMS_VALUE(editorId(editorName:"st_kicker"))$>$CMS_VALUE(st_kicker)$</span>                    
-								$CMS_END_IF$
-								$CMS_IF(!st_headline.isEmpty())$
-                                <h2 class="font-40" $CMS_VALUE(editorId(editorName:"st_headline"))$>
-                                	$CMS_VALUE(st_headline)$
-                                </h2>
-                                $CMS_END_IF$
-                                $CMS_IF(!st_text.isEmpty())$
-                                <p $CMS_VALUE(editorId(editorName:"st_text"))$>
-                                	$CMS_VALUE(st_text)$
-                                </p>
-                                $CMS_END_IF$
-                                $CMS_IF(!st_button.isEmpty)$
-									$CMS_VALUE(st_button)$
-								$CMS_END_IF$                    
-                            </div>
-                            $CMS_IF(!st_picture.isEmpty())$
-                        	<div class="col-md-7 col-sm-12">
-                            	<div class="m-carousel-1 m-l100">
-                            		<div class="owl-carousel home-carousel-1 owl-btn-vertical-center">
-                            			<div class="item">								  
-										 <div class="ow-img wt-img-effect zoom-slow" $CMS_VALUE(editorId(editorName:"st_picture", resolution:"portrait"))$>
-										    <a href="javascript:void(0);">
-											$CMS_IF(st_picture != null)$
-											  <img src="$CMS_REF(st_picture, resolution:"portrait")$" alt="$CMS_VALUE(if(st_picture_alt.isEmpty,"",st_picture_alt.convert2()))$" />
-											$CMS_END_IF$
-											</a>
-										  </div>
-										</div>
-                                   	</div>
-                               </div>
-                            </div>
-							$CMS_END_IF$
-                        </div>
-                        
-                        <div class="hilite-title p-lr20 m-tb20 text-right text-uppercase bdr-gray bdr-right" style="min-height:50px;" $CMS_VALUE(editorId(editorName:"st_jumbo_headline"))$>
-                        $CMS_IF(!st_jumbo_headline.isEmpty())$
-                        <div>
-                        <strong>$CMS_VALUE(st_jumbo_headline)$</strong>
-                        </div>
-                        $CMS_END_IF$
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>   
-            <!-- WELCOME  SECTION END --> 
+$CMS_SET(set_darkDesign, "dark".equals(st_design))$
+$CMS_SWITCH(st_layout)$
+	$CMS_SET(set_orderContent, "order-1")$
+	$CMS_SET(set_orderImage, "order-2")$
+$CMS_CASE("image-text")$
+	$CMS_SET(set_orderContent, "order-2")$
+	$CMS_SET(set_orderImage, "order-1")$
+$CMS_END_SWITCH$	
+<section class="py-14 bg-$CMS_VALUE(if(set_darkDesign, "coolGray-100", "white"))$" $CMS_VALUE(editorId())$>
+	<div class="container px-4 mx-auto">
+		<div class="flex flex-wrap items-center -mx-4">
+			$CMS_IF(!st_image.isEmpty())$
+				<div class="w-full md:w-1/2 px-4 md:$CMS_VALUE(set_orderImage)$">
+					<div class="relative mx-auto md:mr-0 max-w-max">						
+						<div class="relative overflow-hidden rounded-7xl">
+							$CMS_RENDER(template:"render_image", prm_image: st_image, 
+										prm_image_alt_text: st_image_alt_text,
+										prm_defaultResolution: "4x3_M",
+										prm_resolutions: {"md": "4x3_S", "lg": "4x3_M"},
+										prm_cssClasses: "",
+										prm_inputName: "st_image")$								
+						</div>
+					</div>
+				</div>
+			$CMS_END_IF$	
+			<div class="w-full md:w-1/2 px-4 md:$CMS_VALUE(set_orderContent)$ mt-8 md:mt-0 text-left">
+				$CMS_RENDER(template:"render_headline", prm_headline: st_headline, 
+								prm_defaultTag: "h2", 
+								prm_cssClasses: "mb-8 text-3xl md:text-4xl font-bold font-heading tracking-px-n leading-none text-primary",
+								prm_inputComponentName: "st_headline")$
+				$CMS_IF(#global.is("WEBEDIT"))$
+					<div $CMS_VALUE(editorId(editorName:"st_text"))$>
+				$CMS_END_IF$
+					$CMS_VALUE(st_text,default:"")$
+				$CMS_IF(#global.is("WEBEDIT"))$
+					</div>
+				$CMS_END_IF$
+				$CMS_IF(!st_cta.isEmpty())$
+					<div class="flex flex-wrap">
+						<div class="w-full md:w-auto py-1 md:py-0 md:mr-4">
+							$CMS_RENDER(template:"render_link", 
+											prm_link: st_cta, 
+											prm_style:"inline-block py-5 px-7 w-full text-base md:text-lg leading-4 text-white 
+											font-medium text-center bg-secondary hover:brightness-90 rounded-md")$							
+						</div>
+					</div>
+				$CMS_END_IF$					
+			</div>						
+		</div>
+	</div>
+</section>

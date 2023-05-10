@@ -1,0 +1,6 @@
+[self]
+uid=tailwind_3_3_1
+gid=84647bb0-b73f-4dd8-990a-4d5badd0d319
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+

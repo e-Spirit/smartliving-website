@@ -1,6 +1,0 @@
-[self]
-uid=plugins
-gid=903222f3-c8e1-41b7-8541-b30465bfaa25
-uidType=MEDIASTORE_FOLDER
-class=de.espirit.firstspirit.store.access.mediastore.MediaFolderImpl
-

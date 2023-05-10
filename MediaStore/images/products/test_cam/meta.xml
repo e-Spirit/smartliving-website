@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Person",
+        "confidence" : 99.83659,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Security",
+        "confidence" : 99.83659,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Tape",
+        "confidence" : 84.01066,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.26290756,
+            "height" : 0.46297503,
+            "left" : 0.5422073,
+            "top" : 0.1475887
+          },
+          "confidence" : 84.01066
+        }, {
+          "boundingBox" : {
+            "width" : 0.14592823,
+            "height" : 0.42416736,
+            "left" : 0.72758526,
+            "top" : 0.15665618
+          },
+          "confidence" : 82.14979
+        }, {
+          "boundingBox" : {
+            "width" : 0.26219732,
+            "height" : 0.33680433,
+            "left" : 0.21396706,
+            "top" : 0.55255896
+          },
+          "confidence" : 76.54328
+        }, {
+          "boundingBox" : {
+            "width" : 0.28296804,
+            "height" : 0.54711205,
+            "left" : 0.15980911,
+            "top" : 0.24665457
+          },
+          "confidence" : 75.48804
+        } ],
+        "parents" : [ ]
+      }, {
+        "name" : "Electronics",
+        "confidence" : 55.43878,
+        "instances" : [ ],
+        "parents" : [ ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "6.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Tape #Person #Security #Electronics"
+  }
+}</TEXT></FIELD>
+</FIELDS>

@@ -1,0 +1,6 @@
+[self]
+uid=human_readable_file_size_format
+gid=39097539-3fef-4cb6-82a7-03eeb69bfdd5
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
+

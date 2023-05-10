@@ -1,6 +1,6 @@
 [self]
 uid=/technical_templates
-gid=fbef9229-f94e-43bc-8968-e88ab58ada18
+gid=6661a5cc-acc0-4295-a29c-b3b4701ecb4b
 store=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.TemplateFolderImpl
 root=de.espirit.firstspirit.store.access.templatestore.PageTemplatesImpl

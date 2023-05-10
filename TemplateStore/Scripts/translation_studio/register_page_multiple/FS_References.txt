@@ -1,32 +1,32 @@
 [self]
 uid=register_page_multiple
-gid=fb9f5eff-947f-4bee-b93f-ec993dbe0c61
+gid=0e971e62-2cf1-48f0-bda1-f4b3e0d8ee4a
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
 
 [optionalId]
 uid=translationstudio_list
-gid=2ecb5aaf-25d1-4e1e-a9fd-f4676d79d13d
+gid=e055bb69-1ecb-4b3a-b117-d83acdc6ba00
 uidType=CONTENTSTORE
 class=de.espirit.firstspirit.store.access.contentstore.Content2Impl
 
 uid=translationstudio_requests
-gid=394d23ce-766d-408f-8967-9d32dac86b9e
+gid=6abcfdb7-d01c-48cf-a70f-2d61f7141c1d
 uidType=CONTENTSTORE
 class=de.espirit.firstspirit.store.access.contentstore.Content2Impl
 
 uid=fts_multiple_page_entry
-gid=d51027ff-ace8-45f3-99c8-1d4914d291f2
+gid=adc27677-bcd4-4715-b046-ef1206bfe800
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.SectionTemplateImpl
 
 uid=requests
-gid=4eda004e-346f-421b-a9b1-c31640f4c60e
+gid=ef3e9040-b26d-495d-ac4a-7c8f996e7bf5
 uidType=TEMPLATESTORE_SCHEMA
 class=de.espirit.firstspirit.store.access.templatestore.TableTemplateImpl
 
 uid=task
-gid=ff3dd5c8-252c-4c60-a424-a80642b0525f
+gid=a9febcb1-c02d-4af3-962c-e62d7cbc2d9b
 uidType=TEMPLATESTORE_SCHEMA
 class=de.espirit.firstspirit.store.access.templatestore.TableTemplateImpl
 

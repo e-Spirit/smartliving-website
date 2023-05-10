@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEMPLATE filename="translationstudio_configuration" id="7418749462805039820" templateid="7250705924005989413" type="page">
+<TEMPLATE comment="" filename="translationstudio_configuration" hidden="1" id="5814508911324305659" templateid="-4536193054189680045" type="page">
+	<EXTENSION file="html" link="html" replaceable="false" templateSet="9062318847741885912"/>
 	<LANG displayname="translationstudio_configuration" language="DE"/>
 	<LANG displayname="translationstudio_configuration" language="EN"/>
 </TEMPLATE>

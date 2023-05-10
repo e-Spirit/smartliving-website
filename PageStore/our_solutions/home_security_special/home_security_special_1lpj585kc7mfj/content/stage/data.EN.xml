@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_headline'><TEXT>Safe living at home</TEXT></FIELD>
+	<FIELD name='st_subheadline'><TEXT>Our products help protect what is most precious to you</TEXT></FIELD>
+	<FIELD name='st_cta'><LINK/></FIELD>
+</FIELDS>

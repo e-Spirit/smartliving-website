@@ -1,3 +1,0 @@
-// only visible in ContentCreator
-
-return context.is(de.espirit.firstspirit.access.BaseContext.Env.WEBEDIT);

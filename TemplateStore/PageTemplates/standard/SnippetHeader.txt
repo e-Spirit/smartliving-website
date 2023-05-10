@@ -1,1 +1,2 @@
-if(!pt_title.isEmpty(), pt_title, "<No Title>")
+if(!pt_headline.isEmpty(), pt_headline, 
+	!pt_md_title.isEmpty(), pt_md_title)

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_INPUT_TEXT name="st_headline" hFill="yes" singleLine="no" useLanguages="yes">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Headline"/>
+      <LANGINFO lang="DE" label="Überschrift"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_DOM name="st_text" hFill="yes" list="no" rows="2" useLanguages="yes">
+    <FORMATS>
+      <TEMPLATE name="subline"/>
+    </FORMATS>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Text"/>
+    </LANGINFOS>
+  </CMS_INPUT_DOM>
+
+  <FS_CATALOG name="st_features" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Features"/>
+    </LANGINFOS>
+    <TEMPLATES type="section">
+      <TEMPLATE uid="feature"/>
+    </TEMPLATES>
+  </FS_CATALOG>
+
+  <CMS_GROUP name="sectionLifespan">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Validity period"/>
+    </LANGINFOS>
+
+    <CMS_INPUT_DATE name="st_sectionLifespanFrom" hFill="yes">
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Gültigkeitsbeginn"/>
+        <LANGINFO lang="EN" label="Validation start date"/>
+      </LANGINFOS>
+    </CMS_INPUT_DATE>
+
+    <CMS_INPUT_DATE name="st_sectionLifespanTo" hFill="yes">
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Gültigkeitsende"/>
+        <LANGINFO lang="EN" label="Validation end date"/>
+      </LANGINFOS>
+    </CMS_INPUT_DATE>
+
+  </CMS_GROUP>
+
+</CMS_MODULE>

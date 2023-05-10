@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_INPUT_RADIOBUTTON name="st_type" hFill="yes" useLanguages="no">
+    <ENTRIES>
+      <ENTRY value="product">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Product"/>
+          <LANGINFO lang="DE" label="Produkt"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="manual">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Manual"/>
+          <LANGINFO lang="DE" label="Manuell"/>
+        </LANGINFOS>
+      </ENTRY>
+    </ENTRIES>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Type"/>
+    </LANGINFOS>
+  </CMS_INPUT_RADIOBUTTON>
+
+  <FS_INDEX name="st_product" height="1" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Product"/>
+      <LANGINFO lang="DE" label="Produkt"/>
+    </LANGINFOS>
+    <SOURCE name="DatasetDataAccessPlugin">
+      <TEMPLATE uid="smartliving.product"/>
+    </SOURCE>
+  </FS_INDEX>
+
+  <FS_REFERENCE name="st_image" hFill="yes" upload="yes" useLanguages="no">
+    <FILTER>
+      <ALLOW type="picture"/>
+    </FILTER>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Image"/>
+      <LANGINFO lang="DE" label="Bild"/>
+    </LANGINFOS>
+    <PROJECTS>
+      <LOCAL name=".">
+        <SOURCES>
+          <FOLDER name="images" store="MEDIASTORE"/>
+        </SOURCES>
+      </LOCAL>
+    </PROJECTS>
+  </FS_REFERENCE>
+
+  <CMS_INPUT_TEXT name="st_image_alt_text" hFill="yes" singleLine="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Alternative Text"/>
+      <LANGINFO lang="DE" label="Alternativ-Text"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_TEXT name="st_title" hFill="yes" singleLine="no" useLanguages="yes">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Headline"/>
+      <LANGINFO lang="DE" label="Überschrift"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_DOM name="st_text" hFill="yes" list="no" useLanguages="yes">
+    <FORMATS>
+      <TEMPLATE name="p"/>
+    </FORMATS>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Text"/>
+    </LANGINFOS>
+    <LINKEDITORS>
+      <LINKEDITOR name=""/>
+    </LINKEDITORS>
+  </CMS_INPUT_DOM>
+
+  <CMS_INPUT_LINK name="st_link" hFill="yes" useLanguages="yes">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Link"/>
+    </LANGINFOS>
+    <LINKEDITORS>
+      <LINKEDITOR name="internal_link"/>
+      <LINKEDITOR name="external_link"/>
+    </LINKEDITORS>
+  </CMS_INPUT_LINK>
+
+</CMS_MODULE>

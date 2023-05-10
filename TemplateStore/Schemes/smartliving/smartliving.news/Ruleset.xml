@@ -2,65 +2,65 @@
 <RULES>
 	<RULE>
 		<WITH>
-			<CONTAINS source="channel">
-				<TEXT>voice_assistant</TEXT>
-			</CONTAINS>
-		</WITH>
-		<DO>
-			<PROPERTY name="VISIBLE" source="voice_text"/>
-		</DO>
-	</RULE>
-	<RULE>
-		<WITH>
 			<LESS_THAN>
-				<PROPERTY name="SIZE" source="video"/>
+				<PROPERTY name="SIZE" source="tt_author"/>
 				<NUMBER>1</NUMBER>
 			</LESS_THAN>
 		</WITH>
 		<DO>
-			<PROPERTY name="NEW" source="video"/>
-			<PROPERTY name="ADD" source="video"/>
+			<PROPERTY name="NEW" source="tt_author"/>
+			<PROPERTY name="ADD" source="tt_author"/>
 		</DO>
 	</RULE>
-	<RULE>
-		<WITH>
-			<LESS_THAN>
-				<PROPERTY name="SIZE" source="author"/>
-				<NUMBER>1</NUMBER>
-			</LESS_THAN>
-		</WITH>
-		<DO>
-			<PROPERTY name="NEW" source="author"/>
-			<PROPERTY name="ADD" source="author"/>
-		</DO>
-	</RULE>
-	<!-- Mandatory: title -->
 	<RULE>
 		<WITH>
 			<NOT>
-				<PROPERTY name="EMPTY" source="title"/>
+				<PROPERTY name="EMPTY" source="tt_headline"/>
 			</NOT>
 		</WITH>
 		<DO>
-			<VALIDATION scope="Save">
-				<PROPERTY name="VALID" source="title"/>
-				<MESSAGE lang="*" text="Please choose a title"/>
-				<MESSAGE lang="DE" text="Bitte fügen Sie einen Titel hinzu."/>
+			<VALIDATION scope="RELEASE">
+				<PROPERTY name="VALID" source="tt_headline"/>
+				<MESSAGE lang="*" text="Please choose a headline"/>
 			</VALIDATION>
 		</DO>
 	</RULE>
-	<!-- Mandatory: text -->
 	<RULE>
 		<WITH>
 			<NOT>
-				<PROPERTY name="EMPTY" source="text"/>
+				<PROPERTY name="EMPTY" source="tt_date"/>
 			</NOT>
 		</WITH>
 		<DO>
-			<VALIDATION scope="Save">
-				<PROPERTY name="VALID" source="text"/>
-				<MESSAGE lang="*" text="Please add a text"/>
-				<MESSAGE lang="DE" text="Bitte fügen Sie einen Text ein."/>
+			<VALIDATION scope="RELEASE">
+				<PROPERTY name="VALID" source="tt_date"/>
+				<MESSAGE lang="*" text="Please choose a date"/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="tt_teaserText"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="RELEASE">
+				<PROPERTY name="VALID" source="tt_teaserText"/>
+				<MESSAGE lang="*" text="Please add a teaser text"/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="tt_articleText"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="RELEASE">
+				<PROPERTY name="VALID" source="tt_articleText"/>
+				<MESSAGE lang="*" text="Please add an article text"/>
 			</VALIDATION>
 		</DO>
 	</RULE>

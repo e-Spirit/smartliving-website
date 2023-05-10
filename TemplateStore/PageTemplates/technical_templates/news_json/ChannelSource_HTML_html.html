@@ -1,0 +1,65 @@
+<CMS_HEADER>
+	<CMS_FUNCTION name="contentSelect" resultname="fr_news">
+			<CMS_PARAM name="schema" value="smartliving"/>
+			<QUERY entityType="news">
+				<ORDERCRITERIA attribute="date" descending="1" />
+			</QUERY>
+	</CMS_FUNCTION>
+</CMS_HEADER>
+$CMS_TRIM(level:4)$
+	$CMS_SET(set_newsFeedJson,[])$
+		$CMS_FOR(for_news, fr_news)$					
+			$-- language independent fields --$
+			$CMS_SET(set_newsFeed, {"id": for_news.fs_id+"",
+									"detailpage": if(!ps_news_detail_page.isEmpty, ref(ps_news_detail_page, contentId:for_news.fs_id, abs:1).url, ""),
+									"date": if(!for_news.date.isEmpty, for_news.date, ""),
+									"distribution": for_news.distribution,
+									"image": if(!for_news.image.isEmpty, ref(for_news.image, resolution:"16x6_M", abs:1).url, ""),
+									"imageAltText": if(!for_news.image_alt_text.isEmpty, for_news.image_alt_text, for_news.image.getMedia().getMetaFormData().get("md_image_alt_text")),
+									"authors": [],
+									"tags": []
+			})$	
+			
+			$-- arrays of related objects --$
+			$CMS_FOR(for_author, for_news.authorList)$
+				$CMS_SET(set_authorFeed, {"name":for_author.name,
+										"image": if(!for_author.image.isEmpty, ref(for_author.image, abs:1).url, ""),
+										"imageAltText": if(!for_author.image_alt_text.isEmpty, for_author.image_alt_text, for_author.image.getMedia().getMetaFormData().get("md_image_alt_text"))
+				})$	
+				$CMS_SET(void, set_newsFeed.authors.add(set_authorFeed))$
+				$CMS_SET(set_authorFeed, "")$
+			$CMS_END_FOR$
+
+			$CMS_FOR(for_tag, for_news.tagList)$						
+				$CMS_SET(for_lang, #global.language)$
+				$--$CMS_FOR(for_lang, #global.project.languages)$--$
+					$CMS_SET(set_tagName, for_tag.get("name_"+for_lang.abbreviation))$
+					$CMS_IF(set_tagFeed.isEmpty)$
+						$CMS_SET(set_tagFeed, {"name": if(!set_tagName.isEmpty, set_tagName, "")})$						
+					$CMS_ELSE$
+						$CMS_SET(void, set_tagFeed.put("lng:" + for_lang.abbreviation.toLowerCase() + ":name", if(!set_tagName.isEmpty, set_tagName, "")))$
+					$CMS_END_IF$
+				$--$CMS_END_FOR$--$
+				$CMS_SET(void, set_newsFeed.tags.add(set_tagFeed))$
+				$CMS_SET(set_tagFeed, "")$
+			$CMS_END_FOR$
+		
+			$-- language dependent fields --$
+			$CMS_SET(for_lang, #global.language)$
+			$--$CMS_FOR(for_lang, #global.project.languages)$--$
+				$CMS_SET(set_newsHeadline, for_news.get("headline_"+for_lang.abbreviation))$
+				$CMS_SET(void, set_newsFeed.put("headline", if(!set_newsHeadline.isEmpty, set_newsHeadline, "")))$
+				
+				$CMS_SET(set_newsSubHeadline, for_news.get("subheadline_"+for_lang.abbreviation))$
+				$CMS_SET(void, set_newsFeed.put("subheadline", if(!set_newsSubHeadline.isEmpty, set_newsSubHeadline, "")))$
+				
+				$CMS_SET(set_newsTeaserText, for_news.get("teaser_text_"+for_lang.abbreviation))$
+				$CMS_SET(void, set_newsFeed.put("teasertext", if(!set_newsTeaserText.isEmpty, set_newsTeaserText, "")))$
+	
+				$CMS_SET(set_newsArticleText, for_news.get("article_text_"+for_lang.abbreviation).toText(true))$
+				$CMS_SET(void, set_newsFeed.put("articletext", if(!set_newsArticleText.isEmpty, set_newsArticleText, "")))$
+			$--$CMS_END_FOR$--$		
+			$CMS_SET(void, set_newsFeedJson.add(set_newsFeed))$
+		$CMS_END_FOR$
+	$CMS_VALUE(set_newsFeedJson.toJSON)$
+$CMS_END_TRIM$

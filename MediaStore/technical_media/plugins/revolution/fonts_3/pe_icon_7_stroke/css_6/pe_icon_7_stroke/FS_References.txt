@@ -1,6 +1,0 @@
-[self]
-uid=pe_icon_7_stroke
-gid=b203a430-17a9-4b35-8ef6-eb28c66d0847
-uidType=MEDIASTORE_LEAF
-class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
-

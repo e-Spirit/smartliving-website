@@ -1,27 +1,32 @@
 [self]
 uid=interactive_image
-gid=b06e652a-95e9-4ed4-9314-60ab61f7356c
+gid=900545a0-3a92-48fc-a469-91d6538a3795
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.SectionTemplateImpl
 
 [optionalId]
 uid=images
-gid=5d06d9c5-0362-430e-9ce2-ca1f174e5b65
+gid=af7a5702-8a1a-401c-a6db-513067bfab17
 uidType=MEDIASTORE_FOLDER
 class=de.espirit.firstspirit.store.access.mediastore.MediaFolderImpl
 
-uid=create_section_64
-gid=6e3952f2-131e-4dab-946f-9b7ad65f54dc
-uidType=MEDIASTORE_LEAF
-class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+uid=interactive_image_link
+gid=3e188fa4-85ad-4471-8195-2f8ce390d70c
+uidType=TEMPLATESTORE_LINKTEMPLATE
+class=de.espirit.firstspirit.store.access.templatestore.LinkTemplateImpl
 
-uid=interactive_image
-gid=65c25aff-06a3-4b38-b323-fd5131646d4e
+uid=render_headline
+gid=9363d7f9-fb08-4808-b76e-635576a139b2
 uidType=TEMPLATESTORE_FORMATTEMPLATE
 class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
 
-uid=interactive_image_link
-gid=29a318db-3ccf-45a0-9c28-90bfb97d22f7
-uidType=TEMPLATESTORE_LINKTEMPLATE
-class=de.espirit.firstspirit.store.access.templatestore.LinkTemplateImpl
+uid=render_image_alt_text
+gid=35ae1a34-21bf-4c73-b75d-5ffe9b0261fa
+uidType=TEMPLATESTORE_FORMATTEMPLATE
+class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
+
+uid=teaser
+gid=b6fedbc2-d147-4ce5-9b6f-4af414c9b665
+uidType=TEMPLATESTORE_FORMATTEMPLATE
+class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
 

@@ -1,6 +1,0 @@
-[self]
-uid=jquery_themepunch_enablelog_1
-gid=be07086e-fb98-4466-8747-f9726f6cf281
-uidType=MEDIASTORE_LEAF
-class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
-

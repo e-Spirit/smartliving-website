@@ -3,12 +3,12 @@
 	<RULE>
 		<WITH>
 			<MATCHES regex="(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,})">
-				<PROPERTY name="VALUE" source="lt_url"/>
+				<PROPERTY name="VALUE" source="lt_link"/>
 			</MATCHES>
 		</WITH>
 		<DO>
 			<VALIDATION scope="SAVE">
-				<PROPERTY name="VALID" source="lt_url"/>
+				<PROPERTY name="VALID" source="lt_link"/>
 				<MESSAGE lang="*" text="Please use a valid URL"/>
 				<MESSAGE lang="DE" text="Bitte eine valide URL nutzen"/>
 			</VALIDATION>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="-4711314874352603759" name="add_new_section">
+	<LANG displayname="Add new section" language="EN"/>
+	<LANG displayname="Neue Section hinzufügen" language="DE"/>
+	<style tag="add_new_section" view="marked">
+		<attr name="align" value="left"/>
+		<render/>
+	</style>
+</FORMATTEMPLATE>

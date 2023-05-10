@@ -1,6 +1,0 @@
-[self]
-uid=revicons_2
-gid=2bd84270-16cc-4114-8040-ca4c8da8dd4e
-uidType=MEDIASTORE_LEAF
-class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
-

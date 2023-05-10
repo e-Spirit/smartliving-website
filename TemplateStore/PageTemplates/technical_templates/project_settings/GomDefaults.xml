@@ -1,9 +1,4 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <FIELDS>
-	<FIELD name='ps_button'><TEXT>#000</TEXT></FIELD>
-	<FIELD name='ps_background'><TEXT>#f6f7f8</TEXT></FIELD>
-	<FIELD name='ps_footercolor'><TEXT>#f6f7f8</TEXT></FIELD>
-	<FIELD name='ps_text_highlighting'><TEXT>#D5DD02</TEXT></FIELD>
-	<FIELD name='ps_banneropacity'><TEXT>0.7</TEXT></FIELD>
-	<FIELD name='ps_contentopacity'><TEXT>0.8</TEXT></FIELD>
+	<FIELD name='ps_CSSMode'><SEL><VALUE>file</VALUE></SEL></FIELD>
 </FIELDS>

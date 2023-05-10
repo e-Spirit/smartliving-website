@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <FIELDS>
-	<FIELD name='md_creation_date'><DATE>1637182165697</DATE></FIELD>
 	<FIELD name='fsai_facesPayload'><TEXT>{
   "version" : 2,
   "languageToResponse" : {
@@ -111,79 +110,257 @@
   "languageToResponse" : {
     "§" : {
       "labels" : [ {
-        "name" : "Person",
-        "confidence" : 99.67548,
+        "name" : "Female",
+        "confidence" : 97.71651,
         "instances" : [ {
           "boundingBox" : {
-            "width" : 0.20899099,
-            "height" : 0.88708574,
-            "left" : 0.5986547,
-            "top" : 0.09757829
+            "width" : 0.21503653,
+            "height" : 0.8957908,
+            "left" : 0.59362096,
+            "top" : 0.10420918
           },
-          "confidence" : 99.67548
+          "confidence" : 97.71651
+        } ],
+        "parents" : [ {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Girl",
+        "confidence" : 97.71651,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.21503653,
+            "height" : 0.8957908,
+            "left" : 0.59362096,
+            "top" : 0.10420918
+          },
+          "confidence" : 97.71651
+        } ],
+        "parents" : [ {
+          "name" : "Female"
+        }, {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Person",
+        "confidence" : 97.71651,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.21503653,
+            "height" : 0.8957908,
+            "left" : 0.59362096,
+            "top" : 0.10420918
+          },
+          "confidence" : 97.71651
         }, {
           "boundingBox" : {
-            "width" : 0.25691184,
-            "height" : 0.96931434,
-            "left" : 0.44763678,
-            "top" : 0.012066138
+            "width" : 0.26452562,
+            "height" : 0.99694854,
+            "left" : 0.44056767,
+            "top" : 0.0030514542
           },
-          "confidence" : 98.86984
+          "confidence" : 96.81826
         } ],
         "parents" : [ ]
       }, {
-        "name" : "Human",
-        "confidence" : 99.67548,
-        "instances" : [ ],
-        "parents" : [ ]
-      }, {
-        "name" : "Clothing",
-        "confidence" : 98.024185,
-        "instances" : [ ],
-        "parents" : [ ]
-      }, {
-        "name" : "Apparel",
-        "confidence" : 98.024185,
-        "instances" : [ ],
-        "parents" : [ ]
-      }, {
-        "name" : "Pants",
-        "confidence" : 92.26659,
-        "instances" : [ ],
+        "name" : "Teen",
+        "confidence" : 97.71651,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.21503653,
+            "height" : 0.8957908,
+            "left" : 0.59362096,
+            "top" : 0.10420918
+          },
+          "confidence" : 97.71651
+        } ],
         "parents" : [ {
-          "name" : "Clothing"
+          "name" : "Person"
         } ]
       }, {
-        "name" : "Jeans",
-        "confidence" : 69.69444,
-        "instances" : [ ],
+        "name" : "Adult",
+        "confidence" : 96.81826,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.26452562,
+            "height" : 0.99694854,
+            "left" : 0.44056767,
+            "top" : 0.0030514542
+          },
+          "confidence" : 96.81826
+        } ],
         "parents" : [ {
-          "name" : "Pants"
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Male",
+        "confidence" : 96.81826,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.26452562,
+            "height" : 0.99694854,
+            "left" : 0.44056767,
+            "top" : 0.0030514542
+          },
+          "confidence" : 96.81826
+        } ],
+        "parents" : [ {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Man",
+        "confidence" : 96.81826,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.26452562,
+            "height" : 0.99694854,
+            "left" : 0.44056767,
+            "top" : 0.0030514542
+          },
+          "confidence" : 96.81826
+        } ],
+        "parents" : [ {
+          "name" : "Adult"
         }, {
-          "name" : "Clothing"
+          "name" : "Male"
+        }, {
+          "name" : "Person"
         } ]
       }, {
-        "name" : "Denim",
-        "confidence" : 69.69444,
+        "name" : "Head",
+        "confidence" : 70.58178,
         "instances" : [ ],
         "parents" : [ {
-          "name" : "Pants"
-        }, {
-          "name" : "Clothing"
+          "name" : "Person"
         } ]
       }, {
-        "name" : "Wood",
-        "confidence" : 62.88535,
+        "name" : "Conversation",
+        "confidence" : 70.339294,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Indoors",
+        "confidence" : 67.20833,
         "instances" : [ ],
         "parents" : [ ]
       }, {
-        "name" : "Finger",
-        "confidence" : 55.518456,
+        "name" : "Appliance",
+        "confidence" : 63.759678,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Device"
+        }, {
+          "name" : "Electrical Device"
+        } ]
+      }, {
+        "name" : "Baking",
+        "confidence" : 63.759678,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Appliance"
+        }, {
+          "name" : "Cooking"
+        }, {
+          "name" : "Device"
+        }, {
+          "name" : "Electrical Device"
+        }, {
+          "name" : "Oven"
+        } ]
+      }, {
+        "name" : "Cooking",
+        "confidence" : 63.759678,
         "instances" : [ ],
         "parents" : [ ]
+      }, {
+        "name" : "Device",
+        "confidence" : 63.759678,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Electrical Device",
+        "confidence" : 63.759678,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Oven",
+        "confidence" : 63.759678,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Appliance"
+        }, {
+          "name" : "Device"
+        }, {
+          "name" : "Electrical Device"
+        } ]
+      }, {
+        "name" : "Cooktop",
+        "confidence" : 59.95442,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.16857478,
+            "height" : 0.19372489,
+            "left" : 0.31972563,
+            "top" : 0.59349984
+          },
+          "confidence" : 59.95442
+        } ],
+        "parents" : [ {
+          "name" : "Indoors"
+        }, {
+          "name" : "Kitchen"
+        } ]
+      }, {
+        "name" : "Kitchen",
+        "confidence" : 59.95442,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Indoors"
+        } ]
+      }, {
+        "name" : "Sink",
+        "confidence" : 57.18289,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.109806694,
+            "height" : 0.19913678,
+            "left" : 0.8901933,
+            "top" : 0.7724418
+          },
+          "confidence" : 57.18289
+        } ],
+        "parents" : [ ]
+      }, {
+        "name" : "Cookware",
+        "confidence" : 57.06699,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Pot",
+        "confidence" : 57.06699,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Cookware"
+        } ]
+      }, {
+        "name" : "Food",
+        "confidence" : 55.386173,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Face",
+        "confidence" : 55.031097,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Head"
+        }, {
+          "name" : "Person"
+        } ]
       } ],
       "orientationCorrection" : null,
-      "labelModelVersion" : "2.0"
+      "labelModelVersion" : "3.0"
     }
   }
 }</TEXT></FIELD>
@@ -201,7 +378,7 @@
   "languageToResponse" : {
     "§" : {
       "moderationLabels" : [ ],
-      "moderationModelVersion" : "5.0",
+      "moderationModelVersion" : "6.0",
       "humanLoopActivationOutput" : null
     }
   }
@@ -209,7 +386,7 @@
 	<FIELD name='fsai_tags'><TEXT>{
   "version" : 2,
   "languageToResponse" : {
-    "§" : "#Clothing #Apparel #Jeans #Finger #Wood #Pants #Denim #Person #Human"
+    "§" : "#Female #Male #Oven #Appliance #Sink #Pot #Man #Electrical Device #Indoors #Teen #Cooktop #Cookware #Adult #Head #Face #Food #Girl #Device #Conversation #Cooking #Person #Baking #Kitchen"
   }
 }</TEXT></FIELD>
 </FIELDS>

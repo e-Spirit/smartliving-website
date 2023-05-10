@@ -1,0 +1,12 @@
+[self]
+uid=security
+gid=49779e52-bfc2-4bd4-be1c-42776ff8629f
+uidType=SITESTORE_FOLDER
+class=de.espirit.firstspirit.store.access.sitestore.PageRefFolderImpl
+
+[nextSibling]
+uid=smart_equipment
+gid=2c38fae4-fcfc-427d-b2fd-a74179857943
+uidType=SITESTORE_FOLDER
+class=de.espirit.firstspirit.store.access.sitestore.PageRefFolderImpl
+

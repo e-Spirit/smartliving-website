@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <FIELDS>
-	<FIELD name='md_creation_date'><DATE>1637182120857</DATE></FIELD>
 	<FIELD name='fsai_facesPayload'><TEXT>{
   "version" : 2,
   "languageToResponse" : {
@@ -15,101 +14,87 @@
   "languageToResponse" : {
     "§" : {
       "labels" : [ {
-        "name" : "Mobile Phone",
-        "confidence" : 99.98701,
-        "instances" : [ {
-          "boundingBox" : {
-            "width" : 0.24411462,
-            "height" : 0.74258995,
-            "left" : 0.4802551,
-            "top" : 0.12421735
-          },
-          "confidence" : 99.98701
-        } ],
-        "parents" : [ {
-          "name" : "Phone"
-        }, {
-          "name" : "Electronics"
-        } ]
-      }, {
-        "name" : "Cell Phone",
-        "confidence" : 99.98701,
-        "instances" : [ ],
-        "parents" : [ {
-          "name" : "Phone"
-        }, {
-          "name" : "Electronics"
-        } ]
-      }, {
         "name" : "Electronics",
-        "confidence" : 99.98701,
+        "confidence" : 99.865204,
         "instances" : [ ],
         "parents" : [ ]
+      }, {
+        "name" : "Mobile Phone",
+        "confidence" : 99.865204,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.23307608,
+            "height" : 0.7681851,
+            "left" : 0.4880892,
+            "top" : 0.13155581
+          },
+          "confidence" : 99.865204
+        } ],
+        "parents" : [ {
+          "name" : "Electronics"
+        }, {
+          "name" : "Phone"
+        } ]
       }, {
         "name" : "Phone",
-        "confidence" : 99.98701,
+        "confidence" : 99.865204,
         "instances" : [ ],
         "parents" : [ {
           "name" : "Electronics"
         } ]
       }, {
-        "name" : "Person",
-        "confidence" : 99.88493,
-        "instances" : [ {
-          "boundingBox" : {
-            "width" : 0.39423507,
-            "height" : 0.5481639,
-            "left" : 0.45049864,
-            "top" : 0.43654475
-          },
-          "confidence" : 99.88493
-        } ],
-        "parents" : [ ]
-      }, {
-        "name" : "Human",
-        "confidence" : 99.88493,
+        "name" : "Indoors",
+        "confidence" : 96.19461,
         "instances" : [ ],
         "parents" : [ ]
       }, {
-        "name" : "Room",
-        "confidence" : 78.23008,
+        "name" : "Kitchen",
+        "confidence" : 96.19461,
         "instances" : [ ],
         "parents" : [ {
           "name" : "Indoors"
         } ]
       }, {
-        "name" : "Indoors",
-        "confidence" : 78.23008,
+        "name" : "Baby",
+        "confidence" : 73.44771,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.39927012,
+            "height" : 0.54166037,
+            "left" : 0.4389971,
+            "top" : 0.4583396
+          },
+          "confidence" : 73.44771
+        } ],
+        "parents" : [ {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Person",
+        "confidence" : 73.44771,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.39927012,
+            "height" : 0.54166037,
+            "left" : 0.4389971,
+            "top" : 0.4583396
+          },
+          "confidence" : 73.44771
+        } ],
+        "parents" : [ ]
+      }, {
+        "name" : "Electrical Device",
+        "confidence" : 56.102924,
         "instances" : [ ],
         "parents" : [ ]
       }, {
-        "name" : "Screen",
-        "confidence" : 56.89716,
+        "name" : "Device",
+        "confidence" : 55.4099,
         "instances" : [ ],
-        "parents" : [ {
-          "name" : "Electronics"
-        } ]
-      }, {
-        "name" : "Monitor",
-        "confidence" : 56.650272,
-        "instances" : [ ],
-        "parents" : [ {
-          "name" : "Screen"
-        }, {
-          "name" : "Electronics"
-        } ]
-      }, {
-        "name" : "Display",
-        "confidence" : 56.650272,
-        "instances" : [ ],
-        "parents" : [ {
-          "name" : "Screen"
-        }, {
-          "name" : "Electronics"
-        } ]
+        "parents" : [ ]
       } ],
       "orientationCorrection" : null,
-      "labelModelVersion" : "2.0"
+      "labelModelVersion" : "3.0"
     }
   }
 }</TEXT></FIELD>
@@ -1369,7 +1354,7 @@
   "languageToResponse" : {
     "§" : {
       "moderationLabels" : [ ],
-      "moderationModelVersion" : "5.0",
+      "moderationModelVersion" : "6.0",
       "humanLoopActivationOutput" : null
     }
   }
@@ -1377,7 +1362,7 @@
 	<FIELD name='fsai_tags'><TEXT>{
   "version" : 2,
   "languageToResponse" : {
-    "§" : "#Cell Phone #Monitor #Indoors #Display #Phone #Person #Room #Mobile Phone #Screen #Electronics #Human"
+    "§" : "#Device #Baby #Electrical Device #Indoors #Phone #Person #Mobile Phone #Kitchen #Electronics"
   }
 }</TEXT></FIELD>
 </FIELDS>

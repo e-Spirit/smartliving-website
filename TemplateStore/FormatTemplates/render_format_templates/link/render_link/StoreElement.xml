@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="-7241373880564487775" name="render_link">
+	<LANG displayname="Link ausgeben" language="DE"/>
+	<LANG displayname="Render link" language="EN"/>
+	<style tag="render_link" view="marked">
+		<attr name="align" value="left"/>
+		<render/>
+	</style>
+</FORMATTEMPLATE>

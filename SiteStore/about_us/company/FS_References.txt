@@ -1,12 +1,12 @@
 [self]
 uid=company
-gid=c8288c2c-d9d2-498b-af06-2e76a9b3c3ab
+gid=db755f43-ab0a-4d64-86a3-9efbe01c3707
 uidType=SITESTORE_FOLDER
 class=de.espirit.firstspirit.store.access.sitestore.PageRefFolderImpl
 
-[previousSibling]
+[nextSibling]
 uid=services
-gid=aab0fbe2-9fbf-4a3b-a45e-7b72165eaa3c
+gid=0fdb25d2-13c9-47b6-9317-caa8c85c923b
 uidType=SITESTORE_FOLDER
 class=de.espirit.firstspirit.store.access.sitestore.PageRefFolderImpl
 

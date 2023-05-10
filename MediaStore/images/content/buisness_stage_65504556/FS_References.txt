@@ -1,12 +1,12 @@
 [self]
 uid=buisness_stage_65504556
-gid=49277168-32eb-4d5e-8d42-919da5e04dbc
+gid=4e3fe4a8-9abe-4adc-873e-65dd4ab714be
 uidType=MEDIASTORE_LEAF
 class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
 
 [requiredProjectId]
 uid=metadata
-gid=70a3c894-c1c8-4a8b-ac05-378c1699a025
+gid=b2c7cf16-33d2-4cf4-b16d-fa4fb256cd68
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
 

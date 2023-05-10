@@ -1,6 +1,0 @@
-[self]
-uid=video
-gid=fdccb551-3cfc-4a09-adf7-61e60a39f749
-uidType=MEDIASTORE_FOLDER
-class=de.espirit.firstspirit.store.access.mediastore.MediaFolderImpl
-

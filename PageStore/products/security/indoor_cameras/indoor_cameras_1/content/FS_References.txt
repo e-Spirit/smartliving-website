@@ -1,0 +1,6 @@
+[self]
+uid=indoor_cameras_1~#~content
+gid=7357d874-de2d-450a-b588-34f512af5abe
+store=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.BodyImpl
+

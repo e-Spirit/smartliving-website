@@ -1,0 +1,12 @@
+[self]
+uid=smart_bulbs_1
+gid=b663d2c1-19cc-4ab0-b8a4-d321f58fe60f
+uidType=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.PageImpl
+
+[requiredProjectId]
+uid=standard
+gid=7220147b-39ff-4b67-ae6b-90e6e04af147
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
+

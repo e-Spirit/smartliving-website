@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Home Decor",
+        "confidence" : 99.233536,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Mailbox",
+        "confidence" : 66.642525,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.9590884,
+            "height" : 0.94119376,
+            "left" : 0.019083038,
+            "top" : 0.026186448
+          },
+          "confidence" : 66.642525
+        } ],
+        "parents" : [ ]
+      }, {
+        "name" : "Text",
+        "confidence" : 64.852905,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "File",
+        "confidence" : 56.157345,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Mat",
+        "confidence" : 55.20273,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Garage",
+        "confidence" : 55.002182,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Indoors"
+        } ]
+      }, {
+        "name" : "Indoors",
+        "confidence" : 55.002182,
+        "instances" : [ ],
+        "parents" : [ ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ {
+        "detectedText" : "&gt;",
+        "type" : "LINE",
+        "id" : 0,
+        "parentId" : null,
+        "confidence" : 91.92664,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.089166716,
+            "height" : 0.07111112,
+            "left" : 0.7733334,
+            "top" : 0.10666667
+          },
+          "polygon" : [ {
+            "x" : 0.8625001,
+            "y" : 0.10666667
+          }, {
+            "x" : 0.8625001,
+            "y" : 0.17777778
+          }, {
+            "x" : 0.7733334,
+            "y" : 0.17777778
+          }, {
+            "x" : 0.7733334,
+            "y" : 0.10666667
+          } ]
+        }
+      }, {
+        "detectedText" : "V",
+        "type" : "LINE",
+        "id" : 1,
+        "parentId" : null,
+        "confidence" : 90.087944,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.0875,
+            "height" : 0.07111109,
+            "left" : 0.7666667,
+            "top" : 0.33111113
+          },
+          "polygon" : [ {
+            "x" : 0.7666667,
+            "y" : 0.33111113
+          }, {
+            "x" : 0.85416675,
+            "y" : 0.33111113
+          }, {
+            "x" : 0.85416675,
+            "y" : 0.40222222
+          }, {
+            "x" : 0.7666667,
+            "y" : 0.40222222
+          } ]
+        }
+      }, {
+        "detectedText" : "&gt;",
+        "type" : "WORD",
+        "id" : 2,
+        "parentId" : 0,
+        "confidence" : 91.92664,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.089166716,
+            "height" : 0.07111112,
+            "left" : 0.7733334,
+            "top" : 0.10666667
+          },
+          "polygon" : [ {
+            "x" : 0.8625001,
+            "y" : 0.10666667
+          }, {
+            "x" : 0.8625001,
+            "y" : 0.17777778
+          }, {
+            "x" : 0.7733334,
+            "y" : 0.17777778
+          }, {
+            "x" : 0.7733334,
+            "y" : 0.10666667
+          } ]
+        }
+      }, {
+        "detectedText" : "V",
+        "type" : "WORD",
+        "id" : 3,
+        "parentId" : 1,
+        "confidence" : 90.087944,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.0875,
+            "height" : 0.07111109,
+            "left" : 0.7666667,
+            "top" : 0.33111113
+          },
+          "polygon" : [ {
+            "x" : 0.7666667,
+            "y" : 0.33111113
+          }, {
+            "x" : 0.85416675,
+            "y" : 0.33111113
+          }, {
+            "x" : 0.85416675,
+            "y" : 0.40222222
+          }, {
+            "x" : 0.7666667,
+            "y" : 0.40222222
+          } ]
+        }
+      } ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "6.1",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Home Decor #File #Text #Garage #Indoors #Mailbox #Mat"
+  }
+}</TEXT></FIELD>
+</FIELDS>

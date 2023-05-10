@@ -1,6 +1,0 @@
-[self]
-uid=source_1
-gid=9b99f184-496d-43e8-a44a-ae7ad8360cc8
-uidType=MEDIASTORE_FOLDER
-class=de.espirit.firstspirit.store.access.mediastore.MediaFolderImpl
-

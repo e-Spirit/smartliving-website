@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+	<TABLE name="location">
+		<ROW>
+			<COLUMN name="FS_GID">8cdc0561-7fdf-4467-ae7f-e246a0260404</COLUMN>
+			<COLUMN name="description_DE">&lt;CMS_VALUE name="tt_description" tag="CMS_INPUT_DOM"&gt;&lt;LANG id="DE" set="1"&gt;&lt;DOM&gt;&lt;p&gt;Am Alten Elbtunnel, 20359 Hamburg&lt;/p&gt;&lt;p&gt;Tel.: +49 40 60 92 97 65&lt;br/&gt;&lt;/p&gt;&lt;/DOM&gt;&lt;/LANG&gt;&lt;/CMS_VALUE&gt;</COLUMN>
+			<COLUMN name="description_EN">&lt;CMS_VALUE name="tt_description" tag="CMS_INPUT_DOM"&gt;&lt;LANG id="EN" set="1"&gt;&lt;DOM&gt;&lt;p&gt;Stockholmer Allee 24, 44269 Dortmund, Germany&lt;/p&gt;&lt;p&gt;Phone: +49231477770&lt;/p&gt;&lt;/DOM&gt;&lt;/LANG&gt;&lt;/CMS_VALUE&gt;</COLUMN>
+			<COLUMN name="lat">53.5460008</COLUMN>
+			<COLUMN name="long">9.9668001</COLUMN>
+			<COLUMN name="name_DE">Smart Living GmbH Büro Nord</COLUMN>
+			<COLUMN name="name_EN">Crownpeak Technology GmbH Germany 3</COLUMN>
+			<COLUMN name="route_link">&lt;CMS_VALUE name="tt_route_link" tag="CMS_INPUT_LINK"&gt;&lt;LANG id="§" set="1"&gt;&lt;LINK&gt;&lt;CMS_LINK linktemplate="external_link" type="genericLink"&gt;&lt;TEMPLATECONTENT&gt;&lt;CMS_VALUE name="lt_link"&gt;&lt;LANG id="§" set="1"&gt;&lt;TEXT&gt;https://www.google.com/maps/place/Crownpeak+Technology+GmbH/@51.5023768,7.5290053,15.94z/data=!4m5!3m4!1s0x47b916e7769275ab:0xef521cead5efe27d!8m2!3d51.5043505!4d7.5283671&lt;/TEXT&gt;&lt;/LANG&gt;&lt;/CMS_VALUE&gt;&lt;CMS_VALUE name="lt_text"&gt;&lt;LANG id="§" set="0"/&gt;&lt;/CMS_VALUE&gt;&lt;CMS_VALUE name="lt_target"&gt;&lt;LANG id="§" set="1"&gt;&lt;SEL&gt;&lt;VALUE&gt;_blank&lt;/VALUE&gt;&lt;/SEL&gt;&lt;/LANG&gt;&lt;/CMS_VALUE&gt;&lt;/TEMPLATECONTENT&gt;&lt;/CMS_LINK&gt;&lt;/LINK&gt;&lt;/LANG&gt;&lt;/CMS_VALUE&gt;</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">c7f9395f-becb-4561-9b57-0d03dfe0a9f9</COLUMN>
+			<COLUMN name="description_DE">&lt;CMS_VALUE name="tt_description" tag="CMS_INPUT_DOM"&gt;&lt;LANG id="DE" set="1"&gt;&lt;DOM&gt;&lt;p&gt;An der Frauenkirche, 80331 München&lt;/p&gt;&lt;p&gt;Tel.: +49 89 29 00 82 0&lt;/p&gt;&lt;/DOM&gt;&lt;/LANG&gt;&lt;/CMS_VALUE&gt;</COLUMN>
+			<COLUMN name="description_EN">&lt;CMS_VALUE name="tt_description" tag="CMS_INPUT_DOM"&gt;&lt;LANG id="EN" set="1"&gt;&lt;DOM&gt;&lt;p&gt;Stockholmer Allee 24, 44269 Dortmund, Germany&lt;/p&gt;&lt;p&gt;Phone: +49231477770&lt;/p&gt;&lt;/DOM&gt;&lt;/LANG&gt;&lt;/CMS_VALUE&gt;</COLUMN>
+			<COLUMN name="lat">48.138648</COLUMN>
+			<COLUMN name="long">11.5736474</COLUMN>
+			<COLUMN name="name_DE">Smart Living GmbH Büro Süd</COLUMN>
+			<COLUMN name="name_EN">Crownpeak Technology GmbH Germany 4</COLUMN>
+			<COLUMN name="route_link">&lt;CMS_VALUE name="tt_route_link" tag="CMS_INPUT_LINK"&gt;&lt;LANG id="§" set="1"&gt;&lt;LINK&gt;&lt;CMS_LINK linktemplate="external_link" type="genericLink"&gt;&lt;TEMPLATECONTENT&gt;&lt;CMS_VALUE name="lt_link"&gt;&lt;LANG id="§" set="1"&gt;&lt;TEXT&gt;https://www.google.com/maps/place/Crownpeak+Technology+GmbH/@51.5023768,7.5290053,15.94z/data=!4m5!3m4!1s0x47b916e7769275ab:0xef521cead5efe27d!8m2!3d51.5043505!4d7.5283671&lt;/TEXT&gt;&lt;/LANG&gt;&lt;/CMS_VALUE&gt;&lt;CMS_VALUE name="lt_text"&gt;&lt;LANG id="§" set="0"/&gt;&lt;/CMS_VALUE&gt;&lt;CMS_VALUE name="lt_target"&gt;&lt;LANG id="§" set="1"&gt;&lt;SEL&gt;&lt;VALUE&gt;_blank&lt;/VALUE&gt;&lt;/SEL&gt;&lt;/LANG&gt;&lt;/CMS_VALUE&gt;&lt;/TEMPLATECONTENT&gt;&lt;/CMS_LINK&gt;&lt;/LINK&gt;&lt;/LANG&gt;&lt;/CMS_VALUE&gt;</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">ff73f079-d4c1-4897-8d7a-9a2bc7c47eef</COLUMN>
+			<COLUMN name="description_DE">&lt;CMS_VALUE name="tt_description" tag="CMS_INPUT_DOM"&gt;&lt;LANG id="DE" set="1"&gt;&lt;DOM&gt;&lt;p&gt;Stockholmer Allee 24, 44269 Dortmund&lt;/p&gt;&lt;p&gt;Tel.: +49 231 47 77 70&lt;/p&gt;&lt;/DOM&gt;&lt;/LANG&gt;&lt;/CMS_VALUE&gt;</COLUMN>
+			<COLUMN name="description_EN">&lt;CMS_VALUE name="tt_description" tag="CMS_INPUT_DOM"&gt;&lt;LANG id="EN" set="1"&gt;&lt;DOM&gt;&lt;p&gt;Stockholmer Allee 24, 44269 Dortmund, Germany&lt;/p&gt;&lt;p&gt;Phone: +49231477770&lt;/p&gt;&lt;/DOM&gt;&lt;/LANG&gt;&lt;/CMS_VALUE&gt;</COLUMN>
+			<COLUMN name="lat">51.5043505</COLUMN>
+			<COLUMN name="long">7.5261731</COLUMN>
+			<COLUMN name="name_DE">Smart Living GmbH Deutschland</COLUMN>
+			<COLUMN name="name_EN">Smart Living GmbH Germany</COLUMN>
+			<COLUMN name="route_link">&lt;CMS_VALUE name="tt_route_link" tag="CMS_INPUT_LINK"&gt;&lt;LANG id="§" set="1"&gt;&lt;LINK&gt;&lt;CMS_LINK linktemplate="external_link" type="genericLink"&gt;&lt;TEMPLATECONTENT&gt;&lt;CMS_VALUE name="lt_link"&gt;&lt;LANG id="§" set="1"&gt;&lt;TEXT&gt;https://www.google.com/maps/place/Crownpeak+Technology+GmbH/@51.5023768,7.5290053,15.94z/data=!4m5!3m4!1s0x47b916e7769275ab:0xef521cead5efe27d!8m2!3d51.5043505!4d7.5283671&lt;/TEXT&gt;&lt;/LANG&gt;&lt;/CMS_VALUE&gt;&lt;CMS_VALUE name="lt_text"&gt;&lt;LANG id="§" set="0"/&gt;&lt;/CMS_VALUE&gt;&lt;CMS_VALUE name="lt_target"&gt;&lt;LANG id="§" set="1"&gt;&lt;SEL&gt;&lt;VALUE&gt;_blank&lt;/VALUE&gt;&lt;/SEL&gt;&lt;/LANG&gt;&lt;/CMS_VALUE&gt;&lt;/TEMPLATECONTENT&gt;&lt;/CMS_LINK&gt;&lt;/LINK&gt;&lt;/LANG&gt;&lt;/CMS_VALUE&gt;</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">2863c03a-776b-4054-a1f1-3e8659a833b3</COLUMN>
+			<COLUMN name="description_DE">&lt;CMS_VALUE name="tt_description" tag="CMS_INPUT_DOM"&gt;&lt;LANG id="DE" set="1"&gt;&lt;DOM&gt;&lt;p&gt;Römerberg 23, 60311 Frankfurt am Main&lt;/p&gt;&lt;p&gt;Tel.: +49 69 21 20 1&lt;/p&gt;&lt;/DOM&gt;&lt;/LANG&gt;&lt;/CMS_VALUE&gt;</COLUMN>
+			<COLUMN name="description_EN">&lt;CMS_VALUE name="tt_description" tag="CMS_INPUT_DOM"&gt;&lt;LANG id="EN" set="1"&gt;&lt;DOM&gt;&lt;p&gt;45 Beech St, Barbican&lt;br/&gt;London EC2Y 8AD&lt;br/&gt;United Kingdom&lt;/p&gt;&lt;/DOM&gt;&lt;/LANG&gt;&lt;/CMS_VALUE&gt;</COLUMN>
+			<COLUMN name="lat">50.1106379</COLUMN>
+			<COLUMN name="long">8.6817587</COLUMN>
+			<COLUMN name="name_DE">Smart Living GmbH Büro Mitte</COLUMN>
+			<COLUMN name="name_EN">SmartLiving London</COLUMN>
+			<COLUMN name="route_link">&lt;CMS_VALUE name="tt_route_link" tag="CMS_INPUT_LINK"&gt;&lt;LANG id="§" set="1"&gt;&lt;LINK&gt;&lt;CMS_LINK linktemplate="external_link" type="genericLink"&gt;&lt;TEMPLATECONTENT&gt;&lt;CMS_VALUE name="lt_link"&gt;&lt;LANG id="§" set="1"&gt;&lt;TEXT&gt;https://www.google.com/maps/place/Crownpeak/@51.5206707,-0.0976384,17z/data=!4m12!1m6!3m5!1s0x48761afefb4001c3:0xfb88d2b0a330b098!2sCrownpeak!8m2!3d51.5206264!4d-0.0957029!3m4!1s0x48761afefb4001c3:0xfb88d2b0a330b098!8m2!3d51.5206264!4d-0.0957029&lt;/TEXT&gt;&lt;/LANG&gt;&lt;/CMS_VALUE&gt;&lt;CMS_VALUE name="lt_text"&gt;&lt;LANG id="§" set="0"/&gt;&lt;/CMS_VALUE&gt;&lt;CMS_VALUE name="lt_target"&gt;&lt;LANG id="§" set="1"&gt;&lt;SEL&gt;&lt;VALUE&gt;_blank&lt;/VALUE&gt;&lt;/SEL&gt;&lt;/LANG&gt;&lt;/CMS_VALUE&gt;&lt;/TEMPLATECONTENT&gt;&lt;/CMS_LINK&gt;&lt;/LINK&gt;&lt;/LANG&gt;&lt;/CMS_VALUE&gt;</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">6b457d45-bf6a-449f-a609-7088615cd73f</COLUMN>
+			<COLUMN name="description_DE">&lt;CMS_VALUE name="tt_description" tag="CMS_INPUT_DOM"&gt;&lt;LANG id="DE" set="1"&gt;&lt;DOM&gt;&lt;p&gt;Pariser Platz 1, 10117 Berlin&lt;/p&gt;&lt;p&gt;Tel.: +49 30 25 00 23 33&lt;/p&gt;&lt;/DOM&gt;&lt;/LANG&gt;&lt;/CMS_VALUE&gt;</COLUMN>
+			<COLUMN name="description_EN">&lt;CMS_VALUE name="tt_description" tag="CMS_INPUT_DOM"&gt;&lt;LANG id="EN" set="1"&gt;&lt;DOM&gt;&lt;p&gt;Pariser, 44269 Dortmund, Germany&lt;/p&gt;&lt;p&gt;Phone: +49231477770&lt;/p&gt;&lt;/DOM&gt;&lt;/LANG&gt;&lt;/CMS_VALUE&gt;</COLUMN>
+			<COLUMN name="lat">52.5163595</COLUMN>
+			<COLUMN name="long">13.3776713</COLUMN>
+			<COLUMN name="name_DE">Smart Living GmbH Büro Ost</COLUMN>
+			<COLUMN name="name_EN">Crownpeak Technology GmbH </COLUMN>
+			<COLUMN name="route_link">&lt;CMS_VALUE name="tt_route_link" tag="CMS_INPUT_LINK"&gt;&lt;LANG id="§" set="1"&gt;&lt;LINK&gt;&lt;CMS_LINK linktemplate="external_link" type="genericLink"&gt;&lt;TEMPLATECONTENT&gt;&lt;CMS_VALUE name="lt_link"&gt;&lt;LANG id="§" set="1"&gt;&lt;TEXT&gt;https://www.google.com/maps/place/Crownpeak+Technology+GmbH/@51.5023768,7.5290053,15.94z/data=!4m5!3m4!1s0x47b916e7769275ab:0xef521cead5efe27d!8m2!3d51.5043505!4d7.5283671&lt;/TEXT&gt;&lt;/LANG&gt;&lt;/CMS_VALUE&gt;&lt;CMS_VALUE name="lt_text"&gt;&lt;LANG id="§" set="0"/&gt;&lt;/CMS_VALUE&gt;&lt;CMS_VALUE name="lt_target"&gt;&lt;LANG id="§" set="1"&gt;&lt;SEL&gt;&lt;VALUE&gt;_blank&lt;/VALUE&gt;&lt;/SEL&gt;&lt;/LANG&gt;&lt;/CMS_VALUE&gt;&lt;/TEMPLATECONTENT&gt;&lt;/CMS_LINK&gt;&lt;/LINK&gt;&lt;/LANG&gt;&lt;/CMS_VALUE&gt;</COLUMN>
+		</ROW>
+	</TABLE>
+</DATA>

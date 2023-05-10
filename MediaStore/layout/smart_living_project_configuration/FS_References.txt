@@ -1,0 +1,6 @@
+[self]
+uid=smart_living_project_configuration
+gid=0f5e71f3-d0d6-40e8-88da-116a8994b8b9
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+

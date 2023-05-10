@@ -1,11 +1,17 @@
 # mimeType        name
 text/plain;UTF-8  FS_Info.txt
 text/plain;UTF-8  FS_References.txt
+image/webp        Picture_thermostat_1_161668622_16x4_L.webp
+image/webp        Picture_thermostat_1_161668622_16x4_M.webp
+image/webp        Picture_thermostat_1_161668622_16x6_L.webp
+image/webp        Picture_thermostat_1_161668622_16x6_M.webp
+image/webp        Picture_thermostat_1_161668622_16x6_XL.webp
+image/webp        Picture_thermostat_1_161668622_16x9_L.webp
+image/webp        Picture_thermostat_1_161668622_16x9_M.webp
+image/webp        Picture_thermostat_1_161668622_16x9_S.webp
+image/webp        Picture_thermostat_1_161668622_4x3_M.webp
+image/webp        Picture_thermostat_1_161668622_4x3_S.webp
+image/webp        Picture_thermostat_1_161668622_9x16_M.webp
 image/jpeg        Picture_thermostat_1_161668622_ORIGINAL.jpg
-image/jpeg        Picture_thermostat_1_161668622_banner_slider.jpg
-image/jpeg        Picture_thermostat_1_161668622_landscape.jpg
-image/jpeg        Picture_thermostat_1_161668622_portrait.jpg
-image/jpeg        Picture_thermostat_1_161668622_product_teaser.jpg
-image/jpeg        Picture_thermostat_1_161668622_square.jpg
 text/xml;UTF-8    StoreElement.xml
 text/xml          meta.xml

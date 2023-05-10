@@ -1,0 +1,73 @@
+$--
+	Javascript for the ContentCreator that displays the last edited element after a reload.
+--$
+$CMS_IF(#global.is("WEBEDIT"))$
+	$CMS_SET(set_script)$
+		<script>
+			window.addEventListener('DOMContentLoaded', () => {
+					if(typeof top.WE_API === "undefined"){
+						console.log('WE_API not found');
+						return;
+					}
+					const FSCUST_PAGE_RELOAD = "fscustPageReload";
+					const previewPageId = $CMS_VALUE(#global.page.getId())$;
+				  
+					const sectionList = document.querySelectorAll("[data-fs-type=\"Section\"]");
+					const sectionIds = [], visibleSections = [];
+					const io = new IntersectionObserver((entries) => {
+						entries.forEach((entry) => {
+							if (entry.intersectionRatio > 0) {
+								visibleSections.push(entry);
+							} else {				
+								let sectionIndex = visibleSections.findIndex((element) => element.target === entry.target);
+								if (sectionIndex > -1) {
+									visibleSections.splice(sectionIndex, 1);
+								}				
+							}
+						})
+					});
+					sectionList.forEach((section) => {		
+						sectionIds.push(section.dataset.fsId);
+						io.observe(section);
+					});
+									
+					if(sessionStorage.getItem(FSCUST_PAGE_RELOAD)){
+						let fscustPageReload = JSON.parse(sessionStorage.getItem(FSCUST_PAGE_RELOAD));
+						if(fscustPageReload.previewPageId === previewPageId){
+							let scrollSectionId = fscustPageReload.lastVisibleSection;
+							if(fscustPageReload.sectionIds && fscustPageReload.sectionIds.length){
+								for (let i = 0; i < sectionIds.length; i++) {
+									if (sectionIds[i] !== fscustPageReload.sectionIds[i]){
+										scrollSectionId = sectionIds[i];
+										break;
+									}
+								}
+							}; 
+							if(typeof scrollSectionId !== "undefined" && scrollSectionId !== ""){
+								let section = document.querySelector("[data-fs-id=\""+ scrollSectionId +"\"]");
+								if(section){
+									section.scrollIntoView({behavior: "smooth", block: "center"});
+								}
+							}
+						} 
+					}  	
+
+					window.addEventListener("beforeunload", (event) => {
+						let fscustPageReload = {
+							previewPageId: previewPageId,
+							sectionIds: sectionIds
+						}	  
+						if (visibleSections.length){
+							fscustPageReload.lastVisibleSection = visibleSections.reduce((a,b)=>a.intersectionRatio>b.intersectionRatio?a:b).target.dataset.fsId;
+						}
+						// console.log("Save to storage", previewPageId, sectionIds, visibleSections, fscustPageReload)
+						sessionStorage.setItem(FSCUST_PAGE_RELOAD, JSON.stringify(fscustPageReload));		
+					});
+				
+				}, { once: true });				
+			</script>			
+		$CMS_END_SET$
+		$CMS_RENDER(template: "javascript_collector", prm_action: "add", 
+														prm_jSStatement: set_script, 
+														prm_jSId: "reload_handling")$
+$CMS_END_IF$

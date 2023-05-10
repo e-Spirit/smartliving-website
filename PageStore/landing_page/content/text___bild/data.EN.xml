@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_headline'><TEXT>This is a content module for text with image</TEXT></FIELD>
+	<FIELD name='st_subheadline'><DOM><subline>A second heading can be created here</subline></DOM></FIELD>
+	<FIELD name='st_text'><DOM><p>Please enter a continuous text here.</p></DOM></FIELD>
+</FIELDS>

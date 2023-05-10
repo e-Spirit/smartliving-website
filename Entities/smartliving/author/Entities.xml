@@ -2,7 +2,10 @@
 <DATA>
 	<TABLE name="author">
 		<ROW>
-			<COLUMN name="FS_GID">51b14111-7d41-4bad-ab81-a0e161e2ffd3</COLUMN>
+			<COLUMN name="FS_GID">940c34db-e691-447a-adda-a8ca31c04a0e</COLUMN>
+			<COLUMN name="image">&lt;CMS_VALUE name="tt_image" tag="FS_REFERENCE"&gt;&lt;LANG id="§" set="1"&gt;&lt;UID&gt;avatar&lt;/UID&gt;&lt;UIDTYPE&gt;MEDIASTORE_LEAF&lt;/UIDTYPE&gt;&lt;REMOTE/&gt;&lt;/LANG&gt;&lt;/CMS_VALUE&gt;</COLUMN>
+			<NULL_COLUMN name="image_alt_text_DE"/>
+			<NULL_COLUMN name="image_alt_text_EN"/>
 			<COLUMN name="name">John Doe</COLUMN>
 		</ROW>
 	</TABLE>

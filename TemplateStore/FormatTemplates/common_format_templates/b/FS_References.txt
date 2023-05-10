@@ -1,6 +1,6 @@
 [self]
 uid=b
-gid=a1c4666a-689d-4d55-a186-1f4f54eb1817
+gid=9997eb3b-5ef9-4eb9-9ac5-b293f20a7fc4
 uidType=TEMPLATESTORE_FORMATTEMPLATE
 class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
 

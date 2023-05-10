@@ -1,0 +1,5 @@
+$CMS_IF(!lt_dataset.isEmpty() && !lt_text.isEmpty())$
+	<a class="text-link-text hover:text-link-hover  underline"
+		target="_self" 
+		href="$CMS_RENDER(template:"render_link_dataset_url", prm_dataset: lt_dataset.dataset)$">$CMS_VALUE(lt_text.convert2())$</a>		
+$CMS_END_IF$

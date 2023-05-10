@@ -1,6 +1,0 @@
-[self]
-uid=prod_overview~#~content
-gid=c56b7e04-ed2b-4c3d-9bac-6ec7820ec2d6
-store=PAGESTORE
-class=de.espirit.firstspirit.store.access.pagestore.BodyImpl
-

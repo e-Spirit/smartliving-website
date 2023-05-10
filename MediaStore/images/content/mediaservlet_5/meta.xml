@@ -1,0 +1,369 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Indoors",
+        "confidence" : 99.99453,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Interior Design",
+        "confidence" : 99.99453,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Indoors"
+        } ]
+      }, {
+        "name" : "Furniture",
+        "confidence" : 99.99284,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Table",
+        "confidence" : 99.99284,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Furniture"
+        } ]
+      }, {
+        "name" : "Computer Hardware",
+        "confidence" : 99.95117,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        }, {
+          "name" : "Hardware"
+        } ]
+      }, {
+        "name" : "Electronics",
+        "confidence" : 99.95117,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Hardware",
+        "confidence" : 99.95117,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Monitor",
+        "confidence" : 99.95117,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Computer Hardware"
+        }, {
+          "name" : "Electronics"
+        }, {
+          "name" : "Hardware"
+        }, {
+          "name" : "Screen"
+        } ]
+      }, {
+        "name" : "Screen",
+        "confidence" : 99.95117,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Desk",
+        "confidence" : 98.842804,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.44540125,
+            "height" : 0.34705377,
+            "left" : 0.53838754,
+            "top" : 0.605878
+          },
+          "confidence" : 88.83312
+        } ],
+        "parents" : [ {
+          "name" : "Furniture"
+        }, {
+          "name" : "Table"
+        } ]
+      }, {
+        "name" : "Computer",
+        "confidence" : 98.73399,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Architecture",
+        "confidence" : 98.471596,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Building",
+        "confidence" : 98.471596,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Architecture"
+        } ]
+      }, {
+        "name" : "Living Room",
+        "confidence" : 98.471596,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Architecture"
+        }, {
+          "name" : "Building"
+        }, {
+          "name" : "Furniture"
+        }, {
+          "name" : "Indoors"
+        }, {
+          "name" : "Room"
+        } ]
+      }, {
+        "name" : "Room",
+        "confidence" : 98.471596,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Indoors"
+        } ]
+      }, {
+        "name" : "Plant",
+        "confidence" : 97.666916,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.090249635,
+            "height" : 0.08620738,
+            "left" : 0.86442816,
+            "top" : 0.1836113
+          },
+          "confidence" : 97.666916
+        }, {
+          "boundingBox" : {
+            "width" : 0.061792724,
+            "height" : 0.09344437,
+            "left" : 0.5419371,
+            "top" : 0.53252834
+          },
+          "confidence" : 94.56225
+        } ],
+        "parents" : [ ]
+      }, {
+        "name" : "Lamp",
+        "confidence" : 96.32485,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.071830995,
+            "height" : 0.059923247,
+            "left" : 0.5403279,
+            "top" : 0.41025388
+          },
+          "confidence" : 96.32485
+        }, {
+          "boundingBox" : {
+            "width" : 0.016218811,
+            "height" : 0.032538194,
+            "left" : 0.72894657,
+            "top" : 0.42158493
+          },
+          "confidence" : 91.24128
+        } ],
+        "parents" : [ ]
+      }, {
+        "name" : "Chair",
+        "confidence" : 94.01883,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.26777405,
+            "height" : 0.30932572,
+            "left" : 0.5799482,
+            "top" : 0.6906634
+          },
+          "confidence" : 94.01883
+        } ],
+        "parents" : [ {
+          "name" : "Furniture"
+        } ]
+      }, {
+        "name" : "TV",
+        "confidence" : 78.8257,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Computer Hardware"
+        }, {
+          "name" : "Electronics"
+        }, {
+          "name" : "Hardware"
+        }, {
+          "name" : "Monitor"
+        }, {
+          "name" : "Screen"
+        } ]
+      }, {
+        "name" : "Shelf",
+        "confidence" : 77.6909,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Art",
+        "confidence" : 74.33507,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Painting",
+        "confidence" : 74.33507,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.08615539,
+            "height" : 0.14841601,
+            "left" : 0.5824204,
+            "top" : 0.1856787
+          },
+          "confidence" : 74.33507
+        } ],
+        "parents" : [ {
+          "name" : "Art"
+        } ]
+      }, {
+        "name" : "Book",
+        "confidence" : 71.018135,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.1274129,
+            "height" : 0.044572607,
+            "left" : 0.59977317,
+            "top" : 0.621379
+          },
+          "confidence" : 71.018135
+        } ],
+        "parents" : [ {
+          "name" : "Publication"
+        } ]
+      }, {
+        "name" : "Publication",
+        "confidence" : 71.018135,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Person",
+        "confidence" : 66.59903,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.01985736,
+            "height" : 0.06414246,
+            "left" : 0.6669771,
+            "top" : 0.55489856
+          },
+          "confidence" : 66.59903
+        } ],
+        "parents" : [ ]
+      }, {
+        "name" : "Wood",
+        "confidence" : 60.937546,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Mobile Phone",
+        "confidence" : 59.628124,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.35372168,
+            "height" : 0.35942638,
+            "left" : 0.023724237,
+            "top" : 0.27650154
+          },
+          "confidence" : 59.628124
+        } ],
+        "parents" : [ {
+          "name" : "Electronics"
+        }, {
+          "name" : "Phone"
+        } ]
+      }, {
+        "name" : "Phone",
+        "confidence" : 59.628124,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Cup",
+        "confidence" : 59.390606,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.027975159,
+            "height" : 0.042031564,
+            "left" : 0.713708,
+            "top" : 0.5928545
+          },
+          "confidence" : 59.390606
+        } ],
+        "parents" : [ ]
+      }, {
+        "name" : "Laptop",
+        "confidence" : 56.195683,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Computer"
+        }, {
+          "name" : "Electronics"
+        }, {
+          "name" : "Pc"
+        } ]
+      }, {
+        "name" : "Pc",
+        "confidence" : 56.195683,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Computer"
+        }, {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Plywood",
+        "confidence" : 55.929703,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Wood"
+        } ]
+      }, {
+        "name" : "Tablet Computer",
+        "confidence" : 55.092728,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Computer"
+        }, {
+          "name" : "Electronics"
+        } ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "6.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Computer Hardware #Monitor #Hardware #Indoors #Room #Lamp #Cup #Art #Desk #Tablet Computer #Architecture #Building #Person #Phone #Plant #Living Room #Book #Plywood #Computer #Painting #TV #Wood #Publication #Interior Design #Laptop #Screen #Mobile Phone #Furniture #Table #Pc #Chair #Shelf #Electronics"
+  }
+}</TEXT></FIELD>
+</FIELDS>

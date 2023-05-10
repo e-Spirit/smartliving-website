@@ -1,0 +1,12 @@
+[self]
+uid=door_locks
+gid=dddbde5c-cfb9-422e-8f71-b2c51a3fed8b
+uidType=SITESTORE_FOLDER
+class=de.espirit.firstspirit.store.access.sitestore.PageRefFolderImpl
+
+[nextSibling]
+uid=indoor_cameras
+gid=5b85934e-d1bf-4512-820e-3542fe8719c8
+uidType=SITESTORE_FOLDER
+class=de.espirit.firstspirit.store.access.sitestore.PageRefFolderImpl
+

@@ -1,1 +1,1 @@
-"News: " + title
+if(!tt_headline.isEmpty(), tt_headline)

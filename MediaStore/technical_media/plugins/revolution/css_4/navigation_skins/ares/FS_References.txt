@@ -1,6 +1,0 @@
-[self]
-uid=ares
-gid=a1436e1e-a9ed-4b17-be59-5f2224c034d6
-uidType=MEDIASTORE_LEAF
-class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
-

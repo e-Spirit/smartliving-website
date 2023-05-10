@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <FIELDS>
-	<FIELD name='md_creation_date'><DATE>1637182120835</DATE></FIELD>
 	<FIELD name='fsai_facesPayload'><TEXT>{
   "version" : 2,
   "languageToResponse" : {
@@ -15,16 +14,28 @@
   "languageToResponse" : {
     "§" : {
       "labels" : [ {
+        "name" : "Computer",
+        "confidence" : 99.01819,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Electronics",
+        "confidence" : 99.01819,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
         "name" : "Tablet Computer",
-        "confidence" : 97.3959,
+        "confidence" : 99.01819,
         "instances" : [ {
           "boundingBox" : {
-            "width" : 0.46023786,
-            "height" : 0.52749485,
-            "left" : 0.2669745,
-            "top" : 0.2826159
+            "width" : 0.4520355,
+            "height" : 0.49336296,
+            "left" : 0.27515537,
+            "top" : 0.28974676
           },
-          "confidence" : 97.3959
+          "confidence" : 99.01819
         } ],
         "parents" : [ {
           "name" : "Computer"
@@ -32,56 +43,151 @@
           "name" : "Electronics"
         } ]
       }, {
-        "name" : "Electronics",
-        "confidence" : 97.3959,
+        "name" : "Chart",
+        "confidence" : 87.14461,
         "instances" : [ ],
         "parents" : [ ]
       }, {
-        "name" : "Computer",
-        "confidence" : 97.3959,
+        "name" : "Flow Chart",
+        "confidence" : 87.14461,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Chart"
+        } ]
+      }, {
+        "name" : "Computer Hardware",
+        "confidence" : 86.63728,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        }, {
+          "name" : "Hardware"
+        } ]
+      }, {
+        "name" : "Hardware",
+        "confidence" : 86.63728,
         "instances" : [ ],
         "parents" : [ {
           "name" : "Electronics"
         } ]
       }, {
-        "name" : "Person",
-        "confidence" : 95.75005,
+        "name" : "Monitor",
+        "confidence" : 86.63728,
         "instances" : [ {
           "boundingBox" : {
-            "width" : 0.21397695,
-            "height" : 0.41060513,
-            "left" : 0.21420664,
-            "top" : 0.57504064
+            "width" : 0.09489703,
+            "height" : 0.08996266,
+            "left" : 0.86964357,
+            "top" : 0.41635954
           },
-          "confidence" : 95.75005
+          "confidence" : 81.82627
+        } ],
+        "parents" : [ {
+          "name" : "Computer Hardware"
         }, {
+          "name" : "Electronics"
+        }, {
+          "name" : "Hardware"
+        }, {
+          "name" : "Screen"
+        } ]
+      }, {
+        "name" : "Screen",
+        "confidence" : 86.63728,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Adult",
+        "confidence" : 76.81268,
+        "instances" : [ {
           "boundingBox" : {
-            "width" : 0.64221525,
-            "height" : 0.5776986,
-            "left" : 0.24123141,
-            "top" : 0.420653
+            "width" : 0.66859996,
+            "height" : 0.5846598,
+            "left" : 0.21235478,
+            "top" : 0.41534021
           },
-          "confidence" : 94.45134
+          "confidence" : 76.81268
+        } ],
+        "parents" : [ {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Male",
+        "confidence" : 76.81268,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.66859996,
+            "height" : 0.5846598,
+            "left" : 0.21235478,
+            "top" : 0.41534021
+          },
+          "confidence" : 76.81268
+        } ],
+        "parents" : [ {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Man",
+        "confidence" : 76.81268,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.66859996,
+            "height" : 0.5846598,
+            "left" : 0.21235478,
+            "top" : 0.41534021
+          },
+          "confidence" : 76.81268
+        } ],
+        "parents" : [ {
+          "name" : "Adult"
+        }, {
+          "name" : "Male"
+        }, {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Person",
+        "confidence" : 76.81268,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.66859996,
+            "height" : 0.5846598,
+            "left" : 0.21235478,
+            "top" : 0.41534021
+          },
+          "confidence" : 76.81268
         } ],
         "parents" : [ ]
       }, {
-        "name" : "Human",
-        "confidence" : 95.75005,
+        "name" : "Body Part",
+        "confidence" : 55.532753,
         "instances" : [ ],
         "parents" : [ ]
+      }, {
+        "name" : "Finger",
+        "confidence" : 55.532753,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Body Part"
+        }, {
+          "name" : "Hand"
+        }, {
+          "name" : "Person"
+        } ]
       }, {
         "name" : "Hand",
-        "confidence" : 72.68429,
+        "confidence" : 55.532753,
         "instances" : [ ],
-        "parents" : [ ]
-      }, {
-        "name" : "White Board",
-        "confidence" : 61.44371,
-        "instances" : [ ],
-        "parents" : [ ]
+        "parents" : [ {
+          "name" : "Body Part"
+        }, {
+          "name" : "Person"
+        } ]
       } ],
       "orientationCorrection" : null,
-      "labelModelVersion" : "2.0"
+      "labelModelVersion" : "3.0"
     }
   }
 }</TEXT></FIELD>
@@ -801,7 +907,7 @@
   "languageToResponse" : {
     "§" : {
       "moderationLabels" : [ ],
-      "moderationModelVersion" : "5.0",
+      "moderationModelVersion" : "6.0",
       "humanLoopActivationOutput" : null
     }
   }
@@ -809,7 +915,7 @@
 	<FIELD name='fsai_tags'><TEXT>{
   "version" : 2,
   "languageToResponse" : {
-    "§" : "#Computer #White Board #Tablet Computer #Person #Electronics #Human #Hand"
+    "§" : "#Computer Hardware #Computer #Chart #Male #Finger #Monitor #Hardware #Man #Screen #Adult #Body Part #Flow Chart #Tablet Computer #Person #Electronics #Hand"
   }
 }</TEXT></FIELD>
 </FIELDS>

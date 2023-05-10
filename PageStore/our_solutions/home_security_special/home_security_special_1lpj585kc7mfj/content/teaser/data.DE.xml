@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_headline'><TEXT>Tipps für ein sicheres Wohnen</TEXT></FIELD>
+	<FIELD name='st_text'><DOM><p>Sicherheit zu Hause ist ein wichtiges Thema, das viele Menschen beschäftigt. Egal, ob Sie in einer Wohnung oder einem Haus leben, es gibt einige einfache Maßnahmen, die Sie ergreifen können, um sich und Ihre Familie zu schützen.</p><p>Eine der wichtigsten Maßnahmen ist das Abschließen von Türen und Fenstern. Stellen Sie sicher, dass alle Türen und Fenster immer abgeschlossen sind, wenn Sie das Haus verlassen oder wenn niemand zu Hause ist. Auch wenn Sie nur für kurze Zeit weg sind, können Einbrecher in dieser Zeit das Haus betreten und wertvolle Gegenstände stehlen. Eine weitere Möglichkeit, die Sicherheit zu erhöhen, ist das Installieren von Sicherheitslampen oder -kameras. Diese Geräte können Eindringlinge abschrecken und Ihnen dabei helfen, mögliche Einbruchversuche zu bemerken.</p></DOM></FIELD>
+	<FIELD name='st_image_alt_text'><TEXT>Smart-Kamera, eine Person im Hintergrund hält ein Smartphone</TEXT></FIELD>
+</FIELDS>

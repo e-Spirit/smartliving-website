@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEMPLATE comment="" filename="news_overview" id="5464673559059356787" previewPageRefUid="news_overview" templateid="3621707290484419968" type="section">
+	<EXTENSION file="html" link="html" templateSet="9062318847741885912"/>
+	<LANG displayname="News Overview" language="EN"/>
+	<LANG displayname="News Übersicht" language="DE"/>
+</TEMPLATE>

@@ -1,0 +1,58 @@
+$--
+	Renders a button to create new sections. Only works in the ContentCreator.
+	
+	Parameters:
+		prm_body			String			required
+		prm_buttonName		String			required
+		
+	Example:
+		$CMS_RENDER(template:"add_new_section", prm_body:"content", prm_buttonName:"pt_createSection")$
+		
+--$
+$CMS_IF(#global.is("WEBEDIT"))$
+	<section style="custom-cc-py-4">
+		<div
+			class="
+				custom-cc-container
+				custom-cc-relative
+				custom-cc-h-32
+				custom-cc-mx-auto
+				custom-cc-border
+				custom-cc-border-dashed
+				custom-cc-border-fs-button-bg
+				custom-cc-cursor-pointer
+			"
+		>
+			<div class="custom-cc-absolute 
+						custom-cc-top-0 
+						custom-cc-left-0 
+						custom-cc-w-full 
+						custom-cc-h-full 
+						custom-cc-pt-20 
+						custom-cc-text-center"
+				$CMS_VALUE(fsbutton(editorName:prm_buttonName, parameter: {"page": #global.page.id, "body": prm_body}))$>				
+			</div>
+			<div class="custom-cc-w-full 
+						custom-cc-h-full 
+						custom-cc-flex 
+						custom-cc-flex-col 
+						custom-cc-justify-center 
+						custom-cc-items-center">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					class="custom-cc-p-2
+							custom-cc-w-12 
+							custom-cc-h-12
+							custom-cc-stroke-white
+							custom-cc-stroke-2
+							custom-cc-bg-fs-button-bg
+							custom-cc-rounded-full
+							">
+					<path d="M12 4.5v15m7.5-7.5h-15"/>
+				</svg>
+			</div>
+		</div>
+	</section>
+$CMS_END_IF$

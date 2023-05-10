@@ -1,0 +1,7 @@
+[self]
+uid=/render_format_templates/wishlist
+gid=f7129a80-2ade-40a0-a030-8cd6e168d2a0
+store=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateFolderImpl
+root=de.espirit.firstspirit.store.access.templatestore.FormatTemplatesImpl
+

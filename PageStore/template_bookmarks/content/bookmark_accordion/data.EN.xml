@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_subline'><TEXT>Here you can enter a subline if necessary.</TEXT></FIELD>
+	<FIELD name='st_headline'><TEXT>Content module for an accordion</TEXT></FIELD>
+	<FIELD name='st_accordion'><CATALOG><CARD id="2c78bd36-84a2-42c8-b6af-797320cf0ca5" template="accordion_item" type="TEMPLATESTORE"><TEMPLATECONTENT><CMS_VALUE name="st_title"><LANG id="§" set="1"><TEXT>Title for an accordion entry</TEXT></LANG></CMS_VALUE><CMS_VALUE name="st_content"><LANG id="§" set="1"><DOM><p>Content for the entry</p></DOM></LANG></CMS_VALUE></TEMPLATECONTENT></CARD></CATALOG></FIELD>
+	<FIELD name='st_info'><DOM><p>Here you can store an info line.</p></DOM></FIELD>
+</FIELDS>

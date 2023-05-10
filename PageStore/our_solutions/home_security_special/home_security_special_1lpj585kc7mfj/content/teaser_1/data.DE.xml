@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_headline'><TEXT>Geben Sie keine Hinweise auf Abwesenheit</TEXT></FIELD>
+	<FIELD name='st_text'><DOM><p>Eine weitere wichtige Maßnahme ist das Vermeiden von offensichtlichen Hinweisen auf Ihre Abwesenheit. Lassen Sie keine Wertsachen sichtbar herumliegen und stellen Sie sicher, dass die Post nicht anhäuft, wenn Sie längere Zeit weg sind. Es kann auch hilfreich sein, Vorhänge und Rollläden zu schließen, wenn Sie nicht zu Hause sind, um Einbrechern keinen Einblick in Ihr Haus zu geben.</p></DOM></FIELD>
+	<FIELD name='st_image_alt_text'><TEXT>Frau steht vor einem Fenster und steuert die Jalousie mit ihrem Smartphone</TEXT></FIELD>
+</FIELDS>

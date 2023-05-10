@@ -1,6 +1,6 @@
 [self]
 uid=Schemes
-gid=b8b21a22-0770-400a-9219-4a3782ebde15
+gid=3b4bbadd-2629-4caa-9adc-c3c8cdd1ef3e
 store=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.SchemesImpl
 

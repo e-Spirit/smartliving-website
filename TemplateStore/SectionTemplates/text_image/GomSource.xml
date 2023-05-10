@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_GROUP tabs="top">
+
+    <CMS_GROUP>
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Content"/>
+        <LANGINFO lang="DE" label="Inhalt"/>
+      </LANGINFOS>
+
+      <CMS_INPUT_TEXT name="st_headline" hFill="yes" singleLine="no" useLanguages="yes">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Headline"/>
+          <LANGINFO lang="DE" label="Überschrift"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+      <CMS_INPUT_DOM name="st_subheadline" hFill="yes" rows="2" useLanguages="yes">
+        <FORMATS>
+          <TEMPLATE name="subline"/>
+        </FORMATS>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Subheadline"/>
+          <LANGINFO lang="DE" label="Unterüberschrift"/>
+        </LANGINFOS>
+      </CMS_INPUT_DOM>
+
+      <CMS_INPUT_DOM
+        name="st_text"
+        hFill="yes"
+        list="yes"
+        listConfig="
+          style:List Type[1:Disc|2:Decimal|7:None],
+          listStylePostion:List Position[outside:Outside|inside:Inside|indent:Indent]
+          "
+        listDefaultConfig="style=1,listStylePostion=inside"
+        useLanguages="yes">
+        <FORMATS>
+          <TEMPLATE name="p"/>
+          <TEMPLATE name="teaser"/>
+          <TEMPLATE name="subheading"/>
+        </FORMATS>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Text"/>
+        </LANGINFOS>
+        <LINKEDITORS>
+          <LINKEDITOR name="dataset_link"/>
+          <LINKEDITOR name="internal_link"/>
+          <LINKEDITOR name="external_link"/>
+          <LINKEDITOR name="media_link"/>
+        </LINKEDITORS>
+      </CMS_INPUT_DOM>
+
+      <CMS_INPUT_RADIOBUTTON name="st_columns" gridWidth="3" hFill="yes" useLanguages="no">
+        <ENTRIES>
+          <ENTRY value="1">
+            <LANGINFOS>
+              <LANGINFO lang="*" label="One Column"/>
+              <LANGINFO lang="DE" label="Einspaltig"/>
+            </LANGINFOS>
+          </ENTRY>
+          <ENTRY value="2">
+            <LANGINFOS>
+              <LANGINFO lang="*" label="Two Columns"/>
+              <LANGINFO lang="DE" label="Zweispaltig"/>
+            </LANGINFOS>
+          </ENTRY>
+        </ENTRIES>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Text layout"/>
+          <LANGINFO lang="DE" label="Text-Layout"/>
+        </LANGINFOS>
+      </CMS_INPUT_RADIOBUTTON>
+
+      <CMS_LABEL name="st_columnsInfo" bold="yes" size="12">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Text layout can only be configured for sections without image."/>
+          <LANGINFO lang="DE" label="Das Textlayout kann nur für Absätze ohne Bild konfiguriert werden."/>
+        </LANGINFOS>
+      </CMS_LABEL>
+
+    </CMS_GROUP>
+
+    <CMS_GROUP>
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Image"/>
+        <LANGINFO lang="DE" label="Bild"/>
+      </LANGINFOS>
+
+      <FS_REFERENCE name="st_image" hFill="yes" upload="yes" useLanguages="no">
+        <FILTER>
+          <ALLOW type="picture"/>
+        </FILTER>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Image"/>
+          <LANGINFO lang="DE" label="Bild"/>
+        </LANGINFOS>
+        <PROJECTS>
+          <LOCAL name="." uploadFolder="images">
+            <SOURCES>
+              <FOLDER name="images" store="MEDIASTORE"/>
+            </SOURCES>
+          </LOCAL>
+        </PROJECTS>
+      </FS_REFERENCE>
+
+      <CMS_INPUT_TEXT name="st_image_alt_text" hFill="yes" singleLine="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Alternative Text"/>
+          <LANGINFO lang="DE" label="Alternativ-Text"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+      <CMS_INPUT_RADIOBUTTON name="st_layout" gridWidth="3" hFill="yes" useLanguages="no">
+        <ENTRIES>
+          <ENTRY value="text-image">
+            <LANGINFOS>
+              <LANGINFO lang="*" label="Text | Image"/>
+              <LANGINFO lang="DE" label="Text | Bild"/>
+            </LANGINFOS>
+          </ENTRY>
+          <ENTRY value="image-text">
+            <LANGINFOS>
+              <LANGINFO lang="*" label="Image | Text"/>
+              <LANGINFO lang="DE" label="Bild | Text"/>
+            </LANGINFOS>
+          </ENTRY>
+        </ENTRIES>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Layout"/>
+        </LANGINFOS>
+      </CMS_INPUT_RADIOBUTTON>
+
+    </CMS_GROUP>
+
+  </CMS_GROUP>
+
+  <CMS_GROUP name="sectionLifespan">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Validity period"/>
+    </LANGINFOS>
+
+    <CMS_INPUT_DATE name="st_sectionLifespanFrom" hFill="yes">
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Gültigkeitsbeginn"/>
+        <LANGINFO lang="EN" label="Validation start date"/>
+      </LANGINFOS>
+    </CMS_INPUT_DATE>
+
+    <CMS_INPUT_DATE name="st_sectionLifespanTo" hFill="yes">
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Gültigkeitsende"/>
+        <LANGINFO lang="EN" label="Validation end date"/>
+      </LANGINFOS>
+    </CMS_INPUT_DATE>
+
+  </CMS_GROUP>
+
+</CMS_MODULE>

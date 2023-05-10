@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SCRIPT alwaysActive="1" comment="available variables: &#10;- 'context' : the current script context &#10;- 'e'  : the store element of the current context &#10;available methods: &#10;- getService() : opens the gui to choose a service which could be referenced by variable 'service' &#10;- editor(): opens an editor to edit whole script code blocks&#10;- cls() : clears the console" id="9115449658876569509" name="beanshellconsole" type="2">
+<SCRIPT alwaysActive="1" comment="available variables: &#10;- 'context' : the current script context &#10;- 'e'  : the store element of the current context &#10;available methods: &#10;- getService() : opens the gui to choose a service which could be referenced by variable 'service' &#10;- editor(): opens an editor to edit whole script code blocks&#10;- cls() : clears the console" id="-7944826276968959506" name="beanshellconsole" type="2">
 	<LANG displayname="BeanShell-Console" language="EN"/>
 	<LANG displayname="BeanShellConsole" language="DE"/>
 </SCRIPT>

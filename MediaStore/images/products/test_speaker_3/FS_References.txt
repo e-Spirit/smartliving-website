@@ -1,0 +1,12 @@
+[self]
+uid=test_speaker_3
+gid=e8e1b392-a7b4-440c-ba9f-b09211693c17
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+
+[requiredProjectId]
+uid=metadata
+gid=b2c7cf16-33d2-4cf4-b16d-fa4fb256cd68
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
+

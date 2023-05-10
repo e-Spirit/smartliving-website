@@ -1,0 +1,6 @@
+[self]
+uid=pill_style
+gid=cc704168-f7f0-41d4-912e-698375539dac
+uidType=TEMPLATESTORE_FORMATTEMPLATE
+class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
+

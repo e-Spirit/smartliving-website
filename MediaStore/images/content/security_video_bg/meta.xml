@@ -1,11 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <FIELDS>
-	<FIELD name='md_alt_text'><TEXT>New Alt Text</TEXT></FIELD>
-	<FIELD name='md_region'><SEL><VALUE>region_eu</VALUE></SEL></FIELD>
-	<FIELD name='md_country'><SEL><VALUE>country_de</VALUE></SEL></FIELD>
-	<FIELD name='md_language'><SEL><VALUE>DE</VALUE></SEL></FIELD>
-	<FIELD name='md_creation_date'><DATE>1627981234501</DATE></FIELD>
-	<FIELD name='md_licensing'><SEL><VALUE>license_cc</VALUE></SEL></FIELD>
 	<FIELD name='fsai_facesPayload'><TEXT>{
   "version" : 2,
   "languageToResponse" : {
@@ -20,18 +14,20 @@
   "languageToResponse" : {
     "§" : {
       "labels" : [ {
-        "name" : "Face",
-        "confidence" : 65.49711,
+        "name" : "Person",
+        "confidence" : 99.99324,
         "instances" : [ ],
         "parents" : [ ]
       }, {
-        "name" : "Halo",
-        "confidence" : 55.853863,
+        "name" : "Security",
+        "confidence" : 99.99324,
         "instances" : [ ],
-        "parents" : [ ]
+        "parents" : [ {
+          "name" : "Person"
+        } ]
       } ],
       "orientationCorrection" : null,
-      "labelModelVersion" : "2.0"
+      "labelModelVersion" : "3.0"
     }
   }
 }</TEXT></FIELD>
@@ -49,7 +45,7 @@
   "languageToResponse" : {
     "§" : {
       "moderationLabels" : [ ],
-      "moderationModelVersion" : "5.0",
+      "moderationModelVersion" : "6.0",
       "humanLoopActivationOutput" : null
     }
   }
@@ -57,7 +53,7 @@
 	<FIELD name='fsai_tags'><TEXT>{
   "version" : 2,
   "languageToResponse" : {
-    "§" : "#Halo #Face"
+    "§" : "#Person #Security"
   }
 }</TEXT></FIELD>
 </FIELDS>

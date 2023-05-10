@@ -1,0 +1,30 @@
+<section class="pt-24 overflow-hidden" $CMS_VALUE(editorId())$>
+	<div class="container mx-auto px-4">		
+		$CMS_IF(!ps_logo.isEmpty())$
+			$CMS_SET(set_logo_alt_text)$$CMS_RENDER(template:"render_image_alt_text", prm_image: ps_logo, prm_text: ps_logo_alt_text)$$CMS_END_SET$			
+			<a class="flex-none" href="$CMS_REF(ps_startpage, abs: 1)$">
+				<img class="mx-auto mb-16 h-10"
+					src="$CMS_REF(ps_logo, abs: 1, resolution: "logo")$"
+					alt="$CMS_VALUE(set_logo_alt_text)$">
+			</a>		
+		$CMS_END_IF$
+		$CMS_FOR(for_link, gc_links)$
+			$CMS_IF(#for.isFirst)$
+				<ul class="flex flex-wrap justify-center -m-5 pb-8">			
+			$CMS_END_IF$
+					<li class="p-5">
+						$CMS_RENDER(template:"render_link", 
+										prm_linkFormData: for_link.item, 
+										prm_linkTemplate: for_link.template, 
+										prm_style:"font-heading text-base text-gray-900 hover:text-gray-700")$
+					</li>
+			$CMS_IF(#for.isLast)$
+				</ul>			
+			$CMS_END_IF$
+		$CMS_END_FOR$
+		<div class="border-b border-gray-100"></div>
+		<div class="text-center">
+			$CMS_VALUE(gc_copyright, default:"")$
+		</div>
+	</div>
+</section>

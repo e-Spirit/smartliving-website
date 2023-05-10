@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="-1904956056433123623" name="set_wishlist_cookie">
+	<LANG displayname="Set wishlist cookie" language="EN"/>
+	<LANG displayname="Wunschlisten-Cookie setzen" language="DE"/>
+	<style tag="set_wishlist_cookie" view="marked">
+		<attr name="align" value="left"/>
+		<render/>
+	</style>
+</FORMATTEMPLATE>

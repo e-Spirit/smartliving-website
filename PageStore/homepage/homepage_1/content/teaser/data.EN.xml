@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_headline'><TEXT>SmartLiving</TEXT></FIELD>
+	<FIELD name='st_text'><DOM><p>Our innovative solutions give you security for the whole house at the most competitive prices on the market!<br/><br/>Begin now with our starter package and expand on it as necessary. Our products and solutions can grow with your changing needs.<br/><br/>Prepare for the unexpected with SmartLiving's leading products and our highly trained experts.</p></DOM></FIELD>
+	<FIELD name='st_image_alt_text'><TEXT>Two hands holding a tablet that controls Smart Home features</TEXT></FIELD>
+	<FIELD name='st_cta'><LINK><CMS_LINK linktemplate="internal_link" type="genericLink"><TEMPLATECONTENT><CMS_VALUE name="lt_link"><LANG id="§" set="1"><UID>company_1</UID><UIDTYPE>SITESTORE_LEAF</UIDTYPE><REMOTE/></LANG></CMS_VALUE><CMS_VALUE name="lt_text"><LANG id="§" set="1"><TEXT>Learn more about us</TEXT></LANG></CMS_VALUE></TEMPLATECONTENT></CMS_LINK></LINK></FIELD>
+</FIELDS>

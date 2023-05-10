@@ -1,0 +1,1 @@
+medium("icon_template_latest_news")

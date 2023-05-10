@@ -1,6 +1,0 @@
-[self]
-uid=jquery_owl_filter
-gid=44400606-11f1-45b8-8ebc-bc0e7b54ed7b
-uidType=MEDIASTORE_LEAF
-class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
-

@@ -1,6 +1,0 @@
-[self]
-uid=layers
-gid=1c8f30ee-6684-4b16-8725-93b9145837f3
-uidType=MEDIASTORE_LEAF
-class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
-

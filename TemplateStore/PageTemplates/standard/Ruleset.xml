@@ -1,30 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RULES>
-	<RULE>
-		<WITH>
-			<AND>
-				<PROPERTY name="EMPTY" source="pt_picture"/>
-				<NOT>
-					<PROPERTY name="EMPTY" source="pt_text"/>
-				</NOT>
-			</AND>
-		</WITH>
-		<DO>
-			<NOT>
-				<VALIDATION scope="RELEASE">
-					<PROPERTY name="VALID" source="pt_picture"/>
-					<MESSAGE lang="*" text="If no image is selected, the header text is not displayed either."/>
-					<MESSAGE lang="DE" text="Wenn kein Bild ausgewählt ist, wird die Überschrift auch nicht angezeigt."/>
-				</VALIDATION>
-			</NOT>
-		</DO>
-	</RULE>
-	<RULE>
-		<WITH>
-			<PROPERTY name="WEB" source="#global"/>
-		</WITH>
-		<DO>
-			<PROPERTY name="VISIBLE" source="#form.pt_create_section"/>
-		</DO>
-	</RULE>
 </RULES>

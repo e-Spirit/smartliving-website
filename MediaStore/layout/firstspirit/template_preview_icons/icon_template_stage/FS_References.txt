@@ -1,0 +1,12 @@
+[self]
+uid=icon_template_stage
+gid=207a9e2c-ddfd-4ca2-ab4b-f76285d5fdae
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+
+[requiredProjectId]
+uid=metadata
+gid=b2c7cf16-33d2-4cf4-b16d-fa4fb256cd68
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
+

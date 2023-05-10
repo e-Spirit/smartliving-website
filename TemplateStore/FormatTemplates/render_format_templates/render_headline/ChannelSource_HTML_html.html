@@ -1,0 +1,32 @@
+$--
+	This render template is to ensure that the first heading of the page is always output as H1.
+	
+	Parameters:
+		prm_headline				InputComponent - (required)			Input component of the headline to be generated
+		prm_defaultTag				String - (required)					Default html headline tag.
+		prm_cssClasses				String - (optional)					Css classes of this headline.
+		prm_inputComponentName		String - (optional)					Name of the input component of this heading, used for the editorId.
+	
+	Example:
+	$CMS_RENDER(template:"render_headline", prm_headline: pt_headline, 
+										prm_defaultTag: "h2", 
+										prm_cssClasses: "mb-16 text-4xl md:text-5xl xl:text-6xl font-bold font-heading tracking-px-n leading-none text-gray-900"
+										prm_inputComponentName: "pt_headline")$
+	
+--$
+$CMS_IF(!isSet(prm_headline) || !isSet(prm_defaultTag))$
+	$CMS_VALUE(#global.logError("Missing required parameter [" + prm_headline + "," + prm_defaultTag + "]"))$
+$CMS_ELSE$
+	$CMS_IF(!prm_headline.isEmpty())$
+		$CMS_SET(set_headlineTag, prm_defaultTag)$
+		$CMS_IF(set_h1Rendered.isEmpty())$
+			$CMS_SET(set_headlineTag, "h1")$
+			$CMS_SET(#global.context("PAGE")["set_h1Rendered"], true)$
+		$CMS_END_IF$		
+		<$CMS_VALUE(set_headlineTag)$ 
+			$CMS_IF(!prm_cssClasses.isEmpty())$class="$CMS_VALUE(prm_cssClasses)$"$CMS_END_IF$ 
+			$CMS_IF(!prm_inputComponentName.isEmpty())$$CMS_VALUE(editorId(editorName: prm_inputComponentName))$$CMS_END_IF$>
+			$CMS_VALUE(prm_headline.convert2())$
+		</$CMS_VALUE(set_headlineTag)$>
+	$CMS_END_IF$	
+$CMS_END_IF$						

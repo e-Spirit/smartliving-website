@@ -1,0 +1,6 @@
+[self]
+uid=door_locks
+gid=2d5b10dc-95e7-492d-9fe2-6b4c54b00d2c
+uidType=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.PageFolderImpl
+

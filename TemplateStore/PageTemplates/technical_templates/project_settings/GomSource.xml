@@ -6,7 +6,6 @@
     <CMS_GROUP>
       <LANGINFOS>
         <LANGINFO lang="*" label="General"/>
-        <LANGINFO lang="DE" label="Allgemein"/>
       </LANGINFOS>
 
       <FS_REFERENCE name="ps_logo" hFill="yes" useLanguages="no">
@@ -14,218 +13,205 @@
           <ALLOW type="picture"/>
         </FILTER>
         <LANGINFOS>
-          <LANGINFO lang="*" label="Logo" description="Please choose a logo"/>
-          <LANGINFO lang="DE" label="Logo" description="Bitte wählen Sie ein Logo aus"/>
+          <LANGINFO lang="*" label="Logo"/>
         </LANGINFOS>
         <PROJECTS>
           <LOCAL name=".">
             <SOURCES>
-              <FOLDER name="logo" store="mediastore"/>
+              <FOLDER name="images" store="MEDIASTORE"/>
             </SOURCES>
           </LOCAL>
         </PROJECTS>
       </FS_REFERENCE>
 
-      <FS_REFERENCE name="ps_footer" hFill="yes" useLanguages="no">
-        <FILTER>
-          <ALLOW type="gcapage"/>
-        </FILTER>
+      <CMS_INPUT_TEXT name="ps_logo_alt_text" hFill="yes" singleLine="no">
         <LANGINFOS>
-          <LANGINFO lang="*" label="Footer"/>
-        </LANGINFOS>
-        <PROJECTS>
-          <LOCAL name=".">
-            <SOURCES>
-              <FOLDER name="root" store="globalstore"/>
-            </SOURCES>
-          </LOCAL>
-        </PROJECTS>
-      </FS_REFERENCE>
-
-    </CMS_GROUP>
-
-    <CMS_GROUP>
-      <LANGINFOS>
-        <LANGINFO lang="*" label="Seitenreferenzen"/>
-        <LANGINFO lang="EN" label="Page references"/>
-      </LANGINFOS>
-
-      <FS_REFERENCE name="ps_homepage" useLanguages="no">
-        <FILTER>
-          <ALLOW type="pageref"/>
-        </FILTER>
-        <LANGINFOS>
-          <LANGINFO lang="*" label="Homepage"/>
-        </LANGINFOS>
-        <PROJECTS>
-          <LOCAL name=".">
-            <SOURCES>
-              <FOLDER name="root" store="sitestore"/>
-            </SOURCES>
-          </LOCAL>
-        </PROJECTS>
-      </FS_REFERENCE>
-
-      <FS_REFERENCE name="ps_product_detailpage" useLanguages="no">
-        <FILTER>
-          <ALLOW type="pageref"/>
-        </FILTER>
-        <LANGINFOS>
-          <LANGINFO lang="*" label="Product Detail page"/>
-          <LANGINFO lang="DE" label="Produktdetailseite"/>
-        </LANGINFOS>
-        <PROJECTS>
-          <LOCAL name=".">
-            <SOURCES>
-              <FOLDER name="root" store="sitestore"/>
-            </SOURCES>
-          </LOCAL>
-        </PROJECTS>
-      </FS_REFERENCE>
-
-      <FS_REFERENCE name="ps_special_dealer_page" useLanguages="no">
-        <FILTER>
-          <ALLOW type="pageref"/>
-        </FILTER>
-        <LANGINFOS>
-          <LANGINFO lang="*" label="Specialized Dealer Page"/>
-          <LANGINFO lang="DE" label="Spezialisierte Händler Seite"/>
-        </LANGINFOS>
-        <PROJECTS>
-          <LOCAL name=".">
-            <SOURCES>
-              <FOLDER name="root" store="sitestore"/>
-            </SOURCES>
-          </LOCAL>
-        </PROJECTS>
-      </FS_REFERENCE>
-
-      <FS_REFERENCE name="ps_dealer_contact_detailpage" useLanguages="no">
-        <FILTER>
-          <ALLOW type="pageref"/>
-        </FILTER>
-        <LANGINFOS>
-          <LANGINFO lang="*" label="Dealer Contact Detail page"/>
-          <LANGINFO lang="DE" label="Händler Kontakt Detail Seite"/>
-        </LANGINFOS>
-        <PROJECTS>
-          <LOCAL name=".">
-            <SOURCES>
-              <FOLDER name="root" store="sitestore"/>
-            </SOURCES>
-          </LOCAL>
-        </PROJECTS>
-      </FS_REFERENCE>
-
-      <FS_REFERENCE name="ps_news_detailpage" useLanguages="no">
-        <FILTER>
-          <ALLOW type="pageref"/>
-        </FILTER>
-        <LANGINFOS>
-          <LANGINFO lang="*" label="News Detail page"/>
-          <LANGINFO lang="DE" label="News Detail Seite"/>
-        </LANGINFOS>
-        <PROJECTS>
-          <LOCAL name=".">
-            <SOURCES>
-              <FOLDER name="root" store="sitestore"/>
-            </SOURCES>
-          </LOCAL>
-        </PROJECTS>
-      </FS_REFERENCE>
-
-      <FS_REFERENCE name="ps_news_overviewpage" useLanguages="no">
-        <FILTER>
-          <ALLOW type="pageref"/>
-        </FILTER>
-        <LANGINFOS>
-          <LANGINFO lang="*" label="News Overview page"/>
-          <LANGINFO lang="DE" label="News Overview Seite"/>
-        </LANGINFOS>
-        <PROJECTS>
-          <LOCAL name=".">
-            <SOURCES>
-              <FOLDER name="root" store="sitestore"/>
-            </SOURCES>
-          </LOCAL>
-        </PROJECTS>
-      </FS_REFERENCE>
-
-    </CMS_GROUP>
-
-    <CMS_GROUP>
-      <LANGINFOS>
-        <LANGINFO lang="*" label="Theming"/>
-      </LANGINFOS>
-
-      <CMS_INPUT_TEXT name="ps_button" hFill="yes" singleLine="no" useLanguages="no">
-        <LANGINFOS>
-          <LANGINFO lang="*" label="Button color"/>
-          <LANGINFO lang="DE" label="Button Farbe"/>
+          <LANGINFO lang="*" label="Alternative Text"/>
+          <LANGINFO lang="DE" label="Alternativ-Text"/>
         </LANGINFOS>
       </CMS_INPUT_TEXT>
 
-      <CMS_INPUT_TEXT name="ps_background" hFill="yes" singleLine="no" useLanguages="no">
+      <FS_REFERENCE name="ps_fallback_image_stage" hFill="yes" useLanguages="no">
+        <FILTER>
+          <ALLOW type="picture"/>
+        </FILTER>
         <LANGINFOS>
-          <LANGINFO lang="*" label="Background-highlighting color"/>
-          <LANGINFO lang="DE" label="Hintergrund-highlighting Farbe"/>
+          <LANGINFO lang="*" label="Fallback image for the stage (Standard page)"/>
+        </LANGINFOS>
+        <PROJECTS>
+          <LOCAL name=".">
+            <SOURCES>
+              <FOLDER name="images" store="MEDIASTORE"/>
+            </SOURCES>
+          </LOCAL>
+        </PROJECTS>
+      </FS_REFERENCE>
+
+      <CMS_INPUT_TEXT name="ps_fallback_image_stage_alt_text" hFill="yes" singleLine="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Fallback Image alternative Text"/>
+          <LANGINFO lang="DE" label="Fallback Image Alternativ-Text"/>
         </LANGINFOS>
       </CMS_INPUT_TEXT>
 
-      <CMS_INPUT_TEXT name="ps_footercolor" hFill="yes" singleLine="no" useLanguages="no">
+      <CMS_INPUT_TOGGLE name="ps_searchEnabled">
         <LANGINFOS>
-          <LANGINFO lang="*" label="Footer color"/>
-          <LANGINFO lang="DE" label="Footer Farbe"/>
+          <LANGINFO lang="*" label="Search"/>
         </LANGINFOS>
-      </CMS_INPUT_TEXT>
-
-      <CMS_INPUT_TEXT name="ps_text_highlighting" hFill="yes" singleLine="no" useLanguages="no">
-        <LANGINFOS>
-          <LANGINFO lang="*" label="Text-Highlighting color"/>
-          <LANGINFO lang="DE" label="Text-Highlighing Farbe"/>
-        </LANGINFOS>
-      </CMS_INPUT_TEXT>
-
-      <CMS_INPUT_TEXT name="ps_banneropacity" hFill="yes" singleLine="no" useLanguages="no">
-        <LANGINFOS>
-          <LANGINFO lang="*" label="banner opacity"/>
-          <LANGINFO lang="*" label="Banner Deckkraft"/>
-        </LANGINFOS>
-      </CMS_INPUT_TEXT>
-
-      <CMS_INPUT_TEXT name="ps_contentopacity" hFill="yes" singleLine="no" useLanguages="no">
-        <LANGINFOS>
-          <LANGINFO lang="*" label="content opacity"/>
-          <LANGINFO lang="*" label="Deckkaft des Inhaltes"/>
-        </LANGINFOS>
-      </CMS_INPUT_TEXT>
-
-      <CMS_INPUT_TEXT name="ps_global_slider_delay" hFill="yes" singleLine="no" useLanguages="no">
-        <LANGINFOS>
-          <LANGINFO lang="*" label="global slider delay (in MS)"/>
-          <LANGINFO lang="*" label="Globale Anzeigezeit für Slides (in MS)"/>
-        </LANGINFOS>
-      </CMS_INPUT_TEXT>
-
-      <CMS_INPUT_TOGGLE name="ps_global_slider_autoslide">
-        <LANGINFOS>
-          <LANGINFO lang="*" label="Activate global auto slide on slider elements"/>
-          <LANGINFO lang="DE" label="Aktiviere globales Autoslide auf Slider Elementen"/>
-        </LANGINFOS>
+        <OFF>
+          <LANGINFO lang="*" label="Disabled"/>
+        </OFF>
+        <ON>
+          <LANGINFO lang="*" label="Enabled"/>
+        </ON>
       </CMS_INPUT_TOGGLE>
 
     </CMS_GROUP>
 
     <CMS_GROUP>
       <LANGINFOS>
-        <LANGINFO lang="*" label="Google Maps"/>
+        <LANGINFO lang="*" label="Project pages"/>
       </LANGINFOS>
 
-      <CMS_INPUT_TEXT name="CONFIG_GOOGLE_MAPS_API_KEY" hFill="yes" singleLine="no" useLanguages="no">
+      <FS_REFERENCE name="ps_startpage" hFill="yes" useLanguages="no">
+        <FILTER>
+          <ALLOW type="pageref"/>
+        </FILTER>
         <LANGINFOS>
-          <LANGINFO lang="*" label="GOOGLE MAPS API KEY"/>
+          <LANGINFO lang="*" label="Startpage"/>
+        </LANGINFOS>
+        <PROJECTS>
+          <LOCAL name=".">
+            <SOURCES>
+              <FOLDER name="root" store="sitestore"/>
+            </SOURCES>
+          </LOCAL>
+        </PROJECTS>
+      </FS_REFERENCE>
+
+      <FS_REFERENCE name="ps_news_detail_page" hFill="yes" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="News Detail Page"/>
+        </LANGINFOS>
+        <PROJECTS>
+          <LOCAL name=".">
+            <SOURCES>
+              <FOLDER name="root" store="sitestore"/>
+            </SOURCES>
+          </LOCAL>
+        </PROJECTS>
+      </FS_REFERENCE>
+
+      <FS_REFERENCE name="ps_product_detail_page" hFill="yes" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Product Detail Page"/>
+        </LANGINFOS>
+        <PROJECTS>
+          <LOCAL name=".">
+            <SOURCES>
+              <FOLDER name="root" store="sitestore"/>
+            </SOURCES>
+          </LOCAL>
+        </PROJECTS>
+      </FS_REFERENCE>
+
+    </CMS_GROUP>
+
+    <CMS_GROUP>
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Favorites"/>
+      </LANGINFOS>
+
+      <CMS_INPUT_TOGGLE name="ps_toggle_wishlist">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Enable Favorites"/>
+        </LANGINFOS>
+      </CMS_INPUT_TOGGLE>
+
+      <CMS_INPUT_LINK name="ps_favorites_cta_link">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="CTA Link"/>
+        </LANGINFOS>
+        <LINKEDITORS>
+          <LINKEDITOR name="internal_link"/>
+        </LINKEDITORS>
+      </CMS_INPUT_LINK>
+
+    </CMS_GROUP>
+
+    <CMS_GROUP>
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Technical"/>
+      </LANGINFOS>
+
+      <CMS_INPUT_TEXT name="ps_google_maps_api_key" hFill="yes" singleLine="no" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Google Maps API Key"/>
         </LANGINFOS>
       </CMS_INPUT_TEXT>
+
+      <CMS_INPUT_RADIOBUTTON name="ps_CSSMode" gridWidth="1" hFill="yes" useLanguages="no">
+        <ENTRIES>
+          <ENTRY value="file">
+            <LANGINFOS>
+              <LANGINFO lang="*" label="Use CSS file (Performance)"/>
+            </LANGINFOS>
+          </ENTRY>
+          <ENTRY value="cdn">
+            <LANGINFOS>
+              <LANGINFO lang="*" label="Use the Play CDN (Development and try out)"/>
+            </LANGINFOS>
+          </ENTRY>
+        </ENTRIES>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="CSS Mode"/>
+        </LANGINFOS>
+      </CMS_INPUT_RADIOBUTTON>
+
+      <CMS_GROUP name="group_design">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Design"/>
+        </LANGINFOS>
+
+        <CMS_GROUP>
+          <LANGINFOS>
+            <LANGINFO lang="*" label="Tailwind Colors"/>
+          </LANGINFOS>
+
+          <CMS_INPUT_TEXT name="ps_primaryColor" hFill="yes" singleLine="no" useLanguages="no">
+            <LANGINFOS>
+              <LANGINFO lang="*" label="Primary Color"/>
+            </LANGINFOS>
+          </CMS_INPUT_TEXT>
+
+          <CMS_INPUT_TEXT name="ps_secondaryColor" hFill="yes" singleLine="no" useLanguages="no">
+            <LANGINFOS>
+              <LANGINFO lang="*" label="Secondary Color"/>
+            </LANGINFOS>
+          </CMS_INPUT_TEXT>
+
+          <CMS_GROUP>
+            <LANGINFOS>
+              <LANGINFO lang="*" label="Links"/>
+            </LANGINFOS>
+
+            <CMS_INPUT_TEXT name="ps_linkColor" hFill="yes" singleLine="no" useLanguages="no">
+              <LANGINFOS>
+                <LANGINFO lang="*" label="Link Color"/>
+              </LANGINFOS>
+            </CMS_INPUT_TEXT>
+
+            <CMS_INPUT_TEXT name="ps_linkHoverColor" hFill="yes" singleLine="no" useLanguages="no">
+              <LANGINFOS>
+                <LANGINFO lang="*" label="Link Hover Color"/>
+              </LANGINFOS>
+            </CMS_INPUT_TEXT>
+
+          </CMS_GROUP>
+
+        </CMS_GROUP>
+
+      </CMS_GROUP>
 
     </CMS_GROUP>
 

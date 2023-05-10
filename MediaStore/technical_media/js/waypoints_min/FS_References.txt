@@ -1,6 +1,0 @@
-[self]
-uid=waypoints_min
-gid=c5060b69-7c08-4bf8-9458-8c472ee79759
-uidType=MEDIASTORE_LEAF
-class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
-

@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_headline'><TEXT>Neuigkeiten</TEXT></FIELD>
+	<FIELD name='st_subheadline'><DOM/></FIELD>
+</FIELDS>

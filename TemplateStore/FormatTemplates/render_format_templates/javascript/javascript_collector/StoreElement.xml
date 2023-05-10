@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="4451211640730172127" name="javascript_collector">
+	<LANG displayname="JavaScript collector" language="DE"/>
+	<LANG displayname="JavaScript collector" language="EN"/>
+	<style tag="javascript_collector" view="marked">
+		<attr name="align" value="left"/>
+		<render/>
+	</style>
+</FORMATTEMPLATE>

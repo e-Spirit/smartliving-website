@@ -1,6 +1,0 @@
-[self]
-uid=fontawesome_webfont_12
-gid=78686e5a-c6e7-4cbb-9b94-a74c31eb8c93
-uidType=MEDIASTORE_LEAF
-class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
-

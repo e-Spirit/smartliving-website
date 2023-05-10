@@ -1,6 +1,0 @@
-[self]
-uid=fonts_5
-gid=a5a03c8c-d55b-4d3f-846b-b475453547c8
-uidType=MEDIASTORE_FOLDER
-class=de.espirit.firstspirit.store.access.mediastore.MediaFolderImpl
-

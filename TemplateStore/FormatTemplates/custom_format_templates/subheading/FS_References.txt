@@ -1,0 +1,6 @@
+[self]
+uid=subheading
+gid=279a8aba-3615-410b-9c15-9c1afff73a65
+uidType=TEMPLATESTORE_FORMATTEMPLATE
+class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
+

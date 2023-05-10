@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_headline'><TEXT>Unsere Dienstleistungen</TEXT></FIELD>
+	<FIELD name='st_subheadline'><DOM><subline>Intelligente Unterstützung für unsere Kunden</subline></DOM></FIELD>
+	<FIELD name='st_text'><DOM><p>Ihre Erfahrung als Kunde hat für uns oberste Priorität. Um dieses Ziel zu erreichen, bieten wir Ihnen eine Vielzahl von Dienstleistungen an. Hier ist eine Auswahl:</p><p><ul listStylePostion="inside" style="1"><li><b>Installation</b>: um sicherzustellen, dass die Geräte ordnungsgemäß eingerichtet und konfiguriert sind.</li><li><b>Schulung</b>: um Ihnen zu zeigen, wie Sie die intelligenten Geräte verwenden und optimal nutzen können.</li><li><b>Support</b>: Wir stellen Ihnen eine Support-Hotline und eine Online-Hilfe zur Verfügung, damit Sie bei Problemen oder Fragen Hilfe erhalten.</li><li><b>Reparatur</b>: Wenn eines der Geräte defekt ist, können Sie einen Reparaturservice anfordern, um sicherzustellen, dass die Geräte wieder ordnungsgemäß funktionieren.</li><li><b>Upgrades</b>: Wir bieten auch Upgrades an, um Ihre Smart-Geräte auf dem neuesten Stand zu halten und die bestmögliche Leistung zu bieten.</li></ul></p></DOM></FIELD>
+	<FIELD name='st_image_alt_text'><TEXT>Intelligenterer Lautsprecher</TEXT></FIELD>
+</FIELDS>

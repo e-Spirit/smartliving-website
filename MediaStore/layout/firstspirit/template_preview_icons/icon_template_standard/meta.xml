@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Mailbox",
+        "confidence" : 89.379814,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.95036054,
+            "height" : 0.93827665,
+            "left" : 0.019275354,
+            "top" : 0.026322365
+          },
+          "confidence" : 89.379814
+        } ],
+        "parents" : [ ]
+      }, {
+        "name" : "File",
+        "confidence" : 87.50538,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Text",
+        "confidence" : 57.96749,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Sign",
+        "confidence" : 56.833202,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Symbol"
+        } ]
+      }, {
+        "name" : "Symbol",
+        "confidence" : 56.833202,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Badminton",
+        "confidence" : 56.365036,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Person"
+        }, {
+          "name" : "Sport"
+        } ]
+      }, {
+        "name" : "Person",
+        "confidence" : 56.365036,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Sport",
+        "confidence" : 56.365036,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Webpage",
+        "confidence" : 56.334614,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "File"
+        } ]
+      }, {
+        "name" : "Sticker",
+        "confidence" : 55.450905,
+        "instances" : [ ],
+        "parents" : [ ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "6.1",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#File #Symbol #Text #Sign #Mailbox #Badminton #Person #Webpage #Sticker #Sport"
+  }
+}</TEXT></FIELD>
+</FIELDS>

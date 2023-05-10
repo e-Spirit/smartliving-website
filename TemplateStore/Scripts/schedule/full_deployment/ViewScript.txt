@@ -1,0 +1,4 @@
+//!Beanshell
+import de.espirit.firstspirit.access.BaseContext;
+
+return context.is(BaseContext.Env.WEBEDIT);

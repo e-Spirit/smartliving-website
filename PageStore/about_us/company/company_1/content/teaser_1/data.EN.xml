@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_headline'><TEXT>Warm welcome!</TEXT></FIELD>
+	<FIELD name='st_text'><DOM><p>Our innovative solutions give you security for the whole house. And this at an affordable price!</p><p>Start now with the starter package and expand it if necessary: Our products and solutions grow with your requirements.</p><p>Prepare for the unexpected with Smart Living's leading products and our highly trained experts.</p></DOM></FIELD>
+	<FIELD name='st_image_alt_text'><TEXT>Smart-Home-Bedienfeld, im Hintergrund das Wohnzimmer</TEXT></FIELD>
+	<FIELD name='st_cta'><LINK><CMS_LINK linktemplate="internal_link" type="genericLink"><TEMPLATECONTENT><CMS_VALUE name="lt_link"><LANG id="§" set="1"><UID>homepage_1</UID><UIDTYPE>SITESTORE_LEAF</UIDTYPE><REMOTE/></LANG></CMS_VALUE><CMS_VALUE name="lt_text"><LANG id="§" set="1"><TEXT>More about us</TEXT></LANG></CMS_VALUE></TEMPLATECONTENT></CMS_LINK></LINK></FIELD>
+	<FIELD name='st_sectionLifespanFrom'><DATE/></FIELD>
+	<FIELD name='st_sectionLifespanTo'><DATE/></FIELD>
+</FIELDS>

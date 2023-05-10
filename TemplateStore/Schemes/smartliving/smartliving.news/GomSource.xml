@@ -5,63 +5,38 @@
 
     <CMS_GROUP>
       <LANGINFOS>
-        <LANGINFO lang="*" label="Article"/>
-        <LANGINFO lang="DE" label="Artikel"/>
+        <LANGINFO lang="*" label="Content"/>
+        <LANGINFO lang="DE" label="Inhalt"/>
       </LANGINFOS>
 
-      <CMS_INPUT_TEXT name="title" hFill="yes" singleLine="no" useLanguages="yes">
+      <CMS_INPUT_TEXT name="tt_headline" hFill="yes" singleLine="no">
         <LANGINFOS>
-          <LANGINFO lang="*" label="Title"/>
-          <LANGINFO lang="DE" label="Titel"/>
+          <LANGINFO lang="*" label="Headline"/>
         </LANGINFOS>
       </CMS_INPUT_TEXT>
 
-      <CMS_INPUT_DATE name="date" hFill="yes" preset="created" useLanguages="no">
+      <CMS_INPUT_TEXT name="tt_subheadline" hFill="yes" singleLine="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Subheadline"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+      <CMS_INPUT_DATE name="tt_date" hFill="yes" mode="date" useLanguages="no">
         <LANGINFOS>
           <LANGINFO lang="*" label="Date"/>
-          <LANGINFO lang="DE" label="Datum"/>
         </LANGINFOS>
       </CMS_INPUT_DATE>
 
-      <FS_INDEX name="author" height="1" useLanguages="no" viewMode="headers">
+      <FS_INDEX name="tt_author" useLanguages="no">
         <LANGINFOS>
           <LANGINFO lang="*" label="Author"/>
-          <LANGINFO lang="DE" label="Autor"/>
         </LANGINFOS>
         <SOURCE name="DatasetDataAccessPlugin">
           <TEMPLATE uid="smartliving.author"/>
         </SOURCE>
       </FS_INDEX>
 
-      <CMS_INPUT_DOM name="teaser" hFill="yes" useLanguages="yes">
-        <FORMATS>
-          <TEMPLATE name="standard_p_tag"/>
-          <TEMPLATE name="strong"/>
-          <TEMPLATE name="u"/>
-        </FORMATS>
-        <LANGINFOS>
-          <LANGINFO lang="*" label="Teaser text"/>
-          <LANGINFO lang="DE" label="Teasertext"/>
-        </LANGINFOS>
-      </CMS_INPUT_DOM>
-
-      <CMS_INPUT_DOM name="text" hFill="yes" useLanguages="yes">
-        <FORMATS>
-          <TEMPLATE name="standard_p_tag"/>
-          <TEMPLATE name="strong"/>
-          <TEMPLATE name="u"/>
-        </FORMATS>
-        <LANGINFOS>
-          <LANGINFO lang="*" label="Article text"/>
-          <LANGINFO lang="DE" label="Artikeltext"/>
-        </LANGINFOS>
-      </CMS_INPUT_DOM>
-
-      <FS_REFERENCE name="image" hFill="yes" imagePreview="yes" upload="yes" useLanguages="no">
-        <FILTER>
-          <HIDE type="file"/>
-          <ALLOW type="picture"/>
-        </FILTER>
+      <FS_REFERENCE name="tt_image" hFill="yes" upload="yes" useLanguages="no">
         <LANGINFOS>
           <LANGINFO lang="*" label="Image"/>
         </LANGINFOS>
@@ -74,46 +49,65 @@
         </PROJECTS>
       </FS_REFERENCE>
 
+      <CMS_INPUT_TEXT name="tt_image_alt_text" hFill="yes" singleLine="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Alternative Text"/>
+          <LANGINFO lang="DE" label="Alternativ-Text"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+      <CMS_INPUT_TEXT name="tt_teaserText" hFill="yes" singleLine="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Teaser Text"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+      <CMS_INPUT_DOM name="tt_articleText" hFill="yes">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Article Text"/>
+        </LANGINFOS>
+      </CMS_INPUT_DOM>
+
+      <FS_CATALOG name="tt_content" height="6" useLanguages="yes">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Content"/>
+          <LANGINFO lang="*" label="Inhalt"/>
+        </LANGINFOS>
+        <TEMPLATES type="section">
+          <TEMPLATE uid="text_image"/>
+          <TEMPLATE uid="features"/>
+          <TEMPLATE uid="accordion"/>
+          <TEMPLATE uid="table"/>
+        </TEMPLATES>
+      </FS_CATALOG>
+
     </CMS_GROUP>
 
     <CMS_GROUP>
       <LANGINFOS>
-        <LANGINFO lang="*" label="Configuration"/>
+        <LANGINFO lang="*" label="Settings"/>
+        <LANGINFO lang="DE" label="Einstellungen"/>
       </LANGINFOS>
 
-      <FS_INDEX name="tagging" height="3" useLanguages="no" viewMode="details">
+      <FS_INDEX name="tt_tags" useLanguages="no">
         <LANGINFOS>
           <LANGINFO lang="*" label="Tags"/>
         </LANGINFOS>
         <SOURCE name="DatasetDataAccessPlugin">
-          <TEMPLATE uid="smartliving.tags"/>
+          <TEMPLATE uid="smartliving.tag"/>
         </SOURCE>
       </FS_INDEX>
 
-      <CMS_INPUT_COMBOBOX name="category" hFill="yes" singleLine="no" useLanguages="no">
-        <CMS_INCLUDE_OPTIONS type="database">
-          <LABELS>
-            <LABEL lang="*">#item.name_EN</LABEL>
-          </LABELS>
-          <TABLE>smartliving.categories</TABLE>
-        </CMS_INCLUDE_OPTIONS>
-        <LANGINFOS>
-          <LANGINFO lang="*" label="Category"/>
-        </LANGINFOS>
-      </CMS_INPUT_COMBOBOX>
-
-    </CMS_GROUP>
-
-    <CMS_GROUP>
-      <LANGINFOS>
-        <LANGINFO lang="*" label="Distribution"/>
-      </LANGINFOS>
-
-      <CMS_INPUT_CHECKBOX name="channel" hFill="yes" useLanguages="no">
+      <CMS_INPUT_CHECKBOX name="tt_distribution" hFill="yes" useLanguages="no">
         <ENTRIES>
           <ENTRY value="website">
             <LANGINFOS>
               <LANGINFO lang="*" label="Website"/>
+            </LANGINFOS>
+          </ENTRY>
+          <ENTRY value="app">
+            <LANGINFOS>
+              <LANGINFO lang="*" label="App"/>
             </LANGINFOS>
           </ENTRY>
           <ENTRY value="voice_assistant">
@@ -121,17 +115,16 @@
               <LANGINFO lang="*" label="Voice Assistant"/>
             </LANGINFOS>
           </ENTRY>
+          <ENTRY value="digital_signage">
+            <LANGINFOS>
+              <LANGINFO lang="*" label="Digital Signage"/>
+            </LANGINFOS>
+          </ENTRY>
         </ENTRIES>
         <LANGINFOS>
-          <LANGINFO lang="*" label="Distribution Channel"/>
+          <LANGINFO lang="*" label="Distribution"/>
         </LANGINFOS>
       </CMS_INPUT_CHECKBOX>
-
-      <CMS_INPUT_TEXTAREA name="voice_text" hFill="yes" useLanguages="yes">
-        <LANGINFOS>
-          <LANGINFO lang="*" label="Voice Assistant Text"/>
-        </LANGINFOS>
-      </CMS_INPUT_TEXTAREA>
 
     </CMS_GROUP>
 

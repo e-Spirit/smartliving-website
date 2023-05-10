@@ -1,0 +1,12 @@
+[self]
+uid=avatar
+gid=39641256-6b3a-4537-b88b-a9190bd22ff4
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+
+[requiredProjectId]
+uid=metadata
+gid=b2c7cf16-33d2-4cf4-b16d-fa4fb256cd68
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
+

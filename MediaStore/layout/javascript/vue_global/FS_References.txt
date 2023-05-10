@@ -1,0 +1,6 @@
+[self]
+uid=vue_global
+gid=0148f0fe-baba-43aa-8425-522b1d2fa8b3
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+

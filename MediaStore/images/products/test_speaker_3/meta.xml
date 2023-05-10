@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Tape",
+        "confidence" : 98.878075,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.34125638,
+            "height" : 0.45018312,
+            "left" : 0.4717848,
+            "top" : 0.28837088
+          },
+          "confidence" : 98.878075
+        } ],
+        "parents" : [ ]
+      }, {
+        "name" : "Furniture",
+        "confidence" : 79.932915,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Table",
+        "confidence" : 79.932915,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Furniture"
+        } ]
+      }, {
+        "name" : "Electronics",
+        "confidence" : 75.28714,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Cylinder",
+        "confidence" : 57.821697,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Speaker",
+        "confidence" : 57.4461,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Adapter",
+        "confidence" : 57.4433,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Art",
+        "confidence" : 56.418655,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Porcelain",
+        "confidence" : 56.418655,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Art"
+        }, {
+          "name" : "Pottery"
+        } ]
+      }, {
+        "name" : "Pottery",
+        "confidence" : 56.418655,
+        "instances" : [ ],
+        "parents" : [ ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "6.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Art #Tape #Adapter #Pottery #Speaker #Cylinder #Porcelain #Furniture #Electronics #Table"
+  }
+}</TEXT></FIELD>
+</FIELDS>

@@ -1,6 +1,0 @@
-[self]
-uid=contact_dealer~#~content
-gid=fd7fc7f8-4320-4626-aca6-5387830c8812
-store=PAGESTORE
-class=de.espirit.firstspirit.store.access.pagestore.BodyImpl
-

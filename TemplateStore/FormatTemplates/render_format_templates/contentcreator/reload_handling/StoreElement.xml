@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="4859129832567469192" name="reload_handling">
+	<LANG displayname="Reload Handling" language="DE"/>
+	<LANG displayname="Reload Handling" language="EN"/>
+	<style tag="reload_handling" view="marked">
+		<attr name="align" value="left"/>
+		<render/>
+	</style>
+</FORMATTEMPLATE>

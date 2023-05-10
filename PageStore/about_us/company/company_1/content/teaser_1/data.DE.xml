@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_headline'><TEXT>Herzlich Willkommen!</TEXT></FIELD>
+	<FIELD name='st_text'><DOM><p>Unsere innvotiven Lösungen geben Ihnen Sicherheit für das ganze Haus. Und das zu erschwinglichen Preisen!</p><p>Starten Sie jetzt mit dem Einsteigerpaket und erweitern Sie es bei Bedarf: Unsere Produkte und Lösungen wachsen mit Ihren Anforderungen.<br/><br/>Bereiten Sie sich mit den führenden Produkten der Smart Living und unseren top ausgebildeten Experten auf das Unerwartete vor.</p></DOM></FIELD>
+	<FIELD name='st_image_alt_text'><TEXT>Smart home control panel, living room in the background</TEXT></FIELD>
+	<FIELD name='st_sectionLifespanFrom'><DATE/></FIELD>
+	<FIELD name='st_sectionLifespanTo'><DATE/></FIELD>
+</FIELDS>

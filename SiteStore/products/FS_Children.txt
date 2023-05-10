@@ -1,5 +1,2 @@
-interior_equipment
-indoor_cams
-outdoor_cams
-thermostats
-door_locks
+security
+smart_equipment

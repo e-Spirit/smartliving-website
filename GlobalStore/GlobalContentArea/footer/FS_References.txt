@@ -1,0 +1,7 @@
+[self]
+uid=/footer
+gid=3776b844-f1a2-4310-96bc-806560dbb661
+store=GLOBALSTORE
+class=de.espirit.firstspirit.store.access.globalstore.GCAFolderImpl
+root=de.espirit.firstspirit.store.access.globalstore.GlobalContentAreaImpl
+

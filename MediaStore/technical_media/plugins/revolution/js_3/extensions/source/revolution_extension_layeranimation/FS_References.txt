@@ -1,6 +1,0 @@
-[self]
-uid=revolution_extension_layeranimation
-gid=7289328f-3000-40c7-a39a-12b63885b44c
-uidType=MEDIASTORE_LEAF
-class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
-

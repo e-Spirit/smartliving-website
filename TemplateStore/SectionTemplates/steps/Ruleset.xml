@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RULES>
+	<RULE>
+		<IF>
+			<EQUAL>
+				<PROPERTY name="LANG" source="#global"/>
+				<PROPERTY name="MASTER" source="#global"/>
+			</EQUAL>
+		</IF>
+		<WITH>
+			<LESS_THAN>
+				<PROPERTY name="SIZE" source="st_howItWorks"/>
+				<NUMBER>1</NUMBER>
+			</LESS_THAN>
+		</WITH>
+		<DO>
+			<NOT>
+				<VALIDATION scope="RELEASE">
+					<PROPERTY name="VALID" source="st_howItWorks"/>
+					<MESSAGE lang="*" text="At least one item must be added."/>
+				</VALIDATION>
+			</NOT>
+		</DO>
+	</RULE>
+	<RULE>
+		<IF>
+			<EQUAL>
+				<PROPERTY name="LANG" source="#global"/>
+				<PROPERTY name="MASTER" source="#global"/>
+			</EQUAL>
+		</IF>
+		<WITH>
+			<AND>
+				<NOT>
+					<PROPERTY name="EMPTY" source="st_subline"/>
+				</NOT>
+				<LESS_THAN>
+					<PROPERTY name="LENGTH" source="st_subline"/>
+					<NUMBER>6</NUMBER>
+				</LESS_THAN>
+			</AND>
+		</WITH>
+		<DO>
+			<NOT>
+				<VALIDATION scope="RELEASE">
+					<PROPERTY name="VALID" source="st_subline"/>
+					<MESSAGE lang="*" text="Please enter a minimum of 6 characters."/>
+				</VALIDATION>
+			</NOT>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<EQUAL>
+				<PROPERTY name="STORETYPE" source="#global"/>
+				<TEXT>templatestore</TEXT>
+			</EQUAL>
+		</WITH>
+		<DO>
+			<PROPERTY name="VISIBLE" source="#form.sectionLifespan"/>
+		</DO>
+	</RULE>
+</RULES>

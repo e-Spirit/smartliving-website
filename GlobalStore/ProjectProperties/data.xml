@@ -1,19 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <FIELDS>
-	<FIELD name='ps_logo'><UID>new_logo_caps_1</UID><UIDTYPE>MEDIASTORE_LEAF</UIDTYPE><REMOTE/></FIELD>
-	<FIELD name='ps_footer'><UID>global_settings</UID><UIDTYPE>GLOBALSTORE</UIDTYPE><REMOTE/></FIELD>
-	<FIELD name='ps_homepage'><UID>home</UID><UIDTYPE>SITESTORE_LEAF</UIDTYPE><REMOTE/></FIELD>
-	<FIELD name='ps_product_detailpage'><UID>product</UID><UIDTYPE>SITESTORE_LEAF</UIDTYPE><REMOTE/></FIELD>
-	<FIELD name='ps_special_dealer_page'><UID>partner</UID><UIDTYPE>SITESTORE_LEAF</UIDTYPE><REMOTE/></FIELD>
-	<FIELD name='ps_dealer_contact_detailpage'><UID>contact_dealer</UID><UIDTYPE>SITESTORE_LEAF</UIDTYPE><REMOTE/></FIELD>
-	<FIELD name='ps_news_detailpage'><UID>news_detail</UID><UIDTYPE>SITESTORE_LEAF</UIDTYPE><REMOTE/></FIELD>
-	<FIELD name='ps_news_overviewpage'><UID>news_overview</UID><UIDTYPE>SITESTORE_LEAF</UIDTYPE><REMOTE/></FIELD>
-	<FIELD name='ps_button'><TEXT>#000</TEXT></FIELD>
-	<FIELD name='ps_background'><TEXT>#f6f7f8</TEXT></FIELD>
-	<FIELD name='ps_footercolor'><TEXT>#f6f7f8</TEXT></FIELD>
-	<FIELD name='ps_text_highlighting'><TEXT>#D5DD02</TEXT></FIELD>
-	<FIELD name='ps_banneropacity'><TEXT>0.7</TEXT></FIELD>
-	<FIELD name='ps_contentopacity'><TEXT>0.8</TEXT></FIELD>
-	<FIELD name='ps_global_slider_delay'><TEXT>14000</TEXT></FIELD>
-	<FIELD name='CONFIG_GOOGLE_MAPS_API_KEY'><TEXT>AIzaSyBlcs8ShpEGN4ddlM_K1N9moGxsPdUhYoo</TEXT></FIELD>
+	<FIELD name='ps_logo'><UID>smart_living_logo</UID><UIDTYPE>MEDIASTORE_LEAF</UIDTYPE><REMOTE/></FIELD>
+	<FIELD name='ps_fallback_image_stage'><UID>spacer_image</UID><UIDTYPE>MEDIASTORE_LEAF</UIDTYPE><REMOTE/></FIELD>
+	<FIELD name='ps_startpage'><UID>homepage_1</UID><UIDTYPE>SITESTORE_LEAF</UIDTYPE><REMOTE/></FIELD>
+	<FIELD name='ps_news_detail_page'><UID>news_detail</UID><UIDTYPE>SITESTORE_LEAF</UIDTYPE><REMOTE/></FIELD>
+	<FIELD name='ps_product_detail_page'><UID>product_detail</UID><UIDTYPE>SITESTORE_LEAF</UIDTYPE><REMOTE/></FIELD>
+	<FIELD name='ps_google_maps_api_key'><TEXT/></FIELD>
+	<FIELD name='ps_CSSMode'><SEL><VALUE>cdn</VALUE></SEL></FIELD>
+	<FIELD name='ps_primaryColor'><TEXT>#B51F7D</TEXT></FIELD>
+	<FIELD name='ps_secondaryColor'><TEXT>#00395A</TEXT></FIELD>
+	<FIELD name='ps_linkColor'><TEXT>#0044CC</TEXT></FIELD>
 </FIELDS>

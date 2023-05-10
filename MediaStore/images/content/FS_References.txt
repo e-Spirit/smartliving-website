@@ -1,12 +1,12 @@
 [self]
 uid=content
-gid=d064dcb0-f9ff-4e57-b9c9-7f9570b97742
+gid=f973f267-291e-407f-9120-2fa63b6499ad
 uidType=MEDIASTORE_FOLDER
 class=de.espirit.firstspirit.store.access.mediastore.MediaFolderImpl
 
 [requiredProjectId]
 uid=metadata
-gid=70a3c894-c1c8-4a8b-ac05-378c1699a025
+gid=b2c7cf16-33d2-4cf4-b16d-fa4fb256cd68
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
 

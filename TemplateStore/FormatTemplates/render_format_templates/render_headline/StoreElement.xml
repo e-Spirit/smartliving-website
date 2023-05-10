@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="6998969003503892103" name="render_headline">
+	<LANG displayname="Ausgabe Überschrift" language="DE"/>
+	<LANG displayname="Render Headline" language="EN"/>
+	<style tag="render_headline" view="marked">
+		<attr name="align" value="left"/>
+		<render/>
+	</style>
+</FORMATTEMPLATE>

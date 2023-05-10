@@ -1,0 +1,109 @@
+<div class="static md:relative group px-3 py-2">
+	<button class="relative inline-block text-gray-400 hover:text-gray-500 group">
+		<span
+			id="wishlistSize"
+			class="absolute bottom-0 right-0 flex items-center justify-center -mb-4 -mr-4 w-6 h-6 text-sm text-white bg-blue-500 rounded-full">
+			</span>
+		<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+			stroke="currentColor" class="w-6 h-6">
+			<path stroke-linecap="round" stroke-linejoin="round"
+				d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+		</svg>
+	</button>
+	<div class="absolute w-full md:w-auto right-0 top-6 transition group-hover:translate-y-5 translate-y-0 
+			opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out 
+			group-hover:transform z-50 transform">
+		<div class="w-full relative right-0 md:w-96 top-6 p-6 bg-white rounded-xl shadow-xl">
+			<div class="relative z-10">
+				<div class="grid grid-cols-1" id="wishlistItems">					
+				</div>
+			</div>
+			<a id="clear" class="text-xs py-1 px-3 text-white font-semibold bg-gray-900 rounded-xl" type="button" href="#">$CMS_VALUE(ps_translations.get("clear_list"))$</a>
+			$CMS_IF(!ps_favorites_cta_link.isEmpty)$<a id="wishlist_cta" class="text-xs py-1 px-3 text-white font-semibold bg-gray-900 rounded-xl" type="button" href="$CMS_REF(ps_favorites_cta_link.lt_link, abs:1, default:"#")$" target="_self">$CMS_VALUE(ps_favorites_cta_link.lt_text, default:"CTA")$</a>$CMS_END_IF$		
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+			
+	const clear = document.getElementById('clear');
+	$CMS_IF(!ps_favorites_cta_link.isEmpty)$const wishlistCta = document.getElementById('wishlist_cta');$CMS_END_IF$
+	const clearContainer = document.getElementById('clear_container');
+							
+	getWishListCookies();								    
+								    	
+    function getWishListCookies(deleteCookies) {
+     		 
+            var cookieArray = document.cookie.split(';');
+            var printHolder = "";						
+            var list = document.getElementById("wishlistItems");                		                   
+            var listSize = document.getElementById("wishlistSize");     
+            
+            var size = 0;	
+            
+			$--  productID[LANG][ID]=name:::link:::image:::imageAltText  --$		            								                											                	
+            for (var i = 0; i < cookieArray.length; ++i) {
+
+                var cKey = cookieArray[i].substring(0, cookieArray[i].indexOf("=")).trim();
+				var cValue = cookieArray[i].substring(cookieArray[i].indexOf("=")+1, cookieArray[i].length).trim();													
+										
+                if (cKey.startsWith("productID")) {                                                                            	                
+                	if (deleteCookies != undefined) {
+                		document.cookie = cKey + "=none; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC"; 
+                		size = 0;
+            		} else {				
+            			if (cKey.startsWith("productID$CMS_VALUE(#global.language.abbreviation)$")) {            				
+            				var productArray = cValue.split(":::"); 
+            				printHolder += '<a href="' + productArray[1] + '"><div class="relative flex mb-2 ring-1 ring-black/5 rounded-xl"><img class="w-14 h-14 m-2 rounded-full shadow-lg" src="' + productArray[2] + '" alt="' + productArray[3] + '" /><div class="m-2"><div class="text-slate-900 font-medium text-sm sm:text-base dark:text-slate-200">' + productArray[0] + '</div></div></div></a>';
+            				size++;													 
+            			}            							            			            		            							                        							                            		
+                	}
+            	}
+            }				
+       
+			const emptyString = "<div>$CMS_VALUE(ps_translations.get("empty_favorites"))$</div>";        	
+
+        	if (printHolder.trim() == "") {
+        		printHolder = emptyString; 
+        		size = 0;
+        		if (clear) {
+ 	       			clear.style.visibility = "hidden";
+        		}
+        		$CMS_IF(!ps_favorites_cta_link.isEmpty)$
+        		if (wishlistCta) {
+ 	       			wishlistCta.style.visibility = "hidden";
+        		}
+        		$CMS_END_IF$
+        	} else {
+				if (clear) {
+					clear.style.visibility = "visible";
+				}
+				$CMS_IF(!ps_favorites_cta_link.isEmpty)$
+				if (wishlistCta) {
+					wishlistCta.style.visibility = "visible";
+				}
+				$CMS_END_IF$
+			}
+	       	if (deleteCookies != undefined) {
+	       		list.innerHTML = emptyString;
+	       		listSize.innerHTML = size+"";	       			       		
+	       	} else {	       	       		 
+		        if (list) {
+			        list.innerHTML = printHolder;			        
+			        listSize.innerHTML = size+"";
+			    }
+		    }	   
+		    		       									   
+    }    					
+	
+	if (clear) {
+		clear.addEventListener('click', () => {												
+			getWishListCookies(true);
+			var hearts = document.getElementsByClassName("fav_heart");
+			for (var a=0; a<hearts.length; a++) {
+ 				   hearts[a].setAttribute("fill", "none");
+			}
+		});		
+	}
+			
+	
+</script>

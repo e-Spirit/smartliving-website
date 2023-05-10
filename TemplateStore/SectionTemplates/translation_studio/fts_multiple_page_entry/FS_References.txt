@@ -1,12 +1,12 @@
 [self]
 uid=fts_multiple_page_entry
-gid=d51027ff-ace8-45f3-99c8-1d4914d291f2
+gid=adc27677-bcd4-4715-b046-ef1206bfe800
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.SectionTemplateImpl
 
 [optionalId]
 uid=root
-gid=3436de29-2b11-4e9d-bab8-a304eb926c17
+gid=cbc356ff-94ed-4841-844a-1687269b142d
 uidType=PAGESTORE
 class=de.espirit.firstspirit.store.access.pagestore.PageStoreRootImpl
 

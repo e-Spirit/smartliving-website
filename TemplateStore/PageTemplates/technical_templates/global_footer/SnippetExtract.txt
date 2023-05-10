@@ -1,1 +1,0 @@
-if (!gc_copyright.isEmpty(), gc_copyright)

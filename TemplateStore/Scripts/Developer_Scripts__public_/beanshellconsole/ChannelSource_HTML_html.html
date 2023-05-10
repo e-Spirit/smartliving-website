@@ -1,7 +1,7 @@
-//!Beanshell
+//Version: $Revision: 68597 $ $Date: 2015-06-02 12:18:20 +0200 (Di, 02. Jun 2015) $
 
 import bsh.util.JConsole;
-import de.espirit.firstspirit.agency.UIAgent;
+import de.espirit.firstspirit.client.common.icons.IconLibrary;
 
 title = "Beanshell Console for node '"
  + context.getProperty("nodeName")
@@ -13,11 +13,10 @@ console = new JConsole();
 frame.getContentPane().add(console, "Center");
 frame.pack();
 frame.setBounds(100, 100, 600, 400);
-frame.setIconImages(context.requireSpecialist(UIAgent.TYPE).getApplicationWindow().getIconImages());
 
 interpreter = new bsh.Interpreter(console);
 interpreter.setShowResults(true);
-bsh.system.icons.eye = frame.getIconImage();
+bsh.system.icons.eye = IconLibrary.windowIcon;
 
 // getting service to instanciate
 getService() {

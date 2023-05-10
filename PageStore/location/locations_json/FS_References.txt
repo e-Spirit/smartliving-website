@@ -1,0 +1,12 @@
+[self]
+uid=locations_json
+gid=3d36e2b6-e3d1-4818-87b9-17e36f484ec8
+uidType=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.PageImpl
+
+[requiredProjectId]
+uid=locations_json
+gid=df080eca-38da-437d-bc18-a5815236f017
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
+

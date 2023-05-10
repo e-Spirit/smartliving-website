@@ -1,0 +1,17 @@
+<div class="relative h-full px-8 pt-14 pb-8 bg-coolGray-50 rounded-md shadow-md">
+	$CMS_IF(!#for.isEmpty())$
+		<div class="absolute top-0 left-1/2 transform -translate-y-1/2 -translate-x-1/2 inline-flex items-center justify-center h-16 w-16 bg-white rounded-full">
+			<div class="inline-flex items-center justify-center w-12 h-12 bg-secondary rounded-full text-xl font-semibold text-white">$CMS_VALUE(#for.index+1, default: "")$</div>
+		</div>
+	$CMS_END_IF$
+	$CMS_IF(!st_title.isEmpty())$
+		<h3 class="mb-4 text-xl md:text-2xl font-semibold text-primary" $CMS_VALUE(editorId(editorName: "st_title"))$>$CMS_VALUE(st_title.convert2())$</h3>
+	$CMS_END_IF$
+	$CMS_IF(#global.is("WEBEDIT"))$
+		<div $CMS_VALUE(editorId(editorName: "st_text"))$>
+	$CMS_END_IF$	
+		$CMS_VALUE(st_text, default: "")$
+	$CMS_IF(#global.is("WEBEDIT"))$
+		</div>
+	$CMS_END_IF$
+</div>

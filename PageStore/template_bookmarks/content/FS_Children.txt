@@ -1,0 +1,10 @@
+template_bookmarks~#~content~#~bookmark_product_category_teaser
+template_bookmarks~#~content~#~bookmark_latest_news
+template_bookmarks~#~content~#~bookmark_text___image
+template_bookmarks~#~content~#~bookmark_interaktives_video
+template_bookmarks~#~content~#~bookmark_interaktives_bild
+template_bookmarks~#~content~#~bookmark_google_maps
+template_bookmarks~#~content~#~bookmark_table
+template_bookmarks~#~content~#~bookmark_teaser
+template_bookmarks~#~content~#~bookmark_accordion
+template_bookmarks~#~content~#~bookmark_features

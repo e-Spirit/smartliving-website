@@ -1,0 +1,12 @@
+[self]
+uid=icon_template_steps
+gid=87df75e4-d429-4be3-bbdb-e05c8f0472df
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+
+[requiredProjectId]
+uid=metadata
+gid=b2c7cf16-33d2-4cf4-b16d-fa4fb256cd68
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
+

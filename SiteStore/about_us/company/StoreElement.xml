@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SITENODE id="268378056064338893" name="company" startnodeid="-5088535368401953311">
+<SITENODE id="3626905306484308984" name="company" startnodeid="-253758638764790268">
+	<LANG displayname="Company" language="EN"/>
 	<LANG displayname="Unternehmen" language="DE"/>
-	<LANG displayname="company" language="EN"/>
 	<NODE_LANG_SPEC label="Company" language="EN"/>
 	<NODE_LANG_SPEC label="Unternehmen" language="DE"/>
 </SITENODE>

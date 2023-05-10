@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CONTENT2 id="-1229853305187138187" name="news" tabletemplate="8511564459461160904">
-	<CONTENTPARAMETER query="7133498949056631495" templateid="8511564459461160904">
-		<ORDER asc="0" name="date"/>
-		<PARAM class="java.lang.Integer" name="param" value="-1"/>
-	</CONTENTPARAMETER>
-	<LANG displayname="News" language="DE"/>
-	<LANG displayname="News" language="EN"/>
-</CONTENT2>

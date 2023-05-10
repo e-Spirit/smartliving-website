@@ -1,0 +1,12 @@
+[self]
+uid=render_link
+gid=8c91df1e-5574-4e4c-ae87-de002fe58377
+uidType=TEMPLATESTORE_FORMATTEMPLATE
+class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
+
+[optionalId]
+uid=render_link_url
+gid=4588eb6e-1aae-4a98-8361-4c69632cc530
+uidType=TEMPLATESTORE_FORMATTEMPLATE
+class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
+

@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='pt_fts_mappings_standard'><CATALOG><CARD id="1c03c877-4cf9-43ff-bfc0-093277d6c7e8" template="fts_language_mapping" type="TEMPLATESTORE"><TEMPLATECONTENT><CMS_VALUE name="st_fts_language_source"><LANG id="§" set="1"><SEL><VALUE>EN</VALUE></SEL></LANG></CMS_VALUE><CMS_VALUE name="st_fts_language_target"><LANG id="§" set="1"><SEL><VALUE>DE</VALUE></SEL></LANG></CMS_VALUE><CMS_VALUE name="st_fts_tms_project"><LANG id="§" set="1"><SEL><VALUE>deepl.deepl</VALUE></SEL></LANG></CMS_VALUE></TEMPLATECONTENT></CARD></CATALOG></FIELD>
+</FIELDS>

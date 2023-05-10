@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="-1036743954534239102" name="navigation_side_menu">
+	<LANG displayname="Navigation Side Menu" language="DE"/>
+	<LANG displayname="Navigation Side Menu" language="EN"/>
+	<style tag="navigation_side_menu" view="marked">
+		<attr name="align" value="left"/>
+		<render/>
+	</style>
+</FORMATTEMPLATE>

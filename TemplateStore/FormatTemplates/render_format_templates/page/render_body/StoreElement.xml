@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="1832351182141991702" name="render_body">
+	<LANG displayname="Inhaltsbereiche ausgeben" language="DE"/>
+	<LANG displayname="Render Body" language="EN"/>
+	<style tag="render_body" view="marked">
+		<attr name="align" value="left"/>
+		<render/>
+	</style>
+</FORMATTEMPLATE>

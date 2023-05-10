@@ -5,7 +5,6 @@ text/html;UTF-8   ChannelSource_HTML_html.html
 text/xml          GomDefaults.DE.xml
 text/xml          GomDefaults.EN.xml
 text/xml          GomDefaults.xml
-text/xml          GomDefaults@fallback.xml
 text/xml;UTF-8    GomSource.xml
 image/png         PreviewImage.png
 text/xml;UTF-8    Ruleset.xml

@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_headline'><TEXT>Contentmodul für Text mit Bild</TEXT></FIELD>
+	<FIELD name='st_subheadline'><DOM><subline>Hier können Sie bei Bedarf eine zweite Überschrift pflegen.</subline></DOM></FIELD>
+	<FIELD name='st_text'><DOM><p>Pflegen Sie hier bitte einen Fließtext ein.</p></DOM></FIELD>
+</FIELDS>

@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <FIELDS>
-	<FIELD name='md_creation_date'><DATE>1637182120828</DATE></FIELD>
 	<FIELD name='fsai_facesPayload'><TEXT>{
   "version" : 2,
   "languageToResponse" : {
@@ -15,88 +14,233 @@
   "languageToResponse" : {
     "§" : {
       "labels" : [ {
-        "name" : "Person",
-        "confidence" : 99.29893,
+        "name" : "Computer",
+        "confidence" : 99.87669,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Electronics",
+        "confidence" : 99.87669,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Adult",
+        "confidence" : 99.64341,
         "instances" : [ {
           "boundingBox" : {
-            "width" : 0.46644184,
-            "height" : 0.6113564,
-            "left" : 1.705799E-4,
-            "top" : 0.36324406
+            "width" : 0.46258232,
+            "height" : 0.650621,
+            "left" : 2.2678898E-4,
+            "top" : 0.34937137
           },
-          "confidence" : 99.29893
+          "confidence" : 99.64341
+        } ],
+        "parents" : [ {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Female",
+        "confidence" : 99.64341,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.46258232,
+            "height" : 0.650621,
+            "left" : 2.2678898E-4,
+            "top" : 0.34937137
+          },
+          "confidence" : 99.64341
+        } ],
+        "parents" : [ {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Person",
+        "confidence" : 99.64341,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.46258232,
+            "height" : 0.650621,
+            "left" : 2.2678898E-4,
+            "top" : 0.34937137
+          },
+          "confidence" : 99.64341
         } ],
         "parents" : [ ]
       }, {
-        "name" : "Human",
-        "confidence" : 99.29893,
-        "instances" : [ ],
-        "parents" : [ ]
-      }, {
-        "name" : "Electronics",
-        "confidence" : 86.3629,
-        "instances" : [ ],
-        "parents" : [ ]
-      }, {
-        "name" : "Computer",
-        "confidence" : 84.91012,
-        "instances" : [ ],
+        "name" : "Woman",
+        "confidence" : 99.64341,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.46258232,
+            "height" : 0.650621,
+            "left" : 2.2678898E-4,
+            "top" : 0.34937137
+          },
+          "confidence" : 99.64341
+        } ],
         "parents" : [ {
-          "name" : "Electronics"
-        } ]
-      }, {
-        "name" : "Monitor",
-        "confidence" : 71.45617,
-        "instances" : [ ],
-        "parents" : [ {
-          "name" : "Screen"
+          "name" : "Adult"
         }, {
-          "name" : "Electronics"
-        } ]
-      }, {
-        "name" : "Display",
-        "confidence" : 71.45617,
-        "instances" : [ ],
-        "parents" : [ {
-          "name" : "Screen"
+          "name" : "Female"
         }, {
-          "name" : "Electronics"
-        } ]
-      }, {
-        "name" : "Screen",
-        "confidence" : 71.45617,
-        "instances" : [ ],
-        "parents" : [ {
-          "name" : "Electronics"
+          "name" : "Person"
         } ]
       }, {
         "name" : "Tablet Computer",
-        "confidence" : 61.478127,
-        "instances" : [ ],
+        "confidence" : 98.306885,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.37931663,
+            "height" : 0.37683392,
+            "left" : 0.09544414,
+            "top" : 0.27377975
+          },
+          "confidence" : 97.860245
+        } ],
         "parents" : [ {
           "name" : "Computer"
         }, {
           "name" : "Electronics"
         } ]
       }, {
-        "name" : "LCD Screen",
-        "confidence" : 59.94093,
+        "name" : "Appliance",
+        "confidence" : 90.60331,
         "instances" : [ ],
         "parents" : [ {
-          "name" : "Monitor"
+          "name" : "Device"
         }, {
-          "name" : "Screen"
+          "name" : "Electrical Device"
+        } ]
+      }, {
+        "name" : "Device",
+        "confidence" : 90.60331,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Electrical Device",
+        "confidence" : 90.60331,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Microwave",
+        "confidence" : 90.60331,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.14769214,
+            "height" : 0.34588757,
+            "left" : 0.85230476,
+            "top" : 0.36671376
+          },
+          "confidence" : 90.60331
+        } ],
+        "parents" : [ {
+          "name" : "Appliance"
         }, {
-          "name" : "Electronics"
+          "name" : "Device"
+        }, {
+          "name" : "Electrical Device"
+        }, {
+          "name" : "Oven"
+        } ]
+      }, {
+        "name" : "Oven",
+        "confidence" : 90.60331,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Appliance"
+        }, {
+          "name" : "Device"
+        }, {
+          "name" : "Electrical Device"
         } ]
       }, {
         "name" : "Indoors",
-        "confidence" : 58.66458,
+        "confidence" : 64.52566,
         "instances" : [ ],
         "parents" : [ ]
+      }, {
+        "name" : "Interior Design",
+        "confidence" : 64.52566,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Indoors"
+        } ]
+      }, {
+        "name" : "Computer Hardware",
+        "confidence" : 57.5328,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        }, {
+          "name" : "Hardware"
+        } ]
+      }, {
+        "name" : "Hardware",
+        "confidence" : 57.5328,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Monitor",
+        "confidence" : 57.5328,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Computer Hardware"
+        }, {
+          "name" : "Electronics"
+        }, {
+          "name" : "Hardware"
+        }, {
+          "name" : "Screen"
+        } ]
+      }, {
+        "name" : "Screen",
+        "confidence" : 57.5328,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Kitchen",
+        "confidence" : 57.383156,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Indoors"
+        } ]
+      }, {
+        "name" : "Cooktop",
+        "confidence" : 57.235992,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.42582634,
+            "height" : 0.123177074,
+            "left" : 0.56575066,
+            "top" : 0.6628309
+          },
+          "confidence" : 57.235992
+        } ],
+        "parents" : [ {
+          "name" : "Indoors"
+        }, {
+          "name" : "Kitchen"
+        } ]
+      }, {
+        "name" : "Surface Computer",
+        "confidence" : 55.23435,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Computer"
+        }, {
+          "name" : "Electronics"
+        }, {
+          "name" : "Tablet Computer"
+        } ]
       } ],
       "orientationCorrection" : null,
-      "labelModelVersion" : "2.0"
+      "labelModelVersion" : "3.0"
     }
   }
 }</TEXT></FIELD>
@@ -816,7 +960,7 @@
   "languageToResponse" : {
     "§" : {
       "moderationLabels" : [ ],
-      "moderationModelVersion" : "5.0",
+      "moderationModelVersion" : "6.0",
       "humanLoopActivationOutput" : null
     }
   }
@@ -824,7 +968,7 @@
 	<FIELD name='fsai_tags'><TEXT>{
   "version" : 2,
   "languageToResponse" : {
-    "§" : "#Computer #Monitor #Tablet Computer #Indoors #Display #Person #Screen #Electronics #Human #LCD Screen"
+    "§" : "#Female #Computer Hardware #Computer #Oven #Surface Computer #Appliance #Monitor #Electrical Device #Hardware #Indoors #Woman #Interior Design #Cooktop #Adult #Screen #Device #Tablet Computer #Person #Microwave #Kitchen #Electronics"
   }
 }</TEXT></FIELD>
 </FIELDS>

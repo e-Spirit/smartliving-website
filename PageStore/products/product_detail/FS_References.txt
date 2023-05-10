@@ -1,0 +1,12 @@
+[self]
+uid=product_detail
+gid=9d46b132-e897-4832-be35-b24c13422c46
+uidType=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.PageImpl
+
+[requiredProjectId]
+uid=standard
+gid=7220147b-39ff-4b67-ae6b-90e6e04af147
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
+

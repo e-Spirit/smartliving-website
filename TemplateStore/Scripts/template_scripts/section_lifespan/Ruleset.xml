@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RULES>
+	<RULE>
+		<WITH>
+			<AND>
+				<NOT>
+					<PROPERTY name="EMPTY" source="st_sectionLifespanFrom"/>
+				</NOT>
+				<NOT>
+					<PROPERTY name="EMPTY" source="st_sectionLifespanFrom"/>
+				</NOT>
+				<GREATER_THAN>
+					<PROPERTY name="VALUE" source="st_sectionLifespanFrom"/>
+					<PROPERTY name="VALUE" source="st_sectionLifespanTo"/>
+				</GREATER_THAN>
+			</AND>
+		</WITH>
+		<DO>
+			<NOT>
+				<VALIDATION scope="SAVE">
+					<PROPERTY name="VALID" source="st_sectionLifespanFrom"/>
+					<MESSAGE lang="*" text="The start date must be before the end date."/>
+					<MESSAGE lang="DE" text="Das Startdatum muss vor dem Enddatum liegen."/>
+				</VALIDATION>
+				<VALIDATION scope="SAVE">
+					<PROPERTY name="VALID" source="st_sectionLifespanTo"/>
+					<MESSAGE lang="*" text="The start date must be before the end date."/>
+					<MESSAGE lang="DE" text="Das Startdatum muss vor dem Enddatum liegen."/>
+				</VALIDATION>
+			</NOT>
+		</DO>
+	</RULE>
+</RULES>

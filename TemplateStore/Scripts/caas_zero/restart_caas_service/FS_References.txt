@@ -1,6 +1,0 @@
-[self]
-uid=restart_caas_service
-gid=2194d037-63d1-4c50-b787-681839b2ad13
-uidType=TEMPLATESTORE
-class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
-

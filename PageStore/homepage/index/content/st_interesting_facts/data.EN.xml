@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<FIELDS>
-	<FIELD name='st_tagline'><TEXT>WHO WE ARE</TEXT></FIELD>
-	<FIELD name='st_headline'><TEXT>Smart Living</TEXT></FIELD>
-	<FIELD name='st_text'><DOM><standard><b>SMART LIVING</b> is a global leader in smart home solutions for both home and enterprise customers. Since 2014, we have carried out many smart projects with well-known partners nationwide and globally.</standard></DOM></FIELD>
-	<FIELD name='st_counters'><CATALOG><CARD id="d7af1d07-3d58-4f8d-9cc9-ab4802327f47" template="counter" type="TEMPLATESTORE"><TEMPLATECONTENT><CMS_VALUE name="st_text"><LANG id="§" set="1"><TEXT>Individual Products</TEXT></LANG></CMS_VALUE><CMS_VALUE name="st_number"><LANG id="§" set="1"><FIG>21500</FIG></LANG></CMS_VALUE></TEMPLATECONTENT></CARD><CARD id="a3f0b961-fab8-442a-91f2-4f0a11b9c119" template="counter" type="TEMPLATESTORE"><TEMPLATECONTENT><CMS_VALUE name="st_text"><LANG id="§" set="1"><TEXT>Employees</TEXT></LANG></CMS_VALUE><CMS_VALUE name="st_number"><LANG id="§" set="1"><FIG>180</FIG></LANG></CMS_VALUE></TEMPLATECONTENT></CARD><CARD id="5640dc8a-f612-47c9-b7ab-9ce9bc0b7029" template="counter" type="TEMPLATESTORE"><TEMPLATECONTENT><CMS_VALUE name="st_text"><LANG id="§" set="1"><TEXT>Specialized Dealers</TEXT></LANG></CMS_VALUE><CMS_VALUE name="st_number"><LANG id="§" set="1"><FIG>3200</FIG></LANG></CMS_VALUE></TEMPLATECONTENT></CARD></CATALOG></FIELD>
-</FIELDS>

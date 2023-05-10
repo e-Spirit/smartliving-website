@@ -1,6 +1,0 @@
-[self]
-uid=services_folder
-gid=e98cf97f-a24d-4a12-8b98-17d7487414d2
-uidType=PAGESTORE
-class=de.espirit.firstspirit.store.access.pagestore.PageFolderImpl
-

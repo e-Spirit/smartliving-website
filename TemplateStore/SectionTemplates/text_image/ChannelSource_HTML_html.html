@@ -1,0 +1,55 @@
+$CMS_SET(set_image)$
+	$CMS_IF(!st_image.isEmpty())$
+		<div class="w-full px-4 pb-4 break-after-column">
+			$CMS_RENDER(template:"render_image", prm_image: st_image,
+										prm_image_alt_text: st_image_alt_text, 
+										prm_defaultResolution: "16x9_M",
+										prm_resolutions: {"lg": "16x9_S", "xl": "16x9_M"},
+										prm_cssClasses: "",
+										prm_inputName: "st_image")$			
+		</div>
+	$CMS_END_IF$
+$CMS_END_SET$
+$CMS_SET(set_text)$
+	<div class="w-full px-4 pb-4 break-after-column">
+		$CMS_VALUE(st_text, default: "")$					
+	</div>
+$CMS_END_SET$
+<section class="py-14" $CMS_VALUE(editorId())$>
+	<div class="container px-4 mx-auto">
+		<div class="flex flex-wrap -mx-4">
+			$CMS_IF(!(st_headline.isEmpty() && st_subheadline.isEmpty()))$
+				<div class="w-full px-4 mb-14">
+					<div class="flex flex-wrap justify-between items-center">
+						<div class="w-full lg:w-1/2 mb-10 lg:mb-0">
+							$CMS_RENDER(template:"render_headline", prm_headline: st_headline, 
+									prm_defaultTag: "h2", 
+									prm_cssClasses: "mb-8 text-3xl md:text-4xl font-bold font-heading tracking-px-n leading-none text-primary",
+									prm_inputComponentName: "st_headline")$							
+							$CMS_IF(#global.is("WEBEDIT"))$
+								<div $CMS_VALUE(editorId(editorName:"st_subheadline"))$>
+							$CMS_END_IF$
+								$CMS_VALUE(st_subheadline, default:"")$
+							$CMS_IF(#global.is("WEBEDIT"))$
+								</div>
+							$CMS_END_IF$
+						</div>
+						<div class="w-full lg:w-auto">
+							<div class="flex flex-wrap lg:justify-center items-center -mb-2"></div>
+						</div>
+					</div>
+				</div>
+			$CMS_END_IF$			
+			<div $CMS_IF(!("1".equals(st_columns) && st_image.isEmpty()))$class="lg:columns-2"$CMS_END_IF$ $CMS_VALUE(editorId(editorName:"st_text"))$>
+				$CMS_SWITCH(st_layout)$
+					$-- Default layout text-image --$
+					$CMS_VALUE(set_text)$
+					$CMS_VALUE(set_image)$
+				$CMS_CASE("image-text")$
+					$CMS_VALUE(set_image)$
+					$CMS_VALUE(set_text)$
+				$CMS_END_SWITCH$				
+			</div>
+		</div>
+	</div>
+</section>

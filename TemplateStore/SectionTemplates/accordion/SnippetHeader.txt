@@ -1,1 +1,2 @@
-if(!st_header.isEmpty(), st_header, "<No Header>")
+if(#item.getName().startsWith("bookmark_"), #item.getDisplayName(#language), 
+				!st_headline.isEmpty(), st_headline)

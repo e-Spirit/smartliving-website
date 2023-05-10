@@ -1,6 +1,6 @@
 [self]
 uid=smartliving
-gid=08a1d4fa-6f3a-4770-aa37-c46a9c7838f2
+gid=bd75cf0e-80a3-4c40-b34d-23cbc1e2df9e
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.SchemaImpl
 

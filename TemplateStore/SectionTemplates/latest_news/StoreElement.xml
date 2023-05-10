@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEMPLATE comment="" filename="latest_news" id="7319824471745242843" templateid="-7821236664079503015" type="section">
+	<EXTENSION file="html" link="html" templateSet="9062318847741885912"/>
+	<LANG displayname="Aktuelle News" language="DE"/>
+	<LANG displayname="Latest News" language="EN"/>
+</TEMPLATE>

@@ -1,0 +1,6 @@
+[self]
+uid=scr_fts_tms_overwrite
+gid=1771929e-04c8-4213-a933-ba1d2d954893
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
+

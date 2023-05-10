@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TABLE comment="" description="smartliving.author" filename="author" id="2886685581807606534" templateid="-3907028871457443062" type="content" webeditSupported="1">
-	<EXTENSION file="html" link="html" templateSet="9062318847741885912"/>
+<TABLE description="smartliving.author" filename="author" id="2730369482379001777" templateid="-4854906064563342077" type="content">
+	<EXTENSION anchor="0" file="html" link="html" templateSet="9062318847741885912"/>
 	<LANG displayname="Author" language="EN"/>
 	<LANG displayname="Autor" language="DE"/>
 </TABLE>

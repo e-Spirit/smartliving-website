@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Lighting",
+        "confidence" : 99.99863,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Appliance",
+        "confidence" : 97.35424,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Device"
+        }, {
+          "name" : "Electrical Device"
+        } ]
+      }, {
+        "name" : "Blow Dryer",
+        "confidence" : 97.35424,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.62206995,
+            "height" : 0.7202551,
+            "left" : 0.37521556,
+            "top" : 0.13190918
+          },
+          "confidence" : 97.35424
+        } ],
+        "parents" : [ {
+          "name" : "Appliance"
+        }, {
+          "name" : "Device"
+        }, {
+          "name" : "Electrical Device"
+        } ]
+      }, {
+        "name" : "Device",
+        "confidence" : 97.35424,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Electrical Device",
+        "confidence" : 97.35424,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Person",
+        "confidence" : 93.14326,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Security",
+        "confidence" : 93.14326,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Person"
+        } ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "6.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Appliance #Device #Blow Dryer #Electrical Device #Lighting #Person #Security"
+  }
+}</TEXT></FIELD>
+</FIELDS>

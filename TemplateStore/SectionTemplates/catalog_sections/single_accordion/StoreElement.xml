@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEMPLATE comment="" filename="single_accordion" id="-4042967509065363794" previewPageRefUid="services" templateid="3367592811670761318" type="section">
-	<EXTENSION file="html" link="html" templateSet="9062318847741885912"/>
-	<EXTENSION file="json" link="json" templateSet="15845"/>
-	<LANG displayname="Accordeon Eintrag" language="DE"/>
-	<LANG displayname="Accordion Entry" language="EN"/>
-</TEMPLATE>

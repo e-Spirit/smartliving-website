@@ -1,6 +1,0 @@
-[self]
-uid=counterup_min
-gid=3e131001-2d07-4bb6-a381-f7a8fb499aa6
-uidType=MEDIASTORE_LEAF
-class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
-

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_INPUT_COMBOBOX name="st_category" hFill="yes" singleLine="no" useLanguages="no">
+    <CMS_INCLUDE_OPTIONS type="database">
+      <LABELS>
+        <LABEL lang="*">#item.name</LABEL>
+      </LABELS>
+      <TABLE>smartliving.category</TABLE>
+    </CMS_INCLUDE_OPTIONS>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Category"/>
+      <LANGINFO lang="DE" label="Kategorie"/>
+    </LANGINFOS>
+  </CMS_INPUT_COMBOBOX>
+
+  <CMS_INPUT_TEXT name="st_headline" hFill="yes" singleLine="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Headline"/>
+      <LANGINFO lang="DE" label="Überschrift"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_DOM name="st_text" hFill="yes">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Text"/>
+    </LANGINFOS>
+  </CMS_INPUT_DOM>
+
+  <CMS_INPUT_RADIOBUTTON name="st_text_alignment" hFill="yes" useLanguages="no">
+    <ENTRIES>
+      <ENTRY value="left">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Left"/>
+          <LANGINFO lang="DE" label="Links"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="right">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Right"/>
+          <LANGINFO lang="DE" label="Rechts"/>
+        </LANGINFOS>
+      </ENTRY>
+    </ENTRIES>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Text Alignment"/>
+      <LANGINFO lang="DE" label="Text-Ausrichtung"/>
+    </LANGINFOS>
+  </CMS_INPUT_RADIOBUTTON>
+
+  <CMS_INPUT_LINK name="st_category_link" hFill="yes" useLanguages="yes">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Call To Action Link"/>
+    </LANGINFOS>
+    <LINKEDITORS>
+      <LINKEDITOR name="internal_link"/>
+    </LINKEDITORS>
+  </CMS_INPUT_LINK>
+
+  <CMS_GROUP name="sectionLifespan">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Validity period"/>
+      <LANGINFO lang="DE" label="Gültigkeitszeitraum"/>
+    </LANGINFOS>
+
+    <CMS_INPUT_DATE name="st_sectionLifespanFrom" hFill="yes">
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Gültigkeitsbeginn"/>
+        <LANGINFO lang="EN" label="Validation start date"/>
+      </LANGINFOS>
+    </CMS_INPUT_DATE>
+
+    <CMS_INPUT_DATE name="st_sectionLifespanTo" hFill="yes">
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Gültigkeitsende"/>
+        <LANGINFO lang="EN" label="Validation end date"/>
+      </LANGINFOS>
+    </CMS_INPUT_DATE>
+
+  </CMS_GROUP>
+
+</CMS_MODULE>

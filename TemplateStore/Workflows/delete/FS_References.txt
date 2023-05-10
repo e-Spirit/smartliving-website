@@ -1,57 +1,52 @@
 [self]
 uid=delete
-gid=90d4481b-d9ba-4ba4-8cc5-5a57fc1c108f
+gid=ed26e8dc-4b15-4293-bd64-f4af2f0a6175
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.WorkflowImpl
 
 [optionalId]
 uid=wf_delete
-gid=77853850-c2cf-40a0-8daf-26f7b4eee01c
+gid=7589b183-840f-4150-b83b-8fc4302ca627
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
 
 uid=wf_delete_branch_if_folder
-gid=d2585fb6-a667-4f58-8f71-5881443ea10c
+gid=7bd44029-d341-4f6f-98a9-df3bbeb1f1ab
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
 
 uid=wf_delete_check_prerequisites
-gid=1719773d-4e4b-4537-b93b-8f27182c6c0e
+gid=d6445d93-958f-4076-98c7-526ad7edadc8
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
 
 uid=wf_delete_find_releated_objects
-gid=4042ed06-e34e-4a9f-9ce7-fac14672206f
+gid=e8846188-dbe0-4c08-88b8-0a18080848cd
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
 
 uid=wf_delete_show_related
-gid=689d4d50-d9c1-4863-8566-1cbf1cf33575
+gid=60d02eab-6921-494b-af5d-7657e694a34f
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
 
 uid=wf_delete_show_warning
-gid=a64928fb-194b-4437-9227-54545502977f
+gid=5356584b-bd01-4e40-8630-0adaa19d4ba4
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
 
 uid=wf_delete_showactiondialog
-gid=3f711989-3960-452e-917f-b98e3f0690a0
+gid=59274cdf-257c-4f57-acb7-15b81982f96a
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
 
 uid=wf_delete_showactiondialog_w_autotransition
-gid=8c521cde-9972-42af-8295-ed1dd1337a61
+gid=7d07a795-ca02-4861-b13d-2e54b7e24cd3
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
 
 uid=wf_delete_test
-gid=f5f93272-398f-4533-b2a1-e0a6de37138c
-uidType=TEMPLATESTORE
-class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
-
-uid=wf_deploy
-gid=80780fa7-65f5-4fc4-b045-4c6e402f9f28
+gid=f6c9e57e-1403-47a7-900a-cd1580345063
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
 

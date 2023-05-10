@@ -1,6 +1,0 @@
-[self]
-uid=jquery_1_11_0_min
-gid=b407936d-218c-4f7e-92e9-93d52cf0fb4b
-uidType=MEDIASTORE_LEAF
-class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
-

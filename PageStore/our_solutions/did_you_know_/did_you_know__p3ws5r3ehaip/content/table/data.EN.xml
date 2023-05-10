@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_headline'><TEXT>Equipping private households with smart devices and systems Germany</TEXT></FIELD>
+	<FIELD name='st_text'><DOM><subline>As of October 27, 2022</subline><subline>Source: Federal Statistical Office</subline></DOM></FIELD>
+	<FIELD name='st_table'><table><tr><td><b>Smart devices and systems</b></td><td><b>2022</b></td></tr><tr><td/><td/></tr><tr><td>Smart TV (television)</td><td><pill_style>58.5%</pill_style></td></tr><tr><td>Smart Speaker (intelligent/WLAN speaker)</td><td><pill_style>15.2%</pill_style></td></tr><tr><td>Smart energy management system (e.g. thermostat, electricity meter, lighting)</td><td><pill_style>9.7%</pill_style></td></tr><tr><td>Smart security system (e.g. alarm system, smoke detector, surveillance camera)</td><td><pill_style>9.5%</pill_style></td></tr><tr><td>Smart household appliance (e.g. vacuum robot, refrigerator, washing machine)</td><td><pill_style>13.0%</pill_style></td></tr></table></FIELD>
+</FIELDS>

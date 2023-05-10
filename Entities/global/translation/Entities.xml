@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+	<TABLE name="translation">
+		<ROW>
+			<COLUMN name="FS_GID">81feb899-9177-40ff-97a6-2a65f648b903</COLUMN>
+			<COLUMN name="key">readNews</COLUMN>
+			<COLUMN name="translation_DE">Artikel lesen</COLUMN>
+			<COLUMN name="translation_EN">Read Article</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">836f65b1-c8e5-401a-a0d0-fb14287d4884</COLUMN>
+			<COLUMN name="key">no</COLUMN>
+			<COLUMN name="translation_DE">Nein</COLUMN>
+			<COLUMN name="translation_EN">No</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">9d2219af-b633-4934-926a-d9560dd70507</COLUMN>
+			<COLUMN name="key">getDirection</COLUMN>
+			<COLUMN name="translation_DE">Routenplaner</COLUMN>
+			<COLUMN name="translation_EN">Get direction</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">9d54f651-882c-4cb4-a2fd-1410390237d7</COLUMN>
+			<COLUMN name="key">viewMore</COLUMN>
+			<COLUMN name="translation_DE">Mehr lesen</COLUMN>
+			<COLUMN name="translation_EN">View More</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">a0210d04-7e9a-4aaf-be01-2906a2648973</COLUMN>
+			<COLUMN name="key">clear_list</COLUMN>
+			<COLUMN name="translation_DE">Liste löschen</COLUMN>
+			<COLUMN name="translation_EN">Clear list</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">a3da5350-a3b0-4b6e-af65-fd102fad7121</COLUMN>
+			<COLUMN name="key">of</COLUMN>
+			<COLUMN name="translation_DE">von</COLUMN>
+			<COLUMN name="translation_EN">of</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">cb8e4309-3d1d-4839-932a-d8fa315207cc</COLUMN>
+			<COLUMN name="key">findALocation</COLUMN>
+			<COLUMN name="translation_DE">Standortsuche</COLUMN>
+			<COLUMN name="translation_EN">Find a location</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">d5bb9cb2-4825-45d5-9153-e50f0a94fe3c</COLUMN>
+			<COLUMN name="key">empty_favorites</COLUMN>
+			<COLUMN name="translation_DE">Keine Favoriten ausgewählt.</COLUMN>
+			<COLUMN name="translation_EN">No favorites set.</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">f2c45052-e49f-498b-a6ec-e1cf32667668</COLUMN>
+			<COLUMN name="key">products</COLUMN>
+			<COLUMN name="translation_DE">Produkte</COLUMN>
+			<COLUMN name="translation_EN">products</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">f48c96b3-84f5-48d5-ad34-947ec272125d</COLUMN>
+			<COLUMN name="key">search</COLUMN>
+			<COLUMN name="translation_DE">Suche</COLUMN>
+			<COLUMN name="translation_EN">Search</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">f8a0fc59-fbc2-41b6-91fa-cea79f112efd</COLUMN>
+			<COLUMN name="key">found</COLUMN>
+			<COLUMN name="translation_DE">gefunden</COLUMN>
+			<COLUMN name="translation_EN">found</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">fb0761da-1952-4143-9547-7d514f3e7152</COLUMN>
+			<COLUMN name="key">to</COLUMN>
+			<COLUMN name="translation_DE">bis</COLUMN>
+			<COLUMN name="translation_EN">to</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">1fd09c23-158c-42fd-99cb-b91e84dab903</COLUMN>
+			<COLUMN name="key">results</COLUMN>
+			<COLUMN name="translation_DE">Ergebnissen</COLUMN>
+			<COLUMN name="translation_EN">results</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">3006ed7f-bbf4-4005-a18b-1ccea958a577</COLUMN>
+			<COLUMN name="key">yes</COLUMN>
+			<COLUMN name="translation_DE">Ja</COLUMN>
+			<COLUMN name="translation_EN">Yes</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">30d85928-0234-4edf-8505-526f60573774</COLUMN>
+			<COLUMN name="key">product</COLUMN>
+			<COLUMN name="translation_DE">Produkt</COLUMN>
+			<COLUMN name="translation_EN">product</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">3adfe2f1-7417-46fa-ab6c-1c4903c8d81c</COLUMN>
+			<COLUMN name="key">readMore</COLUMN>
+			<COLUMN name="translation_DE">Mehr</COLUMN>
+			<COLUMN name="translation_EN">Read more</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">4e71bda8-a861-4696-9941-4ae592372200</COLUMN>
+			<COLUMN name="key">allCategories</COLUMN>
+			<COLUMN name="translation_DE">Alle Kategorien</COLUMN>
+			<COLUMN name="translation_EN">All Categories</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN name="FS_GID">7fcc998f-fa63-4275-9c47-b0af3610f551</COLUMN>
+			<COLUMN name="key">showing</COLUMN>
+			<COLUMN name="translation_DE">Zeige</COLUMN>
+			<COLUMN name="translation_EN">Showing</COLUMN>
+		</ROW>
+	</TABLE>
+</DATA>

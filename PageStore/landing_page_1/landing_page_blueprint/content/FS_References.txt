@@ -1,0 +1,6 @@
+[self]
+uid=landing_page_blueprint~#~content
+gid=54a9f23b-1743-441e-acab-2b5e96d02237
+store=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.BodyImpl
+

@@ -1,0 +1,107 @@
+//!Beanshell
+import de.espirit.firstspirit.access.GuiScriptContext;
+import de.espirit.firstspirit.access.Language;
+import de.espirit.firstspirit.access.store.*;
+import de.espirit.firstspirit.access.store.pagestore.DataProvider;
+import de.espirit.firstspirit.access.store.pagestore.PageStoreRoot;
+import de.espirit.firstspirit.access.store.pagestore.Section;
+import de.espirit.firstspirit.agency.*;
+import de.espirit.firstspirit.forms.Form;
+import de.espirit.firstspirit.forms.FormData;
+import de.espirit.firstspirit.ui.operations.ShowFormDialogOperation;
+import de.espirit.firstspirit.webedit.WebeditUiAgent;
+import de.espirit.firstspirit.webedit.server.ClientScriptOperation;
+
+import java.util.Arrays;
+import java.util.List;
+
+
+String SECTION_LIFESPAN_FROM_FORM_FIELD = "st_sectionLifespanFrom";
+String SECTION_LIFESPAN_FROM_TO_FIELD = "st_sectionLifespanTo";
+
+/**
+ * Opens a dialog to edit the lifespan of a Section.
+ **/
+openEditLifespanDialog(StoreElement storeElement) {
+	if (storeElement instanceof DataProvider) {
+		DataProvider dataProvider = (DataProvider) storeElement;
+		FormData sectionformData = dataProvider.getFormData();
+		if (hasFormField(sectionformData, SECTION_LIFESPAN_FROM_FORM_FIELD) && hasFormField(sectionformData, SECTION_LIFESPAN_FROM_TO_FIELD)) {
+			LanguageAgent languageAgent = context.requireSpecialist(LanguageAgent.TYPE);
+			OperationAgent operationAgent = context.requireSpecialist(OperationAgent.TYPE);
+			FormsAgent formsAgent = context.requireSpecialist(FormsAgent.TYPE);
+			ShowFormDialogOperation showFormDialogOperation = operationAgent.getOperation(ShowFormDialogOperation.TYPE);
+			Form editLifespanForm = formsAgent.getForm(context.getScript().getGomSource());
+
+			FormData defaultFormData = editLifespanForm.createFormData();
+			List<Language> projectLanguages = languageAgent.getLanguages();
+			copyFormFields(sectionformData, defaultFormData, projectLanguages, Arrays.asList(SECTION_LIFESPAN_FROM_FORM_FIELD, SECTION_LIFESPAN_FROM_TO_FIELD));
+
+			Language previewLanguage = context.requireSpecialist(WebeditUiAgent.TYPE).getPreviewLanguage();
+			showFormDialogOperation.setTitle(context.getScript().getDisplayName(previewLanguage));
+
+			showFormDialogOperation.setDefaults(defaultFormData);
+			showFormDialogOperation.setMultiLanguage(true);
+
+			FormData resultFormData = showFormDialogOperation.perform(editLifespanForm, projectLanguages);
+			if (resultFormData != null) {
+				try {
+					dataProvider.setLock(true);
+					copyFormFields(resultFormData, sectionformData, projectLanguages, Arrays.asList(SECTION_LIFESPAN_FROM_FORM_FIELD, SECTION_LIFESPAN_FROM_TO_FIELD));
+					dataProvider.setFormData(sectionformData);
+					dataProvider.save();					
+				} catch (LockException e) {
+					context.logError("Error locking element", e);
+				} catch (ElementDeletedException e) {
+					context.logError("Error locking element", e);
+				} finally {
+					try {
+						dataProvider.setLock(false);
+					} catch (LockException e) {
+						// Nothing
+					} catch (ElementDeletedException e) {
+						// Nothing
+					}
+				}
+				return true;
+			}
+		}
+	}
+	return false;
+}
+
+/**
+ * Copies the data from one FormField of a FormData to another. The name of the FormField must be identical in both FormData.
+ */
+copyFormFields(FormData sourceFormData, FormData targetFormData, List<Language> projectLanguages, List<String> formFieldNames) {
+	for (Language language : projectLanguages) {
+		for (String formFieldName : formFieldNames) {
+			targetFormData.get(language, formFieldName).set(sourceFormData.get(language, formFieldName).get());
+		}
+	}
+}
+
+/**
+ * Checks whether a FormData contains the specified FormField.
+ */
+hasFormField(FormData formData, String formFieldName) {
+	return formData.getForm().findEditor(formFieldName) != null;
+}
+
+// Start
+targetElement = context.getElement();
+if (sectionLifespanId != void && !sectionLifespanId.isEmpty()){
+	StoreAgent storeAgent = context.requireSpecialist(StoreAgent.TYPE);
+	PageStoreRoot pageStoreRoot = (PageStoreRoot) storeAgent.getStore(Store.Type.PAGESTORE);
+	targetElement = pageStoreRoot.getStoreElement(Long.valueOf(sectionLifespanId));
+}
+if (targetElement instanceof Section){
+	if(openEditLifespanDialog(targetElement)){
+		// Reload Preview
+		OperationAgent operationAgent = context.requireSpecialist(OperationAgent.TYPE);
+		ClientScriptOperation clientScriptOperation = operationAgent.getOperation(ClientScriptOperation.TYPE);
+         	clientScriptOperation.perform("(function(){top.WE_API.Preview.reload();})()", false);
+	};	
+}
+
+

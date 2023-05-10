@@ -1,12 +1,12 @@
 [self]
 uid=translationstudio_list
-gid=2ecb5aaf-25d1-4e1e-a9fd-f4676d79d13d
+gid=e055bb69-1ecb-4b3a-b117-d83acdc6ba00
 uidType=CONTENTSTORE
 class=de.espirit.firstspirit.store.access.contentstore.Content2Impl
 
 [requiredProjectId]
 uid=task
-gid=ff3dd5c8-252c-4c60-a424-a80642b0525f
+gid=a9febcb1-c02d-4af3-962c-e62d7cbc2d9b
 uidType=TEMPLATESTORE_SCHEMA
 class=de.espirit.firstspirit.store.access.templatestore.TableTemplateImpl
 

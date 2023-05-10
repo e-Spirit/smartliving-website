@@ -1,0 +1,62 @@
+$--
+	Can be used to collect javascript snippets and files.
+	
+	Parameters:
+		prm_action			[String| required]		[add| print]			Implemented actions are add and print
+																					add: Adds a new JavaScript file or statement
+																					print: Prints all added statements and scrips
+		prm_jSStatement		[String| optional]								Adds a JavaScript statement
+		prm_jSId			[String| optional]								Required for unique identification of scripts. Only for statements.
+		
+		prm_jSMedia			[String| optional]								Adds a JavaScript media uid from the mediastore
+		
+	Example Call:
+		$CMS_RENDER(template: "javascript_collector", prm_action: "add", prm_jSStatement: "<script>console.log('Hello World!');</script>")$
+		$CMS_RENDER(template: "javascript_collector", prm_action: "add", 
+														prm_jSStatement: "<script>console.log("Hello World!");</script>", 
+														prm_jSId: #this.template.uid)$
+		
+		$CMS_RENDER(template: "javascript_collector", prm_action: "add", prm_jSMedia: "js-custom-media")$
+		
+		$CMS_RENDER(template: "javascript_collector", prm_action: "print")$
+			Result:
+				<script>console.log("Hello World!");</script>
+				<script src="/media/files/js-custom-media.js"></script>
+
+--$
+$CMS_SWITCH(prm_action)$
+	$CMS_VALUE(#global.logError("Unkown action: " + prm_action + "[" + #this + "]"))$
+$CMS_CASE("add")$
+	$CMS_IF(prm_jSStatement.isEmpty() && prm_jSMedia.isEmpty())$
+		$CMS_VALUE(#global.logError("Missing Parameter for action 'add'."))$	
+	$CMS_ELSE$
+		$-- Add a statement --$
+		$CMS_IF(!prm_jSStatement.isEmpty())$		
+			$CMS_SET(set_jSId, if(!prm_jSId.isEmpty(), prm_jSId, #this.template.uid))$			
+			
+			$CMS_IF(#global.context("PAGE")["set_jSCollector"].isEmpty())$
+				$CMS_SET(#global.context("PAGE")["set_jSCollector"], {set_jSId: prm_jSStatement})$
+			$CMS_ELSE$
+				$CMS_SET(void, #global.context("PAGE")["set_jSCollector"].put(set_jSId, prm_jSStatement))$
+			$CMS_END_IF$
+		$CMS_END_IF$
+		$-- Add a file --$
+		$CMS_IF(!prm_jSMedia.isEmpty() && ref(media: prm_jSMedia, abs: 1) != null)$
+			$CMS_SET(set_media, ref(media: prm_jSMedia, abs: 1))$			
+			$CMS_SET(set_jSId, set_media.target.uid)$
+			$CMS_SET(set_jSTag, "<script src=\""+set_media.url+"\"></script>")$						
+			$CMS_IF(#global.context("PAGE")["set_jSCollector"].isEmpty())$
+				$CMS_SET(#global.context("PAGE")["set_jSCollector"], {set_jSId: set_jSTag})$
+			$CMS_ELSE$
+				$CMS_SET(void, #global.context("PAGE")["set_jSCollector"].put(set_jSId, set_jSTag))$
+			$CMS_END_IF$			
+		$CMS_END_IF$
+	$CMS_END_IF$
+$CMS_CASE("print")$
+	$CMS_IF(!#global.context("PAGE")["set_jSCollector"].isEmpty())$
+		$CMS_FOR(for_jSItem, #global.context("PAGE")["set_jSCollector"].values)$
+			$CMS_VALUE(#global.logDebug("for_jSItem: " +for_jSItem))$
+			$CMS_VALUE(for_jSItem)$
+		$CMS_END_FOR$
+	$CMS_END_IF$
+$CMS_END_SWITCH$

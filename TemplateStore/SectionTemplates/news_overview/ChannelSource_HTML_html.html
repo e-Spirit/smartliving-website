@@ -1,0 +1,212 @@
+<CMS_HEADER>
+	<CMS_FUNCTION name="contentSelect" resultname="fr_tags">
+			<CMS_PARAM name="schema" value="smartliving"/>
+			<QUERY entityType="tag">
+			</QUERY>
+	</CMS_FUNCTION>
+</CMS_HEADER>
+<script src="$CMS_REF(media:"vue_global", abs: 1)$"></script>
+<script src="$CMS_REF(media:"vuejs_paginate_next_umd", abs: 1)$"></script>
+
+<section class="py-24 bg-white" id="app" $CMS_VALUE(editorId())$>
+	<div class="container px-4 mx-auto text-center">
+		<div class="md:max-w-5xl mx-auto mb-8 md:mb-16 text-center">
+			$CMS_RENDER(template:"render_headline", prm_headline: st_headline, 
+						prm_defaultTag: "h2", 
+						prm_cssClasses: "mb-8 text-3xl md:text-4xl font-bold font-heading tracking-px-n leading-none text-primary",
+						prm_inputComponentName: "st_headline")$			
+			<p class="mb-10 text-lg md:text-xl text-text font-medium" $CMS_VALUE(editorId(editorName:"st_subheadline"))$>$CMS_VALUE(st_subheadline, default:"")$</p>
+			<div class="relative mx-auto md:w-80">
+          		<img class="absolute top-1/2 left-4 transform -translate-y-1/2" src="https://shuffle.dev/flex-ui-assets/elements/blog/search.svg" alt="$CMS_VALUE(ps_translations.search)$">
+          		<input class="w-full py-3 pl-12 pr-4 text-text leading-tight placeholder-coolGray-500 border border-coolGray-200 rounded-lg shadow-xsm focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-opacity-50" type="text" placeholder="$CMS_VALUE(ps_translations.search)$" id="search_news" @input="searchNews()">
+        	</div>
+		</div>
+		<ul class="flex flex-wrap mb-8 -mx-2 justify-center">
+			<li class="w-full md:w-auto px-2" v-for="(filter, index) in filters" :key="index">
+				<button v-if="filter === activeFilter" 
+					@click="filterNews(filter)"
+					class="inline-block w-full py-2 px-4 mb-4 md:mb-0 text-sm text-text bg-gray-200 font-bold rounded-md shadow-sm">{{filter}}</button>
+				<button v-else
+					@click="filterNews(filter)"
+					class="inline-block w-full py-2 px-4 mb-4 md:mb-0 text-sm font-bold rounded-md text-gray-500 hover:text-secondary hover:bg-gray-200 hover:shadow-sm">{{filter}}</button>
+			</li>
+		</ul>
+		<div class="flex flex-wrap -mx-4 mb-12 md:mb-20">
+			<template v-for="(n, index) in news" :key="n.id">
+				<div class="w-full md:w-1/2 px-4 mb-8" v-if="n.id !== 2">
+					<a class="block mb-6 overflow-hidden rounded-md" :href="n.detailpage">
+						<img class="w-full" :src="n.image" :alt="n.imageAltText">
+					</a>
+					<div class="mb-4"><a
+							class="inline-block mr-1 py-1 px-3 text-xs leading-5 font-medium uppercase text-secondary rounded-full shadow-sm bg-gray-100 hover:text-gray-500 hover:bg-gray-200 "
+								href="#" v-for="tagsItem in n.tags " @click="filterNews(tagsItem.name)">{{tagsItem.name}}</a></div>
+					<p class="mb-2 text-text font-medium "  v-for="authorsItem in n.authors ">{{authorsItem.name}} &bull; {{formatDate(n.date)}}</p>
+					<p class="inline-block mb-4 text-2xl leading-tight text-primary font-bold">{{ n.headline }}</p>
+					<p class="mb-4 text-base md:text-lg text-text font-medium" v-html="n.teasertext"></p>
+					<a class="inline-flex items-center text-base md:text-lg text-link-text hover:text-link-hover font-semibold"
+						:href="n.detailpage">
+						<span class="mr-3">$CMS_VALUE(ps_translations.readNews)$</span>
+						<svg width="8" height="10" viewbox="0 0 8 10" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M7.94667 4.74665C7.91494 4.66481 7.86736 4.59005 7.80666 4.52665L4.47333 1.19331C4.41117 1.13116 4.33738 1.08185 4.25617 1.04821C4.17495 1.01457 4.08791 0.997253 4 0.997253C3.82246 0.997253 3.6522 1.06778 3.52667 1.19331C3.46451 1.25547 3.4152 1.32927 3.38156 1.41048C3.34792 1.4917 3.33061 1.57874 3.33061 1.66665C3.33061 1.84418 3.40113 2.01445 3.52667 2.13998L5.72667 4.33331H0.666667C0.489856 4.33331 0.320286 4.40355 0.195262 4.52858C0.070238 4.6536 0 4.82317 0 4.99998C0 5.17679 0.070238 5.34636 0.195262 5.47138C0.320286 5.59641 0.489856 5.66665 0.666667 5.66665H5.72667L3.52667 7.85998C3.46418 7.92196 3.41458 7.99569 3.38074 8.07693C3.34689 8.15817 3.32947 8.24531 3.32947 8.33331C3.32947 8.42132 3.34689 8.50846 3.38074 8.5897C3.41458 8.67094 3.46418 8.74467 3.52667 8.80665C3.58864 8.86913 3.66238 8.91873 3.74361 8.95257C3.82485 8.98642 3.91199 9.00385 4 9.00385C4.08801 9.00385 4.17514 8.98642 4.25638 8.95257C4.33762 8.91873 4.41136 8.86913 4.47333 8.80665L7.80666 5.47331C7.86736 5.40991 7.91494 5.33515 7.94667 5.25331C8.01334 5.09101 8.01334 4.90895 7.94667 4.74665Z"
+								fill="currentColor"></path>
+						</svg>
+					</a>
+				</div>
+			</template>		
+		</div>
+		<div class="flex items-center justify-center border-t border-gray-200 bg-white px-4 py-3 sm:px-6" v-if="news.length!=0 && getPaginateCount > 1">
+			<paginate
+				v-model="currentPage"
+				:page-count="getPaginateCount"
+				:page-range="3"
+				:prev-text="'<span class=\'sr-only\'>Previous</span><svg class=\'h-5 w-5\' xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 20 20\' fill=\'currentColor\' aria-hidden=\'true\'><path fill-rule=\'evenodd\' d=\'M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z\' clip-rule=\'evenodd\' /></svg>'"
+				:next-text="'<span class=\'sr-only\'>Previous</span><svg class=\'h-5 w-5\' xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 20 20\' fill=\'currentColor\' aria-hidden=\'true\'><path fill-rule=\'evenodd\' d=\'M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z\' clip-rule=\'evenodd\' /></svg>'"
+				:click-handler="clickCallback"
+				:container-class="'isolate inline-flex -space-x-px rounded-md shadow-sm'"
+				:page-class="'relative inline-flex items-center border text-sm font-medium focus:z-20'"
+				:page-link-class="'px-4 py-2 border-gray-300 bg-white text-text hover:bg-gray-50 cursor-pointer'"
+				:active-class="'z-10 border-gray-500 bg-gray-50 text-text cursor-pointer'"
+				:prev-class="'relative inline-flex items-center rounded-l-md border border-gray-300 bg-white px-2 py-2 text-sm font-medium text-text hover:bg-gray-50 focus:z-20'"
+				:prev-link-class="''"
+				:next-class="'relative inline-flex items-center rounded-r-md border border-gray-300 bg-white px-2 py-2 text-sm font-medium text-text hover:bg-gray-50 focus:z-20'"
+				:next-link-class="''"
+				:first-last-button="false"
+				:first-button-text="'<<'"
+				:last-button-text="'>>'"
+			></paginate>									  							
+		</div>					
+		<div class="flex items-center justify-center border-t border-gray-200 bg-white px-4 py-3 sm:px-6" v-if="news.length!=0 && getPaginateCount > 1">
+			<p class="text-sm text-text">
+			  $CMS_VALUE(ps_translations.showing)$
+			  <span v-if="(currentPage-1) > 0" class="font-medium">{{(currentPage - 1) * perPage}}</span>
+			  <span v-else class="font-medium">1</span>
+			  $CMS_VALUE(ps_translations.to)$
+			  <span v-if="(currentPage * perPage) <= allNews.length" class="font-medium">{{currentPage * perPage}}</span>
+			  <span v-else class="font-medium">{{allNews.length}}</span>
+			  $CMS_VALUE(ps_translations.of)$
+			  <span class="font-medium">{{allNews.length}}</span>
+			  $CMS_VALUE(ps_translations.results)$
+			</p>
+		</div>
+	</div>	
+</section>
+
+<script>		
+	const { ref, reactive, readonly, computed } = Vue;
+	const dataJsonUrl = '$CMS_REF(st_data_page, abs: 1)$$CMS_IF(#global.is("WEBEDIT"))$/forceRefresh=1$CMS_END_IF$'
+	const App = {			
+		setup() {							
+			const filters = ref(['$CMS_VALUE(ps_translations.allCategories)$'$CMS_FOR(for_tag, fr_tags)$, '$CMS_VALUE(for_tag.name)$'$CMS_END_FOR$]);
+			const activeFilter = ref('$CMS_VALUE(ps_translations.allCategories)$');
+			const getTodos = computed(() => {				
+				if (activeFilter.value === '$CMS_VALUE(ps_translations.allCategories)$') {						
+					filterNews('$CMS_VALUE(ps_translations.allCategories)$')
+					return todos.value;
+				}
+				return todos.value.filter((item) => item.type === activeFilter.value);
+			});
+			const emptyNote = computed(() => {
+				if (activeFilter.value != '') {
+					return `No news found for ${activeFilter.value}!`;
+				}
+			});
+
+			function filterTodo(type) {
+				activeFilter.value = type;				
+			}
+			return { filterTodo, activeFilter, filters, emptyNote }
+		},
+		data() {
+			return {					
+				news:{},
+				allNews:{},
+				currentPage: 1,
+      			perPage: $CMS_VALUE(st_number_of_news)$
+			}
+		},
+		components: {
+			paginate: VuejsPaginateNext,
+		},
+		methods: {																					
+			clickCallback: function (pageNum) {
+				this.currentPage = Number(pageNum);									
+				let start = (this.currentPage - 1) * this.perPage;
+				let end = this.currentPage * this.perPage;
+				this.news = this.allNews.slice(start, end);
+			},
+			formatDate(dateString) {
+				const date = new Date(dateString);
+				return new Intl.DateTimeFormat('$CMS_VALUE(#global.language.abbreviation)$', {dateStyle: 'long'}).format(date);
+			},
+			filterNews(filter) {
+				if (!filter) {filter = '$CMS_VALUE(ps_translations.allCategories)$'}				
+				this.activeFilter = filter;			
+				fetch(dataJsonUrl)
+					.then(response => response.json())
+					.then(res => {			
+					if (filter === '$CMS_VALUE(ps_translations.allCategories)$') {
+						this.news = res;																					
+
+					} else {
+						//Filter for tag name		
+						this.news = res.filter(news => {
+							let opt = news.tags.some(({name}) => name === filter); 
+							return opt;
+						})					
+					}
+					this.allNews = this.news;								
+					this.clickCallback(1);											
+					});
+			},
+			searchNews() {
+				this.activeFilter = '';
+				var query = document.getElementById("search_news").value;
+				if (!query) {query = ''}
+				query = query.toLowerCase();
+				fetch(dataJsonUrl)
+					.then(response => response.json())
+					.then(res => {
+					if (query === '') {
+						this.news = res;
+					} else {
+						this.news = res.filter(news => {
+							//news.headline.includes(query)
+							let opt = news.headline.toLowerCase().includes(query) ||
+								news.subheadline.toLowerCase().includes(query) ||
+								news.teasertext.toLowerCase().includes(query) ||
+								news.articletext.toLowerCase().includes(query) ||
+								news.date.toLowerCase().includes(query) ||
+								news.tags.some(({name}) => name.toLowerCase().includes(query)) ||
+								news.authors.some(({name}) => name.toLowerCase().includes(query)); 
+							return opt;
+						})
+					}
+					
+					this.allNews = this.news;
+					this.clickCallback(1);
+
+					});
+			}
+		},
+		mounted() {
+			this.filterNews()
+		},	
+		computed: {
+
+			getPaginateCount: function () {
+				return Math.ceil(this.allNews.length / this.perPage);
+			},
+
+			$--newsFilter() {
+				//console.log(this.activeFilter)
+				//console.log(this.news[0])
+				// `this` points to the component instance
+				return this.news.length > 0 ? '$CMS_VALUE(ps_translations.yes)$' : '$CMS_VALUE(ps_translations.no)$'
+				//return this.news
+			}--$
+		}
+	}
+	Vue.createApp(App).mount("#app");
+</script>

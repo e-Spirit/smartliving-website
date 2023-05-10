@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_headline'><TEXT>Welcome home, to your smart home!</TEXT></FIELD>
+	<FIELD name='st_subheadline'><TEXT>With simple and intuitive devices and easy-to-use features, our customers can design everything from their lighting control to central media management</TEXT></FIELD>
+	<FIELD name='st_cta'><LINK><CMS_LINK linktemplate="internal_link" type="genericLink"><TEMPLATECONTENT><CMS_VALUE name="lt_link"><LANG id="§" set="1"><UID>our_solutions_vyi5c042ui3n</UID><UIDTYPE>SITESTORE_LEAF</UIDTYPE><REMOTE/></LANG></CMS_VALUE><CMS_VALUE name="lt_text"><LANG id="§" set="1"><TEXT>Take a look at our innovative solutions</TEXT></LANG></CMS_VALUE></TEMPLATECONTENT></CMS_LINK></LINK></FIELD>
+</FIELDS>

@@ -1,6 +1,0 @@
-[self]
-uid=hesperiden
-gid=534846f2-ce03-49c1-b3e6-03b7b9aaef3c
-uidType=MEDIASTORE_LEAF
-class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
-

@@ -1,32 +1,60 @@
-$CMS_IF(!st_color.isEmpty())$
-	$CMS_IF(st_color.equals("acc-bg-dark"))$
-		$CMS_SET(set_linkColor, "white")$
-	$CMS_END_IF$
-$CMS_END_IF$
-<!-- SECTION CONTENTG START -->
-<div class="section-full p-tb80 bg-white-faq" $CMS_VALUE(editorId(reloadPreview: true))$>
-	<!-- LOCATION BLOCK-->
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 col-sm-9">
-				<div class="m-b50">
-					<!-- TITLE START -->
-					<div class="section-head">
-						<h3 $CMS_VALUE(editorId(editorName:"st_header"))$>$CMS_VALUE(st_header.convert2(),default:"")$</h3>
-						<div class="wt-separator-outer">
-							<div class="wt-separator bg-black"></div>
-						</div>
-					</div>
-					<!-- TITLE END -->
-					<!-- ACCORDION  DEFAULT -->
-					<div class="section-content">
-						$CMS_SET(set_accName,"accordion"+#global.section.id)$
-						<div class="wt-accordion lists-in-accordion m-b10 $CMS_VALUE(st_color,default:"")$" id="$CMS_VALUE(set_accName)$")$>
-							$CMS_VALUE(st_acc, default:"")$
-						</div>
-					</div>
-				</div>
+<section class="py-14" $CMS_VALUE(editorId())$>
+	<div class="container px-4 mx-auto">
+		<div class="md:max-w-4xl mx-auto text-center">
+			$CMS_IF(!st_subline.isEmpty())$
+				<p class="mb-7 text-sm text-text font-semibold uppercase tracking-px" $CMS_VALUE(editorId(editorName:"st_subline"))$>$CMS_VALUE(st_subline.convert2())$</p>
+			$CMS_END_IF$
+			$CMS_RENDER(template:"render_headline", prm_headline: st_headline, 
+						prm_defaultTag: "h2", 
+						prm_cssClasses: "mb-8 text-3xl md:text-4xl font-bold font-heading tracking-px-n leading-none text-primary",
+						prm_inputComponentName: "st_headline")$
+			<div class="mb-11 flex flex-wrap -m-1 text-left">
+				$CMS_VALUE(st_accordion)$
 			</div>
+			$CMS_IF(#global.is("WEBEDIT"))$
+				<div $CMS_VALUE(editorId(editorName:"st_info"))$>
+			$CMS_END_IF$
+				$CMS_VALUE(st_info, default:"")$
+			$CMS_IF(#global.is("WEBEDIT"))$
+				</div>
+			$CMS_END_IF$
 		</div>
 	</div>
-</div>
+</section>
+$CMS_SET(set_script)$
+	<script>
+		(function () {
+			function displayAccordionItem(item, display) {
+				if (display) {
+					let panel = item.nextElementSibling;
+					panel.style.maxHeight = panel.scrollHeight + "px";
+					item.setAttribute("data-accordion", "active");
+					item.querySelector("[data-accordion-icon]").classList.add("rotate-180");
+				} else {
+					item.nextElementSibling.style.maxHeight = null;
+					item.setAttribute("data-accordion", "");
+					item.querySelector("[data-accordion-icon]").classList.remove("rotate-180");
+				}
+			}
+			document.addEventListener("click", (event) => {
+				let element = event.target;
+				while (element) {
+					if (element.matches("[data-accordion]")) {
+						let elementActive = element.getAttribute("data-accordion") === "active";
+						let accordions = document.querySelectorAll("[data-accordion]");
+						accordions.forEach((element) => {
+							displayAccordionItem(element, false);
+						});
+						displayAccordionItem(element, !elementActive);
+						return;
+					} else {
+						element = element.parentElement;
+					}
+				}
+			});
+		})();
+	</script>
+$CMS_END_SET$
+$CMS_RENDER(template: "javascript_collector", prm_action: "add", 
+												prm_jSStatement: set_script, 
+												prm_jSId: #this.template.uid)$

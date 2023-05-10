@@ -1,0 +1,12 @@
+[self]
+uid=icon_template_interactive_image
+gid=afd8c830-e00d-46cd-b2f5-b8bec4e9b4bf
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+
+[requiredProjectId]
+uid=metadata
+gid=b2c7cf16-33d2-4cf4-b16d-fa4fb256cd68
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
+

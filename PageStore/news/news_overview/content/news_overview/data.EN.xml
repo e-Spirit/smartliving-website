@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_headline'><TEXT>News Overview</TEXT></FIELD>
+	<FIELD name='st_subheadline'><TEXT>A simple news overview page with search and filter capabilities.</TEXT></FIELD>
+</FIELDS>

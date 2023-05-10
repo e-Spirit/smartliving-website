@@ -1,6 +1,0 @@
-[self]
-uid=navigation_skins
-gid=e483c96d-d594-4cb9-b782-13829a977ced
-uidType=MEDIASTORE_FOLDER
-class=de.espirit.firstspirit.store.access.mediastore.MediaFolderImpl
-

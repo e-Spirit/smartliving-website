@@ -1,0 +1,7 @@
+[self]
+uid=/render_format_templates/contentcreator
+gid=0a5bfc72-3ebb-4493-8374-0a494b27df4a
+store=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateFolderImpl
+root=de.espirit.firstspirit.store.access.templatestore.FormatTemplatesImpl
+

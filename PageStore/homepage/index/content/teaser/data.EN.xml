@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<FIELDS>
-	<FIELD name='st_kicker'><TEXT>Welcome</TEXT></FIELD>
-	<FIELD name='st_headline'><DOM><standard>YOUR <span_yellow_text>SMART</span_yellow_text> HOME</standard></DOM></FIELD>
-	<FIELD name='st_text'><DOM><standard>With simple functions and tools, our Smart Living customers can create their own individual home. From light control to central media control.</standard></DOM></FIELD>
-	<FIELD name='st_picture_alt'><TEXT>Touching Surface</TEXT></FIELD>
-	<FIELD name='st_jumbo_headline'><TEXT>Smart Living</TEXT></FIELD>
-	<FIELD name='st_button'><LINK/></FIELD>
-</FIELDS>

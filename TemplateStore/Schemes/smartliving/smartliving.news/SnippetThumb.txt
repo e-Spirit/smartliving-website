@@ -1,1 +1,1 @@
-if(!image.isEmpty, image, medium("news_article"))
+if(!tt_image.isEmpty(), tt_image)

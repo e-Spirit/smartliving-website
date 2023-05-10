@@ -1,0 +1,49 @@
+$--
+	Render format template for links with custom html based on the standard links.
+	
+	Parameters:
+		prm_link				Link			required (prm_link OR (prm_linkFormData AND prm_linkTemplate))
+		prm_linkFormData		FormData		required (prm_link OR (prm_linkFormData AND prm_linkTemplate))
+		prm_linkTemplate		FormData		required (prm_link OR (prm_linkFormData AND prm_linkTemplate))
+				
+		prm_style				String			optional
+		prm_innerHTML   		String			optional
+		
+	Example:
+		$CMS_RENDER(template:"render_link", 
+						prm_link: st_link, 
+						prm_style:"inline-block py-5 px-7 w-full text-base md:text-lg ")$
+						
+		$CMS_RENDER(template:"render_link", 
+						prm_linkFormData: for_link.item, 
+						prm_linkTemplate: for_link.template, 
+						prm_style:"font-heading text-base text-gray-900 hover:text-gray-700")$
+				
+		$CMS_SET(set_linkInnerHTML)$
+			<span class="mr-2 font-semibold leading-normal">$CMS_VALUE(st_cta.getText().convert2())$</span>
+			<svg width="19" height="18" viewbox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M11 3.75L16.25 9M16.25 9L11 14.25M16.25 9L2.75 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+			</svg>			
+		$CMS_END_SET$
+		$CMS_RENDER(template:"render_link", 
+						prm_link: st_cta, 
+						prm_style:"inline-flex flex-wrap items-center text-white hover:text-gray-200",
+						prm_innerHTML: set_linkInnerHTML)$		
+	
+--$
+$CMS_IF(!prm_link.isEmpty())$
+	$CMS_SET(set_linkFormData, prm_link.formData)$
+	$CMS_SET(set_linkTemplate, prm_link.template)$
+$CMS_ELSE$
+	$CMS_SET(set_linkFormData, if(!prm_linkFormData.isEmpty(), prm_linkFormData))$
+	$CMS_SET(set_linkTemplate, if(!prm_linkTemplate.isEmpty(), prm_linkTemplate))$
+$CMS_END_IF$
+
+$CMS_IF(!set_linkFormData.isEmpty() && !set_linkTemplate.isEmpty())$
+	<a class="$CMS_VALUE(prm_style.parse())$" href="$CMS_RENDER(template:"render_link_url", prm_linkFormData: set_linkFormData, prm_linkTemplate: set_linkTemplate)$" 
+			target="$CMS_VALUE(if("external_link".equals(prm_linkTemplate.getUid()), "_blank", "_self"))$">
+		$CMS_VALUE(if(isSet(prm_innerHTML), prm_innerHTML, 
+						isSet(prm_link), prm_link.getText().convert2(),
+						!set_linkFormData.lt_text.isEmpty(), set_linkFormData.lt_text.convert2()), default:"")$
+	</a>	
+$CMS_END_IF$

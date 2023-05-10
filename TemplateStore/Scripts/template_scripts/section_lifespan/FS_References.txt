@@ -1,0 +1,6 @@
+[self]
+uid=section_lifespan
+gid=6e8ebacd-4686-4d99-9aec-236d59325399
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
+

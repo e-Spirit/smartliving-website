@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RULES>
+	<RULE>
+		<WITH>
+			<PROPERTY name="EMPTY" source="st_youtubeVideo"/>
+		</WITH>
+		<DO>
+			<PROPERTY name="ADD" source="st_youtubeVideo"/>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<NOT>
+				<PROPERTY name="WEB" source="#global"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<PROPERTY name="VISIBLE" source="st_videoElements"/>
+		</DO>
+	</RULE>
+	<!-- Display st_openContentCreator button only in SiteArchitect  -->
+	<ON_EVENT>
+		<WITH>
+			<PROPERTY name="WEB" source="#global"/>
+		</WITH>
+		<DO>
+			<PROPERTY name="VISIBLE" source="st_interactiveVideo"/>
+		</DO>
+	</ON_EVENT>
+	<RULE>
+		<WITH>
+			<EQUAL>
+				<PROPERTY name="STORETYPE" source="#global"/>
+				<TEXT>templatestore</TEXT>
+			</EQUAL>
+		</WITH>
+		<DO>
+			<PROPERTY name="VISIBLE" source="#form.sectionLifespan"/>
+		</DO>
+	</RULE>
+</RULES>

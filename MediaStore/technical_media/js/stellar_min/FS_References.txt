@@ -1,6 +1,0 @@
-[self]
-uid=stellar_min
-gid=4f1aa82a-276d-4748-8559-1dc213b4f76d
-uidType=MEDIASTORE_LEAF
-class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
-

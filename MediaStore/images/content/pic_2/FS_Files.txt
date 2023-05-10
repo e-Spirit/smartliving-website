@@ -1,10 +1,17 @@
 # mimeType        name
 text/plain;UTF-8  FS_Info.txt
 text/plain;UTF-8  FS_References.txt
-image/jpeg        Picture_pic-2_banner_slider.jpg
-image/jpeg        Picture_pic-2_landscape.jpg
-image/jpeg        Picture_pic-2_portrait.jpg
-image/jpeg        Picture_pic-2_product_teaser.jpg
-image/jpeg        Picture_pic-2_square.jpg
+image/webp        Picture_pic-2_16x4_L.webp
+image/webp        Picture_pic-2_16x4_M.webp
+image/webp        Picture_pic-2_16x6_L.webp
+image/webp        Picture_pic-2_16x6_M.webp
+image/webp        Picture_pic-2_16x6_XL.webp
+image/webp        Picture_pic-2_16x9_L.webp
+image/webp        Picture_pic-2_16x9_M.webp
+image/webp        Picture_pic-2_16x9_S.webp
+image/webp        Picture_pic-2_4x3_M.webp
+image/jpeg        Picture_pic-2_4x3_S.jpg
+image/webp        Picture_pic-2_9x16_M.webp
+image/jpeg        Picture_pic-2_ORIGINAL.jpg
 text/xml;UTF-8    StoreElement.xml
 text/xml          meta.xml

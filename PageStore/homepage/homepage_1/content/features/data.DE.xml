@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_headline'><TEXT>SmartLiving bietet Ihnen viele Möglichkeiten Ihr Leben zu vereinfachen und Abläufe zu automatisieren</TEXT></FIELD>
+	<FIELD name='st_text'><DOM><subline>Unsere Forschungsabteilung ist immer auf der Suche nach neuen Innvationen, die dafür sorgen, dass Sie Ihr Leben geniessen können. Unsere Produkte und Lösungen helfen Ihnen dabei, sicher zu leben und Entlastung im Alltag zu erfahren. </subline></DOM></FIELD>
+	<FIELD name='st_sectionLifespanFrom'><DATE/></FIELD>
+	<FIELD name='st_sectionLifespanTo'><DATE/></FIELD>
+</FIELDS>

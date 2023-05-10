@@ -1,0 +1,2 @@
+if(#item.getName().startsWith("bookmark_"), #item.getDisplayName(#language),
+				!st_headline.isEmpty(), st_headline, "Interactive video")

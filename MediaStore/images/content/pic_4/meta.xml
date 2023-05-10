@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <FIELDS>
-	<FIELD name='md_creation_date'><DATE>1637182120846</DATE></FIELD>
 	<FIELD name='fsai_facesPayload'><TEXT>{
   "version" : 2,
   "languageToResponse" : {
@@ -15,58 +14,125 @@
   "languageToResponse" : {
     "§" : {
       "labels" : [ {
-        "name" : "Chair",
-        "confidence" : 90.956375,
+        "name" : "Electronics",
+        "confidence" : 96.502396,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Ball",
+        "confidence" : 91.72232,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Rugby",
+        "confidence" : 91.72232,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Sport"
+        } ]
+      }, {
+        "name" : "Rugby Ball",
+        "confidence" : 91.72232,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.57104015,
+            "height" : 0.72216916,
+            "left" : 0.2626003,
+            "top" : 0.27288908
+          },
+          "confidence" : 91.72232
+        } ],
+        "parents" : [ {
+          "name" : "Ball"
+        }, {
+          "name" : "Rugby"
+        }, {
+          "name" : "Sport"
+        } ]
+      }, {
+        "name" : "Sport",
+        "confidence" : 91.72232,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Home Decor",
+        "confidence" : 87.67505,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Speaker",
+        "confidence" : 86.92102,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Art",
+        "confidence" : 86.241554,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Porcelain",
+        "confidence" : 86.241554,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Art"
+        }, {
+          "name" : "Pottery"
+        } ]
+      }, {
+        "name" : "Pottery",
+        "confidence" : 86.241554,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Pebble",
+        "confidence" : 76.27135,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Furniture",
+        "confidence" : 56.691772,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Table",
+        "confidence" : 56.691772,
         "instances" : [ ],
         "parents" : [ {
           "name" : "Furniture"
         } ]
       }, {
-        "name" : "Furniture",
-        "confidence" : 90.956375,
+        "name" : "Sphere",
+        "confidence" : 56.04712,
         "instances" : [ ],
         "parents" : [ ]
       }, {
-        "name" : "Mouse",
-        "confidence" : 80.84047,
-        "instances" : [ {
-          "boundingBox" : {
-            "width" : 0.56794786,
-            "height" : 0.7480936,
-            "left" : 0.2653615,
-            "top" : 0.23124136
-          },
-          "confidence" : 80.84047
-        } ],
-        "parents" : [ {
-          "name" : "Hardware"
-        }, {
-          "name" : "Computer"
-        }, {
-          "name" : "Electronics"
-        } ]
-      }, {
-        "name" : "Electronics",
-        "confidence" : 80.84047,
-        "instances" : [ ],
-        "parents" : [ ]
-      }, {
-        "name" : "Computer",
-        "confidence" : 80.84047,
+        "name" : "Headphones",
+        "confidence" : 55.78916,
         "instances" : [ ],
         "parents" : [ {
           "name" : "Electronics"
         } ]
       }, {
-        "name" : "Hardware",
-        "confidence" : 80.84047,
+        "name" : "Cushion",
+        "confidence" : 55.656178,
         "instances" : [ ],
         "parents" : [ {
-          "name" : "Electronics"
+          "name" : "Home Decor"
+        } ]
+      }, {
+        "name" : "Pillow",
+        "confidence" : 55.362087,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Cushion"
+        }, {
+          "name" : "Home Decor"
         } ]
       } ],
       "orientationCorrection" : null,
-      "labelModelVersion" : "2.0"
+      "labelModelVersion" : "3.0"
     }
   }
 }</TEXT></FIELD>
@@ -84,7 +150,7 @@
   "languageToResponse" : {
     "§" : {
       "moderationLabels" : [ ],
-      "moderationModelVersion" : "5.0",
+      "moderationModelVersion" : "6.0",
       "humanLoopActivationOutput" : null
     }
   }
@@ -92,7 +158,7 @@
 	<FIELD name='fsai_tags'><TEXT>{
   "version" : 2,
   "languageToResponse" : {
-    "§" : "#Computer #Hardware #Chair #Mouse #Furniture #Electronics"
+    "§" : "#Sphere #Cushion #Pebble #Rugby #Porcelain #Furniture #Table #Ball #Rugby Ball #Sport #Art #Home Decor #Headphones #Pottery #Speaker #Electronics #Pillow"
   }
 }</TEXT></FIELD>
 </FIELDS>

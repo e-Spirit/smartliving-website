@@ -1,4 +1,4 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <FIELDS>
-	<FIELD name='pt_text'><TEXT>Seite</TEXT></FIELD>
+	<FIELD name='pt_md_title'><TEXT>Stanbdardseite</TEXT></FIELD>
 </FIELDS>

@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Triangle",
+        "confidence" : 99.83826,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Blackboard",
+        "confidence" : 68.293564,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.94350034,
+            "height" : 0.9144158,
+            "left" : 0.023618203,
+            "top" : 0.0465876
+          },
+          "confidence" : 68.293564
+        } ],
+        "parents" : [ ]
+      }, {
+        "name" : "Sign",
+        "confidence" : 57.59462,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Symbol"
+        } ]
+      }, {
+        "name" : "Symbol",
+        "confidence" : 57.59462,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Lighting",
+        "confidence" : 57.22612,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Home Decor",
+        "confidence" : 55.36851,
+        "instances" : [ ],
+        "parents" : [ ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "6.1",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Triangle #Home Decor #Symbol #Sign #Blackboard #Lighting"
+  }
+}</TEXT></FIELD>
+</FIELDS>

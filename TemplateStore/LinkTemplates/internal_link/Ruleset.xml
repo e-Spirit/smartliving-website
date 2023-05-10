@@ -1,33 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RULES>
-	<!-- Mandatory: lt_text -->
-	<RULE>
-		<WITH>
-			<NOT>
-				<PROPERTY name="EMPTY" source="lt_text"/>
-			</NOT>
-		</WITH>
-		<DO>
-			<VALIDATION scope="SAVE">
-				<PROPERTY name="VALID" source="lt_text"/>
-				<MESSAGE lang="*" text="Please enter a title."/>
-				<MESSAGE lang="DE" text="Bitte geben sie eine Titel ein."/>
-			</VALIDATION>
-		</DO>
-	</RULE>
-	<!-- Mandatory: lt_link -->
-	<RULE>
-		<WITH>
-			<NOT>
-				<PROPERTY name="EMPTY" source="lt_link"/>
-			</NOT>
-		</WITH>
-		<DO>
-			<VALIDATION scope="SAVE">
-				<PROPERTY name="VALID" source="lt_link"/>
-				<MESSAGE lang="*" text="Please select a target."/>
-				<MESSAGE lang="DE" text="Bitte ein Ziel auswählen."/>
-			</VALIDATION>
-		</DO>
-	</RULE>
 </RULES>

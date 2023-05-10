@@ -1,0 +1,103 @@
+<CMS_HEADER>
+	<CMS_FUNCTION name="Table" resultname="fr_st_table">
+		<CMS_VALUE_PARAM name="tableData" value="st_table" />
+		<CMS_NODE_PARAM name="tableFormat">
+			<HEADERSPEC>
+				<![CDATA[
+					<table class="table-auto w-full font-medium text-sm">
+						$CMS_VALUE(#content)$
+					</table>
+				]]>
+			</HEADERSPEC>
+			<!-- First table row / table head -->
+  		    <ROW number="0">
+  		    	<![CDATA[
+  		    		<thead>
+	  		    		<tr class="text-text text-base">
+	  		    			$CMS_VALUE(#content)$
+	  		    		</tr>
+  		    		</thead>
+  		    	]]>
+  		    </ROW>
+  		    <CELL row="0" col="0">
+  		    	<![CDATA[
+  		    		<th class="px-6 py-3">
+  		    			$CMS_VALUE(#content)$
+  		    		</th>
+				]]>
+  		    </CELL>
+   		    <CELL row="0" col="1-%n">
+  		    	<![CDATA[
+  		    		<th class="py-3 pr-6">
+  		    			$CMS_VALUE(#content)$
+  		    		</th>
+				]]>
+  		    </CELL>
+   			<!-- Table body -->
+   			<!-- First table body row -->
+			<ROW number="1">
+				<![CDATA[
+					<tbody>
+						<tr class="bg-gray-100">
+							$CMS_VALUE(#content)$
+					</tr>							
+				]]>
+			</ROW>
+		    <ROW number="EVEN">
+		    	<![CDATA[
+		    		<tr>
+			    		$CMS_VALUE(#content)$
+					</tr>							
+		    	]]>
+		    </ROW>
+		    <ROW number="ODD">
+		    	<![CDATA[
+		    		<tr class="bg-gray-100">
+			    		$CMS_VALUE(#content)$
+					</tr>							
+		    	]]>
+		    </ROW>
+		    <CELL row="ALL" col="0">
+    	    	<![CDATA[
+    	    		<td class="px-6 py-5">
+	    	    		$CMS_VALUE(#content)$
+    	    		</td>
+    	    	]]>
+    	    </CELL>
+    	    <CELL row="ALL" col="ALL">
+    	    	<![CDATA[
+    	    		<td class="py-5 pr-6">
+	    	    		$CMS_VALUE(#content)$
+    	    		</td>
+    	    	]]>
+    	    </CELL>		    
+			<!-- Last table body row -->
+			<ROW number="LAST">
+				<![CDATA[					
+						<tr class="$CMS_VALUE(if(#table%2==0, "bg-gray-100"))$">
+							$CMS_VALUE(#content)$
+						</tr>							
+					</tbody>
+				]]>
+			</ROW>
+		</CMS_NODE_PARAM>
+	</CMS_FUNCTION>
+</CMS_HEADER>
+<section class="py-14" $CMS_VALUE(editorId())$>
+	<div class="container px-4 mx-auto text-center">
+		$CMS_RENDER(template:"render_headline", prm_headline: st_headline, 
+						prm_defaultTag: "h2", 
+						prm_cssClasses: "mb-8 text-3xl md:text-4xl font-bold font-heading tracking-px-n leading-none text-primary",
+						prm_inputComponentName: "st_headline")$
+		$CMS_IF(#global.is("WEBEDIT"))$
+			<div $CMS_VALUE(editorId(editorName: "st_text"))$>
+		$CMS_END_IF$
+			$CMS_VALUE(st_text, default:"")$		
+		$CMS_IF(#global.is("WEBEDIT"))$
+			</div>
+		$CMS_END_IF$
+		<div class="p-4 bg-white shadow rounded overflow-x-auto text-left" $CMS_VALUE(editorId(editorName: "st_table"))$>
+			$CMS_VALUE(fr_st_table, default:"")$			
+		</div>
+	</div>
+</section>

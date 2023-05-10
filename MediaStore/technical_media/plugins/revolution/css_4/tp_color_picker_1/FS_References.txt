@@ -1,6 +1,0 @@
-[self]
-uid=tp_color_picker_1
-gid=37ce7ba7-4359-4d52-a24e-55baffc700b0
-uidType=MEDIASTORE_LEAF
-class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
-

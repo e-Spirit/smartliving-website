@@ -1,0 +1,8 @@
+AllChildren: 1
+ExportPermissions: NoPermissions
+ExportVersion: 3.2
+Language_DE: Deutsch
+Language_EN: English
+PresentationChannel_-1268668680467729278: HTML
+TemplateName_-4157926305581842790: text_image
+TemplateSet_9062318847741885912: html

@@ -1,6 +1,6 @@
 [self]
 uid=/translation_studio
-gid=44cf5f7d-de9a-43e8-a7ce-37c2fc43894d
+gid=f2c7a8dd-c5ab-443f-a265-c4e36694904c
 store=CONTENTSTORE
 class=de.espirit.firstspirit.store.access.contentstore.ContentFolderImpl
 

@@ -1,0 +1,2 @@
+if("manual".equals(st_type.value) && !st_image.isEmpty(), st_image,
+	"product".equals(st_type.value) && !st_product.isEmpty(), st_product.values.get(0).formData.tt_image)

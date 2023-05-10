@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RULES>
+	<RULE>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="tt_name"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="Save">
+				<PROPERTY name="VALID" source="tt_name"/>
+				<MESSAGE lang="*" text="Please choose a name"/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="tt_lat"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="Save">
+				<PROPERTY name="VALID" source="tt_lat"/>
+				<MESSAGE lang="*" text="Please specify the latitude"/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="tt_long"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="Save">
+				<PROPERTY name="VALID" source="tt_long"/>
+				<MESSAGE lang="*" text="Please specify the latitude"/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+</RULES>

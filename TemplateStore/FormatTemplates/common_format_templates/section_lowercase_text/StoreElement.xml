@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<FORMATTEMPLATE id="2211366135753640133" name="section_lowercase_text">
-	<LANG displayname="Kleingeschrieben" language="DE"/>
-	<LANG displayname="Lowercase" language="EN"/>
-	<style tag="section_lowercase_text" view="marked">
-		<attr name="align" value="left"/>
-		<render/>
-	</style>
-</FORMATTEMPLATE>

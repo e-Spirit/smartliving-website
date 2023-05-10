@@ -1,0 +1,6 @@
+[self]
+uid=render_link_dataset_url
+gid=f13ebad0-53f9-4059-be70-77d41b26d184
+uidType=TEMPLATESTORE_FORMATTEMPLATE
+class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
+

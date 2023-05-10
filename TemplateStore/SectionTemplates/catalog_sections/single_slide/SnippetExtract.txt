@@ -1,1 +1,0 @@
-if(!st_description.isEmpty(), truncate(st_description,50), "<No Description>")

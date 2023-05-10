@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Appliance",
+        "confidence" : 89.56112,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Device"
+        }, {
+          "name" : "Electrical Device"
+        } ]
+      }, {
+        "name" : "Device",
+        "confidence" : 89.56112,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Electrical Device",
+        "confidence" : 89.56112,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Microwave",
+        "confidence" : 89.56112,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Appliance"
+        }, {
+          "name" : "Device"
+        }, {
+          "name" : "Electrical Device"
+        }, {
+          "name" : "Oven"
+        } ]
+      }, {
+        "name" : "Oven",
+        "confidence" : 89.56112,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Appliance"
+        }, {
+          "name" : "Device"
+        }, {
+          "name" : "Electrical Device"
+        } ]
+      }, {
+        "name" : "Clapperboard",
+        "confidence" : 64.212036,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.91170883,
+            "height" : 0.7640002,
+            "left" : 0.044418436,
+            "top" : 0.1058572
+          },
+          "confidence" : 64.212036
+        }, {
+          "boundingBox" : {
+            "width" : 0.17850693,
+            "height" : 0.34768763,
+            "left" : 0.72893924,
+            "top" : 0.3259822
+          },
+          "confidence" : 63.37062
+        } ],
+        "parents" : [ ]
+      }, {
+        "name" : "Triangle",
+        "confidence" : 57.88234,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Text",
+        "confidence" : 55.912857,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Computer Hardware",
+        "confidence" : 55.754936,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        }, {
+          "name" : "Hardware"
+        } ]
+      }, {
+        "name" : "Electronics",
+        "confidence" : 55.754936,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Hardware",
+        "confidence" : 55.754936,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Screen",
+        "confidence" : 55.072094,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "6.1",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Triangle #Computer Hardware #Oven #Appliance #Device #Text #Electrical Device #Clapperboard #Hardware #Microwave #Screen #Electronics"
+  }
+}</TEXT></FIELD>
+</FIELDS>

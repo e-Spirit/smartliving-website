@@ -1,6 +1,0 @@
-[self]
-uid=dealer_map_js
-gid=1a95d188-6981-4f76-ac2f-edad92a99788
-uidType=MEDIASTORE_LEAF
-class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
-

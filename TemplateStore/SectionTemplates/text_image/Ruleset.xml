@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RULES>
+	<RULE>
+		<WITH>
+			<PROPERTY name="Empty" source="st_image"/>
+		</WITH>
+		<DO>
+			<NOT>
+				<PROPERTY name="VISIBLE" source="st_layout"/>
+				<PROPERTY name="VISIBLE" source="#form.st_columnsInfo"/>
+			</NOT>
+			<PROPERTY name="Editable" source="st_columns"/>
+			<PROPERTY name="Editable" source="#form.st_columnsInfo"/>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<EQUAL>
+				<PROPERTY name="STORETYPE" source="#global"/>
+				<TEXT>templatestore</TEXT>
+			</EQUAL>
+		</WITH>
+		<DO>
+			<PROPERTY name="VISIBLE" source="#form.sectionLifespan"/>
+		</DO>
+	</RULE>
+</RULES>

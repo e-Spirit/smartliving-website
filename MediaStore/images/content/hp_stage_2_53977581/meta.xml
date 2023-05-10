@@ -1,11 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <FIELDS>
-	<FIELD name='md_alt_text'><TEXT>Alt</TEXT></FIELD>
-	<FIELD name='md_region'><SEL><VALUE>region_eu</VALUE></SEL></FIELD>
-	<FIELD name='md_country'><SEL><VALUE>country_gb</VALUE></SEL></FIELD>
-	<FIELD name='md_language'><SEL><VALUE>EN</VALUE></SEL></FIELD>
-	<FIELD name='md_creation_date'><DATE>1627981084142</DATE></FIELD>
-	<FIELD name='md_licensing'><SEL><VALUE>license_rfe</VALUE></SEL></FIELD>
 	<FIELD name='fsai_facesPayload'><TEXT>{
   "version" : 2,
   "languageToResponse" : {
@@ -20,99 +14,341 @@
   "languageToResponse" : {
     "§" : {
       "labels" : [ {
-        "name" : "Building",
-        "confidence" : 97.637436,
+        "name" : "Architecture",
+        "confidence" : 100.0,
         "instances" : [ ],
         "parents" : [ ]
       }, {
-        "name" : "Villa",
-        "confidence" : 96.32261,
+        "name" : "Building",
+        "confidence" : 100.0,
         "instances" : [ ],
         "parents" : [ {
-          "name" : "House"
-        }, {
-          "name" : "Housing"
-        }, {
-          "name" : "Building"
-        } ]
-      }, {
-        "name" : "Housing",
-        "confidence" : 96.32261,
-        "instances" : [ ],
-        "parents" : [ {
-          "name" : "Building"
+          "name" : "Architecture"
         } ]
       }, {
         "name" : "House",
-        "confidence" : 96.32261,
+        "confidence" : 100.0,
         "instances" : [ ],
         "parents" : [ {
+          "name" : "Architecture"
+        }, {
+          "name" : "Building"
+        }, {
           "name" : "Housing"
+        } ]
+      }, {
+        "name" : "Housing",
+        "confidence" : 100.0,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Architecture"
         }, {
           "name" : "Building"
         } ]
       }, {
-        "name" : "Water",
-        "confidence" : 87.94839,
+        "name" : "Villa",
+        "confidence" : 100.0,
         "instances" : [ ],
+        "parents" : [ {
+          "name" : "Architecture"
+        }, {
+          "name" : "Building"
+        }, {
+          "name" : "House"
+        }, {
+          "name" : "Housing"
+        } ]
+      }, {
+        "name" : "Person",
+        "confidence" : 97.63395,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.014030273,
+            "height" : 0.05652356,
+            "left" : 0.47484154,
+            "top" : 0.4998281
+          },
+          "confidence" : 97.63395
+        }, {
+          "boundingBox" : {
+            "width" : 0.007406128,
+            "height" : 0.007919199,
+            "left" : 0.43620768,
+            "top" : 0.5201301
+          },
+          "confidence" : 75.764175
+        }, {
+          "boundingBox" : {
+            "width" : 0.010596405,
+            "height" : 0.05186286,
+            "left" : 0.49695688,
+            "top" : 0.5294178
+          },
+          "confidence" : 61.71149
+        } ],
+        "parents" : [ ]
+      }, {
+        "name" : "Plant",
+        "confidence" : 94.894035,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.049231995,
+            "height" : 0.11539575,
+            "left" : 0.70181096,
+            "top" : 0.47009212
+          },
+          "confidence" : 94.894035
+        }, {
+          "boundingBox" : {
+            "width" : 0.06262316,
+            "height" : 0.16624025,
+            "left" : 0.07092111,
+            "top" : 0.43497503
+          },
+          "confidence" : 92.998436
+        }, {
+          "boundingBox" : {
+            "width" : 0.022612855,
+            "height" : 0.06715765,
+            "left" : 0.5720563,
+            "top" : 0.49520037
+          },
+          "confidence" : 68.4186
+        } ],
         "parents" : [ ]
       }, {
         "name" : "Pool",
-        "confidence" : 84.74119,
+        "confidence" : 93.08326,
         "instances" : [ ],
         "parents" : [ {
           "name" : "Water"
         } ]
       }, {
-        "name" : "Swimming Pool",
-        "confidence" : 73.86499,
+        "name" : "Water",
+        "confidence" : 93.08326,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Computer Hardware",
+        "confidence" : 92.99811,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        }, {
+          "name" : "Hardware"
+        } ]
+      }, {
+        "name" : "Electronics",
+        "confidence" : 92.99811,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Hardware",
+        "confidence" : 92.99811,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Monitor",
+        "confidence" : 92.99811,
         "instances" : [ {
           "boundingBox" : {
-            "width" : 0.8309809,
-            "height" : 0.26914635,
-            "left" : 0.16496447,
-            "top" : 0.63294667
+            "width" : 0.023757873,
+            "height" : 0.03478516,
+            "left" : 0.44804034,
+            "top" : 0.31661522
           },
-          "confidence" : 0.0
+          "confidence" : 92.99811
         } ],
+        "parents" : [ {
+          "name" : "Computer Hardware"
+        }, {
+          "name" : "Electronics"
+        }, {
+          "name" : "Hardware"
+        }, {
+          "name" : "Screen"
+        } ]
+      }, {
+        "name" : "Screen",
+        "confidence" : 92.99811,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Chair",
+        "confidence" : 88.83665,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.02779248,
+            "height" : 0.060586832,
+            "left" : 0.3670082,
+            "top" : 0.53392595
+          },
+          "confidence" : 88.83665
+        }, {
+          "boundingBox" : {
+            "width" : 0.016775787,
+            "height" : 0.060061097,
+            "left" : 0.39521125,
+            "top" : 0.5344324
+          },
+          "confidence" : 76.99614
+        }, {
+          "boundingBox" : {
+            "width" : 0.03911838,
+            "height" : 0.06250992,
+            "left" : 0.42641103,
+            "top" : 0.5305881
+          },
+          "confidence" : 73.39154
+        }, {
+          "boundingBox" : {
+            "width" : 0.020171264,
+            "height" : 0.066983104,
+            "left" : 0.8211879,
+            "top" : 0.5267874
+          },
+          "confidence" : 72.849976
+        }, {
+          "boundingBox" : {
+            "width" : 0.021621522,
+            "height" : 0.04570046,
+            "left" : 0.478812,
+            "top" : 0.3414168
+          },
+          "confidence" : 60.709476
+        } ],
+        "parents" : [ {
+          "name" : "Furniture"
+        } ]
+      }, {
+        "name" : "Furniture",
+        "confidence" : 88.83665,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Swimming Pool",
+        "confidence" : 81.72875,
+        "instances" : [ ],
         "parents" : [ {
           "name" : "Pool"
         }, {
           "name" : "Water"
         } ]
       }, {
-        "name" : "Architecture",
-        "confidence" : 71.63084,
+        "name" : "Couch",
+        "confidence" : 72.30755,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.06880475,
+            "height" : 0.054340165,
+            "left" : 0.5850494,
+            "top" : 0.5203867
+          },
+          "confidence" : 72.30755
+        } ],
+        "parents" : [ {
+          "name" : "Furniture"
+        } ]
+      }, {
+        "name" : "Hotel",
+        "confidence" : 60.72309,
         "instances" : [ ],
         "parents" : [ {
+          "name" : "Architecture"
+        }, {
           "name" : "Building"
         } ]
       }, {
-        "name" : "Mansion",
-        "confidence" : 67.42545,
-        "instances" : [ ],
+        "name" : "Desk",
+        "confidence" : 60.463352,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.038400512,
+            "height" : 0.060798127,
+            "left" : 0.7843044,
+            "top" : 0.5378851
+          },
+          "confidence" : 60.463352
+        } ],
         "parents" : [ {
-          "name" : "House"
+          "name" : "Furniture"
         }, {
-          "name" : "Housing"
-        }, {
-          "name" : "Building"
+          "name" : "Table"
         } ]
       }, {
-        "name" : "Door",
-        "confidence" : 58.732548,
+        "name" : "Table",
+        "confidence" : 60.463352,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Furniture"
+        } ]
+      }, {
+        "name" : "Indoors",
+        "confidence" : 60.37822,
         "instances" : [ ],
         "parents" : [ ]
       }, {
-        "name" : "Hotel",
-        "confidence" : 55.074284,
+        "name" : "Interior Design",
+        "confidence" : 60.37822,
         "instances" : [ ],
         "parents" : [ {
+          "name" : "Indoors"
+        } ]
+      }, {
+        "name" : "Outdoors",
+        "confidence" : 57.416416,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Patio",
+        "confidence" : 57.32909,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Architecture"
+        }, {
           "name" : "Building"
+        }, {
+          "name" : "House"
+        }, {
+          "name" : "Housing"
+        } ]
+      }, {
+        "name" : "Door",
+        "confidence" : 57.101875,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Resort",
+        "confidence" : 56.4815,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Architecture"
+        }, {
+          "name" : "Building"
+        }, {
+          "name" : "Hotel"
+        } ]
+      }, {
+        "name" : "Waterfront",
+        "confidence" : 56.29164,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Water"
+        } ]
+      }, {
+        "name" : "Sliding Door",
+        "confidence" : 55.585335,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Door"
         } ]
       } ],
       "orientationCorrection" : null,
-      "labelModelVersion" : "2.0"
+      "labelModelVersion" : "3.0"
     }
   }
 }</TEXT></FIELD>
@@ -130,7 +366,7 @@
   "languageToResponse" : {
     "§" : {
       "moderationLabels" : [ ],
-      "moderationModelVersion" : "5.0",
+      "moderationModelVersion" : "6.0",
       "humanLoopActivationOutput" : null
     }
   }
@@ -138,7 +374,7 @@
 	<FIELD name='fsai_tags'><TEXT>{
   "version" : 2,
   "languageToResponse" : {
-    "§" : "#Housing #Swimming Pool #Water #Hotel #Architecture #Building #House #Pool #Door #Villa #Mansion"
+    "§" : "#Computer Hardware #Outdoors #Water #Monitor #Hardware #Indoors #Sliding Door #Pool #Villa #Desk #Waterfront #Couch #Architecture #Building #House #Person #Plant #Housing #Interior Design #Patio #Screen #Furniture #Table #Swimming Pool #Hotel #Chair #Resort #Electronics #Door"
   }
 }</TEXT></FIELD>
 </FIELDS>

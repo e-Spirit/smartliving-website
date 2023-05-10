@@ -1,6 +1,0 @@
-[self]
-uid=css_5
-gid=0f6b1098-9daf-4fa9-882d-62f3a2162264
-uidType=MEDIASTORE_FOLDER
-class=de.espirit.firstspirit.store.access.mediastore.MediaFolderImpl
-

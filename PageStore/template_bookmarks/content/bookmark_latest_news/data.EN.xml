@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_headline'><TEXT>Content module Latest News</TEXT></FIELD>
+	<FIELD name='st_subheadline'><DOM><subline>Here you can maintain a second heading if required.</subline></DOM></FIELD>
+</FIELDS>

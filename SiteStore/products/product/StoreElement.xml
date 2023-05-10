@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<PAGEREF htmlname="product_detail" id="4411081647687012052" pageref="6567509171744794341" uniquedescription="product">
-	<CONTENTPARAMETER count="1" sitemapvar="name*" source="product" templateid="3186053606490017745"/>
-	<LANG displayname="Product Detail" language="EN"/>
-	<LANG displayname="Produktdetail" language="DE"/>
-	<PAGE_LANG_SPEC language="DE" showinpagegrp="1" showinsitemap="1"/>
-	<PAGE_LANG_SPEC language="EN" showinpagegrp="1" showinsitemap="1"/>
-</PAGEREF>

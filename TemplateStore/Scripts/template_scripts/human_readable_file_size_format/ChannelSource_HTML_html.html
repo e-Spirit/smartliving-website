@@ -1,0 +1,55 @@
+//!Beanshell
+/* 
+	Convert byte size into a human-readable format
+	
+	Parameters:
+		prm_fileSize [long]
+*/
+import java.text.DecimalFormat;
+
+
+// SI units, multiplied
+long BYTE = 1L;
+long KB = BYTE * 1000;
+long MB = KB * 1000;
+long GB = MB * 1000;
+long TB = GB * 1000;
+long PB = TB * 1000;
+long EB = PB * 1000;
+
+// Decimal formater to generate the output
+DecimalFormat DECIMAL_FORMAT = new DecimalFormat("#.##");
+
+/**
+ * Methode to divide the file size
+ */
+String formatSize(long size, long divider, String unitPostfix) {
+	return DECIMAL_FORMAT.format((double) size / divider) + " " + unitPostfix;
+}
+
+/**
+ * Creates a humane readable file size for the given file size in bytes.
+ * 
+ * e.g.:
+ * 	10133456 -> 10.13 MB
+ *
+ * @param size of the file as long
+ * @return human-readable file size with unit
+ */
+String toHumanReadableFileSize(long size) {
+	if (size < 0) {
+         	context.logError("File size invalid: " + size);
+		return "0 Bytes";
+        }
+        if (size >= EB) return formatSize(size, EB, "EB");
+        if (size >= PB) return formatSize(size, PB, "PB");
+        if (size >= TB) return formatSize(size, TB, "TB");
+        if (size >= GB) return formatSize(size, GB, "GB");
+        if (size >= MB) return formatSize(size, MB, "MB");
+        if (size >= KB) return formatSize(size, KB, "KB");
+        return formatSize(size, BYTE, "Bytes");
+}
+
+if(prm_fileSize != null){
+	return toHumanReadableFileSize(prm_fileSize);
+}

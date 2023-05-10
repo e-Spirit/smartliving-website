@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<FIELDS>
-	<FIELD name='st_tagline'><TEXT>Security</TEXT></FIELD>
-	<FIELD name='st_headline'><TEXT>Smart Living schützt Sie vor Einbrüchen!</TEXT></FIELD>
-	<FIELD name='st_text'><DOM><standard>Nach stetigem Anstieg in den letzten Jahren ist die Zahlen bei Wohnungseinbrüchen verglichen zum letzten Jahr rückläufig. Dies ist nicht zuletzt auf die Zunahme von <b>privat genutzten</b> intelligenten Systemen zum Schutz von Häusern und Wohnungen zurückzuführen.</standard></DOM></FIELD>
-	<FIELD name='st_counters'><CATALOG><CARD id="c11c33f7-7e13-44ac-944e-89c778491a28" template="counter" type="TEMPLATESTORE"><TEMPLATECONTENT><CMS_VALUE name="st_text"><LANG id="§" set="1"><TEXT>Einbrüche laut polizeilichler Kriminalstatistik 2018</TEXT></LANG></CMS_VALUE><CMS_VALUE name="st_number"><LANG id="§" set="1"><FIG>97504</FIG></LANG></CMS_VALUE></TEMPLATECONTENT></CARD><CARD id="48f095f2-4836-4ef3-86c2-8f5b7de4b9b6" template="counter" type="TEMPLATESTORE"><TEMPLATECONTENT><CMS_VALUE name="st_text"><LANG id="§" set="1"><TEXT>Mit intelligenten Systemen geschützte Anlagen</TEXT></LANG></CMS_VALUE><CMS_VALUE name="st_number"><LANG id="§" set="1"><FIG>1425</FIG></LANG></CMS_VALUE></TEMPLATECONTENT></CARD></CATALOG></FIELD>
-</FIELDS>

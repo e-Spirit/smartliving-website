@@ -1,0 +1,17 @@
+[self]
+uid=render_body
+gid=9b3386a4-fabe-4521-be3e-6fb7cfb4c8da
+uidType=TEMPLATESTORE_FORMATTEMPLATE
+class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
+
+[optionalId]
+uid=javascript_collector
+gid=57757562-9038-4e33-b8c5-0d7a34cec929
+uidType=TEMPLATESTORE_FORMATTEMPLATE
+class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
+
+uid=section_lifespan
+gid=f60b0759-5ad5-4d34-b4e1-3ab58796ec5d
+uidType=TEMPLATESTORE_FORMATTEMPLATE
+class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
+

@@ -1,11 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <FIELDS>
-	<FIELD name='md_alt_text'><TEXT>New Meta 2</TEXT></FIELD>
-	<FIELD name='md_region'><SEL><VALUE>region_eu</VALUE></SEL></FIELD>
-	<FIELD name='md_country'><SEL><VALUE>country_de</VALUE></SEL></FIELD>
-	<FIELD name='md_language'><SEL><VALUE>DE</VALUE></SEL></FIELD>
-	<FIELD name='md_creation_date'><DATE>1627982441215</DATE></FIELD>
-	<FIELD name='md_licensing'><SEL><VALUE>license_rf</VALUE></SEL></FIELD>
 	<FIELD name='fsai_facesPayload'><TEXT>{
   "version" : 2,
   "languageToResponse" : {
@@ -20,42 +14,70 @@
   "languageToResponse" : {
     "§" : {
       "labels" : [ {
-        "name" : "Wood",
-        "confidence" : 95.65068,
-        "instances" : [ ],
-        "parents" : [ ]
-      }, {
-        "name" : "Hardwood",
-        "confidence" : 86.94296,
-        "instances" : [ ],
-        "parents" : [ {
-          "name" : "Wood"
-        } ]
-      }, {
-        "name" : "Furniture",
-        "confidence" : 79.63229,
+        "name" : "Cylinder",
+        "confidence" : 99.977356,
         "instances" : [ ],
         "parents" : [ ]
       }, {
         "name" : "Jar",
-        "confidence" : 74.192665,
+        "confidence" : 99.86874,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Lamp",
+        "confidence" : 98.531845,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Sphere",
+        "confidence" : 93.129456,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Wood",
+        "confidence" : 91.25739,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Electronics",
+        "confidence" : 89.949936,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Speaker",
+        "confidence" : 89.949936,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.2816292,
+            "height" : 0.70924884,
+            "left" : 0.11137573,
+            "top" : 0.19702256
+          },
+          "confidence" : 67.30038
+        } ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Pottery",
+        "confidence" : 89.14957,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Furniture",
+        "confidence" : 83.75772,
         "instances" : [ ],
         "parents" : [ ]
       }, {
         "name" : "Table",
-        "confidence" : 65.5963,
+        "confidence" : 83.75772,
         "instances" : [ ],
         "parents" : [ {
           "name" : "Furniture"
         } ]
       }, {
-        "name" : "Pottery",
-        "confidence" : 63.84616,
-        "instances" : [ ],
-        "parents" : [ ]
-      }, {
         "name" : "Vase",
-        "confidence" : 60.008083,
+        "confidence" : 61.620964,
         "instances" : [ ],
         "parents" : [ {
           "name" : "Jar"
@@ -64,22 +86,43 @@
         } ]
       }, {
         "name" : "Bottle",
-        "confidence" : 59.104458,
+        "confidence" : 56.77383,
         "instances" : [ ],
         "parents" : [ ]
       }, {
-        "name" : "Glass",
-        "confidence" : 57.550102,
+        "name" : "Cup",
+        "confidence" : 55.850063,
         "instances" : [ ],
         "parents" : [ ]
       }, {
-        "name" : "Home Decor",
-        "confidence" : 56.61596,
+        "name" : "Shaker",
+        "confidence" : 55.27185,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Bottle"
+        } ]
+      }, {
+        "name" : "Indoors",
+        "confidence" : 55.201633,
         "instances" : [ ],
         "parents" : [ ]
+      }, {
+        "name" : "Interior Design",
+        "confidence" : 55.201633,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Indoors"
+        } ]
+      }, {
+        "name" : "Hardwood",
+        "confidence" : 55.003704,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Wood"
+        } ]
       } ],
       "orientationCorrection" : null,
-      "labelModelVersion" : "2.0"
+      "labelModelVersion" : "3.0"
     }
   }
 }</TEXT></FIELD>
@@ -97,7 +140,7 @@
   "languageToResponse" : {
     "§" : {
       "moderationLabels" : [ ],
-      "moderationModelVersion" : "5.0",
+      "moderationModelVersion" : "6.0",
       "humanLoopActivationOutput" : null
     }
   }
@@ -105,7 +148,7 @@
 	<FIELD name='fsai_tags'><TEXT>{
   "version" : 2,
   "languageToResponse" : {
-    "§" : "#Home Decor #Pottery #Vase #Bottle #Wood #Hardwood #Jar #Furniture #Table #Glass"
+    "§" : "#Bottle #Wood #Sphere #Indoors #Interior Design #Jar #Lamp #Cup #Furniture #Shaker #Table #Pottery #Vase #Speaker #Hardwood #Cylinder #Electronics"
   }
 }</TEXT></FIELD>
 </FIELDS>

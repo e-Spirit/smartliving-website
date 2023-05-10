@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Handle",
+        "confidence" : 94.890335,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Appliance",
+        "confidence" : 90.87575,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Device"
+        }, {
+          "name" : "Electrical Device"
+        } ]
+      }, {
+        "name" : "Device",
+        "confidence" : 90.87575,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Electrical Device",
+        "confidence" : 90.87575,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Washer",
+        "confidence" : 90.87575,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.8976236,
+            "height" : 0.9873767,
+            "left" : 0.0042593763,
+            "top" : 0.0
+          },
+          "confidence" : 90.87575
+        } ],
+        "parents" : [ {
+          "name" : "Appliance"
+        }, {
+          "name" : "Device"
+        }, {
+          "name" : "Electrical Device"
+        } ]
+      }, {
+        "name" : "Blow Dryer",
+        "confidence" : 80.372215,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.7238567,
+            "height" : 0.34364137,
+            "left" : 9.999848E-4,
+            "top" : 0.5774486
+          },
+          "confidence" : 80.372215
+        } ],
+        "parents" : [ {
+          "name" : "Appliance"
+        }, {
+          "name" : "Device"
+        }, {
+          "name" : "Electrical Device"
+        } ]
+      }, {
+        "name" : "Lock",
+        "confidence" : 55.50822,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Gauge",
+        "confidence" : 55.505646,
+        "instances" : [ ],
+        "parents" : [ ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "6.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Appliance #Device #Washer #Blow Dryer #Electrical Device #Gauge #Handle #Lock"
+  }
+}</TEXT></FIELD>
+</FIELDS>

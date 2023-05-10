@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <FS_REFERENCE name="st_image" hFill="yes" upload="yes" useLanguages="no">
+    <FILTER>
+      <ALLOW type="picture"/>
+    </FILTER>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Image"/>
+      <LANGINFO lang="DE" label="Bild"/>
+    </LANGINFOS>
+    <PROJECTS>
+      <LOCAL name=".">
+        <SOURCES>
+          <FOLDER name="images" store="MEDIASTORE"/>
+        </SOURCES>
+      </LOCAL>
+    </PROJECTS>
+  </FS_REFERENCE>
+
+  <CMS_INPUT_TEXT name="st_headline" hFill="yes" singleLine="no" useLanguages="yes">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Headline"/>
+      <LANGINFO lang="DE" label="Überschrift"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_TEXTAREA name="st_subheadline" hFill="yes" useLanguages="yes">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Subheadline"/>
+      <LANGINFO lang="DE" label="Unterüberschrift"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXTAREA>
+
+  <CMS_INPUT_LINK name="st_cta" hFill="yes" useLanguages="yes">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="CTA"/>
+    </LANGINFOS>
+    <LINKEDITORS>
+      <LINKEDITOR name="internal_link"/>
+      <LINKEDITOR name="external_link"/>
+      <LINKEDITOR name="media_link"/>
+    </LINKEDITORS>
+  </CMS_INPUT_LINK>
+
+  <CMS_GROUP name="sectionLifespan">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Validity period"/>
+    </LANGINFOS>
+
+    <CMS_INPUT_DATE name="st_sectionLifespanFrom" hFill="yes">
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Gültigkeitsbeginn"/>
+        <LANGINFO lang="EN" label="Validation start date"/>
+      </LANGINFOS>
+    </CMS_INPUT_DATE>
+
+    <CMS_INPUT_DATE name="st_sectionLifespanTo" hFill="yes">
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Gültigkeitsende"/>
+        <LANGINFO lang="EN" label="Validation end date"/>
+      </LANGINFOS>
+    </CMS_INPUT_DATE>
+
+  </CMS_GROUP>
+
+</CMS_MODULE>

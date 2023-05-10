@@ -1,0 +1,6 @@
+[self]
+uid=logos
+gid=a3b0fdc8-b9db-4b63-9074-597ee9f207d3
+uidType=MEDIASTORE_FOLDER
+class=de.espirit.firstspirit.store.access.mediastore.MediaFolderImpl
+

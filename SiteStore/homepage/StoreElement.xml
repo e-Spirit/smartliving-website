@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SITENODE id="1448543989158255066" name="homepage" startnodeid="-2701329919707662802">
+	<LANG displayname="Homepage" language="EN"/>
+	<LANG displayname="Startseite" language="DE"/>
+	<NODE_LANG_SPEC label="Homepage" language="EN" visible="0"/>
+	<NODE_LANG_SPEC label="Startseite" language="DE" visible="0"/>
+</SITENODE>

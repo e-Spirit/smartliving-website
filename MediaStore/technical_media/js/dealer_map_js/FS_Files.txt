@@ -1,5 +1,0 @@
-# mimeType        name
-text/plain;UTF-8  FS_Info.txt
-text/plain;UTF-8  FS_References.txt
-text/javascript   File_app.js
-text/xml;UTF-8    StoreElement.xml

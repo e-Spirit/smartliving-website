@@ -1,6 +1,6 @@
 [self]
 uid=/fts_configuration
-gid=55831120-0762-4021-8929-4cf4229c2d93
+gid=db5f3bb2-f67a-46cb-a8b7-349cf5288c08
 store=GLOBALSTORE
 class=de.espirit.firstspirit.store.access.globalstore.GCAFolderImpl
 root=de.espirit.firstspirit.store.access.globalstore.GlobalContentAreaImpl

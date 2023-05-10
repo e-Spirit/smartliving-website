@@ -1,6 +1,0 @@
-[self]
-uid=deletecontentscript
-gid=c203314a-ffc9-4d4c-ac34-dcff0d59eab7
-uidType=TEMPLATESTORE
-class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
-

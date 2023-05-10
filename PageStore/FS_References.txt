@@ -1,6 +1,6 @@
 [self]
 uid=root
-gid=3436de29-2b11-4e9d-bab8-a304eb926c17
+gid=cbc356ff-94ed-4841-844a-1687269b142d
 uidType=PAGESTORE
 class=de.espirit.firstspirit.store.access.pagestore.PageStoreRootImpl
 

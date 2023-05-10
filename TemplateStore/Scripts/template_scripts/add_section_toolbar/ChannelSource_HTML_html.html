@@ -1,0 +1,68 @@
+//!Beanshell
+import de.espirit.firstspirit.access.store.IDProvider;
+import de.espirit.firstspirit.access.store.LockException;
+import de.espirit.firstspirit.access.store.Store;
+import de.espirit.firstspirit.access.store.pagestore.Body;
+import de.espirit.firstspirit.access.store.pagestore.PageStoreRoot;
+import de.espirit.firstspirit.access.store.pagestore.Section;
+import de.espirit.firstspirit.agency.OperationAgent;
+import de.espirit.firstspirit.agency.StoreAgent;
+import de.espirit.firstspirit.ui.gadgets.aspects.transfer.CommodityContainer;
+import de.espirit.firstspirit.ui.operations.RequestOperation;
+import de.espirit.firstspirit.webedit.server.NewSectionOperation;
+
+
+OperationAgent operationAgent = context.requireSpecialist(OperationAgent.TYPE);
+
+// Methodes
+/**
+ * Create a new section next to the section with the specified section identifier and based on the transfer data.
+ *
+ * @param id of the section next to which the new section should be created.
+ * @param dropdata the new section should base on
+ */
+createSection(final long id, final CommodityContainer dropdata){
+	Section currentSection = getSection(sectionId);
+	if (currentSection != null) {
+		NewSectionOperation operation = operationAgent.getOperation(NewSectionOperation.TYPE);
+		Body currentBody = (Body) currentSection.getParent();
+		Section newSection = operation.dropData(dropdata)
+				.body(currentBody)
+				.perform();
+		if (newSection != null){
+			try {
+				currentBody.moveChild(newSection, currentBody.getChildIndex(currentSection));
+			} catch (LockException e) {
+				context.logInfo("Unable to lock Parent", e);
+			} catch (ElementMovedException e) {
+				context.logInfo("Section has already be moved", e);
+			}
+		}
+	}
+}
+
+/**
+ * Returns a section with the specified ID.
+ *
+ * @param id of the section
+ * @return the section or null if none was found.
+ */
+getSection(final long id) {
+	StoreAgent storeAgent = context.requireSpecialist(StoreAgent.TYPE);
+	PageStoreRoot pageStoreRoot = (PageStoreRoot) storeAgent.getStore(Store.Type.PAGESTORE);
+	IDProvider storeElement = pageStoreRoot.getStoreElement(id);
+	return storeElement instanceof Section ? ((Section) storeElement) : null;
+}
+
+execute() {
+	if (sectionId == null || dropdata == null) {
+		RequestOperation requestOperation = operationAgent.getOperation(RequestOperation.TYPE);
+		requestOperation.setKind(RequestOperation.Kind.ERROR);
+		requestOperation.perform("Unable to create section");
+		return;
+	}
+	createSection(sectionId, dropdata);
+}
+
+// Execute
+execute();

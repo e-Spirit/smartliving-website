@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_INPUT_TEXT name="st_title" hFill="yes" singleLine="no" useLanguages="yes">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Headline"/>
+      <LANGINFO lang="DE" label="Überschrift"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_DOM name="st_text" hFill="yes" list="no" useLanguages="yes">
+    <FORMATS>
+      <TEMPLATE name="p"/>
+    </FORMATS>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Text"/>
+    </LANGINFOS>
+  </CMS_INPUT_DOM>
+
+</CMS_MODULE>

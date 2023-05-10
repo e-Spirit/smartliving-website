@@ -1,0 +1,6 @@
+[self]
+uid=smart_thermostats_1~#~content
+gid=5b244020-376d-4879-8a91-ec2152a3f6f2
+store=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.BodyImpl
+

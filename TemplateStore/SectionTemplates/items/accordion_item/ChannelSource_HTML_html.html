@@ -1,0 +1,15 @@
+<div class="w-full p-1" $CMS_VALUE(editorId())$>						
+	<div class="py-7 px-8 bg-white bg-opacity-60 border-2 border-text rounded-2xl shadow-10xl">
+		<div class="flex-wrap -m-2">
+			<div class="flex p-2 cursor-pointer" data-accordion>
+				<button class="grow text-lg text-left text-text font-semibold leading-normal" $CMS_VALUE(editorId(editorName:"st_title"))$>$CMS_VALUE(st_title.convert2())$</button>										
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-6 h-6 duration-200 stroke-text stroke-2" data-accordion-icon>
+					<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+				</svg>										
+			</div>									
+			<div class="w-auto overflow-hidden px-2 max-h-0 transition-[max-height] duration-200 ease-in-out" $CMS_VALUE(editorId(editorName:"st_content"))$>				
+				$CMS_VALUE(st_content, default:"")$
+			</div>
+		</div>
+	</div>						
+</div>

@@ -1,6 +1,0 @@
-[self]
-uid=youtube_player
-gid=f40ba07f-73e4-4697-81cb-35312e7e09c7
-uidType=TEMPLATESTORE_FORMATTEMPLATE
-class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
-

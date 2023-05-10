@@ -1,6 +1,6 @@
 [self]
 uid=/global
-gid=18042c33-a433-4646-a2ca-9e907a9f2302
+gid=b4a8358c-ffd9-4684-aa1f-ed6a00ffa613
 store=CONTENTSTORE
 class=de.espirit.firstspirit.store.access.contentstore.ContentFolderImpl
 

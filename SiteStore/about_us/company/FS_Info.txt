@@ -1,10 +1,10 @@
 AllChildren: 1
-ExportPermissions: AllPermissions
+ExportPermissions: NoPermissions
 ExportVersion: 3.2
 HierarchicElement: true
 Language_DE: Deutsch
 Language_EN: English
 PresentationChannel_-1268668680467729278: HTML
-StartNodeUidType_-5088535368401953311: SITESTORE_LEAF
-StartNodeUid_-5088535368401953311: company
+StartNodeUidType_-253758638764790268: SITESTORE_LEAF
+StartNodeUid_-253758638764790268: company_1
 TemplateSet_9062318847741885912: html

@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Electronics",
+        "confidence" : 86.48637,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Speaker",
+        "confidence" : 86.48637,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.29887584,
+            "height" : 0.41391838,
+            "left" : 0.20598055,
+            "top" : 0.32195908
+          },
+          "confidence" : 86.48637
+        } ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Electrical Device",
+        "confidence" : 75.04506,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Switch",
+        "confidence" : 57.215477,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electrical Device"
+        } ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "6.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Speaker #Electrical Device #Electronics #Switch"
+  }
+}</TEXT></FIELD>
+</FIELDS>

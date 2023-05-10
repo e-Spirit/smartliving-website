@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="-7262017402640928501" name="tailwind">
+	<LANG displayname="Tailwind" language="DE"/>
+	<LANG displayname="Tailwind" language="EN"/>
+	<style tag="tailwind" view="marked">
+		<attr name="align" value="left"/>
+		<render/>
+	</style>
+</FORMATTEMPLATE>

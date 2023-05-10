@@ -1,6 +1,0 @@
-[self]
-uid=rev_slider_4
-gid=c4cdbc10-75c3-43a4-a13d-503e136e1526
-uidType=MEDIASTORE_LEAF
-class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
-

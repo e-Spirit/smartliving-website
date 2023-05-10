@@ -1,6 +1,0 @@
-[self]
-uid=shortcode
-gid=a8fac34d-a77e-4466-8f0c-77733cabfc5c
-uidType=MEDIASTORE_LEAF
-class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
-

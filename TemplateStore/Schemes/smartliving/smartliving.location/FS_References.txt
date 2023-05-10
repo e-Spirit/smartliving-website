@@ -1,0 +1,12 @@
+[self]
+uid=smartliving.location
+gid=de3277bb-636d-4ff8-ab39-2e44adad86c3
+uidType=TEMPLATESTORE_SCHEMA
+class=de.espirit.firstspirit.store.access.templatestore.TableTemplateImpl
+
+[optionalId]
+uid=external_link
+gid=83e6ea0b-b0e6-4581-8810-927788192fbd
+uidType=TEMPLATESTORE_LINKTEMPLATE
+class=de.espirit.firstspirit.store.access.templatestore.LinkTemplateImpl
+

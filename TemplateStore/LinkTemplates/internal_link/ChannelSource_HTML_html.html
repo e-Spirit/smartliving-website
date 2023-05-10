@@ -1,4 +1,5 @@
-$CMS_SET(set_lt_text, if(!lt_text.isEmpty(), lt_text, #this.template.getDisplayName(#global.language)))$	
-$CMS_SET(set_lt_link, if(!lt_link.isEmpty(), ref(lt_link), "#"))$
-$CMS_SET(set_lt_error, if(set_lt_link.equals(""), true, false))$
-<a $CMS_IF(set_lt_error)$ class="link_error" data-tooltip="$CMS_VALUE(translations.get("tooltip.reference.error"))$"$CMS_ELSE$ class="text-light-blue" $CMS_END_IF$ href="$CMS_VALUE(set_lt_link)$">$CMS_VALUE(set_lt_text)$</a>
+$CMS_IF(!lt_text.isEmpty())$
+	<a class="text-link-text hover:text-link-hover underline"
+		target="_self" 
+		href="$CMS_REF(lt_link, abs: 1, default:"")$">$CMS_VALUE(lt_text.convert2())$</a>	
+$CMS_END_IF$

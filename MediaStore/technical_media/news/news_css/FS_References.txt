@@ -1,6 +1,0 @@
-[self]
-uid=news_css
-gid=93d4b26a-d016-403c-814c-a9457e02ea2c
-uidType=MEDIASTORE_LEAF
-class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
-

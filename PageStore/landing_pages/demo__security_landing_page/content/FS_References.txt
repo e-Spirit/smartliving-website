@@ -1,6 +1,0 @@
-[self]
-uid=demo__security_landing_page~#~content
-gid=781543b6-c494-4752-b3b4-b8e9b167069b
-store=PAGESTORE
-class=de.espirit.firstspirit.store.access.pagestore.BodyImpl
-

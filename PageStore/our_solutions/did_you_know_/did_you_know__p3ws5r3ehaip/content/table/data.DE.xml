@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_headline'><TEXT>Ausstattung privater Haushalte mit smarten Geräten und Systemen Deutschland</TEXT></FIELD>
+	<FIELD name='st_text'><DOM><subline>Stand 27. Oktober 2022</subline><subline>Quelle: Statistisches Bundesamt</subline></DOM></FIELD>
+	<FIELD name='st_table'><table style="st_table"><tr><td><b>Smarte Geräte und Systeme</b></td><td><b>2022</b></td></tr><tr><td/><td/></tr><tr><td>Smart TV (Fernseher)</td><td><pill_style>58,5%</pill_style></td></tr><tr><td>Smart Speaker (intelligenter/WLAN-Lautsprecher)</td><td><pill_style>15,2%</pill_style></td></tr><tr><td>Smartes Energie­management­system (z. B. Thermostat, Stromzähler, Beleuchtung)</td><td><pill_style>9,7%</pill_style></td></tr><tr><td>Smartes Sicherheits­system (z. B. Alarmanlage, Rauchmelder, Überwachungs­kamera)</td><td><pill_style>9,5%</pill_style></td></tr><tr><td>Smartes Haushaltsgerät (z. B. Saugroboter, Kühlschrank, Waschmaschine)</td><td><pill_style>13,0%</pill_style></td></tr></table></FIELD>
+</FIELDS>

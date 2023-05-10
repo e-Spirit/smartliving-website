@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Mailbox",
+        "confidence" : 93.15014,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.31582382,
+            "height" : 0.6143253,
+            "left" : 0.5947827,
+            "top" : 0.18192607
+          },
+          "confidence" : 93.15014
+        } ],
+        "parents" : [ ]
+      }, {
+        "name" : "Logo",
+        "confidence" : 91.013405,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Text",
+        "confidence" : 60.762024,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Stencil",
+        "confidence" : 57.631744,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Electronics",
+        "confidence" : 55.748325,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Hardware",
+        "confidence" : 55.748325,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Symbol",
+        "confidence" : 55.24704,
+        "instances" : [ ],
+        "parents" : [ ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "6.1",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Symbol #Text #Hardware #Mailbox #Stencil #Electronics #Logo"
+  }
+}</TEXT></FIELD>
+</FIELDS>

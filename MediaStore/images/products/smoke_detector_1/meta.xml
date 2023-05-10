@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Nature",
+        "confidence" : 71.817345,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Outdoors"
+        } ]
+      }, {
+        "name" : "Outdoors",
+        "confidence" : 71.817345,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Ceiling Light",
+        "confidence" : 62.294178,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Water",
+        "confidence" : 56.019802,
+        "instances" : [ ],
+        "parents" : [ ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "6.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Outdoors #Water #Nature #Ceiling Light"
+  }
+}</TEXT></FIELD>
+</FIELDS>

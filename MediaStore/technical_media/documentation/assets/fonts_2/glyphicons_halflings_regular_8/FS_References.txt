@@ -1,6 +1,0 @@
-[self]
-uid=glyphicons_halflings_regular_8
-gid=5cc966c3-4755-44d5-b28b-ea767981603f
-uidType=MEDIASTORE_LEAF
-class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
-

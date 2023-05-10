@@ -1,6 +1,6 @@
 [self]
 uid=/translation_workflows_ext
-gid=c4219244-c05f-43b7-b02c-e10b9f6644ab
+gid=c4eb7099-4318-4ece-a6f5-a12a047ffe9e
 store=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.WorkflowFolderImpl
 root=de.espirit.firstspirit.store.access.templatestore.WorkflowsImpl

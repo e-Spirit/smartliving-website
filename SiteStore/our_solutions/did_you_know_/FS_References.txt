@@ -1,0 +1,12 @@
+[self]
+uid=did_you_know_
+gid=9197c2b3-403b-46c7-9bff-e14fad9b0dd2
+uidType=SITESTORE_FOLDER
+class=de.espirit.firstspirit.store.access.sitestore.PageRefFolderImpl
+
+[previousSibling]
+uid=home_security_special
+gid=30c807d5-7de1-4c81-9831-f663341c26f4
+uidType=SITESTORE_FOLDER
+class=de.espirit.firstspirit.store.access.sitestore.PageRefFolderImpl
+

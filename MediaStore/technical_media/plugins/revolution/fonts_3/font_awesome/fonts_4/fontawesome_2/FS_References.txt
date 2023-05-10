@@ -1,6 +1,0 @@
-[self]
-uid=fontawesome_2
-gid=1f9f14aa-cfcd-4d2e-a6d7-9ea1717e98f3
-uidType=MEDIASTORE_LEAF
-class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
-

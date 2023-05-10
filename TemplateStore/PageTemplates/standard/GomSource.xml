@@ -5,45 +5,159 @@
 
     <CMS_GROUP>
       <LANGINFOS>
-        <LANGINFO lang="*" label="Page"/>
-        <LANGINFO lang="DE" label="Seite"/>
+        <LANGINFO lang="*" label="General"/>
+        <LANGINFO lang="*" label="Allgemein"/>
       </LANGINFOS>
 
-      <CMS_INPUT_TEXT name="pt_title" hFill="yes" singleLine="no">
+      <CMS_GROUP>
         <LANGINFOS>
-          <LANGINFO lang="*" label="Page title"/>
-          <LANGINFO lang="DE" label="Seitentitel"/>
+          <LANGINFO lang="*" label="Stage"/>
+          <LANGINFO lang="DE" label="Bühne"/>
+        </LANGINFOS>
+
+        <FS_REFERENCE name="pt_image" hFill="yes" upload="yes" useLanguages="no">
+          <FILTER>
+            <ALLOW type="picture"/>
+          </FILTER>
+          <LANGINFOS>
+            <LANGINFO lang="*" label="Image"/>
+            <LANGINFO lang="DE" label="Bild"/>
+          </LANGINFOS>
+          <PROJECTS>
+            <LOCAL name=".">
+              <SOURCES>
+                <FOLDER name="images" store="MEDIASTORE"/>
+              </SOURCES>
+            </LOCAL>
+          </PROJECTS>
+        </FS_REFERENCE>
+
+        <CMS_INPUT_COMBOBOX name="pt_bgOpacity" hFill="yes" singleLine="no" useLanguages="no">
+          <ENTRIES>
+            <ENTRY value="none">
+              <LANGINFOS>
+                <LANGINFO lang="*" label="None"/>
+                <LANGINFO lang="DE" label="Keine"/>
+              </LANGINFOS>
+            </ENTRY>
+            <ENTRY value="20">
+              <LANGINFOS>
+                <LANGINFO lang="*" label="20%"/>
+              </LANGINFOS>
+            </ENTRY>
+            <ENTRY value="40">
+              <LANGINFOS>
+                <LANGINFO lang="*" label="40%"/>
+              </LANGINFOS>
+            </ENTRY>
+            <ENTRY value="60">
+              <LANGINFOS>
+                <LANGINFO lang="*" label="60%"/>
+              </LANGINFOS>
+            </ENTRY>
+            <ENTRY value="80">
+              <LANGINFOS>
+                <LANGINFO lang="*" label="80%"/>
+              </LANGINFOS>
+            </ENTRY>
+          </ENTRIES>
+          <LANGINFOS>
+            <LANGINFO lang="*" label="Background Opacity"/>
+            <LANGINFO lang="*" label="Hintergrund Transparenz"/>
+          </LANGINFOS>
+        </CMS_INPUT_COMBOBOX>
+
+        <CMS_INPUT_TEXT name="pt_headline" hFill="yes" singleLine="no" useLanguages="yes">
+          <LANGINFOS>
+            <LANGINFO lang="*" label="Headline"/>
+            <LANGINFO lang="DE" label="Überschrift"/>
+          </LANGINFOS>
+        </CMS_INPUT_TEXT>
+
+        <CMS_INPUT_TEXTAREA name="pt_subheadline" hFill="yes" useLanguages="yes">
+          <LANGINFOS>
+            <LANGINFO lang="*" label="Subheadline"/>
+            <LANGINFO lang="*" label="Unterüberschrift"/>
+          </LANGINFOS>
+        </CMS_INPUT_TEXTAREA>
+
+      </CMS_GROUP>
+
+      <CMS_INPUT_TEXT name="pt_navigationDescription" hFill="yes" singleLine="no" useLanguages="yes">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Navigation description"/>
+          <LANGINFO lang="DE" label="Beschreibung Navigation"/>
         </LANGINFOS>
       </CMS_INPUT_TEXT>
 
-      <CMS_INPUT_TOGGLE name="pt_add_sections" hFill="yes" singleLine="no">
-        <LANGINFOS>
-          <LANGINFO lang="*" label="Possibility to add paragraphs"/>
-          <LANGINFO lang="DE" label="Möglichkeit Absätze hinzuzufügen"/>
-        </LANGINFOS>
-      </CMS_INPUT_TOGGLE>
-
-      <CMS_INPUT_TOGGLE name="pt_show_chat" hidden="yes">
-        <LANGINFOS>
-          <LANGINFO lang="*" label="Show Chatbot"/>
-          <LANGINFO lang="*" label="Chatbot anzeigen"/>
-        </LANGINFOS>
-      </CMS_INPUT_TOGGLE>
-
     </CMS_GROUP>
 
-    <CMS_GROUP name="pt_banner_group">
+    <CMS_GROUP>
       <LANGINFOS>
-        <LANGINFO lang="*" label="Banner"/>
+        <LANGINFO lang="*" label="Metadata"/>
+        <LANGINFO lang="DE" label="Metadaten"/>
       </LANGINFOS>
 
-      <FS_REFERENCE name="pt_picture" hFill="yes" upload="yes" useLanguages="no">
+      <CMS_INPUT_TEXT name="pt_md_title" hFill="yes" singleLine="no" useLanguages="yes">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Title"/>
+          <LANGINFO lang="DE" label="Titel"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+      <CMS_INPUT_COMBOBOX name="pt_md_type" hFill="yes" singleLine="no" useLanguages="no">
+        <ENTRIES>
+          <ENTRY value="website">
+            <LANGINFOS>
+              <LANGINFO lang="*" label="Website"/>
+              <LANGINFO lang="DE" label="Webseite"/>
+            </LANGINFOS>
+          </ENTRY>
+          <ENTRY value="music.song">
+            <LANGINFOS>
+              <LANGINFO lang="*" label="Music"/>
+              <LANGINFO lang="DE" label="Musik"/>
+            </LANGINFOS>
+          </ENTRY>
+          <ENTRY value="video.other">
+            <LANGINFOS>
+              <LANGINFO lang="*" label="Video"/>
+            </LANGINFOS>
+          </ENTRY>
+          <ENTRY value="article">
+            <LANGINFOS>
+              <LANGINFO lang="*" label="Article"/>
+              <LANGINFO lang="DE" label="Artikel"/>
+            </LANGINFOS>
+          </ENTRY>
+        </ENTRIES>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Type"/>
+          <LANGINFO lang="DE" label="Typ"/>
+        </LANGINFOS>
+      </CMS_INPUT_COMBOBOX>
+
+      <CMS_INPUT_TEXTAREA name="pt_md_description" useLanguages="yes">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Description"/>
+          <LANGINFO lang="DE" label="Beschreibung"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXTAREA>
+
+      <CMS_INPUT_TEXT name="pt_md_keywords" hFill="yes" singleLine="no" useLanguages="yes">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Keywords"/>
+          <LANGINFO lang="DE" label="Schlagwörter"/>
+        </LANGINFOS>
+      </CMS_INPUT_TEXT>
+
+      <FS_REFERENCE name="pt_md_image" hFill="yes" upload="yes" useLanguages="no">
         <FILTER>
           <ALLOW type="picture"/>
         </FILTER>
         <LANGINFOS>
-          <LANGINFO lang="*" label="Header Picture" description="Please choose a picture"/>
-          <LANGINFO lang="DE" label="Header Bild" description="Bitte wählen Sie ein Bild aus"/>
+          <LANGINFO lang="*" label="Image"/>
+          <LANGINFO lang="DE" label="Bild"/>
         </LANGINFOS>
         <PROJECTS>
           <LOCAL name=".">
@@ -54,26 +168,43 @@
         </PROJECTS>
       </FS_REFERENCE>
 
-      <CMS_INPUT_TEXTAREA name="pt_text" hFill="yes">
+      <CMS_INPUT_TEXT name="pt_md_image_alt_text" hFill="yes" singleLine="no">
         <LANGINFOS>
-          <LANGINFO lang="*" label="Header Text"/>
+          <LANGINFO lang="*" label="Alternative Text"/>
+          <LANGINFO lang="DE" label="Alternativ-Text"/>
         </LANGINFOS>
-      </CMS_INPUT_TEXTAREA>
+      </CMS_INPUT_TEXT>
 
     </CMS_GROUP>
 
   </CMS_GROUP>
 
+  <CMS_COMMENT>
+	Button that can be used in the preview to create new sections when dropping and clicking.
+  </CMS_COMMENT>
+
   <FS_BUTTON
-    name="pt_create_section"
+    name="pt_createSection"
     hidden="yes"
     onClick="class:NewSection"
     onDrop="class:NewSection"
     style="link"
     useLanguages="no">
-    <DROPTYPES>
-      <TYPE value="section"/>
-    </DROPTYPES>
+    <LANGINFOS>
+      <LANGINFO lang="*" label=" "/>
+    </LANGINFOS>
+  </FS_BUTTON>
+
+  <CMS_COMMENT>
+	Button that can be used in the preview to create new sections when dropping.
+  </CMS_COMMENT>
+
+  <FS_BUTTON
+    name="pt_createSectionDrop"
+    hidden="yes"
+    onDrop="script:add_section_toolbar"
+    style="link"
+    useLanguages="no">
     <LANGINFOS>
       <LANGINFO lang="*" label=" "/>
     </LANGINFOS>

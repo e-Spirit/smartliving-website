@@ -1,6 +1,0 @@
-[self]
-uid=imprint_folder
-gid=b0e6da67-a384-47b8-ad52-0a917653e533
-uidType=PAGESTORE
-class=de.espirit.firstspirit.store.access.pagestore.PageFolderImpl
-

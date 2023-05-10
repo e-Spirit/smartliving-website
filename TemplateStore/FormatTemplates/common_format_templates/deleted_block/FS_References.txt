@@ -1,6 +1,6 @@
 [self]
 uid=deleted_block
-gid=c0318b0b-c06a-472a-8971-031b924a2042
+gid=21636539-71a2-4073-9132-8e56abddb6a8
 uidType=TEMPLATESTORE_FORMATTEMPLATE
 class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
 

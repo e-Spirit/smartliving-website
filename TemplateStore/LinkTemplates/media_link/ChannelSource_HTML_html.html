@@ -1,0 +1,7 @@
+$CMS_IF(!lt_text.isEmpty())$
+	$CMS_SET(set_ref, ref(lt_link, abs: 1))$
+	<a class="text-link-text hover:text-link-hover underline"
+		target="_self" 
+		download
+		href="$CMS_VALUE(set_ref.url, default:"")$">$CMS_VALUE(lt_text.convert2())$ (<span class="uppercase">$CMS_VALUE(set_ref.extension)$</span> - $CMS_RENDER(script:"human_readable_file_size_format", prm_fileSize:set_ref.size)$)</a>	
+$CMS_END_IF$

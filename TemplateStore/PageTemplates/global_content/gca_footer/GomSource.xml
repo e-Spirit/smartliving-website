@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <FS_CATALOG name="gc_links" useLanguages="yes">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Links"/>
+    </LANGINFOS>
+    <TEMPLATES type="link">
+      <TEMPLATE uid="internal_link"/>
+      <TEMPLATE uid="external_link"/>
+    </TEMPLATES>
+  </FS_CATALOG>
+
+  <CMS_INPUT_DOM name="gc_copyright" bold="yes" hFill="yes" italic="yes" list="no" table="no" useLanguages="yes">
+    <FORMATS>
+      <TEMPLATE name="p"/>
+    </FORMATS>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Copyright"/>
+    </LANGINFOS>
+    <LINKEDITORS>
+      <LINKEDITOR name="internal_link"/>
+      <LINKEDITOR name="external_link"/>
+    </LINKEDITORS>
+  </CMS_INPUT_DOM>
+
+</CMS_MODULE>

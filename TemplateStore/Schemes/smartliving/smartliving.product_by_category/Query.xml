@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QUERY entityType="product">
+	<FILTERPARAM parameter="category_gid" datatype="java.util.UUID" value="c7ab1084-8c7e-4d81-a416-49c222882c9d"/>
+	<EQ attribute="categoryList.FS_GID" parameter="category_gid"/>
+</QUERY>

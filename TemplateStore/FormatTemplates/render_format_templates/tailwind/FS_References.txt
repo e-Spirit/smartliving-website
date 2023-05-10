@@ -1,0 +1,7 @@
+[self]
+uid=/render_format_templates/tailwind
+gid=69ab99aa-3e9c-45eb-a8fb-544a4b7ef038
+store=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateFolderImpl
+root=de.espirit.firstspirit.store.access.templatestore.FormatTemplatesImpl
+

@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<FIELDS>
-	<FIELD name='st_kicker'><TEXT>Willkommen im Security Bereich</TEXT></FIELD>
-	<FIELD name='st_headline'><DOM><standard>Smart Living sorgt für <span_yellow_text>ihre Sicherheit</span_yellow_text></standard></DOM></FIELD>
-	<FIELD name='st_text'><DOM><standard>Smart Living ermöglicht es ihnen, die Sicherheit ihres Hauses auf eine neue Stufe zu heben. Intelligente Sicherheitssysteme sind äußerst anpassbar, flexibel und bieten maximalen Schutz. Und Sicherheit beginnt an der Haustür mit ihrem neuen intelligenten Türschloß!</standard></DOM></FIELD>
-	<FIELD name='st_jumbo_headline'><TEXT>Sicherheitslösungen</TEXT></FIELD>
-</FIELDS>

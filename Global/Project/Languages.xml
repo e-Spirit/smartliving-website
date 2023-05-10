@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OBJECT class="java.util.ArrayList">
 	<OBJECT class="de.espirit.firstspirit.server.projectmanagement.LanguageDTO">
+		<FIELD name="_htmlEncoding">
+			<OBJECT class="java.lang.String">UTF-8</OBJECT>
+		</FIELD>
 		<FIELD name="_names">
 			<OBJECT class="java.util.HashMap">
 			</OBJECT>
@@ -13,15 +16,16 @@
 		<FIELD name="locale">
 			<OBJECT class="java.util.Locale">en_GB</OBJECT>
 		</FIELD>
-		<FIELD name="m_htmlEncoding">
-			<OBJECT class="java.lang.String">UTF-8</OBJECT>
-		</FIELD>
+		<FIELD name="m_htmlEncoding"><NULL/><!-- class java.lang.String --></FIELD>
 		<FIELD name="name">
 			<OBJECT class="java.lang.String">English</OBJECT>
 		</FIELD>
 		<FIELD name="shouldGenerate" type="boolean">true</FIELD>
 	</OBJECT>
 	<OBJECT class="de.espirit.firstspirit.server.projectmanagement.LanguageDTO">
+		<FIELD name="_htmlEncoding">
+			<OBJECT class="java.lang.String">UTF-8</OBJECT>
+		</FIELD>
 		<FIELD name="_names">
 			<OBJECT class="java.util.HashMap">
 			</OBJECT>

@@ -1,6 +1,0 @@
-[self]
-uid=imprint~#~content
-gid=14c419b5-dac4-4cc0-b138-f03950878d19
-store=PAGESTORE
-class=de.espirit.firstspirit.store.access.pagestore.BodyImpl
-

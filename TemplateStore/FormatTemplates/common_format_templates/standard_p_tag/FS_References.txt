@@ -1,6 +1,0 @@
-[self]
-uid=standard_p_tag
-gid=f18cffb2-587f-457f-af89-43cff1a67834
-uidType=TEMPLATESTORE_FORMATTEMPLATE
-class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
-

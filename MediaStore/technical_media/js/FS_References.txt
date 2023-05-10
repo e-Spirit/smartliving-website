@@ -1,6 +1,0 @@
-[self]
-uid=js
-gid=2b690c32-44cd-433c-aac5-50917d9b6052
-uidType=MEDIASTORE_FOLDER
-class=de.espirit.firstspirit.store.access.mediastore.MediaFolderImpl
-

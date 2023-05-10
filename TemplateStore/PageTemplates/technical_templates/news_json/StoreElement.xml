@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEMPLATE comment="" filename="news_json" hidden="1" id="-7400342420788382894" previewPageRefUid="news_json" templateid="3847570478099695703" type="page">
+	<EXTENSION file="html" link="html" replaceable="false" templateSet="9062318847741885912"/>
+	<LANG displayname="News JSON" language="DE"/>
+	<LANG displayname="News JSON" language="EN"/>
+</TEMPLATE>

@@ -1,0 +1,6 @@
+[self]
+uid=wf_start_schedule
+gid=0625c59f-ca80-4c6c-a00e-a9c5bf09da52
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
+

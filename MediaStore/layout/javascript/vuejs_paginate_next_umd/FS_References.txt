@@ -1,0 +1,6 @@
+[self]
+uid=vuejs_paginate_next_umd
+gid=e5a7c156-5c2f-4a3c-9826-c58b80f03d6b
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+

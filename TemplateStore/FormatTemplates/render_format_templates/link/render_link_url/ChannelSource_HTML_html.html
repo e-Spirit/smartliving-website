@@ -1,0 +1,37 @@
+$CMS_TRIM(level:4)$
+$--
+	Renders the URL for the given link.
+	
+	Parameters:
+		prm_linkFormData		FormData		required
+		prm_linkTemplate		Template		required
+		
+	Example:
+		$CMS_RENDER(template:"render_link_url", prm_linkFormData: set_linkFormData, prm_linkTemplate: set_linkTemplate)$
+--$
+
+	$CMS_SWITCH(prm_linkTemplate.getUid())$
+		$CMS_VALUE(#global.logWarning("Not supported link type: '" + prm_linkTemplate.getUid() + "'"))$
+	$CMS_CASE("external_link")$
+		$CMS_SET(set_linkInput, prm_linkFormData.lt_link)$
+		$CMS_IF(!set_linkInput.isEmpty())$
+			$CMS_VALUE(prm_linkFormData.lt_link)$
+		$CMS_END_IF$
+	$CMS_CASE("internal_link")$
+		$CMS_SET(set_linkInput, prm_linkFormData.lt_link)$
+		$CMS_IF(!set_linkInput.isEmpty())$	
+			$CMS_REF(set_linkInput, abs:1)$
+		$CMS_END_IF$
+	$CMS_CASE("media_link")$
+		$CMS_SET(set_linkInput, prm_linkFormData.lt_link)$	
+		$CMS_IF(!set_linkInput.isEmpty())$	
+			$CMS_REF(set_linkInput, abs:1)$
+		$CMS_END_IF$
+	$CMS_CASE("dataset_link")$	
+		$CMS_SET(set_linkDataset, prm_linkFormData.lt_dataset)$	
+		$CMS_IF(!set_linkDataset.isEmpty())$
+			$CMS_RENDER(template:"render_link_dataset_url", prm_dataset: set_linkDataset.dataset)$
+		$CMS_END_IF$
+	$CMS_END_SWITCH$
+	
+$CMS_END_TRIM$

@@ -1,22 +1,27 @@
 [self]
 uid=project_settings
-gid=22f94575-98f4-46fe-99f6-f3f1461e016c
+gid=ac9a615f-ea62-4e21-a233-39e85400f007
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
 
 [optionalId]
-uid=logo
-gid=b348fd55-7fe5-4d9c-bd58-1f8ab15f22be
+uid=images
+gid=af7a5702-8a1a-401c-a6db-513067bfab17
 uidType=MEDIASTORE_FOLDER
 class=de.espirit.firstspirit.store.access.mediastore.MediaFolderImpl
 
 uid=root
-gid=d1b8c782-2a90-4ea7-8a7f-889cdf41bea1
+gid=f1f2756a-53ec-4516-b71b-c8e0c1486785
 uidType=SITESTORE_FOLDER
 class=de.espirit.firstspirit.store.access.sitestore.SiteStoreRootImpl
 
 uid=global
-gid=51937197-dd29-447f-878a-0b904c0255af
+gid=8200660a-c0a3-4400-af30-61ed22d4df73
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.SchemaImpl
+
+uid=internal_link
+gid=5b3dc502-f98f-491f-9f54-d56251e3d112
+uidType=TEMPLATESTORE_LINKTEMPLATE
+class=de.espirit.firstspirit.store.access.templatestore.LinkTemplateImpl
 

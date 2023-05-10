@@ -1,0 +1,7 @@
+[self]
+uid=/schedule
+gid=3ad94a8c-b066-4eeb-9c30-042dc707454c
+store=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.ScriptFolderImpl
+root=de.espirit.firstspirit.store.access.templatestore.ScriptsImpl
+

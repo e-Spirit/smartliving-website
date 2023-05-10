@@ -1,50 +1,54 @@
+$CMS_TRIM(level:3)$
 <!DOCTYPE html>
-<html lang="$CMS_VALUE(#global.language.abbreviation.toLowerCase)$">
-<head>
-$CMS_RENDER(template:"head")$
-</head>
-<body class="footer-fixed">
-  $--CMS_RENDER(template:"chatbot")--$
-  $-- Chatbot is based on Fragments, can be activated again when it has been redesigned --$
-	<div class="page-wraper"> 
-	    $CMS_RENDER(template:"header")$
-        <!-- CONTENT START -->
-        <div class="page-content">
-        	<div $CMS_VALUE(editorId(reloadPreview:true))$>
-        	$CMS_IF(pt_slider.length > 0)$
-            <div id="welcome_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="goodnews-header" data-source="gallery" style="background:#eeeeee;padding:0px;">
-                <div id="welcome" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.3.1">
-                    <ul>	
-                    $CMS_VALUE(pt_slider)$
-                    </ul>
-                    <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	
-                </div>
-            </div>
-            $CMS_END_IF$
-            </div>
-        	$CMS_VALUE(#global.getPage().getBodyByName("content"))$
-        	$CMS_IF(#global.is("WEBEDIT"))$
-				$CMS_RENDER(template:"add_new_section",label:"Add Content",body:"content", dropEditorName:"pt_create_section")$
-			$CMS_END_IF$
-        </div>
-        <!-- CONTENT END -->
-        $CMS_VALUE(#global.gca(ps_footer.get().uid))$
-        $CMS_RENDER(template:"top_button")$
-    </div>
-    $CMS_IF(#global.is("WEBEDIT"))$
-	    <script type="text/javascript">
-			function fs_UtilCreateNewSection(pageId, bodyId){
-				top.WE_API.Common.execute(
-					"class:NewSection",
-					{
-						page: pageId,
-						body: bodyId
-					}
-				);
-			}
-		</script>
-	$CMS_END_IF$
-$--CMS_RENDER(template:"loading_area")--$
-$CMS_RENDER(template:"js_section")$
-</body>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+	<head>
+		<title>$CMS_VALUE(pt_md_title, default:"")$</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<meta name="description" content="$CMS_VALUE(pt_md_description, default:"")$">
+		<meta name="keywords" content="$CMS_VALUE(pt_md_keywords, default:"")$">
+		<meta property="og:title" content="$CMS_VALUE(pt_md_title, default:"")$" />
+		<meta property="og:url" content="$CMS_REF(#global.node, abs:1)$" />
+
+		$CMS_SET(og_image, "")$
+		$CMS_SET(og_image_alt_text, "")$
+		$CMS_IF(!pt_md_image.isEmpty)$
+			$CMS_SET(og_image, pt_md_image)$	
+			$CMS_SET(og_image_alt_text)$$CMS_RENDER(template:"render_image_alt_text", prm_image: og_image, prm_text: pt_md_image_alt_text)$$CMS_END_SET$
+		$CMS_ELSE$		
+			$CMS_SET(break, false)$
+			$CMS_FOR(for_section, #global.page.body("content").getChildren(class("de.espirit.firstspirit.access.store.pagestore.Section")))$
+				$CMS_IF(!break)$
+					$CMS_IF(for_section.getFormData().get("st_image") != null && !for_section.getFormData().get("st_image").isEmpty())$
+						$CMS_SET(og_image, for_section.getFormData().get("st_image"))$
+						$CMS_SET(set_text, for_section.getFormData().get("st_image_alt_text"))$
+						$CMS_SET(og_image_alt_text)$$CMS_RENDER(template:"render_image_alt_text", prm_image: og_image, prm_text: set_text)$$CMS_END_SET$
+						$CMS_SET(break, true)$
+					$CMS_END_IF$
+				$CMS_END_IF$
+			$CMS_END_FOR$
+		$CMS_END_IF$				
+		
+		$CMS_IF(!og_image.isEmpty)$		
+		<meta property="og:image" content="$CMS_REF(og_image, abs:1, resolution:"16x9_M")$" />				
+		<meta property="og:image:alt" content="$CMS_VALUE(og_image_alt_text)$" />
+		$CMS_END_IF$
+		
+		<meta property="og:type" content="$CMS_VALUE(pt_md_type, default:"website")$" />		
+		$CMS_RENDER(template:"tailwind")$
+		$CMS_IF(#global.is("WEBEDIT"))$
+			<link rel="stylesheet" href="$CMS_REF(media:"cc_style")$">		
+		$CMS_END_IF$
+	</head>
+	<body class="antialiased bg-body text-body font-body" $CMS_VALUE(editorId())$> 		
+		$CMS_RENDER(template: "page_header")$
+		$CMS_VALUE(#global.page.body("top"))$
+		$CMS_RENDER(template: "render_body", prm_body: #global.page.body("content"), prm_createSectionDrop: "pt_createSectionDrop")$	
+		$CMS_RENDER(template: "add_new_section", prm_body:"content", prm_buttonName:"pt_createSection")$
+		$CMS_VALUE(#global.gca("footer"))$
+		$CMS_RENDER(template: "reload_handling")$
+		$CMS_RENDER(template: "javascript_collector", prm_action: "print")$
+	</body>
 </html>
+$CMS_END_TRIM$

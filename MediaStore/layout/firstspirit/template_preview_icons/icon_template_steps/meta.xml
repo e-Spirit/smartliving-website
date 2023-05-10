@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Text",
+        "confidence" : 94.09508,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Page",
+        "confidence" : 87.58028,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Text"
+        } ]
+      }, {
+        "name" : "Number",
+        "confidence" : 79.752525,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Symbol"
+        }, {
+          "name" : "Text"
+        } ]
+      }, {
+        "name" : "Symbol",
+        "confidence" : 79.752525,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Blackboard",
+        "confidence" : 77.7068,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.9563252,
+            "height" : 0.92847675,
+            "left" : 0.019365676,
+            "top" : 0.040588304
+          },
+          "confidence" : 77.7068
+        } ],
+        "parents" : [ ]
+      }, {
+        "name" : "File",
+        "confidence" : 76.24169,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Electronics",
+        "confidence" : 57.012093,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Weapon",
+        "confidence" : 56.41149,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Chart",
+        "confidence" : 56.116356,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Plot",
+        "confidence" : 56.116356,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Chart"
+        } ]
+      }, {
+        "name" : "Diagram",
+        "confidence" : 55.63172,
+        "instances" : [ ],
+        "parents" : [ ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ {
+        "detectedText" : "1",
+        "type" : "LINE",
+        "id" : 0,
+        "parentId" : null,
+        "confidence" : 98.93539,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.02166668,
+            "height" : 0.058888856,
+            "left" : 0.1825,
+            "top" : 0.51222223
+          },
+          "polygon" : [ {
+            "x" : 0.1825,
+            "y" : 0.51222223
+          }, {
+            "x" : 0.20416668,
+            "y" : 0.51222223
+          }, {
+            "x" : 0.20416668,
+            "y" : 0.5711111
+          }, {
+            "x" : 0.1825,
+            "y" : 0.5711111
+          } ]
+        }
+      }, {
+        "detectedText" : "2",
+        "type" : "LINE",
+        "id" : 1,
+        "parentId" : null,
+        "confidence" : 99.39927,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.03416664,
+            "height" : 0.06,
+            "left" : 0.48166668,
+            "top" : 0.51111114
+          },
+          "polygon" : [ {
+            "x" : 0.48166668,
+            "y" : 0.51111114
+          }, {
+            "x" : 0.5158333,
+            "y" : 0.51111114
+          }, {
+            "x" : 0.5158333,
+            "y" : 0.57111114
+          }, {
+            "x" : 0.48166668,
+            "y" : 0.57111114
+          } ]
+        }
+      }, {
+        "detectedText" : "3",
+        "type" : "LINE",
+        "id" : 2,
+        "parentId" : null,
+        "confidence" : 93.24282,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.033333283,
+            "height" : 0.058888856,
+            "left" : 0.7800001,
+            "top" : 0.51111114
+          },
+          "polygon" : [ {
+            "x" : 0.7800001,
+            "y" : 0.51111114
+          }, {
+            "x" : 0.81333333,
+            "y" : 0.51111114
+          }, {
+            "x" : 0.81333333,
+            "y" : 0.57
+          }, {
+            "x" : 0.7800001,
+            "y" : 0.57
+          } ]
+        }
+      }, {
+        "detectedText" : "1",
+        "type" : "WORD",
+        "id" : 3,
+        "parentId" : 0,
+        "confidence" : 98.93539,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.02166668,
+            "height" : 0.058888856,
+            "left" : 0.1825,
+            "top" : 0.51222223
+          },
+          "polygon" : [ {
+            "x" : 0.1825,
+            "y" : 0.51222223
+          }, {
+            "x" : 0.20416668,
+            "y" : 0.51222223
+          }, {
+            "x" : 0.20416668,
+            "y" : 0.5711111
+          }, {
+            "x" : 0.1825,
+            "y" : 0.5711111
+          } ]
+        }
+      }, {
+        "detectedText" : "2",
+        "type" : "WORD",
+        "id" : 4,
+        "parentId" : 1,
+        "confidence" : 99.39927,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.03416664,
+            "height" : 0.06,
+            "left" : 0.48166668,
+            "top" : 0.51111114
+          },
+          "polygon" : [ {
+            "x" : 0.48166668,
+            "y" : 0.51111114
+          }, {
+            "x" : 0.5158333,
+            "y" : 0.51111114
+          }, {
+            "x" : 0.5158333,
+            "y" : 0.57111114
+          }, {
+            "x" : 0.48166668,
+            "y" : 0.57111114
+          } ]
+        }
+      }, {
+        "detectedText" : "3",
+        "type" : "WORD",
+        "id" : 5,
+        "parentId" : 2,
+        "confidence" : 93.24282,
+        "geometry" : {
+          "boundingBox" : {
+            "width" : 0.033333283,
+            "height" : 0.058888856,
+            "left" : 0.7800001,
+            "top" : 0.51111114
+          },
+          "polygon" : [ {
+            "x" : 0.7800001,
+            "y" : 0.51111114
+          }, {
+            "x" : 0.81333333,
+            "y" : 0.51111114
+          }, {
+            "x" : 0.81333333,
+            "y" : 0.57
+          }, {
+            "x" : 0.7800001,
+            "y" : 0.57
+          } ]
+        }
+      } ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "6.1",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Page #File #Chart #Symbol #Weapon #Text #Diagram #Blackboard #Plot #Number #Electronics"
+  }
+}</TEXT></FIELD>
+</FIELDS>

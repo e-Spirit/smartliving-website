@@ -1,6 +1,0 @@
-[self]
-uid=revolution_extension_video
-gid=e91e62fa-7e71-46e2-881a-e4e5f5090a5f
-uidType=MEDIASTORE_LEAF
-class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
-

@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ENTITY_REFS>
 	<REFS sourceType="author">
-		<SOURCE uuid="51b14111-7d41-4bad-ab81-a0e161e2ffd3">
+		<SOURCE uuid="940c34db-e691-447a-adda-a8ca31c04a0e">
 			<ATTR name="newsList" targetType="news">
-				<TARGET uuid="94db23a8-6dff-4fd8-90b2-f19ced929c86"/>
-				<TARGET uuid="aab51540-f988-48ae-9311-02276126a340"/>
-				<TARGET uuid="eb98ea90-177f-401e-b7ee-1c3440b55ef8"/>
-				<TARGET uuid="f78aff5b-eda1-4bc4-bfbf-25702a662b38"/>
-				<TARGET uuid="11bc590d-5ab8-46ee-8e4d-70bf124ba83a"/>
-				<TARGET uuid="3d1d0440-e96f-405a-822c-154136eca3d3"/>
-				<TARGET uuid="456b76b1-8cae-432d-b71e-9c9993b78f7a"/>
-				<TARGET uuid="4c1ffb05-8762-4b61-aa67-c6e5b96cd1a4"/>
-				<TARGET uuid="5d2d882d-bf1c-4286-99ab-a2697709d38d"/>
+				<TARGET uuid="bd9cfefb-b898-4a9c-9845-6b8c5117a01b"/>
+				<TARGET uuid="ddd42fc0-6c9f-4734-9e94-3a3178e3e346"/>
+				<TARGET uuid="1f5ca5ef-10a5-425b-a01d-f81707b5840b"/>
+				<TARGET uuid="407dcd92-aba7-4d42-be86-7fcee11fc2f2"/>
+				<TARGET uuid="45534a05-83e4-464d-9764-7d01c79b94ae"/>
+				<TARGET uuid="59b800b4-7c46-4f9a-b0e5-5fad15c73f65"/>
+				<TARGET uuid="649d4a58-f900-423a-ba49-1d1c5a1de940"/>
+				<TARGET uuid="7e63a297-e276-482d-bfe9-3608f8d4af60"/>
 			</ATTR>
 		</SOURCE>
 	</REFS>

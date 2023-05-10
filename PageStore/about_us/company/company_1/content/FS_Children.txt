@@ -1,0 +1,2 @@
+company_1~#~content~#~teaser_1
+company_1~#~content~#~text_image_1

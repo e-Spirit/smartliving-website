@@ -1,6 +1,0 @@
-[self]
-uid=loader_min
-gid=391b9867-d455-4282-a425-a4026583daa1
-uidType=MEDIASTORE_LEAF
-class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
-

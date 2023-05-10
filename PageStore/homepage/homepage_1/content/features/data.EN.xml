@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_headline'><TEXT>SmartLiving offers you a way to live simply, automatically</TEXT></FIELD>
+	<FIELD name='st_text'><DOM><subline>From our extensive research and development to maintaining our unequaled level of excellence that has earned our reputation as the leading provider in smart device technology, SmartLiving is committed to delivering quality, peace of mind, and ways to live greener.</subline></DOM></FIELD>
+	<FIELD name='st_sectionLifespanFrom'><DATE/></FIELD>
+	<FIELD name='st_sectionLifespanTo'><DATE/></FIELD>
+</FIELDS>

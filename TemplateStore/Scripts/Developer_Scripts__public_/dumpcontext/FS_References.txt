@@ -1,6 +1,6 @@
 [self]
 uid=dumpcontext
-gid=a1c7056d-b609-4ba9-b4c0-aaf75ea02e0d
+gid=6e85ce48-48bf-45a1-ab19-be5ee4ba2e6f
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
 

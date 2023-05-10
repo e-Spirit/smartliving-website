@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RULES>
+	<RULE>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="st_headline"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="RELEASE">
+				<PROPERTY name="VALID" source="st_headline"/>
+				<MESSAGE lang="*" text="Please choose a headline"/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="st_number_of_news"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="RELEASE">
+				<PROPERTY name="VALID" source="st_number_of_news"/>
+				<MESSAGE lang="*" text="Please choose a number of News per page to be displayed (value lower than 0 means 'All')"/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="st_data_page"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="RELEASE">
+				<PROPERTY name="VALID" source="st_data_page"/>
+				<MESSAGE lang="*" text="Please add a JSON data page"/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<EQUAL>
+				<PROPERTY name="STORETYPE" source="#global"/>
+				<TEXT>templatestore</TEXT>
+			</EQUAL>
+		</WITH>
+		<DO>
+			<PROPERTY name="VISIBLE" source="#form.sectionLifespan"/>
+		</DO>
+	</RULE>
+</RULES>

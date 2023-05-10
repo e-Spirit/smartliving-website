@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEMPLATE comment="" filename="interesting_facts" id="-5426587362051878693" previewPageRefUid="home" templateid="8694801835885810231" type="section">
-	<EXTENSION file="html" link="html" templateSet="9062318847741885912"/>
-	<EXTENSION file="json" link="json" templateSet="15845"/>
-	<LANG displayname="Interessante Fakten" language="DE"/>
-	<LANG displayname="Interesting Facts" language="EN"/>
-</TEMPLATE>

@@ -1,6 +1,0 @@
-[self]
-uid=hades
-gid=06a6fe50-b190-4676-a19b-f42f133a91b6
-uidType=MEDIASTORE_LEAF
-class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
-

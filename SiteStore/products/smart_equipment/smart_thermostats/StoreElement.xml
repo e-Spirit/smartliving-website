@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SITENODE id="4073574575796409751" name="smart_thermostats" startnodeid="3372814766670933977">
+	<LANG displayname="Intelligente Thermostate" language="DE"/>
+	<LANG displayname="Smart Thermostats" language="EN"/>
+	<NODE_LANG_SPEC label="Intelligente Thermostate" language="DE"/>
+	<NODE_LANG_SPEC label="Smart Thermostats" language="EN"/>
+</SITENODE>

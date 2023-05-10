@@ -1,3 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RULES>
+	<RULE>
+		<WITH>
+			<LESS_THAN>
+				<PROPERTY name="SIZE" source="lt_product"/>
+				<NUMBER>1</NUMBER>
+			</LESS_THAN>
+		</WITH>
+		<DO>
+			<PROPERTY name="NEW" source="lt_product"/>
+			<PROPERTY name="ADD" source="lt_product"/>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<EQUAL>
+				<PROPERTY name="ENTRY" source="lt_type"/>
+				<TEXT>product</TEXT>
+			</EQUAL>
+		</WITH>
+		<DO>
+			<PROPERTY name="VISIBLE" source="lt_product"/>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<EQUAL>
+				<PROPERTY name="ENTRY" source="lt_type"/>
+				<TEXT>manual</TEXT>
+			</EQUAL>
+		</WITH>
+		<DO>
+			<PROPERTY name="VISIBLE" source="lt_headline"/>
+			<PROPERTY name="VISIBLE" source="lt_text"/>
+			<PROPERTY name="VISIBLE" source="lt_image"/>
+			<PROPERTY name="VISIBLE" source="lt_tooltip"/>
+			<PROPERTY name="VISIBLE" source="lt_link"/>
+		</DO>
+	</RULE>
 </RULES>

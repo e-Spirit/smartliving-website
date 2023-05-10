@@ -1,6 +1,6 @@
 [self]
 uid=fts_script_install
-gid=bc9d98b0-6fac-4e15-85a4-3f0ad8162b4a
+gid=1a5ae403-1c5d-4142-9a84-774bd29e2397
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
 

@@ -31,10 +31,4 @@
     </ON>
   </CMS_INPUT_TOGGLE>
 
-  <CMS_INPUT_DATE name="tt_translate_register_date" useLanguages="no">
-    <LANGINFOS>
-      <LANGINFO lang="*" label="Date of Registration" format="MM.dd.yyyy HH:mm"/>
-    </LANGINFOS>
-  </CMS_INPUT_DATE>
-
 </CMS_MODULE>

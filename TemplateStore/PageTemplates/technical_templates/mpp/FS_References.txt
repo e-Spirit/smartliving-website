@@ -1,0 +1,6 @@
+[self]
+uid=mpp
+gid=c84921bf-f7d6-4ef1-bb9a-4e4863d33f72
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
+

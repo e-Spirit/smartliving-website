@@ -1,1 +1,0 @@
-if(!st_title.isEmpty(), st_title, "<No Title>")

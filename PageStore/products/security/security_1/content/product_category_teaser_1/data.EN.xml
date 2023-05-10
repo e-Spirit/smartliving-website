@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_headline'><TEXT>Discover our smart thermostats</TEXT></FIELD>
+	<FIELD name='st_text'><DOM><p>Smart thermostats are devices that control home heating and cooling systems using advanced technology. They allow homeowners to monitor and adjust temperature settings remotely using a smartphone app or voice commands, leading to greater energy efficiency and cost savings.</p></DOM></FIELD>
+	<FIELD name='st_category_link'><LINK><CMS_LINK linktemplate="internal_link" type="genericLink"><TEMPLATECONTENT><CMS_VALUE name="lt_link"><LANG id="§" set="1"><UID>security_overview</UID><UIDTYPE>SITESTORE_LEAF</UIDTYPE><REMOTE/></LANG></CMS_VALUE><CMS_VALUE name="lt_text"><LANG id="§" set="1"><TEXT>See all products</TEXT></LANG></CMS_VALUE></TEMPLATECONTENT></CMS_LINK></LINK></FIELD>
+</FIELDS>

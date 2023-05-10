@@ -1,0 +1,6 @@
+[self]
+uid=robot_vacuum_cleaner_1~#~content
+gid=b49e2bb5-b086-421f-8d02-3d5c52628ab6
+store=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.BodyImpl
+

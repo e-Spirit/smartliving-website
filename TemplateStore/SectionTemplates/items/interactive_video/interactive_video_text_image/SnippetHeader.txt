@@ -1,0 +1,1 @@
+if(!st_text.isEmpty(), truncate(st_text.toText(false), 100), "Text Item ") + if(!st_time.isEmpty(), st_time.format("0.000"))

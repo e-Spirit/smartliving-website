@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_INPUT_DATE name="st_sectionLifespanFrom" hFill="yes" useLanguages="yes">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Gültigkeitsbeginn"/>
+      <LANGINFO lang="EN" label="Validation start date"/>
+    </LANGINFOS>
+  </CMS_INPUT_DATE>
+
+  <CMS_INPUT_DATE name="st_sectionLifespanTo" hFill="yes" useLanguages="yes">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Gültigkeitsende"/>
+      <LANGINFO lang="EN" label="Validation end date"/>
+    </LANGINFOS>
+  </CMS_INPUT_DATE>
+
+</CMS_MODULE>

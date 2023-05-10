@@ -32,6 +32,18 @@
         <LANGINFO lang="*" label="Form Layout and Settings"/>
       </LANGINFOS>
 
+      <CMS_INPUT_TOGGLE name="pt_show_tms_overwrite" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Show connector project selection to allow overwriting language mapping selection"/>
+        </LANGINFOS>
+      </CMS_INPUT_TOGGLE>
+
+      <CMS_INPUT_TOGGLE name="pt_use_cms_input_list" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Use CMS_INPUT_LIST instead of checkboxes"/>
+        </LANGINFOS>
+      </CMS_INPUT_TOGGLE>
+
       <CMS_INPUT_NUMBER name="pt_width_st_fts_ref_mappings" hFill="yes" min="1.0" singleLine="no" useLanguages="no">
         <LANGINFOS>
           <LANGINFO lang="*" label="How many columns to use to display available source and target languages?"/>
@@ -142,6 +154,18 @@
         </LANGINFOS>
       </CMS_LABEL>
 
+      <CMS_INPUT_TOGGLE name="pt_hide_st_fts_date_complete" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Hide Due Date"/>
+        </LANGINFOS>
+      </CMS_INPUT_TOGGLE>
+
+      <CMS_INPUT_TOGGLE name="pt_require_st_fts_date_complete" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Make Due Date mandatory (only if visible!)"/>
+        </LANGINFOS>
+      </CMS_INPUT_TOGGLE>
+
       <CMS_INPUT_TOGGLE name="pt_hide_st_create_preview_page" useLanguages="no">
         <LANGINFOS>
           <LANGINFO lang="*" label="Hide Option: Create Preview Pages"/>
@@ -166,9 +190,21 @@
         </LANGINFOS>
       </CMS_INPUT_RADIOBUTTON>
 
+      <CMS_INPUT_TOGGLE name="pt_hide_st_fts_translation_regular" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Hide Option: Translate this content (defaults to immediate translation)"/>
+        </LANGINFOS>
+      </CMS_INPUT_TOGGLE>
+
       <CMS_INPUT_TOGGLE name="pt_hide_st_keep_nontranslatables" useLanguages="no">
         <LANGINFOS>
           <LANGINFO lang="*" label="Hide Option: Copy latest non-translatable values"/>
+        </LANGINFOS>
+      </CMS_INPUT_TOGGLE>
+
+      <CMS_INPUT_TOGGLE name="pt_hide_st_fts_ref_worfklow_on_import" useLanguages="no">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Hide Option: Select workflow after import"/>
         </LANGINFOS>
       </CMS_INPUT_TOGGLE>
 

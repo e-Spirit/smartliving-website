@@ -1,0 +1,4 @@
+homepage_1~#~content~#~teaser
+homepage_1~#~content~#~features
+homepage_1~#~content~#~accordion
+homepage_1~#~content~#~latest_news

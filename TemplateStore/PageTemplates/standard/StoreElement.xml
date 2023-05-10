@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEMPLATE comment="" filename="standard" id="3841739499086263942" previewPageRefUid="imprint" templateid="7532391163569512" type="page">
+<TEMPLATE comment="" filename="standard" id="-5949860898037139390" templateid="-4344954757710281538" type="page">
+	<ALLOWED enabled="content" templateid="-1515106745675337240"/>
+	<ALLOWED enabled="content" templateid="-2347200144597325365"/>
+	<ALLOWED enabled="content" templateid="-4157926305581842790"/>
+	<ALLOWED enabled="content" templateid="-5860232761914146240"/>
+	<ALLOWED enabled="content" templateid="-7821236664079503015"/>
+	<ALLOWED enabled="content" templateid="-826108715533158408"/>
+	<ALLOWED enabled="content" templateid="2739409256676292912"/>
+	<ALLOWED enabled="content" templateid="5668577634827142565"/>
+	<ALLOWED enabled="content" templateid="695659305039789796"/>
+	<ALLOWED enabled="content" templateid="7221422639828993260"/>
+	<ALLOWED enabled="content" templateid="8789777708815429462"/>
 	<EXTENSION file="html" link="html" replaceable="false" templateSet="9062318847741885912"/>
-	<EXTENSION file="json" link="json" replaceable="false" templateSet="15843"/>
 	<LANG displayname="Standard" language="DE"/>
 	<LANG displayname="Standard" language="EN"/>
 	<TEMPLATEBODY name="content">

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<FORMATTEMPLATE id="2901673045418424408" name="span_black_text">
-	<LANG displayname="Black" language="EN"/>
-	<LANG displayname="Schwarz" language="DE"/>
-	<style tag="span_black_text" view="marked">
-		<attr name="align" value="left"/>
-		<render/>
-	</style>
-</FORMATTEMPLATE>

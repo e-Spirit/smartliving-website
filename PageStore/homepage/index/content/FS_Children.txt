@@ -1,3 +1,0 @@
-index~#~content~#~teaser
-index~#~content~#~news_teaser
-index~#~content~#~st_interesting_facts

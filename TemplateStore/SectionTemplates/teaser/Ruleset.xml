@@ -1,51 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RULES>
-	<!-- Mandatory: st_picture (masterLanguage) -->
 	<RULE>
-		<IF>
+		<WITH>
 			<EQUAL>
-				<PROPERTY name="LANG" source="#global"/>
-				<PROPERTY name="MASTER" source="#global"/>
+				<PROPERTY name="STORETYPE" source="#global"/>
+				<TEXT>templatestore</TEXT>
 			</EQUAL>
-		</IF>
-		<WITH>
-			<NOT>
-				<PROPERTY name="EMPTY" source="st_picture"/>
-			</NOT>
 		</WITH>
 		<DO>
-			<VALIDATION scope="RELEASE">
-				<PROPERTY name="VALID" source="st_picture"/>
-				<MESSAGE lang="*" text="You need a picture."/>
-				<MESSAGE lang="DE" text="Es wird ein Bild benötigt."/>
-			</VALIDATION>
-		</DO>
-	</RULE>
-	<!-- Mandatory: st_picture (not masterLanguage) -->
-	<RULE>
-		<IF>
-			<NOT>
-				<EQUAL>
-					<PROPERTY name="MASTER" source="#global"/>
-					<PROPERTY name="LANG" source="#global"/>
-				</EQUAL>
-			</NOT>
-		</IF>
-		<WITH>
-			<NOT>
-				<AND>
-					<PROPERTY name="TRANSLATED" source="#global"/>
-					<PROPERTY name="INCLUDED" source="#global"/>
-					<PROPERTY name="EMPTY" source="st_picture"/>
-				</AND>
-			</NOT>
-		</WITH>
-		<DO>
-			<VALIDATION scope="RELEASE">
-				<PROPERTY name="VALID" source="st_picture"/>
-				<MESSAGE lang="*" text="You need a picture."/>
-				<MESSAGE lang="DE" text="Es wird ein Bild benötigt."/>
-			</VALIDATION>
+			<PROPERTY name="VISIBLE" source="#form.sectionLifespan"/>
 		</DO>
 	</RULE>
 </RULES>

@@ -1,1 +1,1 @@
-truncate(tt_abstract,50)
+if(!tt_description.isEmpty(), tt_description)

@@ -1,6 +1,0 @@
-[self]
-uid=set_application_url
-gid=147ba09b-0c26-402d-9a16-415b27f5b156
-uidType=TEMPLATESTORE
-class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
-

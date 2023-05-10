@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RULES>
+	<RULE>
+		<WITH>
+			<PROPERTY name="EMPTY" source="st_newsTag"/>
+		</WITH>
+		<DO>
+			<NOT>
+				<VALIDATION scope="RELEASE">
+					<PROPERTY name="VALID" source="st_newsTag"/>
+					<MESSAGE lang="*" text="Please select a tag."/>
+					<MESSAGE lang="DE" text="Bitte wählen sie einen Tag aus."/>
+				</VALIDATION>
+			</NOT>
+		</DO>
+	</RULE>
+</RULES>

@@ -1,6 +1,6 @@
 AllChildren: 1
-DefaultStyleTemplateName_-6185556610826752323: default_style_template
-ExportPermissions: AllPermissions
+DefaultStyleTemplateName_-1696397657969741926: default_style_template
+ExportPermissions: NoPermissions
 ExportVersion: 3.2
 Language_DE: Deutsch
 Language_EN: English

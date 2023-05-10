@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LINKTEMPLATE cat="url" drop="lt_dataset" id="-2172394572409965374" name="dataset_link" txt="lt_text">
+	<LANG displayname="Dataset link" language="EN"/>
+	<LANG displayname="Datensatz link" language="DE"/>
+</LINKTEMPLATE>

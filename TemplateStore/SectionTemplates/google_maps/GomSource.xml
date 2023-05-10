@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_INPUT_TEXT name="st_headline" hFill="yes" singleLine="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Headline"/>
+      <LANGINFO lang="DE" label="Überschrift"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_TEXT name="st_subheadline" hFill="yes" singleLine="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Subheadline"/>
+      <LANGINFO lang="DE" label="Unterüberschrift"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_NUMBER name="st_initial_lat" type="double" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO
+        lang="*"
+        label="Initial Latitude."
+        description="If not set latitude of Dortmund will be used."
+        format="##.#######"/>
+    </LANGINFOS>
+  </CMS_INPUT_NUMBER>
+
+  <CMS_INPUT_NUMBER name="st_initial_long" type="double" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO
+        lang="*"
+        label="Initial Longitude."
+        description="If not set longitude of Dortmund will be used."
+        format="##.#######"/>
+    </LANGINFOS>
+  </CMS_INPUT_NUMBER>
+
+  <CMS_INPUT_NUMBER name="st_initial_zoom" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Initial Zoom." description="If not set 6 will be used."/>
+    </LANGINFOS>
+  </CMS_INPUT_NUMBER>
+
+  <CMS_INPUT_NUMBER name="st_number_of_locations" hFill="yes" min="1.0" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Number of Locations per page" description="Must be greater than 0."/>
+      <LANGINFO lang="DE" label="Anzahl der Standorte pro Seite" description="Wert muss größer als 0 sein."/>
+    </LANGINFOS>
+  </CMS_INPUT_NUMBER>
+
+  <CMS_INPUT_RADIOBUTTON name="st_datasource" hFill="yes" useLanguages="no">
+    <ENTRIES>
+      <ENTRY value="database">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Database"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="manual">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Manual List"/>
+        </LANGINFOS>
+      </ENTRY>
+    </ENTRIES>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Datasource"/>
+    </LANGINFOS>
+  </CMS_INPUT_RADIOBUTTON>
+
+  <FS_REFERENCE name="st_data_page" hFill="yes" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Locations JSON Data Page"/>
+      <LANGINFO lang="DE" label="Locations JSON Data Seite"/>
+    </LANGINFOS>
+    <PROJECTS>
+      <LOCAL name=".">
+        <SOURCES>
+          <FOLDER name="root" store="sitestore"/>
+        </SOURCES>
+      </LOCAL>
+    </PROJECTS>
+  </FS_REFERENCE>
+
+  <FS_CATALOG name="st_data_list" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Locations"/>
+    </LANGINFOS>
+    <TEMPLATES type="section">
+      <TEMPLATE uid="location"/>
+    </TEMPLATES>
+  </FS_CATALOG>
+
+  <CMS_GROUP name="sectionLifespan">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Validity period"/>
+    </LANGINFOS>
+
+    <CMS_INPUT_DATE name="st_sectionLifespanFrom" hFill="yes">
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Gültigkeitsbeginn"/>
+        <LANGINFO lang="EN" label="Validation start date"/>
+      </LANGINFOS>
+    </CMS_INPUT_DATE>
+
+    <CMS_INPUT_DATE name="st_sectionLifespanTo" hFill="yes">
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Gültigkeitsende"/>
+        <LANGINFO lang="EN" label="Validation end date"/>
+      </LANGINFOS>
+    </CMS_INPUT_DATE>
+
+  </CMS_GROUP>
+
+</CMS_MODULE>

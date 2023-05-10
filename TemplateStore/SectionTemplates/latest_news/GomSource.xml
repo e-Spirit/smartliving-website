@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_INPUT_TEXT name="st_headline" hFill="yes" singleLine="no" useLanguages="yes">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Headline"/>
+      <LANGINFO lang="DE" label="Überschrift"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_DOM name="st_subheadline" hFill="yes" list="no" rows="2" table="no" useLanguages="yes">
+    <FORMATS>
+      <TEMPLATE name="subline"/>
+    </FORMATS>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Subheadline"/>
+      <LANGINFO lang="DE" label="Unterüberschrift"/>
+    </LANGINFOS>
+    <LINKEDITORS>
+      <LINKEDITOR name="external_link"/>
+      <LINKEDITOR name="internal_link"/>
+      <LINKEDITOR name="media_link"/>
+      <LINKEDITOR name="dataset_link"/>
+    </LINKEDITORS>
+  </CMS_INPUT_DOM>
+
+  <CMS_INPUT_COMBOBOX name="st_newsTag" hFill="yes" singleLine="no" useLanguages="no">
+    <CMS_INCLUDE_OPTIONS type="database">
+      <LABELS>
+        <LABEL lang="*">#item.name</LABEL>
+      </LABELS>
+      <TABLE>smartliving.tag</TABLE>
+    </CMS_INCLUDE_OPTIONS>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="News Tag"/>
+    </LANGINFOS>
+  </CMS_INPUT_COMBOBOX>
+
+</CMS_MODULE>

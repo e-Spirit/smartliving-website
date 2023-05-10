@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_headline'><TEXT>Schützen Sie sich vor Rauch und Feuer</TEXT></FIELD>
+	<FIELD name='st_text'><DOM><p>Eine weitere Möglichkeit, die Sicherheit zu Hause zu erhöhen, ist das Installieren von Rauchmeldern. Diese Geräte können Leben retten, indem sie bei Rauch oder Feuer Alarm schlagen. Stellen Sie sicher, dass alle Rauchmelder in Ihrem Haus funktionieren und regelmäßig überprüft werden.</p></DOM></FIELD>
+	<FIELD name='st_image_alt_text'><TEXT>Ein smarter Rauchmelder</TEXT></FIELD>
+</FIELDS>

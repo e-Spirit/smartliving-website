@@ -1,6 +1,6 @@
 [self]
 uid=Workflows
-gid=afeada3f-f487-4406-b02b-ae267dbea79e
+gid=03eebad4-ec27-42d1-9923-fc331250471c
 store=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.WorkflowsImpl
 

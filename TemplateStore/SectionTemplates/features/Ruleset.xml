@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RULES>
+	<RULE>
+		<WITH>
+			<GREATER_THAN>
+				<PROPERTY name="SIZE" source="st_features"/>
+				<NUMBER>2</NUMBER>
+			</GREATER_THAN>
+		</WITH>
+		<DO>
+			<NOT>
+				<PROPERTY name="NEW" source="st_features"/>
+			</NOT>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<LESS_THAN>
+				<PROPERTY name="SIZE" source="st_features"/>
+				<NUMBER>2</NUMBER>
+			</LESS_THAN>
+		</WITH>
+		<DO>
+			<NOT>
+				<VALIDATION scope="RELEASE">
+					<PROPERTY name="VALID" source="st_features"/>
+					<MESSAGE lang="*" text="At least two features must be added."/>
+				</VALIDATION>
+			</NOT>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<EQUAL>
+				<PROPERTY name="STORETYPE" source="#global"/>
+				<TEXT>templatestore</TEXT>
+			</EQUAL>
+		</WITH>
+		<DO>
+			<PROPERTY name="VISIBLE" source="#form.sectionLifespan"/>
+		</DO>
+	</RULE>
+</RULES>

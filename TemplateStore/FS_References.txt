@@ -1,6 +1,6 @@
 [self]
 uid=root
-gid=38f12e31-9b26-4202-b8ad-0cfcd6d11e90
+gid=173ac26f-4dd4-473c-bbd5-98f0279bb78b
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.TemplateStoreRootImpl
 

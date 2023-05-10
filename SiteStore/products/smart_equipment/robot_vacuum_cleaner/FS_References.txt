@@ -1,0 +1,12 @@
+[self]
+uid=robot_vacuum_cleaner
+gid=29640d55-7da4-4552-a252-7e3b076cd1a1
+uidType=SITESTORE_FOLDER
+class=de.espirit.firstspirit.store.access.sitestore.PageRefFolderImpl
+
+[nextSibling]
+uid=smart_bulbs
+gid=2c87b91d-7a75-42d3-9969-995525708c3f
+uidType=SITESTORE_FOLDER
+class=de.espirit.firstspirit.store.access.sitestore.PageRefFolderImpl
+

@@ -1,44 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ENTITY_REFS>
 	<REFS sourceType="tag">
-		<SOURCE uuid="819abc3f-302c-4d6d-9b5c-b0874688e95a">
+		<SOURCE uuid="90411304-a3fd-496b-be4b-9a7271b3723e">
 			<ATTR name="newsList" targetType="news">
-				<TARGET uuid="aab51540-f988-48ae-9311-02276126a340"/>
-				<TARGET uuid="eb98ea90-177f-401e-b7ee-1c3440b55ef8"/>
-				<TARGET uuid="5d2d882d-bf1c-4286-99ab-a2697709d38d"/>
+				<TARGET uuid="59b800b4-7c46-4f9a-b0e5-5fad15c73f65"/>
+				<TARGET uuid="649d4a58-f900-423a-ba49-1d1c5a1de940"/>
+				<TARGET uuid="7e63a297-e276-482d-bfe9-3608f8d4af60"/>
 			</ATTR>
-			<ATTR name="promotionsList" targetType="promotions"/>
 		</SOURCE>
-		<SOURCE uuid="e4d4916d-8b46-445c-b175-0b6fc85b4234">
-			<ATTR name="newsList" targetType="news">
-				<TARGET uuid="eb98ea90-177f-401e-b7ee-1c3440b55ef8"/>
-				<TARGET uuid="3d1d0440-e96f-405a-822c-154136eca3d3"/>
-				<TARGET uuid="4c1ffb05-8762-4b61-aa67-c6e5b96cd1a4"/>
-				<TARGET uuid="5d2d882d-bf1c-4286-99ab-a2697709d38d"/>
-			</ATTR>
-			<ATTR name="promotionsList" targetType="promotions"/>
+		<SOURCE uuid="bf0cfd16-c5a2-4216-a5c1-b2e29afeccf3">
+			<ATTR name="newsList" targetType="news"/>
 		</SOURCE>
-		<SOURCE uuid="30501cc7-102f-41ec-8838-b780b98d9425">
+		<SOURCE uuid="c9b9b201-cc8a-43c1-bb7e-9dc7801e136a">
 			<ATTR name="newsList" targetType="news">
-				<TARGET uuid="f78aff5b-eda1-4bc4-bfbf-25702a662b38"/>
-				<TARGET uuid="3d1d0440-e96f-405a-822c-154136eca3d3"/>
-				<TARGET uuid="456b76b1-8cae-432d-b71e-9c9993b78f7a"/>
+				<TARGET uuid="bd9cfefb-b898-4a9c-9845-6b8c5117a01b"/>
+				<TARGET uuid="ddd42fc0-6c9f-4734-9e94-3a3178e3e346"/>
+				<TARGET uuid="407dcd92-aba7-4d42-be86-7fcee11fc2f2"/>
 			</ATTR>
-			<ATTR name="promotionsList" targetType="promotions"/>
 		</SOURCE>
-		<SOURCE uuid="381a6a55-6556-4a22-86f8-a7cf91ece348">
+		<SOURCE uuid="f3a866a5-380e-4045-bb03-d64fa10dd060">
 			<ATTR name="newsList" targetType="news">
-				<TARGET uuid="94db23a8-6dff-4fd8-90b2-f19ced929c86"/>
-				<TARGET uuid="eb98ea90-177f-401e-b7ee-1c3440b55ef8"/>
-				<TARGET uuid="4c1ffb05-8762-4b61-aa67-c6e5b96cd1a4"/>
+				<TARGET uuid="bd9cfefb-b898-4a9c-9845-6b8c5117a01b"/>
+				<TARGET uuid="ddd42fc0-6c9f-4734-9e94-3a3178e3e346"/>
+				<TARGET uuid="407dcd92-aba7-4d42-be86-7fcee11fc2f2"/>
+				<TARGET uuid="45534a05-83e4-464d-9764-7d01c79b94ae"/>
+				<TARGET uuid="59b800b4-7c46-4f9a-b0e5-5fad15c73f65"/>
 			</ATTR>
-			<ATTR name="promotionsList" targetType="promotions"/>
 		</SOURCE>
-		<SOURCE uuid="4a5449a6-7754-4439-85e9-13e8e13b2015">
+		<SOURCE uuid="fc1078d1-cb57-4db2-b259-61a5da439bb6">
+			<ATTR name="newsList" targetType="news"/>
+		</SOURCE>
+		<SOURCE uuid="2fc3962b-3bda-4f85-bdd1-d69291ffdc79">
+			<ATTR name="newsList" targetType="news"/>
+		</SOURCE>
+		<SOURCE uuid="5737193b-deca-4ede-a525-cf55f3b51f11">
 			<ATTR name="newsList" targetType="news">
-				<TARGET uuid="11bc590d-5ab8-46ee-8e4d-70bf124ba83a"/>
+				<TARGET uuid="1f5ca5ef-10a5-425b-a01d-f81707b5840b"/>
 			</ATTR>
-			<ATTR name="promotionsList" targetType="promotions"/>
+		</SOURCE>
+		<SOURCE uuid="5746731c-c576-409d-9e02-e1e33b85840f">
+			<ATTR name="newsList" targetType="news">
+				<TARGET uuid="bd9cfefb-b898-4a9c-9845-6b8c5117a01b"/>
+				<TARGET uuid="45534a05-83e4-464d-9764-7d01c79b94ae"/>
+			</ATTR>
 		</SOURCE>
 	</REFS>
 </ENTITY_REFS>

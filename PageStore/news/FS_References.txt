@@ -1,0 +1,6 @@
+[self]
+uid=news
+gid=043d1a75-8a4a-4ac4-a6e6-7b5121d5561d
+uidType=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.PageFolderImpl
+

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_number_of_locations'><FIG>3</FIG></FIELD>
+	<FIELD name='st_datasource'><SEL><VALUE>database</VALUE></SEL></FIELD>
+	<FIELD name='st_data_page'><UID>locations_json</UID><UIDTYPE>SITESTORE_LEAF</UIDTYPE><REMOTE/></FIELD>
+	<FIELD name='st_data_list'><CATALOG/></FIELD>
+</FIELDS>

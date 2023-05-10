@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_headline'><TEXT>Protect yourself from smoke and fire</TEXT></FIELD>
+	<FIELD name='st_text'><DOM><p>Increase safety at home by installing smoke detectors. These devices save lives by sounding an alarm in the event of smoke or fire. Make sure all smoke detectors in your home are working and checked regularly.</p></DOM></FIELD>
+	<FIELD name='st_image_alt_text'><TEXT>Smart smoke detector</TEXT></FIELD>
+</FIELDS>

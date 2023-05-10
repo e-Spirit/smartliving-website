@@ -1,6 +1,6 @@
 [self]
 uid=/common_format_templates
-gid=894960d6-dabf-4ff8-8474-5577ccf2fa33
+gid=7b544e8f-11ea-4255-a490-fc0ad251695b
 store=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateFolderImpl
 root=de.espirit.firstspirit.store.access.templatestore.FormatTemplatesImpl

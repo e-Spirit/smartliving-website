@@ -1,12 +1,27 @@
 [self]
 uid=interactive_image_link
-gid=29a318db-3ccf-45a0-9c28-90bfb97d22f7
+gid=3e188fa4-85ad-4471-8195-2f8ce390d70c
 uidType=TEMPLATESTORE_LINKTEMPLATE
 class=de.espirit.firstspirit.store.access.templatestore.LinkTemplateImpl
 
 [optionalId]
 uid=images
-gid=5d06d9c5-0362-430e-9ce2-ca1f174e5b65
+gid=af7a5702-8a1a-401c-a6db-513067bfab17
 uidType=MEDIASTORE_FOLDER
 class=de.espirit.firstspirit.store.access.mediastore.MediaFolderImpl
+
+uid=external_link
+gid=83e6ea0b-b0e6-4581-8810-927788192fbd
+uidType=TEMPLATESTORE_LINKTEMPLATE
+class=de.espirit.firstspirit.store.access.templatestore.LinkTemplateImpl
+
+uid=internal_link
+gid=5b3dc502-f98f-491f-9f54-d56251e3d112
+uidType=TEMPLATESTORE_LINKTEMPLATE
+class=de.espirit.firstspirit.store.access.templatestore.LinkTemplateImpl
+
+uid=smartliving.product
+gid=593bbf90-9680-4e8d-b34b-4608a92c9d26
+uidType=TEMPLATESTORE_SCHEMA
+class=de.espirit.firstspirit.store.access.templatestore.TableTemplateImpl
 

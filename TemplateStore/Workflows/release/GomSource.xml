@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CMS_MODULE>
 
-  <CMS_INPUT_CHECKBOX name="wf_releasewmedia" gridHeight="1" gridWidth="1" hFill="yes" useLanguages="no">
+  <CMS_INPUT_CHECKBOX name="wf_releasewmedia" gridHeight="1" gridWidth="1" useLanguages="no">
     <ENTRIES>
       <ENTRY value="true">
         <LANGINFOS>
@@ -16,7 +16,7 @@
     </LANGINFOS>
   </CMS_INPUT_CHECKBOX>
 
-  <CMS_INPUT_CHECKBOX name="wf_releaseRecursively" gridHeight="1" gridWidth="1" hFill="yes" useLanguages="no">
+  <CMS_INPUT_CHECKBOX name="wf_releaseRecursively" gridHeight="1" gridWidth="1" useLanguages="no">
     <ENTRIES>
       <ENTRY value="true">
         <LANGINFOS>

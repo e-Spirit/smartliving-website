@@ -1,0 +1,140 @@
+$--
+	Renders the sections. 
+	Considers the lifespan of the sections.
+	Adds ContentCreator features such as drop zones.
+	
+	Parameters:
+		prm_body					Body					Body to render
+		prm_createSectionDrop		String					Name of the FS_BUTTON to create new sections on drop (see add_section_toolbar script)
+		
+--$
+$CMS_IF(!prm_body.isEmpty())$
+	$CMS_FOR(for_section, prm_body.getChildren(class("de.espirit.firstspirit.access.store.pagestore.Section")))$
+		$CMS_SET(set_sectionToolbarItems, [])$
+		$CMS_SET(set_sectionLifespan, {:})$		
+		$CMS_RENDER(template:"section_lifespan", 
+						prm_lifespanResult: set_sectionLifespan, 
+						prm_sectionFormData: for_section.formData,
+						prm_sectionId: for_section.id,
+						prm_sectionEditorId: editorId(details: "SIMPLE", element: for_section, json:true),
+						prm_sectionToolbarItems: set_sectionToolbarItems)$	
+		$CMS_IF(#global.is("WEBEDIT"))$
+			<div class="custom-cc-absolute 
+						custom-cc-w-full" data-fscust-section-id="$CMS_VALUE(for_section.getId())$">
+				$-- Dropzone between sections --$
+				$CMS_IF(isSet(prm_createSectionDrop))$
+					<div class="
+							custom-cc-py-2
+							custom-cc-absolute
+							custom-cc--top-8
+							custom-cc-z-[200002010] 
+							custom-cc-w-full 
+							custom-cc-max-h-0
+							custom-cc-hidden
+							custom-cc-opacity-0
+							custom-cc-bg-white 
+							custom-cc-border
+							custom-cc-border-dashed
+							custom-cc-border-fs-button-bg
+							custom-cc-transition 
+							custom-cc-duration-200 
+							custom-cc-ease-in-out	
+							">
+						<div class="custom-cc-text-center" data-fs-toolbar-drop 
+								$CMS_VALUE(fsbutton(editorName: prm_createSectionDrop, 
+													parameter: {"sectionId": for_section.id}))$>				
+						</div>		
+					</div>
+				$CMS_END_IF$
+				$-- /Dropzone between sections --$
+				$-- Toolbar with Icons like section lifespan --$
+				$CMS_IF(!set_sectionToolbarItems.isEmpty())$
+					<div class="custom-cc-absolute 
+								custom-cc-top-8 
+								custom-cc-left-0 z-[200002011]">
+						$CMS_FOR(for_item, set_sectionToolbarItems)$
+							$CMS_VALUE(for_item)$
+						$CMS_END_FOR$
+					</div>
+				$CMS_END_IF$			
+				$-- /Toolbar with Icons --$
+			</div>				
+		$CMS_END_IF$		
+		
+		$CMS_IF(set_sectionLifespan.valid || #global.is("WEBEDIT"))$
+			$CMS_VALUE(for_section)$					
+		$CMS_END_IF$
+	$CMS_END_FOR$	
+$CMS_END_IF$
+
+$CMS_IF(#global.is("WEBEDIT"))$
+	$CMS_SET(set_script)$
+		<template id="fs-custom-dropzone">
+			<div class="custom-cc-w-full
+						custom-cc-h-full 
+						custom-cc-flex 
+						custom-cc-flex-col 
+						custom-cc-justify-center 
+						custom-cc-items-center">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"				
+					class="custom-cc-p-2
+								custom-cc-w-12 
+								custom-cc-h-12
+								custom-cc-stroke-2
+								custom-cc-stroke-white
+								custom-cc-bg-fs-button-bg
+								custom-cc-rounded-full
+								">
+					<path d="M12 4.5v15m7.5-7.5h-15"/>
+				</svg>
+			</div>
+		</template>
+		<script>
+			window.addEventListener(
+				"DOMContentLoaded",
+				(event) => {	
+					const dropzoneTemplate = document.getElementById("fs-custom-dropzone");				
+					function isElementInViewport(el) {
+					    var rect = el.getBoundingClientRect();
+					    return (
+					        rect.top >= 0 &&
+					        rect.left >= 0 &&
+					        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+					        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+					    );
+					}				
+					let toolbarList = document.querySelectorAll("[data-fs-toolbar-drop]");
+					toolbarList.forEach((element) => {
+				        new MutationObserver(function(mutations){
+		      				let targetElement = mutations[0].target;
+					        if(targetElement.classList.contains('fs-button-drop-target') && isElementInViewport(targetElement)){
+					        	targetElement.replaceChildren();
+				    	    	targetElement.appendChild(dropzoneTemplate.content.cloneNode(true));
+				    	    	targetElement.style.padding = `0px ${(document.body.clientWidth - 400) / 2}px`;
+				        		targetElement.parentNode.classList.remove("custom-cc-hidden");
+				        		targetElement.parentNode.classList.remove("custom-cc-opacity-0");
+				        		targetElement.parentNode.classList.remove("custom-cc-max-h-0");
+				        		targetElement.parentNode.classList.add("custom-cc-border");
+					        } else {
+				        		targetElement.parentNode.classList.remove("custom-cc-border");
+				        		targetElement.parentNode.classList.add("custom-cc-max-h-0");
+								targetElement.parentNode.classList.add("custom-cc-opacity-0");
+								targetElement.parentNode.classList.add("custom-cc-hidden");
+								targetElement.replaceChildren();
+					        }
+					    }).observe(element, { attributes: true, attributeFilter: ['class'] });
+					});		
+				},
+				{ once: true }
+			);
+		</script>
+	$CMS_END_SET$
+	$CMS_RENDER(template: "javascript_collector", prm_action: "add", 
+												prm_jSStatement: set_script, 
+												prm_jSId: "render_body")$
+$CMS_END_IF$

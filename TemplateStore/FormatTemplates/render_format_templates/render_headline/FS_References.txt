@@ -1,0 +1,6 @@
+[self]
+uid=render_headline
+gid=9363d7f9-fb08-4808-b76e-635576a139b2
+uidType=TEMPLATESTORE_FORMATTEMPLATE
+class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
+

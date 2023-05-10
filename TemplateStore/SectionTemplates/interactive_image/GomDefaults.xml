@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_style'><SEL><VALUE>image_only</VALUE></SEL></FIELD>
+	<FIELD name='st_layout'><SEL><VALUE>image-text</VALUE></SEL></FIELD>
+</FIELDS>

@@ -1,0 +1,3 @@
+import de.espirit.firstspirit.access.store.pagestore.Section; 
+
+return (context.getElement() instanceof Section);

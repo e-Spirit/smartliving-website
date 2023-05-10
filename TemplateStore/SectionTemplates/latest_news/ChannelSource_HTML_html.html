@@ -1,0 +1,55 @@
+<CMS_HEADER>
+	<CMS_FUNCTION name="contentSelect" resultname="fr_news">
+		<CMS_VALUE_PARAM  name="tagId" value="st_newsTag.value.id" />
+		<CMS_PARAM name="schema" value="smartliving"/>
+		<QUERY entityType="news" limit="3">
+			<FILTERPARAM parameter="tagId" datatype="java.lang.Integer"/>
+			<EQ attribute="tagList.fs_id" parameter="tagId"/>
+			<ORDERCRITERIA attribute="date" descending="1"/>			
+		</QUERY>
+	</CMS_FUNCTION>
+</CMS_HEADER>
+<section class="py-14" $CMS_VALUE(editorId())$>
+	<div class="container px-4 mx-auto">
+		<div class="text-center mb-20">
+			$CMS_RENDER(template:"render_headline", 
+						prm_headline: st_headline, 
+						prm_defaultTag: "h2", 
+						prm_cssClasses: "mb-8 text-3xl md:text-4xl font-bold font-heading tracking-px-n leading-none text-primary",
+						prm_inputComponentName: "st_headline")$
+			$CMS_IF(#global.is("WEBEDIT"))$
+				<div $CMS_VALUE(editorId(editorName:"st_subheadline"))$>
+			$CMS_END_IF$
+					$CMS_VALUE(st_subheadline, default:"")$
+			$CMS_IF(#global.is("WEBEDIT"))$
+				</div>
+			$CMS_END_IF$	
+		</div>
+		<div class="flex flex-wrap -m-9">
+			$CMS_FOR(for_news, fr_news)$
+				<div class="w-full md:w-1/3 p-9" $CMS_VALUE(editorId(template: "smartliving.news", entity:for_news))$>
+					<a class="group" href="$CMS_REF(ps_news_detail_page, abs:1, contentId: for_news.getId())$">
+						$CMS_IF(!for_news.image.isEmpty())$
+							<div class="group flex flex-col mb-5 overflow-hidden rounded-xl" $CMS_VALUE(editorId(template: "smartliving.news", entity:for_news, editorName:"tt_image", resolution: ["16x9_M", "16x9_S"]))$>
+								$CMS_SET(set_resolution, if(isSet(st_features) && st_features.size > 2, {"md": "16x9_S"}, {"xl": "16x9_M", "md": "16x9_S"}))$
+								$CMS_RENDER(template:"render_image", 
+											prm_image: for_news.image, 
+											prm_defaultResolution: "16x9_S",
+											prm_resolutions: {"md": "16x9_S"},
+											prm_cssClasses: "transform group-hover:scale-110 transition ease-out duration-500",
+											prm_image_alt_text: for_news.image_alt_text)$							
+							</div>						
+						$CMS_END_IF$
+						$CMS_IF(!for_news.headline.isEmpty())$
+							<h3 class="mb-4 text-xl md:text-2xl font-semibold text-text group-hover:underline" $CMS_VALUE(editorId(template: "smartliving.news", entity:for_news, editorName:"tt_headline"))$>$CMS_VALUE(for_news.headline.convert2())$</h3>							
+						$CMS_END_IF$
+						$CMS_IF(!for_news.tagList.isEmpty())$
+							$CMS_SET(set_tags, for_news.tagList.map(tag -> tag.name).toString(", "))$
+							<p class="font-heading font-medium text-xs uppercase text-text tracking-px">$CMS_VALUE(set_tags)$</h2>						
+						$CMS_END_IF$
+					</a>
+				</div>				
+			$CMS_END_FOR$			
+		</div>
+	</div>
+</section>

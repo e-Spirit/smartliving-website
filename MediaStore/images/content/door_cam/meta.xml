@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Machine",
+        "confidence" : 98.18979,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Wheel",
+        "confidence" : 98.18979,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.44267842,
+            "height" : 0.6706902,
+            "left" : 0.2611545,
+            "top" : 0.15048763
+          },
+          "confidence" : 98.18979
+        } ],
+        "parents" : [ {
+          "name" : "Machine"
+        } ]
+      }, {
+        "name" : "Photography",
+        "confidence" : 96.85858,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Alloy Wheel",
+        "confidence" : 79.6846,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Car"
+        }, {
+          "name" : "Car Wheel"
+        }, {
+          "name" : "Machine"
+        }, {
+          "name" : "Spoke"
+        }, {
+          "name" : "Tire"
+        }, {
+          "name" : "Transportation"
+        }, {
+          "name" : "Vehicle"
+        }, {
+          "name" : "Wheel"
+        } ]
+      }, {
+        "name" : "Car",
+        "confidence" : 79.6846,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Transportation"
+        }, {
+          "name" : "Vehicle"
+        } ]
+      }, {
+        "name" : "Car Wheel",
+        "confidence" : 79.6846,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Car"
+        }, {
+          "name" : "Machine"
+        }, {
+          "name" : "Tire"
+        }, {
+          "name" : "Transportation"
+        }, {
+          "name" : "Vehicle"
+        }, {
+          "name" : "Wheel"
+        } ]
+      }, {
+        "name" : "Spoke",
+        "confidence" : 79.6846,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Machine"
+        } ]
+      }, {
+        "name" : "Tire",
+        "confidence" : 79.6846,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Transportation",
+        "confidence" : 79.6846,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Vehicle",
+        "confidence" : 79.6846,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Transportation"
+        } ]
+      }, {
+        "name" : "Camera Lens",
+        "confidence" : 70.12699,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Electronics",
+        "confidence" : 70.12699,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Indoors",
+        "confidence" : 57.12809,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Person",
+        "confidence" : 55.981236,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Security",
+        "confidence" : 55.981236,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Person"
+        } ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "6.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Car #Transportation #Indoors #Security #Wheel #Photography #Vehicle #Car Wheel #Camera Lens #Machine #Spoke #Person #Alloy Wheel #Electronics #Tire"
+  }
+}</TEXT></FIELD>
+</FIELDS>

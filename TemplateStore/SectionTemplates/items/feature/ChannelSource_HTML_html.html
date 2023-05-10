@@ -1,0 +1,74 @@
+$CMS_IF("product".equals(st_type.value) && !st_product.isEmpty())$
+	$CMS_SET(set_isProduct, true)$
+	$CMS_SET(set_productDataset, st_product.values.get(0))$
+	$CMS_SET(set_productFormData, set_productDataset.formData)$
+	$CMS_SET(set_image, set_productFormData.tt_image)$
+	$CMS_SET(set_imageAltText, set_productFormData.tt_image_alt_text)$
+	$CMS_SET(set_title, set_productFormData.tt_name)$
+	$CMS_SET(set_text)$
+		<p class="mb-5 text-coolGray-500 font-medium">$CMS_VALUE(set_productFormData.tt_teaserText)$</p>
+	$CMS_END_SET$
+	$CMS_SET(set_linkText, ps_translations.readMore)$
+$CMS_ELSE$
+	$CMS_SET(set_isProduct, false)$
+	$CMS_SET(set_image, st_image)$
+	$CMS_SET(set_imageAltText, st_image_alt_text)$
+	$CMS_SET(set_title, st_title)$
+	$CMS_SET(set_text, st_text)$
+	$CMS_SET(set_linkText, if(!st_link.isEmpty(), st_link.getText().convert2(), ""))$
+$CMS_END_IF$
+
+$CMS_SET(set_feature)$
+	$CMS_IF(!set_image.isEmpty())$
+		<div class="mb-9 overflow-hidden rounded-2xl">
+			$CMS_SET(set_resolution, if(isSet(st_features) && st_features.size > 2, {"md": "16x9_S"}, {"xl": "16x9_M", "md": "16x9_S"}))$
+			$CMS_RENDER(template:"render_image", prm_image: set_image, 
+											prm_image_alt_text: set_imageAltText,
+											prm_defaultResolution: "16x9_M",
+											prm_resolutions: set_resolution,
+											prm_inputName: if(!set_isProduct, "st_image", ""),
+											prm_cssClasses: "transform hover:scale-110 w-full transition ease-out duration-500")$	
+		</div>
+	$CMS_END_IF$
+	$CMS_IF(!set_title.isEmpty())$
+		<h3 class="mb-4 text-xl md:text-2xl font-semibold text-text group-hover:underline" $CMS_VALUE(if(!set_isProduct, editorId(editorName: "st_title")))$>$CMS_VALUE(set_title.convert2())$</h3>		
+	$CMS_END_IF$
+	$CMS_IF(#global.is("WEBEDIT") && !set_isProduct)$
+		<div $CMS_VALUE(editorId(editorName:"st_text"))$>
+	$CMS_END_IF$
+		$CMS_VALUE(set_text, default:"")$
+	$CMS_IF(#global.is("WEBEDIT") && !set_isProduct)$
+		</div>
+	$CMS_END_IF$	
+	$CMS_IF(!set_linkText.isEmpty())$
+		<p class="mb-5 text-text text-base">
+			$CMS_VALUE(set_linkText)$
+			<svg
+				class="inline py-px stroke-2 stroke-text"
+				width="19"
+				height="22"
+				viewbox="0 0 19 22"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M11 3.75L16.25 9M16.25 9L11 14.25M16.25 9L2.75 9"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				></path>
+			</svg>
+		</p>
+	$CMS_END_IF$
+$CMS_END_SET$
+$CMS_IF(set_isProduct)$
+	<a class="group" href="$CMS_RENDER(template:"render_link_dataset_url", prm_dataset: set_productDataset)$" target="_self">
+		$CMS_VALUE(set_feature)$
+	</a>		
+$CMS_ELSIF(st_link.isEmpty())$
+	$CMS_VALUE(set_feature)$
+$CMS_ELSE$
+	$CMS_RENDER(template: "render_link", 
+					prm_link: st_link, 
+					prm_style: "group",
+					prm_innerHTML: set_feature)$		
+$CMS_END_IF$

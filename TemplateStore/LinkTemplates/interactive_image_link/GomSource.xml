@@ -1,7 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CMS_MODULE>
 
-  <FS_REFERENCE name="lt_picture" useLanguages="no">
+  <CMS_INPUT_RADIOBUTTON name="lt_type" hFill="yes" useLanguages="no">
+    <ENTRIES>
+      <ENTRY value="product">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Product"/>
+          <LANGINFO lang="DE" label="Produkt"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="manual">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Manual"/>
+          <LANGINFO lang="DE" label="Manuell"/>
+        </LANGINFOS>
+      </ENTRY>
+    </ENTRIES>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Type"/>
+      <LANGINFO lang="DE" label="Typ"/>
+    </LANGINFOS>
+  </CMS_INPUT_RADIOBUTTON>
+
+  <FS_INDEX name="lt_product" height="1" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Product"/>
+      <LANGINFO lang="DE" label="Produkt"/>
+    </LANGINFOS>
+    <SOURCE name="DatasetDataAccessPlugin">
+      <TEMPLATE uid="smartliving.product"/>
+    </SOURCE>
+  </FS_INDEX>
+
+  <CMS_INPUT_TEXT name="lt_headline" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Headline"/>
+      <LANGINFO lang="DE" label="Überschrift"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_TEXT name="lt_tooltip" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Tooltip"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_LINK name="lt_link" hFill="yes" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Link"/>
+    </LANGINFOS>
+    <LINKEDITORS>
+      <LINKEDITOR name="internal_link"/>
+      <LINKEDITOR name="external_link"/>
+    </LINKEDITORS>
+  </CMS_INPUT_LINK>
+
+  <CMS_INPUT_DOM name="lt_text" hFill="yes" rows="20" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Text"/>
+    </LANGINFOS>
+  </CMS_INPUT_DOM>
+
+  <FS_REFERENCE name="lt_image" hFill="yes" useLanguages="no">
     <FILTER>
       <ALLOW type="picture"/>
     </FILTER>
@@ -17,18 +77,5 @@
       </LOCAL>
     </PROJECTS>
   </FS_REFERENCE>
-
-  <CMS_INPUT_TEXT name="lt_headline" singleLine="no" useLanguages="no">
-    <LANGINFOS>
-      <LANGINFO lang="*" label="Headline"/>
-      <LANGINFO lang="DE" label="Überschrift"/>
-    </LANGINFOS>
-  </CMS_INPUT_TEXT>
-
-  <CMS_INPUT_TEXTAREA name="lt_text" columns="20" rows="20" useLanguages="no">
-    <LANGINFOS>
-      <LANGINFO lang="*" label="Text"/>
-    </LANGINFOS>
-  </CMS_INPUT_TEXTAREA>
 
 </CMS_MODULE>

@@ -1,0 +1,12 @@
+[self]
+uid=translation
+gid=eddfa906-2b05-4df8-bcca-daed5bac5519
+uidType=CONTENTSTORE
+class=de.espirit.firstspirit.store.access.contentstore.Content2Impl
+
+[requiredProjectId]
+uid=global.translation
+gid=6b325071-bed2-42f0-945e-87f6b2109735
+uidType=TEMPLATESTORE_SCHEMA
+class=de.espirit.firstspirit.store.access.templatestore.TableTemplateImpl
+

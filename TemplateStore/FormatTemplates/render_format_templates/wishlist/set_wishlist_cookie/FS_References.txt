@@ -1,0 +1,6 @@
+[self]
+uid=set_wishlist_cookie
+gid=d1a7f8c6-c3df-4f71-b88b-47316fa7af85
+uidType=TEMPLATESTORE_FORMATTEMPLATE
+class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
+

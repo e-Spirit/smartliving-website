@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <FIELDS>
-	<FIELD name='md_creation_date'><DATE>1637182120850</DATE></FIELD>
 	<FIELD name='fsai_facesPayload'><TEXT>{
   "version" : 2,
   "languageToResponse" : {
@@ -15,88 +14,134 @@
   "languageToResponse" : {
     "§" : {
       "labels" : [ {
-        "name" : "Person",
-        "confidence" : 98.437454,
-        "instances" : [ {
-          "boundingBox" : {
-            "width" : 0.35271388,
-            "height" : 0.38280785,
-            "left" : 0.6391857,
-            "top" : 0.0056174044
-          },
-          "confidence" : 98.437454
-        }, {
-          "boundingBox" : {
-            "width" : 0.437185,
-            "height" : 0.84507865,
-            "left" : 0.011568485,
-            "top" : 0.13128747
-          },
-          "confidence" : 87.86243
-        } ],
-        "parents" : [ ]
-      }, {
-        "name" : "Human",
-        "confidence" : 98.437454,
-        "instances" : [ ],
-        "parents" : [ ]
-      }, {
-        "name" : "Phone",
-        "confidence" : 95.05644,
+        "name" : "CAD Diagram",
+        "confidence" : 99.7862,
         "instances" : [ ],
         "parents" : [ {
-          "name" : "Electronics"
+          "name" : "Diagram"
         } ]
       }, {
+        "name" : "Diagram",
+        "confidence" : 99.7862,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
         "name" : "Electronics",
-        "confidence" : 95.05644,
+        "confidence" : 99.23373,
         "instances" : [ ],
         "parents" : [ ]
       }, {
         "name" : "Mobile Phone",
-        "confidence" : 93.8939,
+        "confidence" : 99.23373,
         "instances" : [ {
           "boundingBox" : {
-            "width" : 0.33869797,
-            "height" : 0.684434,
-            "left" : 0.22326069,
-            "top" : 0.24175741
+            "width" : 0.36228406,
+            "height" : 0.72419584,
+            "left" : 0.22382087,
+            "top" : 0.2250856
           },
-          "confidence" : 93.8939
+          "confidence" : 99.23373
+        }, {
+          "boundingBox" : {
+            "width" : 0.18990964,
+            "height" : 0.17069027,
+            "left" : 0.29978332,
+            "top" : 0.08153915
+          },
+          "confidence" : 87.64454
         } ],
         "parents" : [ {
-          "name" : "Phone"
-        }, {
           "name" : "Electronics"
+        }, {
+          "name" : "Phone"
         } ]
       }, {
-        "name" : "Cell Phone",
-        "confidence" : 93.8939,
+        "name" : "Phone",
+        "confidence" : 99.23373,
         "instances" : [ ],
         "parents" : [ {
-          "name" : "Phone"
-        }, {
           "name" : "Electronics"
         } ]
       }, {
-        "name" : "Text",
-        "confidence" : 77.21873,
-        "instances" : [ ],
+        "name" : "Person",
+        "confidence" : 84.79087,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.36105266,
+            "height" : 0.3869174,
+            "left" : 0.6388302,
+            "top" : 2.2487839E-5
+          },
+          "confidence" : 84.79087
+        }, {
+          "boundingBox" : {
+            "width" : 0.4877945,
+            "height" : 0.981222,
+            "left" : 3.212015E-5,
+            "top" : 0.0
+          },
+          "confidence" : 71.81444
+        } ],
         "parents" : [ ]
       }, {
-        "name" : "Iphone",
-        "confidence" : 64.42428,
+        "name" : "Adult",
+        "confidence" : 71.81444,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.4877945,
+            "height" : 0.981222,
+            "left" : 3.212015E-5,
+            "top" : 0.0
+          },
+          "confidence" : 71.81444
+        } ],
+        "parents" : [ {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Female",
+        "confidence" : 71.81444,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.4877945,
+            "height" : 0.981222,
+            "left" : 3.212015E-5,
+            "top" : 0.0
+          },
+          "confidence" : 71.81444
+        } ],
+        "parents" : [ {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Woman",
+        "confidence" : 71.81444,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.4877945,
+            "height" : 0.981222,
+            "left" : 3.212015E-5,
+            "top" : 0.0
+          },
+          "confidence" : 71.81444
+        } ],
+        "parents" : [ {
+          "name" : "Adult"
+        }, {
+          "name" : "Female"
+        }, {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Head",
+        "confidence" : 61.73351,
         "instances" : [ ],
         "parents" : [ {
-          "name" : "Mobile Phone"
-        }, {
-          "name" : "Phone"
-        }, {
-          "name" : "Electronics"
+          "name" : "Person"
         } ]
       } ],
       "orientationCorrection" : null,
-      "labelModelVersion" : "2.0"
+      "labelModelVersion" : "3.0"
     }
   }
 }</TEXT></FIELD>
@@ -114,7 +159,7 @@
   "languageToResponse" : {
     "§" : {
       "moderationLabels" : [ ],
-      "moderationModelVersion" : "5.0",
+      "moderationModelVersion" : "6.0",
       "humanLoopActivationOutput" : null
     }
   }
@@ -122,7 +167,7 @@
 	<FIELD name='fsai_tags'><TEXT>{
   "version" : 2,
   "languageToResponse" : {
-    "§" : "#Cell Phone #Text #Person #Phone #Mobile Phone #Electronics #Human #Iphone"
+    "§" : "#Female #Diagram #Woman #Phone #Person #Mobile Phone #Adult #Electronics #Head #CAD Diagram"
   }
 }</TEXT></FIELD>
 </FIELDS>

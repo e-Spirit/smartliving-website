@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<FORMATTEMPLATE id="-2312834158035574255" name="loading_area">
-	<LANG displayname="Ladebereich" language="DE"/>
-	<LANG displayname="Loading Area" language="EN"/>
-	<style tag="loading_area" view="marked">
-		<attr name="align" value="left"/>
-		<render/>
-	</style>
-</FORMATTEMPLATE>

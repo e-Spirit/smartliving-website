@@ -1,0 +1,2 @@
+if(#item.getName().startsWith("bookmark_"), medium("icon_template_interactive_image"),
+				!st_imagemap.isEmpty(), st_imagemap, medium("icon_template_interactive_image"))

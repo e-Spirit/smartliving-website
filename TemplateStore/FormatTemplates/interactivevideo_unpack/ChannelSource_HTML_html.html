@@ -1,8 +1,0 @@
-$CMS_IF(#global.is("PREVIEW"))$
-	$CMS_SET(set_baseUrl, "/fs5preview_"+#global.project.id+"/")$
-$CMS_END_IF$
-
-$CMS_IF(#global.is("WEBEDIT"))$
-	$CMS_SET(set_baseUrl, "/fs5webedit/")$
-$CMS_END_IF$
-<script type="text/javascript" src="$CMS_VALUE(set_baseUrl, default: "")$interactiveVideo/js/fs-youtube-player.js"></script>

@@ -1,7 +1,6 @@
 AllChildren: 1
-ExportPermissions: AllPermissions
+ExportPermissions: NoPermissions
 ExportVersion: 3.2
-HierarchicElement: true
 Language_DE: Deutsch
 Language_EN: English
 PresentationChannel_-1268668680467729278: HTML

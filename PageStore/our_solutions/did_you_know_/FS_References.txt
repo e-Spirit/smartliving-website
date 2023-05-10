@@ -1,0 +1,6 @@
+[self]
+uid=did_you_know_
+gid=069cfce4-aa22-4a34-809e-a433725cec5c
+uidType=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.PageFolderImpl
+

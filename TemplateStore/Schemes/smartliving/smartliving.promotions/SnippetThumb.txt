@@ -1,1 +1,0 @@
-if(!image.isEmpty, image, medium("promotion"))

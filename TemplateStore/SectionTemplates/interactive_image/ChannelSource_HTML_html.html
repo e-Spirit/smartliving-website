@@ -1,39 +1,179 @@
-<!-- Interactive Image SECTION START -->
-<div class=" bg-gray square_shape2" >
-	<div class="section-content"$CMS_VALUE(editorId(reloadPreview: true))$>
-		<div class="container">
-		$CMS_IF(!st_headline.isEmpty)$
-			<h3 class="font-40 font-weight-300" $CMS_VALUE(editorId(editorName:"st_headline"))$>$CMS_VALUE(st_headline)$</h3>
+<CMS_HEADER>
+</CMS_HEADER>
+$CMS_SWITCH(st_layout)$
+	$CMS_SET(set_orderContent, "order-1")$
+	$CMS_SET(set_orderImage, "order-2")$
+$CMS_CASE("image-text")$
+	$CMS_SET(set_orderContent, "order-2")$
+	$CMS_SET(set_orderImage, "order-1")$
+$CMS_END_SWITCH$
+<script src="https://unpkg.com/vue@latest"></script>
+
+<section class="py-14" id="app_$CMS_VALUE(#global.section.getId)$" $CMS_VALUE(editorId(reloadPreview:true))$>
+	<div class="container px-4 mx-auto">
+		$CMS_IF(st_style.equals("text_image"))$
+			<div class="flex flex-wrap xl:items-center -mx-4">			  
 		$CMS_END_IF$
-        	<div class="row">        
-				<div class="col-md-8 col-sm-12">
-                	<div class="item-interactive">
-					$CMS_IF(!st_imagemap.isEmpty)$
-                    	<img src="$CMS_REF(st_imagemap)$" alt="Imagemap" >
-                        $CMS_FOR(area, st_imagemap.areas)$
-       					<span id="marker$CMS_VALUE(#for.index)$"> <img src="$CMS_REF(media:"create_section_64")$"> </span>
-       						<a href="#test-popup" class="open-popup-link hidden-md hidden-lg" id="popup$CMS_VALUE(#for.index)$">  
-                            <span> <img src="$CMS_REF(media:"create_section_64")$" > </span></a>
-    									$CMS_END_FOR$
-								$CMS_END_IF$										   
-                                </div>
-                            </div>  
-                            <div id="mapTarget" class="col-md-4 col-sm-6 interactive-image p-t30 text-black" style="display: none;">
-                                <h3 class="interactive-headline text-uppercase"></h3>
-								<img src="" class="interactive-response" />
-								<div class="interactive-text">
-									<p>/p>
-                            	</div>
-							    <div id="test-popup" class="white-popup mfp-hide">
-                                    <h2 class="popup-title"></h2>
-                                    <img src="" class="popup-image">
-                                 	<p class="popup-text-of-product"></p>
-                                </div>
-                        	</div>
-                  		</div>
-                  	</div>
-            	</div>
-        <!-- Interactive Image SECTION END -->
-    
-$CMS_RENDER(template:"interactive_image")$
-  
+				<div class="w-full $CMS_IF(st_style.equals("text_image"))$md:w-1/2 $CMS_END_IF$px-4 md:$CMS_VALUE(set_orderImage)$">
+					<div class="relative mx-auto md:mr-0 max-w-max">								
+						<div class="relative overflow-hidden rounded-7xl">
+							
+						  <div :class="{'is-selected': open }">
+								<hotspot-details_$CMS_VALUE(#global.section.getId)$
+								:item="selectedHotspot"
+								:selected-index="selectedIndex"
+								:all-items="hotspots_$CMS_VALUE(#global.section.getId)$"
+								@close="closeDetails"
+								v-if="open"										
+								></hotspot-details_$CMS_VALUE(#global.section.getId)$>
+								<transition-group name="hotspots_$CMS_VALUE(#global.section.getId)$">  
+								<a 
+									href="#" 
+									class="z-10 absolute block 
+											after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:rounded-full after:pointer-events-none 
+											after:z-[-2] after:bg-secondary after:animate-wave before:content-[''] before:absolute before:top-0 before:left-0 
+											before:w-full before:h-full before:rounded-full before:pointer-events-none before:z-[-1] before:opacity-0 before:ring 
+											before:ring-secondary before:scale-150 before:transition 
+											hover:before:opacity-100 hover:before:scale-125 hover:before:animate-borderColor
+											hover:after:animate-none hover:after:opacity-0" 
+									v-for="(hotspot, index) in hotspotItems"
+									:style="{ top: hotspot.position.top, left: hotspot.position.left }"
+									@click.prevent="hotspotClicked(hotspot, index)"
+									:key="index"
+								>																				   
+									<span class="relative flex justify-center items-center w-7 h-7 bg-secondary rounded-full animate-pulse transition duration-300 shadow-lg									 
+											after:content-[attr(data-tooltip)] after:absolute after:bottom-8 after:left-3/4 after:w-60 
+											after:text-white after:drop-shadow after:font-semibold after:text-xl 
+											after:transition after:translate-y-2 after:translate-x-0 after:opacity-0
+											hover:animate-none hover:opacity-100
+											hover:after:drop-shadow-md hover:after:text-white 
+											hover:after:opacity-100 hover:after:translate-x-[-15%] 
+											hover:after:translate-y-0 hover:after:scale-100"
+									:data-tooltip="hotspot.tooltip">																								 
+										<svg class="inline-block w-8 h-8 fill-current text-xl opacity-0 transition-opacity duration-200 hover:opacity-100" viewBox="0 0 24 24">
+											<path class="text-white" d="M18.984 12.984h-6v6h-1.969v-6h-6v-1.969h6v-6h1.969v6h6v1.969z"></path>
+										</svg>
+									</span>
+								</a>
+								</transition-group>
+								$CMS_IF(#global.is("WEBEDIT"))$
+								<div $CMS_VALUE(editorId(editorName:"st_imagemap", reloadPreview:true))$>
+								$CMS_END_IF$
+								$CMS_SET(set_image_alt_text)$$CMS_RENDER(template:"render_image_alt_text", prm_image: st_imagemap, prm_text: st_image_alt_text)$$CMS_END_SET$
+								<img src="$CMS_REF(st_imagemap, abs:1, resolution: st_imagemap.resolution)$" alt="$CMS_VALUE(set_image_alt_text)$" @click="closeDetails">
+								$CMS_IF(#global.is("WEBEDIT"))$
+								</div>
+								$CMS_END_IF$
+							</div>																	   
+						</div>								
+					</div>
+				</div>	   
+		$CMS_IF(st_style.equals("text_image"))$		   
+				<div class="w-full md:w-1/2 px-4 mb-16 md:$CMS_VALUE(set_orderContent)$">
+		   			$CMS_RENDER(template:"render_headline", prm_headline: st_headline, 
+								prm_defaultTag: "h2", 
+								prm_cssClasses: "mb-6 text-2xl md:text-3xl font-bold tracking-tighter text-primary",
+								prm_inputComponentName: "st_headline")$			 
+					$CMS_IF(#global.is("WEBEDIT"))$
+					<div $CMS_VALUE(editorId(editorName:"st_text"))$>
+					$CMS_END_IF$
+						$CMS_VALUE(st_text, default:"")$								 
+					$CMS_IF(#global.is("WEBEDIT"))$
+					</div>
+					$CMS_END_IF$	
+				</div>
+			</div>
+		$CMS_END_IF$				
+	</div>
+</section>
+
+<script type="text/javascript">   
+   const hotspots_$CMS_VALUE(#global.section.getId)$ = [
+   $CMS_FOR(area, st_imagemap.areas)$
+  {
+	id: $CMS_VALUE(#global.section.getId)$_$CMS_VALUE(#for.index)$,
+	$CMS_VALUE(area.link)$
+	position: { top: '$CMS_VALUE((area.leftTop.y + area.rightBottom.y) / 2 / ref(st_imagemap, resolution: st_imagemap.resolution).height * 100)$%', left: '$CMS_VALUE((area.leftTop.x + area.rightBottom.x) / 2 / ref(st_imagemap, resolution: st_imagemap.resolution).width * 100)$%'}
+  }$CMS_IF(!#for.isLast)$,$CMS_END_IF$  
+  $CMS_END_FOR$
+]
+
+const HotspotDetails_$CMS_VALUE(#global.section.getId)$ = {
+  name: 'HotspotDetails',
+  template: `	
+  <div>  
+	<a href="#" @click.prevent="close" class="block z-10 absolute top-2.5 right-2.5 text-white text-3xl animate-fadein">
+		<svg class="inline-block w-8 h-8 fill-current stroke-current stroke-0" viewBox="0 0 24 24">
+		<path d="M18.984 6.422l-5.578 5.578 5.578 5.578-1.406 1.406-5.578-5.578-5.578 5.578-1.406-1.406 5.578-5.578-5.578-5.578 1.406-1.406 5.578 5.578 5.578-5.578z"></path>
+		</svg>		  
+	</a>		
+	<div class="absolute top-0 w-full h-full bg-black opacity-90 animate-fadein overflow-auto">			 
+		<div class="m-8">			  
+			<div class="text-white" :key="selectedItem.id">									 
+			  <img class="w-1/2 mr-8 mb-4 float-left" v-if="selectedItem.image.length > 0" :src="selectedItem.image"/>			 
+			  <h3 class="text-2xl mb-1" :key="selectedItem.id">{{ selectedItem.title }}</h3>			
+		  
+			  <div v-html="selectedItem.description"></div>			  
+		  	
+			  <div class="mt-4" v-html="selectedItem.link"></div>
+		  
+			  <!--<div :key="selectedItem.id">{{ selectedItem.tooltip }}</div>-->
+			</div>
+		</div>		
+	</div>		
+  </div>
+  `,
+  props: {
+	item: { type: Object },
+	selectedIndex: { type: Number },
+	allItems: { type: Array }
+  },
+  data() {
+	return {
+	  selectedItem: this.item
+	}
+  },
+  mounted() {	
+  }, 
+  methods: {
+	close() {
+	  this.$emit('close');
+	}	
+  }
+}
+
+const App_$CMS_VALUE(#global.section.getId)$ = {
+  name: 'app',
+  components: {
+	HotspotDetails_$CMS_VALUE(#global.section.getId)$
+  },  
+  data () {
+	return {
+	  hotspots_$CMS_VALUE(#global.section.getId)$,
+	  open: false,
+	  hotspotPosition: null,
+	  selectedHotspot: null
+	}
+  },
+  computed: {
+	hotspotItems() {
+	  return this.open ? [] : this.hotspots_$CMS_VALUE(#global.section.getId)$;
+	}
+  },
+  methods: {
+	closeDetails() {
+	  this.open = false;
+	},
+	hotspotClicked(hotspot, index) {
+	  this.selectedHotspot = hotspot;
+	  this.selectedIndex = index;
+
+	  this.open = true;
+	}
+  }
+}
+
+
+Vue.createApp(App_$CMS_VALUE(#global.section.getId)$).mount("#app_$CMS_VALUE(#global.section.getId)$");		
+
+</script>

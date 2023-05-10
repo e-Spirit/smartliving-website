@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_MODULE>
+
+  <CMS_INPUT_TEXT name="tt_name" hFill="yes" singleLine="no" useLanguages="yes">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Name"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_DOM name="tt_description" hFill="yes" useLanguages="yes">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Description"/>
+    </LANGINFOS>
+  </CMS_INPUT_DOM>
+
+  <CMS_INPUT_NUMBER name="tt_lat" type="double" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Latitude" format="##.#######"/>
+    </LANGINFOS>
+  </CMS_INPUT_NUMBER>
+
+  <CMS_INPUT_NUMBER name="tt_long" type="double" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Longitude" format="##.#######"/>
+    </LANGINFOS>
+  </CMS_INPUT_NUMBER>
+
+  <CMS_INPUT_LINK name="tt_routeLink" hFill="yes" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Route Link"/>
+    </LANGINFOS>
+    <LINKEDITORS>
+      <LINKEDITOR name="external_link"/>
+    </LINKEDITORS>
+  </CMS_INPUT_LINK>
+
+</CMS_MODULE>

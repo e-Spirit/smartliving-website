@@ -1,0 +1,7 @@
+[self]
+uid=/template_scripts
+gid=49dbbdaf-6ea6-4041-b342-13e62d6be4ba
+store=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.ScriptFolderImpl
+root=de.espirit.firstspirit.store.access.templatestore.ScriptsImpl
+

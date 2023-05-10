@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_headline'><TEXT>Content module teaser for product categories</TEXT></FIELD>
+	<FIELD name='st_text'><DOM><p>Please enter a continuous text here.</p></DOM></FIELD>
+</FIELDS>

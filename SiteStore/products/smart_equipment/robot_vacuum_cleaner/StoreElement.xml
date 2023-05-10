@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SITENODE id="2610271287997869647" name="robot_vacuum_cleaner" startnodeid="2925184083583816384">
+	<LANG displayname="Robot vacuum cleaner" language="EN"/>
+	<LANG displayname="Saugroboter" language="DE"/>
+	<NODE_LANG_SPEC label="Robot vacuum cleaner" language="EN"/>
+	<NODE_LANG_SPEC label="Saugroboter" language="DE"/>
+</SITENODE>

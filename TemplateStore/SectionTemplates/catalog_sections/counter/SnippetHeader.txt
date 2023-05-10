@@ -1,1 +1,0 @@
-if(!st_text.isEmpty(), st_text, "<No Text>")

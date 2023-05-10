@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Paper",
+        "confidence" : 99.699844,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Towel",
+        "confidence" : 73.45812,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Paper Towel",
+        "confidence" : 65.82765,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Paper"
+        }, {
+          "name" : "Towel"
+        } ]
+      }, {
+        "name" : "Blackboard",
+        "confidence" : 64.705376,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.9479538,
+            "height" : 0.9197818,
+            "left" : 0.02457466,
+            "top" : 0.044345587
+          },
+          "confidence" : 64.705376
+        } ],
+        "parents" : [ ]
+      }, {
+        "name" : "Dynamite",
+        "confidence" : 61.944366,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.5292947,
+            "height" : 0.61404395,
+            "left" : 0.23672903,
+            "top" : 0.21730585
+          },
+          "confidence" : 61.944366
+        } ],
+        "parents" : [ {
+          "name" : "Weapon"
+        } ]
+      }, {
+        "name" : "Weapon",
+        "confidence" : 61.944366,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Tissue",
+        "confidence" : 61.18186,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Paper"
+        }, {
+          "name" : "Paper Towel"
+        }, {
+          "name" : "Towel"
+        } ]
+      }, {
+        "name" : "Bulldozer",
+        "confidence" : 57.689484,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.8864991,
+            "height" : 0.8546991,
+            "left" : 0.04103665,
+            "top" : 0.06758987
+          },
+          "confidence" : 57.689484
+        } ],
+        "parents" : [ {
+          "name" : "Machine"
+        } ]
+      }, {
+        "name" : "Machine",
+        "confidence" : 57.689484,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Text",
+        "confidence" : 57.59912,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Symbol",
+        "confidence" : 55.298965,
+        "instances" : [ ],
+        "parents" : [ ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "6.1",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Weapon #Symbol #Dynamite #Text #Blackboard #Tissue #Machine #Paper #Bulldozer #Towel #Paper Towel"
+  }
+}</TEXT></FIELD>
+</FIELDS>

@@ -1,12 +1,12 @@
 [self]
 uid=spacer_image
-gid=dc827587-64c9-42bb-8920-316f8bb20b92
+gid=0248d030-d8a3-45c0-b9d9-33122579ab63
 uidType=MEDIASTORE_LEAF
 class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
 
 [requiredProjectId]
 uid=metadata
-gid=70a3c894-c1c8-4a8b-ac05-378c1699a025
+gid=b2c7cf16-33d2-4cf4-b16d-fa4fb256cd68
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
 

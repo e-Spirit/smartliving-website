@@ -1,0 +1,25 @@
+<section class="py-14" $CMS_VALUE(editorId())$>
+	<div class="container px-4 mx-auto text-center">
+		$CMS_RENDER(template:"render_headline", prm_headline: st_headline, 
+						prm_defaultTag: "h2", 
+						prm_cssClasses: "mb-8 text-3xl md:text-4xl font-bold font-heading tracking-px-n leading-none text-primary",
+						prm_inputComponentName: "st_headline")$
+		$CMS_IF(#global.is("WEBEDIT"))$
+			<div $CMS_VALUE(editorId(editorName:"st_text"))$>
+		$CMS_END_IF$
+				$CMS_VALUE(st_text, default:"")$
+		$CMS_IF(#global.is("WEBEDIT"))$
+			</div>
+		$CMS_END_IF$		
+		$CMS_IF(!st_features.isEmpty())$
+			<div class="flex flex-wrap -m-8 text-left">
+				$CMS_SET(set_featureWidth, if(st_features.size > 2, "md:w-1/3", "md:w-1/2"))$
+				$CMS_FOR(for_feature, st_features)$
+					<div class="w-full $CMS_VALUE(set_featureWidth)$ p-8" $CMS_VALUE(editorId(target:for_feature))$>
+						$CMS_VALUE(for_feature)$
+					</div>
+				$CMS_END_FOR$				
+			</div>
+		$CMS_END_IF$		
+	</div>
+</section>

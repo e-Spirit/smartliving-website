@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TABLE comment="" description="smartliving.product" filename="product" height="4" id="1496136887646475516" previewPageRefUid="product" templateid="3186053606490017745" type="content" webeditSupported="1">
+<TABLE comment="" description="smartliving.product" filename="product" id="2793730036425913687" previewPageRefUid="product_detail" templateid="2214981081506795006" type="content">
 	<EXTENSION file="html" link="html" templateSet="9062318847741885912"/>
-	<LANG displayname="product" language="DE"/>
-	<LANG displayname="product" language="EN"/>
+	<LANG displayname="Product" language="EN"/>
+	<LANG displayname="Produkt" language="DE"/>
 </TABLE>

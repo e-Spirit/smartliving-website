@@ -1,0 +1,3 @@
+door_locks
+indoor_cameras
+outdoor_cameras

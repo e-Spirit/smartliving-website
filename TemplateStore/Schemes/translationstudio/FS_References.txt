@@ -1,6 +1,6 @@
 [self]
 uid=translationstudio
-gid=64735c15-d8df-4144-b6ca-fc22ef3d64b7
+gid=07533629-f99c-442a-8112-7cfbaba89333
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.SchemaImpl
 

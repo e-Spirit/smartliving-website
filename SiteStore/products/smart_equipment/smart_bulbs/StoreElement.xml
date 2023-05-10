@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SITENODE id="-5821366607320042791" name="smart_bulbs" startnodeid="2957859857768494521">
+	<LANG displayname="Smart bulbs" language="EN"/>
+	<LANG displayname="Smarte Leuchten" language="DE"/>
+	<NODE_LANG_SPEC label="Smart bulbs" language="EN"/>
+	<NODE_LANG_SPEC label="Smarte Leuchten" language="DE"/>
+</SITENODE>

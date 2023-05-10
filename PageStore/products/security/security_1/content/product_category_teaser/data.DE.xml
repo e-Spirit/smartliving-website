@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_headline'><TEXT>Moderne Sicherungssysteme</TEXT></FIELD>
+	<FIELD name='st_text'><DOM><p>Intelligente Türschlösser sind elektronische Schlösser, die den Zugang zu einem Gebäude mithilfe von Technologie kontrollieren. Sie können über eine Smartphone-App aus der Ferne gesteuert werden und bieten Funktionen wie schlüssellosen Zugang, Fernentriegelung und automatische Verriegelung. Diese Schlösser bieten eine sicherere und bequemere Möglichkeit, den Zugang zu einer Immobilie zu verwalten.</p></DOM></FIELD>
+	<FIELD name='st_category_link'><LINK><CMS_LINK linktemplate="internal_link" type="genericLink"><TEMPLATECONTENT><CMS_VALUE name="lt_link"><LANG id="§" set="1"><UID>door_locks_1</UID><UIDTYPE>SITESTORE_LEAF</UIDTYPE><REMOTE/></LANG></CMS_VALUE><CMS_VALUE name="lt_text"><LANG id="§" set="1"><TEXT>Alle Produkte ansehen</TEXT></LANG></CMS_VALUE></TEMPLATECONTENT></CMS_LINK></LINK></FIELD>
+</FIELDS>

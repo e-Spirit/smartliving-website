@@ -1,6 +1,6 @@
 [self]
 uid=FormatTemplates
-gid=1b49068d-f4b5-4da7-a535-1a94a8ac5346
+gid=eb06f87a-e796-4588-a570-34d1733fb608
 store=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.FormatTemplatesImpl
 

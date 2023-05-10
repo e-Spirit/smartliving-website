@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<FORMATTEMPLATE id="1266283890157561501" name="standard_p_tag">
-	<LANG displayname="Absatz (p)" language="DE"/>
-	<LANG displayname="Paragraph (p)" language="EN"/>
-	<style tag="standard_p_tag" view="marked">
-		<attr name="align" value="left"/>
-		<render/>
-	</style>
-</FORMATTEMPLATE>

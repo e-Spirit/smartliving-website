@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "File",
+        "confidence" : 96.54197,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Hockey",
+        "confidence" : 80.165184,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Sport"
+        } ]
+      }, {
+        "name" : "Ice Hockey",
+        "confidence" : 80.165184,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Hockey"
+        }, {
+          "name" : "Rink"
+        }, {
+          "name" : "Skating"
+        }, {
+          "name" : "Sport"
+        } ]
+      }, {
+        "name" : "Ice Hockey Puck",
+        "confidence" : 80.165184,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.052412987,
+            "height" : 0.07295034,
+            "left" : 0.6238821,
+            "top" : 0.21515487
+          },
+          "confidence" : 80.165184
+        } ],
+        "parents" : [ {
+          "name" : "Hockey"
+        }, {
+          "name" : "Ice Hockey"
+        }, {
+          "name" : "Rink"
+        }, {
+          "name" : "Skating"
+        }, {
+          "name" : "Sport"
+        } ]
+      }, {
+        "name" : "Rink",
+        "confidence" : 80.165184,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Skating"
+        }, {
+          "name" : "Sport"
+        } ]
+      }, {
+        "name" : "Skating",
+        "confidence" : 80.165184,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Sport"
+        } ]
+      }, {
+        "name" : "Sport",
+        "confidence" : 80.165184,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Mailbox",
+        "confidence" : 78.74858,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.9621988,
+            "height" : 0.9367979,
+            "left" : 0.014128694,
+            "top" : 0.03195007
+          },
+          "confidence" : 78.74858
+        } ],
+        "parents" : [ ]
+      }, {
+        "name" : "Electronics",
+        "confidence" : 57.86312,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Text",
+        "confidence" : 57.389378,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Bus",
+        "confidence" : 56.43127,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Transportation"
+        }, {
+          "name" : "Vehicle"
+        } ]
+      }, {
+        "name" : "Transportation",
+        "confidence" : 56.43127,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Vehicle",
+        "confidence" : 56.43127,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Transportation"
+        } ]
+      }, {
+        "name" : "Webpage",
+        "confidence" : 55.42544,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "File"
+        } ]
+      }, {
+        "name" : "Cassette",
+        "confidence" : 55.2435,
+        "instances" : [ ],
+        "parents" : [ ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "6.1",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Rink #Text #Skating #Transportation #Cassette #Hockey #Ice Hockey #Vehicle #Bus #Sport #File #Ice Hockey Puck #Mailbox #Webpage #Electronics"
+  }
+}</TEXT></FIELD>
+</FIELDS>

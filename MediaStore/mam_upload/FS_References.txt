@@ -1,0 +1,6 @@
+[self]
+uid=mam_upload
+gid=c338c8f4-9a09-452a-963e-36214c86a735
+uidType=MEDIASTORE_FOLDER
+class=de.espirit.firstspirit.store.access.mediastore.MediaFolderImpl
+

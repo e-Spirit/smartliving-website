@@ -1,0 +1,12 @@
+[self]
+uid=news_detail~#~content~#~news
+gid=34fafc42-401f-400c-b6ed-19df0fc9c4ba
+store=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.Content2SectionImpl
+
+[requiredProjectId]
+uid=smartliving.news
+gid=267059fe-6c35-4d8b-9395-921c9fc01927
+uidType=TEMPLATESTORE_SCHEMA
+class=de.espirit.firstspirit.store.access.templatestore.TableTemplateImpl
+

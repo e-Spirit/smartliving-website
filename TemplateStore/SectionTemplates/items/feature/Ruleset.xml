@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RULES>
+	<RULE>
+		<WITH>
+			<LESS_THAN>
+				<PROPERTY name="SIZE" source="st_product"/>
+				<NUMBER>1</NUMBER>
+			</LESS_THAN>
+		</WITH>
+		<DO>
+			<PROPERTY name="NEW" source="st_product"/>
+			<PROPERTY name="ADD" source="st_product"/>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<EQUAL>
+				<PROPERTY name="ENTRY" source="st_type"/>
+				<TEXT>product</TEXT>
+			</EQUAL>
+		</WITH>
+		<DO>
+			<PROPERTY name="VISIBLE" source="st_product"/>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<EQUAL>
+				<PROPERTY name="ENTRY" source="st_type"/>
+				<TEXT>manual</TEXT>
+			</EQUAL>
+		</WITH>
+		<DO>
+			<PROPERTY name="VISIBLE" source="st_image"/>
+			<PROPERTY name="VISIBLE" source="st_image_alt_text"/>
+			<PROPERTY name="VISIBLE" source="st_title"/>
+			<PROPERTY name="VISIBLE" source="st_text"/>
+			<PROPERTY name="VISIBLE" source="st_link"/>
+		</DO>
+	</RULE>
+</RULES>

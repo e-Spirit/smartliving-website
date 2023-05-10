@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="7331667095402940249" name="subheading">
+	<LANG displayname="Subheading" language="EN"/>
+	<LANG displayname="Zwischenüberschrift" language="DE"/>
+	<style tag="subheading" view="flow">
+		<attr name="align" value="LEFT"/>
+		<attr name="background-color" value=""/>
+		<attr name="border-color" value=""/>
+		<attr name="color" value=""/>
+		<attr name="font-size" value="24"/>
+		<attr name="font-style" value="bold"/>
+		<attr name="font" value=""/>
+		<attr name="tooltip" value=""/>
+		<render>
+			<channel conversion="Convert HTML" name="html" templateSetId="9062318847741885912"/>
+		</render>
+	</style>
+</FORMATTEMPLATE>

@@ -1,6 +1,0 @@
-[self]
-uid=top_button
-gid=0b8d8d44-2630-45d5-a74e-b9fef788c59c
-uidType=TEMPLATESTORE_FORMATTEMPLATE
-class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
-

@@ -1,0 +1,64 @@
+<script type="text/javascript">
+		
+	function setFav(rowId, language) {
+		
+		var cookieStr = document.cookie;
+		var favIcon = document.getElementById("heart"+rowId);
+		
+		if (cookieStr.includes('productID' + language + rowId)) {					
+			favIcon.setAttribute('fill', "solid");
+		} else {
+			favIcon.setAttribute('fill', "none");
+		}
+	}
+	
+	function setWishlistFilled() {
+		const cookieStr = document.cookie;
+
+		if (cookieStr.includes('productID') && !cookieStr.includes('wishlistSet')){
+        	document.cookie = "wishlistSet=true";
+
+    	} else if(!cookieStr.includes('productID') && cookieStr.includes('wishlistSet')){
+    		document.cookie = "wishlistSet=''; max-age=0; expires=0";
+
+    	}
+    }
+	
+	function setWishListCookie(id, language, name, link, image, imageAltText) {
+					
+		var listSizeItem = document.getElementById("wishlistSize");     
+        var counter = 0;    
+            
+        var hideListSizeItem = function() {
+	    	listSizeItem.style.visibility = "hidden";	    
+	    	setTimeout(showListSizeItem, 250);	    	
+		};
+		var showListSizeItem = function() {
+			counter++;
+    		listSizeItem.style.visibility = "visible"
+    		if (counter < 3) {
+    			setTimeout(hideListSizeItem, 250);
+    		} else {
+    			counter = 0;
+    		}
+		};
+					
+					
+		var cookieStr = document.cookie;											
+		
+		var cName = 'productID' + language + id;
+		if (cookieStr.includes(cName)) {
+			document.cookie = cName + "=none; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC"; 									
+		} else {
+			document.cookie = cName + "=" + name + ":::" + link + ":::" + image + ":::" + imageAltText + "; path=/";				
+			setTimeout(hideListSizeItem, 250);
+		}
+		
+		setWishlistFilled();
+		
+		setFav(id, language);	
+		      		
+		getWishListCookies();								    
+    }
+      
+</script>

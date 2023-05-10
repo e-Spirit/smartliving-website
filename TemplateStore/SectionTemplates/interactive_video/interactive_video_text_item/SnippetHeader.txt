@@ -1,1 +1,0 @@
-if(!st_text.empty, truncate(st_text.toText(false), 100), "Text Item ") + if(!st_time.empty, st_time.format("0.000"))

@@ -1,0 +1,12 @@
+[self]
+uid=smart_equipment_1
+gid=d46326af-52c5-4673-8fbd-e76a93e0c966
+uidType=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.PageImpl
+
+[requiredProjectId]
+uid=standard
+gid=7220147b-39ff-4b67-ae6b-90e6e04af147
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
+

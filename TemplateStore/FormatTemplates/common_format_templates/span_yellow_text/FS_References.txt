@@ -1,6 +1,0 @@
-[self]
-uid=span_yellow_text
-gid=5e9935e6-0671-4238-b8ab-8d16ef0478b3
-uidType=TEMPLATESTORE_FORMATTEMPLATE
-class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
-

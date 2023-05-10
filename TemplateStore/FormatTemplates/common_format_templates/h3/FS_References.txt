@@ -1,6 +1,0 @@
-[self]
-uid=h3
-gid=1b3ee1a9-052f-4a4e-b2c1-86b98d1e172b
-uidType=TEMPLATESTORE_FORMATTEMPLATE
-class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
-

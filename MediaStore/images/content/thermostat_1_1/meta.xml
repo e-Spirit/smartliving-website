@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <FIELDS>
-	<FIELD name='md_creation_date'><DATE>1637182165698</DATE></FIELD>
 	<FIELD name='fsai_facesPayload'><TEXT>{
   "version" : 2,
   "languageToResponse" : {
@@ -15,32 +14,100 @@
   "languageToResponse" : {
     "§" : {
       "labels" : [ {
-        "name" : "Clock",
-        "confidence" : 92.49372,
+        "name" : "Computer Hardware",
+        "confidence" : 99.608055,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        }, {
+          "name" : "Hardware"
+        } ]
+      }, {
+        "name" : "Electronics",
+        "confidence" : 99.608055,
         "instances" : [ ],
         "parents" : [ ]
       }, {
-        "name" : "Digital Clock",
-        "confidence" : 92.19453,
+        "name" : "Hardware",
+        "confidence" : 99.608055,
         "instances" : [ ],
         "parents" : [ {
-          "name" : "Clock"
+          "name" : "Electronics"
         } ]
       }, {
-        "name" : "Wood",
-        "confidence" : 64.12095,
+        "name" : "Monitor",
+        "confidence" : 99.608055,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Computer Hardware"
+        }, {
+          "name" : "Electronics"
+        }, {
+          "name" : "Hardware"
+        }, {
+          "name" : "Screen"
+        } ]
+      }, {
+        "name" : "Screen",
+        "confidence" : 99.608055,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Mobile Phone",
+        "confidence" : 91.84655,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.4931963,
+            "height" : 0.530083,
+            "left" : 0.42273143,
+            "top" : 0.24158455
+          },
+          "confidence" : 91.84655
+        } ],
+        "parents" : [ {
+          "name" : "Electronics"
+        }, {
+          "name" : "Phone"
+        } ]
+      }, {
+        "name" : "Phone",
+        "confidence" : 91.84655,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Text",
+        "confidence" : 64.71346,
         "instances" : [ ],
         "parents" : [ ]
       }, {
-        "name" : "Alarm Clock",
-        "confidence" : 59.72673,
+        "name" : "Person",
+        "confidence" : 63.694126,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Security",
+        "confidence" : 63.694126,
         "instances" : [ ],
         "parents" : [ {
-          "name" : "Clock"
+          "name" : "Person"
         } ]
+      }, {
+        "name" : "Indoors",
+        "confidence" : 55.90953,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Electrical Device",
+        "confidence" : 55.09899,
+        "instances" : [ ],
+        "parents" : [ ]
       } ],
       "orientationCorrection" : null,
-      "labelModelVersion" : "2.0"
+      "labelModelVersion" : "3.0"
     }
   }
 }</TEXT></FIELD>
@@ -328,7 +395,7 @@
   "languageToResponse" : {
     "§" : {
       "moderationLabels" : [ ],
-      "moderationModelVersion" : "5.0",
+      "moderationModelVersion" : "6.0",
       "humanLoopActivationOutput" : null
     }
   }
@@ -336,7 +403,7 @@
 	<FIELD name='fsai_tags'><TEXT>{
   "version" : 2,
   "languageToResponse" : {
-    "§" : "#Digital Clock #Alarm Clock #Wood #Clock"
+    "§" : "#Computer Hardware #Text #Monitor #Hardware #Electrical Device #Indoors #Phone #Person #Screen #Mobile Phone #Security #Electronics"
   }
 }</TEXT></FIELD>
 </FIELDS>

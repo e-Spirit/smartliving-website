@@ -1,0 +1,6 @@
+[self]
+uid=smart_equipment_1~#~content
+gid=1ae07bfc-d0eb-457c-8270-3834d378ea66
+store=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.BodyImpl
+

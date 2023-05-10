@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PAGEREF htmlname="product_overview" id="-5217140828701724879" pageref="8766809075623947943" uniquedescription="product_overview_1">
+	<CONTENTPARAMETER pagecount="1" query="1809052354663490935" source="product" templateid="-3320050676157563287">
+		<PARAM class="java.util.UUID" name="category_gid" value="cf19e30f-3f89-415c-a414-1117725ddf87"/>
+	</CONTENTPARAMETER>
+	<LANG displayname="Indoor cameras" language="EN"/>
+	<LANG displayname="Innenraumkameras" language="DE"/>
+	<PAGE_LANG_SPEC language="DE" showinpagegrp="1" showinsitemap="1"/>
+	<PAGE_LANG_SPEC language="EN" showinpagegrp="1" showinsitemap="1"/>
+</PAGEREF>

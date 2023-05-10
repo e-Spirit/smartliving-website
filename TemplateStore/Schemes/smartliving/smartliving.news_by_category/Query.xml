@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- WIZARD MODE -->
-<QUERY entityType="news">
-	<FILTERPARAM parameter="category_fs_id" datatype="java.lang.Integer" value="196"/>
-	<EQ attribute="category.fs_id" parameter="category_fs_id"/>
-</QUERY>

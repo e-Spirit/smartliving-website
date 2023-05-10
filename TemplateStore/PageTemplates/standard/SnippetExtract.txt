@@ -1,1 +1,1 @@
-if(!pt_text.isEmpty(), pt_text, "<No Text>")
+if(!pt_md_description.isEmpty(), pt_md_description)

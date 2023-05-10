@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="-1275258868204581907" name="wishlist">
+	<LANG displayname="Wishlist" language="EN"/>
+	<LANG displayname="Wunschliste" language="DE"/>
+	<style tag="wishlist" view="marked">
+		<attr name="align" value="left"/>
+		<render/>
+	</style>
+</FORMATTEMPLATE>

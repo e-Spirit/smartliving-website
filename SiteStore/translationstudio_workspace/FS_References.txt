@@ -1,0 +1,12 @@
+[self]
+uid=translationstudio_workspace
+gid=cb52135a-fb11-4c3f-a1a5-f0964f81bfdf
+uidType=SITESTORE_FOLDER
+class=de.espirit.firstspirit.store.access.sitestore.PageRefFolderImpl
+
+[previousSibling]
+uid=news
+gid=ee13d00d-924c-4865-94c8-f76ccc024c01
+uidType=SITESTORE_FOLDER
+class=de.espirit.firstspirit.store.access.sitestore.PageRefFolderImpl
+

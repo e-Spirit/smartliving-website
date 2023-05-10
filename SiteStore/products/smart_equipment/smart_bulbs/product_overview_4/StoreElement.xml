@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PAGEREF htmlname="product_overview" id="2957859857768494521" pageref="8766809075623947943" uniquedescription="product_overview_4">
+	<CONTENTPARAMETER pagecount="1" query="1809052354663490935" source="product" templateid="-3320050676157563287">
+		<PARAM class="java.util.UUID" name="category_gid" value="0c7def99-26f7-4666-8b67-58b2e6a42b6f"/>
+	</CONTENTPARAMETER>
+	<LANG displayname="Smart bulbs" language="EN"/>
+	<LANG displayname="Smarte Leuchten" language="DE"/>
+	<PAGE_LANG_SPEC language="EN" showinpagegrp="1" showinsitemap="1"/>
+</PAGEREF>

@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Indoors",
+        "confidence" : 99.99977,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Interior Design",
+        "confidence" : 99.99977,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Indoors"
+        } ]
+      }, {
+        "name" : "Computer Hardware",
+        "confidence" : 99.99419,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        }, {
+          "name" : "Hardware"
+        } ]
+      }, {
+        "name" : "Electronics",
+        "confidence" : 99.99419,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Hardware",
+        "confidence" : 99.99419,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Monitor",
+        "confidence" : 99.99419,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Computer Hardware"
+        }, {
+          "name" : "Electronics"
+        }, {
+          "name" : "Hardware"
+        }, {
+          "name" : "Screen"
+        } ]
+      }, {
+        "name" : "Screen",
+        "confidence" : 99.99419,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Architecture",
+        "confidence" : 97.92242,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Building",
+        "confidence" : 97.92242,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Architecture"
+        } ]
+      }, {
+        "name" : "Furniture",
+        "confidence" : 97.92242,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Living Room",
+        "confidence" : 97.92242,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Architecture"
+        }, {
+          "name" : "Building"
+        }, {
+          "name" : "Furniture"
+        }, {
+          "name" : "Indoors"
+        }, {
+          "name" : "Room"
+        } ]
+      }, {
+        "name" : "Room",
+        "confidence" : 97.92242,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Indoors"
+        } ]
+      }, {
+        "name" : "TV",
+        "confidence" : 93.70038,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Computer Hardware"
+        }, {
+          "name" : "Electronics"
+        }, {
+          "name" : "Hardware"
+        }, {
+          "name" : "Monitor"
+        }, {
+          "name" : "Screen"
+        } ]
+      }, {
+        "name" : "Lamp",
+        "confidence" : 56.47065,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Cushion",
+        "confidence" : 55.415333,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Home Decor"
+        } ]
+      }, {
+        "name" : "Home Decor",
+        "confidence" : 55.415333,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Table",
+        "confidence" : 55.020325,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Furniture"
+        } ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "6.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Computer Hardware #Living Room #Monitor #TV #Hardware #Indoors #Interior Design #Cushion #Room #Lamp #Screen #Furniture #Table #Home Decor #Architecture #Building #Electronics"
+  }
+}</TEXT></FIELD>
+</FIELDS>

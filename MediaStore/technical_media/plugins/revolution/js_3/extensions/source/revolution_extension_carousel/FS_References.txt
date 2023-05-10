@@ -1,6 +1,0 @@
-[self]
-uid=revolution_extension_carousel
-gid=eb9dd77d-ea42-48cf-9736-effee1349894
-uidType=MEDIASTORE_LEAF
-class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
-

@@ -1,6 +1,0 @@
-[self]
-uid=dione
-gid=b2461b1b-84bb-419e-9472-ff09ef6161a1
-uidType=MEDIASTORE_LEAF
-class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
-

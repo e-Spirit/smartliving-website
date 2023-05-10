@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Electrical Device",
+        "confidence" : 80.27678,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Electronics",
+        "confidence" : 76.86632,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Adapter",
+        "confidence" : 56.75156,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Plug",
+        "confidence" : 55.770016,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Adapter"
+        }, {
+          "name" : "Electronics"
+        } ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "6.1",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Adapter #Plug #Electrical Device #Electronics"
+  }
+}</TEXT></FIELD>
+</FIELDS>

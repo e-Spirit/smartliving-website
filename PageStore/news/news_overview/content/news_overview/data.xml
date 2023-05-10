@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_number_of_news'><FIG>4</FIG></FIELD>
+	<FIELD name='st_data_page'><UID>news_json</UID><UIDTYPE>SITESTORE_LEAF</UIDTYPE><REMOTE/></FIELD>
+</FIELDS>

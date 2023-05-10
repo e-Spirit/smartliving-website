@@ -1,2 +1,0 @@
-connection = context.userService.connection;
-return connection.user.isProjectAdmin(connection.project);

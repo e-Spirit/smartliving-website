@@ -1,6 +1,0 @@
-[self]
-uid=ro_serifweb_regular
-gid=677513b9-7837-453e-8a9d-8323e1f6b000
-uidType=MEDIASTORE_LEAF
-class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
-

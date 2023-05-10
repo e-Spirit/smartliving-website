@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TABLE comment="" description="smartliving.news" filename="news" height="5" id="-2527906805014016200" previewPageRefUid="news_detail" templateid="8511564459461160904" type="content" webeditSupported="1">
+<TABLE comment="" description="smartliving.news" filename="news" id="-2441075197144893367" previewPageRefUid="news_detail" templateid="3292758414515785734" type="content">
 	<EXTENSION file="html" link="html" templateSet="9062318847741885912"/>
-	<LANG displayname="News article" language="EN"/>
-	<LANG displayname="Newsartikel" language="DE"/>
+	<LANG displayname="News" language="DE"/>
+	<LANG displayname="News" language="EN"/>
 </TABLE>

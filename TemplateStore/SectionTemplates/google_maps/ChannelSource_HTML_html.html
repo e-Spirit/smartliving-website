@@ -1,0 +1,281 @@
+<script src="$CMS_REF(media:"vue_global", abs: 1)$"></script>
+<script src="$CMS_REF(media:"vuejs_paginate_next_umd", abs: 1)$"></script>
+$-- 
+	You need to include this script tag on any page that has a Google Map.
+
+	The following script tag will work when opening this example locally on your computer.
+	But if you use this on a localhost server or a live website you will need to include an API key. 
+	Sign up for one here (it's free for small usage): 
+		https://developers.google.com/maps/documentation/javascript/tutorial#api_key
+
+	After you sign up, use the following script tag with YOUR_GOOGLE_API_KEY replaced with your actual key.
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_API_KEY"></script>
+--$
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=$CMS_VALUE(ps_google_maps_api_key)$&region=EN&language=en"></script>
+
+	
+<section class="relative bg-white overflow-hidden" id="app" $CMS_VALUE(editorId(reloadPreview:true))$>
+	<div class="py-20 md:py-28">
+		<div class="container px-4 mx-auto">
+			$CMS_RENDER(template:"render_headline", prm_headline: st_headline, 
+							prm_defaultTag: "h2", 
+							prm_cssClasses: "mb-2 text-4xl md:text-5xl xl:text-6xl font-bold font-heading leading-none text-primary",
+							prm_inputComponentName: "st_headline")$
+			$CMS_IF(!st_subheadline.isEmpty())$
+				<h3 class="mb-4 text-xl font-medium leading-7 text-text" $CMS_VALUE(editorId(editorName:"st_subheadline"))$>
+					$CMS_VALUE(st_subheadline.convert2())$
+				</h3>
+			$CMS_END_IF$		  
+			<div class="w-full h-[500px]" id="map"></div>
+			<div class="p-4 mb-6 bg-white shadow rounded overflow-x-auto">		
+				<div class="flex items-center justify-between bg-white px-4 py-3 sm:px-6">				
+					<div class="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between">
+						<h2 class="text-3xl tracking-tight font-bold btablet:text-6xl text-text">$CMS_VALUE(ps_translations.findALocation)$</h2>					   
+					<div>
+					<div class="relative mx-auto md:w-80">
+						<svg xmlns="http://www.w3.org/2000/svg" 
+							fill="none" viewBox="0 0 24 24" 
+							class="absolute top-1/2 left-4 w-6 h-6 transform -translate-y-1/2 stroke-2 stroke-text">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+						</svg>					
+						<input class="w-full py-3 pl-12 pr-4 text-text leading-tight placeholder-text 
+									border border-gray-300 rounded-lg shadow-xsm 
+									focus:ring-offset-2 focus:ring-1 focus:ring-gray-500 focus:outline-none" 
+								type="text" 
+								placeholder="$CMS_VALUE(ps_translations.search)$"
+								id="search_locations" 
+								@change="searchLocations()">
+					</div>											
+				</div>
+			</div>
+		</div>
+		<table class="table-auto w-full text-sm text-left font-medium">
+			<tbody>
+				<template v-for="(l, index) in locations" :key="l.id">
+					<tr class="bg-gray-100">
+						<td class="px-6 py-5" v-html="l.name"></td>
+						<td class="py-5 pr-6" v-html="l.description"></td>
+						<td class="py-5 pr-6">						
+							<a class="inline-block py-5 px-7 w-full text-base md:text-lg leading-4 text-white 
+										font-medium text-center bg-secondary hover:brightness-90 rounded-md" 
+								:href="l.routelink" 
+								:target="l.routelinktarget">$CMS_VALUE(ps_translations.getDirection)$</a>
+						</td>							
+					</tr>														  
+				</template>										 
+			</tbody>
+		</table>
+	</div>	  
+	<div class="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-6" v-if="locations.length!=0 && getPaginateCount > 1">
+		<div>
+			<p class="text-sm text-text">
+			$CMS_VALUE(ps_translations.showing)$
+			<span v-if="(currentPage-1) > 0" class="font-medium">{{(currentPage - 1) * perPage}}</span>
+			<span v-else class="font-medium">1</span>
+			$CMS_VALUE(ps_translations.to)$
+			<span v-if="(currentPage * perPage) <= allLocations.length" class="font-medium">{{currentPage * perPage}}</span>
+			<span v-else class="font-medium">{{allLocations.length}}</span>
+			$CMS_VALUE(ps_translations.of)$
+			<span class="font-medium">{{allLocations.length}}</span>
+			$CMS_VALUE(ps_translations.results)$
+			</p>			
+		</div>	
+		<div>
+			<paginate
+				v-model="currentPage"
+				:page-count="getPaginateCount"
+				:page-range="3"
+				:prev-text="'<span class=\'sr-only\'>Previous</span><svg class=\'h-5 w-5\' xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 20 20\' fill=\'currentColor\' aria-hidden=\'true\'><path fill-rule=\'evenodd\' d=\'M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z\' clip-rule=\'evenodd\' /></svg>'"
+				:next-text="'<span class=\'sr-only\'>Previous</span><svg class=\'h-5 w-5\' xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 20 20\' fill=\'currentColor\' aria-hidden=\'true\'><path fill-rule=\'evenodd\' d=\'M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z\' clip-rule=\'evenodd\' /></svg>'"
+				:click-handler="clickCallback"
+				:container-class="'isolate inline-flex -space-x-px rounded-md shadow-sm'"
+				:page-class="'relative inline-flex items-center border text-sm font-medium focus:z-20'"
+				:page-link-class="'px-4 py-2 border-gray-300 bg-white text-text hover:bg-gray-50 cursor-pointer'"
+				:active-class="'z-10 border-gray-500 bg-gray-50 text-text cursor-pointer'"
+				:prev-class="'relative inline-flex items-center rounded-l-md border border-gray-300 bg-white px-2 py-2 text-sm font-medium text-text hover:bg-gray-50 focus:z-20'"
+				:prev-link-class="''"
+				:next-class="'relative inline-flex items-center rounded-r-md border border-gray-300 bg-white px-2 py-2 text-sm font-medium text-text hover:bg-gray-50 focus:z-20'"
+				:next-link-class="''"
+				:first-last-button="false"
+				:first-button-text="'<<'"
+				:last-button-text="'>>'"	
+			></paginate>									  							
+		</div>				
+	</div>		
+</section>
+
+<script>		
+	const { ref, reactive, readonly, computed } = Vue;		
+	const App = {			
+		setup() {		
+										   
+		},
+		data() {
+			return {					
+				locations:{},
+				allLocations:{},
+				currentPage: 1,
+				perPage: $CMS_VALUE(st_number_of_locations)$,				
+			}
+		},
+		components: {
+			paginate: VuejsPaginateNext,
+		},
+		methods: {																					
+			
+			clickCallback: function (pageNum) {
+				this.currentPage = Number(pageNum);									
+				let start = (this.currentPage - 1) * this.perPage;
+				let end = this.currentPage * this.perPage;
+				this.locations = this.allLocations.slice(start, end);
+			},						
+
+			searchLocations() {			
+
+				var query = document.getElementById("search_locations").value;
+
+				if (!query) {query = ''}
+
+				query = query.toLowerCase();					
+				
+				$CMS_IF(st_datasource == "database")$
+				fetch('$CMS_REF(st_data_page, abs: 1)$')
+				.then(response => response.json())
+				.then(res => {
+					if (query === '') {						
+						this.locations = res;
+					} else {								
+						this.locations = res.filter(locations => {						  
+							let opt = locations.name.toLowerCase().includes(query) ||
+								locations.description.toLowerCase().includes(query);
+							return opt;								
+						})					
+					}						
+					
+					this.allLocations = this.locations;
+					this.clickCallback(1);
+					this.initMap();
+					});
+				$CMS_ELSE$
+					$CMS_SET(set_locationFeedJson,[])$				
+						$CMS_FOR(locationFeed, st_data_list)$	  
+							$CMS_TRIM(level:4)$		
+								$CMS_SET(set_locationFeed, {"id": locationFeed.getId,
+															"lat": locationFeed.getItem.get("st_lat"),
+															"long": locationFeed.getItem.get("st_long"),
+															"routelink": if(!locationFeed.getItem.get("st_route_link").isEmpty, locationFeed.getItem.get("st_route_link").lt_link, ""),
+															"routelinktarget": if(!locationFeed.getItem.get("st_route_link").isEmpty, locationFeed.getItem.get("st_route_link").lt_target, "")
+																
+								})$						
+							
+								$CMS_SET(set_locationName, locationFeed.getItem.get("st_name"))$
+								$CMS_SET(void, set_locationFeed.put("name", if(!set_locationName.isEmpty, set_locationName, "")))$
+							
+								$CMS_SET(set_locationDescription, locationFeed.getItem.get("st_description").toText(true))$
+								$CMS_SET(void, set_locationFeed.put("description", if(!set_locationDescription.isEmpty, set_locationDescription, "")))$
+															
+							$CMS_END_TRIM$
+								  					
+							$CMS_SET(void, set_locationFeedJson.add(set_locationFeed))$
+						$CMS_END_FOR$													
+				
+				
+						var myJson = '$CMS_VALUE(set_locationFeedJson.toJSON)$'; 
+						var res = JSON.parse(myJson);
+						
+						if (query === '') {						
+							this.locations = res;
+						} else {								
+							this.locations = res.filter(locations => {						  
+								let opt = locations.name.toLowerCase().includes(query) ||
+									locations.description.toLowerCase().includes(query);
+								return opt;								
+							})					
+						}						
+						
+						this.allLocations = this.locations;
+						this.clickCallback(1);
+						this.initMap();											
+						
+				$CMS_END_IF$					
+			},
+			
+			initMap() {				
+				$-- Basic options for a simple Google Map
+					For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions --$
+				var mapOptions = {
+					$-- How zoomed in you want the map to start at (always required)--$
+					zoom: $CMS_VALUE(st_initial_zoom, default:"6")$,
+		
+					$-- The latitude and longitude to center the map (always required)
+						If not specified, set to Dortmund --$		
+					center: new google.maps.LatLng($CMS_VALUE(st_initial_lat, default:"51.514244")$, $CMS_VALUE(st_initial_long, default:"7.468429")$),
+					
+		
+					$-- How you would like to style the map. 
+						This is where you would paste any style found on Snazzy Maps. --$
+					styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#193341"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#2c5a71"}]},{"featureType":"road","elementType":"geometry","stylers":[{"color":"#29768a"},{"lightness":-37}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#406d80"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#406d80"}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#3e606f"},{"weight":2},{"gamma":0.84}]},{"elementType":"labels.text.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"administrative","elementType":"geometry","stylers":[{"weight":0.6},{"color":"#1a3541"}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#2c5a71"}]}]
+				};
+		
+				$-- Get the HTML DOM element that will contain your map 
+					We are using a div with id="map" seen below in the <body> --$
+				var mapElement = document.getElementById('map');
+		
+				$-- Create the Google Map using our element and options defined above --$
+				var map = new google.maps.Map(mapElement, mapOptions);
+		
+				$-- Let's also add a marker while we're at it --$ 
+
+				var infoWindows = [];
+
+				for (i in this.allLocations) {
+					
+					l = this.allLocations[i];										
+
+					var marker = new google.maps.Marker(
+						{
+							position: new google.maps.LatLng(l.lat, l.long),
+							map: map,
+							title: l.name
+						}			
+					);	   
+					
+					// Generate an infowindow content for the marker
+					var infoWindow = new google.maps.InfoWindow();
+					infoWindow.setContent(
+					  '<div>' +
+					  '<div class="mb-4 font-bold">'+l.name+'</div><div class="mb-8">'+l.description+'</div>' +	
+					  '<div><a class="text-link-text hover:text-link-hover underline" href="'+l.routelink+'" target="'+l.routelinktarget+'"> Route </a></div>' +
+					  '</div>'
+					);
+					infoWindows.push(infoWindow);
+					
+									
+					// Click event on marker
+					  google.maps.event.addListener(marker, 'click', (function(marker, i) {
+						return function() {
+						  // Close last opened infowindow if any
+						  if(infoWindow) infoWindow.close();
+						  // Open clicked infowindow
+						  infoWindow = infoWindows[i];
+						  infoWindow.open(map, marker);
+						}
+					  })(marker, i));	
+				}
+			}
+		},		
+		mounted() {
+				//console.log()
+				this.searchLocations()			
+			},
+		computed: {
+
+			getPaginateCount: function () {
+				return Math.ceil(this.allLocations.length / this.perPage);
+			},			
+		}
+	}	
+
+	Vue.createApp(App).mount("#app");		
+
+</script>

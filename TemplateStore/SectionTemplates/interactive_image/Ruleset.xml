@@ -1,50 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RULES>
 	<RULE>
-		<IF>
-			<AND>
-				<EQUAL>
-					<PROPERTY name="LANG" source="#global"/>
-					<PROPERTY name="MASTER" source="#global"/>
-				</EQUAL>
-			</AND>
-		</IF>
+		<WITH>
+			<EQUAL>
+				<PROPERTY name="ENTRY" source="st_style"/>
+				<TEXT>text_image</TEXT>
+			</EQUAL>
+		</WITH>
+		<DO>
+			<PROPERTY name="VISIBLE" source="st_layout"/>
+			<PROPERTY name="VISIBLE" source="st_headline"/>
+			<PROPERTY name="VISIBLE" source="st_text"/>
+		</DO>
+	</RULE>
+	<RULE>
 		<WITH>
 			<NOT>
 				<PROPERTY name="EMPTY" source="st_imagemap"/>
 			</NOT>
 		</WITH>
 		<DO>
-			<VALIDATION scope="Save">
+			<VALIDATION scope="RELEASE">
 				<PROPERTY name="VALID" source="st_imagemap"/>
-				<MESSAGE lang="*" text="Please select an image."/>
-				<MESSAGE lang="DE" text="Bitte ein Bild auswählen."/>
+				<MESSAGE lang="*" text="Please choose an image"/>
 			</VALIDATION>
 		</DO>
 	</RULE>
 	<RULE>
-		<IF>
-			<AND>
-				<NOT>
-					<EQUAL>
-						<PROPERTY name="LANG" source="#global"/>
-						<PROPERTY name="MASTER" source="#global"/>
-					</EQUAL>
-				</NOT>
-				<PROPERTY name="TRANSLATED" source="#global"/>
-			</AND>
-		</IF>
 		<WITH>
-			<NOT>
-				<PROPERTY name="EMPTY" source="st_imagemap"/>
-			</NOT>
+			<EQUAL>
+				<PROPERTY name="STORETYPE" source="#global"/>
+				<TEXT>templatestore</TEXT>
+			</EQUAL>
 		</WITH>
 		<DO>
-			<VALIDATION scope="Save">
-				<PROPERTY name="VALID" source="st_imagemap"/>
-				<MESSAGE lang="*" text="Please select an image."/>
-				<MESSAGE lang="DE" text="Bitte ein Bild auswählen."/>
-			</VALIDATION>
+			<PROPERTY name="VISIBLE" source="#form.sectionLifespan"/>
 		</DO>
 	</RULE>
 </RULES>

@@ -1,0 +1,6 @@
+[self]
+uid=google_maps~#~content
+gid=edd16729-936f-4f5b-a514-bda19b40dd53
+store=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.BodyImpl
+

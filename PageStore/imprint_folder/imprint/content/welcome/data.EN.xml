@@ -1,6 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<FIELDS>
-	<FIELD name='st_kicker'><TEXT/></FIELD>
-	<FIELD name='st_headline'><DOM><standard>IMPRINT</standard></DOM></FIELD>
-	<FIELD name='st_text'><DOM><standard>This is a Dummy Project. Any Information found on this page is nonsensical and completely fictitious.<br/></standard></DOM></FIELD>
-</FIELDS>

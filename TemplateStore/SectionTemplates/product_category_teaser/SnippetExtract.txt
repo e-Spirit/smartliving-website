@@ -1,0 +1,1 @@
+if(!st_category.isEmpty(), "Category: " + st_category.label(#language))

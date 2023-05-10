@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Pottery",
+        "confidence" : 97.3132,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Electronics",
+        "confidence" : 93.658806,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Indoors",
+        "confidence" : 93.324066,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Interior Design",
+        "confidence" : 93.324066,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Indoors"
+        } ]
+      }, {
+        "name" : "Wood",
+        "confidence" : 88.84113,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Ping Pong",
+        "confidence" : 84.68191,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Sport"
+        } ]
+      }, {
+        "name" : "Ping Pong Paddle",
+        "confidence" : 84.68191,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.33082834,
+            "height" : 0.36674753,
+            "left" : 0.34686545,
+            "top" : 0.3528276
+          },
+          "confidence" : 84.68191
+        } ],
+        "parents" : [ {
+          "name" : "Ping Pong"
+        }, {
+          "name" : "Racket"
+        }, {
+          "name" : "Sport"
+        } ]
+      }, {
+        "name" : "Racket",
+        "confidence" : 84.68191,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Sport",
+        "confidence" : 84.68191,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Computer Hardware",
+        "confidence" : 79.83547,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        }, {
+          "name" : "Hardware"
+        } ]
+      }, {
+        "name" : "Hardware",
+        "confidence" : 79.83547,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Mouse",
+        "confidence" : 79.83547,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Computer Hardware"
+        }, {
+          "name" : "Electronics"
+        }, {
+          "name" : "Hardware"
+        } ]
+      }, {
+        "name" : "Plywood",
+        "confidence" : 70.95834,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Wood"
+        } ]
+      }, {
+        "name" : "Window",
+        "confidence" : 68.07949,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Windowsill",
+        "confidence" : 68.07949,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Window"
+        } ]
+      }, {
+        "name" : "Art",
+        "confidence" : 67.96762,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Porcelain",
+        "confidence" : 67.96762,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Art"
+        }, {
+          "name" : "Pottery"
+        } ]
+      }, {
+        "name" : "Plant",
+        "confidence" : 57.879353,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Potted Plant",
+        "confidence" : 57.879353,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Plant"
+        } ]
+      }, {
+        "name" : "Furniture",
+        "confidence" : 56.235123,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Phone",
+        "confidence" : 56.203842,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Table",
+        "confidence" : 55.90231,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Furniture"
+        } ]
+      }, {
+        "name" : "Shelf",
+        "confidence" : 55.83411,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Speaker",
+        "confidence" : 55.77222,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Jar",
+        "confidence" : 55.384666,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Tabletop",
+        "confidence" : 55.08722,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Furniture"
+        }, {
+          "name" : "Table"
+        } ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "6.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Ping Pong Paddle #Computer Hardware #Ping Pong #Hardware #Indoors #Art #Pottery #Speaker #Potted Plant #Window #Phone #Plant #Tabletop #Plywood #Windowsill #Racket #Wood #Interior Design #Mouse #Jar #Porcelain #Furniture #Table #Sport #Shelf #Electronics"
+  }
+}</TEXT></FIELD>
+</FIELDS>

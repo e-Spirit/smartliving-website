@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "City",
+        "confidence" : 99.930466,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Urban",
+        "confidence" : 99.30987,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Architecture",
+        "confidence" : 98.782104,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Building",
+        "confidence" : 98.782104,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.052499443,
+            "height" : 0.093179345,
+            "left" : 0.37894297,
+            "top" : 0.20801209
+          },
+          "confidence" : 98.782104
+        }, {
+          "boundingBox" : {
+            "width" : 0.03464544,
+            "height" : 0.05027924,
+            "left" : 0.5660688,
+            "top" : 0.24289836
+          },
+          "confidence" : 75.05679
+        } ],
+        "parents" : [ {
+          "name" : "Architecture"
+        } ]
+      }, {
+        "name" : "Outdoors",
+        "confidence" : 96.81728,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Cityscape",
+        "confidence" : 87.27568,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Architecture"
+        }, {
+          "name" : "Building"
+        }, {
+          "name" : "Urban"
+        } ]
+      }, {
+        "name" : "Neighborhood",
+        "confidence" : 70.215645,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Sphere",
+        "confidence" : 69.7884,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Aerial View",
+        "confidence" : 62.916214,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Outdoors"
+        } ]
+      }, {
+        "name" : "Photography",
+        "confidence" : 57.444103,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Art",
+        "confidence" : 57.12386,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Metropolis",
+        "confidence" : 56.637035,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "City"
+        }, {
+          "name" : "Urban"
+        } ]
+      }, {
+        "name" : "Nature",
+        "confidence" : 55.319923,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Outdoors"
+        } ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "6.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Aerial View #Outdoors #City #Cityscape #Sphere #Nature #Photography #Art #Urban #Metropolis #Architecture #Building #Neighborhood"
+  }
+}</TEXT></FIELD>
+</FIELDS>

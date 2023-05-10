@@ -1,6 +1,0 @@
-[self]
-uid=revicons
-gid=eccdbe02-c9bd-4015-b349-a7e59324ea5b
-uidType=MEDIASTORE_FOLDER
-class=de.espirit.firstspirit.store.access.mediastore.MediaFolderImpl
-

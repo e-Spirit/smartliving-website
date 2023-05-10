@@ -1,22 +1,22 @@
 [self]
 uid=wf_fts_register_pages_multiple_ext
-gid=3bbe7ef0-fb47-49f1-8219-61504cb2aab1
+gid=9479d817-9b21-4582-8e6c-fea6c1f1c49d
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.WorkflowImpl
 
 [optionalId]
 uid=register_page_multiple
-gid=fb9f5eff-947f-4bee-b93f-ec993dbe0c61
+gid=0e971e62-2cf1-48f0-bda1-f4b3e0d8ee4a
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
 
 uid=scr_fts_register_execute_preview
-gid=3d9c43ac-48cf-497e-aa8c-75a673e026dd
+gid=2243d82d-1c8a-4359-a9e3-bca8f5e257de
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
 
 uid=scr_fts_register_execute_queue
-gid=5ba046a3-5119-4e93-8e33-250125bf98a4
+gid=6703b9be-100b-4ec3-8db9-d9eacce9e157
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
 

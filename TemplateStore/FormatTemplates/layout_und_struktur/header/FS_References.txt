@@ -1,6 +1,0 @@
-[self]
-uid=header
-gid=841f34ca-c138-4e81-8389-25df7b578feb
-uidType=TEMPLATESTORE_FORMATTEMPLATE
-class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
-

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_headline'><TEXT>Our services</TEXT></FIELD>
+	<FIELD name='st_subheadline'><DOM><subline>Intelligent support for our customers</subline></DOM></FIELD>
+	<FIELD name='st_text'><DOM><p>Your experience as a customer is our top priority. To achieve this goal, we provide you with a variety of services. Here is a selection:</p><p><ul listStylePostion="inside" style="1"><li><b>Installation</b>: to ensure devices are set up and configured properly.</li><li><b>Training</b>: to show you how to use and get the most out of the smart devices.</li><li><b>Support</b>: We provide you with a support hotline and online help so that you can get help with any problems or questions.</li><li><b>Repair</b>: If one of the devices is broken, you could request repair services to ensure the devices are working properly again.</li><li><b>Upgrades</b>: We also offer upgrades to keep your smart devices up to date and providing the best possible performance.</li></ul></p></DOM></FIELD>
+	<FIELD name='st_image_alt_text'><TEXT>Smarter Lautsprecher</TEXT></FIELD>
+</FIELDS>

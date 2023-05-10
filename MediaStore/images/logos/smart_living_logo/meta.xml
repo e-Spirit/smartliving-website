@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='md_image_alt_text'><TEXT>Logo of the SmartLiving website</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Lighting",
+        "confidence" : 83.85515,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Gray",
+        "confidence" : 72.748856,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Text",
+        "confidence" : 68.09685,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Accessories",
+        "confidence" : 67.60233,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Formal Wear",
+        "confidence" : 67.60233,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Tie",
+        "confidence" : 67.60233,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Accessories"
+        }, {
+          "name" : "Formal Wear"
+        } ]
+      }, {
+        "name" : "Cutlery",
+        "confidence" : 57.444553,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Racket",
+        "confidence" : 57.408302,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Silhouette",
+        "confidence" : 57.219337,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Sport",
+        "confidence" : 56.611496,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Tennis",
+        "confidence" : 56.611496,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Sport"
+        } ]
+      }, {
+        "name" : "Tennis Racket",
+        "confidence" : 56.611496,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Racket"
+        }, {
+          "name" : "Sport"
+        }, {
+          "name" : "Tennis"
+        } ]
+      }, {
+        "name" : "Sword",
+        "confidence" : 56.23029,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Weapon"
+        } ]
+      }, {
+        "name" : "Weapon",
+        "confidence" : 56.23029,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Fork",
+        "confidence" : 56.074608,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Cutlery"
+        } ]
+      }, {
+        "name" : "Symbol",
+        "confidence" : 55.364906,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Electronics",
+        "confidence" : 55.33812,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Hardware",
+        "confidence" : 55.33812,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "City",
+        "confidence" : 55.053555,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Art",
+        "confidence" : 55.00747,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Floral Design",
+        "confidence" : 55.00747,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Art"
+        }, {
+          "name" : "Graphics"
+        }, {
+          "name" : "Pattern"
+        } ]
+      }, {
+        "name" : "Graphics",
+        "confidence" : 55.00747,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Art"
+        } ]
+      }, {
+        "name" : "Pattern",
+        "confidence" : 55.00747,
+        "instances" : [ ],
+        "parents" : [ ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "6.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Symbol #City #Text #Racket #Tennis Racket #Hardware #Accessories #Gray #Tennis #Fork #Silhouette #Sport #Art #Weapon #Pattern #Graphics #Cutlery #Sword #Lighting #Formal Wear #Tie #Electronics #Floral Design"
+  }
+}</TEXT></FIELD>
+</FIELDS>

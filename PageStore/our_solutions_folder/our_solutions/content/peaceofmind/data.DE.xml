@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<FIELDS>
-	<FIELD name='st_kicker'><TEXT>Sicherheit für Ihr zu Hause</TEXT></FIELD>
-	<FIELD name='st_headline'><DOM><standard><span_yellow_text>Keine Sorgen</span_yellow_text> im eigenen Haus</standard></DOM></FIELD>
-	<FIELD name='st_text'><DOM><standard>Unsere innvativen Lösungen geben Ihnen Sicherheit für das ganze Haus. Und das zu erschwinglichen Preisen!</standard><standard>Starten Sie jetzt mit dem Einsteigerpaket und erweitern Sie es bei Bedarf: Unsere Produkte und Lösungen wachsen mit Ihren Anforderungen.<br/><br/>Bereiten Sie sich mit den führenden Produkten der Smart Living und unseren top ausgebildeten Experten auf das Unerwartete vor.</standard></DOM></FIELD>
-	<FIELD name='st_jumbo_headline'><TEXT>Für ein sicheres zu Hause</TEXT></FIELD>
-	<FIELD name='st_button'><LINK/></FIELD>
-</FIELDS>

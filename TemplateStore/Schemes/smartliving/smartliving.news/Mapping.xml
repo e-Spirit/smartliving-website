@@ -5,11 +5,11 @@
 			<OBJECT class="java.util.HashMap">
 				<OBJECT class="java.lang.String">DE</OBJECT>
 				<ARRAY type="java.lang.String">
-					<OBJECT class="java.lang.String">title_DE</OBJECT>
+					<OBJECT class="java.lang.String">headline_DE</OBJECT>
 				</ARRAY>
 				<OBJECT class="java.lang.String">EN</OBJECT>
 				<ARRAY type="java.lang.String">
-					<OBJECT class="java.lang.String">title_EN</OBJECT>
+					<OBJECT class="java.lang.String">headline_EN</OBJECT>
 				</ARRAY>
 			</OBJECT>
 		</FIELD>
@@ -17,13 +17,42 @@
 		<FIELD name="_displayNames">
 			<OBJECT class="java.util.HashMap">
 				<OBJECT class="java.lang.String">DE</OBJECT>
-				<OBJECT class="java.lang.String">Titel</OBJECT>
+				<OBJECT class="java.lang.String">Headline</OBJECT>
 				<OBJECT class="java.lang.String">EN</OBJECT>
-				<OBJECT class="java.lang.String">Title</OBJECT>
+				<OBJECT class="java.lang.String">Headline</OBJECT>
 			</OBJECT>
 		</FIELD>
 		<FIELD name="_name">
-			<OBJECT class="java.lang.String">title</OBJECT>
+			<OBJECT class="java.lang.String">tt_headline</OBJECT>
+		</FIELD>
+		<FIELD name="_valueListAttribute"><NULL/><!-- class [Ljava.lang.String; --></FIELD>
+		<FIELD name="_visible" type="boolean">true</FIELD>
+		<FIELD name="_width" type="int">120</FIELD>
+	</OBJECT>
+	<OBJECT class="de.espirit.firstspirit.access.store.templatestore.FieldMapping">
+		<FIELD name="_dbAttributeNames">
+			<OBJECT class="java.util.HashMap">
+				<OBJECT class="java.lang.String">DE</OBJECT>
+				<ARRAY type="java.lang.String">
+					<OBJECT class="java.lang.String">subheadline_DE</OBJECT>
+				</ARRAY>
+				<OBJECT class="java.lang.String">EN</OBJECT>
+				<ARRAY type="java.lang.String">
+					<OBJECT class="java.lang.String">subheadline_EN</OBJECT>
+				</ARRAY>
+			</OBJECT>
+		</FIELD>
+		<FIELD name="_dbReferenceName"><NULL/><!-- class java.lang.String --></FIELD>
+		<FIELD name="_displayNames">
+			<OBJECT class="java.util.HashMap">
+				<OBJECT class="java.lang.String">DE</OBJECT>
+				<OBJECT class="java.lang.String">Subheadline</OBJECT>
+				<OBJECT class="java.lang.String">EN</OBJECT>
+				<OBJECT class="java.lang.String">Subheadline</OBJECT>
+			</OBJECT>
+		</FIELD>
+		<FIELD name="_name">
+			<OBJECT class="java.lang.String">tt_subheadline</OBJECT>
 		</FIELD>
 		<FIELD name="_valueListAttribute"><NULL/><!-- class [Ljava.lang.String; --></FIELD>
 		<FIELD name="_visible" type="boolean">true</FIELD>
@@ -46,13 +75,13 @@
 		<FIELD name="_displayNames">
 			<OBJECT class="java.util.HashMap">
 				<OBJECT class="java.lang.String">DE</OBJECT>
-				<OBJECT class="java.lang.String">Datum</OBJECT>
+				<OBJECT class="java.lang.String">Date</OBJECT>
 				<OBJECT class="java.lang.String">EN</OBJECT>
 				<OBJECT class="java.lang.String">Date</OBJECT>
 			</OBJECT>
 		</FIELD>
 		<FIELD name="_name">
-			<OBJECT class="java.lang.String">date</OBJECT>
+			<OBJECT class="java.lang.String">tt_date</OBJECT>
 		</FIELD>
 		<FIELD name="_valueListAttribute"><NULL/><!-- class [Ljava.lang.String; --></FIELD>
 		<FIELD name="_visible" type="boolean">true</FIELD>
@@ -75,71 +104,13 @@
 		<FIELD name="_displayNames">
 			<OBJECT class="java.util.HashMap">
 				<OBJECT class="java.lang.String">DE</OBJECT>
-				<OBJECT class="java.lang.String">Autor</OBJECT>
+				<OBJECT class="java.lang.String">Author</OBJECT>
 				<OBJECT class="java.lang.String">EN</OBJECT>
 				<OBJECT class="java.lang.String">Author</OBJECT>
 			</OBJECT>
 		</FIELD>
 		<FIELD name="_name">
-			<OBJECT class="java.lang.String">author</OBJECT>
-		</FIELD>
-		<FIELD name="_valueListAttribute"><NULL/><!-- class [Ljava.lang.String; --></FIELD>
-		<FIELD name="_visible" type="boolean">true</FIELD>
-		<FIELD name="_width" type="int">120</FIELD>
-	</OBJECT>
-	<OBJECT class="de.espirit.firstspirit.access.store.templatestore.FieldMapping">
-		<FIELD name="_dbAttributeNames">
-			<OBJECT class="java.util.HashMap">
-				<OBJECT class="java.lang.String">DE</OBJECT>
-				<ARRAY type="java.lang.String">
-					<OBJECT class="java.lang.String">text_DE</OBJECT>
-				</ARRAY>
-				<OBJECT class="java.lang.String">EN</OBJECT>
-				<ARRAY type="java.lang.String">
-					<OBJECT class="java.lang.String">text_EN</OBJECT>
-				</ARRAY>
-			</OBJECT>
-		</FIELD>
-		<FIELD name="_dbReferenceName"><NULL/><!-- class java.lang.String --></FIELD>
-		<FIELD name="_displayNames">
-			<OBJECT class="java.util.HashMap">
-				<OBJECT class="java.lang.String">DE</OBJECT>
-				<OBJECT class="java.lang.String">Artikeltext</OBJECT>
-				<OBJECT class="java.lang.String">EN</OBJECT>
-				<OBJECT class="java.lang.String">Article text</OBJECT>
-			</OBJECT>
-		</FIELD>
-		<FIELD name="_name">
-			<OBJECT class="java.lang.String">text</OBJECT>
-		</FIELD>
-		<FIELD name="_valueListAttribute"><NULL/><!-- class [Ljava.lang.String; --></FIELD>
-		<FIELD name="_visible" type="boolean">true</FIELD>
-		<FIELD name="_width" type="int">120</FIELD>
-	</OBJECT>
-	<OBJECT class="de.espirit.firstspirit.access.store.templatestore.FieldMapping">
-		<FIELD name="_dbAttributeNames">
-			<OBJECT class="java.util.HashMap">
-				<OBJECT class="java.lang.String">DE</OBJECT>
-				<ARRAY type="java.lang.String">
-					<OBJECT class="java.lang.String">teaser_DE</OBJECT>
-				</ARRAY>
-				<OBJECT class="java.lang.String">EN</OBJECT>
-				<ARRAY type="java.lang.String">
-					<OBJECT class="java.lang.String">teaser_EN</OBJECT>
-				</ARRAY>
-			</OBJECT>
-		</FIELD>
-		<FIELD name="_dbReferenceName"><NULL/><!-- class java.lang.String --></FIELD>
-		<FIELD name="_displayNames">
-			<OBJECT class="java.util.HashMap">
-				<OBJECT class="java.lang.String">DE</OBJECT>
-				<OBJECT class="java.lang.String">Teasertext</OBJECT>
-				<OBJECT class="java.lang.String">EN</OBJECT>
-				<OBJECT class="java.lang.String">Teaser text</OBJECT>
-			</OBJECT>
-		</FIELD>
-		<FIELD name="_name">
-			<OBJECT class="java.lang.String">teaser</OBJECT>
+			<OBJECT class="java.lang.String">tt_author</OBJECT>
 		</FIELD>
 		<FIELD name="_valueListAttribute"><NULL/><!-- class [Ljava.lang.String; --></FIELD>
 		<FIELD name="_visible" type="boolean">true</FIELD>
@@ -168,7 +139,36 @@
 			</OBJECT>
 		</FIELD>
 		<FIELD name="_name">
-			<OBJECT class="java.lang.String">tagging</OBJECT>
+			<OBJECT class="java.lang.String">tt_tags</OBJECT>
+		</FIELD>
+		<FIELD name="_valueListAttribute"><NULL/><!-- class [Ljava.lang.String; --></FIELD>
+		<FIELD name="_visible" type="boolean">true</FIELD>
+		<FIELD name="_width" type="int">120</FIELD>
+	</OBJECT>
+	<OBJECT class="de.espirit.firstspirit.access.store.templatestore.FieldMapping">
+		<FIELD name="_dbAttributeNames">
+			<OBJECT class="java.util.HashMap">
+				<OBJECT class="java.lang.String">DE</OBJECT>
+				<ARRAY type="java.lang.String">
+					<OBJECT class="java.lang.String">distribution</OBJECT>
+				</ARRAY>
+				<OBJECT class="java.lang.String">EN</OBJECT>
+				<ARRAY type="java.lang.String">
+					<OBJECT class="java.lang.String">distribution</OBJECT>
+				</ARRAY>
+			</OBJECT>
+		</FIELD>
+		<FIELD name="_dbReferenceName"><NULL/><!-- class java.lang.String --></FIELD>
+		<FIELD name="_displayNames">
+			<OBJECT class="java.util.HashMap">
+				<OBJECT class="java.lang.String">DE</OBJECT>
+				<OBJECT class="java.lang.String">Distribution</OBJECT>
+				<OBJECT class="java.lang.String">EN</OBJECT>
+				<OBJECT class="java.lang.String">Distribution</OBJECT>
+			</OBJECT>
+		</FIELD>
+		<FIELD name="_name">
+			<OBJECT class="java.lang.String">tt_distribution</OBJECT>
 		</FIELD>
 		<FIELD name="_valueListAttribute"><NULL/><!-- class [Ljava.lang.String; --></FIELD>
 		<FIELD name="_visible" type="boolean">true</FIELD>
@@ -197,7 +197,7 @@
 			</OBJECT>
 		</FIELD>
 		<FIELD name="_name">
-			<OBJECT class="java.lang.String">image</OBJECT>
+			<OBJECT class="java.lang.String">tt_image</OBJECT>
 		</FIELD>
 		<FIELD name="_valueListAttribute"><NULL/><!-- class [Ljava.lang.String; --></FIELD>
 		<FIELD name="_visible" type="boolean">true</FIELD>
@@ -208,11 +208,11 @@
 			<OBJECT class="java.util.HashMap">
 				<OBJECT class="java.lang.String">DE</OBJECT>
 				<ARRAY type="java.lang.String">
-					<OBJECT class="java.lang.String">category</OBJECT>
+					<OBJECT class="java.lang.String">content_DE</OBJECT>
 				</ARRAY>
 				<OBJECT class="java.lang.String">EN</OBJECT>
 				<ARRAY type="java.lang.String">
-					<OBJECT class="java.lang.String">category</OBJECT>
+					<OBJECT class="java.lang.String">content_EN</OBJECT>
 				</ARRAY>
 			</OBJECT>
 		</FIELD>
@@ -220,13 +220,13 @@
 		<FIELD name="_displayNames">
 			<OBJECT class="java.util.HashMap">
 				<OBJECT class="java.lang.String">DE</OBJECT>
-				<OBJECT class="java.lang.String">Category</OBJECT>
+				<OBJECT class="java.lang.String">Content</OBJECT>
 				<OBJECT class="java.lang.String">EN</OBJECT>
-				<OBJECT class="java.lang.String">Category</OBJECT>
+				<OBJECT class="java.lang.String">Content</OBJECT>
 			</OBJECT>
 		</FIELD>
 		<FIELD name="_name">
-			<OBJECT class="java.lang.String">category</OBJECT>
+			<OBJECT class="java.lang.String">tt_content</OBJECT>
 		</FIELD>
 		<FIELD name="_valueListAttribute"><NULL/><!-- class [Ljava.lang.String; --></FIELD>
 		<FIELD name="_visible" type="boolean">true</FIELD>
@@ -237,11 +237,11 @@
 			<OBJECT class="java.util.HashMap">
 				<OBJECT class="java.lang.String">DE</OBJECT>
 				<ARRAY type="java.lang.String">
-					<OBJECT class="java.lang.String">distribution_channel</OBJECT>
+					<OBJECT class="java.lang.String">teaser_text_DE</OBJECT>
 				</ARRAY>
 				<OBJECT class="java.lang.String">EN</OBJECT>
 				<ARRAY type="java.lang.String">
-					<OBJECT class="java.lang.String">distribution_channel</OBJECT>
+					<OBJECT class="java.lang.String">teaser_text_EN</OBJECT>
 				</ARRAY>
 			</OBJECT>
 		</FIELD>
@@ -249,13 +249,13 @@
 		<FIELD name="_displayNames">
 			<OBJECT class="java.util.HashMap">
 				<OBJECT class="java.lang.String">DE</OBJECT>
-				<OBJECT class="java.lang.String">Distribution Channel</OBJECT>
+				<OBJECT class="java.lang.String">Teaser Text</OBJECT>
 				<OBJECT class="java.lang.String">EN</OBJECT>
-				<OBJECT class="java.lang.String">Distribution Channel</OBJECT>
+				<OBJECT class="java.lang.String">Teaser Text</OBJECT>
 			</OBJECT>
 		</FIELD>
 		<FIELD name="_name">
-			<OBJECT class="java.lang.String">channel</OBJECT>
+			<OBJECT class="java.lang.String">tt_teaserText</OBJECT>
 		</FIELD>
 		<FIELD name="_valueListAttribute"><NULL/><!-- class [Ljava.lang.String; --></FIELD>
 		<FIELD name="_visible" type="boolean">true</FIELD>
@@ -266,11 +266,11 @@
 			<OBJECT class="java.util.HashMap">
 				<OBJECT class="java.lang.String">DE</OBJECT>
 				<ARRAY type="java.lang.String">
-					<OBJECT class="java.lang.String">voice_text_DE</OBJECT>
+					<OBJECT class="java.lang.String">article_text_DE</OBJECT>
 				</ARRAY>
 				<OBJECT class="java.lang.String">EN</OBJECT>
 				<ARRAY type="java.lang.String">
-					<OBJECT class="java.lang.String">voice_text_EN</OBJECT>
+					<OBJECT class="java.lang.String">article_text_EN</OBJECT>
 				</ARRAY>
 			</OBJECT>
 		</FIELD>
@@ -278,16 +278,45 @@
 		<FIELD name="_displayNames">
 			<OBJECT class="java.util.HashMap">
 				<OBJECT class="java.lang.String">DE</OBJECT>
-				<OBJECT class="java.lang.String">Voice Assistant Text</OBJECT>
+				<OBJECT class="java.lang.String">Article Text</OBJECT>
 				<OBJECT class="java.lang.String">EN</OBJECT>
-				<OBJECT class="java.lang.String">Voice Assistant Text</OBJECT>
+				<OBJECT class="java.lang.String">Article Text</OBJECT>
 			</OBJECT>
 		</FIELD>
 		<FIELD name="_name">
-			<OBJECT class="java.lang.String">voice_text</OBJECT>
+			<OBJECT class="java.lang.String">tt_articleText</OBJECT>
 		</FIELD>
 		<FIELD name="_valueListAttribute"><NULL/><!-- class [Ljava.lang.String; --></FIELD>
-		<FIELD name="_visible" type="boolean">false</FIELD>
+		<FIELD name="_visible" type="boolean">true</FIELD>
+		<FIELD name="_width" type="int">120</FIELD>
+	</OBJECT>
+	<OBJECT class="de.espirit.firstspirit.access.store.templatestore.FieldMapping">
+		<FIELD name="_dbAttributeNames">
+			<OBJECT class="java.util.HashMap">
+				<OBJECT class="java.lang.String">DE</OBJECT>
+				<ARRAY type="java.lang.String">
+					<OBJECT class="java.lang.String">image_alt_text_DE</OBJECT>
+				</ARRAY>
+				<OBJECT class="java.lang.String">EN</OBJECT>
+				<ARRAY type="java.lang.String">
+					<OBJECT class="java.lang.String">image_alt_text_EN</OBJECT>
+				</ARRAY>
+			</OBJECT>
+		</FIELD>
+		<FIELD name="_dbReferenceName"><NULL/><!-- class java.lang.String --></FIELD>
+		<FIELD name="_displayNames">
+			<OBJECT class="java.util.HashMap">
+				<OBJECT class="java.lang.String">DE</OBJECT>
+				<OBJECT class="java.lang.String">Alternativ-Text</OBJECT>
+				<OBJECT class="java.lang.String">EN</OBJECT>
+				<OBJECT class="java.lang.String">Alternative Text</OBJECT>
+			</OBJECT>
+		</FIELD>
+		<FIELD name="_name">
+			<OBJECT class="java.lang.String">tt_image_alt_text</OBJECT>
+		</FIELD>
+		<FIELD name="_valueListAttribute"><NULL/><!-- class [Ljava.lang.String; --></FIELD>
+		<FIELD name="_visible" type="boolean">true</FIELD>
 		<FIELD name="_width" type="int">120</FIELD>
 	</OBJECT>
 </ARRAY>

@@ -1,0 +1,26 @@
+$CMS_IF(lt_type.equals("product"))$
+	$CMS_FOR(for_p, lt_product.values)$
+		$CMS_SET(set_id, for_p.getEntity.get("fs_id"))$
+		$CMS_SET(set_fd, for_p.getFormData)$
+		$CMS_SET(set_title, set_fd.get("tt_name"))$
+		$CMS_SET(set_description, set_fd.get("tt_description").toText(true))$
+		$CMS_SET(set_tooltip, set_fd.get("tt_name"))$
+		$CMS_SET(set_image, set_fd.get("tt_image"))$
+		$CMS_IF(!ps_product_detail_page.isEmpty)$		
+			$CMS_SET(set_link)$<a class="text-link-text hover:text-link-hover underline" target="_self" href="$CMS_REF(ps_product_detail_page, abs:1, contentId:set_id)$">$CMS_VALUE(ps_translations.readMore)$</a>$CMS_END_SET$
+		$CMS_ELSE$
+			$CMS_SET(set_link, "")$
+		$CMS_END_IF$
+	$CMS_END_FOR$
+$CMS_ELSE$
+	$CMS_SET(set_title, lt_headline)$
+	$CMS_SET(set_description, lt_text.toText(true))$
+	$CMS_SET(set_tooltip, lt_tooltip)$
+	$CMS_SET(set_image, lt_image)$ 	
+	$CMS_SET(set_link, lt_link)$
+$CMS_END_IF$
+title: `$CMS_VALUE(set_title, default: "")$`,
+description: `$CMS_VALUE(set_description, default: "")$`,
+tooltip: `$CMS_VALUE(set_tooltip, default: "")$`,    
+image: `$CMS_IF(!set_image.isEmpty)$$CMS_REF(set_image, abs:1)$$CMS_END_IF$`,
+link: `$CMS_IF(!set_link.isEmpty)$$CMS_VALUE(set_link)$$CMS_END_IF$`,

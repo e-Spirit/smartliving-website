@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_headline'><TEXT>Entdecken Sie unsere smarten Thermostate</TEXT></FIELD>
+	<FIELD name='st_text'><DOM><p>Intelligente Thermostate sind Geräte, die die Heiz- und Kühlsysteme von Häusern mithilfe moderner Technologie steuern. Sie ermöglichen Hausbesitzern die Überwachung und Anpassung der Temperatureinstellungen aus der Ferne über eine Smartphone-App oder Sprachbefehle, was zu einer höheren Energieeffizienz und Kosteneinsparungen führt.</p></DOM></FIELD>
+	<FIELD name='st_category_link'><LINK><CMS_LINK linktemplate="internal_link" type="genericLink"><TEMPLATECONTENT><CMS_VALUE name="lt_link"><LANG id="§" set="1"><UID>security_overview</UID><UIDTYPE>SITESTORE_LEAF</UIDTYPE><REMOTE/></LANG></CMS_VALUE><CMS_VALUE name="lt_text"><LANG id="§" set="1"><TEXT>Alle Produkte ansehen</TEXT></LANG></CMS_VALUE></TEMPLATECONTENT></CMS_LINK></LINK></FIELD>
+</FIELDS>

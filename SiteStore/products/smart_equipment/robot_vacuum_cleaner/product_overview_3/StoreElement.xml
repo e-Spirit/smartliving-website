@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PAGEREF htmlname="product_overview" id="2925184083583816384" pageref="8766809075623947943" uniquedescription="product_overview_3">
+	<CONTENTPARAMETER pagecount="1" query="1809052354663490935" source="product" templateid="-3320050676157563287">
+		<PARAM class="java.util.UUID" name="category_gid" value="2da190d4-558c-4c80-a9f2-c6b85dbf2c60"/>
+	</CONTENTPARAMETER>
+	<LANG displayname="Robot vacuum cleaner" language="EN"/>
+	<LANG displayname="Saugroboter" language="DE"/>
+	<PAGE_LANG_SPEC language="EN" showinpagegrp="1" showinsitemap="1"/>
+</PAGEREF>

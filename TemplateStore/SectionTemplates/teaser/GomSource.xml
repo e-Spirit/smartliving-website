@@ -5,110 +5,130 @@
 
     <CMS_GROUP>
       <LANGINFOS>
-        <LANGINFO lang="*" label="Main text"/>
-        <LANGINFO lang="DE" label="Haupttext"/>
+        <LANGINFO lang="*" label="Content"/>
+        <LANGINFO lang="DE" label="Inhalt"/>
       </LANGINFOS>
 
-      <CMS_INPUT_TEXT name="st_kicker" hFill="yes" maxInputLength="30" singleLine="no">
-        <LANGINFOS>
-          <LANGINFO lang="*" label="Kicker"/>
-          <LANGINFO lang="DE" label="Dachzeile"/>
-        </LANGINFOS>
-      </CMS_INPUT_TEXT>
-
-      <CMS_INPUT_DOM name="st_headline" bold="no" hFill="yes" italic="no" list="no" maxCharacters="100">
-        <FORMATS>
-          <TEMPLATE name="span_yellow_text"/>
-          <TEMPLATE name="standard"/>
-        </FORMATS>
+      <CMS_INPUT_TEXT name="st_headline" hFill="yes" singleLine="no" useLanguages="yes">
         <LANGINFOS>
           <LANGINFO lang="*" label="Headline"/>
           <LANGINFO lang="DE" label="Überschrift"/>
         </LANGINFOS>
-        <LINKEDITORS>
-          <LINKEDITOR name="internal_link"/>
-          <LINKEDITOR name="external_link"/>
-        </LINKEDITORS>
-      </CMS_INPUT_DOM>
+      </CMS_INPUT_TEXT>
 
-      <CMS_INPUT_DOM name="st_text" hFill="yes" list="no">
+      <CMS_INPUT_DOM name="st_text" hFill="yes" useLanguages="yes">
         <FORMATS>
-          <TEMPLATE name="standard"/>
-          <TEMPLATE name="h3"/>
+          <TEMPLATE name="p"/>
         </FORMATS>
         <LANGINFOS>
           <LANGINFO lang="*" label="Text"/>
         </LANGINFOS>
-        <LINKEDITORS>
-          <LINKEDITOR name="internal_link"/>
-          <LINKEDITOR name="external_link"/>
-        </LINKEDITORS>
       </CMS_INPUT_DOM>
 
-    </CMS_GROUP>
-
-    <CMS_GROUP>
-      <LANGINFOS>
-        <LANGINFO lang="*" label="Picture"/>
-        <LANGINFO lang="DE" label="Bild"/>
-      </LANGINFOS>
-
-      <FS_REFERENCE name="st_picture" hFill="yes" upload="yes" useLanguages="no">
+      <FS_REFERENCE name="st_image" hFill="yes" upload="yes" useLanguages="no">
         <FILTER>
-          <ALLOW type="media"/>
+          <ALLOW type="picture"/>
         </FILTER>
         <LANGINFOS>
-          <LANGINFO lang="*" label="Picture" description="Please choose a picture"/>
-          <LANGINFO lang="DE" label="Bild" description="Bitte wählen Sie ein Bild aus"/>
+          <LANGINFO lang="*" label="Image"/>
+          <LANGINFO lang="DE" label="Bild"/>
         </LANGINFOS>
         <PROJECTS>
-          <LOCAL name="." uploadFolder="content">
+          <LOCAL name="." uploadFolder="images">
             <SOURCES>
-              <FOLDER name="images" store="mediastore"/>
+              <FOLDER name="images" store="MEDIASTORE"/>
             </SOURCES>
           </LOCAL>
         </PROJECTS>
       </FS_REFERENCE>
 
-      <CMS_INPUT_TEXT name="st_picture_alt" hFill="yes" singleLine="no" useLanguages="yes">
+      <CMS_INPUT_TEXT name="st_image_alt_text" hFill="yes" singleLine="no">
         <LANGINFOS>
-          <LANGINFO lang="*" label="Alternative text"/>
-          <LANGINFO lang="DE" label="Alternativer Text"/>
+          <LANGINFO lang="*" label="Alternative Text"/>
+          <LANGINFO lang="DE" label="Alternativ-Text"/>
         </LANGINFOS>
       </CMS_INPUT_TEXT>
 
-    </CMS_GROUP>
-
-    <CMS_GROUP>
-      <LANGINFOS>
-        <LANGINFO lang="*" label="Jumbo text"/>
-        <LANGINFO lang="DE" label="Jumbo Text"/>
-      </LANGINFOS>
-
-      <CMS_INPUT_TEXT name="st_jumbo_headline" singleLine="no">
+      <CMS_INPUT_LINK name="st_cta" hFill="yes" useLanguages="yes">
         <LANGINFOS>
-          <LANGINFO lang="*" label="Jumbo text under picture"/>
-          <LANGINFO lang="DE" label="Jumbo Text unterhalb des Bildes"/>
-        </LANGINFOS>
-      </CMS_INPUT_TEXT>
-
-    </CMS_GROUP>
-
-    <CMS_GROUP>
-      <LANGINFOS>
-        <LANGINFO lang="*" label="Button"/>
-      </LANGINFOS>
-
-      <CMS_INPUT_LINK name="st_button">
-        <LANGINFOS>
-          <LANGINFO lang="*" label="Button Link"/>
+          <LANGINFO lang="*" label="CTA"/>
         </LANGINFOS>
         <LINKEDITORS>
-          <LINKEDITOR name="button_with_link"/>
+          <LINKEDITOR name="external_link"/>
+          <LINKEDITOR name="internal_link"/>
         </LINKEDITORS>
       </CMS_INPUT_LINK>
 
     </CMS_GROUP>
+
+    <CMS_GROUP>
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Style"/>
+        <LANGINFO lang="DE" label="Stil"/>
+      </LANGINFOS>
+
+      <CMS_INPUT_RADIOBUTTON name="st_layout" hFill="yes" useLanguages="no">
+        <ENTRIES>
+          <ENTRY value="text-image">
+            <LANGINFOS>
+              <LANGINFO lang="*" label="Text | Image"/>
+              <LANGINFO lang="DE" label="Text | Bild"/>
+            </LANGINFOS>
+          </ENTRY>
+          <ENTRY value="image-text">
+            <LANGINFOS>
+              <LANGINFO lang="*" label="Image | Text"/>
+              <LANGINFO lang="DE" label="Bild | Text"/>
+            </LANGINFOS>
+          </ENTRY>
+        </ENTRIES>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Layout"/>
+        </LANGINFOS>
+      </CMS_INPUT_RADIOBUTTON>
+
+      <CMS_INPUT_RADIOBUTTON name="st_design" hFill="yes" useLanguages="no">
+        <ENTRIES>
+          <ENTRY value="light">
+            <LANGINFOS>
+              <LANGINFO lang="*" label="Light"/>
+              <LANGINFO lang="DE" label="Hell"/>
+            </LANGINFOS>
+          </ENTRY>
+          <ENTRY value="dark">
+            <LANGINFOS>
+              <LANGINFO lang="*" label="Dark"/>
+              <LANGINFO lang="DE" label="Dunkel"/>
+            </LANGINFOS>
+          </ENTRY>
+        </ENTRIES>
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Design"/>
+        </LANGINFOS>
+      </CMS_INPUT_RADIOBUTTON>
+
+    </CMS_GROUP>
+
+  </CMS_GROUP>
+
+  <CMS_GROUP name="sectionLifespan">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Validity period"/>
+    </LANGINFOS>
+
+    <CMS_INPUT_DATE name="st_sectionLifespanFrom" hFill="yes">
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Gültigkeitsbeginn"/>
+        <LANGINFO lang="EN" label="Validation start date"/>
+      </LANGINFOS>
+    </CMS_INPUT_DATE>
+
+    <CMS_INPUT_DATE name="st_sectionLifespanTo" hFill="yes">
+      <LANGINFOS>
+        <LANGINFO lang="*" label="Gültigkeitsende"/>
+        <LANGINFO lang="EN" label="Validation end date"/>
+      </LANGINFOS>
+    </CMS_INPUT_DATE>
 
   </CMS_GROUP>
 

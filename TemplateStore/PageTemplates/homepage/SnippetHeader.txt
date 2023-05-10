@@ -1,1 +1,1 @@
-if(!pt_title.isEmpty(), pt_title, "Homepage")
+if(!pt_md_title.isEmpty(), pt_md_title)

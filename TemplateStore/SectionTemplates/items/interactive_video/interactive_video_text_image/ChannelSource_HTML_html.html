@@ -1,0 +1,35 @@
+<div class="absolute w-full duration-700" data-youtube-time="$CMS_VALUE(st_time)$" $CMS_VALUE(editorId(reloadPreview:true))$>
+	$CMS_IF(!st_image.isEmpty())$
+		$CMS_SET(set_image_alt_text)$$CMS_RENDER(template:"render_image_alt_text", prm_image: st_image, prm_text: st_image_alt_text)$$CMS_END_SET$
+		<img
+			class="w-full object-cover rounded-9xl mb-12"
+			src="$CMS_REF(st_image, abs: 1, resolution:"16x4_M")$"
+			alt="$CMS_VALUE(set_image_alt_text)$"
+			$CMS_VALUE(editorId(editorName:"st_image", resolution:"16x4_M"))$
+		/>
+	$CMS_END_IF$
+	$CMS_IF(!st_text.isEmpty())$
+		<div class="relative w-auto ml-24 sm:w-4/5 sm:ml-auto">
+			$CMS_IF(!st_image.isEmpty())$
+				<svg
+					class="absolute -top-[97px] -left-[73px]"
+					xmlns="http://www.w3.org/2000/svg"
+					width="73"
+					height="119"
+					viewBox="0 0 73 119"
+					fill="none"
+				>
+					<path
+						class="stroke-secondary"
+						d="M1 1V102C1 110.837 8.16344 118 17 118H72"
+						stroke-width="3"
+						stroke-linecap="round"
+					/>
+				</svg>
+			$CMS_END_IF$
+			<div class="relative px-8 pb-8 bg-white rounded-3xl" $CMS_VALUE(editorId(editorName:"st_text"))$>
+				$CMS_VALUE(st_text, default:"")$
+			</div>
+		</div>
+	$CMS_END_IF$
+</div>

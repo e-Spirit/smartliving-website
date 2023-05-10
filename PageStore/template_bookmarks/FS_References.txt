@@ -1,0 +1,12 @@
+[self]
+uid=template_bookmarks
+gid=d424f8f7-c8ae-49a8-a1e9-37062c50eace
+uidType=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.PageImpl
+
+[requiredProjectId]
+uid=standard
+gid=7220147b-39ff-4b67-ae6b-90e6e04af147
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
+

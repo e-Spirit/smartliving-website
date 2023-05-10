@@ -1,4 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<FIELDS>
-	<FIELD name='gc_linklist'><CATALOG><CARD id="8dcc25bf-629b-4f65-956f-315418519232" template="internal_link" type="TEMPLATESTORE_LINKTEMPLATE"><TEMPLATECONTENT><CMS_VALUE name="lt_text"><LANG id="§" set="1"><TEXT>Impressum</TEXT></LANG></CMS_VALUE><CMS_VALUE name="lt_link"><LANG id="§" set="1"><UID>imprint</UID><UIDTYPE>SITESTORE_LEAF</UIDTYPE><REMOTE/></LANG></CMS_VALUE></TEMPLATECONTENT></CARD><CARD id="6c2cf125-0a5b-439b-81c8-2e0ded05f1b0" template="internal_link" type="TEMPLATESTORE_LINKTEMPLATE"><TEMPLATECONTENT><CMS_VALUE name="lt_text"><LANG id="§" set="1"><TEXT>Datenschutzbestimmungen</TEXT></LANG></CMS_VALUE><CMS_VALUE name="lt_link"><LANG id="§" set="1"><UID>privacy_policy</UID><UIDTYPE>SITESTORE_LEAF</UIDTYPE><REMOTE/></LANG></CMS_VALUE></TEMPLATECONTENT></CARD></CATALOG></FIELD>
-</FIELDS>

@@ -1,0 +1,17 @@
+# mimeType        name
+text/plain;UTF-8  FS_Info.txt
+text/plain;UTF-8  FS_References.txt
+image/webp        Picture_Globe_16x4_L.webp
+image/webp        Picture_Globe_16x4_M.webp
+image/webp        Picture_Globe_16x6_L.webp
+image/webp        Picture_Globe_16x6_M.webp
+image/webp        Picture_Globe_16x6_XL.webp
+image/webp        Picture_Globe_16x9_L.webp
+image/webp        Picture_Globe_16x9_M.webp
+image/webp        Picture_Globe_16x9_S.webp
+image/webp        Picture_Globe_4x3_M.webp
+image/webp        Picture_Globe_4x3_S.webp
+image/webp        Picture_Globe_9x16_M.webp
+image/jpeg        Picture_Globe_ORIGINAL.jpg
+text/xml;UTF-8    StoreElement.xml
+text/xml          meta.xml

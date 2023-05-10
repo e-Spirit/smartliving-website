@@ -1,6 +1,0 @@
-[self]
-uid=index_5
-gid=188c7b4f-33ca-42f0-b852-19e54e41aefc
-uidType=MEDIASTORE_LEAF
-class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
-

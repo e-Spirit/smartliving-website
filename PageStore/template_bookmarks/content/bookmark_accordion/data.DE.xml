@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_subline'><TEXT>Hier können Sie bei Bedarf eine Unterzeile einpflegen.</TEXT></FIELD>
+	<FIELD name='st_headline'><TEXT>Contentmodul für ein Akkordeon</TEXT></FIELD>
+	<FIELD name='st_accordion'><CATALOG><CARD id="379cba95-abb6-4466-b16c-ceab18bb19ff" template="accordion_item" type="TEMPLATESTORE"><TEMPLATECONTENT><CMS_VALUE name="st_title"><LANG id="§" set="1"><TEXT>Titel für einen Akkordeon-Eintrag</TEXT></LANG></CMS_VALUE><CMS_VALUE name="st_content"><LANG id="§" set="1"><DOM><p>Inhalt für den Eintrag</p></DOM></LANG></CMS_VALUE></TEMPLATECONTENT></CARD></CATALOG></FIELD>
+	<FIELD name='st_info'><DOM><p>Hier können Sie eine Infozeile hinterlegen.</p></DOM></FIELD>
+</FIELDS>

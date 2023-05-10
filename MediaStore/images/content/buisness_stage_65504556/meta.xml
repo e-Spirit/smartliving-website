@@ -1,7 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <FIELDS>
-	<FIELD name='md_alt_text'><TEXT>Alt Text</TEXT></FIELD>
-	<FIELD name='md_creation_date'><DATE>1627980826314</DATE></FIELD>
 	<FIELD name='fsai_facesPayload'><TEXT>{
   "version" : 2,
   "languageToResponse" : {
@@ -16,64 +14,20 @@
   "languageToResponse" : {
     "§" : {
       "labels" : [ {
-        "name" : "Office Building",
-        "confidence" : 99.98987,
+        "name" : "Architecture",
+        "confidence" : 100.0,
         "instances" : [ ],
-        "parents" : [ {
-          "name" : "Building"
-        } ]
+        "parents" : [ ]
       }, {
         "name" : "Building",
-        "confidence" : 99.98987,
-        "instances" : [ ],
-        "parents" : [ ]
-      }, {
-        "name" : "Architecture",
-        "confidence" : 77.56772,
+        "confidence" : 100.0,
         "instances" : [ ],
         "parents" : [ {
-          "name" : "Building"
+          "name" : "Architecture"
         } ]
       }, {
-        "name" : "Hangar",
-        "confidence" : 75.58729,
-        "instances" : [ ],
-        "parents" : [ {
-          "name" : "Building"
-        } ]
-      }, {
-        "name" : "Gate",
-        "confidence" : 74.897064,
-        "instances" : [ {
-          "boundingBox" : {
-            "width" : 0.44659203,
-            "height" : 0.5626333,
-            "left" : 0.24270801,
-            "top" : 0.32690227
-          },
-          "confidence" : 74.897064
-        } ],
-        "parents" : [ ]
-      }, {
-        "name" : "Tarmac",
-        "confidence" : 58.83863,
-        "instances" : [ ],
-        "parents" : [ ]
-      }, {
-        "name" : "Asphalt",
-        "confidence" : 58.83863,
-        "instances" : [ ],
-        "parents" : [ ]
-      }, {
-        "name" : "Warehouse",
-        "confidence" : 56.946182,
-        "instances" : [ ],
-        "parents" : [ {
-          "name" : "Building"
-        } ]
-      }, {
-        "name" : "Convention Center",
-        "confidence" : 56.405132,
+        "name" : "Office Building",
+        "confidence" : 100.0,
         "instances" : [ ],
         "parents" : [ {
           "name" : "Architecture"
@@ -81,13 +35,45 @@
           "name" : "Building"
         } ]
       }, {
-        "name" : "Flooring",
-        "confidence" : 56.167446,
+        "name" : "Campus",
+        "confidence" : 56.685024,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Architecture"
+        }, {
+          "name" : "Building"
+        } ]
+      }, {
+        "name" : "School",
+        "confidence" : 56.456577,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Architecture"
+        }, {
+          "name" : "Building"
+        } ]
+      }, {
+        "name" : "Urban",
+        "confidence" : 55.69588,
         "instances" : [ ],
         "parents" : [ ]
+      }, {
+        "name" : "Road",
+        "confidence" : 55.654366,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Factory",
+        "confidence" : 55.1942,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Architecture"
+        }, {
+          "name" : "Building"
+        } ]
       } ],
       "orientationCorrection" : null,
-      "labelModelVersion" : "2.0"
+      "labelModelVersion" : "3.0"
     }
   }
 }</TEXT></FIELD>
@@ -240,7 +226,7 @@
   "languageToResponse" : {
     "§" : {
       "moderationLabels" : [ ],
-      "moderationModelVersion" : "5.0",
+      "moderationModelVersion" : "6.0",
       "humanLoopActivationOutput" : null
     }
   }
@@ -248,7 +234,7 @@
 	<FIELD name='fsai_tags'><TEXT>{
   "version" : 2,
   "languageToResponse" : {
-    "§" : "#Gate #Tarmac #Flooring #Office Building #Architecture #Hangar #Building #Asphalt #Warehouse #Convention Center"
+    "§" : "#Urban #Office Building #Architecture #School #Road #Building #Campus #Factory"
   }
 }</TEXT></FIELD>
 </FIELDS>

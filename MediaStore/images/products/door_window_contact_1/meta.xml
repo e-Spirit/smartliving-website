@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Door",
+        "confidence" : 99.09842,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Cabinet",
+        "confidence" : 97.903435,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Furniture"
+        } ]
+      }, {
+        "name" : "Furniture",
+        "confidence" : 97.903435,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "White",
+        "confidence" : 57.90365,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Home Decor",
+        "confidence" : 57.63818,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Linen",
+        "confidence" : 57.63818,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Home Decor"
+        } ]
+      }, {
+        "name" : "Page",
+        "confidence" : 56.935818,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Text"
+        } ]
+      }, {
+        "name" : "Text",
+        "confidence" : 56.935818,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Handle",
+        "confidence" : 56.621613,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Sliding Door",
+        "confidence" : 56.248062,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Door"
+        } ]
+      }, {
+        "name" : "Closet",
+        "confidence" : 56.183155,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Furniture"
+        } ]
+      }, {
+        "name" : "Cupboard",
+        "confidence" : 56.183155,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Closet"
+        }, {
+          "name" : "Furniture"
+        } ]
+      }, {
+        "name" : "White Board",
+        "confidence" : 55.575607,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Sideboard",
+        "confidence" : 55.47551,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Furniture"
+        } ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "6.0",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Page #Text #Handle #Sliding Door #Closet #Furniture #Linen #Home Decor #Cupboard #Cabinet #White #White Board #Sideboard #Door"
+  }
+}</TEXT></FIELD>
+</FIELDS>

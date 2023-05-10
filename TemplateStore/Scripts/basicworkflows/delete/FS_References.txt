@@ -1,7 +1,0 @@
-[self]
-uid=/basicworkflows/delete
-gid=03cc0290-0d66-4085-b594-fae088e72dd5
-store=TEMPLATESTORE
-class=de.espirit.firstspirit.store.access.templatestore.ScriptFolderImpl
-root=de.espirit.firstspirit.store.access.templatestore.ScriptsImpl
-

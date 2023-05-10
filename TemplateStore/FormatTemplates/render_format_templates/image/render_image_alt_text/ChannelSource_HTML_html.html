@@ -1,0 +1,29 @@
+$CMS_TRIM(level:4)$
+$-- 
+	Renders an alternative text for the given image
+	
+	Parameters:
+		prm_image				[InputComponent] - required				The image to be rendered.
+		prm_text				[InputComponent / String] - required	The default alt text. If no set the information is
+																		looked up inside the meta data of the image		
+	Example call:
+							$CMS_RENDER(template:"render_image_alt_text", prm_image: st_image, prm_text: st_image_alt_text)$
+	
+	Example output:
+							An alternative text
+
+--$
+$CMS_SET(set_text, "")$
+$CMS_IF(!prm_text.isEmpty)$
+	$CMS_SET(set_text, prm_text)$
+$CMS_ELSE$
+	$CMS_IF(!prm_image.isEmpty)$			
+		$CMS_IF(prm_image.getMedia() != null)$
+			$CMS_SET(set_text, prm_image.getMedia().getMetaFormData().get("md_image_alt_text"))$			
+		$CMS_ELSIF(prm_image.getMedium() != null)$
+			$CMS_SET(set_text, prm_image.getMedium().getMetaFormData().get("md_image_alt_text"))$
+		$CMS_END_IF$
+	$CMS_END_IF$
+$CMS_END_IF$
+$CMS_VALUE(set_text, default:"")$
+$CMS_END_TRIM$

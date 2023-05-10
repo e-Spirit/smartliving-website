@@ -1,0 +1,162 @@
+<CMS_HEADER>
+	<CMS_FUNCTION name="Navigation" resultname="fr_navigation">
+		<CMS_PARAM name="expansionVisibility" value="all"/>
+
+		<CMS_ARRAY_PARAM name="innerBeginHTML">
+			<CMS_ARRAY_ELEMENT index="0">
+				<![CDATA[
+					<ul class="mb-6">
+				]]>
+			</CMS_ARRAY_ELEMENT>
+			<CMS_ARRAY_ELEMENT index="1">
+				<![CDATA[
+					<ul class="pl-5">
+				]]>
+			</CMS_ARRAY_ELEMENT>
+		</CMS_ARRAY_PARAM>
+
+		<CMS_ARRAY_PARAM name="beginHTML">
+			<CMS_ARRAY_ELEMENT index="0">
+				<![CDATA[
+					<li>
+				]]>
+			</CMS_ARRAY_ELEMENT>
+			<CMS_ARRAY_ELEMENT index="1">
+				<![CDATA[
+					<li class="pl-5">
+		      	]]>
+			</CMS_ARRAY_ELEMENT>
+			<CMS_ARRAY_ELEMENT index="2">
+				<![CDATA[
+					<li>
+				]]>
+			</CMS_ARRAY_ELEMENT>
+		</CMS_ARRAY_PARAM>
+	    
+		<CMS_ARRAY_PARAM name="selectedHTML">
+			<CMS_ARRAY_ELEMENT index="0">
+				<![CDATA[
+					<a class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 
+										hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 
+										font-semibold hover:text-indigo-600" href="$CMS_REF(#nav.ref, abs:1)$">
+						$CMS_VALUE(#nav.label)$
+					</a>
+				]]>
+			</CMS_ARRAY_ELEMENT>
+			<CMS_ARRAY_ELEMENT index="1">
+				<![CDATA[				
+					<a href="$CMS_REF(#nav.ref, abs:1)$"
+							$CMS_IF(#nav.hasSubFolders)$
+								class="uppercase tracking-wider text-gray-500 font-medium text-[13px]"
+							$CMS_ELSE$
+								class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
+							$CMS_END_IF$>
+							$CMS_VALUE(#nav.label)$
+					</a>
+				]]>
+	      </CMS_ARRAY_ELEMENT>
+	      <CMS_ARRAY_ELEMENT index="2">
+				<![CDATA[
+					<a href="$CMS_REF(#nav.ref, abs:1)$"
+							class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600">
+						$CMS_VALUE(#nav.label)$
+						$CMS_SET(set_pageFormData, #nav.ref.page.formData)$
+						$CMS_IF(!set_pageFormData.pt_navigationDescription.isEmpty())$
+							<p class="text-gray-500 font-normal">$CMS_VALUE(set_pageFormData.pt_navigationDescription.convert2)$</p>
+						$CMS_END_IF$
+					</a>
+				]]>
+			</CMS_ARRAY_ELEMENT>
+		</CMS_ARRAY_PARAM>
+		
+		<CMS_ARRAY_PARAM name="unselectedHTML">
+			<CMS_ARRAY_ELEMENT index="0">
+				<![CDATA[
+					<a class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 
+										hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 
+										font-semibold hover:text-indigo-600" href="$CMS_REF(#nav.ref, abs:1)$">
+						$CMS_VALUE(#nav.label)$
+					</a>
+				]]>
+			</CMS_ARRAY_ELEMENT>
+			<CMS_ARRAY_ELEMENT index="1">
+				<![CDATA[
+					<a href="$CMS_REF(#nav.ref, abs:1)$"
+							$CMS_IF(#nav.hasSubFolders)$
+								class="uppercase tracking-wider text-gray-500 font-medium text-[13px]"
+							$CMS_ELSE$
+								class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
+							$CMS_END_IF$>
+						$CMS_VALUE(#nav.label)$
+					</a>		
+				]]>
+	      </CMS_ARRAY_ELEMENT>
+	      <CMS_ARRAY_ELEMENT index="2">
+				<![CDATA[
+					<a href="$CMS_REF(#nav.ref, abs:1)$"
+							class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600">
+						$CMS_VALUE(#nav.label)$
+						$CMS_SET(set_pageFormData, #nav.ref.page.formData)$
+						$CMS_IF(!set_pageFormData.pt_navigationDescription.isEmpty())$
+							<p class="text-gray-500 font-normal">$CMS_VALUE(set_pageFormData.pt_navigationDescription.convert2)$</p>
+						$CMS_END_IF$
+					</a>
+				]]>
+			</CMS_ARRAY_ELEMENT>
+		</CMS_ARRAY_PARAM>
+
+		<CMS_ARRAY_PARAM name="endHTML">
+			<CMS_ARRAY_ELEMENT index="0..2">
+				<![CDATA[
+					</li>
+				]]>
+			</CMS_ARRAY_ELEMENT>
+		</CMS_ARRAY_PARAM>
+
+		<CMS_ARRAY_PARAM name="innerEndHTML">
+			<CMS_ARRAY_ELEMENT index="0..1">
+				<![CDATA[
+					</ul>
+				]]>
+			</CMS_ARRAY_ELEMENT>
+		</CMS_ARRAY_PARAM>
+	</CMS_FUNCTION>
+</CMS_HEADER>
+
+$-- Side navbar menu --$
+<div class="navbar-menu hidden fixed top-0 left-0 bottom-0 w-full sm:w-5/6 max-w-max z-50">
+	$-- Page overlay --$
+	<div class="navbar-backdrop fixed inset-0 bg-white opacity-80"></div>
+	$-- Navbar --$
+	<nav class="relative flex flex-col py-20 px-10 h-full w-full bg-white overflow-y-auto">
+		$-- Button close --$
+		<button class="navbar-close absolute top-10 right-10">
+			<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="w-6 h-6"
+				>
+					<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+			</svg>
+		</button>
+		$-- Logo --$
+		$CMS_IF(!ps_logo.isEmpty())$
+			<a class="inline-block mb-12" href="$CMS_REF(ps_startpage, abs:1)$">
+				$CMS_SET(set_logoRef, ref(ps_logo, abs:1, resolution: "logo"))$
+				<img class="h-10"
+						src="$CMS_VALUE(set_logoRef.url)$"
+						alt="$CMS_RENDER(template:"render_image_alt_text", prm_image: ps_logo, prm_text: ps_logo_alt_text)$"
+						height="$CMS_VALUE(set_logoRef.height)$"
+						width="$CMS_VALUE(set_logoRef.width)$">
+			</a>	
+		$CMS_END_IF$		
+		$-- Navbar items --$
+		<ul>
+			$CMS_VALUE(fr_navigation)$			
+		</ul>
+	</nav>
+</div>
+$CMS_RENDER(template: "javascript_collector", prm_action: "add", prm_jSMedia: "main")$

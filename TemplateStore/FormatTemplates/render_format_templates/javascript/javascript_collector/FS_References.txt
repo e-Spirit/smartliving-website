@@ -1,0 +1,6 @@
+[self]
+uid=javascript_collector
+gid=57757562-9038-4e33-b8c5-0d7a34cec929
+uidType=TEMPLATESTORE_FORMATTEMPLATE
+class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
+

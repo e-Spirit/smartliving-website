@@ -1,0 +1,6 @@
+[self]
+uid=firstspirit
+gid=64f6d0aa-8246-4517-aac0-5a35f513b75f
+uidType=MEDIASTORE_FOLDER
+class=de.espirit.firstspirit.store.access.mediastore.MediaFolderImpl
+

@@ -1,6 +1,6 @@
 [self]
 uid=translationstudio_statusicon
-gid=7c7be902-1ab7-4afb-a899-7865aa0ae0c7
+gid=732f9e1b-aa1a-4173-b81c-a322776f78a0
 uidType=TEMPLATESTORE_FORMATTEMPLATE
 class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
 

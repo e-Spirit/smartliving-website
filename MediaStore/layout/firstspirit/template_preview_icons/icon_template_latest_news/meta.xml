@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='fsai_facesPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "faceDetails" : [ ],
+      "orientationCorrection" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Logo",
+        "confidence" : 79.52479,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Weapon",
+        "confidence" : 76.95078,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Symbol",
+        "confidence" : 69.310425,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Face",
+        "confidence" : 65.68213,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Head"
+        }, {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Head",
+        "confidence" : 65.68213,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Person",
+        "confidence" : 65.68213,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Electronics",
+        "confidence" : 64.137665,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Hardware",
+        "confidence" : 64.137665,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Sign",
+        "confidence" : 57.8219,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Symbol"
+        } ]
+      }, {
+        "name" : "Triangle",
+        "confidence" : 57.26751,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Text",
+        "confidence" : 56.642185,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Home Decor",
+        "confidence" : 56.34321,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Blade",
+        "confidence" : 56.24481,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Weapon"
+        } ]
+      }, {
+        "name" : "Emblem",
+        "confidence" : 56.187992,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Symbol"
+        } ]
+      }, {
+        "name" : "Badminton",
+        "confidence" : 55.236412,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Person"
+        }, {
+          "name" : "Sport"
+        } ]
+      }, {
+        "name" : "Sport",
+        "confidence" : 55.236412,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Stencil",
+        "confidence" : 55.082596,
+        "instances" : [ ],
+        "parents" : [ ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "6.1",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Symbol #Text #Hardware #Badminton #Head #Face #Sport #Triangle #Home Decor #Weapon #Sign #Person #Stencil #Blade #Emblem #Electronics #Logo"
+  }
+}</TEXT></FIELD>
+</FIELDS>

@@ -1,25 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ENTITY_REFS>
 	<REFS sourceType="category">
-		<SOURCE uuid="93d252dc-5964-4c1d-aaed-1652a2d2045c">
-			<ATTR name="newsList" targetType="news">
-				<TARGET uuid="aab51540-f988-48ae-9311-02276126a340"/>
-				<TARGET uuid="eb98ea90-177f-401e-b7ee-1c3440b55ef8"/>
-				<TARGET uuid="f78aff5b-eda1-4bc4-bfbf-25702a662b38"/>
-				<TARGET uuid="11bc590d-5ab8-46ee-8e4d-70bf124ba83a"/>
-				<TARGET uuid="456b76b1-8cae-432d-b71e-9c9993b78f7a"/>
-				<TARGET uuid="5d2d882d-bf1c-4286-99ab-a2697709d38d"/>
+		<SOURCE uuid="92d119f0-158a-4a42-95a6-86d95086aafa">
+			<ATTR name="productList" targetType="product">
+				<TARGET uuid="c854b3a7-8647-4eeb-90e7-150b999cbdec"/>
+				<TARGET uuid="0a50fdc8-d4c3-4962-a6e4-6b25161febd8"/>
+				<TARGET uuid="29d8bab5-d431-4af5-83e0-043ea702a95b"/>
 			</ATTR>
 		</SOURCE>
-		<SOURCE uuid="07d9022e-dd96-4f07-bbda-5f3f13df84e8">
-			<ATTR name="newsList" targetType="news">
-				<TARGET uuid="3d1d0440-e96f-405a-822c-154136eca3d3"/>
-				<TARGET uuid="4c1ffb05-8762-4b61-aa67-c6e5b96cd1a4"/>
+		<SOURCE uuid="cf19e30f-3f89-415c-a414-1117725ddf87">
+			<ATTR name="productList" targetType="product">
+				<TARGET uuid="9ba9c731-684c-4398-8fd7-93a378316895"/>
 			</ATTR>
 		</SOURCE>
-		<SOURCE uuid="449511b5-6497-49a3-89d7-91d48f3c3686">
-			<ATTR name="newsList" targetType="news">
-				<TARGET uuid="94db23a8-6dff-4fd8-90b2-f19ced929c86"/>
+		<SOURCE uuid="d4aa4491-e9ee-48bb-9fa4-1fc9bb9f835b">
+			<ATTR name="productList" targetType="product">
+				<TARGET uuid="2a14d02c-09e4-44be-b8c2-d59290504a7a"/>
+				<TARGET uuid="42fdbd55-245e-4468-8e13-48838cdd0f27"/>
+			</ATTR>
+		</SOURCE>
+		<SOURCE uuid="0c7def99-26f7-4666-8b67-58b2e6a42b6f">
+			<ATTR name="productList" targetType="product">
+				<TARGET uuid="e1c9415e-c33a-4827-bdf1-7eefcd6bc443"/>
+			</ATTR>
+		</SOURCE>
+		<SOURCE uuid="2da190d4-558c-4c80-a9f2-c6b85dbf2c60">
+			<ATTR name="productList" targetType="product">
+				<TARGET uuid="60ea0287-6ce2-4672-8447-5a9a30ee96f8"/>
+			</ATTR>
+		</SOURCE>
+		<SOURCE uuid="527ded93-41cf-47ea-a8db-cb57e30e2a95">
+			<ATTR name="productList" targetType="product">
+				<TARGET uuid="82ea8894-fe87-4115-830a-78577aede1df"/>
+				<TARGET uuid="a2dedd0a-cdd2-4e75-ac86-3b55bde1c44a"/>
+				<TARGET uuid="b2b3af30-1c13-4da2-a675-508c7ffd93cd"/>
+				<TARGET uuid="0dd54438-79b9-42e3-b3a3-9e268cde246e"/>
+			</ATTR>
+		</SOURCE>
+		<SOURCE uuid="6e99a566-ed64-4001-a19a-e17b1695c588">
+			<ATTR name="productList" targetType="product">
+				<TARGET uuid="92c254a8-3a22-4255-b4ad-d492ab5e7998"/>
+				<TARGET uuid="aae339fc-e5e6-4efe-abd5-76fd9f52be92"/>
+				<TARGET uuid="0a50fdc8-d4c3-4962-a6e4-6b25161febd8"/>
+				<TARGET uuid="5afe47c0-7bc4-4e33-929e-03616d5bc9e0"/>
 			</ATTR>
 		</SOURCE>
 	</REFS>

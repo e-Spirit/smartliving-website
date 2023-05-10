@@ -1,5 +1,5 @@
 AllChildren: 1
-ExportPermissions: AllPermissions
+ExportPermissions: NoPermissions
 ExportVersion: 3.2
 Language_DE: Deutsch
 Language_EN: English

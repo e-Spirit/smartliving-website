@@ -1,6 +1,0 @@
-[self]
-uid=add_new_section
-gid=a6085764-7330-47e3-b1b3-0034f33836ad
-uidType=TEMPLATESTORE_FORMATTEMPLATE
-class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
-

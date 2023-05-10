@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RULES>
+	<RULE>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="st_category"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="RELEASE">
+				<PROPERTY name="VALID" source="st_category"/>
+				<MESSAGE lang="*" text="Please choose a category"/>
+				<MESSAGE lang="DE" text="Bitte wählen Sie eine Kategorie aus"/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="st_headline"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="RELEASE">
+				<PROPERTY name="VALID" source="st_headline"/>
+				<MESSAGE lang="*" text="Please choose a headline"/>
+				<MESSAGE lang="DE" text="Bitte geben Sie eine Überschrift ein"/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="st_text"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="RELEASE">
+				<PROPERTY name="VALID" source="st_text"/>
+				<MESSAGE lang="*" text="Please choose a text"/>
+				<MESSAGE lang="DE" text="Bitte pflegen Sie einen Text"/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<NOT>
+				<PROPERTY name="EMPTY" source="st_text_alignment"/>
+			</NOT>
+		</WITH>
+		<DO>
+			<VALIDATION scope="RELEASE">
+				<PROPERTY name="VALID" source="st_text_alignment"/>
+				<MESSAGE lang="*" text="Please choose a text alignment"/>
+				<MESSAGE lang="DE" text="Bitte wählen Sie eine Textausrichtung"/>
+			</VALIDATION>
+		</DO>
+	</RULE>
+	<RULE>
+		<WITH>
+			<EQUAL>
+				<PROPERTY name="STORETYPE" source="#global"/>
+				<TEXT>templatestore</TEXT>
+			</EQUAL>
+		</WITH>
+		<DO>
+			<PROPERTY name="VISIBLE" source="#form.sectionLifespan"/>
+		</DO>
+	</RULE>
+</RULES>

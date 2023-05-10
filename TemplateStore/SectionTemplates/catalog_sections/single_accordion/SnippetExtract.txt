@@ -1,1 +1,0 @@
-if(!st_text_acc.isEmpty(), truncate(st_text_acc,50), "<No Text>")

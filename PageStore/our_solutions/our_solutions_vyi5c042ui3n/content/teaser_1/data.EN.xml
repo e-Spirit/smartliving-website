@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_headline'><TEXT>Ambient Assisted Living</TEXT></FIELD>
+	<FIELD name='st_text'><DOM><p><b>Simplify your life</b></p><p>Smart home, smart living - there are many ways to describe the advantages that come with modern technology and thus offer more comfort and security. Disabled or elderly people can also benefit from such an approach and be able to stay in their own home for longer years.</p><p>Ambient Assisted Living is a special concept of a smart home. It offers methods, concepts, electronic systems, products and services that support older people or people with disabilities in their daily lives.</p><p>The demographic development confronts us with various challenges.</p></DOM></FIELD>
+	<FIELD name='st_cta'><LINK><CMS_LINK linktemplate="internal_link" type="genericLink"><TEMPLATECONTENT><CMS_VALUE name="lt_link"><LANG id="§" set="1"><UID>our_solutions_vyi5c042ui3n</UID><UIDTYPE>SITESTORE_LEAF</UIDTYPE><REMOTE/></LANG></CMS_VALUE><CMS_VALUE name="lt_text"><LANG id="§" set="1"><TEXT>More about Ambient Assisted Living</TEXT></LANG></CMS_VALUE></TEMPLATECONTENT></CMS_LINK></LINK></FIELD>
+</FIELDS>

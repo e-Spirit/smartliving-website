@@ -1,37 +1,37 @@
 [self]
 uid=release
-gid=5bb013ba-905d-408f-bbb5-cba72854321b
+gid=a3ce11c0-f285-4d2d-8076-6e22f4857cc1
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.WorkflowImpl
 
 [optionalId]
-uid=wf_deploy
-gid=80780fa7-65f5-4fc4-b045-4c6e402f9f28
-uidType=TEMPLATESTORE
-class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
-
 uid=wf_release
-gid=e72eff2b-89ff-46cc-b5d7-848e2b176956
+gid=3bd67fac-d95e-450f-b8b0-11ae787274db
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
 
 uid=wf_release_find_releated_objects
-gid=21564516-c459-4ff0-8990-bf7f0edb0125
+gid=6584a3aa-9768-4ca1-ac07-00e8772350cc
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
 
 uid=wf_release_show_not_released
-gid=d161749a-20d8-4a6b-bfd6-7fe932804ede
+gid=c37b02c6-38c3-466e-990f-027c56b7795d
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
 
 uid=wf_release_show_warning
-gid=9c6e0c5d-5b76-4773-b710-bea1e2c41ff8
+gid=c580f636-b55d-4ef3-b147-42d4bbab65f8
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
 
 uid=wf_release_test
-gid=6dc376ab-d42c-44d8-9e19-1a45a59d7d15
+gid=8ef1f6f9-f062-4738-9df8-a69357361676
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
+
+uid=wf_start_schedule
+gid=0625c59f-ca80-4c6c-a00e-a9c5bf09da52
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
 

@@ -1,0 +1,12 @@
+[self]
+uid=smart_thermostats_1
+gid=e404a110-aa08-4156-999c-9b1f1044a417
+uidType=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.PageImpl
+
+[requiredProjectId]
+uid=standard
+gid=7220147b-39ff-4b67-ae6b-90e6e04af147
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
+

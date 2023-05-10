@@ -1,0 +1,12 @@
+[self]
+uid=door_locks_1~#~content~#~product_overview
+gid=68215354-540c-41b8-94ed-bcb8e38c87f2
+store=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.Content2SectionImpl
+
+[requiredProjectId]
+uid=smartliving.product_overview
+gid=a90b8e84-6d43-4743-a0ae-4a7ffa13aa35
+uidType=TEMPLATESTORE_SCHEMA
+class=de.espirit.firstspirit.store.access.templatestore.TableTemplateImpl
+

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEMPLATE comment="" filename="global_footer" hidden="1" id="8484193302457367371" previewPageRefUid="home" templateid="-1218782073323362613" type="page">
-	<EXTENSION file="html" link="html" replaceable="false" templateSet="9062318847741885912"/>
-	<EXTENSION file="json" link="json" replaceable="false" templateSet="15845"/>
-	<LANG displayname="Global Footer" language="EN"/>
-	<LANG displayname="Globaler Footer" language="DE"/>
-</TEMPLATE>

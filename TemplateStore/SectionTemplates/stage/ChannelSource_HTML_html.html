@@ -1,0 +1,46 @@
+$CMS_IF(#global.is("WEBEDIT"))$
+	<div $CMS_VALUE(editorId())$>
+$CMS_END_IF$	
+	$CMS_SET(set_hasContent, !(st_headline.isEmpty() && st_subheadline.isEmpty() && st_cta.isEmpty()))$
+	<section class="py-28 bg-black bg-no-repeat bg-center bg-cover bg-fixed overflow-hidden 
+									bg-[image:var(--bg-m)] 
+									sm:bg-[image:var(--bg-l)] 
+									xl:bg-[image:var(--bg-xl)]
+									$CMS_VALUE(if(!set_hasContent, "h-96"))$" $CMS_VALUE(editorId(editorName: "st_image", resolution:["9x16_M", "16x6_M", "16x6_L", "16x6_XL"]))$>
+		$CMS_IF(set_hasContent)$
+			<div class="container px-4 mx-auto">
+				<div class="px-12 pt-12 pb-9 md:max-w-xl bg-black bg-opacity-80 rounded-4xl" style="backdrop-filter: blur(10px);">
+					$CMS_RENDER(template:"render_headline", prm_headline: st_headline, 
+										prm_defaultTag: "h2", 
+										prm_cssClasses: "mb-4 text-5xl md:text-6xl text-white font-bold font-heading tracking-px-n leading-tight",
+										prm_inputComponentName: "st_headline")$
+					$CMS_IF(!st_subheadline.isEmpty())$
+						<p class="mb-11 text-lg text-gray-300 font-medium leading-normal" $CMS_VALUE(editorId(editorName: "st_subheadline"))$>
+							$CMS_VALUE(st_subheadline.convert2())$
+						</p>
+					$CMS_END_IF$		
+					$CMS_SET(set_linkInnerHTML)$
+						<span class="mr-2 font-semibold leading-normal">$CMS_VALUE(st_cta.getText().convert2())$</span>
+						<svg width="19" height="18" viewbox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M11 3.75L16.25 9M16.25 9L11 14.25M16.25 9L2.75 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>			
+					$CMS_END_SET$
+					$CMS_RENDER(template: "render_link", 
+									prm_link: st_cta, 
+									prm_style: "inline-flex flex-wrap items-center text-white hover:text-gray-200",
+									prm_innerHTML: set_linkInnerHTML)$											
+				</div>
+			</div>
+		$CMS_END_IF$
+		<style>
+			:root {
+				--bg-m: url($CMS_REF(st_image, abs:1, res:"9x16_M")$) ;
+				--bg-l: url($CMS_REF(st_image, abs:1, res:"16x6_L")$) ;
+				--bg-xl: url($CMS_REF(st_image, abs:1, res:"16x6_XL")$) ;
+			}
+		</style>
+	</section>
+$CMS_IF(#global.is("WEBEDIT"))$
+	</div>
+$CMS_END_IF$
+

@@ -1,0 +1,25 @@
+//!Beanshell
+import de.espirit.firstspirit.access.AdminService;
+import de.espirit.firstspirit.access.GuiScriptContext;
+import de.espirit.firstspirit.access.ServicesBroker;
+import de.espirit.firstspirit.access.schedule.ScheduleEntry;
+import de.espirit.firstspirit.access.schedule.ScheduleEntryControl;
+import de.espirit.firstspirit.access.schedule.ScheduleEntryRunningException;
+import de.espirit.firstspirit.access.schedule.ScheduleStorage;
+
+// Name of the schedule to start
+final static String SCHEDULE_NAME = "Full Deployment";
+
+if (SCHEDULE_NAME != null) {
+	ServicesBroker servicesBroker = context.requireSpecialist(ServicesBroker.TYPE);
+	AdminService adminService = servicesBroker.getService(AdminService.class);
+	ScheduleStorage scheduleStorage = adminService.getScheduleStorage();
+	ScheduleEntry scheduleEntry = scheduleStorage.getScheduleEntry(context.getProject(), SCHEDULE_NAME);
+	if (scheduleEntry != null) {
+		try {
+			ScheduleEntryControl execute = scheduleEntry.execute();
+		} catch (ScheduleEntryRunningException e) {
+			context.logError("Error executing schedule", e);
+		}
+	}
+}

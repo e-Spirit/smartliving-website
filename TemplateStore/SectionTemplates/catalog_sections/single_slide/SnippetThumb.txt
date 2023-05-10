@@ -1,1 +1,0 @@
-if(!st_picture.isEmpty(), st_picture)

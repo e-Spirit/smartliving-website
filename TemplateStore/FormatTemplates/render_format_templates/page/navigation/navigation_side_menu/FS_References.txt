@@ -1,0 +1,17 @@
+[self]
+uid=navigation_side_menu
+gid=fe6a2794-5dbf-43ed-9a73-10527e4109f3
+uidType=TEMPLATESTORE_FORMATTEMPLATE
+class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
+
+[optionalId]
+uid=javascript_collector
+gid=57757562-9038-4e33-b8c5-0d7a34cec929
+uidType=TEMPLATESTORE_FORMATTEMPLATE
+class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
+
+uid=render_image_alt_text
+gid=35ae1a34-21bf-4c73-b75d-5ffe9b0261fa
+uidType=TEMPLATESTORE_FORMATTEMPLATE
+class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
+

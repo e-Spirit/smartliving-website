@@ -1,0 +1,17 @@
+[self]
+uid=locations_json
+gid=df080eca-38da-437d-bc18-a5815236f017
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
+
+[optionalId]
+uid=locations_json
+gid=607b32b6-2b77-4269-80a6-e39fd3bc4db0
+uidType=SITESTORE_LEAF
+class=de.espirit.firstspirit.store.access.sitestore.PageRefImpl
+
+uid=smartliving
+gid=bd75cf0e-80a3-4c40-b34d-23cbc1e2df9e
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.SchemaImpl
+

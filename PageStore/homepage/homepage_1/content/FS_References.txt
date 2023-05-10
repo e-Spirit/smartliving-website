@@ -1,0 +1,6 @@
+[self]
+uid=homepage_1~#~content
+gid=4160d277-d7a2-4e83-afce-4e78f95bf416
+store=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.BodyImpl
+

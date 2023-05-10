@@ -1,0 +1,68 @@
+$-- 
+	Renders a picture/img tag for the given image and resolution. 
+	
+	Parameters:
+		prm_image				[InputComponent] - required				The image to be rendered.
+		prm_defaultResolution	[String] - required						The default resolutions to be used.
+		prm_resolutions			[Map] - optional						The resolutions to be used.
+			Expected values (based on the tailwind screens ):
+				{
+					"default": "%FirstSpirit resolution%",
+						// => default resolution
+					"sm": "%FirstSpirit resolution%",
+						// => @media (min-width: 640px) { ... }
+					"md": "%FirstSpirit resolution%",
+						// => @media (min-width: 768px) { ... }
+					"lg": "%FirstSpirit resolution%",
+						// => @media (min-width: 1024px) { ... }
+					"xl": "%FirstSpirit resolution%",
+						// => @media (min-width: 1280px) { ... }
+					"2xl": "%FirstSpirit resolution%",
+						// => @media (min-width: 1536px) { ... }
+				}
+		
+		prm_cssClasses			[String] - optional						Css classes to be added.
+		prm_inputName			[String] - optional						If set, a editorId is added to the image tag.
+		prm_image_alt_text		[String] - optional						Input for alternative 
+		
+	Example call:
+							$CMS_RENDER(template:"render_image", prm_image: st_image, 
+										prm_defaultResolution: "4x3_M",
+										prm_resolutions: {"md": "4x3_S", "lg": "4x3_M"},
+										prm_cssClasses: "",
+										prm_inputName: "st_image")$				
+	
+	Example output:
+		<picture class="transform hover:scale-110 w-full transition ease-out duration-500">
+			<source media="(min-width: 1280px)" srcset="/fs5webedit/preview/74172/media/EN/current/75383/16x9_M/urlrev=5504/voice_assistent.webp">
+			<source media="(min-width: 768px)" srcset="/fs5webedit/preview/74172/media/EN/current/75383/16x9_S/urlrev=5504/voice_assistent.webp">
+			<img src="/fs5webedit/preview/74172/media/EN/current/75383/16x9_M/urlrev=5504/voice_assistent.webp" alt="">
+		</picture>
+		
+--$
+$CMS_SET(set_mediaQueriesMapping, [
+	{"key": "2xl", "query": "media=\"(min-width: 1536px)\""},
+	{"key": "xl", "query": "media=\"(min-width: 1280px)\""},
+	{"key": "lg", "query": "media=\"(min-width: 1024px)\""},
+	{"key": "md", "query": "media=\"(min-width: 768px)\""},
+	{"key": "sm", "query": "media=\"(min-width: 640px)\""}
+])$
+$CMS_IF(!prm_image.isEmpty() && !prm_defaultResolution.isEmpty())$
+	<picture $CMS_VALUE(if(!prm_cssClasses.isEmpty(), "class=\"" + prm_cssClasses + "\""))$
+			$CMS_IF(!prm_inputName.isEmpty())$
+				$CMS_SET(set_croppingResolutions, [])$
+				$CMS_SET(void, if(isSet(prm_resolutions) && !prm_resolutions.isEmpty(), set_croppingResolutions.addAll(prm_resolutions.values)))$
+				$CMS_SET(void, set_croppingResolutions.add(prm_defaultResolution))$
+				$CMS_VALUE(editorId(editorName: prm_inputName, resolution: set_croppingResolutions))$
+			$CMS_END_IF$
+		>
+		$CMS_FOR(for_mediaQuery, set_mediaQueriesMapping)$
+			$CMS_IF(prm_resolutions.containsKey(for_mediaQuery.key))$
+				<source $CMS_VALUE(for_mediaQuery.query)$ srcset="$CMS_REF(prm_image, abs:1, resolution: prm_resolutions[for_mediaQuery.key])$">				
+			$CMS_END_IF$
+		$CMS_END_FOR$
+		$CMS_SET(set_defaultImage, ref(prm_image, abs: 1, resolution: prm_defaultResolution))$
+		$CMS_SET(set_defaultImageAltText)$$CMS_RENDER(template:"render_image_alt_text", prm_image: prm_image, prm_text: prm_image_alt_text)$$CMS_END_SET$	
+		<img src="$CMS_REF(set_defaultImage)$" alt="$CMS_VALUE(set_defaultImageAltText)$" height="$CMS_VALUE(set_defaultImage.height)$" width="$CMS_VALUE(set_defaultImage.width)$">
+	</picture>			
+$CMS_END_IF$

@@ -1,14 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CMS_MODULE>
 
-  <CMS_INPUT_TEXT name="st_headline" singleLine="no" useLanguages="yes">
+  <CMS_INPUT_RADIOBUTTON name="st_style" hFill="yes" useLanguages="no">
+    <ENTRIES>
+      <ENTRY value="image_only">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Image only"/>
+          <LANGINFO lang="DE" label="Nur Bild"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="text_image">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Text and Image"/>
+          <LANGINFO lang="DE" label="Text und Bild"/>
+        </LANGINFOS>
+      </ENTRY>
+    </ENTRIES>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Style"/>
+      <LANGINFO lang="DE" label="Stil"/>
+    </LANGINFOS>
+  </CMS_INPUT_RADIOBUTTON>
+
+  <CMS_INPUT_RADIOBUTTON name="st_layout" hFill="yes" useLanguages="no">
+    <ENTRIES>
+      <ENTRY value="text-image">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Text | Image"/>
+          <LANGINFO lang="DE" label="Text | Bild"/>
+        </LANGINFOS>
+      </ENTRY>
+      <ENTRY value="image-text">
+        <LANGINFOS>
+          <LANGINFO lang="*" label="Image | Text"/>
+          <LANGINFO lang="DE" label="Bild | Text"/>
+        </LANGINFOS>
+      </ENTRY>
+    </ENTRIES>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Layout"/>
+    </LANGINFOS>
+  </CMS_INPUT_RADIOBUTTON>
+
+  <CMS_INPUT_TEXT name="st_headline" hFill="yes" singleLine="no" useLanguages="yes">
     <LANGINFOS>
       <LANGINFO lang="*" label="Headline"/>
       <LANGINFO lang="DE" label="Überschrift"/>
     </LANGINFOS>
   </CMS_INPUT_TEXT>
 
-  <CMS_INPUT_IMAGEMAP name="st_imagemap" simpleMode="yes">
+  <CMS_INPUT_DOM name="st_text" hFill="yes" useLanguages="yes">
+    <FORMATS>
+      <TEMPLATE name="teaser"/>
+    </FORMATS>
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Text"/>
+    </LANGINFOS>
+  </CMS_INPUT_DOM>
+
+  <CMS_INPUT_IMAGEMAP name="st_imagemap" hFill="yes" simpleMode="yes">
     <LANGINFOS>
       <LANGINFO lang="*" label="Imagemap"/>
     </LANGINFOS>
@@ -23,5 +73,12 @@
       </LOCAL>
     </PROJECTS>
   </CMS_INPUT_IMAGEMAP>
+
+  <CMS_INPUT_TEXT name="st_image_alt_text" hFill="yes" singleLine="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="Alternative Text"/>
+      <LANGINFO lang="DE" label="Alternativ-Text"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
 
 </CMS_MODULE>

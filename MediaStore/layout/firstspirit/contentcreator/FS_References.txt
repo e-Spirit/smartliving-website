@@ -1,0 +1,6 @@
+[self]
+uid=contentcreator
+gid=12f9e37a-7cdf-4a4e-bdb9-e5f09d6d68d1
+uidType=MEDIASTORE_FOLDER
+class=de.espirit.firstspirit.store.access.mediastore.MediaFolderImpl
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="7196745159997819228" name="section_lifespan">
+	<LANG displayname="Absatz Zeitsteuerung" language="DE"/>
+	<LANG displayname="Section Lifespan" language="EN"/>
+	<style tag="section_lifespan" view="marked">
+		<attr name="align" value="left"/>
+		<render/>
+	</style>
+</FORMATTEMPLATE>

@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_headline'><TEXT>Tips for safe living</TEXT></FIELD>
+	<FIELD name='st_text'><DOM><p>Security at home is an important issue that concerns many people. Whether you live in an apartment or a house, there are some simple measures you can take to protect yourself and your family.</p><p>One of the most important and easiest measures for security is locking all windows and doors. Ensure all windows and doors are locked when no one is home. Even if you are only going to be gone a short while, intruders can take that time to enter. Another way to increase security is to install safety lights and cameras. These devices can help deter intruders and notify you of any attempted entry.</p></DOM></FIELD>
+	<FIELD name='st_image_alt_text'><TEXT>Smart camera, a person in the background is holding a smartphone</TEXT></FIELD>
+</FIELDS>

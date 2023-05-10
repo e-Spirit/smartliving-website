@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_headline'><TEXT>Contentmodul für ein interaktives Bild</TEXT></FIELD>
+	<FIELD name='st_text'><DOM><teaser>Pflegen Sie hier bitte einen Fließtext ein.</teaser></DOM></FIELD>
+	<FIELD name='st_imagemap'><REF>media:spacer_image</REF><ALT/><REMOTE/><RESOLUTION>ORIGINAL</RESOLUTION><AREAS/></FIELD>
+</FIELDS>

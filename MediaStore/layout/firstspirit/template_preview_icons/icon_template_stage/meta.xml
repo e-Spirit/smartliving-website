@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='fsai_objectsPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "labels" : [ {
+        "name" : "Computer",
+        "confidence" : 77.23083,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Electronics",
+        "confidence" : 77.23083,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Pc",
+        "confidence" : 77.23083,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Computer"
+        }, {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Text",
+        "confidence" : 73.32523,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Blackboard",
+        "confidence" : 71.91447,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.93302786,
+            "height" : 0.9084844,
+            "left" : 0.02919697,
+            "top" : 0.049994316
+          },
+          "confidence" : 71.91447
+        } ],
+        "parents" : [ ]
+      }, {
+        "name" : "Astronomy",
+        "confidence" : 67.93789,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Moon",
+        "confidence" : 67.93789,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.15896387,
+            "height" : 0.21222477,
+            "left" : 0.08504198,
+            "top" : 0.10375248
+          },
+          "confidence" : 67.93789
+        } ],
+        "parents" : [ {
+          "name" : "Astronomy"
+        }, {
+          "name" : "Nature"
+        }, {
+          "name" : "Night"
+        }, {
+          "name" : "Outdoors"
+        } ]
+      }, {
+        "name" : "Nature",
+        "confidence" : 67.93789,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Outdoors"
+        } ]
+      }, {
+        "name" : "Night",
+        "confidence" : 67.93789,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Nature"
+        }, {
+          "name" : "Outdoors"
+        } ]
+      }, {
+        "name" : "Outdoors",
+        "confidence" : 67.93789,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Computer Hardware",
+        "confidence" : 57.612576,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        }, {
+          "name" : "Hardware"
+        } ]
+      }, {
+        "name" : "Hardware",
+        "confidence" : 57.612576,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Laptop",
+        "confidence" : 57.296856,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Computer"
+        }, {
+          "name" : "Electronics"
+        }, {
+          "name" : "Pc"
+        } ]
+      }, {
+        "name" : "Sign",
+        "confidence" : 56.733765,
+        "instances" : [ ],
+        "parents" : [ {
+          "name" : "Symbol"
+        } ]
+      }, {
+        "name" : "Symbol",
+        "confidence" : 56.733765,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Disk",
+        "confidence" : 55.695213,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "File",
+        "confidence" : 55.54122,
+        "instances" : [ ],
+        "parents" : [ ]
+      } ],
+      "orientationCorrection" : null,
+      "labelModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_textPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "textDetections" : [ ],
+      "textModelVersion" : "3.0"
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_unsafeContentPayload'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : {
+      "moderationLabels" : [ ],
+      "moderationModelVersion" : "6.1",
+      "humanLoopActivationOutput" : null
+    }
+  }
+}</TEXT></FIELD>
+	<FIELD name='fsai_tags'><TEXT>{
+  "version" : 2,
+  "languageToResponse" : {
+    "§" : "#Computer Hardware #Computer #Outdoors #Night #Symbol #Text #Hardware #Laptop #Nature #Disk #File #Sign #Astronomy #Moon #Pc #Blackboard #Electronics"
+  }
+}</TEXT></FIELD>
+</FIELDS>

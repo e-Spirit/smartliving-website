@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<FIELDS>
-	<FIELD name='st_kicker'><TEXT>UNSERE SERVICELEISTUNGEN</TEXT></FIELD>
-	<FIELD name='st_headline'><DOM><standard>Intelligente Betreuung unserer <span_yellow_text>Kunden</span_yellow_text></standard></DOM></FIELD>
-	<FIELD name='st_text'><DOM><standard>Ihr Erlebnis als Kunde hat für uns höchste Priorität.</standard></DOM></FIELD>
-	<FIELD name='st_jumbo_headline'><TEXT>Kundenerlebnis</TEXT></FIELD>
-	<FIELD name='st_button'><LINK><CMS_LINK linktemplate="button_with_link" type="genericLink"><TEMPLATECONTENT><CMS_VALUE name="lt_button_text"><LANG id="§" set="1"><TEXT>Thermo Nuk</TEXT></LANG></CMS_VALUE><CMS_VALUE name="lt_link_toggle"><LANG id="§" set="1"><SEL><VALUE>product</VALUE></SEL></LANG></CMS_VALUE><CMS_VALUE name="lt_product_link"><LANG id="§" set="1"><VALUE uid="smartliving.product"><GID>ea3425f3-f894-4fe4-8df6-3a642a44b917</GID></VALUE></LANG></CMS_VALUE><CMS_VALUE name="lt_internal"><LANG id="§" set="0"/></CMS_VALUE><CMS_VALUE name="lt_url"><LANG id="§" set="0"/></CMS_VALUE></TEMPLATECONTENT></CMS_LINK></LINK></FIELD>
-</FIELDS>

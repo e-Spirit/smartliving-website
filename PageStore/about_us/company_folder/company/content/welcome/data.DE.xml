@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<FIELDS>
-	<FIELD name='st_kicker'><TEXT/></FIELD>
-	<FIELD name='st_headline'><DOM><standard>UNSER <span_yellow_text>ANSATZ</span_yellow_text></standard></DOM></FIELD>
-	<FIELD name='st_text'><DOM><standard>Unsere Philosophie ist es, sinnvoll die verschiedenen Teile unserer Umgebung miteinander zu vernetzen und eine reibungslose Kommunikation untereinander zu ermöglichen. Durch den effizienten Einsatz von neuen und smarten Technologien erschaffen wir neue Lebensumgebungen und Situationen, die eine einfachere, sicherere, komfortablere und energieeffizientere Zukunft garantieren. Um den Mensch im Mittelpunkt auf seinem aktuellen Know-How Stand abzuholen, ist es die höchste Anforderung für uns, jedem Kunden eine individuelle und maßgeschneiderte Umsetzung anzubieten. Jeder Mensch hat unterschiedliche Anforderungen, Ängste und Ziele. Dementsprechend kreieren wir - zusammen mit unseren Kunden - die individuell passenden Szenarien, um ihm die Unterstützung im täglichen Leben zukommen zu lassen, die er benötigt und erwartet.</standard></DOM></FIELD>
-	<FIELD name='st_jumbo_headline'><TEXT>Smart Living</TEXT></FIELD>
-</FIELDS>

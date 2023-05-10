@@ -1,6 +1,6 @@
 [self]
 uid=files
-gid=831050cb-3111-4ea6-9c74-5c54e0566adf
+gid=7ea0315c-5c25-46ed-9662-12e9556fcd46
 uidType=MEDIASTORE_FOLDER
 class=de.espirit.firstspirit.store.access.mediastore.MediaFolderImpl
 

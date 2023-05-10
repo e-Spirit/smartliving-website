@@ -1,0 +1,6 @@
+[self]
+uid=outdoor_cameras_1~#~content
+gid=c73881ca-f797-4fcd-a0f5-1118eee94a8e
+store=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.BodyImpl
+

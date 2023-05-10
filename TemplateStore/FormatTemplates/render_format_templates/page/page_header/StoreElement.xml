@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="7682883684465331082" name="page_header">
+	<LANG displayname="Page Header" language="EN"/>
+	<LANG displayname="Seiten Header" language="DE"/>
+	<style tag="page_header" view="marked">
+		<attr name="align" value="left"/>
+		<render/>
+	</style>
+</FORMATTEMPLATE>

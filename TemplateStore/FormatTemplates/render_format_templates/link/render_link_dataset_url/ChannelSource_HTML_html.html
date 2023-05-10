@@ -1,0 +1,23 @@
+$CMS_TRIM(level:4)$
+$--
+	Renders the URL for the given link.
+	
+	Parameters:
+		prm_dataset		Dataset			required
+		
+	Example:
+		$CMS_RENDER(template:"render_link_dataset_url", prm_dataset: lt_dataset.dataset)$
+		
+--$
+
+$CMS_IF(!prm_dataset.isEmpty())$
+	$CMS_SWITCH(prm_dataset.getTableTemplate().getUid())$
+		$CMS_VALUE(#global.logWarning("Unknow dataset type: '" + prm_dataset.getTableTemplate().getUid() +"'"))$
+	$CMS_CASE("smartliving.news")$
+		$CMS_REF(ps_news_detail_page, abs:1, contentId: prm_dataset.getEntity().getId())$
+	$CMS_CASE("smartliving.product")$
+		$CMS_REF(ps_product_detail_page, abs:1, contentId: prm_dataset.getEntity().getId())$
+	$CMS_END_SWITCH$
+$CMS_END_IF$
+
+$CMS_END_TRIM$

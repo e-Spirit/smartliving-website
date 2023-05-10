@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<FIELDS>
-	<FIELD name='pt_title'><TEXT>Product Overview</TEXT></FIELD>
-	<FIELD name='pt_add_sections'><STATE>false</STATE></FIELD>
-	<FIELD name='pt_show_chat'><STATE>false</STATE></FIELD>
-	<FIELD name='pt_text'><TEXT>Product Overview</TEXT></FIELD>
-</FIELDS>

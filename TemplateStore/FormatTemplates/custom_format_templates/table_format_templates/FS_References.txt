@@ -1,0 +1,7 @@
+[self]
+uid=/custom_format_templates/table_format_templates
+gid=4c9f85a0-94d9-4e4e-b215-3be7b297fc8f
+store=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateFolderImpl
+root=de.espirit.firstspirit.store.access.templatestore.FormatTemplatesImpl
+

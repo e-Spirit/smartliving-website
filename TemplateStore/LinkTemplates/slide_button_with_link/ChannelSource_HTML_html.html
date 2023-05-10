@@ -1,9 +1,0 @@
-$CMS_IF(lt_link_toggle.value == "internal")$
-<a href="$CMS_REF(lt_internal)$" class="site-button outline white">
-$CMS_ELSIF(lt_link_toggle.value == "external")$
-<a href="$CMS_VALUE(lt_url)$" target="_blank" class="site-button outline white">
-$CMS_ELSE$
-<a href="$CMS_REF(pageref:ps_product_detailpage.getUid(),contentId:lt_product_link.dataset.entity.id)$" class="site-button outline white">
-$CMS_END_IF$
-$CMS_VALUE(lt_button_text, default: "")$
-</a>

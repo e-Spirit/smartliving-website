@@ -103,21 +103,9 @@
     </LANGINFOS>
   </CMS_INPUT_NUMBER>
 
-  <CMS_INPUT_DATE name="tt_translate_register_date" useLanguages="no">
-    <LANGINFOS>
-      <LANGINFO lang="*" label="Date of Registration" format="MM.dd.yyyy HH:mm"/>
-    </LANGINFOS>
-  </CMS_INPUT_DATE>
-
   <CMS_INPUT_DATE name="tt_translate_expected_completion_date" useLanguages="no">
     <LANGINFOS>
       <LANGINFO lang="*" label="Date translation is due" format="MM.dd.yyyy HH:mm"/>
-    </LANGINFOS>
-  </CMS_INPUT_DATE>
-
-  <CMS_INPUT_DATE name="tt_translate_export_date" useLanguages="no">
-    <LANGINFOS>
-      <LANGINFO lang="*" label="Export Date" format="MM.dd.yyyy HH:mm"/>
     </LANGINFOS>
   </CMS_INPUT_DATE>
 
@@ -154,6 +142,12 @@
   <CMS_INPUT_TEXT name="tt_requestUid" hFill="yes" singleLine="no" useLanguages="no">
     <LANGINFOS>
       <LANGINFO lang="*" label="request id"/>
+    </LANGINFOS>
+  </CMS_INPUT_TEXT>
+
+  <CMS_INPUT_TEXT name="tt_tms_overwrite" hFill="yes" singleLine="no" useLanguages="no">
+    <LANGINFOS>
+      <LANGINFO lang="*" label="TMS connector overwrite"/>
     </LANGINFOS>
   </CMS_INPUT_TEXT>
 

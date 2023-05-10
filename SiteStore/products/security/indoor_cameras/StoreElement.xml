@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SITENODE id="-3670536483178250423" name="indoor_cameras" startnodeid="-5217140828701724879">
+	<LANG displayname="Indoor Cameras" language="EN"/>
+	<LANG displayname="Innenraumkameras" language="DE"/>
+	<NODE_LANG_SPEC label="Indoor Cameras" language="EN"/>
+	<NODE_LANG_SPEC label="Innenraumkameras" language="DE"/>
+</SITENODE>

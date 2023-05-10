@@ -1,4 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <FIELDS>
-	<FIELD name='pt_picture'><UID>5</UID><UIDTYPE>MEDIASTORE_LEAF</UIDTYPE><REMOTE/></FIELD>
+	<FIELD name='pt_bgOpacity'><SEL><VALUE>40</VALUE></SEL></FIELD>
+	<FIELD name='pt_md_type'><SEL><VALUE>website</VALUE></SEL></FIELD>
 </FIELDS>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMATTEMPLATE id="470858862203833284" name="render_image">
+	<LANG displayname="Bild ausgeben" language="DE"/>
+	<LANG displayname="Render Image" language="EN"/>
+	<style tag="render_image" view="marked">
+		<attr name="align" value="left"/>
+		<render/>
+	</style>
+</FORMATTEMPLATE>

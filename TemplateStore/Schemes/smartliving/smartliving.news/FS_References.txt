@@ -1,47 +1,52 @@
 [self]
 uid=smartliving.news
-gid=a4d1fa79-b07a-4cf7-9175-dd1e4c5fdf27
+gid=267059fe-6c35-4d8b-9395-921c9fc01927
 uidType=TEMPLATESTORE_SCHEMA
 class=de.espirit.firstspirit.store.access.templatestore.TableTemplateImpl
 
 [optionalId]
 uid=images
-gid=5d06d9c5-0362-430e-9ce2-ca1f174e5b65
+gid=af7a5702-8a1a-401c-a6db-513067bfab17
 uidType=MEDIASTORE_FOLDER
 class=de.espirit.firstspirit.store.access.mediastore.MediaFolderImpl
 
 uid=news_detail
-gid=1d1ff6cb-689b-4e4f-9bf3-fc571d785eea
+gid=d1b0c009-c058-4861-ba5e-d29291838ba5
 uidType=SITESTORE_LEAF
 class=de.espirit.firstspirit.store.access.sitestore.PageRefImpl
 
+uid=accordion
+gid=af4833fd-365b-4ca4-a895-47d851a505e6
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.SectionTemplateImpl
+
 uid=smartliving.author
-gid=9543f62c-ef5b-47b1-9edd-6af5e70ab7f6
+gid=be432777-1a1d-4746-840d-acf038f77f5c
 uidType=TEMPLATESTORE_SCHEMA
 class=de.espirit.firstspirit.store.access.templatestore.TableTemplateImpl
 
-uid=smartliving.categories
-gid=ae938044-8898-4c63-92a9-6eaf765d0229
+uid=features
+gid=94fbd630-d793-4ccd-b6c9-b796ef1fe508
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.SectionTemplateImpl
+
+uid=render_image_alt_text
+gid=35ae1a34-21bf-4c73-b75d-5ffe9b0261fa
+uidType=TEMPLATESTORE_FORMATTEMPLATE
+class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
+
+uid=table
+gid=90fab454-eaff-47ef-8265-24d58ab6b5c1
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.SectionTemplateImpl
+
+uid=smartliving.tag
+gid=1c60938b-dcba-40dc-b73c-54299f6b8a6b
 uidType=TEMPLATESTORE_SCHEMA
 class=de.espirit.firstspirit.store.access.templatestore.TableTemplateImpl
 
-uid=standard_p_tag
-gid=f18cffb2-587f-457f-af89-43cff1a67834
-uidType=TEMPLATESTORE_FORMATTEMPLATE
-class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
-
-uid=strong
-gid=7e1031a3-f52b-411f-b458-e208ed0d800a
-uidType=TEMPLATESTORE_FORMATTEMPLATE
-class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
-
-uid=smartliving.tags
-gid=c6a14ebd-bfd4-40f1-a24a-cb41233c4670
-uidType=TEMPLATESTORE_SCHEMA
-class=de.espirit.firstspirit.store.access.templatestore.TableTemplateImpl
-
-uid=u
-gid=20c95b93-3eb8-4511-8c16-4b016322c179
-uidType=TEMPLATESTORE_FORMATTEMPLATE
-class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
+uid=text_image
+gid=bf543a0d-4072-4888-9e9c-374195d663d5
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.SectionTemplateImpl
 

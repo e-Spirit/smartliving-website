@@ -1,0 +1,6 @@
+[self]
+uid=subline
+gid=3c975952-b639-4218-a015-abf10cb08cd5
+uidType=TEMPLATESTORE_FORMATTEMPLATE
+class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
+

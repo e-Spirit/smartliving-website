@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<FIELDS>
-	<FIELD name='st_tagline'><TEXT>security</TEXT></FIELD>
-	<FIELD name='st_headline'><TEXT>Smart Living protects you from intrusions!</TEXT></FIELD>
-	<FIELD name='st_text'><DOM><standard>After a steady increase in recent years, the number of burglaries has declined compared to last year. This is not least due to the increase of <b>private used</b> smart systems for the protection of houses and apartments.</standard></DOM></FIELD>
-	<FIELD name='st_counters'><CATALOG><CARD id="1c5a5af8-4167-4758-b8d5-3b53ea767cfd" template="counter" type="TEMPLATESTORE"><TEMPLATECONTENT><CMS_VALUE name="st_text"><LANG id="§" set="1"><TEXT>Break-ins according to police crime statistics 2018</TEXT></LANG></CMS_VALUE><CMS_VALUE name="st_number"><LANG id="§" set="1"><FIG>97504</FIG></LANG></CMS_VALUE></TEMPLATECONTENT></CARD><CARD id="99a3992e-8bda-449c-a4e5-ad34ff9d3637" template="counter" type="TEMPLATESTORE"><TEMPLATECONTENT><CMS_VALUE name="st_text"><LANG id="§" set="1"><TEXT>Protected with smart systems</TEXT></LANG></CMS_VALUE><CMS_VALUE name="st_number"><LANG id="§" set="1"><FIG>1425</FIG></LANG></CMS_VALUE></TEMPLATECONTENT></CARD></CATALOG></FIELD>
-</FIELDS>

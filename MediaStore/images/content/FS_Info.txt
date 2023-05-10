@@ -1,10 +1,10 @@
 AllChildren: 1
-ExportPermissions: AllPermissions
+ExportPermissions: NoPermissions
 ExportVersion: 3.2
 HierarchicElement: true
 Language_DE: Deutsch
 Language_EN: English
-MetaTemplateID: -6893060654742945510
+MetaTemplateID: 1243943175232338884
 MetaTemplateName: Metadata
 PresentationChannel_-1268668680467729278: HTML
 TemplateSet_9062318847741885912: html

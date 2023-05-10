@@ -1,6 +1,6 @@
 [self]
 uid=products
-gid=087951c2-cfb4-4306-bd98-601d7722c784
+gid=4976dea7-adfd-435b-ab19-1e2eed1c672b
 uidType=PAGESTORE
 class=de.espirit.firstspirit.store.access.pagestore.PageFolderImpl
 

@@ -1,0 +1,34 @@
+<CMS_HEADER>
+	<CMS_FUNCTION name="contentSelect" resultname="fr_locations">
+			<CMS_PARAM name="schema" value="smartliving"/>
+			<QUERY entityType="location">
+			</QUERY>
+	</CMS_FUNCTION>
+</CMS_HEADER>
+$CMS_TRIM(level:4)$
+	$CMS_SET(set_locationFeedJson,[])$
+		$CMS_FOR(for_location, fr_locations)$		
+						
+			$-- language independent fields --$
+			$CMS_SET(set_locationFeed, {"id": for_location.fs_id+"",
+									"lat": for_location.lat,
+									"long": for_location.long,
+									"routelink": if(!for_location.route_link.isEmpty, for_location.route_link.lt_link, ""),
+									"routelinktarget": if(!for_location.route_link.isEmpty, for_location.route_link.lt_target, "")
+									
+			})$					
+						
+			$-- language dependent fields --$
+			$CMS_SET(for_lang, #global.language)$
+			$--$CMS_FOR(for_lang, #global.project.languages)$--$
+				$CMS_SET(set_locationName, for_location.get("name_"+for_lang.abbreviation))$
+				$CMS_SET(void, set_locationFeed.put("name", if(!set_locationName.isEmpty, set_locationName, "")))$
+
+				$CMS_SET(set_locationDescription, for_location.get("description_"+for_lang.abbreviation).toText(true))$
+				$CMS_SET(void, set_locationFeed.put("description", if(!set_locationDescription.isEmpty, set_locationDescription, "")))$
+				
+			$--$CMS_END_FOR$--$		
+			$CMS_SET(void, set_locationFeedJson.add(set_locationFeed))$
+		$CMS_END_FOR$
+	$CMS_VALUE(set_locationFeedJson.toJSON)$
+$CMS_END_TRIM$

@@ -1,0 +1,92 @@
+<header>	
+	$-- Top line --$
+	$-- 
+	<div class="py-1 text-center text-sm bg-white border-b border-gray-100">
+		<p class="font-medium text-darkBlueGray-300 leading-10">
+			<span>Hello, you are new here.</span>
+			<span class="text-darkBlueGray-900">Get 20% off card!</span>
+		</p>
+	</div>
+	--$
+	<div class="px-6 lg:px-12 py-6">
+		$-- Navigation --$
+		<nav class="flex">
+			$-- Logo --$
+			$CMS_IF(!ps_logo.isEmpty())$
+				<a class="flex-none" href="$CMS_REF(ps_startpage, abs: 1)$">
+					$CMS_SET(set_logoRef, ref(ps_logo, abs:1, resolution: "logo"))$
+					<img class="h-10 w-auto mr-4"
+						src="$CMS_VALUE(set_logoRef.url)$"
+						alt="$CMS_RENDER(template:"render_image_alt_text", prm_image: ps_logo, prm_text: ps_logo_alt_text)$"
+						height="$CMS_VALUE(set_logoRef.height)$"
+						width="$CMS_VALUE(set_logoRef.width)$">
+				</a>		
+			$CMS_END_IF$
+			$CMS_RENDER(template:"navigation")$
+			$-- Header functions (search, fav, language) --$
+			<div class="flex grow relative items-center justify-end">
+				$-- Search --$
+				$CMS_IF(ps_searchEnabled)$
+					<div class="static md:relative group px-3 py-2">
+						<button class="relative inline-block text-gray-400 hover:text-gray-500 group" title="Search">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+								stroke="currentColor" class="w-6 h-6">
+								<path stroke-linecap="round" stroke-linejoin="round"
+									d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+							</svg>
+						</button>
+						<div class="absolute w-full md:w-auto right-0 top-6 transition group-hover:translate-y-5 translate-y-0 
+								opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out 
+								group-hover:transform z-50 transform">
+							<div class="w-full relative right-0 md:w-64 top-6 p-6 bg-white rounded-xl shadow-xl">
+								<div class="relative z-10">
+									<input
+										class="w-full py-3 px-4 text-coolGray-500 leading-tight placeholder-coolGray-500 focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-opacity-50 border border-coolGray-200 rounded-lg shadow-xs"
+										type="text" name="search" placeholder="Search">
+								</div>
+							</div>
+						</div>
+					</div>				
+				$CMS_END_IF$
+				$-- Favorites --$
+				$CMS_IF(ps_toggle_wishlist)$$CMS_RENDER(template:"wishlist")$$CMS_END_IF$
+				$-- Language switch --$
+				<div class="static md:relative group px-3 py-2">
+					<button class="relative inline-block text-gray-400 hover:text-gray-500 group" title="Language switch">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+							stroke="currentColor" class="w-6 h-6">
+							<path stroke-linecap="round" stroke-linejoin="round"
+								d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+						</svg>
+					</button>
+					<div class="absolute w-full md:w-auto right-0 top-6 transition group-hover:translate-y-5 translate-y-0
+							opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out
+							group-hover:transform z-50 transform">
+						<div class="relative top-6 p-6 z-10 bg-white rounded-xl shadow-xl">
+							$CMS_FOR(for_language, #global.project.languages.filter(lang -> #global.page.isTranslated(lang)))$
+								$CMS_IF(for_language.equals(#global.language))$
+									<p class="text-text">$CMS_VALUE(for_language.name)$</p>
+								$CMS_ELSIF(!#global.dataset.isEmpty())$
+									<p><a class="text-link-text hover:text-link-hover underline" href="$CMS_REF(#global.node, abs: 1, lang:for_language, contentId:#global.dataset.entity.id)$">$CMS_VALUE(for_language.name)$</a></p>
+								$CMS_ELSE$
+									<p><a class="text-link-text hover:text-link-hover underline" href="$CMS_REF(#global.node, abs: 1, lang:for_language)$">$CMS_VALUE(for_language.name)$</a></p>
+								$CMS_END_IF$
+    	                    $CMS_END_FOR$		                                
+						</div>
+					</div>
+				</div>								
+				<div class="lg:hidden flex-shrink-0 w-px h-4 bg-gray-100 my-5"></div>
+				$-- Side menu toggle / burger --$
+				<div class="navbar-burger lg:hidden static px-3 py-2">
+					<button class="self-center" title="Navigation">
+						<svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect width="25" height="2" fill="currentColor"></rect>
+							<rect y="14" width="25" height="2" fill="currentColor"></rect>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</nav>
+	</div>
+	$CMS_RENDER(template:"navigation_side_menu")$
+</header>

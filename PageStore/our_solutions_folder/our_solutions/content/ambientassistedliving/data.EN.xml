@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<FIELDS>
-	<FIELD name='st_kicker'><TEXT>Ambient Assisted Living</TEXT></FIELD>
-	<FIELD name='st_headline'><DOM><standard><span_yellow_text>Simplify</span_yellow_text> your Life</standard></DOM></FIELD>
-	<FIELD name='st_text'><DOM><standard>Smart living in a modern smart home provides increased comfort and security. This is important for the elderly or people with disabilities, where a smart home can enable them to stay longer in their own home.<br/><br/>An important aspect of a smart home is Ambient Assisted Living, which intelligently combines methods, concepts, electronic systems, products and services to assist the elderly or people with disabilities in their daily lives.<br/><br/><br/><br/></standard></DOM></FIELD>
-	<FIELD name='st_jumbo_headline'><TEXT>Ambient Assisted Living</TEXT></FIELD>
-	<FIELD name='st_button'><LINK/></FIELD>
-</FIELDS>

@@ -1,0 +1,6 @@
+[self]
+uid=wishlist
+gid=b310d8db-34ae-4493-98d5-495ee43b2d57
+uidType=TEMPLATESTORE_FORMATTEMPLATE
+class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
+

@@ -1,0 +1,6 @@
+[self]
+uid=add_section_toolbar
+gid=80eb2873-20dc-4eef-b0af-4535da74729c
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
+

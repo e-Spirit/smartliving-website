@@ -1,1 +1,0 @@
-if(!st_media_alt_text.isEmpty(), st_media_alt_text, "<No Description>")

@@ -29,7 +29,7 @@
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -76,7 +76,7 @@
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -123,7 +123,7 @@
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -170,7 +170,7 @@
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -217,7 +217,7 @@
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -262,7 +262,7 @@
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -307,7 +307,7 @@
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -354,7 +354,7 @@
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -399,7 +399,7 @@
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -444,7 +444,7 @@
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -491,7 +491,7 @@
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -536,7 +536,7 @@
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -583,7 +583,7 @@
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -791,53 +791,6 @@
 				<FIELD name="x" type="int">1667</FIELD>
 				<FIELD name="y" type="int">675</FIELD>
 			</OBJECT>
-			<OBJECT class="de.espirit.firstspirit.workflow.model.ActivityImpl">
-				<FIELD name="_descriptions">
-					<OBJECT class="java.util.HashMap">
-						<OBJECT class="java.lang.String">DE</OBJECT>
-						<OBJECT class="java.lang.String"></OBJECT>
-						<OBJECT class="java.lang.String">EN</OBJECT>
-						<OBJECT class="java.lang.String"></OBJECT>
-					</OBJECT>
-				</FIELD>
-				<FIELD name="_names">
-					<OBJECT class="java.util.HashMap">
-						<OBJECT class="java.lang.String">DE</OBJECT>
-						<OBJECT class="java.lang.String">Deploy2</OBJECT>
-						<OBJECT class="java.lang.String">EN</OBJECT>
-						<OBJECT class="java.lang.String">Deploy1</OBJECT>
-					</OBJECT>
-				</FIELD>
-				<FIELD name="automatic" type="boolean">true</FIELD>
-				<FIELD name="description">
-					<OBJECT class="java.lang.String"></OBJECT>
-				</FIELD>
-				<FIELD name="email_groups">
-					<OBJECT class="java.util.ArrayList">
-					</OBJECT>
-				</FIELD>
-				<FIELD name="email_props" type="int">0</FIELD>
-				<FIELD name="email_text">
-					<OBJECT class="java.lang.String"></OBJECT>
-				</FIELD>
-				<FIELD name="email_title">
-					<OBJECT class="java.lang.String"></OBJECT>
-				</FIELD>
-				<FIELD name="email_user">
-					<OBJECT class="java.util.ArrayList">
-					</OBJECT>
-				</FIELD>
-				<FIELD name="id" type="long">91</FIELD>
-				<FIELD name="name">
-					<OBJECT class="java.lang.String">deploy</OBJECT>
-				</FIELD>
-				<FIELD name="script">
-					<OBJECT class="java.lang.String">wf_deploy</OBJECT>
-				</FIELD>
-				<FIELD name="type" type="int">0</FIELD>
-				<FIELD name="x" type="int">3487</FIELD>
-				<FIELD name="y" type="int">0</FIELD>
-			</OBJECT>
 		</OBJECT>
 	</FIELD>
 	<FIELD name="endStates">
@@ -939,8 +892,8 @@
 					<OBJECT class="java.util.ArrayList">
 					</OBJECT>
 				</FIELD>
-				<FIELD name="x" type="int">3748</FIELD>
-				<FIELD name="y" type="int">60</FIELD>
+				<FIELD name="x" type="int">3480</FIELD>
+				<FIELD name="y" type="int">64</FIELD>
 			</OBJECT>
 			<OBJECT class="de.espirit.firstspirit.workflow.model.StateImpl">
 				<FIELD name="_descriptions">
@@ -1772,49 +1725,6 @@
 				<FIELD name="x" type="int">1472</FIELD>
 				<FIELD name="y" type="int">730</FIELD>
 			</OBJECT>
-			<OBJECT class="de.espirit.firstspirit.workflow.model.StateImpl">
-				<FIELD name="_descriptions">
-					<OBJECT class="java.util.HashMap">
-						<OBJECT class="java.lang.String">DE</OBJECT>
-						<OBJECT class="java.lang.String"></OBJECT>
-						<OBJECT class="java.lang.String">EN</OBJECT>
-						<OBJECT class="java.lang.String"></OBJECT>
-					</OBJECT>
-				</FIELD>
-				<FIELD name="_names">
-					<OBJECT class="java.util.HashMap">
-						<OBJECT class="java.lang.String">DE</OBJECT>
-						<OBJECT class="java.lang.String">Zwischenschritt</OBJECT>
-						<OBJECT class="java.lang.String">EN</OBJECT>
-						<OBJECT class="java.lang.String">Intermediate step</OBJECT>
-					</OBJECT>
-				</FIELD>
-				<FIELD name="b" type="int">0</FIELD>
-				<FIELD name="description">
-					<OBJECT class="java.lang.String"></OBJECT>
-				</FIELD>
-				<FIELD name="duration" type="long">0</FIELD>
-				<FIELD name="editorMode" type="int">0</FIELD>
-				<FIELD name="g" type="int">0</FIELD>
-				<FIELD name="groups">
-					<OBJECT class="java.util.ArrayList">
-					</OBJECT>
-				</FIELD>
-				<FIELD name="id" type="long">93</FIELD>
-				<FIELD name="lockStoreElement" type="boolean">false</FIELD>
-				<FIELD name="name">
-					<OBJECT class="java.lang.String">Status</OBJECT>
-				</FIELD>
-				<FIELD name="r" type="int">0</FIELD>
-				<FIELD name="release" type="boolean">false</FIELD>
-				<FIELD name="type" type="int">1</FIELD>
-				<FIELD name="user">
-					<OBJECT class="java.util.ArrayList">
-					</OBJECT>
-				</FIELD>
-				<FIELD name="x" type="int">3239</FIELD>
-				<FIELD name="y" type="int">60</FIELD>
-			</OBJECT>
 		</OBJECT>
 	</FIELD>
 	<FIELD name="transitions">
@@ -1845,7 +1755,7 @@
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -1931,7 +1841,7 @@
 
 %CREATOR% created a delete request.
 
-Please go to %FIRSTspiritSOCKETURL% and use the report "Tasks" to review this request.
+Please go to %WEBeditURL% and use the report "Tasks" to review this request.
 
 Best regards</OBJECT>
 				</FIELD>
@@ -2015,7 +1925,7 @@ Best regards</OBJECT>
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -2097,7 +2007,7 @@ Best regards</OBJECT>
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -2179,7 +2089,7 @@ Best regards</OBJECT>
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -2296,12 +2206,12 @@ Best regards</OBJECT>
 				<FIELD name="points">
 					<ARRAY type="[I">
 						<ARRAY type="int">
-							<OBJECT class="java.lang.Integer">3100</OBJECT>
-							<OBJECT class="java.lang.Integer">90</OBJECT>
+							<OBJECT class="java.lang.Integer">3092</OBJECT>
+							<OBJECT class="java.lang.Integer">82</OBJECT>
 						</ARRAY>
 						<ARRAY type="int">
-							<OBJECT class="java.lang.Integer">3257</OBJECT>
-							<OBJECT class="java.lang.Integer">87</OBJECT>
+							<OBJECT class="java.lang.Integer">3502</OBJECT>
+							<OBJECT class="java.lang.Integer">94</OBJECT>
 						</ARRAY>
 					</ARRAY>
 				</FIELD>
@@ -2310,7 +2220,7 @@ Best regards</OBJECT>
 				<FIELD name="position" type="int">0</FIELD>
 				<FIELD name="source" type="long">34</FIELD>
 				<FIELD name="storeElementRights" type="int">4</FIELD>
-				<FIELD name="target" type="long">93</FIELD>
+				<FIELD name="target" type="long">4</FIELD>
 				<FIELD name="taskRights" type="int">0</FIELD>
 				<FIELD name="type" type="int">2</FIELD>
 				<FIELD name="useFixedRights" type="boolean">true</FIELD>
@@ -2351,7 +2261,7 @@ Best regards</OBJECT>
 
 your delete request cannot be processed due to one or more conflicts.
 
-Please go to %FIRSTspiritSOCKETURL% and try to resolve all conflicts. Afterwards you can resume the delete process.
+Please go to %WEBeditURL% and try to resolve all conflicts. Afterwards you can resume the delete process.
 
 Best regards</OBJECT>
 				</FIELD>
@@ -2435,7 +2345,7 @@ Best regards</OBJECT>
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -2517,7 +2427,7 @@ Best regards</OBJECT>
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -2607,7 +2517,7 @@ Best regards</OBJECT>
 
 your delete request cannot be processed due to one or more conflicts.
 
-Please go to %FIRSTspiritSOCKETURL% and try to resolve all conflicts. Afterwards you can resume the delete process.
+Please go to %WEBeditURL% and try to resolve all conflicts. Afterwards you can resume the delete process.
 
 Best regards</OBJECT>
 				</FIELD>
@@ -2691,7 +2601,7 @@ Best regards</OBJECT>
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -2777,7 +2687,7 @@ Best regards</OBJECT>
 
 %CREATOR% created a delete request.
 
-Please go to %FIRSTspiritSOCKETURL% and use the report "Tasks" to review this request.
+Please go to %WEBeditURL% and use the report "Tasks" to review this request.
 
 Best regards</OBJECT>
 				</FIELD>
@@ -2933,7 +2843,7 @@ Best regards</OBJECT>
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -3019,7 +2929,7 @@ Best regards</OBJECT>
 
 %CREATOR% created a delete request.
 
-Please go to %FIRSTspiritSOCKETURL% and use the report "Tasks" to review this request.
+Please go to %WEBeditURL% and use the report "Tasks" to review this request.
 
 Best regards</OBJECT>
 				</FIELD>
@@ -3103,7 +3013,7 @@ Best regards</OBJECT>
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -3185,7 +3095,7 @@ Best regards</OBJECT>
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -3267,7 +3177,7 @@ Best regards</OBJECT>
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -3353,7 +3263,7 @@ Best regards</OBJECT>
 
 your delete request failed.
 
-Please go to %FIRSTspiritSOCKETURL% in order to retry the operation if that has not already happened.
+Please go to %WEBeditURL% in order to retry the operation if that has not already happened.
 
 Best regards</OBJECT>
 				</FIELD>
@@ -3437,7 +3347,7 @@ Best regards</OBJECT>
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -3519,7 +3429,7 @@ Best regards</OBJECT>
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -3601,7 +3511,7 @@ Best regards</OBJECT>
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -3683,7 +3593,7 @@ Best regards</OBJECT>
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -3765,7 +3675,7 @@ Best regards</OBJECT>
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -3847,7 +3757,7 @@ Best regards</OBJECT>
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -3933,7 +3843,7 @@ Best regards</OBJECT>
 
 your delete request failed.
 
-Please go to %FIRSTspiritSOCKETURL% in order to retry the operation if that has not already happened.
+Please go to %WEBeditURL% in order to retry the operation if that has not already happened.
 
 Best regards</OBJECT>
 				</FIELD>
@@ -4017,7 +3927,7 @@ Best regards</OBJECT>
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -4099,7 +4009,7 @@ Best regards</OBJECT>
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -4181,7 +4091,7 @@ Best regards</OBJECT>
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -4267,7 +4177,7 @@ Best regards</OBJECT>
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -4349,7 +4259,7 @@ Best regards</OBJECT>
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -4435,7 +4345,7 @@ Best regards</OBJECT>
 
 your delete request was rejected.
 
-Please go to %FIRSTspiritSOCKETURL% and check the rejected object for mistakes. After that you will be given the option to send a new request.
+Please go to %WEBeditURL% and check the rejected object for mistakes. After that you will be given the option to send a new request.
 
 Best regards</OBJECT>
 				</FIELD>
@@ -4519,7 +4429,7 @@ Best regards</OBJECT>
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -4601,7 +4511,7 @@ Best regards</OBJECT>
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -4683,7 +4593,7 @@ Best regards</OBJECT>
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -4765,7 +4675,7 @@ Best regards</OBJECT>
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -4847,7 +4757,7 @@ Best regards</OBJECT>
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -4929,7 +4839,7 @@ Best regards</OBJECT>
 				</FIELD>
 				<FIELD name="email_props" type="int">0</FIELD>
 				<FIELD name="email_text">
-					<OBJECT class="java.lang.String">%FIRSTspiritURL%</OBJECT>
+					<OBJECT class="java.lang.String">%WEBeditURL%</OBJECT>
 				</FIELD>
 				<FIELD name="email_title">
 					<OBJECT class="java.lang.String"></OBJECT>
@@ -5015,7 +4925,7 @@ Best regards</OBJECT>
 
 your delete request was cancelled.
 
-Please go to %FIRSTspiritSOCKETURL% and check the object for mistakes before you start a new request.
+Please go to %WEBeditURL% and check the object for mistakes before you start a new request.
 
 Best regards</OBJECT>
 				</FIELD>
@@ -6188,170 +6098,6 @@ Best regards</OBJECT>
 				<FIELD name="source" type="long">76</FIELD>
 				<FIELD name="storeElementRights" type="int">4</FIELD>
 				<FIELD name="target" type="long">30</FIELD>
-				<FIELD name="taskRights" type="int">0</FIELD>
-				<FIELD name="type" type="int">2</FIELD>
-				<FIELD name="useFixedRights" type="boolean">true</FIELD>
-				<FIELD name="useStoreElementRights" type="boolean">false</FIELD>
-				<FIELD name="useTaskRights" type="boolean">false</FIELD>
-				<FIELD name="user">
-					<OBJECT class="java.util.ArrayList">
-					</OBJECT>
-				</FIELD>
-			</OBJECT>
-			<OBJECT class="de.espirit.firstspirit.workflow.model.TransitionImpl">
-				<FIELD name="_descriptions">
-					<OBJECT class="java.util.HashMap">
-						<OBJECT class="java.lang.String">DE</OBJECT>
-						<OBJECT class="java.lang.String"></OBJECT>
-						<OBJECT class="java.lang.String">EN</OBJECT>
-						<OBJECT class="java.lang.String"></OBJECT>
-					</OBJECT>
-				</FIELD>
-				<FIELD name="_names">
-					<OBJECT class="java.util.HashMap">
-						<OBJECT class="java.lang.String">DE</OBJECT>
-						<OBJECT class="java.lang.String">Löse Deployment aus</OBJECT>
-						<OBJECT class="java.lang.String">EN</OBJECT>
-						<OBJECT class="java.lang.String">Trigger deployment</OBJECT>
-					</OBJECT>
-				</FIELD>
-				<FIELD name="description">
-					<OBJECT class="java.lang.String"></OBJECT>
-				</FIELD>
-				<FIELD name="email_groups">
-					<OBJECT class="java.util.ArrayList">
-					</OBJECT>
-				</FIELD>
-				<FIELD name="email_props" type="int">0</FIELD>
-				<FIELD name="email_text">
-					<OBJECT class="java.lang.String"></OBJECT>
-				</FIELD>
-				<FIELD name="email_title">
-					<OBJECT class="java.lang.String"></OBJECT>
-				</FIELD>
-				<FIELD name="email_user">
-					<OBJECT class="java.util.ArrayList">
-					</OBJECT>
-				</FIELD>
-				<FIELD name="groups">
-					<OBJECT class="java.util.ArrayList">
-						<OBJECT class="java.lang.String">Everyone</OBJECT>
-					</OBJECT>
-				</FIELD>
-				<FIELD name="id" type="long">92</FIELD>
-				<FIELD name="labelPos">
-					<ARRAY type="double">
-						<OBJECT class="java.lang.Double">497.3708629755645</OBJECT>
-						<OBJECT class="java.lang.Double">3.9949318340617372</OBJECT>
-					</ARRAY>
-				</FIELD>
-				<FIELD name="name">
-					<OBJECT class="java.lang.String">trigger_deployment</OBJECT>
-				</FIELD>
-				<FIELD name="noEditorGroups">
-					<OBJECT class="java.util.ArrayList">
-					</OBJECT>
-				</FIELD>
-				<FIELD name="points">
-					<ARRAY type="[I">
-						<ARRAY type="int">
-							<OBJECT class="java.lang.Integer">3317</OBJECT>
-							<OBJECT class="java.lang.Integer">87</OBJECT>
-						</ARRAY>
-						<ARRAY type="int">
-							<OBJECT class="java.lang.Integer">3428</OBJECT>
-							<OBJECT class="java.lang.Integer">90</OBJECT>
-						</ARRAY>
-					</ARRAY>
-				</FIELD>
-				<FIELD name="port_source" type="int">1</FIELD>
-				<FIELD name="port_target" type="int">0</FIELD>
-				<FIELD name="position" type="int">0</FIELD>
-				<FIELD name="source" type="long">93</FIELD>
-				<FIELD name="storeElementRights" type="int">4</FIELD>
-				<FIELD name="target" type="long">91</FIELD>
-				<FIELD name="taskRights" type="int">0</FIELD>
-				<FIELD name="type" type="int">2</FIELD>
-				<FIELD name="useFixedRights" type="boolean">true</FIELD>
-				<FIELD name="useStoreElementRights" type="boolean">false</FIELD>
-				<FIELD name="useTaskRights" type="boolean">false</FIELD>
-				<FIELD name="user">
-					<OBJECT class="java.util.ArrayList">
-					</OBJECT>
-				</FIELD>
-			</OBJECT>
-			<OBJECT class="de.espirit.firstspirit.workflow.model.TransitionImpl">
-				<FIELD name="_descriptions">
-					<OBJECT class="java.util.HashMap">
-						<OBJECT class="java.lang.String">DE</OBJECT>
-						<OBJECT class="java.lang.String"></OBJECT>
-						<OBJECT class="java.lang.String">EN</OBJECT>
-						<OBJECT class="java.lang.String"></OBJECT>
-					</OBJECT>
-				</FIELD>
-				<FIELD name="_names">
-					<OBJECT class="java.util.HashMap">
-						<OBJECT class="java.lang.String">DE</OBJECT>
-						<OBJECT class="java.lang.String">Freigabe beendet</OBJECT>
-						<OBJECT class="java.lang.String">EN</OBJECT>
-						<OBJECT class="java.lang.String">Release finished</OBJECT>
-					</OBJECT>
-				</FIELD>
-				<FIELD name="description">
-					<OBJECT class="java.lang.String"></OBJECT>
-				</FIELD>
-				<FIELD name="email_groups">
-					<OBJECT class="java.util.ArrayList">
-					</OBJECT>
-				</FIELD>
-				<FIELD name="email_props" type="int">0</FIELD>
-				<FIELD name="email_text">
-					<OBJECT class="java.lang.String"></OBJECT>
-				</FIELD>
-				<FIELD name="email_title">
-					<OBJECT class="java.lang.String"></OBJECT>
-				</FIELD>
-				<FIELD name="email_user">
-					<OBJECT class="java.util.ArrayList">
-					</OBJECT>
-				</FIELD>
-				<FIELD name="groups">
-					<OBJECT class="java.util.ArrayList">
-						<OBJECT class="java.lang.String">Everyone</OBJECT>
-					</OBJECT>
-				</FIELD>
-				<FIELD name="id" type="long">94</FIELD>
-				<FIELD name="labelPos">
-					<ARRAY type="double">
-						<OBJECT class="java.lang.Double">540.1459854014598</OBJECT>
-						<OBJECT class="java.lang.Double">-1.6210296808748976</OBJECT>
-					</ARRAY>
-				</FIELD>
-				<FIELD name="name">
-					<OBJECT class="java.lang.String">deploy_finished</OBJECT>
-				</FIELD>
-				<FIELD name="noEditorGroups">
-					<OBJECT class="java.util.ArrayList">
-					</OBJECT>
-				</FIELD>
-				<FIELD name="points">
-					<ARRAY type="[I">
-						<ARRAY type="int">
-							<OBJECT class="java.lang.Integer">3508</OBJECT>
-							<OBJECT class="java.lang.Integer">90</OBJECT>
-						</ARRAY>
-						<ARRAY type="int">
-							<OBJECT class="java.lang.Integer">3761</OBJECT>
-							<OBJECT class="java.lang.Integer">86</OBJECT>
-						</ARRAY>
-					</ARRAY>
-				</FIELD>
-				<FIELD name="port_source" type="int">1</FIELD>
-				<FIELD name="port_target" type="int">0</FIELD>
-				<FIELD name="position" type="int">0</FIELD>
-				<FIELD name="source" type="long">91</FIELD>
-				<FIELD name="storeElementRights" type="int">4</FIELD>
-				<FIELD name="target" type="long">4</FIELD>
 				<FIELD name="taskRights" type="int">0</FIELD>
 				<FIELD name="type" type="int">2</FIELD>
 				<FIELD name="useFixedRights" type="boolean">true</FIELD>

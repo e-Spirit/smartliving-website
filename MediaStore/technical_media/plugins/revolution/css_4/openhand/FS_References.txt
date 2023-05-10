@@ -1,6 +1,0 @@
-[self]
-uid=openhand
-gid=c6a3d434-d667-49f0-b76a-b07cb703e2d7
-uidType=MEDIASTORE_LEAF
-class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
-

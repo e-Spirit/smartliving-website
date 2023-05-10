@@ -1,0 +1,12 @@
+[self]
+uid=news_json
+gid=793eeb14-1776-403d-9d1c-559e3260642e
+uidType=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.PageImpl
+
+[requiredProjectId]
+uid=news_json
+gid=cf45856c-b117-4a7c-a08e-fa810753a0e8
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
+

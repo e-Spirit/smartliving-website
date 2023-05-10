@@ -1,0 +1,6 @@
+[self]
+uid=did_you_know__p3ws5r3ehaip~#~content
+gid=b34567fc-f724-49aa-ab6a-91e2432721ee
+store=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.BodyImpl
+

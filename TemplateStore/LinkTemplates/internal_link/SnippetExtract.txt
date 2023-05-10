@@ -1,1 +1,1 @@
-lt_link.get.getDisplayName(#language)
+if(!lt_link.isEmpty(), lt_link.pageRef.getDisplayName(#language), "Missing link")

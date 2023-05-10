@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <FIELDS>
-	<FIELD name='md_creation_date'><DATE>1637225648914</DATE></FIELD>
 	<FIELD name='fsai_facesPayload'><TEXT>{
   "version" : 2,
   "languageToResponse" : {
@@ -15,95 +14,95 @@
   "languageToResponse" : {
     "§" : {
       "labels" : [ {
-        "name" : "Phone",
-        "confidence" : 99.417015,
-        "instances" : [ ],
-        "parents" : [ {
-          "name" : "Electronics"
-        } ]
-      }, {
         "name" : "Electronics",
-        "confidence" : 99.417015,
+        "confidence" : 92.88781,
         "instances" : [ ],
         "parents" : [ ]
       }, {
         "name" : "Mobile Phone",
-        "confidence" : 99.07789,
-        "instances" : [ {
-          "boundingBox" : {
-            "width" : 0.24679516,
-            "height" : 0.6461478,
-            "left" : 0.14481576,
-            "top" : 0.208234
-          },
-          "confidence" : 77.370255
-        }, {
-          "boundingBox" : {
-            "width" : 0.18882872,
-            "height" : 0.27483815,
-            "left" : 0.40481022,
-            "top" : 0.12601136
-          },
-          "confidence" : 54.420036
-        } ],
-        "parents" : [ {
-          "name" : "Phone"
-        }, {
-          "name" : "Electronics"
-        } ]
-      }, {
-        "name" : "Cell Phone",
-        "confidence" : 99.07789,
+        "confidence" : 92.88781,
         "instances" : [ ],
         "parents" : [ {
-          "name" : "Phone"
+          "name" : "Electronics"
         }, {
+          "name" : "Phone"
+        } ]
+      }, {
+        "name" : "Phone",
+        "confidence" : 92.88781,
+        "instances" : [ ],
+        "parents" : [ {
           "name" : "Electronics"
         } ]
       }, {
         "name" : "Person",
-        "confidence" : 98.754105,
-        "instances" : [ {
-          "boundingBox" : {
-            "width" : 0.6030361,
-            "height" : 0.6768986,
-            "left" : 0.39396968,
-            "top" : 0.0062007625
-          },
-          "confidence" : 98.754105
-        } ],
-        "parents" : [ ]
-      }, {
-        "name" : "Human",
-        "confidence" : 98.754105,
+        "confidence" : 81.4442,
         "instances" : [ ],
         "parents" : [ ]
       }, {
-        "name" : "Wood",
-        "confidence" : 92.96533,
-        "instances" : [ ],
-        "parents" : [ ]
-      }, {
-        "name" : "Iphone",
-        "confidence" : 81.23762,
+        "name" : "Security",
+        "confidence" : 81.4442,
         "instances" : [ ],
         "parents" : [ {
-          "name" : "Mobile Phone"
-        }, {
-          "name" : "Phone"
-        }, {
+          "name" : "Person"
+        } ]
+      }, {
+        "name" : "Speaker",
+        "confidence" : 70.46074,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.28335667,
+            "height" : 0.76370656,
+            "left" : 0.1192786,
+            "top" : 0.16808225
+          },
+          "confidence" : 70.46074
+        } ],
+        "parents" : [ {
+          "name" : "Electronics"
+        } ]
+      }, {
+        "name" : "Wood",
+        "confidence" : 69.99632,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Credit Card",
+        "confidence" : 63.898563,
+        "instances" : [ {
+          "boundingBox" : {
+            "width" : 0.1856587,
+            "height" : 0.28781056,
+            "left" : 0.4082758,
+            "top" : 0.1258383
+          },
+          "confidence" : 63.898563
+        } ],
+        "parents" : [ {
+          "name" : "Text"
+        } ]
+      }, {
+        "name" : "Text",
+        "confidence" : 63.898563,
+        "instances" : [ ],
+        "parents" : [ ]
+      }, {
+        "name" : "Camera",
+        "confidence" : 56.005733,
+        "instances" : [ ],
+        "parents" : [ {
           "name" : "Electronics"
         } ]
       }, {
         "name" : "Hardwood",
-        "confidence" : 68.40875,
+        "confidence" : 55.14186,
         "instances" : [ ],
         "parents" : [ {
           "name" : "Wood"
         } ]
       } ],
       "orientationCorrection" : null,
-      "labelModelVersion" : "2.0"
+      "labelModelVersion" : "3.0"
     }
   }
 }</TEXT></FIELD>
@@ -121,7 +120,7 @@
   "languageToResponse" : {
     "§" : {
       "moderationLabels" : [ ],
-      "moderationModelVersion" : "5.0",
+      "moderationModelVersion" : "6.1",
       "humanLoopActivationOutput" : null
     }
   }
@@ -129,7 +128,7 @@
 	<FIELD name='fsai_tags'><TEXT>{
   "version" : 2,
   "languageToResponse" : {
-    "§" : "#Cell Phone #Wood #Hardwood #Phone #Person #Mobile Phone #Electronics #Human #Iphone"
+    "§" : "#Camera #Text #Credit Card #Speaker #Wood #Hardwood #Phone #Person #Mobile Phone #Security #Electronics"
   }
 }</TEXT></FIELD>
 </FIELDS>

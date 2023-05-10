@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<FORMATTEMPLATE id="5132882055671182267" name="deleted_block">
+<FORMATTEMPLATE id="6571468804531010717" name="deleted_block">
 	<LANG displayname="Deleted (Block)" language="EN"/>
 	<LANG displayname="Gelöscht (Absatz)" language="DE"/>
 	<style attr="deleted" system="1" tag="deleted_block" view="marked" visible="0">

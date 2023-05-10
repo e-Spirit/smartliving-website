@@ -1,0 +1,6 @@
+[self]
+uid=news_overview~#~content
+gid=26d7e209-5f22-47c7-9115-fa3e9c5a9922
+store=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.BodyImpl
+

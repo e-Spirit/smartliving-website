@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_headline'><TEXT>Geniesse Dein smartes Zuhause</TEXT></FIELD>
+	<FIELD name='st_subheadline'><TEXT>Mit intuitiven Geräten und einfach zu bedienenden Funktionen können sich unsere Kunden ihr individuelles Zuhause gestalten. Von der Lichtsteuerung bis zur zentralen Medienverwaltung.</TEXT></FIELD>
+	<FIELD name='st_cta'><LINK><CMS_LINK linktemplate="internal_link" type="genericLink"><TEMPLATECONTENT><CMS_VALUE name="lt_link"><LANG id="§" set="1"><UID>our_solutions_vyi5c042ui3n</UID><UIDTYPE>SITESTORE_LEAF</UIDTYPE><REMOTE/></LANG></CMS_VALUE><CMS_VALUE name="lt_text"><LANG id="§" set="1"><TEXT>Schauen Sie sich unsere innovativen Lösungen an</TEXT></LANG></CMS_VALUE></TEMPLATECONTENT></CMS_LINK></LINK></FIELD>
+</FIELDS>

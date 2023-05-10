@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FIELDS>
+	<FIELD name='st_headline'><TEXT>Our team</TEXT></FIELD>
+	<FIELD name='st_subheadline'><DOM><subline>We are interdisciplinary</subline></DOM></FIELD>
+	<FIELD name='st_text'><DOM><p><b>SMART LIVING</b> is an interdisciplinary team of experts from various disciplines. We are united in our many years of experience with digital technologies and solutions as well as the interest in new and exciting opportunities that are constantly being formed and changed. From this, a team has emerged which sees customer satisfaction as the highest goal and constantly working to achieve it.</p></DOM></FIELD>
+	<FIELD name='st_image_alt_text'><TEXT>A man and a woman stand in the kitchen looking at a tablet</TEXT></FIELD>
+</FIELDS>

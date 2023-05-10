@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<FORMATTEMPLATE id="-6832423890409316069" name="td">
+<FORMATTEMPLATE id="-6640128329218512895" name="td">
 	<LANG displayname="Tabellenzelle" language="DE"/>
 	<LANG displayname="Table cell" language="EN"/>
 	<style parent="tr" system="1" tag="td" view="table_cell" visible="0">

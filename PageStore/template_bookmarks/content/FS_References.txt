@@ -1,0 +1,6 @@
+[self]
+uid=template_bookmarks~#~content
+gid=cd9b8517-0963-4944-a731-46f6d0827ef1
+store=PAGESTORE
+class=de.espirit.firstspirit.store.access.pagestore.BodyImpl
+

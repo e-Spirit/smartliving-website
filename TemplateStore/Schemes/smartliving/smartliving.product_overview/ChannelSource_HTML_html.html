@@ -1,0 +1,82 @@
+<CMS_HEADER>
+</CMS_HEADER>
+$CMS_IF(ps_toggle_wishlist)$
+$CMS_RENDER(template:"set_wishlist_cookie")$
+$CMS_END_IF$
+
+$CMS_IF(#cs.isFirstContentRow)$
+<section class="py-24 bg-white" >
+	<div class="container px-4 mx-auto text-center">
+		<div class="pt-12 pb-20 2xl:pb-22 bg-blueGray-100">	 
+			<div class="pb-9 text-center border-b border-black border-opacity-5">
+				<div class="relative">		 
+					$CMS_FOR(for_category, #row.categoryList)$
+						<h2 class="mb-5 md:mb-0 text-5xl xl:text-10xl leading-normal font-heading font-medium text-center text-gray-900">$CMS_VALUE(for_category.name)$</h2>
+					$CMS_END_FOR$
+					<span class="md:absolute md:right-0 md:bottom-3 text-sm text-gray-400 font-medium">$CMS_VALUE(#cs.contentLength)$ $CMS_IF(#cs.contentLength == 1)$$CMS_VALUE(ps_translations.product)$$CMS_ELSE$$CMS_VALUE(ps_translations.products)$$CMS_END_IF$ $CMS_VALUE(ps_translations.found)$.</span>
+				</div>
+			</div>		 
+		</div>		
+		<div class="flex flex-wrap -mx-3 mb-20 md:mb-40">
+$CMS_END_IF$
+			$--Products--$
+			<div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/3 px-3 mb-24">			
+				$CMS_IF(!#row.image.isEmpty)$
+					<div class="mb-9 w-full overflow-hidden rounded-2xl" $CMS_VALUE(editorId(entity: #row, view:"product", editorName:"tt_image"))$>
+						$CMS_IF(!ps_product_detail_page.isEmpty())$<a href="$CMS_REF(ps_product_detail_page, contentId:#row.fs_id, abs:1)$">$CMS_END_IF$
+							$CMS_RENDER(template:"render_image", prm_image: #row.image, 
+												prm_image_alt_text: #row.image_alt_text,
+												prm_defaultResolution: "4x3_M",
+												prm_resolutions: {"sm": "4x3_S"},
+												prm_cssClasses: "w-full",
+												prm_inputName: "st_image")$		
+						$CMS_IF(!ps_product_detail_page.isEmpty())$</a>$CMS_END_IF$
+					</div>			
+				$CMS_END_IF$
+				$CMS_FOR(for_category, #row.categoryList)$			 
+					<p class="mb-3 text-sm text-gray-400 font-medium ">$CMS_VALUE(for_category.name)$</p>
+				$CMS_END_FOR$
+				<div $CMS_VALUE(editorId(entity: #row, view:"product", editorName:"tt_name"))$>
+					$CMS_IF(!ps_product_detail_page.isEmpty())$<a href="$CMS_REF(ps_product_detail_page, contentId:#row.fs_id, abs:1)$">$CMS_END_IF$
+						<p class="mb-4 text-xl leading-8 font-heading font-medium hover:underline">$CMS_VALUE(#row.name)$</p>
+					$CMS_IF(!ps_product_detail_page.isEmpty())$</a>$CMS_END_IF$
+				</div>
+				<div $CMS_VALUE(editorId(entity: #row, view:"product", editorName:"tt_price"))$>
+					<p class="text-xl text-gray-900 font-heading font-medium tracking-tighter">			 
+						<span>$CMS_VALUE(#row.price)$</span>			 
+					</p>
+				</div>
+				$CMS_IF(ps_toggle_wishlist)$
+				<div class="flex flex-wrap items-center">
+					<div class="w-1/2 xl:w-2/12">
+						$CMS_SET(set_image_alt_text)$$CMS_RENDER(template:"render_image_alt_text", prm_image: #row.image, prm_text: #row.image_alt_text)$$CMS_END_SET$						
+						<a href="#" id="favorite" type="button" onclick="$CMS_FOR(l, #global.project.languages)$setWishListCookie('$CMS_VALUE(#row.fs_id)$', '$CMS_VALUE(l.getAbbreviation)$', '$CMS_VALUE(#row.getValue("name_" + l.getAbbreviation))$', '$CMS_IF(!#global.preview)$$CMS_END_IF$$CMS_REF(pageref:ps_product_detail_page.getUid(),contentId:#row.getId(), abs:1, lang:l.getAbbreviation)$', '$CMS_IF(!#global.preview)$$CMS_END_IF$$CMS_REF(#row.image, abs:1, res:"4x3_M")$', '$CMS_VALUE(set_image_alt_text)$');$CMS_END_FOR$">$--<i id="emptyHeart$CMS_VALUE(#row.fs_id)$" class="far fa-heart emptyHeart"></i><i id="solidHeart$CMS_VALUE(#row.fs_id)$" class="fas fa-heart solidHeart"></i>--$																					
+							<svg id="heart$CMS_VALUE(#row.fs_id)$" class="fav_heart xl:mx-auto 2xl:mr-0 ml-auto text-gray-400 hover:text-gray-500 cursor-pointer" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_476_640)">
+									<path d="M13.5003 26.2061L4.70164 16.9253C3.92908 16.1443 3.41913 15.1374 3.24404 14.0471C3.06896 12.9568 3.23761 11.8385 3.72612 10.8505V10.8505C4.09513 10.1046 4.63415 9.45803 5.29877 8.96406C5.96338 8.47008 6.73457 8.14284 7.54879 8.00931C8.36301 7.87578 9.19696 7.93978 9.98192 8.19603C10.7669 8.45228 11.4804 8.89345 12.0637 9.48319L13.5003 10.9358L14.9369 9.48319C15.5202 8.89345 16.2337 8.45228 17.0186 8.19603C17.8036 7.93978 18.6376 7.87578 19.4518 8.00931C20.266 8.14284 21.0372 8.47008 21.7018 8.96406C22.3664 9.45803 22.9054 10.1046 23.2745 10.8505V10.8505C23.763 11.8385 23.9316 12.9568 23.7565 14.0471C23.5814 15.1374 23.0715 16.1443 22.2989 16.9253L13.5003 26.2061Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</g>
+								<defs><clipPath id="clip0_476_640"><rect width="27" height="27" fill="white"></rect></clipPath></defs>
+							</svg>
+						</a>
+					</div>
+					<script type="text/javascript">
+						setFav('$CMS_VALUE(#row.fs_id)$', '$CMS_VALUE(#global.language.abbreviation)$');	
+					</script>				
+					$CMS_END_IF$
+					<div class="mt-2 xl:mt-0  xl:w-9/12 w-1/2"> 
+						<div class="lg:mx-auto xl:mr-0 lg:max-w-max">
+							$CMS_IF(!ps_product_detail_page.isEmpty())$<a href="$CMS_REF(ps_product_detail_page, contentId:#row.fs_id, abs:1)$">$CMS_END_IF$
+								<svg class="inline py-px text-gray-400" width="25" height="25" viewBox="0 0 19 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11 3.75L16.25 9M16.25 9L11 14.25M16.25 9L2.75 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							$CMS_IF(!ps_product_detail_page.isEmpty())$</a>$CMS_END_IF$
+						</div>
+					</div>				
+				</div>
+			</div>
+			$--Products--$			
+$CMS_IF(#cs.isLastContentRow)$			
+		</div>
+	</div>
+</section>
+$CMS_END_IF$

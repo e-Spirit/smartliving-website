@@ -833,6 +833,8 @@
 					<OBJECT class="java.util.HashMap">
 						<OBJECT class="java.lang.String">DE</OBJECT>
 						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">DK</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
 						<OBJECT class="java.lang.String">EN</OBJECT>
 						<OBJECT class="java.lang.String"></OBJECT>
 						<OBJECT class="java.lang.String">ES</OBJECT>
@@ -841,11 +843,15 @@
 						<OBJECT class="java.lang.String"></OBJECT>
 						<OBJECT class="java.lang.String">PT</OBJECT>
 						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">PT_BR</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
 					</OBJECT>
 				</FIELD>
 				<FIELD name="_names">
 					<OBJECT class="java.util.HashMap">
 						<OBJECT class="java.lang.String">DE</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">DK</OBJECT>
 						<OBJECT class="java.lang.String"></OBJECT>
 						<OBJECT class="java.lang.String">EN</OBJECT>
 						<OBJECT class="java.lang.String">success_queued</OBJECT>
@@ -854,6 +860,8 @@
 						<OBJECT class="java.lang.String">FR</OBJECT>
 						<OBJECT class="java.lang.String"></OBJECT>
 						<OBJECT class="java.lang.String">PT</OBJECT>
+						<OBJECT class="java.lang.String"></OBJECT>
+						<OBJECT class="java.lang.String">PT_BR</OBJECT>
 						<OBJECT class="java.lang.String"></OBJECT>
 					</OBJECT>
 				</FIELD>

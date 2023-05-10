@@ -1,6 +1,0 @@
-[self]
-uid=interactivevideo
-gid=32c74ee3-328f-4a0c-9eeb-26f9fd7f2bd8
-uidType=MEDIASTORE_LEAF
-class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
-

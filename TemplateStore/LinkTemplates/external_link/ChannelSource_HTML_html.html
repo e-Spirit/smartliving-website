@@ -1,2 +1,5 @@
-$CMS_SET(set_lt_text, if(!lt_text.isEmpty(), lt_text, #this.template.getDisplayName(#global.language)))$	
-<a class="text-light-blue" $CMS_IF(isSet(set_linkColor))$style="color: $CMS_VALUE(set_linkColor)$"$CMS_END_IF$ href="$CMS_VALUE(lt_url)$" target="$CMS_VALUE(lt_link_behavior)$">$CMS_VALUE(set_lt_text)$</a>
+$CMS_IF(!lt_text.isEmpty())$
+	<a class="text-link-text hover:text-link-hover underline"
+		target="_blank" 
+		href="$CMS_VALUE(lt_link.convert2(), default:"")$">$CMS_VALUE(lt_text.convert2())$</a>	
+$CMS_END_IF$

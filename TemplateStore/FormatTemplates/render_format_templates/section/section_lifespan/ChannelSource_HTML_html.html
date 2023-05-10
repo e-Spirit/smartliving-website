@@ -1,0 +1,99 @@
+$--
+	Adds an HTML element to the toolbar that contains the liftespan information.
+	
+	IMPORTANT: Catalogs are not supportet
+	
+	Required section input components:
+		<CMS_INPUT_DATE name="st_sectionLifespanFrom" hFill="yes">
+			<LANGINFOS>
+				<LANGINFO lang="*" label="Gültigkeitsbeginn"/>
+			</LANGINFOS>
+		</CMS_INPUT_DATE>
+		
+		<CMS_INPUT_DATE name="st_sectionLifespanTo" hFill="yes">
+			<LANGINFOS>
+				<LANGINFO lang="*" label="Gültigkeitsende"/>
+			</LANGINFOS>
+		</CMS_INPUT_DATE>
+		
+	Parameters: 
+		prm_lifespanResult		Map				(Required)		Result object that can be used to access the information in the parent context.
+		prm_sectionFormData		FormData		(Required)		That contains the reuired input fields (see above).
+		prm_sectionId			long			(Required)		Long id to identify the section.
+		prm_sectionEditorId		editorId		(Required)		Editor id to identify the section within the ContanCreator.
+		prm_sectionToolbarItems	Array			(Required)		Array where the HTML element with the action can be added.
+
+			
+	Example:
+		$CMS_RENDER(template:"section_lifespan", 
+					prm_lifespanResult: set_sectionLifespan, 
+					prm_sectionFormData: for_section.formData,
+					prm_sectionId: for_section.id,
+					prm_sectionEditorId: editorId(details: "WEBEDIT", element: for_section, json:true),
+					prm_sectionToolbarItems: set_sectionToolbarItems)$	
+		
+	
+--$
+
+$CMS_SET(set_sectionValidFrom, if(!prm_sectionFormData.st_sectionLifespanFrom.isEmpty(), prm_sectionFormData.st_sectionLifespanFrom))$
+$CMS_SET(set_sectionValidTo, if(!prm_sectionFormData.st_sectionLifespanTo.isEmpty(), prm_sectionFormData.st_sectionLifespanTo))$
+$CMS_SET(void, prm_lifespanResult.put("hasLifespan", !set_sectionValidFrom.isEmpty() || !set_sectionValidTo.isEmpty()))$
+$CMS_SET(void, prm_lifespanResult.put("valid", (set_sectionValidFrom.isEmpty() || set_sectionValidFrom.before(#global.now)) 
+														&& (set_sectionValidTo.isEmpty() || set_sectionValidTo.after(#global.now))))$
+$CMS_IF(set_sectionLifespan.hasLifespan && #global.is("WEBEDIT"))$
+	$CMS_SET(set_sectionToolbarItem)$
+		<div	data-section-lifespan='{"validFrom": $CMS_VALUE(set_sectionValidFrom.getTimeInMillis(), default: -1)$,	"validTo": $CMS_VALUE(set_sectionValidTo.getTimeInMillis(), default: -1)$}'
+				data-section-lifespan-id='$CMS_VALUE(prm_sectionId)$'				
+				data-section-lifespan-editor-id='$CMS_VALUE(prm_sectionEditorId)$'				
+				title="$CMS_VALUE(set_sectionValidFrom.format("'from' dd.MM.yyyy hh:mm:ss"), default: "")$ $CMS_VALUE(set_sectionValidTo.format("'to' dd.MM.yyyy hh:mm:ss"), default: "")$">
+			<img class="cursor-pointer" src="$CMS_REF(media:"scheduled")$">
+		</div>
+	$CMS_END_SET$
+	$CMS_SET(void, prm_sectionToolbarItems.add(set_sectionToolbarItem.toString()))$
+	$CMS_SET(set_script)$
+			<script type="text/javascript">
+				(function () {
+					function decorateSections(date, withControls, cssClass) {
+						let lifeSpanSectionControls = document.querySelectorAll("[data-section-lifespan]");
+						for (const lifeSpanSectionControl of lifeSpanSectionControls) {
+							let sectionLifespan = JSON.parse(lifeSpanSectionControl.dataset.sectionLifespan);
+							let sectionLifespanId = lifeSpanSectionControl.dataset.sectionLifespanId;
+							let sectionLifespanEditorId = JSON.parse(lifeSpanSectionControl.dataset.sectionLifespanEditorId);
+							lifeSpanSectionControl.addEventListener('click', (event) => {
+								console.log("Event", sectionLifespanId);
+								top.WE_API.Common.execute(
+									"script:section_lifespan",
+										{sectionLifespanId: sectionLifespanId}
+								);
+							});
+							let section = document.querySelector('[data-fs-id="' + sectionLifespanEditorId["data-fs-id"] + '"]');
+							if (sectionLifespan.validFrom < date && (date < sectionLifespan.validTo || sectionLifespan.validTo <= 0)) {
+								if(withControls){
+									lifeSpanSectionControl.classList.remove(...cssClass);
+								}
+								section.classList.remove(...cssClass);
+							} else {
+								if(withControls){
+									lifeSpanSectionControl.classList.add(...cssClass);
+								}								
+								section.classList.add(...cssClass);
+							}
+						}
+					}
+
+					function init() {
+						if (typeof top.MPP_API !== "undefined" && top.MPP_API.isParameterized()) {
+							decorateSections(top.MPP_API.getTimeParameter(), true, ["hidden"]);
+							top.MPP_API.addTimeParameterListener((date) => decorateSections(date, true, ["custom-cc-hidden"]));
+						} else {
+							decorateSections(Date.now(), false, ["custom-cc-grayscale", "custom-cc-opacity-50"]);
+						}
+					}
+					init();
+				})();
+			</script>
+	$CMS_END_SET$
+	$CMS_RENDER(template: "javascript_collector", prm_action: "add", 
+												prm_jSStatement: set_script, 
+												prm_jSId: "section_lifespan_js")$
+$CMS_END_IF$

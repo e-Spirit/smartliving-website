@@ -1,0 +1,17 @@
+[self]
+uid=tailwind
+gid=2c8250df-414f-438c-8e4c-814bc3d50aed
+uidType=TEMPLATESTORE_FORMATTEMPLATE
+class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
+
+[optionalId]
+uid=tailwind_3_3_1
+gid=84647bb0-b73f-4dd8-990a-4d5badd0d319
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+
+uid=tailwind_min
+gid=3a475a1f-2df3-4307-a7b9-f28f34e7e87c
+uidType=MEDIASTORE_LEAF
+class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
+
