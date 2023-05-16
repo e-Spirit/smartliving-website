@@ -50,11 +50,6 @@ gid=900545a0-3a92-48fc-a469-91d6538a3795
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.SectionTemplateImpl
 
-uid=interactive_video
-gid=38360b57-8833-4105-a9fa-0361eba7dc8a
-uidType=TEMPLATESTORE
-class=de.espirit.firstspirit.store.access.templatestore.SectionTemplateImpl
-
 uid=javascript_collector
 gid=57757562-9038-4e33-b8c5-0d7a34cec929
 uidType=TEMPLATESTORE_FORMATTEMPLATE

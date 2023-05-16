@@ -1,2 +1,0 @@
-if(!st_product.isEmpty() && st_product.dataset.formData.tt_name.isEmpty(), st_product.dataset.formData.tt_name, "Product ") 
-+ if(!st_time.isEmpty(), st_time.format("0.000"))

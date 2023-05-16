@@ -5,8 +5,8 @@ store=PAGESTORE
 class=de.espirit.firstspirit.store.access.pagestore.SectionImpl
 
 [previousSibling]
-uid=template_bookmarks~#~content~#~bookmark_interaktives_video
-gid=de6af965-02be-48a8-85dd-be7829a293d5
+uid=template_bookmarks~#~content~#~bookmark_text___image
+gid=87857c84-5147-4858-afca-8fe15358806d
 store=PAGESTORE
 class=de.espirit.firstspirit.store.access.pagestore.SectionImpl
 

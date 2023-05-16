@@ -2,10 +2,6 @@
 application/json  Modules/ProjectApps/System/AdvancedUrlFactory Configuration/configuration.json
 application/octet-stream  Modules/ProjectApps/System/AdvancedUrlFactory Configuration/customConversionTable.conf
 text/plain        Modules/ProjectApps/System/AdvancedUrlFactory Configuration/version.txt
-application/octet-stream  Modules/ProjectApps/YouTube-DAP-Integration/YoutubeVideoProjectApp/configuration.properties
-text/plain        Modules/ProjectApps/YouTube-DAP-Integration/YoutubeVideoProjectApp/version.txt
-text/xml          Modules/ProjectApps/aws-services-base/aws-services-bases-configuration-projectapp/aws_configuration.xml
-text/plain        Modules/ProjectApps/aws-services-base/aws-services-bases-configuration-projectapp/version.txt
 text/xml          Project/ConversionTables.xml
 text/xml          Project/CustomProperties.xml
 text/xml          Project/EditorialLanguages.xml

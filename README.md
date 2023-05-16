@@ -3,11 +3,6 @@ The new SmartLiving website is a reference implementation for the static generat
 It brings best practice, as well as excellent performance. The project uses Tailwindcss as CSS framework as basis. 
 
 ## Overview
-The project includes 2 FirstSpirit modules as a dependency, which are available in the cloud or can be built in the following repos:
-
-* [YouTube Integration](https://github.com/e-Spirit/youtube-dap-integration)
-* Interactive Video
-
 The project has 2 possible settings regarding perfomance.
 In the project setting at CSS Mode there is the possibility to set the project in Perfomance or in Development.
 

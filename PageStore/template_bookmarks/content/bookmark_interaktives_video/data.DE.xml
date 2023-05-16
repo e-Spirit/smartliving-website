@@ -1,6 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<FIELDS>
-	<FIELD name='st_headline'><TEXT>Contentmodul für ein interaktives Video aus YouTube</TEXT></FIELD>
-	<FIELD name='st_text'><DOM><teaser>Pflegen Sie hier bitte einen Fließtext ein.</teaser></DOM></FIELD>
-	<FIELD name='st_videoElements'><CATALOG/></FIELD>
-</FIELDS>

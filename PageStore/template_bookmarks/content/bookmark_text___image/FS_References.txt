@@ -11,8 +11,8 @@ store=PAGESTORE
 class=de.espirit.firstspirit.store.access.pagestore.SectionImpl
 
 [nextSibling]
-uid=template_bookmarks~#~content~#~bookmark_interaktives_video
-gid=de6af965-02be-48a8-85dd-be7829a293d5
+uid=template_bookmarks~#~content~#~bookmark_interaktives_bild
+gid=d9cd9b59-83e2-46a3-82fd-48d382e299f6
 store=PAGESTORE
 class=de.espirit.firstspirit.store.access.pagestore.SectionImpl
 

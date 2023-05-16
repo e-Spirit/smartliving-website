@@ -1,1 +1,0 @@
-if(!st_text.isEmpty(), truncate(st_text.toText(false), 100))
