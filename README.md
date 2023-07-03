@@ -1,6 +1,7 @@
 # SmartLiving Website documentation
-The new SmartLiving website is a reference implementation for the static generation of a website. This FirstSpirit project can be used as a basis for new development or taken as a project as it is.
-It brings best practice, as well as excellent performance. The project uses Tailwindcss as CSS framework as basis. 
+The new SmartLiving website is a reference implementation for the static generation of a website. It serves as a guideline and offers best practices for developers.
+This also means: it is not a product, but rather provides example code and structure. 
+The project uses Tailwindcss as CSS framework as basis. 
 
 ## Overview
 The project has 2 possible settings regarding perfomance.
@@ -29,7 +30,7 @@ fs-cli import -c HTTP -port 8000 -u "Admin" -pwd "Admin" -h myhost.com -p "Smart
 ```
 
 ## Legal Notices
-The FirstSpirit Smartliving Website Reference Demo is a product of Crownpeak Technology GmbH, Dortmund, Germany. The FirstSpirit Smartliving Website Reference Demo is subject to the Apache-2.0 license.
+The FirstSpirit Smartliving Website provides example code and a guideline for best practices. It is not a product and therefore not covered by our maintenance standards. The FirstSpirit Smartliving Website is owned by Crownpeak Technology GmbH, Dortmund, Germany and subject to the Apache-2.0 license.
 
 ## Disclaimer
 This document is provided for information purposes only. Crownpeak may change the contents hereof without notice. This document is not warranted to be error-free, nor subject to any other warranties or conditions, whether expressed orally or implied in law, including implied warranties and conditions of merchantability or fitness for a particular purpose. Crownpeak specifically disclaims any liability with respect to this document and no contractual obligations are formed either directly or indirectly by this document. The technologies, functionality, services, and processes described herein are subject to change without notice.
