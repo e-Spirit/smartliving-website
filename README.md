@@ -1,3 +1,10 @@
+
+
+**This repository is archived. For the actively maintained version, please visit the Crownpeak repository: [https://github.com/Crownpeak/smartliving-website](https://github.com/Crownpeak/smartliving-website)**
+
+
+--- 
+
 # SmartLiving Website documentation
 The new SmartLiving website is a reference implementation for the static generation of a website. It serves as a guideline and offers best practices for developers.
 This also means: it is not a product, but rather provides example code and structure. 
